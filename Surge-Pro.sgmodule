@@ -6,13 +6,13 @@
 SurgePro=title="Surge Pro® Licenses Status",content="授權有效期 : 永久Premium",icon="checkmark.icloud",icon-color="#1B813E",update-interval=1
 NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
 Netflix解鎖檢查 = script-name=netflixCheck,update-interval=1, 
-YouTube解鎖檢查 = script-name=premiumCheck, title="YouTube Premium 跨區解鎖測試", update-interval=1
+premiumCheck = script-name=premiumCheck, title="YouTube Premium 跨區解鎖測試", update-interval=1
 
 [Script]
 //  , argument=icon1=checkmark.shield&color1=#1B813E&icon2=exclamationmark.shield&color2=#EFBB24&icon3=xmark.shield&color3=#CB1B45&icon4=exclamationmark.arrow.triangle.2.circlepath&color4=#77428D&title=Netflix 影劇版權 IP 鎖測試
 net-info-panel.js=script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/NetworkCheck.js,type=generic
 Netflix解鎖檢查 = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/NetflixCheck.js, timeout=30
-YouTube解鎖檢查 = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/YouTubePremiumCheck.js, timeout=30
+premiumCheck = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/YouTubePremiumCheck.js, timeout=30
 
 [Host]
 ip-api.com = 208.95.112.1
