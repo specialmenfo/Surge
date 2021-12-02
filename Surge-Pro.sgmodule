@@ -11,7 +11,9 @@ premiumCheck = script-name=premiumCheck, title="YouTube Premium 跨區解鎖測�
 [Script]
 //  , argument=icon1=checkmark.shield&color1=#1B813E&icon2=exclamationmark.shield&color2=#EFBB24&icon3=xmark.shield&color3=#CB1B45&icon4=exclamationmark.arrow.triangle.2.circlepath&color4=#77428D&title=Netflix 影劇版權 IP 鎖測試
 net-info-panel.js=script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/NetworkCheck.js,type=generic
+
 netflixCheck = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/NetflixCheck.js, timeout=30
+
 premiumCheck = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/YouTubePremiumCheck.js, timeout=30
 
 [Host]
