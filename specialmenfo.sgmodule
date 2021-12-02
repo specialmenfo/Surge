@@ -2,6 +2,34 @@
 #!desc=Surge 搬運各大佬模塊All in One 只自用 @specialmenfo
 #!system=ios
 
+[Rule]
+DOMAIN,118.89.204.198,REJECT
+DOMAIN-KEYWORD,118.89.204.198,REJECT
+IP-CIDR,118.89.204.198/32,REJECT
+DOMAIN,appcloud2.in.zhihu.com,REJECT
+USER-AGENT,AVOS*,REJECT
+DOMAIN,mqtt.zhihu.com,REJECT
+DOMAIN,sugar.zhihu.com,REJECT
+URL-REGEX,^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\?,REJECT
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations,REJECT
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?,REJECT
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(preload-topstory|preload-search|preload-subscription),REJECT
+URL-REGEX,^https?:\/\/api\.zhihu\.com/moments/hybrid\?,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4/(questions|anwsers)\/\d+/related-readings,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/api\.zhihu\.com\/moments\/recent,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation,REJECT-TINYGIF
+
+[Map Local]
+# 知乎其他廣告攔截
+^https?:\/\/api\.zhihu\.com\/(notifications\/v\d\/count|v\d\/package|me\/guides|drama\/living-info|ad|fringe|commercial|market\/popovers|.*featured-comment-ad) data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+
+[URL Rewrite]
+# Safari 禁止知乎跳轉 App  (by blankmagic)
+^https?://link\.zhihu\.com/\?target=https?%3A//(.*) https://$1 302
+^https?://oia\.zhihu\.com https://zhuanlan.zhihu.com 302
+
 [Panel]
 SurgePro=title="Surge Pro® Licenses Status",content="授權有效期 : 永久Premium",icon="checkmark.icloud",icon-color="#1B813E",update-interval=1
 Profile-Reload=title="Profile Reload",content="點擊以重新整理",icon:"arrow.triangle.2.circlepath.doc.on.clipboard","icon-color":"#8B81C3",style=info,script-name=reload.js,update-interval=-1
@@ -11,7 +39,7 @@ premiumCheck = script-name=premiumCheck, title="YouTube Premium 跨區解鎖測�
 flushDNS = script-name=flushDNS,update-interval=600
 
 [MITM]
-hostname = ios.prod.ftl.netflix.com, spclient.wg.spotify.com, biz.caiyunapp.com
+hostname = ios.prod.ftl.netflix.com, spclient.wg.spotify.com, biz.caiyunapp.com,api.zhihu.com,appcloud2.zhihu.com,www.zhihu.com,zhuanlan.zhihu.com,link.zhihu.com,oia.zhihu.com
 
 
 [Script]
@@ -32,7 +60,18 @@ http-response ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22vid
 
 spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
 
-彩云天气_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/nxyd/Surge/main/caiyun_svip.js
+彩雲天氣_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/nxyd/Surge/main/caiyun_svip.js
+
+知乎_處理用戶信息 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/people\/,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_信息流去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/(moments|topstory)(\/|\?)?(recommend|action=|feed_type=)(?!\/people),script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_官方消息去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/notifications\/v3\/(message|timeline\/entry\/system_message),script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_預置關鍵詞去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/search\/preset_words\?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_回答內容優化 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/www\.zhihu\.com\/appview\/v2\/answer\/.*(entry=(?!(preload-topstory|preload-search|preload-subscription)))?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_優化軟件配置 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/appcloud2\.zhihu\.com\/v\d+\/config,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_熱搜去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/search\/top_search\/tabs\/hot\/items,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_熱榜去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/topstory\/hot-lists?(\?|\/),script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_評論去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_解鎖關鍵詞屏蔽 = type=http-request,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/feed-root\/block,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
 
 [Host]
 ip-api.com = 208.95.112.1
