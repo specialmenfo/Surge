@@ -4,7 +4,7 @@
 
 [Panel]
 SurgePro=title="Surge Pro® Licenses Status",content="授權有效期 : 永久Premium",icon="checkmark.icloud",icon-color="#1B813E",update-interval=1
-NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
+NetInfoPanel=title="",content="",style=info,script-name=NetworkCheck.js,update-interval=1
 netflixCheck = script-name=netflixCheck,update-interval=1, 
 premiumCheck = script-name=premiumCheck, title="YouTube Premium 跨區解鎖測試", update-interval=1
 
