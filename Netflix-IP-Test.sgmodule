@@ -1,0 +1,10 @@
+#!name=Netflix IP Test
+#!desc=Netflix 鎖區測試，本版本為個人繁體化自用
+#!system=ios
+
+[Panel]
+netflixCheck = script-name=netflixCheck,update-interval=1, 
+
+[Script]
+netflixCheck = type=generic,script-path=https://raw.githubusercontent.com/Nebulosa-Cat/Surge/main/Panel/Netflix-IP-Test/netflixCheck.js, timeout=30
+//  , argument=icon1=checkmark.shield&color1=#1B813E&icon2=exclamationmark.shield&color2=#EFBB24&icon3=xmark.shield&color3=#CB1B45&icon4=exclamationmark.arrow.triangle.2.circlepath&color4=#77428D&title=Netflix 影劇版權 IP 鎖測試
