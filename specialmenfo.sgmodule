@@ -11,7 +11,7 @@ premiumCheck = script-name=premiumCheck, title="YouTube Premium 跨區解鎖測�
 flushDNS = script-name=flushDNS,update-interval=600
 
 [MITM]
-hostname = %APPEND% ios.prod.ftl.netflix.com,%APPEND% spclient.wg.spotify.com,%APPEND% biz.caiyunapp.com
+hostname = ios.prod.ftl.netflix.com, spclient.wg.spotify.com, biz.caiyunapp.com
 
 
 [Script]
