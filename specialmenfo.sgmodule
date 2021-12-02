@@ -11,7 +11,8 @@ premiumCheck = script-name=premiumCheck, title="YouTube Premium 跨區解鎖測�
 flushDNS = script-name=flushDNS,update-interval=600
 
 [MITM]
-hostname = %APPEND% ios.prod.ftl.netflix.com
+hostname = %APPEND% ios.prod.ftl.netflix.com,%APPEND% spclient.wg.spotify.com,%APPEND% biz.caiyunapp.com
+
 
 [Script]
 
@@ -29,5 +30,11 @@ http-request ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22vide
 
 http-response ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D requires-body=1,script-path=https://kinta.ma/surge/scripts/netflix_rating.js
 
+spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
+
+彩雲天氣_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/nxyd/Surge/main/caiyun_svip.js
+
 [Host]
 ip-api.com = 208.95.112.1
+pbs.twimg.com = 23.1.106.237
+abs.twimg.com = 23.1.106.237
