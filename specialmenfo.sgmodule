@@ -20,6 +20,13 @@ URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation,REJECT-TINYGI
 URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4/(questions|anwsers)\/\d+/related-readings,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/api\.zhihu\.com\/moments\/recent,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation,REJECT-TINYGIF
+# 百度輸入法
+DOMAIN-KEYWORD,jomodns,REJECT
+DOMAIN,res.mi.baidu.com,REJECT
+DOMAIN,r6.mo.baidu.com,REJECT
+URL-REGEX,^https:\/\/mime\.baidu\.com\/v5\/activity\/advertisementnonrealtime,REJECT
+URL-REGEX,^https:\/\/mime\.baidu\.com\/v5\/start_screen_ads\/list,REJECT
+URL-REGEX,^https:\/\/mime\.baidu\.com\/v5\/hotpatch\/check\?hotpatch,REJECT
 
 [Map Local]
 # 知乎其他廣告攔截
@@ -30,6 +37,34 @@ URL-REGEX,^https?:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation,R
 ^https?://link\.zhihu\.com/\?target=https?%3A//(.*) https://$1 302
 ^https?://oia\.zhihu\.com https://zhuanlan.zhihu.com 302
 
+# 百度地圖開屏廣告
+^https:\/\/dss0\.bdstatic\.com\/.+/tam-ogel\/.+\.jpg _ reject
+# 百度網盤廣告屏蔽
+http:\/\/rp\.hpplay\.cn\/logouts _ reject
+https:\/\/pan\.baidu\.com\/pmall\/order\/privilege\/info _ reject
+https:\/\/pan\.baidu\.com\/rest\/.+\/pcs\/adx _ reject
+https:\/\/pan\.baidu\.com\/api\/useractivity\/activity _ reject
+https?:\/\/pan\.baidu\.com\/act\/.+\/bchannel\/list _ reject
+https:\/\/sofire\.baidu\.com\/ios\/.+ _ reject
+https:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/js\/.+\.js _ reject
+https:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/index\.html _ reject
+https:\/\/pan\.baidu\.com\/pmall\/order\/privilege\/info _ reject
+https:\/\/staticsns\.cdn\.bcebos\.com\/amis\/.+/banner.png _ reject
+https:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/ts_ad\/ - reject
+https:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adv\? - reject
+https:\/\/pan\.baidu\.com\/component\/view\/(1510|1130)\?(vip|from) - reject
+
+# 百度貼吧(TributePaulWalker搬運)->*.tieba.baidu.com,feed-image.baidu.com
+^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule - reject
+^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo - reject
+^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|mlog) - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/\w+\/(sync|newRnSync|mlog) - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/c\/s\/splashSchedule - reject
+# mine
+^https:\/\/pn\.baidu\.com\/iad\/.+\.json - reject
+^https:\/\/feed-image\.baidu\.com\/0\/pic\/ - reject
+^http:\/\/.+\/c\/s\/(trackConfig|dashengVideo|splashSchedule) - reject
+
 [Panel]
 SurgePro=title="Surge Pro® Licenses Status",content="授權有效期 : 永久Premium",icon="checkmark.icloud",icon-color="#1B813E",update-interval=1
 Profile-Reload=title="Profile Reload",content="點擊以重新整理",icon:"arrow.triangle.2.circlepath.doc.on.clipboard","icon-color":"#8B81C3",style=info,script-name=reload.js,update-interval=-1
@@ -39,7 +74,7 @@ premiumCheck = script-name=premiumCheck, title="YouTube Premium 跨區解鎖測�
 flushDNS = script-name=flushDNS,update-interval=600
 
 [MITM]
-hostname = ios.prod.ftl.netflix.com, spclient.wg.spotify.com, biz.caiyunapp.com,api.zhihu.com,appcloud2.zhihu.com,www.zhihu.com,zhuanlan.zhihu.com,link.zhihu.com,oia.zhihu.com
+hostname = ios.prod.ftl.netflix.com, spclient.wg.spotify.com, biz.caiyunapp.com,api.zhihu.com,appcloud2.zhihu.com,www.zhihu.com,zhuanlan.zhihu.com,link.zhihu.com,oia.zhihu.com,ndstatic.cdn.bcebos.com,staticsns.cdn.bcebos.com,issuecdn.baidupcs.com,dss0.bdstatic.com,*.baidu.com,-imerres.baidu.com
 
 
 [Script]
