@@ -3,7 +3,7 @@
  * @author Helge_0x00
  *
  * [Panel]
- * disney_check = script-name=disney_check,title= Disney+ 影劇版權 IP 鎖測試,style=alert,content=請刷新,update-interval=1800
+ * disney_check = script-name=disney_check,title=Disney+ 影劇版權 IP 鎖測試,style=alert,content=請刷新,update-interval=1800
  *
  * [Script]
  * disney_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/disney_check.js
