@@ -1,11 +1,14 @@
 /**
+
+/**
+ * 純搬運加繁體化 僅自用
  * @author Helge_0x00
  *
  * [Panel]
- * disney_check = script-name=disney_check,title=Disney+ 解鎖檢測,style=alert,content=請刷新面板,update-interval=1800
+ * disney_check = script-name=disney_check,title= Disney+ 影劇版權 IP 鎖測試,style=alert,content=請刷新,update-interval=1800
  *
  * [Script]
- * disney_check = type=generic,script-path=https://gist.githubusercontent.com/Hyseen/729fc4c3ac28c3f2e7c4a832d81780f3/raw/disney_check.js
+ * disney_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/disney_check.js
  *
  * 支持使用腳本使用 argument 參數自定義配置，如：argument=key1=URLEncode(value1)&key2=URLEncode(value2)，具體參數如下所示，
  * title: 面板標題
