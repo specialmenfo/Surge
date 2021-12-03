@@ -43,7 +43,7 @@ const STATUS_TIMEOUT = -1
 const STATUS_ERROR = -2
 
 const DEFAULT_OPTIONS = {
-  title: 'Disney+ 解鎖檢測',
+  title: 'Disney+ 影劇版權 IP 鎖測試',
   availableContent: '支持 Disney+ ➟ #REGION_FLAG# #REGION_NAME#',
   availableIcon: undefined,
   availableIconColor: undefined,
