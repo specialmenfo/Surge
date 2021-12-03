@@ -42,7 +42,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
         '行動數據 | ' + radioGeneration[radio] + ' - ' + radio;
     }
   }
-  $httpClient.get('http://ip-api.com/json', function (error, response, data) {
+  $httpClient.get('www.speedtest.net', function (error, response, data) {
     if (error) {
       $done({
         title: '發生錯誤',
