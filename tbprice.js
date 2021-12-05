@@ -1,5 +1,4 @@
-
-const ScriptName = "TaobaoPrice";
+const ScriptName = "淘寶比價";
 const $ = new Env(ScriptName);
 
 const ScriptIdentifier = "jd_tb_price";
