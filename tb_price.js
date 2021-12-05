@@ -1,3 +1,4 @@
+
 const ScriptName = "淘寶比價";
 const $ = new Env(ScriptName);
 
