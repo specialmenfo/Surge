@@ -49,7 +49,7 @@ if (url.indexOf(path2) != -1) {
             if (data.ok == 1 && data.single) {
                 const lower = lowerMsgs(data.single)
                 const detail = priceSummary(data)
-                const tip = data.PriceRemark.Tip + "（仅供参考）"
+                const tip = data.PriceRemark.Tip + "（僅供參考）"
                 lowerword.data.ad.adword = `${lower} ${tip}\n${detail}`;
                 floors.insert(bestIndex, lowerword);
             }
@@ -67,7 +67,7 @@ if (url.indexOf(path2) != -1) {
 function lowerMsgs(data) {
     const lower = data.lowerPriceyh
     const lowerDate = dateFormat(data.lowerDateyh)
-    const lowerMsg = "历史最低价格：¥" + String(lower) + ` (${lowerDate}) `
+    const lowerMsg = "歷史最低價格：¥" + String(lower) + ` (${lowerDate}) `
     return lowerMsg
 }
 
@@ -77,10 +77,10 @@ function priceSummary(data) {
     let listPriceDetail = data.PriceRemark.ListPriceDetail.slice(0,4)
     let list = listPriceDetail.concat(historySummary(data.single))
     list.forEach((item, index) => {
-        if (item.Name == "双11价格") {
-            item.Name = "双十一价格"
-        } else if (item.Name == "618价格") {
-            item.Name = "六一八价格"
+        if (item.Name == "雙11價格") {
+            item.Name = "雙十一價格"
+        } else if (item.Name == "618價格") {
+            item.Name = "六一八價格"
         }
         summary += `\n${item.Name}${getSpace(8)}${item.Price}${getSpace(8)}${item.Date}${getSpace(8)}${item.Difference}`
     })
