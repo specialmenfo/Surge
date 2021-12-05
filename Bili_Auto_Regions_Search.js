@@ -1,6 +1,6 @@
 /**************************
 
-嗶哩嗶哩, 港澳台番劇自動切換地區 & 顯示豆瓣評分
+嗶哩嗶哩港澳台番劇自動切換地區 & 顯示豆瓣評分
 
 如需禁用豆瓣評分或策略通知, 可前往BoxJs設置.
 BoxJs訂閱地址: https://raw.githubusercontent.com/NobyDa/Script/master/NobyDa_BoxJs.json
