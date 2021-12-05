@@ -1,42 +1,15 @@
 /**************************
 
-哔哩哔哩, 港澳台番剧自动切换地区 & 显示豆瓣评分
+嗶哩嗶哩, 港澳台番劇自動切換地區 & 顯示豆瓣評分
 
-如需禁用豆瓣评分或策略通知, 可前往BoxJs设置.
-BoxJs订阅地址: https://raw.githubusercontent.com/NobyDa/Script/master/NobyDa_BoxJs.json
+如需禁用豆瓣評分或策略通知, 可前往BoxJs設置.
+BoxJs訂閱地址: https://raw.githubusercontent.com/NobyDa/Script/master/NobyDa_BoxJs.json
 
 Update: 2021.09.26
 Author: @NobyDa
 Use: Surge, QuanX, Loon
 
-****************************
-港澳台自动切换地区说明 :
-****************************
 
-地区自动切换功能仅适用于Surge4.7+(iOS)，Loon2.1.10(286)+，QuanX1.0.22(543)+
-低于以上版本仅显示豆瓣评分.
-
-您需要配置相关规则集:
-Surge、Loon: 
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/StreamingSE.list
-
-QuanX: 
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/StreamingSE.list
-
-绑定相关select或static策略组，并且需要具有相关的区域代理服务器纳入您的子策略中，子策略可以是服务器也可以是其他区域策略组．
-最后，您可以通过BoxJs设置策略名和子策略名，或者手动填入脚本.
-
-如需搜索指定地区番剧, 可在搜索框添加后缀" 港", " 台", " 中". 例如: 进击的巨人 港
-
-QX用户注: 使用切换地区功能请确保您的QX=>其他设置=>温和策略机制处于关闭状态, 以及填写策略名和子策略名时注意大小写.
-
-****************************
-Surge 4.7+ 远程脚本配置 :
-****************************
-[Script]
-Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
-
-#可选, 适用于搜索指定地区的番剧
 Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
 
 [MITM]
@@ -55,22 +28,14 @@ Quantumult X 远程脚本配置 :
 hostname = ap?.bilibili.com
 
 [filter_local]
-#可选, 由于qx纯tun特性, 不添加规则可能会导致脚本失效.
+#可選, 由於qx純tun特性, 不添加規則可能會導致腳本失效.
 ip-cidr, 203.107.1.1/24, reject
 
 ****************************
-Loon 远程脚本配置 :
+Loon 遠程腳本配置 :
 ****************************
 [Script]
-http-response ^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js, requires-body=true, tag=bili自动地区
-
-#可选, 适用于搜索指定地区的番剧
-http-request ^https:\/\/app\.bilibili\.com\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)& script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js, requires-body=true, tag=bili自动地区(搜索)
-
-[Mitm]
-hostname = ap?.bilibili.com
-
-***************************/
+http-response ^https:\/\/ap(p|i)\.bilibili\.com\/(pgc
 
 let $ = nobyda();
 let run = EnvInfo();
