@@ -7,6 +7,7 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
 
 
 [Rule]
+DOMAIN,ocsp.apple.com,REJECT
 DOMAIN-SUFFIX,ad.ettoday.net,DIRECT
 DOMAIN,itad.linetv.tw,REJECT
 DOMAIN,sessions.bugsnag.com,REJECT-DROP
