@@ -1,3 +1,9 @@
+#!name= 自用分流Rule
+#!desc= 🎉 此模塊以分流走向為主！
+# Task&Cookies模塊配置 
+#!system=ios
+
+
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list,🌏 國外網站
 RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list,🎯 全球直連
