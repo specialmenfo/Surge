@@ -8594,7 +8594,6 @@
 .fw.qq.com
 .hm.l.qq.com
 .httpring.qq.com
-.iacc.qq.com
 .if.mingxing.qq.com
 .imc.l.qq.com
 .img1.sj.qq.com
