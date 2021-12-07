@@ -7,6 +7,126 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
 
 
 [Rule]
+# Alibaba
+DOMAIN,a.alimama.cn,REJECT
+DOMAIN,acjs.aliyun.com,REJECT
+DOMAIN,adash.m.taobao.com,REJECT
+DOMAIN,adash.man.aliyuncs.com,REJECT
+DOMAIN,adashbc.m.taobao.com,REJECT
+DOMAIN,adashbc.ut.taobao.com,REJECT
+DOMAIN,adash-c.ut.taobao.com,REJECT
+DOMAIN,adsh.m.taobao.com,REJECT
+DOMAIN,afp.adchina.com,REJECT
+DOMAIN,afp.alicdn.com,REJECT
+DOMAIN,agoodm.m.taobao.com,REJECT
+DOMAIN,agoodm.wapa.taobao.com,REJECT
+DOMAIN,alipaylog.com,REJECT
+DOMAIN,amdc.alipay.com,REJECT
+DOMAIN,amdc.m.taobao.com,REJECT
+DOMAIN,api.wapa.taobao.com,REJECT
+DOMAIN,api.waptest.taobao.com,REJECT
+DOMAIN,apoll.m.taobao.com,REJECT
+DOMAIN,appdownload.alicdn.com,REJECT
+DOMAIN,beacon-api.aliyuncs.com,REJECT
+DOMAIN,cbu01.alicdn.com,REJECT
+DOMAIN,click.aliyun.com,REJECT
+DOMAIN,cm.ipinyou.com,REJECT
+DOMAIN,cm.mlt01.com,REJECT
+DOMAIN,err.taobao.com,REJECT
+DOMAIN,ff.win.taobao.com,REJECT
+DOMAIN,fm.p0y.cn,REJECT
+DOMAIN,g.click.taobao.com,REJECT
+DOMAIN,g.tbcdn.cn,REJECT
+DOMAIN,gma.alicdn.com,REJECT
+DOMAIN,gtms01.alicdn.com,REJECT
+DOMAIN,gtms02.alicdn.com,REJECT
+DOMAIN,gtms03.alicdn.com,REJECT
+DOMAIN,gtms04.alicdn.com,REJECT
+DOMAIN,hydra.alibaba.com,REJECT
+DOMAIN,hz.pre.tbusergw.taobao.net,REJECT
+DOMAIN,hz.tbusergw.taobao.net,REJECT
+DOMAIN,i.ipinyou.com,REJECT
+DOMAIN,init.phpwind.com,REJECT
+DOMAIN,intl.wapa.taobao.com,REJECT
+DOMAIN,intl.waptest.taobao.com,REJECT
+DOMAIN,jxlog.istreamsche.com,REJECT
+DOMAIN,m.intl.taobao.com,REJECT
+DOMAIN,match.p4p.1688.com,REJECT
+DOMAIN,material.istreamsche.com,REJECT
+DOMAIN,mlt01.com,REJECT
+DOMAIN,osfota.cdn.aliyun.com,REJECT
+DOMAIN,osupdate.aliyun.com,REJECT
+DOMAIN,osupdateservice.yunos.com,REJECT
+DOMAIN,re.m.taobao.com,REJECT
+DOMAIN,re.taobao.com,REJECT
+DOMAIN,rj.m.taobao.co,REJECT
+DOMAIN,rj.m.taobao.com,REJECT
+DOMAIN,sdkinit.taobao.com,REJECT
+DOMAIN,show.re.taobao.com,REJECT
+DOMAIN,simba.m.taobao.com,REJECT
+DOMAIN,stats.ipinyou.com,REJECT
+DOMAIN,strip.taobaocdn.com,REJECT
+DOMAIN,tejia.taobao.com,REJECT
+DOMAIN,temai.taobao.com,REJECT
+DOMAIN,tongji.linezing.com,REJECT
+DOMAIN,tunion-api.m.taobao.com,REJECT
+DOMAIN,tyh.taobao.com,REJECT
+DOMAIN,w.m.taobao.com,REJECT
+# 百度
+DOMAIN-SUFFIX,baidustatic.com,REJECT
+DOMAIN-SUFFIX,cpro.baidu.com,REJECT
+DOMAIN-SUFFIX,pos.baidu.com,REJECT
+DOMAIN,afd.baidu.com,REJECT
+DOMAIN,als.baidu.com,REJECT
+DOMAIN,duclick.baidu.com,REJECT
+DOMAIN,em.baidu.com,REJECT
+DOMAIN,hm.baidu.com,REJECT
+DOMAIN,hmma.baidu.com,REJECT
+DOMAIN,mobads.baidu.com,REJECT
+DOMAIN,mobads-logs.baidu.com,REJECT
+DOMAIN,nsclick.baidu.com,REJECT
+# CMB
+DOMAIN,ccclub.cmbchina.com,REJECT
+# Facebook
+DOMAIN-SUFFIX,staticxx.facebook.com,REJECT
+# Twitter
+DOMAIN-SUFFIX,ads.twitter.com,REJECT
+DOMAIN-SUFFIX,ads-twitter.com,REJECT
+DOMAIN-SUFFIX,p.twitter.com,REJECT
+DOMAIN-SUFFIX,scribe.twitter.com,REJECT
+DOMAIN-SUFFIX,syndication.twitter.com,REJECT
+DOMAIN-SUFFIX,syndication-o.twitter.com,REJECT
+DOMAIN-SUFFIX,urls.api.twitter.com,REJECT
+# 騰訊
+USER-AGENT,TencentConnect*,REJECT
+DOMAIN-SUFFIX,3g.qq.com,REJECT
+DOMAIN-SUFFIX,beacon.qq.com,REJECT
+DOMAIN-SUFFIX,bugly.qq.com,REJECT
+DOMAIN-SUFFIX,e.qq.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,l.qq.com,REJECT
+DOMAIN-SUFFIX,rqd.qq.com,REJECT
+DOMAIN,3gimg.qq.com,REJECT
+DOMAIN,btrace.qq.com,REJECT
+DOMAIN,fusion.qq.com,REJECT
+DOMAIN,mtrace.qq.com,REJECT
+DOMAIN,oth.eve.mdt.qq.com,REJECT
+DOMAIN,pgdt.gtimg.cn,REJECT
+DOMAIN,pingma.qq.com,REJECT
+DOMAIN,pingtcss.qq.com,REJECT
+DOMAIN,tajs.qq.com,REJECT
+DOMAIN,wa.gtimg.com,REJECT
+DOMAIN,wup.imtt.qq.com,REJECT
+DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
+DOMAIN,wxsnsdy.wxs.qq.com,REJECT
+DOMAIN,weixinbridge.com,REJECT
+# Sina
+DOMAIN-SUFFIX,beacon.sina.com.cn,REJECT
+DOMAIN,adimg.vue.weibo.com,REJECT
+DOMAIN,u1.img.mobile.sina.cn,REJECT
+DOMAIN,sax.sina.com.cn,REJECT
+DOMAIN,saxs.sina.com.cn,REJECT
+DOMAIN,saxn.sina.com.cn,REJECT
 DOMAIN,ocsp.apple.com,REJECT
 DOMAIN-SUFFIX,ad.ettoday.net,DIRECT
 DOMAIN,itad.linetv.tw,REJECT
@@ -90,6 +210,7 @@ DOMAIN-SUFFIX,*.doubleclick.net,🛑 廣告攔截
 DOMAIN-SUFFIX,googleads.g.doubleclick.net,🛑 廣告攔截
 
 # 🛑 廣告攔截整合 List
+DOMAIN-SET,https://anti-ad.net/surge2.txt,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AD_Block_Add.txt,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AD_Block_Plus.txt,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AD_Block.txt,🛑 廣告攔截
