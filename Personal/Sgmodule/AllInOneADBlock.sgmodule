@@ -186,7 +186,6 @@ DOMAIN-SUFFIX,gug.ku6cdn.com,REJECT
 DOMAIN-SUFFIX,ifacelog.iqiyi.com,REJECT
 DOMAIN-SUFFIX,iwstat.tudou.com,REJECT
 DOMAIN-SUFFIX,kwflvcdn.000dn.com,REJECT
-DOMAIN-SUFFIX,lives.l.qq.com,REJECT
 DOMAIN-SUFFIX,logger.baofeng.com,REJECT
 DOMAIN-SUFFIX,logstat.t.sfht.com,REJECT
 DOMAIN-SUFFIX,lstat.youku.com,REJECT
@@ -198,7 +197,6 @@ DOMAIN-SUFFIX,n-st.vip.com,REJECT
 DOMAIN-SUFFIX,n.mark.letv.com,REJECT
 DOMAIN-SUFFIX,nstat.tudou.com,REJECT
 DOMAIN-SUFFIX,p-log.ykimg.com,REJECT
-DOMAIN-SUFFIX,p.l.qq.com,REJECT
 DOMAIN-SUFFIX,p.l.ykimg.com,REJECT
 DOMAIN-SUFFIX,p.l.youku.com,REJECT
 DOMAIN-SUFFIX,pics.taobaocdn.com,REJECT
@@ -334,29 +332,6 @@ DOMAIN-SUFFIX,scribe.twitter.com,REJECT
 DOMAIN-SUFFIX,syndication.twitter.com,REJECT
 DOMAIN-SUFFIX,syndication-o.twitter.com,REJECT
 DOMAIN-SUFFIX,urls.api.twitter.com,REJECT
-# 騰訊
-USER-AGENT,TencentConnect*,REJECT
-DOMAIN-SUFFIX,3g.qq.com,REJECT
-DOMAIN-SUFFIX,beacon.qq.com,REJECT
-DOMAIN-SUFFIX,bugly.qq.com,REJECT
-DOMAIN-SUFFIX,e.qq.com,REJECT
-DOMAIN-SUFFIX,gdt.qq.com,REJECT
-DOMAIN-SUFFIX,l.qq.com,REJECT
-DOMAIN-SUFFIX,rqd.qq.com,REJECT
-DOMAIN,3gimg.qq.com,REJECT
-DOMAIN,btrace.qq.com,REJECT
-DOMAIN,fusion.qq.com,REJECT
-DOMAIN,mtrace.qq.com,REJECT
-DOMAIN,oth.eve.mdt.qq.com,REJECT
-DOMAIN,pgdt.gtimg.cn,REJECT
-DOMAIN,pingma.qq.com,REJECT
-DOMAIN,pingtcss.qq.com,REJECT
-DOMAIN,tajs.qq.com,REJECT
-DOMAIN,wa.gtimg.com,REJECT
-DOMAIN,wup.imtt.qq.com,REJECT
-DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
-DOMAIN,wxsnsdy.wxs.qq.com,REJECT
-DOMAIN,weixinbridge.com,REJECT
 # Sina
 DOMAIN-SUFFIX,beacon.sina.com.cn,REJECT
 DOMAIN,adimg.vue.weibo.com,REJECT
