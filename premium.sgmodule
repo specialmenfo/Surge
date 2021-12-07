@@ -1,0 +1,108 @@
+#!name= All In One 增強功能
+#!desc= 🎉 此模塊以增強App功能為主！
+#!system=ios
+
+[MITM]
+hostname = ios.prod.ftl.netflix.com, news-client.apple.com, news-client-search.apple.com, news-edge.apple.com, news-events.apple.com, gspe1-ssl.ls.apple.com, weather-data.apple.com, gspe35-ssl.ls.apple.com, -cdn*.smoot.apple.com, -fbs.smoot.apple.com, *.smoot.apple.com, *.smoot.apple.cn, uts-api.itunes.apple.com, trade-acs.m.taobao.com, spclient.wg.spotify.com, biz.caiyunapp.com, mobilead.kuwo.cn, rich.kuwo.cn, *.kwcdn.kuwo.cn, vip1.kuwo.cn, musicpay.kuwo.cn, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, manga.bilibili.com, ap?.bilibili.com, app.biliintl.com, api.m.jd.com, ap?.bilibili.com, security.wechat.com, weixin110.qq.com
+
+[URL Rewrite]
+#  Redirect Apple Maps to 🇨🇳CN
+# 只作用於Apple Maps，不修改定位服務和地區檢測，可以通過搭配使用其他模塊達成混合效果。
+(^https?:\/\/gspe\d*-ssl\.ls\.apple\.)(com|cn)(\/.*)(country_code=[A-Z]{2})(.*) $1$2$3country_code=CN$5 header
+(^https?:\/\/gspe\d*-ssl\.ls\.apple\.)(com|cn)(\/.*)(environment=[a-z/-]{4,})(.*) $1$2$3environment=prod-cn$5 header
+
+[Script]
+# Apple
+# 開機後或者首次使用，需要連接Wi-Fi，然後打開飛行模式，再打開地圖一次即可，如無效需重複一次操作！但是，如果你成功了，但某些App或你不小心再次打開地圖了，那麼你也需要重複以上操作！
+#  Unlock Apple News 🇺🇸US
+# 解鎖🇺🇸US地區的News，注：需配合域名集使用，使用過程中gateway.icloud.com需走代理線路。
+http-request ^https?:\/\/news-(edge|events)\.apple\.com\/(v1\/configs|analyticseventsv2\/async).* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js, requires-body=true, tag=Apple_News
+http-request ^https?:\/\/news-(client-search)\.apple\.com\/(v1\/search\?).* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js, tag=Apple_News
+
+#  Response Geo Services to 🇭🇰HK
+# 只作用於檢測地區，不修改Apple Maps和Apple News，可以通過搭配使用其他模塊達成混合效果。
+http-request ^https?:\/\/gspe\d*-ssl\.ls\.apple\.com(\/pep\/gcc) script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Geo_Services.js, argument=GeoCountryCode=HK, requires-body=false, tag=Geo_Services
+
+#  Replace Apple Weather with 🇺🇸US @waqi.info
+# 切換空氣質量數據源為waqi.info，並更改標準為AQI(US)
+http-response ^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather.*(?!dataSets=forecastNextHour)(include=.*air_quality.*|dataSets=.*airQuality.*).*(country=[A-Z]{2})?.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_Weather.js, requires-body=true, tag=Apple_Weather
+
+#  Enable Siri Suggestions
+# 在聚焦搜索(Spotlight)和查詢(Look Up)中啓用Siri建議(Siri Suggestions)功能。
+# Bag (iOS/macOS)
+http-request ^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/bag\?(.*) script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js, timeout=3, tag=Siri_Suggestions
+# Spotlight & Look Up Search (iOS/macOS)
+http-request ^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/search\?(.*) script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js, timeout=3, tag=Siri_Suggestions
+# Siri Infomation Card (macOS)
+http-request ^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/card\?(.*) script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js, timeout=3, tag=Siri_Suggestions
+
+#  Enable Apple TV app
+# 解鎖TV app全功能：使用🇺🇸US「體育節目」和「兒童」頁面，優先簡體中文(zh-Hans)
+# Enable All TV app Tabs
+http-response ^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/configurations\?.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js, requires-body=true, timeout=3, tag=Apple_TV
+# TV app Tabs, Redirect Desktop Platform to AppleTV, Redirect Sports and Kids Tabs StoreFront to US (143441)
+http-request ^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/canvases\/Roots\/(watchNow|tahoma_watchnow|movies|tv|sports|kids)\?.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js, timeout=3, tag=Apple_TV
+# TV app movies and shows and sports infomation Webs, Redirect Desktop Platform to AppleTV
+http-request ^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/(movies|shows|sports|sporting-events).* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js, timeout=3, tag=Apple_TV
+# TV UpNext, Redirect Desktop Platform to AppleTV
+http-request ^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/shelves\/uts.col.UpNext.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js, timeout=3, tag=Apple_TV
+# TV channels, Redirect StoreFront to US (143441)
+http-request ^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/brands\?.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js, timeout=3, tag=Apple_TV
+# TV Live Playables, Redirect StoreFront to US (143441)
+http-request ^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/playables.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js, timeout=3, tag=Apple_TV
+# TV Favorites Teams web, Redirect StoreFront to US (143441)
+http-request ^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/favorites\?.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js, timeout=3, tag=Apple_TV
+# TV Watchlist Function, Redirect desktop Platform to iPad
+http-request ^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/watchlist.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js, timeout=3, tag=Apple_TV
+# Enable TV Favorites Teams Function, Redirect StoreFront to US (143441)
+http-request ^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/favorites\/(add|remove).* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js, requires-body=true, timeout=3, tag=Apple_TV
+# TV Product View, no Redirect
+http-request ^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/view\/product\/.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js, timeout=3, tag=Apple_TV
+
+# Taobao App 顯示歷史價格 by yichahucha
+tb_price.js = type=http-request,requires-body=1,pattern=^http:\/\/.+\/amdc\/mobileDispatch,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+tb_price.js = type=http-response,requires-body=1,pattern=^https?:\/\/trade-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.detail\.getdetail,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+
+# 微信
+解除WeChat鏈接限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
+
+解除WeChat鏈接限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js,argument=taobaoNotifyJump=false&useGoogleCache=true
+
+解除WeChat鏈接限制 = type=http-response,pattern=^https:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/weixin-external-links.js,script-update-interval=0
+
+# 嗶哩嗶哩, 港澳台番劇自動切換地區 & 顯示豆瓣評分
+Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/Bili_Auto_Regions.js,script-update-interval=0
+# 可選, 適用於搜索指定地區的番劇
+# 如需搜索指定地區番劇, 可在搜索框添加後綴" 港", " 台", " 中". 例如: 進擊的巨人 港(後面空格加上港、台、中）
+# 台灣動漫需要以繁體中文搜索 否則搜不出來
+Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/Bili_Auto_Regions.js,requires-body=0,script-update-interval=0
+
+# JD App 顯示歷史價格 by yichahucha
+jd_price.js = type=http-response,requires-body=1,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+
+# Netflix評分
+http-request ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D script-path=https://kinta.ma/surge/scripts/netflix_rating.js
+
+http-response ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D requires-body=1,script-path=https://kinta.ma/surge/scripts/netflix_rating.js
+
+# Spotify Premium
+spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
+
+# 彩雲天氣_SVIP
+彩雲天氣_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/nxyd/Surge/main/caiyun_svip.js
+
+# 酷我VIP
+酷我vip解锁 = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js,script-update-interval=0
+
+# 嗶哩嗶哩番劇開啓1080P+
+嗶哩嗶哩番劇開啓1080P+ = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,timeout=10,script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/backup/bilifj.js,script-update-interval=0
+
+
+# blackmatrix7
+BiliBili_推薦去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+BiliBili_追番去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+BiliBili_直播去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+BiliBili_動態去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+BiliBili_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+BiliBili_標籤頁處理 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+BiliBili_我的頁面處理 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
