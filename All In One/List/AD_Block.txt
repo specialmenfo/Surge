@@ -1,6 +1,5 @@
 # DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AD_Block.txt,REJECT
 # By @Nobyda
-
 # Current total domain name : 43,000+ 
 # Update time : 2021.2.27
 
