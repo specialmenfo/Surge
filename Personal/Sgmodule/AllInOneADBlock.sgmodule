@@ -89,6 +89,8 @@ DOMAIN-SUFFIX,*.doubleclick.net,🛑 廣告攔截
 DOMAIN-SUFFIX,googleads.g.doubleclick.net,🛑 廣告攔截
 
 # 🛑 廣告攔截整合 List
+
+DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AD_Block_Plus.txt,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AD_Block.txt,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/FutaGuard/FutaFilter/master/Surge/filters.txt,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/Surge/List/AdBlock_lite.list,🛑 廣告攔截
