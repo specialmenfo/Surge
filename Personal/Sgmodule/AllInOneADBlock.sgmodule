@@ -414,7 +414,6 @@ DOMAIN-KEYWORD,unidesk,REJECT
 DOMAIN-KEYWORD,wlmonitor,REJECT
 DOMAIN-KEYWORD,whalecloud,REJECT
 DOMAIN-KEYWORD,zjtoolbar,REJECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/geekdada/surge-list/domain-set/adaway.txt,REJECT
 DOMAIN-SUFFIX,vortex.hulu.com,🛑 廣告攔截
 DOMAIN-SUFFIX,doubleclick.net,🛑 廣告攔截
 DOMAIN-SUFFIX,*.doubleclick.net,🛑 廣告攔截
