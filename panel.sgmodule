@@ -1,0 +1,20 @@
+#!name= All In One 策略組模塊
+#!desc= 🎉 僅自用 此模塊以各種實用性模塊為主
+#!system=ios
+
+[Panel]
+SurgePro=title="Surge Pro® Licenses Status",content="授權有效期 : 永久Premium",icon="checkmark.icloud",icon-color="#1B813E",update-interval=1
+Profile-Reload=title="Profile Reload",content="點擊以重新整理",icon:"arrow.triangle.2.circlepath.doc.on.clipboard","icon-color":"#8B81C3",style=info,script-name=reload.js,update-interval=-1
+NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
+netflixCheck = script-name=netflixCheck,update-interval=1, 
+disney_check = script-name=disney_check,title=Disney+ 影劇版權IP鎖測試,style=alert,content=請刷新,update-interval=1800
+premiumCheck = script-name=premiumCheck, title="YouTube Premium 跨區解鎖測試", update-interval=1
+flushDNS = script-name=flushDNS,update-interval=600
+
+[Script]
+disney_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/disney_check.js?version=1637153952428
+reload.js=script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/reload.js,type=generic
+net-info-panel.js=script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/networkCheck_test.js?token=AWUU3ZHPVTR3YY73Y76ADF3BVDI6M,type=generic
+netflixCheck = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/NetflixCheck.js, timeout=30
+premiumCheck = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/YouTubePremiumCheck.js, timeout=30
+flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
