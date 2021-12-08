@@ -9,6 +9,16 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 
 [Rule]
 # @lbrachel
+# Twitter
+DOMAIN-SUFFIX,ads.twitter.com,REJECT
+DOMAIN-SUFFIX,ads-twitter.com,REJECT
+DOMAIN-SUFFIX,analytics.twitter.com,REJECT
+DOMAIN-SUFFIX,p.twitter.com,REJECT
+DOMAIN-SUFFIX,scribe.twitter.com,REJECT
+DOMAIN-SUFFIX,syndication.twitter.com,REJECT
+DOMAIN-SUFFIX,syndication-o.twitter.com,REJECT
+DOMAIN-SUFFIX,urls.api.twitter.com,REJECT
+
 # 優酷
 DOMAIN-SUFFIX,actives.youku.com,REJECT
 DOMAIN-SUFFIX,ad.api.3g.youku.com,REJECT
