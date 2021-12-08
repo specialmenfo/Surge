@@ -180,6 +180,7 @@ DOMAIN,googleads4.g.doubleclick.net,REJECT
 
 
 # @blackmatrix7
+DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking.list,REJECT
 DOMAIN,118.89.204.198,REJECT
 DOMAIN,api.cupid.dns.iqiyi.com,REJECT
 DOMAIN,appcloud2.in.zhihu.com,REJECT
