@@ -12,6 +12,10 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 
 
 [Rule]
+# Other
+DOMAIN-SET,oth.eve.mdt.qq.com,🌍 WeTV
+
+
 # @Loyalsoldier
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/direct.txt,🎯 全球直連
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,REJECT
