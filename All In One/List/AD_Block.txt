@@ -3,6 +3,7 @@
 # Current total domain name : 43,000+ 
 # Update time : 2021.2.27
 
+
 # AdRule
 .mcupdate.gstarcad.com
 .adx.open-adx.com
