@@ -1,4 +1,4 @@
-#!name= All In One 去廣告
+#!name= All In One 去廣告&直連
 #!desc= 🎉 此模塊以擋 App 開屏廣告和日常廣告為主，遇到無法擋住開屏廣告的App，建議到App設置裡面清除一下緩存和卸載重裝！如果遇到個別 App 打不開某些鏈接或者異常的時候請關閉此模塊，需要再次用到的時候再把此模塊打開
 #!author= @blackmatrix7 @zwf234 @app2smile @zqzess @anti-AD/blob @lbrachel @Nobyda
 #!system=ios
@@ -11,6 +11,13 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 
 
 [Rule]
+# @Loyalsoldier
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/direct.txt,🎯 全球直連
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,REJECT
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cncidr.txt,🎯 全球直連
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/gfw.txt,🌏 國外網站
+
+
 # @Nobyda
 DOMAIN-SET,https://raw.githubusercontent.com/NobyDa/ND-AD/master/Surge/AD_Block_Plus.txt,REJECT
 
