@@ -2787,7 +2787,6 @@
 .downloadb.dewmobile.net
 .downmobile.kugou.com
 .dp.559.cc
-.dp3.qq.com
 .dpm.demdex.net
 .dps.499.cn
 .dps.shouji56.com
@@ -8945,7 +8944,6 @@
 .image.yiqifa.com
 .images.taboola.com
 .img.9ads.net
-.img1.gtimg.com
 .img752.de92.com
 .imgcdn.de92.com
 .impservice.chnl.youdao.com
