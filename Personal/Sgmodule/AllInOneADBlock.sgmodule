@@ -426,8 +426,6 @@ DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AD_Block.txt,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/FutaGuard/FutaFilter/master/Surge/filters.txt,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AdBlock.list,🛑 廣告攔截
-DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AdvertisingTest_Domain.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingTest/AdvertisingTest.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/zwf234/rules/master/AdBRule.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/AD.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list,🛑 廣告攔截
