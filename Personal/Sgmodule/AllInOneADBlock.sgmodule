@@ -8,6 +8,71 @@
 force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79*,124.14*,124.193*,211.162*,220.112*,intl.iqiyi.com,maicai.api.ddxq.mobi,mobileapi-v6.elong.com,weibointl.api.weibo.cn,wmapi.meituan.com
 
 [Rule]
+# @lbrachel
+# 優酷
+DOMAIN-SUFFIX,actives.youku.com,REJECT
+DOMAIN-SUFFIX,ad.api.3g.youku.com,REJECT
+DOMAIN-SUFFIX,ad.api.mobile.youku.com,REJECT
+DOMAIN-SUFFIX,ad.mobile.youku.com,REJECT
+DOMAIN-SUFFIX,a-dxk.play.api.3g.youku.com,REJECT
+DOMAIN-SUFFIX,atm.youku.com,REJECT
+DOMAIN-SUFFIX,b.smartvideo.youku.com,REJECT
+DOMAIN-SUFFIX,c.yes.youku.com,REJECT
+DOMAIN-SUFFIX,das.api.youku.com,REJECT
+DOMAIN-SUFFIX,das.mobile.youku.com,REJECT
+DOMAIN-SUFFIX,dev-push.m.youku.com,REJECT
+DOMAIN-SUFFIX,dl.g.youku.com,REJECT
+DOMAIN-SUFFIX,dmapp.youku.com,REJECT
+DOMAIN-SUFFIX,e.stat.ykimg.com,REJECT
+DOMAIN-SUFFIX,gamex.mobile.youku.com,REJECT
+DOMAIN-SUFFIX,guanggaoad.youku.com,REJECT
+DOMAIN-SUFFIX,hudong.pl.youku.com,REJECT
+DOMAIN-SUFFIX,huodong.pl.youku.com,REJECT
+DOMAIN-SUFFIX,huodong.vip.youku.com,REJECT
+DOMAIN-SUFFIX,hz.youku.com,REJECT
+DOMAIN-SUFFIX,iyes.youku.com,REJECT
+DOMAIN-SUFFIX,l.ykimg.com,REJECT
+DOMAIN-SUFFIX,lstat.youku.com,REJECT
+DOMAIN-SUFFIX,mobilemsg.youku.com,REJECT
+DOMAIN-SUFFIX,msg.youku.com,REJECT
+DOMAIN-SUFFIX,myes.youku.com,REJECT
+DOMAIN-SUFFIX,p.l.youku.com,REJECT
+DOMAIN-SUFFIX,pl.youku.com,REJECT
+DOMAIN-SUFFIX,passport-log.youku.com,REJECT
+DOMAIN-SUFFIX,p-log.ykimg.com,REJECT
+DOMAIN-SUFFIX,push.m.youku.com,REJECT
+DOMAIN-SUFFIX,r.l.youku.com,REJECT
+DOMAIN-SUFFIX,s.p.youku.com,REJECT
+DOMAIN-SUFFIX,sdk.m.youku.com,REJECT
+DOMAIN-SUFFIX,stat.youku.com,REJECT
+DOMAIN-SUFFIX,statis.api.3g.youku.com,REJECT
+DOMAIN-SUFFIX,store.tv.api.3g.youku.com,REJECT
+DOMAIN-SUFFIX,store.xl.api.3g.youku.com,REJECT
+DOMAIN-SUFFIX,tdrec.youku.com,REJECT
+DOMAIN-SUFFIX,test.ott.youku.com,REJECT
+DOMAIN-SUFFIX,test.sdk.m.youku.com,REJECT
+DOMAIN-SUFFIX,v.l.youku.com,REJECT
+DOMAIN-SUFFIX,val.api.youku.com,REJECT
+DOMAIN-SUFFIX,vali.cp31.ott.cibntv.net,REJECT
+DOMAIN-SUFFIX,wan.youku.com,REJECT
+DOMAIN-SUFFIX,ykatr.youku.com,REJECT
+DOMAIN-SUFFIX,ykrec.youku.com,REJECT
+IP-CIDR,117.177.248.17/32,REJECT,no-resolve
+IP-CIDR,117.177.248.41/32,REJECT,no-resolve
+IP-CIDR,223.87.176.139/32,REJECT,no-resolve
+IP-CIDR,223.87.176.176/32,REJECT,no-resolve
+IP-CIDR,223.87.177.180/32,REJECT,no-resolve
+IP-CIDR,223.87.177.182/32,REJECT,no-resolve
+IP-CIDR,223.87.177.184/32,REJECT,no-resolve
+IP-CIDR,223.87.177.43/32,REJECT,no-resolve
+IP-CIDR,223.87.177.47/32,REJECT,no-resolve
+IP-CIDR,223.87.177.80/32,REJECT,no-resolve
+IP-CIDR,223.87.182.101/32,REJECT,no-resolve
+IP-CIDR,223.87.182.102/32,REJECT,no-resolve
+IP-CIDR,223.87.182.11/32,REJECT,no-resolve
+IP-CIDR,223.87.182.52/32,REJECT,no-resolve
+
+
 # @anti-AD/blob
 DOMAIN-SET,https://anti-ad.net/surge2.txt,REJECT
 
