@@ -22,6 +22,7 @@ DOMAIN-SUFFIX,dcads.sina.com.cn,REJECT
 DOMAIN-SUFFIX,sax.sina.cn,REJECT
 DOMAIN-SUFFIX,sax.sina.com.cn,REJECT
 DOMAIN-SUFFIX,tjs.sjs.sinajs.cn,REJECT
+
 # Weibo
 DOMAIN,alitui.weibo.com,REJECT
 DOMAIN,biz.weibo.com,REJECT
@@ -58,6 +59,7 @@ DOMAIN-SUFFIX,rlogs.youdao.com,REJECT
 DOMAIN-SUFFIX,static.flv.uuzuonline.com,REJECT
 DOMAIN-SUFFIX,wanproxy.127.net,REJECT
 DOMAIN-SUFFIX,img1.126.net,REJECT
+
 # Baidu
 DOMAIN,cbjs.baidu.com,REJECT
 DOMAIN,cpro.baidu.com,REJECT
@@ -80,9 +82,11 @@ DOMAIN,cpro2.baidu.com,REJECT
 DOMAIN,t10.baidu.com,REJECT
 DOMAIN,t11.baidu.com,REJECT
 DOMAIN,t12.baidu.com,REJECT
+
 # Tieba
 DOMAIN,res.limei.com,REJECT
 DOMAIN,res.cocounion.com,REJECT
+
 # Ad union
 DOMAIN,init.icloud-analysis.com, REJECT
 DOMAIN,zhihu-analytics.zhihu.com,REJECT
@@ -167,6 +171,7 @@ DOMAIN-SUFFIX,wqmobile.com,REJECT
 DOMAIN-SUFFIX,youmi.net,REJECT
 DOMAIN-SUFFIX,zhiziyun.com,REJECT
 DOMAIN-SUFFIX,segment.com,REJECT
+
 # Ads in Video apps
 DOMAIN-SUFFIX,actives.youku.com,REJECT
 DOMAIN-SUFFIX,ad.api.3g.tudou.com,REJECT
@@ -228,7 +233,8 @@ DOMAIN-SUFFIX,t.cr-nielsen.com,REJECT
 DOMAIN-SUFFIX,tns.simba.taobao.com,REJECT
 DOMAIN-SUFFIX,traffic.uusee.com,REJECT
 DOMAIN-SUFFIX,union.6.cn,REJECT
-#aiqiyi
+
+# iqiyi
 IP-CIDR,123.125.117.0/22,REJECT,no-resolve 
 DOMAIN-SUFFIX,892155.com,REJECT
 DOMAIN-SUFFIX,la.fsjsp.com,REJECT
@@ -244,10 +250,12 @@ DOMAIN-SUFFIX,s.mgwcn.com,REJECT
 DOMAIN-SUFFIX,taob.bjjlcfw.com,REJECT
 DOMAIN-SUFFIX,gog9.qzdfc.com,REJECT
 DOMAIN-SUFFIX,wxxx.mwnyr.com,REJECT
+
 #Google
 DOMAIN-SUFFIX,g.doubleclick.net,REJECT
 DOMAIN-SUFFIX,googleadservices.com,REJECT
 DOMAIN-SUFFIX,pagead.l.google.com,REJECT
+
 # Alibaba
 DOMAIN,a.alimama.cn,REJECT
 DOMAIN,acjs.aliyun.com,REJECT
@@ -313,6 +321,7 @@ DOMAIN,tongji.linezing.com,REJECT
 DOMAIN,tunion-api.m.taobao.com,REJECT
 DOMAIN,tyh.taobao.com,REJECT
 DOMAIN,w.m.taobao.com,REJECT
+
 # 百度
 DOMAIN-SUFFIX,baidustatic.com,REJECT
 DOMAIN-SUFFIX,cpro.baidu.com,REJECT
@@ -326,10 +335,13 @@ DOMAIN,hmma.baidu.com,REJECT
 DOMAIN,mobads.baidu.com,REJECT
 DOMAIN,mobads-logs.baidu.com,REJECT
 DOMAIN,nsclick.baidu.com,REJECT
+
 # CMB
 DOMAIN,ccclub.cmbchina.com,REJECT
+
 # Facebook
 DOMAIN-SUFFIX,staticxx.facebook.com,REJECT
+
 # Twitter
 DOMAIN-SUFFIX,ads.twitter.com,REJECT
 DOMAIN-SUFFIX,ads-twitter.com,REJECT
@@ -338,6 +350,7 @@ DOMAIN-SUFFIX,scribe.twitter.com,REJECT
 DOMAIN-SUFFIX,syndication.twitter.com,REJECT
 DOMAIN-SUFFIX,syndication-o.twitter.com,REJECT
 DOMAIN-SUFFIX,urls.api.twitter.com,REJECT
+
 # Sina
 DOMAIN-SUFFIX,beacon.sina.com.cn,REJECT
 DOMAIN,adimg.vue.weibo.com,REJECT
@@ -345,7 +358,10 @@ DOMAIN,u1.img.mobile.sina.cn,REJECT
 DOMAIN,sax.sina.com.cn,REJECT
 DOMAIN,saxs.sina.com.cn,REJECT
 DOMAIN,saxn.sina.com.cn,REJECT
+
+# Apple
 DOMAIN,ocsp.apple.com,REJECT
+
 DOMAIN-SUFFIX,ad.ettoday.net,DIRECT
 DOMAIN,itad.linetv.tw,REJECT
 DOMAIN,sessions.bugsnag.com,REJECT-DROP
@@ -424,10 +440,6 @@ DOMAIN-SUFFIX,vortex.hulu.com,🛑 廣告攔截
 DOMAIN-SUFFIX,doubleclick.net,🛑 廣告攔截
 DOMAIN-SUFFIX,*.doubleclick.net,🛑 廣告攔截
 DOMAIN-SUFFIX,googleads.g.doubleclick.net,🛑 廣告攔截
-DOMAIN-SUFFIX,lives.l.qq.com,🛑 廣告攔截
-DOMAIN-SUFFIX,vqq.admaster.com.cn,🛑 廣告攔截
-DOMAIN,lives.l.qq.com,🛑 廣告攔截
-DOMAIN,vqq.admaster.com.cn,🛑 廣告攔截
 DOMAIN,api.cupid.dns.iqiyi.com,REJECT
 DOMAIN,video-ad.sm.cn,REJECT
 DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
@@ -449,7 +461,6 @@ URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations,RE
 URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?,REJECT
 URL-REGEX,^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(preload-topstory|preload-search|preload-subscription),REJECT
 USER-AGENT,AVOS*,REJECT
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy.list,🛑 廣告攔截
 URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TINYGIF
 URL-REGEX,^https:\/\/a\.line\.me\/er\/lads\/v\d\/ei\?,REJECT-DROP
 URL-REGEX,^https:\/\/a\.line\.me\/er\/la(ss|dg)\/v\d\/event\/image,REJECT-DROP
@@ -806,6 +817,7 @@ DOMAIN,ade.googlesyndication.com,REJECT
 DOMAIN,googleads4.g.doubleclick.net,REJECT
 
 # AD List
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy.list,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AdvertisingTest_DOMAIN.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingTest/AdvertisingTest.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/ADRule.list,🛑 廣告攔截
