@@ -546,8 +546,7 @@ DOMAIN-KEYWORD,unidesk,REJECT
 DOMAIN-KEYWORD,wlmonitor,REJECT
 DOMAIN-KEYWORD,whalecloud,REJECT
 DOMAIN-KEYWORD,zjtoolbar,REJECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/geekdada/surge-list/domain-set/adaway.txt,REJECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/geekdada/surge-list/domain-set/neohosts.txt,REJECT
+
 #! Line 廣告
 #! 白名單
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/r,DIRECT
