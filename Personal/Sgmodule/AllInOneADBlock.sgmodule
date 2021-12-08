@@ -422,15 +422,8 @@ DOMAIN-SUFFIX,googleads.g.doubleclick.net,🛑 廣告攔截
 # 🛑 廣告攔截整合 List
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AdvertisingTest_DOMAIN.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingTest/AdvertisingTest.list,🛑 廣告攔截
-DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/anti-AD/master/anti-ad-surge2.txt,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AD_Block_Add.txt,🛑 廣告攔截
-DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AD_Block_Plus.txt,🛑 廣告攔截
-DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AD_Block.txt,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/FutaGuard/FutaFilter/master/Surge/filters.txt,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/ADBlock.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/zwf234/rules/master/AdBRule.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/AD.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list,🛑 廣告攔截
+DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/anti-AD/master/anti-ad-surge2.txt,🛑 廣告攔截
 
 # 有兔閱讀
 DOMAIN,app.zhoudamozi.com,DIRECT
