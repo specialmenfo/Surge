@@ -816,7 +816,7 @@ DOMAIN,googleads4.g.doubleclick.net,REJECT
 # AD List
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AdvertisingTest_DOMAIN.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingTest/AdvertisingTest.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list,🛑 廣告攔截
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/ADRule.list,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/anti-AD/master/anti-ad-surge2.txt,🛑 廣告攔截
 
 [Map Local]
