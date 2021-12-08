@@ -427,7 +427,6 @@ DOMAIN-SUFFIX,lives.l.qq.com,🛑 廣告攔截
 DOMAIN-SUFFIX,vqq.admaster.com.cn,🛑 廣告攔截
 DOMAIN,lives.l.qq.com,🛑 廣告攔截
 DOMAIN,vqq.admaster.com.cn,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list,🛑 廣告攔截
 DOMAIN,api.cupid.dns.iqiyi.com,REJECT
 DOMAIN,video-ad.sm.cn,REJECT
 DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
