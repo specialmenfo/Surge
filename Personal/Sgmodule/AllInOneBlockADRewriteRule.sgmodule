@@ -1,5 +1,7 @@
 #!name= All In One 廣告 Rewrite Rules @Nobyda
 #!desc= 🎉 此模塊以擋 App 開屏廣告和日常廣告為主，如果遇到個別 App 打不開某些鏈接或者異常的時候請關閉此模塊，需要再次用到的時候再把此模塊打開
+#!system=ios
+
 
 [URL Rewrite]
 ^https?:\/\/interface\.music\.163\.com\/eapi\/ad - reject
