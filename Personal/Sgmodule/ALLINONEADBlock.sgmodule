@@ -4104,6 +4104,7 @@ https:\/\/pan\.baidu\.com\/component\/view\/(1510|1130)\?(vip|from) - reject
 ^https:\/\/feed-image\.baidu\.com\/0\/pic\/ - reject
 ^http:\/\/.+\/c\/s\/(trackConfig|dashengVideo|splashSchedule) - reject
 
+
 [Header Rewrite]
 # 百度貼吧重定向（by HotKids）
 ^https?+:\/\/(?:c\.)?+tieba\.baidu\.com\/(?>f|p) header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
@@ -4112,6 +4113,7 @@ https:\/\/pan\.baidu\.com\/component\/view\/(1510|1130)\?(vip|from) - reject
 ^https?+:\/\/zhidao\.baidu\.com header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
 # 知乎網頁重定向（by HotKids）
 ^https?+:\/\/www\.zhihu\.com\/question header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
+
 
 [Script]
 BiliBili_動態去廣告 = type=http-response,requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js,pattern=^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?
