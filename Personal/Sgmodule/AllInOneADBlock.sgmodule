@@ -200,6 +200,8 @@ URL-REGEX,^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(
 USER-AGENT,AVOS*,REJECT
 
 [URL Rewrite]
+# Other
+# 優酷
 ^https?:\/\/.+?\.ott\.cibntv\.net\/[\w\/-]+.mp4\?sid= - reject
 
 # @zqzess
