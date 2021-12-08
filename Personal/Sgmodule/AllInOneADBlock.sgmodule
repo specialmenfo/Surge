@@ -22,6 +22,10 @@ DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/gf
 DOMAIN-SET,https://raw.githubusercontent.com/NobyDa/ND-AD/master/Surge/AD_Block_Plus.txt,REJECT
 
 
+# @app2smile
+RULE-SET,https://raw.githubusercontent.com/app2smile/rules/master/rule/ad.list,REJECT-DROP
+
+
 # @lbrachel
 # Twitter
 DOMAIN-SUFFIX,ads.twitter.com,REJECT
