@@ -200,6 +200,8 @@ URL-REGEX,^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(
 USER-AGENT,AVOS*,REJECT
 
 [URL Rewrite]
+^https?:\/\/.+?\.ott\.cibntv\.net\/[\w\/-]+.mp4\?sid= - reject
+
 # @zqzess
 # Google搜索重定向->*.google.com.hk ,*.g.cn,*.google.cn ,*.google.co.jp
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
