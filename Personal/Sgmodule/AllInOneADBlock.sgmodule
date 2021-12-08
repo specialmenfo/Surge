@@ -424,10 +424,6 @@ DOMAIN-SUFFIX,vortex.hulu.com,🛑 廣告攔截
 DOMAIN-SUFFIX,doubleclick.net,🛑 廣告攔截
 DOMAIN-SUFFIX,*.doubleclick.net,🛑 廣告攔截
 DOMAIN-SUFFIX,googleads.g.doubleclick.net,🛑 廣告攔截
-DOMAIN-SUFFIX,lives.l.qq.com,🛑 廣告攔截
-DOMAIN-SUFFIX,vqq.admaster.com.cn,🛑 廣告攔截
-DOMAIN,lives.l.qq.com,🛑 廣告攔截
-DOMAIN,vqq.admaster.com.cn,🛑 廣告攔截
 DOMAIN,api.cupid.dns.iqiyi.com,REJECT
 DOMAIN,video-ad.sm.cn,REJECT
 DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
@@ -708,11 +704,6 @@ URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation,REJECT-TINYGI
 URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4/(questions|anwsers)\/\d+/related-readings,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/api\.zhihu\.com\/moments\/recent,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation,REJECT-TINYGIF
-# 騰訊廣告聯盟，可能誤殺
-DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,jcollection.shuqireader.com,REJECT
-DOMAIN-SUFFIX,stats.jpush.cn,REJECT
-DOMAIN-SUFFIX,sdk.kaijiawan.com,REJECT
 # 百度輸入法
 DOMAIN-KEYWORD,jomodns,REJECT
 DOMAIN,res.mi.baidu.com,REJECT
@@ -755,12 +746,6 @@ DOMAIN-SUFFIX,pglstatp-toutiao,REJECT
 
 # 百度移動廣告聯盟
 DOMAIN-SUFFIX,mobads.baidu.com,REJECT
-
-# 騰訊廣告聯盟
-DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,jcollection.shuqireader.com,REJECT
-DOMAIN-SUFFIX,stats.jpush.cn,REJECT
-DOMAIN-SUFFIX,sdk.kaijiawan.com,REJECT
 
 # 愛奇藝
 DOMAIN,cr-status.iqiyi.com,REJECT
@@ -1066,22 +1051,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds - reject
 ^https?:\/\/d\.zhangle\.com\/pic\/cft\/interaction\/\d{13}-1242-2248\.jpg - reject
 ^https?:\/\/d\d.sinaimg.cn - reject
-^https?:\/\/.+?\/omts.tc.qq.com\/ - reject
 ^https?:\/\/.+?\/tips\/fcgi-bin\/fcg_get_advert - reject
-^https?:\/\/.+?\/variety.tc.qq.com\/ - reject
-^https?:\/\/bla\.gtimg\.com\/qqlive\/\d{6}.+?\.png - reject
-^https?:\/\/imgcache\.qq\.com\/qqlive\/ - reject
-^https?:\/\/lives\.l\.qq\.com\/livemsg\?sdtfrom= - reject
-^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qiantu\/upload\/ - reject
-^https?:\/\/mtteve\.beacon\.qq\.com\/analytics - reject
-^https?:\/\/r\.inews\.qq\.com\/adsBlacklist - reject
-^https?:\/\/r\.inews\.qq\.com\/getBannerAds - reject
-^https?:\/\/r\.inews\.qq\.com\/getFullScreenPic - reject
-^https?:\/\/r\.inews\.qq\.com\/getNewsRemoteConfig - reject
-^https?:\/\/r\.inews\.qq\.com\/getSplash\?apptype=ios&startarticleid=&__qnr= - reject
-^https?:\/\/r\.inews\.qq\.com\/searchHotCatList - reject
-^https?:\/\/r\.inews\.qq\.com\/upLoadLoc - reject
-^https?:\/\/splashqqlive\.gtimg\.com\/website\/\d{6} - reject
 ^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/ - reject
 ^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/targeted_ads - reject
 ^https?:\/\/api\.weibo\.cn\/2\/statuses\/extend\?gsid= - reject
@@ -1912,8 +1882,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/.+?\/tips\/fcgi-bin\/fcg_get_advert - reject
 ^https?:\/\/.+?\/v1\/iflyad\/ - reject
 ^https?:\/\/.+?\/v2\/app_ads\/ - reject
-^https?:\/\/.+?\/v\d\/iflyad\/ - reject
-^https?:\/\/.+?\/variety.tc.qq.com\/ - reject
+^https?:\/\/.+?\/v\d\/iflyad\/ - rejectt
 ^https?:\/\/.+?\/videos\/KnifeHit_4\/gear3\/ - reject
 ^https?:\/\/.+?\/vips-mobile\/router\.do\?api_key= - reject
 ^https?:\/\/.+?\/weico4ad\/ad\/ - reject
@@ -3439,12 +3408,9 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/211\.98\.71\.196:8080\/ - reject
 ^https?:\/\/.+?\/hls.cache.p4p\/ - reject
 ^https?:\/\/.+?\/music\/common\/upload\/t_splash_info - reject
-^https?:\/\/.+?\/omts.tc.qq.com\/ - reject
 ^https?:\/\/.+?\/tips\/fcgi-bin\/fcg_get_advert - reject
 ^https?:\/\/.+?\/variety.tc.qq.com\/ - reject
 ^https?:\/\/bla\.gtimg\.com\/qqlive\/\d{6}.+?\.png - reject
-^https?:\/\/imgcache\.qq\.com\/qqlive\/ - reject
-^https?:\/\/lives\.l\.qq\.com\/livemsg\?sdtfrom= - reject
 ^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qiantu\/upload\/ - reject
 ^https?:\/\/mtteve\.beacon\.qq\.com\/analytics - reject
 ^https?:\/\/r\.inews\.qq\.com\/adsBlacklist - reject
