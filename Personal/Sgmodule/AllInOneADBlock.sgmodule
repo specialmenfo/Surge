@@ -420,6 +420,8 @@ DOMAIN-SUFFIX,*.doubleclick.net,🛑 廣告攔截
 DOMAIN-SUFFIX,googleads.g.doubleclick.net,🛑 廣告攔截
 
 # 🛑 廣告攔截整合 List
+DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AdvertisingTest_Domain.list,🛑 廣告攔截
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingTest/AdvertisingTest.list,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/anti-AD/master/anti-ad-surge2.txt,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AD_Block_Add.txt,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/All%20In%20One/List/AD_Block_Plus.txt,🛑 廣告攔截
