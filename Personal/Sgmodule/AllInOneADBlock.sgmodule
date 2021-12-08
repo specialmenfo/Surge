@@ -1,6 +1,7 @@
 #!name= All In One 去廣告 & 直連 & GFWList
 #!desc= 🎉 此模塊以擋 App 開屏廣告&日常廣告、國內直連以及GFW List為主，遇到無法擋住開屏廣告的App，建議到App設置裡面清除一下緩存和卸載重裝！如果遇到個別 App 打不開某些鏈接或者異常的時候請關閉此模塊，需要再次用到的時候再把此模塊打開
-#!author= @Loyalsoldier @blackmatrix7 @zwf234 @app2smile @zqzess @anti-AD/blob @lbrachel @Nobyda
+#!integration = @specialmenfo
+#!transloading = @Loyalsoldier @blackmatrix7 @zwf234 @app2smile @zqzess @anti-AD/blob @lbrachel @Nobyda
 #!system=ios
 
 
