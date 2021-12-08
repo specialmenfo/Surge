@@ -17420,10 +17420,6 @@
 .yule.sohu.com
 .aiseet.aa.atianqi.com
 .aiseet.atianqi.com
-.mcgi.v.qq.com
-.mdevstat.qqlive.qq.com
-.omgmta1.qq.com
-.u.l.qq.com
 .adcontrol.tudou.com
 .adplay.tudou.com
 .goods.tudou.com
