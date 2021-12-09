@@ -633,6 +633,7 @@ DOMAIN,googleads4.g.doubleclick.net,REJECT
 
 # @Nobyda
 DOMAIN-SET,https://raw.githubusercontent.com/NobyDa/ND-AD/master/Surge/AD_Block_Plus.txt,REJECT
+DOMAIN-SET,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list,REJECT
 
 
 # @app2smile
