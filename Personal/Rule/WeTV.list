@@ -2,6 +2,12 @@
 # 走 🌍 WeTV 策略
 
 
+DOMAIN,wetvinfo.com
+DOMAIN,.wetvinfo.com
+DOMAIN,*.wetvinfo.com
+DOMAIN-SUFFIX,wetvinfo.com
+DOMAIN-SUFFIX,.wetvinfo.com
+DOMAIN-SUFFIX,*.wetvinfo.com
 DOMAIN,acc.wetvinfo.com
 DOMAIN,pbacc.wetvinfo.com
 DOMAIN-SUFFIX,acc.wetvinfo.com
