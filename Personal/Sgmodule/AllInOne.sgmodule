@@ -33,7 +33,8 @@ PROCESS-NAME,uTorrent,🎯 全球直連
 PROCESS-NAME,WebTorrent,🎯 全球直連
 RULE-SET,SYSTEM,🎯 全球直連
 FINAL,🐟 漏網之魚,status-connection timeout
-
+FINAL,🐟 漏網之魚,status-not completed
+FINAL,🐟 漏網之魚,status-failed
 
 # Other
 # @specialmenfo
