@@ -1,0 +1,8 @@
+# WeTV
+# 走 🌍 WeTV 策略
+
+
+DOMAIN,acc.wetvinfo.com
+DOMAIN,pbacc.wetvinfo.com
+DOMAIN-SUFFIX,acc.wetvinfo.com
+DOMAIN-SUFFIX,pbacc.wetvinfo.com
