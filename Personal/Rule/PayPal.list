@@ -1,0 +1,11 @@
+# PayPal
+# 走 🇺🇸 PayPal 策略
+
+DOMAIN,paypalobjects.com
+DOMAIN,.paypalobjects.com
+DOMAIN,*.paypalobjects.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,.paypalobjects.com
+DOMAIN-SUFFIX,*.paypalobjects.com
+DOMAIN,www.paypalobjects.com
+DOMAIN-SUFFIX,www.paypalobjects.com
