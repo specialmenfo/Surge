@@ -1,0 +1,13 @@
+# Lazada
+# 走 🇵🇭 Lazada 策略
+
+
+DOMAIN-SUFFIX,lazada.com.ph
+DOMAIN-SUFFIX,.lazada.com.ph
+DOMAIN-SUFFIX,.slatic.net
+DOMAIN-SUFFIX,slatic.net
+DOMAIN-SUFFIX,pages.lazada.com.ph
+DOMAIN-SUFFIX,ph-test-11.slatic.net
+DOMAIN-SUFFIX,ph-live-01.slatic.net
+DOMAIN-SUFFIX,lazada.arms.aliyuncs.com
+DOMAIN-SUFFIX,retcode-sg-lazada.arms.aliyuncs.com
