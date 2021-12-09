@@ -1,8 +1,0 @@
-# Other
-# 走 🇹🇼 台灣節點 策略
-
-DOMAIN,smtp.yandex.ru
-DOMAIN,smtp.office365.com
-DOMAIN-SUFFIX,smtp.yandex.ru
-DOMAIN-SUFFIX,smtp.office365.com
-

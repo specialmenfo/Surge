@@ -1,8 +1,0 @@
-# Discovery+ PH
-# 走 🇵🇭 Discovery+ PH 策略
-
-DOMAIN-SUFFIX,mobile-collector.newrelic.com
-DOMAIN-SUFFIX,api.getblueshift.com
-DOMAIN-SUFFIX,ap2-prod.disco-api.com
-DOMAIN-SUFFIX,int.vaicore.site
-DOMAIN-SUFFIX,dplus-ph-prod-vod.akamaized.net
