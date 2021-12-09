@@ -12,8 +12,195 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 
 
 [Rule]
+# @Loyalsoldier
+PROCESS-NAME,v2ray,🎯 全球直連
+PROCESS-NAME,xray,🎯 全球直連
+PROCESS-NAME,clash,🎯 全球直連
+PROCESS-NAME,naive,🎯 全球直連
+PROCESS-NAME,trojan,🎯 全球直連
+PROCESS-NAME,trojan-go,🎯 全球直連
+PROCESS-NAME,ss-local,🎯 全球直連
+PROCESS-NAME,privoxy,🎯 全球直連
+PROCESS-NAME,leaf,🎯 全球直連
+PROCESS-NAME,Thunder,🎯 全球直連
+PROCESS-NAME,DownloadService,🎯 全球直連
+PROCESS-NAME,qBittorrent,🎯 全球直連
+PROCESS-NAME,Transmission,🎯 全球直連
+PROCESS-NAME,fdm,🎯 全球直連
+PROCESS-NAME,aria2c,🎯 全球直連
+PROCESS-NAME,Folx,🎯 全球直連
+PROCESS-NAME,NetTransport,🎯 全球直連
+PROCESS-NAME,uTorrent,🎯 全球直連
+PROCESS-NAME,WebTorrent,🎯 全球直連
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/private.txt,🎯 全球直連
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,🛑 廣告攔截
+RULE-SET,SYSTEM,🎯 全球直連
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt,🌏 國外網站,force-remote-dns
+RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cncidr.txt,🎯 全球直連
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/gfw.txt,🌏 國外網站
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/greatfire.txt,🌏 國外網站,force-remote-dns
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/tld-not-cn.txt,🌏 國外網站,force-remote-dns
+RULE-SET,LAN,🎯 全球直連
+FINAL,🐟 漏網之魚,dns-failed
+
+
 # Other
-# 愛奇藝台灣
+DOMAIN,smtp.yandex.ru,🇹🇼 台灣節點
+DOMAIN,smtp.office365.com,🇹🇼 台灣節點
+DOMAIN-SUFFIX,smtp.yandex.ru,🇹🇼 台灣節點
+DOMAIN-SUFFIX,smtp.office365.com,🇹🇼 台灣節點
+DOMAIN,turgame.com,🇹🇷 EPIN
+DOMAIN,.turgame.com,🇹🇷 EPIN
+DOMAIN,*.turgame.com,🇹🇷 EPIN
+DOMAIN,www.turgame.com,🇹🇷 EPIN
+DOMAIN-SUFFIX,turgame.com,🇹🇷 EPIN
+DOMAIN-SUFFIX,.turgame.com,🇹🇷 EPIN
+DOMAIN-SUFFIX,*.turgame.com,🇹🇷 EPIN
+DOMAIN-SUFFIX,www.turgame.com,🇹🇷 EPIN
+RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list,🌏 國外網站
+DOMAIN-SUFFIX,linkeve.ximalaya.com,🇨🇳 喜馬拉雅
+DOMAIN-SUFFIX,xdcs-collector.ximalava.com,🇨🇳 喜馬拉雅
+DOMAIN,gamer.com.tw,📺 動畫瘋
+DOMAIN,.gamer.com.tw,📺 動畫瘋
+DOMAIN,*.gamer.com.tw,📺 動畫瘋
+DOMAIN,api.gamer.com.tw,📺 動畫瘋
+DOMAIN-SUFFIX,gamer.com.tw,📺 動畫瘋
+DOMAIN-SUFFIX,.gamer.com.tw,📺 動畫瘋
+DOMAIN-SUFFIX,*.gamer.com.tw,📺 動畫瘋
+DOMAIN-SUFFIX,api.gamer.com.tw,📺 動畫瘋
+DOMAIN,target.com,🇺🇸 Target
+DOMAIN,.target.com,🇺🇸 Target
+DOMAIN,*.target.com,🇺🇸 Target
+DOMAIN,api.target.com,🇺🇸 Target
+DOMAIN-SUFFIX,target.com,🇺🇸 Target
+DOMAIN-SUFFIX,.target.com,🇺🇸 Target
+DOMAIN-SUFFIX,*.target.com,🇺🇸 Target
+DOMAIN-SUFFIX,api.target.com,🇺🇸 Target
+DOMAIN,*img.enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN,*-img.enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN,event-img.enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,*img.enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,*-img.enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,event-img.enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN,enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN,.enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN,*.enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN,ebdsw.enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,.enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,*.enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,ebdsw.enter-pubg-new-state.com,🇰🇷 PUBG New State Mobile
+DOMAIN,newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN,.newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN,*.newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN,api.newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,.newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,*.newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,api.newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN,newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN,.newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN,*.newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN,wstatic.newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,.newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,*.newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,wstatic.newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN,pubg-ns-gate.com,🇰🇷 PUBG New State Mobile
+DOMAIN,.pubg-ns-gate.com,🇰🇷 PUBG New State Mobile
+DOMAIN,*.pubg-ns-gate.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,pubg-ns-gate.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,.pubg-ns-gate.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,*.pubg-ns-gate.com,🇰🇷 PUBG New State Mobile
+DOMAIN,country-code.pubg-ns-gate.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,country-code.pubg-ns-gate.com,🇰🇷 PUBG New State Mobile
+DOMAIN,newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,newstate.pubg.com,🇰🇷 PUBG New State Mobile
+DOMAIN,newstate.pubg.com/en,🇰🇷 PUBG New State Mobile
+DOMAIN-SUFFIX,newstate.pubg.com/en,🇰🇷 PUBG New State Mobile
+DOMAIN,paypalobjects.com,🇺🇸 PayPal
+DOMAIN,.paypalobjects.com,🇺🇸 PayPal
+DOMAIN,*.paypalobjects.com,🇺🇸 PayPal
+DOMAIN-SUFFIX,paypalobjects.com,🇺🇸 PayPal
+DOMAIN-SUFFIX,.paypalobjects.com,🇺🇸 PayPal
+DOMAIN-SUFFIX,*.paypalobjects.com,🇺🇸 PayPal
+DOMAIN,www.paypalobjects.com,🇺🇸 PayPal
+DOMAIN-SUFFIX,www.paypalobjects.com,🇺🇸 PayPal
+DOMAIN,gm.mmstat.com,🇨🇳 優酷
+DOMAIN,log.mmstat.com,🇨🇳 優酷
+DOMAIN-SUFFIX,gm.mmstat.com,🇨🇳 優酷
+DOMAIN-SUFFIX,log.mmstat.com,🇨🇳 優酷
+DOMAIN-SUFFIX,onelogin.com,🇺🇲 美國節點
+DOMAIN-SUFFIX,.onelogin.com,🇺🇲 美國節點
+DOMAIN-SUFFIX,*.onelogin.com,🇺🇲 美國節點
+DOMAIN-SUFFIX,collin.onelogin.com,🇺🇲 美國節點
+DOMAIN,onelogin.com,🇺🇲 美國節點
+DOMAIN,.onelogin.com,🇺🇲 美國節點
+DOMAIN,*.onelogin.com,🇺🇲 美國節點
+DOMAIN,collin.onelogin.com,🇺🇲 美國節點
+DOMAIN,cougarweb.collin.edu,🇺🇲 美國節點
+DOMAIN-SUFFIX,cougarweb.collin.edu,🇺🇲 美國節點
+DOMAIN,studentselfserviceapplications.collin.edu,🇺🇲 美國節點
+DOMAIN-SUFFIX,studentselfserviceapplications.collin.edu,🇺🇲 美國節點
+DOMAIN,collin.edu,🇺🇲 美國節點
+DOMAIN,.collin.edu,🇺🇲 美國節點
+DOMAIN,*.collin.edu,🇺🇲 美國節點
+DOMAIN,erie.collin.edu,🇺🇲 美國節點
+DOMAIN-SUFFIX,collin.edu,🇺🇲 美國節點
+DOMAIN-SUFFIX,.collin.edu,🇺🇲 美國節點
+DOMAIN-SUFFIX,*.collin.edu,🇺🇲 美國節點
+DOMAIN-SUFFIX,erie.collin.edu,🇺🇲 美國節點
+DOMAIN,collin.edu/studentselfservice/ssb/useragreement,🇺🇲 美國節點
+DOMAIN,.collin.edu/studentselfservice/ssb/useragreement,🇺🇲 美國節點
+DOMAIN,*.collin.edu/studentselfservice/ssb/useragreement,🇺🇲 美國節點
+DOMAIN,studentselfserviceapplications.collin.edu/studentselfservice/ssb/useragreement,🇺🇲 美國節點
+DOMAIN-SUFFIX,collin.edu/studentselfservice/ssb/useragreement,🇺🇲 美國節點
+DOMAIN-SUFFIX,.collin.edu/studentselfservice/ssb/useragreement,🇺🇲 美國節點
+DOMAIN-SUFFIX,*.collin.edu/studentselfservice/ssb/useragreement,🇺🇲 美國節點
+DOMAIN-SUFFIX,studentselfserviceapplications.collin.edu/studentselfservice/ssb/useragreement,🇺🇲 美國節點
+DOMAIN,collin.edu,🇺🇲 美國節點
+DOMAIN,.collin.edu,🇺🇲 美國節點
+DOMAIN,*.collin.edu,🇺🇲 美國節點
+DOMAIN,studentselfserviceapplications.collin.edu,🇺🇲 美國節點
+DOMAIN-SUFFIX,collin.edu,🇺🇲 美國節點
+DOMAIN-SUFFIX,.collin.edu,🇺🇲 美國節點
+DOMAIN-SUFFIX,*.collin.edu,🇺🇲 美國節點
+DOMAIN-SUFFIX,studentselfserviceapplications.collin.edu,🇺🇲 美國節點
+DOMAIN-SUFFIX,cougarweb.collin.edu/,🇺🇲 美國節點
+DOMAIN,activedirectory.windowsazure.com,🌏 國外網站
+DOMAIN,.activedirectory.windowsazure.com,🌏 國外網站
+DOMAIN,*.activedirectory.windowsazure.com,🌏 國外網站
+DOMAIN,account.activedirectory.windowsazure.com/*,🌏 國外網站
+DOMAIN,account.activedirectory.windowsazure.com/,🌏 國外網站
+DOMAIN,account.activedirectory.windowsazure.com/changepassword.aspx,🌏 國外網站
+DOMAIN-SUFFIX,activedirectory.windowsazure.com,🌏 國外網站
+DOMAIN-SUFFIX,.activedirectory.windowsazure.com,🌏 國外網站
+DOMAIN-SUFFIX,*.activedirectory.windowsazure.com,🌏 國外網站
+DOMAIN-SUFFIX,account.activedirectory.windowsazure.com/*,🌏 國外網站
+DOMAIN-SUFFIX,account.activedirectory.windowsazure.com/,🌏 國外網站
+DOMAIN-SUFFIX,account.activedirectory.windowsazure.com/changepassword.aspx,🌏 國外網站
+DOMAIN-SUFFIX,outlook.live.com/owa/,🌏 國外網站
+DOMAIN-SUFFIX,click.mail.carousell.com,🇭🇰 CarouSell
+DOMAIN,click.mail.carousell.com/*,🇭🇰 CarouSell
+DOMAIN-SUFFIX,click.mail.carousell.com/*,🇭🇰 CarouSell
+DOMAIN,click.mail.carousell.com/ls/*,🇭🇰 CarouSell
+DOMAIN-SUFFIX,click.mail.carousell.com/ls/*,🇭🇰 CarouSell
+DOMAIN,click.mail.carousell.com/ls/click?upn*,🇭🇰 CarouSell
+DOMAIN-SUFFIX,click.mail.carousell.com/ls/click?upn*,🇭🇰 CarouSell
+DOMAIN-SUFFIX,www.pinterest.com/?utm_campaign=emailconfirm,🇺🇸 Pinterest
+DOMAIN-SUFFIX,www.pinterest.com/?ues=1,🇺🇸 Pinterest
+DOMAIN-SUFFIX,stackpathdns.com,🌏 國外網站
+DOMAIN-SUFFIX,*.tunemymusic.com,🌏 國外網站
+DOMAIN-SUFFIX,.tunemymusic.com,🌏 國外網站
+DOMAIN-SUFFIX,tunemymusic.com,🌏 國外網站
+DOMAIN-SUFFIX,www.tunemymusic.com,🌏 國外網站
+DOMAIN-SUFFIX,www.tunemymusic.com/zh/,🌏 國外網站
+DOMAIN-SUFFIX,sessions.api.hbo.com,🇺🇸 HBO Max
+DOMAIN-SUFFIX,oauth.api.hbo.com,🇺🇸 HBO Max
+DOMAIN,pos.payby.me,🇹🇷 EPIN
+DOMAIN-SUFFIX,pos.payby.me,🇹🇷 EPIN
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Youku/Youku.list,🇨🇳 優酷
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Youku/Youku_Resolve.list,🇨🇳 優酷
 DOMAIN-SUFFIX,104.98.116.146,🇹🇼 愛奇藝台灣
 IP-CIDR,104.98.116.146/32,🇹🇼 愛奇藝台灣,no-resolve
 DOMAIN-SUFFIX,iqiyi*,🇹🇼 愛奇藝台灣
@@ -93,38 +280,423 @@ IP-CIDR,23.40.242.10/32,🇨🇳 愛奇藝,no-resolve
 IP-CIDR,23.53.32.88/32,🇨🇳 愛奇藝,no-resolve
 DOMAIN-SUFFIX,com.iqiyi.i18n,🇨🇳 愛奇藝
 DOMAIN-SUFFIX,com.qiyi.video,🇨🇳 愛奇藝
-
-
-# @Loyalsoldier
-PROCESS-NAME,v2ray,🎯 全球直連
-PROCESS-NAME,xray,🎯 全球直連
-PROCESS-NAME,clash,🎯 全球直連
-PROCESS-NAME,naive,🎯 全球直連
-PROCESS-NAME,trojan,🎯 全球直連
-PROCESS-NAME,trojan-go,🎯 全球直連
-PROCESS-NAME,ss-local,🎯 全球直連
-PROCESS-NAME,privoxy,🎯 全球直連
-PROCESS-NAME,leaf,🎯 全球直連
-PROCESS-NAME,Thunder,🎯 全球直連
-PROCESS-NAME,DownloadService,🎯 全球直連
-PROCESS-NAME,qBittorrent,🎯 全球直連
-PROCESS-NAME,Transmission,🎯 全球直連
-PROCESS-NAME,fdm,🎯 全球直連
-PROCESS-NAME,aria2c,🎯 全球直連
-PROCESS-NAME,Folx,🎯 全球直連
-PROCESS-NAME,NetTransport,🎯 全球直連
-PROCESS-NAME,uTorrent,🎯 全球直連
-PROCESS-NAME,WebTorrent,🎯 全球直連
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/private.txt,🎯 全球直連
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,🛑 廣告攔截
-RULE-SET,SYSTEM,🎯 全球直連
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt,🌏 國外網站,force-remote-dns
-RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cncidr.txt,🎯 全球直連
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/gfw.txt,🌏 國外網站
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/greatfire.txt,🌏 國外網站,force-remote-dns
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/tld-not-cn.txt,🌏 國外網站,force-remote-dns
-RULE-SET,LAN,🎯 全球直連
-FINAL,🐟 漏網之魚,dns-failed
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Himalaya/Himalaya.list,🇨🇳 喜馬拉雅
+RULE-SET,https://raw.githubusercontent.com/VirgilClyne/iRingo/main/RuleSet/Apple_News.list,🇺🇸 Apple News+
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppStore/AppStore.list,🇺🇸 App Store
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMail/AppleMail.list,🇺🇸 Apple Mail
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleDaily/AppleDaily.list,🇺🇸 Apple Daily
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMusic/AppleMusic.list,🇺🇸 Apple Music
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleTV/AppleTV.list,🇺🇸 Apple TV
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TestFlight/TestFlight.list,🇺🇸 Apple TestFlight
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SystemOTA/SystemOTA.list,🇺🇸 Apple OTA
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Siri/Siri.list,🇺🇸 Apple Siri
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iCloud/iCloud.list,🇺🇸 Apple iCloud
+RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Filter/Disney%2B%2B.list,🇺🇸 Disney++
+DOMAIN-SUFFIX,nssurge.com,🌏 國外網站
+DOMAIN-SUFFIX,amemv.com,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/VirgilClyne/iRingo/main/RuleSet/Apple_News.list,🇺🇸 Apple News+
+DOMAIN-SUFFIX,.amcn.com,🇺🇸 AMC+
+DOMAIN-SUFFIX,gw.cds.amcn.com,🇺🇸 AMC+
+DOMAIN-SUFFIX,dimages.cds.amcn.com,🇺🇸 AMC+
+DOMAIN-SUFFIX,carousell.com,🇭🇰 CarouSell
+DOMAIN-SUFFIX,.carousell.hk,🇭🇰 CarouSell
+DOMAIN-SUFFIX,carousell.hk,🇭🇰 CarouSell
+DOMAIN-SUFFIX,carousell.sg,🇭🇰 CarouSell
+DOMAIN-SUFFIX,.carousell.sg,🇭🇰 CarouSell
+DOMAIN-SUFFIX,www.carousell.sg,🇭🇰 CarouSell
+DOMAIN-SUFFIX,qq.com,🇨🇳 騰訊
+DOMAIN-SUFFIX,.qq.com,🇨🇳 騰訊
+DOMAIN,wspeed.qq.com,🇨🇳 騰訊
+DOMAIN-SUFFIX,wspeed.qq.com,🇨🇳 騰訊
+DOMAIN-SUFFIX,emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,plusmedia.site,🌍 EMBY
+DOMAIN-SUFFIX,mickeycloud.com,🌍 EMBY
+DOMAIN-SUFFIX,emby.mcwy.me,🌍 EMBY
+DOMAIN-SUFFIX,emby.neko.edu.rs,🌍 EMBY
+DOMAIN-SUFFIX,emby.ok.edu.hk,🌍 EMBY
+DOMAIN-SUFFIX,emby.maying.club,🌍 EMBY
+DOMAIN-SUFFIX,emby.nexitally.com,🌍 EMBY
+DOMAIN-SUFFIX,pub1.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back1.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back2.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back3.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back5.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back4.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back6.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back7.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back1.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back2.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back3.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back4.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back5.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back6.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1back7.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1jp.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1jp.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1ntt.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1sgp.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub1cf.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back1.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back2.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back3.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back4.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back5.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back6.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back7.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back1.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back2.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back3.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back4.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back5.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back6.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2back7.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2jp.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2jp.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2ntt.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2sgp.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub2cf.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back1.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back2.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back3.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back4.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back5.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back6.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back7.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back1.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back2.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back3.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back4.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back5.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back6.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3back7.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3jp.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3jp.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3ntt.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3sgp.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,pub3cf.emby.wtf,🌍 EMBY
+DOMAIN-SUFFIX,servers.xeton.dev,🌍 EMBY
+DOMAIN-SUFFIX,emby.plusmedia.site,🌍 EMBY
+DOMAIN-SUFFIX,emby-cf.plusmedia.site,🌍 EMBY
+DOMAIN-SUFFIX,movie.xeton.dev,🌍 EMBY
+DOMAIN-SUFFIX,jellyfin.xeton.dev,🌍 EMBY
+DOMAIN-SUFFIX,emby.xeton.dev,🌍 EMBY
+DOMAIN-SUFFIX,emby.cjpc.cc,🌍 EMBY
+DOMAIN-SUFFIX,sg.odysseyplus.site,🌍 EMBY
+DOMAIN-SUFFIX,cf.odysseyplus.site,🌍 EMBY
+DOMAIN-SUFFIX,sg.odysseyplus.*,🌍 EMBY
+DOMAIN-SUFFIX,cf.odysseyplus.*,🌍 EMBY
+DOMAIN-SUFFIX,analytics.plex.tv,🌍 Plex
+DOMAIN-SUFFIX,plex.tv,🌍 Plex
+DOMAIN-SUFFIX,.plex.tv,🌍 Plex
+DOMAIN-SUFFIX,pubsub.plex.tv,🌍 Plex
+DOMAIN-SUFFIX,https://beneficioslac.visa.com/s/starplus,🇦🇷 VISA-薅Star+/Disney+
+DOMAIN-SUFFIX,https://beneficioslac.visa.com/s/disney/,🇦🇷 VISA-薅Star+/Disney+
+DOMAIN-SUFFIX,beneficioslac.visa.com,🇦🇷 VISA-薅Star+/Disney+
+DOMAIN-SUFFIX,.beneficioslac.visa.com,🇦🇷 VISA-薅Star+/Disney+
+DOMAIN-SUFFIX,visa.com/s/disney/,🇦🇷 VISA-薅Star+/Disney+
+DOMAIN-SUFFIX,visa.com/s/starplus,🇦🇷 VISA-薅Star+/Disney+
+DOMAIN-SUFFIX,.visa.com/s/disney,🇦🇷 VISA-薅Star+/Disney+
+DOMAIN-SUFFIX,.visa.com/s/starplus,🇦🇷 VISA-薅Star+/Disney+
+DOMAIN-SUFFIX,afreecatv.co.kr,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,payco.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,.payco.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,bill.payco.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,.toss.im,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,toss.im,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,pay.toss.im,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,.chai.finance,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,chai.finance,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,payment.chai.finance,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,npay.settlebank.co.kr,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,settlebank.co.kr,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,cache.m.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,tokenapi.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,point.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,res.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,static.m.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,afevent2.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,videoimg.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,analysis.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,sports.img.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,esports.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,collector1.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,api.m.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,.afreecatv.co.kr,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,liveimg.afreecatv.co.kr,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,stimg.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,liveimg.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,resourcemanager.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,profile.img.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,static.file.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,item.m.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,live.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,www.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,collector1.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,vod.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,standbygw.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,.afreecatv.com,🇰🇷 AfreecaTV
+DOMAIN-SUFFIX,checkoutshopper-live.adyen.com,🇵🇭 Globe
+DOMAIN-SUFFIX,gcash.com,🇵🇭 Globe
+DOMAIN-SUFFIX,.gcash.com,🇵🇭 Globe
+DOMAIN-SUFFIX,www.gcash.com,🇵🇭 Globe
+DOMAIN-SUFFIX,.globe.com.ph,🇵🇭 Globe
+DOMAIN-SUFFIX,globe.com.ph,🇵🇭 Globe
+DOMAIN-SUFFIX,www.globe.com.ph,🇵🇭 Globe
+DOMAIN-SUFFIX,live-cortex-gw.al.ep.cloudops.globe.com.ph,🇵🇭 Globe
+DOMAIN-SUFFIX,smetrics.showtime.com,🇺🇸 ShowTime
+DOMAIN-SUFFIX,marketingcloudapis.com,🇺🇸 ShowTime
+DOMAIN-SUFFIX,mcbb326bcd8q4wr369f4zt8hw-f1.device.marketingcloudapis.com,🇺🇸 ShowTime
+DOMAIN-SUFFIX,www.showtime.com,🇺🇸 ShowTime
+DOMAIN-SUFFIX,showtime.com,🇺🇸 ShowTime
+DOMAIN-SUFFIX,pinimg.com,🇺🇸 Pinterest
+DOMAIN-SUFFIX,.surveycake.com,🇹🇼 KKBOX & KKTV
+DOMAIN-SUFFIX,surveycake.com,🇹🇼 KKBOX & KKTV
+DOMAIN-SUFFIX,www.surveycake.com,🇹🇼 KKBOX & KKTV
+DOMAIN-SUFFIX,email-messaging.com,🇹🇼 KKBOX & KKTV
+DOMAIN-SUFFIX,.email-messaging.com,🇹🇼 KKBOX & KKTV
+DOMAIN-SUFFIX,kkbox.email-messaging.com,🇹🇼 KKBOX & KKTV
+DOMAIN-SUFFIX,.epin.com.tr,🇹🇷 EPIN
+DOMAIN-SUFFIX,epin.com.tr,🇹🇷 EPIN
+DOMAIN-SUFFIX,www.epin.com.tr,🇹🇷 EPIN
+DOMAIN-SUFFIX,lazada.com.ph,🇵🇭 Lazada
+DOMAIN-SUFFIX,.lazada.com.ph,🇵🇭 Lazada
+DOMAIN-SUFFIX,.slatic.net,🇵🇭 Lazada
+DOMAIN-SUFFIX,slatic.net,🇵🇭 Lazada
+DOMAIN-SUFFIX,pages.lazada.com.ph,🇵🇭 Lazada
+DOMAIN-SUFFIX,ph-test-11.slatic.net,🇵🇭 Lazada
+DOMAIN-SUFFIX,ph-live-01.slatic.net,🇵🇭 Lazada
+DOMAIN-SUFFIX,lazada.arms.aliyuncs.com,🇵🇭 Lazada
+DOMAIN-SUFFIX,retcode-sg-lazada.arms.aliyuncs.com,🇵🇭 Lazada
+DOMAIN,minorshort.weixin.qq.com,🎯 全球直連
+DOMAIN-SUFFIX,i.tw.cx,🇦🇺 JustWatch
+DOMAIN-SUFFIX,www.justwatch.com,🇦🇺 JustWatch
+DOMAIN-SUFFIX,g.justwatch.com,🇦🇺 JustWatch
+DOMAIN-SUFFIX,userapi.justwatch.com,🇦🇺 JustWatch
+DOMAIN-SUFFIX,images.justwatch.com,🇦🇺 JustWatch
+DOMAIN-SUFFIX,justwatch.com,🇦🇺 JustWatch
+DOMAIN-SUFFIX,.justwatch.com,🇦🇺 JustWatch
+DOMAIN-SUFFIX,sentry.justwatch.com,🇦🇺 JustWatch
+DOMAIN-SUFFIX,*.xvideos.com,🌏 國外網站
+DOMAIN-SUFFIX,xvideos.com,🌏 國外網站
+DOMAIN-SUFFIX,.xvideos.com,🌏 國外網站
+DOMAIN-SUFFIX,porncvd.com/video/,🌏 國外網站
+DOMAIN-SUFFIX,porncvd.com,🌏 國外網站
+DOMAIN-SUFFIX,porncvd.com/video,🌏 國外網站
+DOMAIN-SUFFIX,www.showtimeanytime.com,🇺🇸 ShowTime
+DOMAIN-SUFFIX,showtime.penthera.com,🇺🇸 ShowTime
+DOMAIN-SUFFIX,pccw-cf-epl.akamaized.net,🇭🇰 ViuTV
+DOMAIN-SUFFIX,biliapi.net,🌍 BiliBili國際
+DOMAIN-SUFFIX,bilibili.com,🌍 BiliBili國際
+DOMAIN,upos-hz-mirrorakam.akamaized.net,🌍 BiliBili國際
+DOMAIN-KEYWORD,cn-hk-eq-bcache-,🌍 BiliBili國際
+DOMAIN-SUFFIX,.smart.com.ph,🇵🇭 Globe
+DOMAIN-SUFFIX,*.smart.com.ph,🇵🇭 Globe
+DOMAIN-SUFFIX,smart.com.ph,🇵🇭 Globe
+DOMAIN-SUFFIX,app1.smart.com.ph,🇵🇭 Globe
+DOMAIN-SUFFIX,ads-v-darwin.hulustream.com,🇺🇸 Hulu
+DOMAIN-SUFFIX,octopus.com.hk,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,.octopus.com.hk,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,*.octopus.com.hk,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,www.octopus.com.hk,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,ptfss.hk,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,.ptfss.hk,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,*.ptfss.hk,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,subsidy-app.ptfss.hk,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,octopus.queue-it.net,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,octopus-cards.com,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,.octopus-cards.com,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,*.octopus-cards.com,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,app.oepay.octopus-cards.com,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,octopuscards.com,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,.octopuscards.com,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,*.octopuscards.com,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,www.octopuscards.com,🇭🇰 Octopus 八達通
+DOMAIN-SUFFIX,tapngo.com.hk,🇭🇰 Tap & Go
+DOMAIN-SUFFIX,.tapngo.com.hk,🇭🇰 Tap & Go
+DOMAIN-SUFFIX,*.tapngo.com.hk,🇭🇰 Tap & Go
+DOMAIN-SUFFIX,wallet.tapngo.com.hk,🇭🇰 Tap & Go
+DOMAIN-SUFFIX,7mmtv.tv,🌏 國外網站
+DOMAIN-SUFFIX,miaona.org,🌏 國外網站
+DOMAIN-SUFFIX,toomics.com/*,🌏 國外網站
+DOMAIN,toomics.com/*,🌏 國外網站
+DOMAIN-SUFFIX,toomics.com/tc,🌏 國外網站
+DOMAIN-SUFFIX,toomics.info,🌏 國外網站
+DOMAIN-SUFFIX,.toomics.info,🌏 國外網站
+DOMAIN-SUFFIX,*.toomics.info,🌏 國外網站
+DOMAIN-SUFFIX,www.toomics.info,🌏 國外網站
+DOMAIN-SUFFIX,thumb-g1.toomics.info,🌏 國外網站
+DOMAIN-SUFFIX,*.myunidays.com,🇺🇸 UNIDAYS
+DOMAIN-SUFFIX,.myunidays.com,🇺🇸 UNIDAYS
+DOMAIN-SUFFIX,unidays.com,🇺🇸 UNIDAYS
+DOMAIN-SUFFIX,myunidays.com,🇺🇸 UNIDAYS
+DOMAIN-SUFFIX,ssl.kkbox.com/billing.php?state=mykkid,🇹🇼 KKBOX & KKTV
+DOMAIN-SUFFIX,trendyol.com,🇹🇷 EPIN
+DOMAIN-SUFFIX,.trendyol.com,🇹🇷 EPIN
+DOMAIN-SUFFIX,*.trendyol.com,🇹🇷 EPIN
+DOMAIN-SUFFIX,m.trendyol.com,🇹🇷 EPIN
+DOMAIN,oyunfor.com,🇹🇷 EPIN
+DOMAIN-SUFFIX,oyunfor.com,🇹🇷 EPIN
+DOMAIN,*.oyunfor.com,🇹🇷 EPIN
+DOMAIN-SUFFIX,*.oyunfor.com,🇹🇷 EPIN
+DOMAIN,.oyunfor.com,🇹🇷 EPIN
+DOMAIN-SUFFIX,.oyunfor.com,🇹🇷 EPIN
+DOMAIN,cdn.oyunfor.com,🇹🇷 EPIN
+DOMAIN-SUFFIX,cdn.oyunfor.com,🇹🇷 EPIN
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ViuTV/ViuTV.list,🇭🇰 ViuTV
+RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Viu.list,🇭🇰 Viu
+RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Star%2B%2B.list,🇺🇸 Star++
+RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Star%2B.list,🇧🇷 Star+
+RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/KKBOX%26KKTV.list,🇹🇼 KKBOX & KKTV
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/myTVSUPER/myTVSUPER.list,🇭🇰 myTVSUPER
+RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/IQ.list,🇹🇼 愛奇藝台灣
+RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/IQIYI.list,🇨🇳 愛奇藝
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iQIYI/iQIYI.list,🇨🇳 愛奇藝
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/friDay/friDay.list,🇹🇼 Friday
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/eBay/eBay.list,🇺🇸 eBay
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTubeMusic/YouTubeMusic.list,🇺🇸 YouTube Music
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list,🇺🇸 YouTube
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Yandex/Yandex.list,🇷🇺 Yandex
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Xbox/Xbox.list,🇺🇸 Xbox
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/WildRift/WildRift.list,🇺🇸 WildRift
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/WeTV/WeTV.list,🌍 WeTV
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Viki/Viki.list,🇯🇵 Viki
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Verizon/Verizon.list,🇺🇸 Yahoo
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/VK/VK.list,🇷🇺 VK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list,🇺🇸 Twitter
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitch/Twitch.list,🇺🇸 Twitch
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Tumblr/Tumblr.list,🇺🇸 Tumblr
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list,🇺🇸 TikTok
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TencentVideo/TencentVideo.list,🇨🇳 騰訊視頻
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Tencent/Tencent.list,🇨🇳 騰訊
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list,🇺🇸 Telegram
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TeamViewer/TeamViewer.list,🇺🇸 TeamViewer
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TVB/TVB.list,🇭🇰 TVB
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TIDAL/TIDAL.list,🇺🇸 Tidal
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SteamCN/SteamCN.list,🇨🇳 Steam中國
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list,🇺🇸 Steam
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Spotify/Spotify.list,🇺🇸 Spotify
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Speedtest/Speedtest.list,🇺🇸 Speedtest
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Snap/Snap.list,🇺🇸 Snap
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Sling/Sling.list,🇺🇸 Sling
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SmarTone/SmarTone.list,🇭🇰 SmarTone
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Shopee/Shopee.list,🇵🇭 蝦皮
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Rockstar/Rockstar.list,🇺🇸 Rockstar
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Riot/Riot.list,🇺🇸 Riot
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list,🇺🇸 Reddit
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Qobuz/Qobuz.list,🇺🇸 Qobuz
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PlayStation/PlayStation.list,🇯🇵 PlayStation
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Pixnet/Pixnet.list,🇹🇼 痞客邦
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Pixiv/Pixiv.list,🇯🇵 Pixiv
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Pinterest/Pinterest.list,🇺🇸 Pinterest
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Peacock/Peacock.list,🇺🇸 Peacock
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list,🇺🇸 PayPal
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ParamountPlus/ParamountPlus.list,🇺🇸 Paramount+
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PandoraTV/PandoraTV.list,🇺🇸 PandoraTV
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Pandora/Pandora.list,🇺🇸 Pandora
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PChomeTW/PChomeTW.list,🇹🇼 PChomeTW
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PCCW/PCCW.list,🇭🇰 PCCW
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Origin/Origin.list,🇺🇸 Origin
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OneDrive/OneDrive.list,🇺🇸 OneDrive
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Notion/Notion.list,🇺🇸 Notion
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Nintendo/Nintendo.list,🇯🇵 Nintendo
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/NowE/NowE.list,🇭🇰 NowE
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list,🇺🇸 Netflix
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/NetEase/NetEase.list,🇨🇳 網易
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/NaverTV/NaverTV.list,🇰🇷 NaverTV
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Naver/Naver.list,🇰🇷 Naver
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list,🇺🇸 Microsoft
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/NYTimes/NYTimes.list,🇺🇸 紐約時報
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/MOOV/MOOV.list,🇭🇰 MOOV
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/MEGA/MEGA.list,🇺🇸 MEGA
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/LineTV/LineTV.list,🇹🇼 LineTV
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Line/Line.list,🇹🇼 Line
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/LiTV/LiTV.list,🇹🇼 LiTV
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/KakaoTalk/KakaoTalk.list,🇰🇷 KakaoTalk
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/JOOX/JOOX.list,🇭🇰 JOOX
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Imgur/Imgur.list,🇺🇸 Imgur
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hulu/Hulu.list,🇺🇸 Hulu
+RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/HBO_Max.list,🇺🇸 HBO Max
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/HBOAsia/HBOAsia.list,🇹🇼 HBO Go
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Garena/Garena.list,🇹🇼 Garena
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Funshion/Funshion.list,🇺🇸 Funshion
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/FuboTV/FuboTV.list,🇺🇸 FuboTV
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/FlipBoard/FlipBoard.list,🇺🇸 FlipBoard
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list,🇺🇸 Facebook+
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Fox/Fox.list,🇺🇸 FOX+
+RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Crunchyroll.list,🇺🇸 Crunchyroll
+RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/CATCHPLAY%2B.list,🇹🇼 CATCHPLAY+
+RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Britbox.list,🇺🇸 Britbox
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Espn/Espn.list,🇺🇸 ESPN
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list,🇺🇸 EPIC
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/EA/EA.list,🇺🇸 EA
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Download/Download.list,🇨🇳 下載
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list,🇺🇸 Dropbox
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list,🇺🇸 Disney+
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list,🇺🇸 Disney+
+DOMAIN-SUFFIX,x-default-stgec.uplynk.com,🇺🇸 Discovery+
+DOMAIN-SUFFIX,content-ause2-ur-discovery1.uplynk.com,🇺🇸 Discovery+
+DOMAIN-SUFFIX,content-discovery.uplynk.com,🇺🇸 Discovery+
+DOMAIN-SUFFIX,mobile-collector.newrelic.com,🇵🇭 Discovery+ PH
+DOMAIN-SUFFIX,api.getblueshift.com,🇵🇭 Discovery+ PH
+DOMAIN-SUFFIX,ap2-prod.disco-api.com,🇵🇭 Discovery+ PH
+DOMAIN-SUFFIX,int.vaicore.site,🇵🇭 Discovery+ PH
+DOMAIN-SUFFIX,dplus-ph-prod-vod.akamaized.net,🇵🇭 Discovery+ PH
+USER-AGENT,DPlus*,🇺🇸 Discovery+
+USER-AGENT,discovery+*,🇺🇸 Discovery+
+DOMAIN-SUFFIX,disco-api.com,🇺🇸 Discovery+
+DOMAIN-SUFFIX,discoveryplus.co.uk,🇺🇸 Discovery+
+DOMAIN-SUFFIX,discoveryplus.com,🇺🇸 Discovery+
+DOMAIN-SUFFIX,discoveryplus.in,🇺🇸 Discovery+
+DOMAIN-SUFFIX,dnitv.com,🇺🇸 Discovery+
+USER-AGENT,DPlus*,🇺🇸 Discovery+
+USER-AGENT,discovery+*,🇺🇸 Discovery+
+DOMAIN-SUFFIX,disco-api.com,🇺🇸 Discovery+
+DOMAIN-SUFFIX,discoveryplus.co.uk,🇺🇸 Discovery+
+DOMAIN-SUFFIX,discoveryplus.com,🇺🇸 Discovery+
+DOMAIN-SUFFIX,discoveryplus.in,🇺🇸 Discovery+
+DOMAIN-SUFFIX,dnitv.com,🇺🇸 Discovery+
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DiscoveryPlus/DiscoveryPlus.list,🇺🇸 Discovery+
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Discord/Discord.list,🇺🇸 Discord
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DAZN/DAZN.list,🇯🇵 DAZN
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloudflare/Cloudflare.list,🇺🇸 Cloudflare
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BiliBiliIntl/BiliBiliIntl.list,🌍 BiliBili國際
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BiliBili/BiliBili.list,🇨🇳 BiliBili
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bestbuy/Bestbuy.list,🇺🇸 Bestbuy
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Amazon/Amazon.list,🇺🇸 Amazon
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/All4/All4.list,🇬🇧 All4
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/9to5/9to5.list,🌏 國外網站
+DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMax/GlobalMax_Domain.list,🌏 國外網站
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMax/GlobalMax.list,🌏 國外網站
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMax/GlobalMax_Resolve.list,🌏 國外網站
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax_Resolve.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax_Domain.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPsBGP/ChinaIPsBGP_Resolve.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPsBGP/ChinaIPsBGP.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs_Resolve.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China_Resolve.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list,🇺🇸 GitHub
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list,🇺🇸 Google
+RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/NetEaseMusic/NetEaseMusic.list,🎶 網易雲音樂
+RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Bahamut.list,📺 動畫瘋
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list,📺 動畫瘋
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list,🌏 國內媒體
+RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list,🎯 全球直連
+GEOIP,CN,🎯 全球直連
+FINAL,🐟 漏網之魚
 
 
 # @Nobyda
