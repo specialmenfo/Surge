@@ -1,0 +1,8 @@
+# Other
+# @specialmenfo
+
+DOMAIN,smtp.yandex.ru
+DOMAIN,smtp.office365.com
+DOMAIN-SUFFIX,smtp.yandex.ru
+DOMAIN-SUFFIX,smtp.office365.com
+
