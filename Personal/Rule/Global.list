@@ -1,6 +1,12 @@
 # 國外網站
 # 走 🌏 國外網站 策略
 
+DOMAIN-SUFFIX,stackpathdns.com
+DOMAIN-SUFFIX,*.tunemymusic.com
+DOMAIN-SUFFIX,.tunemymusic.com
+DOMAIN-SUFFIX,tunemymusic.com
+DOMAIN-SUFFIX,www.tunemymusic.com
+DOMAIN-SUFFIX,www.tunemymusic.com/zh/
 DOMAIN-SUFFIX,nssurge.com
 DOMAIN-SUFFIX,*.xvideos.com
 DOMAIN-SUFFIX,xvideos.com
