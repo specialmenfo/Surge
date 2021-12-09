@@ -13,9 +13,36 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 
 [Rule]
 # @Loyalsoldier
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,REJECT
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cncidr.txt,🎯 全球直連
+PROCESS-NAME,v2ray,🎯 全球直連
+PROCESS-NAME,xray,🎯 全球直連
+PROCESS-NAME,clash,🎯 全球直連
+PROCESS-NAME,naive,🎯 全球直連
+PROCESS-NAME,trojan,🎯 全球直連
+PROCESS-NAME,trojan-go,🎯 全球直連
+PROCESS-NAME,ss-local,🎯 全球直連
+PROCESS-NAME,privoxy,🎯 全球直連
+PROCESS-NAME,leaf,🎯 全球直連
+PROCESS-NAME,Thunder,🎯 全球直連
+PROCESS-NAME,DownloadService,🎯 全球直連
+PROCESS-NAME,qBittorrent,🎯 全球直連
+PROCESS-NAME,Transmission,🎯 全球直連
+PROCESS-NAME,fdm,🎯 全球直連
+PROCESS-NAME,aria2c,🎯 全球直連
+PROCESS-NAME,Folx,🎯 全球直連
+PROCESS-NAME,NetTransport,🎯 全球直連
+PROCESS-NAME,uTorrent,🎯 全球直連
+PROCESS-NAME,WebTorrent,🎯 全球直連
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/private.txt,🎯 全球直連
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,🛑 廣告攔截
+RULE-SET,SYSTEM,🎯 全球直連
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt,🌏 國外網站,force-remote-dns
+RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt,🇺🇸 Telegram
+RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cncidr.txt,🎯 全球直連
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/gfw.txt,🌏 國外網站
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/greatfire.txt,🌏 國外網站,force-remote-dns
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/tld-not-cn.txt,🌏 國外網站,force-remote-dns
+RULE-SET,LAN,🎯 全球直連
+FINAL,🌏 國外網站,dns-failed
 
 
 # @Nobyda
