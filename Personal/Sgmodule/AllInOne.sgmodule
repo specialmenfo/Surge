@@ -14,6 +14,7 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 [Rule]
 # Other
 # @specialmenfo
+DOMAIN-SUFFIX,googleads.g.doubleclick.net,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/AMCPlus.list,🇺🇸 AMC+
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/AfreecaTV.list,🇰🇷 AfreecaTV
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/BiliBiliGlobal.list,🌍 BiliBili國際
