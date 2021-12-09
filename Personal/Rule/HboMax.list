@@ -1,0 +1,5 @@
+# HBO Max
+# 走 🇺🇸 HBO Max 策略
+
+DOMAIN-SUFFIX,sessions.api.hbo.com
+DOMAIN-SUFFIX,oauth.api.hbo.com
