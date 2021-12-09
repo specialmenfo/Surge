@@ -12,6 +12,29 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 
 
 [Rule]
+PROCESS-NAME,v2ray,🎯 全球直連
+PROCESS-NAME,xray,🎯 全球直連
+PROCESS-NAME,clash,🎯 全球直連
+PROCESS-NAME,naive,🎯 全球直連
+PROCESS-NAME,trojan,🎯 全球直連
+PROCESS-NAME,trojan-go,🎯 全球直連
+PROCESS-NAME,ss-local,🎯 全球直連
+PROCESS-NAME,privoxy,🎯 全球直連
+PROCESS-NAME,leaf,🎯 全球直連
+PROCESS-NAME,Thunder,🎯 全球直連
+PROCESS-NAME,DownloadService,🎯 全球直連
+PROCESS-NAME,qBittorrent,🎯 全球直連
+PROCESS-NAME,Transmission,🎯 全球直連
+PROCESS-NAME,fdm,🎯 全球直連
+PROCESS-NAME,aria2c,🎯 全球直連
+PROCESS-NAME,Folx,🎯 全球直連
+PROCESS-NAME,NetTransport,🎯 全球直連
+PROCESS-NAME,uTorrent,🎯 全球直連
+PROCESS-NAME,WebTorrent,🎯 全球直連
+RULE-SET,SYSTEM,🎯 全球直連
+FINAL,🐟 漏網之魚,dns-failed
+
+
 # Other
 # @specialmenfo
 DOMAIN-SUFFIX,googleads.g.doubleclick.net,🛑 廣告攔截
