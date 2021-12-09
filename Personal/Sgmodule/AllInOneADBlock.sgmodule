@@ -12,6 +12,14 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 
 
 [Rule]
+# Other
+# 愛奇藝台灣
+IP-CIDR,111.202.75.227/32,🇹🇼 愛奇藝台灣 // Added for: 111.202.75.227:80 (http://111.202.75.227/api/v1/login)
+IP-CIDR,110.238.107.47/32,🇹🇼 愛奇藝台灣 // Added for: 110.238.107.47:80 (http://110.238.107.47/evt)
+DOMAIN,i.vip.iq.com,🇹🇼 愛奇藝台灣
+DOMAIN-SUFFIX,i.vip.iq.com,🇹🇼 愛奇藝台灣
+
+
 # @Loyalsoldier
 PROCESS-NAME,v2ray,🎯 全球直連
 PROCESS-NAME,xray,🎯 全球直連
