@@ -14,6 +14,41 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 [Rule]
 # Other
 # @specialmenfo
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/AMCPlus.list,🇺🇸 AMC+
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/AfreecaTV.list,🇰🇷 AfreecaTV
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/BiliBiliGlobal.list,🌍 BiliBili國際
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Carousell.list,🇭🇰 Carousell
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/DIRECT.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/DiscoveryPlus.list,🇺🇸 Discovery+
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/DiscoveryPlusPH.list,🇵🇭 Discovery+ PH
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/EMBY.list,🌍 EMBY
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/EPIN.list,🇹🇷 EPIN
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Global.list,🌏 國外網站
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Globe.list,🇵🇭 Globe
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/HboMax.list,🇺🇸 HBO Max
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Hulu.list,🇺🇸 Hulu
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Justwatch.list,🇦🇺 JustWatch
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/KKTV%26KKBox.list,🇹🇼 KKBOX & KKTV
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Lazada.list,🇵🇭 Lazada
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Octopus.list,🇭🇰 Octopus 八達通
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/PUBGNewStateMobile.list,🇰🇷 PUBG New State Mobile
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/PayPal.list,🇺🇸 PayPal
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Pinterest.list,🇺🇸 Pinterest
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Plex.list,🌍 Plex
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/ShowTime.list,🇺🇸 ShowTime
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/TaiwanIP.list,🇹🇼 台灣節點
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Tap%26Go.list,🇭🇰 Tap & Go
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Target.list,🇺🇸 Target
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Tencent.list,🇨🇳 騰訊
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/UNIDAYS.list,🇺🇸 UNIDAYS
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/USIP.list,🇺🇸 美國節點
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/ViuTV.list,🇭🇰 ViuTV
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/YangMao.list,🇦🇷 VISA-薅Star+/Disney+
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Youku.list,🇨🇳 優酷
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/donghuafeng.list,📺 動畫瘋
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/iQiYi.list,🇨🇳 愛奇藝
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/iQiYiTW.list,🇹🇼 愛奇藝台灣
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/ximalaya.list,🇨🇳 喜馬拉雅
 
 
 # @blackmatrix7 @VirgilClyne @HotKids @ACL4SSR @DivineEngine
