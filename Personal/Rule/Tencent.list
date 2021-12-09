@@ -1,0 +1,8 @@
+# 騰訊
+# 走 🇨🇳 騰訊 策略
+
+
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,.qq.com
+DOMAIN,wspeed.qq.com
+DOMAIN-SUFFIX,wspeed.qq.com
