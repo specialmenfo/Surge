@@ -898,7 +898,8 @@ RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download
 # Other
 # 優酷
 ^https?:\/\/.+?\.ott\.cibntv\.net\/[\w\/-]+.mp4\?sid= - reject
-
+# 抖音
+^https?:\/\/api.*\.amemv\.com\/aweme\/v\d\/ https://aweme.snssdk.com/aweme/v1/ header
 
 # @zqzess
 # Google搜索重定向->*.google.com.hk ,*.g.cn,*.google.cn ,*.google.co.jp
