@@ -1,0 +1,7 @@
+# 優酷
+# 走 🇨🇳 優酷 策略
+
+DOMAIN,gm.mmstat.com
+DOMAIN,log.mmstat.com
+DOMAIN-SUFFIX,gm.mmstat.com
+DOMAIN-SUFFIX,log.mmstat.com
