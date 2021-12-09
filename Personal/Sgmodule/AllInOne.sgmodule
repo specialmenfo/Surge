@@ -102,7 +102,191 @@ IP-CIDR,23.53.32.88/32,🇨🇳 愛奇藝,no-resolve
 DOMAIN-SUFFIX,com.iqiyi.i18n,🇨🇳 愛奇藝
 DOMAIN-SUFFIX,com.qiyi.video,🇨🇳 愛奇藝
 
+
+# @Nobyda
+DOMAIN-SET,https://raw.githubusercontent.com/NobyDa/ND-AD/master/Surge/AD_Block_Plus.txt,REJECT
+
+
+# @app2smile
+RULE-SET,https://raw.githubusercontent.com/app2smile/rules/master/rule/ad.list,REJECT-DROP
+
+
+# @blackmatrix7
+DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking.list,REJECT
+DOMAIN,118.89.204.198,REJECT
+DOMAIN,api.cupid.dns.iqiyi.com,REJECT
+DOMAIN,appcloud2.in.zhihu.com,REJECT
+DOMAIN,mqtt.zhihu.com,REJECT
+DOMAIN,sugar.zhihu.com,REJECT
+DOMAIN,video-ad.sm.cn,REJECT
+DOMAIN-SUFFIX,cm.bilibili.com,REJECT
+DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
+IP-CIDR,118.89.204.198/32,REJECT,no-resolve
+IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
+URL-REGEX,^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\?,REJECT
+URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
+URL-REGEX,^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\?,REJECT
+URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash,REJECT
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations,REJECT
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?,REJECT
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(preload-topstory|preload-search|preload-subscription),REJECT
+USER-AGENT,AVOS*,REJECT
+
+
+# @lbrachel
+# Twitter
+DOMAIN-SUFFIX,ads.twitter.com,REJECT
+DOMAIN-SUFFIX,ads-twitter.com,REJECT
+DOMAIN-SUFFIX,analytics.twitter.com,REJECT
+DOMAIN-SUFFIX,p.twitter.com,REJECT
+DOMAIN-SUFFIX,scribe.twitter.com,REJECT
+DOMAIN-SUFFIX,syndication.twitter.com,REJECT
+DOMAIN-SUFFIX,syndication-o.twitter.com,REJECT
+DOMAIN-SUFFIX,urls.api.twitter.com,REJECT
+
+# 優酷
+DOMAIN-SUFFIX,actives.youku.com,REJECT
+DOMAIN-SUFFIX,ad.api.3g.youku.com,REJECT
+DOMAIN-SUFFIX,ad.api.mobile.youku.com,REJECT
+DOMAIN-SUFFIX,ad.mobile.youku.com,REJECT
+DOMAIN-SUFFIX,a-dxk.play.api.3g.youku.com,REJECT
+DOMAIN-SUFFIX,atm.youku.com,REJECT
+DOMAIN-SUFFIX,b.smartvideo.youku.com,REJECT
+DOMAIN-SUFFIX,c.yes.youku.com,REJECT
+DOMAIN-SUFFIX,das.api.youku.com,REJECT
+DOMAIN-SUFFIX,das.mobile.youku.com,REJECT
+DOMAIN-SUFFIX,dev-push.m.youku.com,REJECT
+DOMAIN-SUFFIX,dl.g.youku.com,REJECT
+DOMAIN-SUFFIX,dmapp.youku.com,REJECT
+DOMAIN-SUFFIX,e.stat.ykimg.com,REJECT
+DOMAIN-SUFFIX,gamex.mobile.youku.com,REJECT
+DOMAIN-SUFFIX,guanggaoad.youku.com,REJECT
+DOMAIN-SUFFIX,hudong.pl.youku.com,REJECT
+DOMAIN-SUFFIX,huodong.pl.youku.com,REJECT
+DOMAIN-SUFFIX,huodong.vip.youku.com,REJECT
+DOMAIN-SUFFIX,hz.youku.com,REJECT
+DOMAIN-SUFFIX,iyes.youku.com,REJECT
+DOMAIN-SUFFIX,l.ykimg.com,REJECT
+DOMAIN-SUFFIX,lstat.youku.com,REJECT
+DOMAIN-SUFFIX,mobilemsg.youku.com,REJECT
+DOMAIN-SUFFIX,msg.youku.com,REJECT
+DOMAIN-SUFFIX,myes.youku.com,REJECT
+DOMAIN-SUFFIX,p.l.youku.com,REJECT
+DOMAIN-SUFFIX,pl.youku.com,REJECT
+DOMAIN-SUFFIX,passport-log.youku.com,REJECT
+DOMAIN-SUFFIX,p-log.ykimg.com,REJECT
+DOMAIN-SUFFIX,push.m.youku.com,REJECT
+DOMAIN-SUFFIX,r.l.youku.com,REJECT
+DOMAIN-SUFFIX,s.p.youku.com,REJECT
+DOMAIN-SUFFIX,sdk.m.youku.com,REJECT
+DOMAIN-SUFFIX,stat.youku.com,REJECT
+DOMAIN-SUFFIX,statis.api.3g.youku.com,REJECT
+DOMAIN-SUFFIX,store.tv.api.3g.youku.com,REJECT
+DOMAIN-SUFFIX,store.xl.api.3g.youku.com,REJECT
+DOMAIN-SUFFIX,tdrec.youku.com,REJECT
+DOMAIN-SUFFIX,test.ott.youku.com,REJECT
+DOMAIN-SUFFIX,test.sdk.m.youku.com,REJECT
+DOMAIN-SUFFIX,v.l.youku.com,REJECT
+DOMAIN-SUFFIX,val.api.youku.com,REJECT
+DOMAIN-SUFFIX,vali.cp31.ott.cibntv.net,REJECT
+DOMAIN-SUFFIX,wan.youku.com,REJECT
+DOMAIN-SUFFIX,ykatr.youku.com,REJECT
+DOMAIN-SUFFIX,ykrec.youku.com,REJECT
+IP-CIDR,117.177.248.17/32,REJECT,no-resolve
+IP-CIDR,117.177.248.41/32,REJECT,no-resolve
+IP-CIDR,223.87.176.139/32,REJECT,no-resolve
+IP-CIDR,223.87.176.176/32,REJECT,no-resolve
+IP-CIDR,223.87.177.180/32,REJECT,no-resolve
+IP-CIDR,223.87.177.182/32,REJECT,no-resolve
+IP-CIDR,223.87.177.184/32,REJECT,no-resolve
+IP-CIDR,223.87.177.43/32,REJECT,no-resolve
+IP-CIDR,223.87.177.47/32,REJECT,no-resolve
+IP-CIDR,223.87.177.80/32,REJECT,no-resolve
+IP-CIDR,223.87.182.101/32,REJECT,no-resolve
+IP-CIDR,223.87.182.102/32,REJECT,no-resolve
+IP-CIDR,223.87.182.11/32,REJECT,no-resolve
+IP-CIDR,223.87.182.52/32,REJECT,no-resolve
+
+
+# @zqzess
+# 有兔閱讀
+DOMAIN,app.zhoudamozi.com,DIRECT
+DOMAIN-SUFFIX,youzibank.com,DIRECT
+DOMAIN-SUFFIX,mituyuedu.com,DIRECT
+DOMAIN,img.allahall.com,DIRECT
+DOMAIN,img.dailmo.com,DIRECT
+DOMAIN,activation.crossutility.com,DIRECT
+
+# 書旗廣告域名,這廣告實在太多了，可能誤殺，不認識的全禁止了
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,xwuad.com,REJECT
+DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com,REJECT
+DOMAIN-SUFFIX,render.shuqireader.com,REJECT
+DOMAIN-SUFFIX,ali-stats.jpush.cn,REJECT
+DOMAIN-SUFFIX,toblog.ctobsnssdk.com,REJECT
+DOMAIN-SUFFIX,sdk.kaijia.com,REJECT
+DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com,REJECT
+DOMAIN-SUFFIX,amdc.m.taobao.com,REJECT
+DOMAIN-SUFFIX,iyes.youku.com,REJECT
+DOMAIN-SUFFIX,sq.sljkj.com,REJECT
+DOMAIN-SUFFIX,s2s.adjust.com,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao,REJECT
+
+# 百度移動廣告聯盟，可能誤殺
+DOMAIN-SUFFIX,mobads.baidu.com,REJECT
+
+# 騰訊廣告聯盟，可能誤殺
+DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
+DOMAIN-SUFFIX,jcollection.shuqireader.com,REJECT
+DOMAIN-SUFFIX,stats.jpush.cn,REJECT
+DOMAIN-SUFFIX,sdk.kaijiawan.com,REJECT
+
+# 愛奇藝
+DOMAIN,cr-status.iqiyi.com,REJECT
+DOMAIN,f74f7f7765f8a2f6.ngaa.net.cn,REJECT
+DOMAIN,ef-dongfeng.tanx.com,REJECT
+DOMAIN,iqiyim.adtrack.enlightent.cn,REJECT
+DOMAIN,t7z.cupid.iqiyi.com,DIRECT
+DOMAIN,paopao-monitor.iqiyi.com,REJECT
+DOMAIN,puma-api.iqiyi.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,upqzfile.com,REJECT
+DOMAIN,mbdlog.iqiyi.com,REJECT
+DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
+DOMAIN,myg.qy.net,REJECT
+DOMAIN,www.qchannel01.cn,REJECT
+DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT
+DOMAIN,show.ssports.com,REJECT
+DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
+
+#米讀
+URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/advert\/getPopup$,REJECT
+URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/advert\/treasureInfo$,REJECT
+URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/config\/getAds$,REJECT
+DOMAIN,bid.adview.cn,REJECT
+
+# 京東開屏廣告屏蔽
+URL-REGEX,https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
+
+# 優酷去片頭廣告(by Choler)
+# force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
+URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
+
+# 高德地圖
+DOMAIN,optimus-ads.amap.com,REJECT
+
+# backiee
+URL-REGEX,^https:\/\/www\.google\.com\.hk\/ads,REJECT
+DOMAIN,stats.g.doubleclick.net,REJECT
+DOMAIN,pagead2.googlesyndication.com,REJECT
+DOMAIN,googleads.g.doubleclick.net,REJECT
+DOMAIN,app-measurement.com,REJECT
+DOMAIN,ade.googlesyndication.com,REJECT
+DOMAIN,googleads4.g.doubleclick.net,REJECT
+
+
 # List
+# @specialmenfo
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/AMCPlus.list,🇺🇸 AMC+
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/AfreecaTV.list,🇰🇷 AfreecaTV
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/BiliBiliGlobal.list,🌍 BiliBili國際
@@ -287,188 +471,6 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list,🎯 全球直連
 RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list,🎯 全球直連
 RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list,🎯 全球直連
-
-
-# @Nobyda
-DOMAIN-SET,https://raw.githubusercontent.com/NobyDa/ND-AD/master/Surge/AD_Block_Plus.txt,REJECT
-
-
-# @app2smile
-RULE-SET,https://raw.githubusercontent.com/app2smile/rules/master/rule/ad.list,REJECT-DROP
-
-
-# @blackmatrix7
-DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking.list,REJECT
-DOMAIN,118.89.204.198,REJECT
-DOMAIN,api.cupid.dns.iqiyi.com,REJECT
-DOMAIN,appcloud2.in.zhihu.com,REJECT
-DOMAIN,mqtt.zhihu.com,REJECT
-DOMAIN,sugar.zhihu.com,REJECT
-DOMAIN,video-ad.sm.cn,REJECT
-DOMAIN-SUFFIX,cm.bilibili.com,REJECT
-DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
-IP-CIDR,118.89.204.198/32,REJECT,no-resolve
-IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
-URL-REGEX,^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\?,REJECT
-URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
-URL-REGEX,^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\?,REJECT
-URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash,REJECT
-URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations,REJECT
-URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?,REJECT
-URL-REGEX,^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(preload-topstory|preload-search|preload-subscription),REJECT
-USER-AGENT,AVOS*,REJECT
-
-
-# @lbrachel
-# Twitter
-DOMAIN-SUFFIX,ads.twitter.com,REJECT
-DOMAIN-SUFFIX,ads-twitter.com,REJECT
-DOMAIN-SUFFIX,analytics.twitter.com,REJECT
-DOMAIN-SUFFIX,p.twitter.com,REJECT
-DOMAIN-SUFFIX,scribe.twitter.com,REJECT
-DOMAIN-SUFFIX,syndication.twitter.com,REJECT
-DOMAIN-SUFFIX,syndication-o.twitter.com,REJECT
-DOMAIN-SUFFIX,urls.api.twitter.com,REJECT
-
-# 優酷
-DOMAIN-SUFFIX,actives.youku.com,REJECT
-DOMAIN-SUFFIX,ad.api.3g.youku.com,REJECT
-DOMAIN-SUFFIX,ad.api.mobile.youku.com,REJECT
-DOMAIN-SUFFIX,ad.mobile.youku.com,REJECT
-DOMAIN-SUFFIX,a-dxk.play.api.3g.youku.com,REJECT
-DOMAIN-SUFFIX,atm.youku.com,REJECT
-DOMAIN-SUFFIX,b.smartvideo.youku.com,REJECT
-DOMAIN-SUFFIX,c.yes.youku.com,REJECT
-DOMAIN-SUFFIX,das.api.youku.com,REJECT
-DOMAIN-SUFFIX,das.mobile.youku.com,REJECT
-DOMAIN-SUFFIX,dev-push.m.youku.com,REJECT
-DOMAIN-SUFFIX,dl.g.youku.com,REJECT
-DOMAIN-SUFFIX,dmapp.youku.com,REJECT
-DOMAIN-SUFFIX,e.stat.ykimg.com,REJECT
-DOMAIN-SUFFIX,gamex.mobile.youku.com,REJECT
-DOMAIN-SUFFIX,guanggaoad.youku.com,REJECT
-DOMAIN-SUFFIX,hudong.pl.youku.com,REJECT
-DOMAIN-SUFFIX,huodong.pl.youku.com,REJECT
-DOMAIN-SUFFIX,huodong.vip.youku.com,REJECT
-DOMAIN-SUFFIX,hz.youku.com,REJECT
-DOMAIN-SUFFIX,iyes.youku.com,REJECT
-DOMAIN-SUFFIX,l.ykimg.com,REJECT
-DOMAIN-SUFFIX,lstat.youku.com,REJECT
-DOMAIN-SUFFIX,mobilemsg.youku.com,REJECT
-DOMAIN-SUFFIX,msg.youku.com,REJECT
-DOMAIN-SUFFIX,myes.youku.com,REJECT
-DOMAIN-SUFFIX,p.l.youku.com,REJECT
-DOMAIN-SUFFIX,pl.youku.com,REJECT
-DOMAIN-SUFFIX,passport-log.youku.com,REJECT
-DOMAIN-SUFFIX,p-log.ykimg.com,REJECT
-DOMAIN-SUFFIX,push.m.youku.com,REJECT
-DOMAIN-SUFFIX,r.l.youku.com,REJECT
-DOMAIN-SUFFIX,s.p.youku.com,REJECT
-DOMAIN-SUFFIX,sdk.m.youku.com,REJECT
-DOMAIN-SUFFIX,stat.youku.com,REJECT
-DOMAIN-SUFFIX,statis.api.3g.youku.com,REJECT
-DOMAIN-SUFFIX,store.tv.api.3g.youku.com,REJECT
-DOMAIN-SUFFIX,store.xl.api.3g.youku.com,REJECT
-DOMAIN-SUFFIX,tdrec.youku.com,REJECT
-DOMAIN-SUFFIX,test.ott.youku.com,REJECT
-DOMAIN-SUFFIX,test.sdk.m.youku.com,REJECT
-DOMAIN-SUFFIX,v.l.youku.com,REJECT
-DOMAIN-SUFFIX,val.api.youku.com,REJECT
-DOMAIN-SUFFIX,vali.cp31.ott.cibntv.net,REJECT
-DOMAIN-SUFFIX,wan.youku.com,REJECT
-DOMAIN-SUFFIX,ykatr.youku.com,REJECT
-DOMAIN-SUFFIX,ykrec.youku.com,REJECT
-IP-CIDR,117.177.248.17/32,REJECT,no-resolve
-IP-CIDR,117.177.248.41/32,REJECT,no-resolve
-IP-CIDR,223.87.176.139/32,REJECT,no-resolve
-IP-CIDR,223.87.176.176/32,REJECT,no-resolve
-IP-CIDR,223.87.177.180/32,REJECT,no-resolve
-IP-CIDR,223.87.177.182/32,REJECT,no-resolve
-IP-CIDR,223.87.177.184/32,REJECT,no-resolve
-IP-CIDR,223.87.177.43/32,REJECT,no-resolve
-IP-CIDR,223.87.177.47/32,REJECT,no-resolve
-IP-CIDR,223.87.177.80/32,REJECT,no-resolve
-IP-CIDR,223.87.182.101/32,REJECT,no-resolve
-IP-CIDR,223.87.182.102/32,REJECT,no-resolve
-IP-CIDR,223.87.182.11/32,REJECT,no-resolve
-IP-CIDR,223.87.182.52/32,REJECT,no-resolve
-
-
-# @zqzess
-# 有兔閱讀
-DOMAIN,app.zhoudamozi.com,DIRECT
-DOMAIN-SUFFIX,youzibank.com,DIRECT
-DOMAIN-SUFFIX,mituyuedu.com,DIRECT
-DOMAIN,img.allahall.com,DIRECT
-DOMAIN,img.dailmo.com,DIRECT
-DOMAIN,activation.crossutility.com,DIRECT
-
-# 書旗廣告域名,這廣告實在太多了，可能誤殺，不認識的全禁止了
-DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
-DOMAIN-SUFFIX,xwuad.com,REJECT
-DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com,REJECT
-DOMAIN-SUFFIX,render.shuqireader.com,REJECT
-DOMAIN-SUFFIX,ali-stats.jpush.cn,REJECT
-DOMAIN-SUFFIX,toblog.ctobsnssdk.com,REJECT
-DOMAIN-SUFFIX,sdk.kaijia.com,REJECT
-DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com,REJECT
-DOMAIN-SUFFIX,amdc.m.taobao.com,REJECT
-DOMAIN-SUFFIX,iyes.youku.com,REJECT
-DOMAIN-SUFFIX,sq.sljkj.com,REJECT
-DOMAIN-SUFFIX,s2s.adjust.com,REJECT
-DOMAIN-SUFFIX,pglstatp-toutiao,REJECT
-
-# 百度移動廣告聯盟，可能誤殺
-DOMAIN-SUFFIX,mobads.baidu.com,REJECT
-
-# 騰訊廣告聯盟，可能誤殺
-DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,jcollection.shuqireader.com,REJECT
-DOMAIN-SUFFIX,stats.jpush.cn,REJECT
-DOMAIN-SUFFIX,sdk.kaijiawan.com,REJECT
-
-# 愛奇藝
-DOMAIN,cr-status.iqiyi.com,REJECT
-DOMAIN,f74f7f7765f8a2f6.ngaa.net.cn,REJECT
-DOMAIN,ef-dongfeng.tanx.com,REJECT
-DOMAIN,iqiyim.adtrack.enlightent.cn,REJECT
-DOMAIN,t7z.cupid.iqiyi.com,DIRECT
-DOMAIN,paopao-monitor.iqiyi.com,REJECT
-DOMAIN,puma-api.iqiyi.com,REJECT
-DOMAIN-SUFFIX,gdt.qq.com,REJECT
-DOMAIN-SUFFIX,upqzfile.com,REJECT
-DOMAIN,mbdlog.iqiyi.com,REJECT
-DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
-DOMAIN,myg.qy.net,REJECT
-DOMAIN,www.qchannel01.cn,REJECT
-DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT
-DOMAIN,show.ssports.com,REJECT
-DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
-
-#米讀
-URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/advert\/getPopup$,REJECT
-URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/advert\/treasureInfo$,REJECT
-URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/config\/getAds$,REJECT
-DOMAIN,bid.adview.cn,REJECT
-
-# 京東開屏廣告屏蔽
-URL-REGEX,https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
-
-# 優酷去片頭廣告(by Choler)
-# force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
-URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
-
-# 高德地圖
-DOMAIN,optimus-ads.amap.com,REJECT
-
-# backiee
-URL-REGEX,^https:\/\/www\.google\.com\.hk\/ads,REJECT
-DOMAIN,stats.g.doubleclick.net,REJECT
-DOMAIN,pagead2.googlesyndication.com,REJECT
-DOMAIN,googleads.g.doubleclick.net,REJECT
-DOMAIN,app-measurement.com,REJECT
-DOMAIN,ade.googlesyndication.com,REJECT
-DOMAIN,googleads4.g.doubleclick.net,REJECT
 
 
 
