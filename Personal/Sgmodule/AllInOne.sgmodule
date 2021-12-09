@@ -1,7 +1,7 @@
 #!name= All In One
 #!desc= 🎉 All In One 去廣告 & 直連 & Rule，此模塊以擋 App 開屏廣告&日常廣告、國內直連以及GFW List為主，遇到無法擋住開屏廣告的App，建議到App設置裡面清除一下緩存和卸載重裝！
 #!integration = @specialmenfo
-#!transloading = @Loyalsoldier @blackmatrix7 @zwf234 @app2smile @zqzess @anti-AD/blob @lbrachel @Nobyda @VirgilClyne @HotKids @ACL4SSR @DivineEngine
+#!transloading = @Loyalsoldier @blackmatrix7 @zwf234 @app2smile @zqzess @anti-AD/blob @lbrachel @Nobyda @VirgilClyne @HotKids @ACL4SSR @DivineEngine @mangoclover
 #!system=ios
 
 
@@ -554,6 +554,83 @@ DOMAIN-SUFFIX,discoveryplus.in,🇺🇸 Discovery+
 DOMAIN-SUFFIX,dnitv.com,🇺🇸 Discovery+
 
 
+# @zqzess
+# 愛奇藝
+DOMAIN,cr-status.iqiyi.com,REJECT
+DOMAIN,f74f7f7765f8a2f6.ngaa.net.cn,REJECT
+DOMAIN,ef-dongfeng.tanx.com,REJECT
+DOMAIN,iqiyim.adtrack.enlightent.cn,REJECT
+DOMAIN,t7z.cupid.iqiyi.com,DIRECT
+DOMAIN,paopao-monitor.iqiyi.com,REJECT
+DOMAIN,puma-api.iqiyi.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,upqzfile.com,REJECT
+DOMAIN,mbdlog.iqiyi.com,REJECT
+DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
+DOMAIN,myg.qy.net,REJECT
+DOMAIN,www.qchannel01.cn,REJECT
+DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT
+DOMAIN,show.ssports.com,REJECT
+DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
+
+# 有兔閱讀
+DOMAIN,app.zhoudamozi.com,DIRECT
+DOMAIN-SUFFIX,youzibank.com,DIRECT
+DOMAIN-SUFFIX,mituyuedu.com,DIRECT
+DOMAIN,img.allahall.com,DIRECT
+DOMAIN,img.dailmo.com,DIRECT
+DOMAIN,activation.crossutility.com,DIRECT
+
+# 書旗廣告域名,這廣告實在太多了，可能誤殺，不認識的全禁止了
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,xwuad.com,REJECT
+DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com,REJECT
+DOMAIN-SUFFIX,render.shuqireader.com,REJECT
+DOMAIN-SUFFIX,ali-stats.jpush.cn,REJECT
+DOMAIN-SUFFIX,toblog.ctobsnssdk.com,REJECT
+DOMAIN-SUFFIX,sdk.kaijia.com,REJECT
+DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com,REJECT
+DOMAIN-SUFFIX,amdc.m.taobao.com,REJECT
+DOMAIN-SUFFIX,iyes.youku.com,REJECT
+DOMAIN-SUFFIX,sq.sljkj.com,REJECT
+DOMAIN-SUFFIX,s2s.adjust.com,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao,REJECT
+
+# 百度移動廣告聯盟，可能誤殺
+DOMAIN-SUFFIX,mobads.baidu.com,REJECT
+
+# 騰訊廣告聯盟，可能誤殺
+DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
+DOMAIN-SUFFIX,jcollection.shuqireader.com,REJECT
+DOMAIN-SUFFIX,stats.jpush.cn,REJECT
+DOMAIN-SUFFIX,sdk.kaijiawan.com,REJECT
+
+#米讀
+URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/advert\/getPopup$,REJECT
+URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/advert\/treasureInfo$,REJECT
+URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/config\/getAds$,REJECT
+DOMAIN,bid.adview.cn,REJECT
+
+# 京東開屏廣告屏蔽
+URL-REGEX,https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
+
+# 優酷去片頭廣告(by Choler)
+# force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
+URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
+
+# 高德地圖
+DOMAIN,optimus-ads.amap.com,REJECT
+
+# backiee
+URL-REGEX,^https:\/\/www\.google\.com\.hk\/ads,REJECT
+DOMAIN,stats.g.doubleclick.net,REJECT
+DOMAIN,pagead2.googlesyndication.com,REJECT
+DOMAIN,googleads.g.doubleclick.net,REJECT
+DOMAIN,app-measurement.com,REJECT
+DOMAIN,ade.googlesyndication.com,REJECT
+DOMAIN,googleads4.g.doubleclick.net,REJECT
+
+
 # @Nobyda
 DOMAIN-SET,https://raw.githubusercontent.com/NobyDa/ND-AD/master/Surge/AD_Block_Plus.txt,REJECT
 
@@ -563,7 +640,6 @@ RULE-SET,https://raw.githubusercontent.com/app2smile/rules/master/rule/ad.list,R
 
 
 # @blackmatrix7
-DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking.list,REJECT
 DOMAIN,118.89.204.198,REJECT
 DOMAIN,api.cupid.dns.iqiyi.com,REJECT
 DOMAIN,appcloud2.in.zhihu.com,REJECT
@@ -659,120 +735,8 @@ IP-CIDR,223.87.182.11/32,REJECT,no-resolve
 IP-CIDR,223.87.182.52/32,REJECT,no-resolve
 
 
-# @zqzess
-# 有兔閱讀
-DOMAIN,app.zhoudamozi.com,DIRECT
-DOMAIN-SUFFIX,youzibank.com,DIRECT
-DOMAIN-SUFFIX,mituyuedu.com,DIRECT
-DOMAIN,img.allahall.com,DIRECT
-DOMAIN,img.dailmo.com,DIRECT
-DOMAIN,activation.crossutility.com,DIRECT
-
-# 書旗廣告域名,這廣告實在太多了，可能誤殺，不認識的全禁止了
-DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
-DOMAIN-SUFFIX,xwuad.com,REJECT
-DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com,REJECT
-DOMAIN-SUFFIX,render.shuqireader.com,REJECT
-DOMAIN-SUFFIX,ali-stats.jpush.cn,REJECT
-DOMAIN-SUFFIX,toblog.ctobsnssdk.com,REJECT
-DOMAIN-SUFFIX,sdk.kaijia.com,REJECT
-DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com,REJECT
-DOMAIN-SUFFIX,amdc.m.taobao.com,REJECT
-DOMAIN-SUFFIX,iyes.youku.com,REJECT
-DOMAIN-SUFFIX,sq.sljkj.com,REJECT
-DOMAIN-SUFFIX,s2s.adjust.com,REJECT
-DOMAIN-SUFFIX,pglstatp-toutiao,REJECT
-
-# 百度移動廣告聯盟，可能誤殺
-DOMAIN-SUFFIX,mobads.baidu.com,REJECT
-
-# 騰訊廣告聯盟，可能誤殺
-DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,jcollection.shuqireader.com,REJECT
-DOMAIN-SUFFIX,stats.jpush.cn,REJECT
-DOMAIN-SUFFIX,sdk.kaijiawan.com,REJECT
-
-# 愛奇藝
-DOMAIN,cr-status.iqiyi.com,REJECT
-DOMAIN,f74f7f7765f8a2f6.ngaa.net.cn,REJECT
-DOMAIN,ef-dongfeng.tanx.com,REJECT
-DOMAIN,iqiyim.adtrack.enlightent.cn,REJECT
-DOMAIN,t7z.cupid.iqiyi.com,DIRECT
-DOMAIN,paopao-monitor.iqiyi.com,REJECT
-DOMAIN,puma-api.iqiyi.com,REJECT
-DOMAIN-SUFFIX,gdt.qq.com,REJECT
-DOMAIN-SUFFIX,upqzfile.com,REJECT
-DOMAIN,mbdlog.iqiyi.com,REJECT
-DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
-DOMAIN,myg.qy.net,REJECT
-DOMAIN,www.qchannel01.cn,REJECT
-DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT
-DOMAIN,show.ssports.com,REJECT
-DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
-
-#米讀
-URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/advert\/getPopup$,REJECT
-URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/advert\/treasureInfo$,REJECT
-URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/config\/getAds$,REJECT
-DOMAIN,bid.adview.cn,REJECT
-
-# 京東開屏廣告屏蔽
-URL-REGEX,https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
-
-# 優酷去片頭廣告(by Choler)
-# force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
-URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
-
-# 高德地圖
-DOMAIN,optimus-ads.amap.com,REJECT
-
-# backiee
-URL-REGEX,^https:\/\/www\.google\.com\.hk\/ads,REJECT
-DOMAIN,stats.g.doubleclick.net,REJECT
-DOMAIN,pagead2.googlesyndication.com,REJECT
-DOMAIN,googleads.g.doubleclick.net,REJECT
-DOMAIN,app-measurement.com,REJECT
-DOMAIN,ade.googlesyndication.com,REJECT
-DOMAIN,googleads4.g.doubleclick.net,REJECT
-
-
 # List
-# @specialmenfo
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/AMCPlus.list,🇺🇸 AMC+
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/AfreecaTV.list,🇰🇷 AfreecaTV
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/BiliBiliGlobal.list,🌍 BiliBili國際
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Carousell.list,🇭🇰 Carousell
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/DIRECT.list,🎯 全球直連
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/DiscoveryPlus.list,🇺🇸 Discovery+
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/DiscoveryPlusPH.list,🇵🇭 Discovery+ PH
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/EMBY.list,🌍 EMBY
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/EPIN.list,🇹🇷 EPIN
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Global.list,🌏 國外網站
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Globe.list,🇵🇭 Globe
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/HboMax.list,🇺🇸 HBO Max
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Hulu.list,🇺🇸 Hulu
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Justwatch.list,🇦🇺 JustWatch
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/KKTV%26KKBox.list,🇹🇼 KKBOX & KKTV
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Lazada.list,🇵🇭 Lazada
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Octopus.list,🇭🇰 Octopus 八達通
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/PUBGNewStateMobile.list,🇰🇷 PUBG New State Mobile
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/PayPal.list,🇺🇸 PayPal
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Pinterest.list,🇺🇸 Pinterest
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Plex.list,🌍 Plex
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/ShowTime.list,🇺🇸 ShowTime
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/TaiwanIP.list,🇹🇼 台灣節點
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Tap%26Go.list,🇭🇰 Tap & Go
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Target.list,🇺🇸 Target
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Tencent.list,🇨🇳 騰訊
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/UNIDAYS.list,🇺🇸 UNIDAYS
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/USIP.list,🇺🇸 美國節點
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/ViuTV.list,🇭🇰 ViuTV
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/YangMao.list,🇦🇷 VISA-薅Star+/Disney+
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/WeTV.list,🌍 WeTV
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Youku.list,🇨🇳 優酷
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/donghuafeng.list,📺 動畫瘋
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/iQiYiTW.list,🇹🇼 愛奇藝台灣
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/ximalaya.list,🇨🇳 喜馬拉雅
+# @mangoclover
 RULE-SET,https://raw.githubusercontent.com/mangoclover/GeoIP2-CN/release/Surge-Ruleset.list,🎯 全球直連
 
 
@@ -786,6 +750,7 @@ RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cnci
 
 
 # @blackmatrix7 @VirgilClyne @HotKids @ACL4SSR @DivineEngine
+DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list,🌏 國外網站
 RULE-SET,https://raw.githubusercontent.com/VirgilClyne/iRingo/main/RuleSet/Apple_News.list,🇺🇸 Apple News+
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Himalaya/Himalaya.list,🇨🇳 喜馬拉雅
