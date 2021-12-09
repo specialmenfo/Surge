@@ -254,8 +254,6 @@ DOMAIN-SUFFIX,sessions.api.hbo.com,🇺🇸 HBO Max
 DOMAIN-SUFFIX,oauth.api.hbo.com,🇺🇸 HBO Max
 DOMAIN,pos.payby.me,🇹🇷 EPIN
 DOMAIN-SUFFIX,pos.payby.me,🇹🇷 EPIN
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Youku/Youku.list,🇨🇳 優酷
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Youku/Youku_Resolve.list,🇨🇳 優酷
 DOMAIN-SUFFIX,nssurge.com,🌏 國外網站
 DOMAIN-SUFFIX,amemv.com,🎯 全球直連
 DOMAIN-SUFFIX,.amcn.com,🇺🇸 AMC+
