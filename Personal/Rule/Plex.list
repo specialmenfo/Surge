@@ -1,0 +1,8 @@
+# Plex
+# 走 🌍 Plex 策略
+
+
+DOMAIN-SUFFIX,analytics.plex.tv
+DOMAIN-SUFFIX,plex.tv
+DOMAIN-SUFFIX,.plex.tv
+DOMAIN-SUFFIX,pubsub.plex.tv
