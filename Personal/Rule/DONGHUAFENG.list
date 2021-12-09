@@ -1,0 +1,11 @@
+# 動畫瘋
+# 走 📺 動畫瘋 策略
+
+DOMAIN,gamer.com.tw
+DOMAIN,.gamer.com.tw
+DOMAIN,*.gamer.com.tw
+DOMAIN,api.gamer.com.tw
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN-SUFFIX,.gamer.com.tw
+DOMAIN-SUFFIX,*.gamer.com.tw
+DOMAIN-SUFFIX,api.gamer.com.tw
