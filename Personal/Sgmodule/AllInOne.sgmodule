@@ -47,19 +47,16 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/WeTV.list,🌍 WeTV
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/Youku.list,🇨🇳 優酷
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/donghuafeng.list,📺 動畫瘋
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/iQiYi.list,🇨🇳 愛奇藝
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/iQiYiTW.list,🇹🇼 愛奇藝台灣
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/main/Personal/Rule/ximalaya.list,🇨🇳 喜馬拉雅
 RULE-SET,https://raw.githubusercontent.com/mangoclover/GeoIP2-CN/release/Surge-Ruleset.list,🎯 全球直連
 
 
 # @Loyalsoldier
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/private.txt,🎯 全球直連
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt,🌏 國外網站,force-remote-dns
 RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cncidr.txt,🎯 全球直連
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/greatfire.txt,🌏 國外網站,force-remote-dns
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/tld-not-cn.txt,🌏 國外網站,force-remote-dns
 PROCESS-NAME,v2ray,🎯 全球直連
 PROCESS-NAME,xray,🎯 全球直連
 PROCESS-NAME,clash,🎯 全球直連
