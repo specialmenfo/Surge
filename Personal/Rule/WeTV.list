@@ -2,6 +2,8 @@
 # 走 🌍 WeTV 策略
 
 
+PROCESS-NAME,wetv
+PROCESS-NAME,wetvinfo
 DOMAIN,wetvinfo.com
 DOMAIN,.wetvinfo.com
 DOMAIN,*.wetvinfo.com
