@@ -12,9 +12,6 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 
 
 [Rule]
-# Test
-DOMAIN-SUFFIX,clientlog.music.163.com,REJECT // Added for: http://clientlog.music.163.com/api/feedback/client/log/sysaction
-DOMAIN,clientlog.music.163.com,REJECT // Added for: http://clientlog.music.163.com/api/feedback/client/log/sysaction
 
 PROCESS-NAME,v2ray,🎯 全球直連
 PROCESS-NAME,xray,🎯 全球直連
@@ -756,6 +753,10 @@ DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/di
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt,🌏 國外網站,force-remote-dns
 RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cncidr.txt,🎯 全球直連
+
+
+@anti-AD/blob
+DOMAIN-SET,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt,🛑 廣告攔截
 
 
 # @blackmatrix7 @VirgilClyne @HotKids @ACL4SSR @DivineEngine
