@@ -36,6 +36,8 @@ PROCESS-NAME,NetTransport,🎯 全球直連
 PROCESS-NAME,uTorrent,🎯 全球直連
 PROCESS-NAME,WebTorrent,🎯 全球直連
 RULE-SET,SYSTEM,🎯 全球直連
+GEOIP,CN,🎯 全球直連
+
 
 # Other
 # @specialmenfo
