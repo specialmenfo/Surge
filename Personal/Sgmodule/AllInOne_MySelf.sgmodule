@@ -12,6 +12,14 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 
 
 [Rule]
+# Test
+DOMAIN-SUFFIX,clientlog.music.163.com,REJECT // Added for: http://clientlog.music.163.com/api/feedback/client/log/sysaction
+DOMAIN,clientlog.music.163.com,REJECT // Added for: http://clientlog.music.163.com/api/feedback/client/log/sysaction
+DOMAIN-SUFFIX,interface.music.163.com,REJECT // Added for: https://interface.music.163.com/weapi/activity/bonus/playpage/time/query?csrf_token=a6687c2cfaf790b8bc87daafb37160d7
+DOMAIN,interface.music.163.com,REJECT // Added for: https://interface.music.163.com/weapi/activity/bonus/playpage/time/query?csrf_token=a6687c2cfaf790b8bc87daafb37160d7
+DOMAIN-SUFFIX,iadmusicmat.music.126.net,REJECT // Added for: http://iadmusicmat.music.126.net/e95ac10b09194e6e88e0fb099927f00b.jpg?imageView=1&type=webp&thumbnail=1188y462
+DOMAIN,iadmusicmat.music.126.net,REJECT // Added for: http://iadmusicmat.music.126.net/e95ac10b09194e6e88e0fb099927f00b.jpg?imageView=1&type=webp&thumbnail=1188y462
+
 PROCESS-NAME,v2ray,🎯 全球直連
 PROCESS-NAME,xray,🎯 全球直連
 PROCESS-NAME,clash,🎯 全球直連
