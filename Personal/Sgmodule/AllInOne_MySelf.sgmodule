@@ -12,10 +12,6 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 
 
 [Rule]
-# @anti-AD/blob
-DOMAIN-SET,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt,🛑 廣告攔截
-
-
 # @blackmatrix7 ALL IN ONE
 DOMAIN,118.89.204.198,REJECT
 DOMAIN,api.cupid.dns.iqiyi.com,REJECT
