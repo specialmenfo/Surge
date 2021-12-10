@@ -60,6 +60,7 @@ USER-AGENT,AVOS*,REJECT
 
 # Other
 # @specialmenfo
+DOMAIN-SUFFIX,myptt.cc,🌏 國外網站
 DOMAIN-SUFFIX,cache.video.iqiyi.com,🇹🇼 愛奇藝台灣
 DOMAIN-SUFFIX,cache.video.qiyi.com,🇹🇼 愛奇藝台灣
 DOMAIN-SUFFIX,subscription.iqiyi.com,🇹🇼 愛奇藝台灣
