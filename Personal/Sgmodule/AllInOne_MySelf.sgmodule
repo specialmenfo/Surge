@@ -69,7 +69,9 @@ DOMAIN-SUFFIX,g.doubleclick.net,🛑 廣告攔截
 DOMAIN,*.g.doubleclick.net,🛑 廣告攔截
 DOMAIN,.g.doubleclick.net,🛑 廣告攔截
 DOMAIN,g.doubleclick.net,🛑 廣告攔截
-
+URL-REGEX,img\w\.126\.net,🛑 廣告攔截
+URL-REGEX,s\w\.music\.126\.net,🛑 廣告攔截
+URL-REGEX,p\w\.music\.126\.net,🛑 廣告攔截
 
 # Hotkids
 # > iQIYI Intl
