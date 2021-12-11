@@ -24,30 +24,11 @@ DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ap
 RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cncidr.txt,🎯 全球直連
 
 
-
-# @blackmatrix7 ALL IN ONE
-DOMAIN,118.89.204.198,REJECT
-DOMAIN,api.cupid.dns.iqiyi.com,REJECT
-DOMAIN,appcloud2.in.zhihu.com,REJECT
-DOMAIN,mqtt.zhihu.com,REJECT
-DOMAIN,sugar.zhihu.com,REJECT
-DOMAIN,video-ad.sm.cn,REJECT
-DOMAIN-SUFFIX,cm.bilibili.com,REJECT
-DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
-IP-CIDR,118.89.204.198/32,REJECT,no-resolve
-IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
-URL-REGEX,^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\?,REJECT
-URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
-URL-REGEX,^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\?,REJECT
-URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash,REJECT
-URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations,REJECT
-URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?,REJECT
-URL-REGEX,^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(preload-topstory|preload-search|preload-subscription),REJECT
-USER-AGENT,AVOS*,REJECT
-
-
 # Other
 # @specialmenfo
+# 騰訊視頻
+URL-REGEX,"^https?+://vv.video.qq.com/getvmind?" URL-REGEX,"^https?+://(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d).){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)/.+?.tc.qq.com/.+?p201.1.mp4?"
+
 # 字節跳動
 DOMAIN-SUFFIX,p3-ad.bytecdn.cn,🛑 廣告攔截
 DOMAIN-SUFFIX,log.byteoversea.com,🛑 廣告攔截
@@ -2462,7 +2443,6 @@ DOMAIN-KEYWORD,epochtimes,🛑 廣告攔截
 DOMAIN-KEYWORD,fenxi,🛑 廣告攔截
 DOMAIN-KEYWORD,logger,🛑 廣告攔截
 DOMAIN-KEYWORD,traffic,🛑 廣告攔截
-
 DOMAIN-SUFFIX,tac.googleapis.com,🇺🇸 Google
 DOMAIN-SUFFIX,dl.google.com,🇺🇸 Google
 DOMAIN-SUFFIX,iadmusicmat.music.126.net,REJECT
@@ -2628,6 +2608,27 @@ IP-CIDR,223.87.182.102/32,REJECT,no-resolve
 IP-CIDR,223.87.182.11/32,REJECT,no-resolve
 IP-CIDR,223.87.182.52/32,REJECT,no-resolve
 # URL-REGEX,https?://.+.atm.youku.com,REJECT
+
+
+# @blackmatrix7 ALL IN ONE
+DOMAIN,118.89.204.198,REJECT
+DOMAIN,api.cupid.dns.iqiyi.com,REJECT
+DOMAIN,appcloud2.in.zhihu.com,REJECT
+DOMAIN,mqtt.zhihu.com,REJECT
+DOMAIN,sugar.zhihu.com,REJECT
+DOMAIN,video-ad.sm.cn,REJECT
+DOMAIN-SUFFIX,cm.bilibili.com,REJECT
+DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
+IP-CIDR,118.89.204.198/32,REJECT,no-resolve
+IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
+URL-REGEX,^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\?,REJECT
+URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
+URL-REGEX,^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\?,REJECT
+URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash,REJECT
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations,REJECT
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?,REJECT
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(preload-topstory|preload-search|preload-subscription),REJECT
+USER-AGENT,AVOS*,REJECT
 
 
 # Hotkids
