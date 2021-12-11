@@ -11,11 +11,19 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 
 
 [Rule]
+# @specialmenfo
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/List/iQiYiTW.list,🇹🇼 愛奇藝台灣
+
+
 # @Loyalsoldier
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/gfw.txt,🌏 國外網站,force-remote-dns
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt,🌏 國外網站,force-remote-dns
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/private.txt,🌏 國外網站,force-remote-dns
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/icloud.txt,🎯 全球直連
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/apple.txt,🎯 全球直連
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt,🌏 國外網站,force-remote-dns
+RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cncidr.txt,🎯 全球直連
+
 
 
 # @blackmatrix7 ALL IN ONE
@@ -136,10 +144,6 @@ DOMAIN,res.xiaojukeji.com,REJECT
 DOMAIN,ccclub.cmbchina.com,🛑 廣告攔截
 DOMAIN,ocsp.apple.com,🛑 廣告攔截
 DOMAIN-SUFFIX,myptt.cc,🌏 國外網站
-DOMAIN-SUFFIX,cache.video.iqiyi.com,🇹🇼 愛奇藝台灣
-DOMAIN-SUFFIX,cache.video.qiyi.com,🇹🇼 愛奇藝台灣
-DOMAIN-SUFFIX,subscription.iqiyi.com,🇹🇼 愛奇藝台灣
-DOMAIN-SUFFIX,l.rcd.iqiyi.com,🇹🇼 愛奇藝台灣
 DOMAIN-SUFFIX,googleads.g.doubleclick.net,🛑 廣告攔截
 DOMAIN,googleads.g.doubleclick.net,🛑 廣告攔截
 DOMAIN-SUFFIX,*.g.doubleclick.net,🛑 廣告攔截
@@ -777,7 +781,6 @@ RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/S
 RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Star%2B.list,🇧🇷 Star+
 RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/KKBOX%26KKTV.list,🇹🇼 KKBOX & KKTV
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/myTVSUPER/myTVSUPER.list,🇭🇰 myTVSUPER
-RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/IQ.list,🇹🇼 愛奇藝台灣
 RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/IQIYI.list,🇨🇳 愛奇藝
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/friDay/friDay.list,🇹🇼 Friday
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/eBay/eBay.list,🇺🇸 eBay
