@@ -62,8 +62,51 @@ DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ap
 
 # Other
 # @specialmenfo
+# Ad-Keyword
+DOMAIN-KEYWORD,adservice,🛑 廣告攔截
+DOMAIN-KEYWORD,adsystem,🛑 廣告攔截
+DOMAIN-KEYWORD,appsflyer,🛑 廣告攔截
+DOMAIN-KEYWORD,omniture,🛑 廣告攔截
+DOMAIN-KEYWORD,uploadMobileData,🛑 廣告攔截
+DOMAIN-KEYWORD,admarvel,🛑 廣告攔截
+DOMAIN-KEYWORD,admaster,🛑 廣告攔截
+DOMAIN-KEYWORD,admdfs,🛑 廣告攔截
+DOMAIN-KEYWORD,adnewnc,🛑 廣告攔截
+DOMAIN-KEYWORD,adsage,🛑 廣告攔截
+DOMAIN-KEYWORD,adsame,🛑 廣告攔截
+DOMAIN-KEYWORD,adsensor,🛑 廣告攔截
+DOMAIN-KEYWORD,adserver,🛑 廣告攔截
+DOMAIN-KEYWORD,adsmogo,🛑 廣告攔截
+DOMAIN-KEYWORD,adsrvmedia,🛑 廣告攔截
+DOMAIN-KEYWORD,adsserving,🛑 廣告攔截
+DOMAIN-KEYWORD,adwords,🛑 廣告攔截
+DOMAIN-KEYWORD,allyes,🛑 廣告攔截
+DOMAIN-KEYWORD,applovin,🛑 廣告攔截
+DOMAIN-KEYWORD,dnserror,🛑 廣告攔截
+DOMAIN-KEYWORD,domob,🛑 廣告攔截
+DOMAIN-KEYWORD,duomeng,🛑 廣告攔截
+DOMAIN-KEYWORD,dwtrack,🛑 廣告攔截
+DOMAIN-KEYWORD,guanggao,🛑 廣告攔截
+DOMAIN-KEYWORD,inmobi,🛑 廣告攔截
+DOMAIN-KEYWORD,mobaders,🛑 廣告攔截
+DOMAIN-KEYWORD,omgmta,🛑 廣告攔截
+DOMAIN-KEYWORD,openx,🛑 廣告攔截
+DOMAIN-KEYWORD,partnerad,🛑 廣告攔截
+DOMAIN-KEYWORD,securepubads,🛑 廣告攔截
+DOMAIN-KEYWORD,socdm,🛑 廣告攔截
+DOMAIN-KEYWORD,supersonicads,🛑 廣告攔截
+DOMAIN-KEYWORD,umtrack,🛑 廣告攔截
+DOMAIN-KEYWORD,wlmonitor,🛑 廣告攔截
+DOMAIN-KEYWORD,zjtoolbar,🛑 廣告攔截
+DOMAIN-KEYWORD,epochtimes,🛑 廣告攔截
+DOMAIN-KEYWORD,fenxi,🛑 廣告攔截
+DOMAIN-KEYWORD,logger,🛑 廣告攔截
+DOMAIN-KEYWORD,traffic,🛑 廣告攔截
+
+
 # 騰訊視頻
 URL-REGEX,"^https?+://vv.video.qq.com/getvmind?" URL-REGEX,"^https?+://(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d).){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)/.+?.tc.qq.com/.+?p201.1.mp4?"
+
 
 # 字節跳動
 DOMAIN-SUFFIX,p3-ad.bytecdn.cn,🛑 廣告攔截
@@ -2436,49 +2479,6 @@ DOMAIN-SUFFIX,leadbolt.com,🛑 廣告攔截
 DOMAIN-SUFFIX,moatads.com,🛑 廣告攔截
 DOMAIN-SUFFIX,sharethis.com,🛑 廣告攔截
 DOMAIN-SUFFIX,trafficjunky.com,🛑 廣告攔截
-
-
-# Ad-Keyword
-DOMAIN-KEYWORD,adservice,🛑 廣告攔截
-DOMAIN-KEYWORD,adsystem,🛑 廣告攔截
-DOMAIN-KEYWORD,appsflyer,🛑 廣告攔截
-DOMAIN-KEYWORD,omniture,🛑 廣告攔截
-DOMAIN-KEYWORD,uploadMobileData,🛑 廣告攔截
-DOMAIN-KEYWORD,admarvel,🛑 廣告攔截
-DOMAIN-KEYWORD,admaster,🛑 廣告攔截
-DOMAIN-KEYWORD,admdfs,🛑 廣告攔截
-DOMAIN-KEYWORD,adnewnc,🛑 廣告攔截
-DOMAIN-KEYWORD,adsage,🛑 廣告攔截
-DOMAIN-KEYWORD,adsame,🛑 廣告攔截
-DOMAIN-KEYWORD,adsensor,🛑 廣告攔截
-DOMAIN-KEYWORD,adserver,🛑 廣告攔截
-DOMAIN-KEYWORD,adsmogo,🛑 廣告攔截
-DOMAIN-KEYWORD,adsrvmedia,🛑 廣告攔截
-DOMAIN-KEYWORD,adsserving,🛑 廣告攔截
-DOMAIN-KEYWORD,adwords,🛑 廣告攔截
-DOMAIN-KEYWORD,allyes,🛑 廣告攔截
-DOMAIN-KEYWORD,applovin,🛑 廣告攔截
-DOMAIN-KEYWORD,dnserror,🛑 廣告攔截
-DOMAIN-KEYWORD,domob,🛑 廣告攔截
-DOMAIN-KEYWORD,duomeng,🛑 廣告攔截
-DOMAIN-KEYWORD,dwtrack,🛑 廣告攔截
-DOMAIN-KEYWORD,guanggao,🛑 廣告攔截
-DOMAIN-KEYWORD,inmobi,🛑 廣告攔截
-DOMAIN-KEYWORD,lianmeng,🛑 廣告攔截
-DOMAIN-KEYWORD,mobaders,🛑 廣告攔截
-DOMAIN-KEYWORD,omgmta,🛑 廣告攔截
-DOMAIN-KEYWORD,openx,🛑 廣告攔截
-DOMAIN-KEYWORD,partnerad,🛑 廣告攔截
-DOMAIN-KEYWORD,securepubads,🛑 廣告攔截
-DOMAIN-KEYWORD,socdm,🛑 廣告攔截
-DOMAIN-KEYWORD,supersonicads,🛑 廣告攔截
-DOMAIN-KEYWORD,umtrack,🛑 廣告攔截
-DOMAIN-KEYWORD,wlmonitor,🛑 廣告攔截
-DOMAIN-KEYWORD,zjtoolbar,🛑 廣告攔截
-DOMAIN-KEYWORD,epochtimes,🛑 廣告攔截
-DOMAIN-KEYWORD,fenxi,🛑 廣告攔截
-DOMAIN-KEYWORD,logger,🛑 廣告攔截
-DOMAIN-KEYWORD,traffic,🛑 廣告攔截
 DOMAIN-SUFFIX,tac.googleapis.com,🇺🇸 Google
 DOMAIN-SUFFIX,dl.google.com,🇺🇸 Google
 DOMAIN-SUFFIX,iadmusicmat.music.126.net,REJECT
