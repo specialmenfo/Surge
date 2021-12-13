@@ -12,8 +12,8 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79
 
 [Rule]
 
-# @Hotkids
-RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/IQ.list,🇹🇼 愛奇藝台灣
+# @specialmenfo
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/List/iQiYiTW.list,🇹🇼 愛奇藝台灣
 # @blackmatrix7
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iQIYI/iQIYI.list,🇨🇳 愛奇藝
 
