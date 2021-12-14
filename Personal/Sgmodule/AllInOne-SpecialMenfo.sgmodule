@@ -3101,7 +3101,6 @@ DOMAIN-SUFFIX,dnitv.com,🇺🇸 Discovery+
 
 
 # Apple
-
 # > iCloud Private Relay
 # https://developer.apple.com/cn/support/prepare-your-network-for-icloud-private-relay/
 
@@ -3525,9 +3524,10 @@ net-info-panel.js=script-path=https://raw.githubusercontent.com/specialmenfo/Sur
 http-request ^https?:\/\/news-(edge|events)\.apple\.com\/(v1\/configs|analyticseventsv2\/async).* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js, requires-body=true, tag=Apple_News
 http-request ^https?:\/\/news-(client-search)\.apple\.com\/(v1\/search\?).* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js, tag=Apple_News
 
-#  Response Geo Services to 🇭🇰HK
+#  Response Geo Services to 🇹🇼TW
 # 只作用於檢測地區，不修改Apple Maps和Apple News，可以通過搭配使用其他模塊達成混合效果。
-http-request ^https?:\/\/gspe\d*-ssl\.ls\.apple\.com(\/pep\/gcc) script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Geo_Services.js, argument=GeoCountryCode=HK, requires-body=false, tag=Geo_Services
+# Response Geo Services to TW
+http-request ^https?:\/\/gspe\d*-ssl\.ls\.apple\.com(\/pep\/gcc) script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Geo_Services.js, argument=GeoCountryCode=TW, requires-body=false, tag=Geo_Services
 
 #  Replace Apple Weather with 🇺🇸US @waqi.info
 # 切換空氣質量數據源為waqi.info，並更改標準為AQI(US)
@@ -4959,10 +4959,10 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/you\.163\.com\/ https://you.163.com/ 302
 
 
-# @VirgilClyne
-# (BETA) 只作用於Apple Maps，不修改定位服務和地區檢測，可以通過搭配使用其他模塊達成混合效果。
-# Redirect Apple Maps to 🇺🇳I18N
-(^https?:\/\/gspe\d*-ssl\.ls\.apple\.)(com|cn)(\/.*)(country_code=[A-Z]{2})(.*) $1$2$3country_code=CN$5 header
+#  Redirect Apple Maps to 🇺🇸US
+# 只作用於Apple Maps，不修改定位服務和地區檢測，可以通過搭配使用其他模塊達成混合效果。
+# Redirect Apple Maps to US
+(^https?:\/\/gspe\d*-ssl\.ls\.apple\.)(com|cn)(\/.*)(country_code=[A-Z]{2})(.*) $1$2$3country_code=US$5 header
 (^https?:\/\/gspe\d*-ssl\.ls\.apple\.)(com|cn)(\/.*)(environment=[a-z/-]{4,})(.*) $1$2$3environment=prod$5 header
 
 
