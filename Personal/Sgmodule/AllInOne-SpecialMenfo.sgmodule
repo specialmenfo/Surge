@@ -3126,7 +3126,6 @@ DOMAIN-SUFFIX,dnitv.com,🇺🇸 Discovery+
 # List
 # @blackmatrix7 @VirgilClyne @HotKids @ACL4SSR @DivineEngine
 DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list,🌏 國外網站
 RULE-SET,https://raw.githubusercontent.com/VirgilClyne/iRingo/main/RuleSet/Apple_News.list,🇺🇸 Apple News+
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Himalaya/Himalaya.list,🇨🇳 喜馬拉雅
 RULE-SET,https://raw.githubusercontent.com/VirgilClyne/iRingo/main/RuleSet/Apple_News.list,🇺🇸 Apple News+
@@ -3238,8 +3237,6 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Amazon/Amazon.list,🇺🇸 Amazon
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/All4/All4.list,🇬🇧 All4
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/9to5/9to5.list,🌏 國外網站
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMax/GlobalMax.list,🌏 國外網站
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMax/GlobalMax_Resolve.list,🌏 國外網站
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax_Resolve.list,🎯 全球直連
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax.list,🎯 全球直連
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax_Domain.list,🎯 全球直連
