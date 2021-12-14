@@ -53,31 +53,6 @@ DOMAIN-KEYWORD,qiyi,🇨🇳 愛奇藝
 
 
 # @Loyalsoldier
-PROCESS-NAME,v2ray,🎯 全球直連
-PROCESS-NAME,xray,🎯 全球直連
-PROCESS-NAME,clash,🎯 全球直連
-PROCESS-NAME,naive,🎯 全球直連
-PROCESS-NAME,trojan,🎯 全球直連
-PROCESS-NAME,trojan-go,🎯 全球直連
-PROCESS-NAME,ss-local,🎯 全球直連
-PROCESS-NAME,privoxy,🎯 全球直連
-PROCESS-NAME,leaf,🎯 全球直連
-PROCESS-NAME,Thunder,🎯 全球直連
-PROCESS-NAME,DownloadService,🎯 全球直連
-PROCESS-NAME,qBittorrent,🎯 全球直連
-PROCESS-NAME,Transmission,🎯 全球直連
-PROCESS-NAME,fdm,🎯 全球直連
-PROCESS-NAME,aria2c,🎯 全球直連
-PROCESS-NAME,Folx,🎯 全球直連
-PROCESS-NAME,NetTransport,🎯 全球直連
-PROCESS-NAME,uTorrent,🎯 全球直連
-PROCESS-NAME,WebTorrent,🎯 全球直連
-RULE-SET,SYSTEM,🎯 全球直連
-IP-CIDR,10.0.0.0/8,🎯 全球直連
-IP-CIDR,127.0.0.0/8,🎯 全球直連
-IP-CIDR,172.16.0.0/12,🎯 全球直連
-IP-CIDR,192.168.0.0/16,🎯 全球直連
-IP-CIDR,224.0.0.0/24,🎯 全球直連
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt,🌏 國外網站,force-remote-dns
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/private.txt,🌏 國外網站,force-remote-dns
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,🛑 廣告攔截
@@ -2691,8 +2666,6 @@ URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?,REJ
 URL-REGEX,^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(preload-topstory|preload-search|preload-subscription),REJECT
 USER-AGENT,AVOS*,REJECT
 
-DOMAIN,gateway.icloud.com,🇺🇸 Apple News+
-DOMAIN-SUFFIX,gateway.icloud.com,🇺🇸 Apple News+
 DOMAIN,smtp.yandex.ru,🇹🇼 台灣節點
 DOMAIN,smtp.office365.com,🇹🇼 台灣節點
 DOMAIN-SUFFIX,smtp.yandex.ru,🇹🇼 台灣節點
