@@ -4,7 +4,7 @@
 [General]
 # > 跳過代理
 skip-proxy = %APPEND% passenger.t3go.cn
-# > 排除简单主机名
+# > 排除簡單主機名
 exclude-simple-hostnames = true
 
 # > Always Real IP Hosts
