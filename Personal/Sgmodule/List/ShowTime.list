@@ -5,3 +5,8 @@ DOMAIN-SUFFIX,www.showtime.com
 DOMAIN-SUFFIX,showtime.com
 DOMAIN-SUFFIX,www.showtimeanytime.com
 DOMAIN-SUFFIX,showtime.penthera.com
+DOMAIN-SUFFIX,www.sho.com
+DOMAIN-SUFFIX,*.sho.com
+DOMAIN-SUFFIX,.sho.com
+DOMAIN-SUFFIX,sho.com
+DOMAIN-SUFFIX,*.sho.com/*
