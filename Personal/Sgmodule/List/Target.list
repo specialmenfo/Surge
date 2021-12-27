@@ -1,0 +1,8 @@
+DOMAIN,target.com
+DOMAIN,.target.com
+DOMAIN,*.target.com
+DOMAIN,api.target.com
+DOMAIN-SUFFIX,target.com
+DOMAIN-SUFFIX,.target.com
+DOMAIN-SUFFIX,*.target.com
+DOMAIN-SUFFIX,api.target.com
