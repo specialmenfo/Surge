@@ -1,3 +1,8 @@
 DOMAIN-SUFFIX,.amcn.com
 DOMAIN-SUFFIX,gw.cds.amcn.com
 DOMAIN-SUFFIX,dimages.cds.amcn.com
+DOMAIN-SUFFIX,www.amcplus.com
+DOMAIN-SUFFIX,*.amcplus.com
+DOMAIN-SUFFIX,.amcplus.com
+DOMAIN-SUFFIX,amcplus.com
+DOMAIN-SUFFIX,*.amcplus.com/*
