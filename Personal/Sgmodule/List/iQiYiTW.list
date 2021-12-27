@@ -1,7 +1,7 @@
-DOMAIN,cache.video.iqiyi.com
-DOMAIN,cache.video.qiyi.com
-DOMAIN,subscription.iqiyi.com
-DOMAIN,l.rcd.iqiyi.com
+DOMAIN-SUFFIX,cache.video.iqiyi.com,no-resolve
+DOMAIN-SUFFIX,cache.video.qiyi.com,no-resolve
+DOMAIN-SUFFIX,subscription.iqiyi.com,no-resolve
+DOMAIN-SUFFIX,l.rcd.iqiyi.com,no-resolve
 DOMAIN-SUFFIX,iq.com
 USER-AGENT,iQIYI*
 USER-AGENT,QIYIVideo*
