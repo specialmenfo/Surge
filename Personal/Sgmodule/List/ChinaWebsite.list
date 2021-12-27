@@ -1,3 +1,5 @@
+DOMAIN,cache.video.iqiyi.com
+USER-AGENT,*IQIYI*
 # 有兔閱讀
 DOMAIN,app.zhoudamozi.com
 DOMAIN-SUFFIX,youzibank.com
