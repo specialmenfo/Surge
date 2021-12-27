@@ -10,3 +10,4 @@ DOMAIN-SUFFIX,*.sho.com
 DOMAIN-SUFFIX,.sho.com
 DOMAIN-SUFFIX,sho.com
 DOMAIN-SUFFIX,*.sho.com/*
+DOMAIN-SUFFIX,smetrics.sho.com
