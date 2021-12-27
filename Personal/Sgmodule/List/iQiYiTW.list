@@ -3,8 +3,6 @@ DOMAIN,cache.video.qiyi.com
 DOMAIN,subscription.iqiyi.com
 DOMAIN,l.rcd.iqiyi.com
 USER-AGENT,*QIYI*
-USER-AGENT,iQiYi*
-DOMAIN-SUFFIX,iqiyi.com
 DOMAIN-SUFFIX,iqiyipic.com
 DOMAIN-SUFFIX,iq.com
 DOMAIN-SUFFIX,qy.net
