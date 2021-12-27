@@ -1,3 +1,7 @@
+DOMAIN-SUFFIX,cache.video.iqiyi.com
+DOMAIN-SUFFIX,cache.video.qiyi.com
+DOMAIN-SUFFIX,subscription.iqiyi.com
+DOMAIN-SUFFIX,l.rcd.iqiyi.com
 DOMAIN-SUFFIX,iq.com
 USER-AGENT,iQIYI*
 USER-AGENT,QIYIVideo*
