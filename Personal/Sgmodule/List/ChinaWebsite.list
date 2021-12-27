@@ -36,4 +36,10 @@ DOMAIN-SUFFIX,.qq.com
 DOMAIN,wspeed.qq.com
 DOMAIN-SUFFIX,wspeed.qq.com
 DOMAIN,minorshort.weixin.qq.com
+DOMAIN-SUFFIX,pull-f5.flive.douyincdn.com
+DOMAIN-SUFFIX,pull-f5.flive.douyincdn.com/*
+DOMAIN-SUFFIX,*.douyincdn.com/*
+DOMAIN,pull-f5.flive.douyincdn.com
+DOMAIN,pull-f5.flive.douyincdn.com/*
+DOMAIN,*.douyincdn.com/*
 AND,((OR,((DEST-PORT,443), (DEST-PORT,80))), (OR,((IP-CIDR,129.226.3.47/32,no-resolve), (IP-CIDR,101.32.118.25/16,no-resolve))), (PROTOCOL,TCP))
