@@ -1,6 +1,5 @@
 DOMAIN,cache.video.qiyi.com
-DOMAIN-SUFFIX,subscription.iqiyi.com
-DOMAIN-SUFFIX,l.rcd.iqiyi.com
+DOMAIN-SUFFIX,*qiyi*
 DOMAIN-SUFFIX,iq.com
 DOMAIN-SUFFIX,qy.net
 DOMAIN-SUFFIX,gitv.tv
