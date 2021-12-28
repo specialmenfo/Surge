@@ -58,9 +58,9 @@ hide-udp = 1
 
 
 [Rule]
-DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/iQiYiTW1.list,🇹🇼 愛奇藝台灣
-DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/iQiYi.list,🇨🇳 愛奇藝
-DOMAIN-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/IQIYI.list,🇹🇼 愛奇藝台灣
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/iQiYiTW1.list,🇹🇼 愛奇藝台灣
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/iQiYi.list,🇨🇳 愛奇藝
+RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/IQIYI.list,🇹🇼 愛奇藝台灣
 URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TINYGIF
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AMCPlus.list,🇺🇸 AMC+
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AfreecaTV.list,🇰🇷 AfreecaTV
