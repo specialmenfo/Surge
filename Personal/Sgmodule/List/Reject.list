@@ -2,6 +2,7 @@
 # AUTHOR: IEQ0P
 
 [Rule]
+URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TINYGIF
 URL-REGEX,^https:\/\/www\.google\.com\.hk\/ads
 DOMAIN,stats.g.doubleclick.net
 DOMAIN,pagead2.googlesyndication.com
