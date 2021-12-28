@@ -63,7 +63,6 @@ RULE-SET,https://raw.githubusercontent.com/Hvftk/eHpo1/master/Surge4/Ruleset/Tid
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/iQiYiTW1.list,🇹🇼 愛奇藝台灣
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/iQiYi.list,🇨🇳 愛奇藝
 RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/IQIYI.list,🇹🇼 愛奇藝台灣
-URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TINYGIF
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AMCPlus.list,🇺🇸 AMC+
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AfreecaTV.list,🇰🇷 AfreecaTV
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AmericaWebsite.list,🇺🇲 美國節點
