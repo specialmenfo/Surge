@@ -1,3 +1,7 @@
+# NAME: 去廣告
+# AUTHOR: IEQ0P
+
+[Rule]
 URL-REGEX,^https:\/\/www\.google\.com\.hk\/ads
 DOMAIN,stats.g.doubleclick.net
 DOMAIN,pagead2.googlesyndication.com
