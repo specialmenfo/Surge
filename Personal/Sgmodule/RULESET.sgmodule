@@ -60,7 +60,7 @@ hide-udp = 1
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Liby.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/Hvftk/eHpo1/master/Surge4/Ruleset/Tide.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/RewriteRejectTest.txt,🛑 廣告攔截
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/RewriteRejectTest.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/iQiYiTW1.list,🇹🇼 愛奇藝台灣
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/iQiYi.list,🇨🇳 愛奇藝
 RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/IQIYI.list,🇹🇼 愛奇藝台灣
