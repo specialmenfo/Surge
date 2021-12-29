@@ -22,6 +22,9 @@ const radioGeneration = {
   'LTE': '4G',
   'NRNSA': '5G',
   'NR': '5G',
+  'SA': '5G',
+  'NSA': '5G',
+  'NG-RAN': '5G',
 };
 
 const carrierNames = loadCarrierNames();
