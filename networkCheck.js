@@ -1,7 +1,8 @@
 /*
  * Surge 網路詳情面板
  * @Nebulosa-Cat
- * 詳情請見 README
+ * @specialmenfo
+ * 原基礎新增澳門電信業者 2021.12.29
  */
 const { wifi, v4, v6 } = $network;
 
