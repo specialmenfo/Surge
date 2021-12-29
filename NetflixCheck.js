@@ -7,7 +7,7 @@ const AREA_TEST_FILM_ID = 80018499
 
 ;(async () => {
   let result = {
-    title: "Netflix   影劇版權 IP 鎖測試",
+    title: "Netflix    影劇版權 IP 鎖測試",
     icon: "exclamationmark.arrow.triangle.2.circlepath",
 	  'icon-color':"#77428D",
     content: '測試失敗，請檢查網路狀態',
@@ -17,7 +17,7 @@ const AREA_TEST_FILM_ID = 80018499
       if (code === 'Not Found') {
         return test(AREA_TEST_FILM_ID)
       }
-      result['Title'] ="Netflix 影劇版權 IP 鎖測試"
+      result['Title'] ="Netflix    影劇版權 IP 鎖測試"
       result['icon'] = "checkmark.shield"
 	    result['icon-color'] = '#1B813E'
       //result['icon'] = params.icon1
@@ -29,7 +29,7 @@ const AREA_TEST_FILM_ID = 80018499
       if (code === 'Not Found') {
         return Promise.reject('Not Available')
       }
-      result['Title'] ="Netflix   影劇版權 IP 鎖測試"
+      result['Title'] ="Netflix    影劇版權 IP 鎖測試"
       result['icon'] = "exclamationmark.shield"
 	    result['icon-color'] = "#EFBB24"
       //result['icon'] = params.icon2
@@ -39,7 +39,7 @@ const AREA_TEST_FILM_ID = 80018499
     })
     .catch((error) => {
       if (error === 'Not Available') {
-        result['Title'] ="Netflix 影劇版權 IP 鎖測試"
+        result['Title'] ="Netflix    影劇版權 IP 鎖測試"
         result['icon'] = "xmark.shield"
 	      result['icon-color'] = "#CB1B45"
         //result['icon'] = params.icon3
