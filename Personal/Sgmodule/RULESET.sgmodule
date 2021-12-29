@@ -1,5 +1,5 @@
 #!name= All In One Personal RULE SET
-#!desc= 分流規則 收集於GitHub及部分自添加 包含Panel、腳本、去廣告、Rewrite以及MitM
+#!desc= 分流規則 收集於GitHub及部分自添加 包含Panel、腳本、去廣告、Rewrite以及MitM 可能有重合規則，自己使用這麼久，暫時還沒發現有什麼影響
 #!author= IEQ0P
 
 
@@ -58,6 +58,8 @@ hide-udp = 1
 
 
 [Rule]
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list,🛑 廣告攔截
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingTest/AdvertisingTest.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Britbox.list,🇺🇸 Britbox
 RULE-SET,https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Liby.list,🛑 廣告攔截
