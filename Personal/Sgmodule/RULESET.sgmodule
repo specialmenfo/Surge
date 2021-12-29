@@ -58,6 +58,7 @@ hide-udp = 1
 
 
 [Rule]
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingTest/AdvertisingTest.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Britbox.list,🇺🇸 Britbox
 RULE-SET,https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Liby.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/Hvftk/eHpo1/master/Surge4/Ruleset/Tide.list,🛑 廣告攔截
