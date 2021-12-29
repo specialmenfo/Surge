@@ -1910,7 +1910,7 @@ flushDNS = script-name=flushDNS,update-interval=600
 NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
 
 [Host]
-ip-api.com = 208.95.112.1
+ip-api.com = 101.101.101.101
 
 [MITM]
 skip-server-cert-verify = true
