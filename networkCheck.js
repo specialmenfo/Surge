@@ -81,6 +81,11 @@ function getFlagEmoji(countryCode) {
 function loadCarrierNames() {
   //整理邏輯:前三碼相同->後兩碼同電信->剩下的
   return {
+    //澳門電信業者 Macau
+    '455-02': 'China Telecom', '455-07': 'China Telecom',
+    '455-01': 'CTM', '455-04': 'CTM',
+    '455-03': '3 Macau', '455-05': '3 Macau',
+    '455-00': 'SmarTone', '455-06': 'SmarTone',
     //台灣電信業者 Taiwan
     '466-11': '中華電信', '466-92': '中華電信',
     '466-01': '遠傳電信', '466-03': '遠傳電信',
