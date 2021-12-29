@@ -13,3 +13,6 @@ DOMAIN-SUFFIX,carousell.hk
 DOMAIN-SUFFIX,carousell.sg
 DOMAIN-SUFFIX,.carousell.sg
 DOMAIN-SUFFIX,www.carousell.sg
+DOMAIN-SUFFIX,*.karousell.com
+DOMAIN-SUFFIX,.karousell.com
+DOMAIN-SUFFIX,karousell.com
