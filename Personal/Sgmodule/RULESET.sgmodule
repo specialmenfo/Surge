@@ -1916,7 +1916,7 @@ netflixCheck = script-name=netflixCheck,update-interval=1
 disney_check = script-name=disney_check,title=Disney+ 影劇版權IP鎖測試,style=alert,content=請刷新,update-interval=1800
 premiumCheck = script-name=premiumCheck,title=YouTube Premium 跨區解鎖測試,update-interval=1
 flushDNS = script-name=flushDNS,update-interval=600
-NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
+NetInfoPanel=title="網路詳情",content="",style=info,script-name=net-info-panel.js,update-interval=1
 
 
 [Host]
