@@ -20,11 +20,8 @@ const radioGeneration = {
   'HSUPA': '3.75G',
   'eHRPD': '3.9G',
   'LTE': '4G',
-  'NRNSA': '5G',
-  'NR': '5G',
   'SA': '5G',
   'NSA': '5G',
-  'NG-RAN': '5G',
 };
 
 const carrierNames = loadCarrierNames();
