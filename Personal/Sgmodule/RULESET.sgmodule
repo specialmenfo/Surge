@@ -58,6 +58,7 @@ hide-udp = 1
 
 
 [Rule]
+DOMAIN-SUFFIX,ip-api.com/json,🇭🇰 香港節點
 DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising_Domain.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_Domain.list,🛑 廣告攔截
