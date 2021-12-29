@@ -364,7 +364,6 @@ https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/
 ^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/.+\.jpg_(9\d{2}|\d{4}) - reject
 ^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4}) - reject
 ^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3,4}-\d{4}\.jpg_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q90\.jpg_\.(heic|webp)$ - reject
-^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) - reject
 ^https?:\/\/(www|cn)\.pornhub\.com\/_xa\/ads.* - reject
 ^https?:\/\/.*\.club\/floater.* - reject
 ^https?:\/\/.*\.fun\/floater.* - reject
@@ -573,7 +572,6 @@ https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/
 ^https?:\/\/edit\.sinaapp\.com\/ua\?t=adv - reject
 ^https?:\/\/erebor\.douban\.com\/count\/\?ad= - reject
 ^https?:\/\/fb\.fbstatic\.cn\/api\/ape-images\/.*.jpg? - reject
-^https?:\/\/flowplus\.meituan\.net\/v\d\/\w+\/linglong\/\d+\.(gif|jpg|mp4) - reject
 ^https?:\/\/foodie-api\.yiruikecorp\.com\/v\d\/(banner|notice)\/overview - reject
 ^https?:\/\/free\.sinaimg\.cn\/u1\.img\.mobile\.sina\.cn - reject
 ^https?:\/\/g\.cdn\.pengpengla\.com\/starfantuan\/boot-screen-info\/ - reject
@@ -617,8 +615,6 @@ https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/
 ^https?:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/image-\d{4}-\d{4}\/ - reject
 ^https?:\/\/img01\.10101111cdn\.com\/adpos\/ - reject
 ^https?:\/\/img\.jiemian\.com\/ads\/ - reject
-^https?:\/\/img\.meituan\.net\/(adunion|display|dpmobile|midas)\/\w+\.(gif|jpg|jpg\.webp)$ - reject
-^https?:\/\/img\.meituan\.net\/midas\/ - reject
 ^https?:\/\/img\.umetrip\.com\/fs\/advert/ - reject
 ^https?:\/\/img\d+\.10101111cdn\.com\/adpos\/ - reject
 ^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/ - reject
@@ -697,10 +693,6 @@ https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/
 ^https?:\/\/p[^124](c)?\.music\.126\.net\/\w+==\/10995\d{13}\.jpg$ - reject
 ^https?:\/\/p\.du\.163\.com\/ad\/ - reject
 ^https?:\/\/p\.kuaidi100\.com\/mobile\/(mainapi|mobileapi)\.do - reject
-^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg - reject
-^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp - reject
-^https?:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+\.jpg - reject
-^https?:\/\/p\d{1}\.meituan\.net\/(adunion|display|mmc|wmbanner)\/ - reject
 ^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry - reject
 ^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx - reject
 ^https?:\/\/paopao\w?.qiyipic.com - reject
@@ -777,7 +769,6 @@ https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/
 ^https?:\/\/webboot\.zhangyue\.com\/zycl\/api\/ad\/ - reject
 ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php.*ads&c=ad.* - reject
 ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads - reject
-^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture - reject
 ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? - reject
 ^https?:\/\/www\.bldimg\.com/(background|splash)/.+?\.png$ - reject
 ^https?:\/\/www\.bodivis\.com\.cn\/app\/splashAdvertise - reject
@@ -1073,12 +1064,6 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/api\.mgzf\.com\/renter-operation\/home\/startHomePage - reject
 # > ManHuaRen
 ^https?:\/\/mangaapi\.manhuaren\.com\/v\d\/public\/getStartPageAds - reject
-# > Meituan-Dianping - flowplus.meituan.net
-# ^https?:\/\/img\.meituan\.net\/(adunion|display|dpmobile|midas)\/\w+\.(gif|jpg|jpg\.webp)$ - reject
-# ^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg - reject
-# ^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp - reject
-^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture - reject
-^https?:\/\/flowplus\.meituan\.net\/v\d\/\w+\/linglong\/\d+\.(gif|jpg|mp4) - reject
 # > mwee - capi.mwee.cn
 ^https?:\/\/capi\.mwee\.cn\/app-api\/V\d+\/app\/(ad|getstartad) - reject
 # > MiaoPai - v?-api.miaopai.com
@@ -1504,9 +1489,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/oimage\w\d\.ydstatic\.com\/image\?.+?=adpublish data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/oral\.youdao\.com\/oral\/adInfo data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-^https?:\/\/oset-api\.open-adx\.com\/ad\/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-^https?:\/\/p\d.meituan.net\/movie\/.*?\?may_covertWebp data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-^https?:\/\/p\d\.meituan\.net\/(mmc|wmbanner)\/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
+^https?:\/\/oset-api\.open-adx\.com\/ad\/ data=“https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/pan-api\.bitqiu\.com\/activity\/(getPromoteGuide|getUrlList) data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/pb\d\.pstatp\.com\/origin data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
@@ -1534,7 +1517,6 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/rm\.aarki\.net\/v1\/ads data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/s0\.2mdn\.net\/ads\/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/s3\.pstatp\.com\/inapp\/TTAdblock\.css data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
-^https?:\/\/s3plus\.meituan\.net\/v1\/mss_a002 data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/s\.go\.sohu\.com\/adgtr\/\?gbcode= data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/sapi\.guopan\.cn\/get_buildin_ad data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/sdk\.99shiji\.com\/ad\/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
@@ -1676,8 +1658,7 @@ Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo
 # Google重定向
 bstar_login = type=http-request,pattern=^https?:\/\/passport\.biliintl\.com\/x\/intl\/passport-login\/(sms\/send|reg\/sms|oauth2\/access_token|login\/sms),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Rewrite/bstar.js,script-update-interval=0
 bstar_play = type=http-request,pattern=^https?:\/\/app\.biliintl\.com\/(intl\/gateway\/v\d\/app\/data\/report\/heartbeat\/mobile|x\/(history|reply)/v\d/add),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Rewrite/bstar.js,script-update-interval=0
-# Other
-美團外賣_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+
 
 # @Nebulosa-Cat
 disney_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/disney_check.js?version=1637153952428
@@ -1740,7 +1721,6 @@ wb_ad.js = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent
 嘀嗒出行_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/capis(-?\w*)?\.didapinche\.com\/ad\/cx\/startup\?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
 Fa米家_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/fmapp\.chinafamilymart\.com\.cn\/api\/app\/market\/start\/ad,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/famijia/famijia_checkin.js
 BiliBili_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
-美團外賣_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
 小愛音箱_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/hd\.mina\.mi\.com\/splashscreen\/alert,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
 京東_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
 聯享家_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview.fcg,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
@@ -1779,7 +1759,6 @@ bstar.js_http-request = type=http-request,requires-body=1,script-path=https://ra
 知乎_獲取黑名單 = type=http-response,requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js,pattern=^https?:\/\/api\.zhihu\.com\/settings\/blocked_users
 知乎_評論去廣告 = type=http-response,requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js,pattern=^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments?
 知乎_預置關鍵詞去廣告 = type=http-response,requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js,pattern=^https?:\/\/api\.zhihu\.com\/search\/preset_words\?
-美團外賣_開屏去廣告 = type=http-response,requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js,pattern=^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo?
 聯享家_開屏去廣告 = type=http-response,requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js,pattern=^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg
 # 餓了麼
 # 打開餓了麼，點擊我的-點擊超級吃貨卡 自動獲取Cookie
@@ -1937,7 +1916,7 @@ netflixCheck = script-name=netflixCheck,update-interval=1
 disney_check = script-name=disney_check,title=Disney+ 影劇版權IP鎖測試,style=alert,content=請刷新,update-interval=1800
 premiumCheck = script-name=premiumCheck,title=YouTube Premium 跨區解鎖測試,update-interval=1
 flushDNS = script-name=flushDNS,update-interval=600
-NetInfoPanel = style=info,script-name=net-info-panel.js,update-interval=1
+NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
 
 
 [Host]
