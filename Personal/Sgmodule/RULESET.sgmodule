@@ -1850,7 +1850,7 @@ mgtv.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/maste
 # 先把*.video.qq.com加到[MITM]已添加 默認不用加
 # 手機瀏覽器訪問: https://film.qq.com/和http://v.qq.com/x/bu/mobile_checkin
 # 隨便選 1 部電影觀看
-# 系統提示: 獲取Cookie: 成功 （如果不提示獲取成功, 點自己頭像退出登錄, 重新登錄下應該就能獲取）
+# 系統提示: 獲取Cookie: 成功 （如果不提示獲取成功, 點自己頭像退出登錄, 重新登錄應該就能獲取）
 # 每天00:05:10執行一次.
 騰訊視頻獲取Cookie = type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
 騰訊視頻簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js
