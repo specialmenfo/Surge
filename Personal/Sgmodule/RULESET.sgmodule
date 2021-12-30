@@ -2,7 +2,6 @@
 #!desc= 分流規則 收集於GitHub及部分自添加 包含Panel、腳本、去廣告、Rewrite以及MitM 可能有重合規則，自己使用這麼久，暫時還沒發現有什麼影響
 #!author= IEQ0P
 
-
 [General]
 # INTERNET 測試 URL
 internet-test-url = http://captive.apple.com/
