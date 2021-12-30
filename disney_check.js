@@ -1,34 +1,3 @@
-/**
- * 純搬運加繁體化 僅自用
- * @author Helge_0x00
- *
- * [Panel]
- * disney_check = script-name=disney_check,title=Disney+ 影劇版權 IP 鎖測試,style=alert,content=請刷新,update-interval=1800
- *
- * [Script]
- * disney_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/disney_check.js
- *
- * 支持使用腳本使用 argument 參數自定義配置，如：argument=key1=URLEncode(value1)&key2=URLEncode(value2)，具體參數如下所示，
- * title: 面板標題
- * availableContent: 解鎖時展示的的文本內容，支持以下四個個區域佔位符 #REGION_FLAG#、#REGION_CODE#、#REGION_NAME#、#REGION_NAME_EN#，用來展示地區國旗 emoji 、地區編碼、地區中文名稱、地區英文名稱
- * availableIcon: 解鎖時展示的圖標，內容為任意有效的 SF Symbol Name
- * availableIconColor:  解鎖時展示的圖標顏色，內容為顏色的 HEX 編碼
- * availableStyle: 解鎖時展示的圖標樣式，參數可選值有 good, info, alert, error
- * comingContent: 計劃上線展示的的文本內容，支持以下四個個區域佔位符 #REGION_FLAG#、#REGION_CODE#、#REGION_NAME#、#REGION_NAME_EN#，用來展示地區國旗 emoji 、地區編碼、地區中文名稱、地區英文名稱
- * comingIcon: 計劃上線展示的圖標，內容為任意有效的 SF Symbol Name
- * comingIconColor:  計劃上線展示的圖標顏色，內容為顏色的 HEX 編碼
- * comingStyle: 計劃上線展示的圖標樣式，參數可選值有 good, info, alert, error
- * notAvailableContent: 不支持解鎖時展示的文本內容
- * notAvailableIcon: 不支持解鎖時展示的圖標
- * notAvailableIconColor: 不支持解鎖時展示的圖標顏色
- * notAvailableStyle: 不支持解鎖時展示的圖標樣式
- * errorContent: 檢測異常時展示的文本內容
- * errorIcon: 檢測異常時展示的圖標
- * errorIconColor: 檢測異常時展示的圖標顏色
- * errorStyle: 檢測異常時展示的圖標樣式
- * timeout: 超時時間，毫秒，默認為 3000
- */
-
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'
 
 // 即將登陸
