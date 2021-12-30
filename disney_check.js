@@ -13,11 +13,11 @@ const STATUS_ERROR = -2
 
 const DEFAULT_OPTIONS = {
   title: 'Disney+ 影劇版權 IP 鎖測試',
-  availableContent: '目前 IP 可完整收看 Disney+ 影劇\n解鎖國家： #REGION_FLAG# #REGION_NAME#',
+  availableContent: '目前 IP 可完整收看 Disney+ 影劇\n解鎖國家：#REGION_FLAG# #REGION_NAME#',
   availableIcon: undefined,
   availableIconColor: undefined,
   availableStyle: 'good',
-  comingContent: 'Coming Soon \n #REGION_FLAG# #REGION_NAME#',
+  comingContent: 'Coming Soon\n#REGION_FLAG# #REGION_NAME#',
   comingIcon: undefined,
   comingIconColor: undefined,
   comingStyle: 'info',
