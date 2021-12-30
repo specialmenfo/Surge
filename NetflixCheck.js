@@ -22,7 +22,8 @@ const AREA_TEST_FILM_ID = 80018499
 	    result['icon-color'] = '#1B813E'
       //result['icon'] = params.icon1
 	    //result['icon-color'] = params.color1
-      result['content'] = '目前 IP 可完整收看 Netflix   影劇\n解鎖國家： #REGION_FLAG# #REGION_NAME#'
+
+      result['content'] = '目前 IP 可完整收看 Netflix   影劇\n解鎖國家：' + code.toUpperCase()
       return Promise.reject('BreakSignal')
     })
     .then((code) => {
@@ -34,7 +35,7 @@ const AREA_TEST_FILM_ID = 80018499
 	    result['icon-color'] = "#EFBB24"
       //result['icon'] = params.icon2
 	    //result['icon-color'] = params.color2
-      result['content'] = '目前 IP 僅支援收看 Netflix 自製劇\n解鎖國家： #REGION_FLAG# #REGION_NAME#'
+      result['content'] = '目前 IP 僅支援收看 Netflix 自製劇\n解鎖國家：' + code.toUpperCase()
       return Promise.reject('BreakSignal')
     })
     .catch((error) => {
@@ -101,6 +102,27 @@ function getParams(param) {
       .map((item) => item.split("="))
       .map(([k, v]) => [k, decodeURIComponent(v)])
   );
+}
+
+function replaceRegionPlaceholder(content, region) {
+  let result = content
+
+  if (result.indexOf('#REGION_CODE#') !== -1) {
+    result = result.replaceAll('#REGION_CODE#', region.toUpperCase())
+  }
+  if (result.indexOf('#REGION_FLAG#') !== -1) {
+    result = result.replaceAll('#REGION_FLAG#', getCountryFlagEmoji(region.toUpperCase()))
+  }
+
+  if (result.indexOf('#REGION_NAME#') !== -1) {
+    result = result.replaceAll('#REGION_NAME#', RESION_NAMES?.[region.toUpperCase()]?.chinese ?? '')
+  }
+
+  if (result.indexOf('#REGION_NAME_EN#') !== -1) {
+    result = result.replaceAll('#REGION_NAME_EN#', RESION_NAMES?.[region.toUpperCase()]?.english ?? '')
+  }
+
+  return result
 }
 
 function getCountryFlagEmoji(countryCode) {
