@@ -4,7 +4,7 @@
  * youtube_premium_check = script-name=youtube_premium_check, title="YouTube Premium 解鎖檢測", update-interval=1
  *
  * [Script]
- * youtube_premium_check = type=generic, script-path=https://gist.githubusercontent.com/Hyseen/5ae36a6a5cb5690b1f2bff4aa19c766f/raw/youtube_premium_check.js?version=1633074636264, argument=title=YouTube 解鎖檢測
+ * youtube_premium_check = type=generic, script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/YouTubePremiumCheck.js?version=1633074636264, argument=title=YouTube 解鎖檢測
  *
  * 支持使用腳本使用 argument 參數自定義配置，如：argument=key1=URLEncode(value1)&key2=URLEncode(value2)，具體參數如下所示，
  * title: 面板標題
