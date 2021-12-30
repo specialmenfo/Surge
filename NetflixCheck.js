@@ -15,7 +15,7 @@ const DEFAULT_OPTIONS = {
   notAvailableIcon: '',
   notAvailableIconColor: '',
   notAvailableStyle: 'alert',
-  errorContent: '檢測失敗\n請重試',
+  errorContent: '檢測失敗\n請稍後重試',
   errorIcon: '',
   errorIconColor: '',
   errorStyle: 'error',
