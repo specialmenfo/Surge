@@ -63,6 +63,9 @@ DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_Domain.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite.list,🛑 廣告攔截
+RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,🛑 廣告攔截
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt,🌏 國外網站
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/private.txt,🌏 國外網站
 RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Britbox.list,🇺🇸 Britbox
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/iQiYiTW1.list,🇹🇼 愛奇藝台灣
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/iQiYi.list,🇨🇳 愛奇藝
@@ -100,9 +103,6 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Yandex.list,🇷🇺 Yandex
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/YouKu.list,🇨🇳 優酷
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/ChinaWebsite.list,🎯 全球直連
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt,🌏 國外網站
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/private.txt,🌏 國外網站
-RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/myVideo.list,🇹🇼 myVideo
 RULE-SET,https://raw.githubusercontent.com/VirgilClyne/iRingo/main/RuleSet/Apple_News.list,🇺🇸 Apple News+
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppStore/AppStore.list,🇺🇸 App Store
@@ -317,7 +317,6 @@ https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/
 ^https?:\/\/(www.)?xshellcn\.com\/ https://www.netsarang.com/zh/xshell/ 302
 ^https?:\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/ 302
 ^https?:\/\/(www.)?zbrushcn.com/ https://pixologic.com/ 302
-
 # 有兔閱讀(米兔)
 ^http:\/\/img\.dailmo\.com\/img\/61\/23c7125bfe6166d69f3bff5b0ca4d31e\.jpg - reject
 ^http:\/\/img\.dailmo\.com\/img\/50\/edb40c6392f848df37f9c31d8a6f90f6\.jpg - reject
@@ -771,246 +770,6 @@ http:\/\/analytics\.163\.com\/ntes - reject
 # > Douyin(<= 16.2.0) By Choler
 ^https?:\/\/api.*\.amemv\.com\/aweme\/v2\/feed\/ https://aweme.snssdk.com/aweme/v1/feed/ header
 
-[Script]
-# Apple全家桶
-#  Replace Apple Weather with 🇺🇸US @waqi.info
-# 切換空氣質量數據源為waqi.info，並更改標準為AQI(US)
-Apple_Weather.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_Weather.js,requires-body=true,tag=Apple_Weather,type=http-response,pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather.*(?!dataSets=forecastNextHour)(include=.*air_quality.*|dataSets=.*airQuality.*).*(country=[A-Z]{2})?.*
-#  Replace Apple Weather with 🇺🇸US @waqi.info
-# 切換空氣質量數據源為waqi.info，並更改標準為AQI(US)
-Apple_Weather_Map.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_Weather_Map.js,tag=Apple_Weather_Map,type=http-request,pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/airQuality\?.*(country=CN)?.*
-Apple_Weather_Map.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_Weather_Map.js,requires-body=true,tag=Apple_Weather_Map,type=http-response,pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/airQuality\?.*(country=CN)?.*
-#  Response Geo Services to 🇺🇸US
-# 只作用於檢測地區，不修改Apple Maps和Apple News，可以通過搭配使用其他模塊達成混合效果。
-# Response Geo Services to US
-Geo_Services.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Geo_Services.js,argument=GeoCountryCode=US,requires-body=false,tag=Geo_Services,type=http-request,pattern=^https?:\/\/gspe\d*-ssl\.ls\.apple\.com(\/pep\/gcc)
-#  Enable Siri Suggestions
-# 在聚焦搜索(Spotlight)和查詢(Look Up)中啓用Siri建議(Siri Suggestions)功能。
-# Redirect Siri Suggestions Service
-# Bag (iOS/macOS)
-Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/bag\?(.*)
-# Spotlight & Look Up Search (iOS/macOS)
-Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/search\?(.*)
-# Siri Infomation Card (macOS)
-Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/card\?(.*)
-#  Enable Apple TV app
-# 解鎖TV app全功能：使用🇺🇸US「體育節目」和「兒童」頁面，優先簡體中文(zh-Hans)
-# Enable All TV app Tabs
-Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,requires-body=true,timeout=3,tag=Apple_TV,type=http-response,pattern=^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/configurations\?.*
-# TV app Tabs, Redirect Desktop Platform to AppleTV, Redirect Sports and Kids Tabs StoreFront to US (143441)
-Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/canvases\/Roots\/(watchNow|tahoma_watchnow|movies|tv|sports|kids)\?.*
-# TV app movies and shows and sports infomation Webs, Redirect Desktop Platform to AppleTV
-Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/(movies|shows|sports|sporting-events).*
-# TV UpNext, Redirect Desktop Platform to AppleTV
-Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/shelves\/uts.col.UpNext.*
-# TV channels, Redirect StoreFront to US (143441)
-Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/brands\?.*
-# TV Live Playables, Redirect StoreFront to US (143441)
-Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/playables.*
-# TV Favorites Teams web, Redirect StoreFront to US (143441)
-Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/favorites\?.*
-# TV Watchlist Function, Redirect desktop Platform to iPad
-Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/watchlist.*
-# Enable TV Favorites Teams Function, Redirect StoreFront to US (143441)
-Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,requires-body=true,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/favorites\/(add|remove).*
-# TV Product View, no Redirect
-// Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/view\/product\/.*
-#  Unlock Apple News 🇺🇸US
-# 解鎖🇺🇸US地區的News，注：需配合域名集使用，使用過程中gateway.icloud.com需走代理線路。
-Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js,requires-body=true,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(edge|events)\.apple\.com\/(v1\/configs|analyticseventsv2\/async).*
-Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(client-search)\.apple\.com\/(v1\/search\?).*
-# Google重定向
-bstar_login = type=http-request,pattern=^https?:\/\/passport\.biliintl\.com\/x\/intl\/passport-login\/(sms\/send|reg\/sms|oauth2\/access_token|login\/sms),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Rewrite/bstar.js,script-update-interval=0
-bstar_play = type=http-request,pattern=^https?:\/\/app\.biliintl\.com\/(intl\/gateway\/v\d\/app\/data\/report\/heartbeat\/mobile|x\/(history|reply)/v\d/add),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Rewrite/bstar.js,script-update-interval=0
-# JD App 顯示歷史價格
-jd_price.js = type=http-response,requires-body=1,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
-# Taobao App 顯示歷史價格
-tb_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/zwf234/rules/master/js/tb_price.js,type=http-request,pattern=^http:\/\/.+\/amdc\/mobileDispatch
-tb_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/zwf234/rules/master/js/tb_price.js,type=http-response,pattern=^https?:\/\/trade-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.detail\.getdetail
-# 微信
-微信外鏈 = type=http-response,pattern=^https:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/weixin-external-links.js,script-update-interval=0
-解除WeChat鏈接限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
-解除WeChat鏈接限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js,argument=taobaoNotifyJump=false&useGoogleCache=true
-解除WeChat鏈接限制 = type=http-response,pattern=^https:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/weixin-external-links.js,script-update-interval=0
-# 嗶哩嗶哩, 港澳台番劇自動切換地區 & 顯示豆瓣評分
-Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/Bili_Auto_Regions.js,script-update-interval=0
-# 可選, 適用於搜索指定地區的番劇
-# 如需搜索指定地區番劇, 可在搜索框添加後綴" 港", " 台", " 中". 例如: 進擊的巨人 港(後面空格加上港、台、中）
-# 台灣動漫需要以繁體中文搜索 否則搜不出來
-Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/Bili_Auto_Regions.js,requires-body=0,script-update-interval=0
-# Netflix評分
-netflix_rating.js = script-path=https://kinta.ma/surge/scripts/netflix_rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
-netflix_rating.js = requires-body=1,script-path=https://kinta.ma/surge/scripts/netflix_rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
-# Spotify Premium
-spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
-# 彩雲天氣_SVIP
-彩雲天氣_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/nxyd/Surge/main/caiyun_svip.js
-# 酷我VIP
-酷我vip解鎖 = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js,script-update-interval=0
-# 嗶哩嗶哩番劇開啓1080P+
-嗶哩嗶哩番劇開啓1080P+ = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,timeout=10,script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/backup/bilifj.js,script-update-interval=0
-BiliBili_推薦去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
-BiliBili_追番去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
-BiliBili_直播去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
-BiliBili_動態去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
-BiliBili_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
-BiliBili_標籤頁處理 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
-BiliBili_我的頁面處理 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
-# 百度防跳轉App Store
-百度防跳轉 = type=http-response,pattern=^https:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js
-# 微信公眾號廣告屏蔽
-微信公眾號廣告屏蔽 = type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
-# 微博廣告屏蔽
-wb_launch.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js,type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)
-wb_ad.js = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js,type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/(photos/pic_recommend_status|live/media_homelist)|video/tiny_stream_video_list|photo/info|remind/unread_count)
-去廣告 = type=http-response,pattern=^(https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations|api\.zhihu\.com\/(topstory\/recommend|commercial_api\/real_time_launch_v2|questions\/\d+\/feeds\?|v4\/questions\/\d+\/answers\?)|magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/deeplink\/geturl|v1\/(client\/getconf|adv\/getadvlistbatch\?positions=iOS_tab|dailyrecommend\/getdailyrecommend))|news\.ssp\.qq\.com\/app|r\.inews\.qq\.com\/(getQQNewsUnreadList|getQQNewsMixedList|getTopicSelectList)|us\.l\.qq\.com\/exapp|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?)|http:\/\/app02\.vgtime\.com:8080\/vgtime-app\/api\/v2\/init\/ad\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/ad.js,script-update-interval=0
-# 餓了麼
-# 打開餓了麼，點擊我的-點擊超級吃貨卡 自動獲取Cookie
-餓了麼_領取吃貨豆 = type=cron,cronexp=10 00 * * *,timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js
-餓了麼_領取任務 = type=cron,cronexp=00 10 * * *,timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_mission.js
-餓了麼_獲取cookie = type=http-request,pattern=^https?:\/\/h5\.ele\.me\/restapi\/biz\.svip_scene\/svip\/engine\/queryTrafficSupply,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js
-# WPS
-# 打開 APP , 進入簽到頁面, 系統提示: 獲取會話: 成功 (簽到) (不用手動簽到)
-# 運行一次腳本, 如果提示重復簽到, 那就算成功了!
-wps.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js,type=http-request,pattern=^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list
-wps.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js,type=cron,cronexp=10 0 0 * * *
-# 喜馬拉雅
-# 打開 APP, 訪問下右下角賬號
-# 系統提示: 獲取Cookie: 成功 & 獲取Token: 成功（如果不提示獲取成功, 嘗試殺進程再進賬號）
-ximalaya.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js,type=http-request,pattern=^https?:\/\/.*\/mobile\-user\/(v1\/)?homePage\/.*
-ximalaya.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js,type=cron,cronexp=10 0 0 * * *
-# 百度貼吧
-# 用瀏覽器訪問一下: https://tieba.baidu.com 或者 https://tieba.baidu.com/index/
-# 系統提示: 獲取Cookie: 成功
-tieba.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js,type=http-request,pattern=^https?:\/\/tieba\.baidu\.com\/?.?
-tieba.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js,type=cron,cronexp=10 0 0 * *
-# 什麼值得買
-# 瀏覽器訪問並登錄: https://zhiyou.smzdm.com/user/login
-# 打開瀏覽器訪問: https://www.smzdm.com
-# Surge提示: Cookie [什麼值得買] 寫入成功
-smzdm.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.cookie.js,type=http-request,pattern=^https:\/\/www\.smzdm\.com\/?.?
-smzdm.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js,type=cron,cronexp=10 0 0 * * *
-# 順豐速運
-# APP 我的順豐 > 任務中心 > 去簽到
-# 提示 獲取會話: 成功
-Rewrite: 順豐速運 = type=http-request,pattern=^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js,requires-body=true
-sfexpress.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js,type=cron,cronexp=1 0 * * *
-# 網易雲音樂
-# 先登錄: https://music.163.com/m/login
-# 再訪問: https://music.163.com/#/user/level
-# 提示: 獲取會話: 成功!
-neteasemusic.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,requires-body=true,type=http-request,pattern=^https:\/\/music.163.com\/weapi\/user\/level
-neteasemusic.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,type=cron,cronexp=10 0 0 * * *
-# 哈囉出行
-# 打開 APP 進入簽到頁面: 我的 > 有哈有車
-# 系統提示: 首次寫入 哈囉出行 Token 成功 🎉
-# 運行一次腳本, 如果提示重復簽到, 那就算成功了!
-hellobike.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js,requires-body=true,type=http-request,pattern=^https:\/\/gameapi\.hellobike\.com\/api
-hellobike.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js,type=cron,cronexp=5 0 * * *
-# 威鋒網
-# 在 威鋒網 APP 下使用 賬號密碼 方式登錄
-# 提示 獲取會話: 成功
-Rewrite: feng = type=http-request,pattern=^https?:\/\/api.wfdata.club\/v1\/auth\/signin,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/feng/feng.cookie.js,requires-body=true
-feng.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/feng/feng.js,type=cron,cronexp=10 0 0 * * *
-# 芒果TV
-# 打開 APP 然後手動簽到 1 次, 系統提示: 獲取Cookie: 成功
-mgtv.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.cookie.js,type=http-request,pattern=^https:\/\/credits.bz.mgtv.com\/user\/creditsTake
-mgtv.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.js,type=cron,cronexp=10 0 0 * * *
-# 京東
-# 使用方法：複製 https://home.m.jd.com/myJd/newhome.action 到瀏覽器打開 ，在個人中心自動獲取 cookie，
-# 若彈出成功則正常使用。否則繼續再此頁面繼續刷新一下試試。
-# 如果還不行，請使用Safari瀏覽器打開登錄 https://home.m.jd.com/myJd/newhome.action 點擊"我的"頁面
-# 或者使用舊版網址 https://bean.m.jd.com/bean/signIndex.action 點擊簽到並且出現簽到日曆
-# 如果通知獲取Cookie成功, 則可以使用此簽到腳本. 注: 請勿在京東APP內獲取!!!
-# 獲取京東金融簽到Body說明: 正確添加腳本配置後, 進入"京東金融"APP, 在"首頁"點擊"簽到"並簽到一次, 待通知提示成功即可.
-# 由於cookie的有效性(經測試網頁Cookie有效週期最長31天)，如果腳本後續彈出cookie無效的通知，則需要重復上述步驟。
-京東多合一簽到 = type=cron,cronexp=0 0 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
-獲取京東Cookie = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,max-size=0,script-update-interval=0
-京東資產變動通知 = type=cron,cronexp=2 9 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_bean_change.js
-省錢大贏家之翻翻樂 = type=cron,cronexp=30 0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_big_winner.js
-口袋書店 = type=cron,cronexp="1 8,12,18 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_bookshop.js
-京東汽車 = type=cron,cronexp=10 7 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_car.js
-京東汽車兌換 = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_car_exchange.js
-簽到領現金 = type=cron,cronexp=2 0-23/4 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_cash.js
-搖京豆 = type=cron,cronexp="30 0 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_club_lottery.js
-京喜工廠 = type=cron,cronexp=30 0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_dreamFactory.js
-京喜工廠助力 = type=cron,cronexp=30 0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_dreamFactory_help.js
-獲取多賬號京東Cookie = type=http-request,pattern=^https:\/\/me-api\.jd\.com\/user_new\/info\/GetJDUserInfoUnion,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/JD_extra_cookie.js,script-update-interval=0
-東東農場 = type=cron,cronexp=5 6-18/6 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_fruit.js
-金榜創造營 = type=cron,cronexp="13 1,22 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_gold_creator.js
-東東健康社區 = type=cron,cronexp="13 1,6,22 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_health2.js
-東東健康社區收集能量 = type=cron,cronexp=5-45/20 * * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_health_collect.js
-東東工廠 = type=cron,cronexp=30 0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_jdfactory.js
-領金貼 = type=cron,cronexp=10 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_jin_tie.js
-京喜農場 = type=cron,cronexp="0 9,12,18 * * *",timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_jxnc.js
-京東快遞簽到 = type=cron,cronexp=10 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_kd.js
-京東直播 = type=cron,cronexp=10-20/5 12 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_live.js
-幸運大轉盤 = type=cron,cronexp=4 10 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_market_lottery.js
-京東秒秒幣 = type=cron,cronexp=10 7 * * *,wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_ms.js
-女裝盲盒 = type=cron,cronexp="35 1,23 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_nzmh.js
-東東萌寵 = type=cron,cronexp=15 6-18/6 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_pet.js
-京東金融養豬豬 = type=cron,cronexp=12 0-23/6 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_pigPet.js
-京東種豆得豆 = type=cron,cronexp=1 7-21/2 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_plantBean.js
-閃購盲盒 = type=cron,cronexp=20 8 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_sgmh.js
-進店領豆 = type=cron,cronexp=30 0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_shop.js
-京東極速版紅包 = type=cron,cronexp="20 0,22 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_speed_redpocke.js
-京東極速版 = type=cron,cronexp=0 7 * * *,wake-system=1,timeout=33600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_speed_sign.js
-東東超市 = type=cron,cronexp=11 * * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_superMarket.js
-取關京東店鋪商品 = type=cron,cronexp=55 23 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_unsubscribe.js
-# 愛奇藝
-# 獲取Cookie說明：
-# 打開愛奇藝App後(AppStore中國區)，點擊"我的", 如通知成功獲取cookie, 則可以使用此簽到腳本.
-# 每天00:05:10執行一次.
-愛奇藝簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-愛奇藝獲取Cookie = type=http-request,pattern=^https?:\/\/iface(\d)?\.iqiyi\.com\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-# 騰訊視頻
-# 先把*.video.qq.com加到[MITM]已添加 默認不用加
-# 手機瀏覽器訪問: https://film.qq.com/和http://v.qq.com/x/bu/mobile_checkin
-# 隨便選 1 部電影觀看
-# 系統提示: 獲取Cookie: 成功 （如果不提示獲取成功, 點自己頭像退出登錄, 重新登錄應該就能獲取）
-# 每天00:05:10執行一次.
-騰訊視頻獲取Cookie = type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
-騰訊視頻簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js
-# 叮咚買菜
-# 先把maicai.api.ddxq.mobi加到[MITM]已添加 默認不用加
-# 打開 APP, 訪問下我的>積分
-# 系統提示: 獲取Cookie: 成功 （如果不提示獲取成功, 嘗試殺進程再進個人中心）
-# 每天00:05:10執行一次.
-叮咚買菜獲取Cookie = type=http-request,pattern=^https:\/\/maicai.api.ddxq.mobi\/point\/home,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.cookie.js
-叮咚買菜簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.js
-# 神機
-# > Douyin(<= 16.2.0) - api*.amemv.com, aweme.snssdk.com
-douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v\d\/feed\/,requires-body=1,script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/douyin.js
-# > Weibo - api.weibo.cn,mapi.weibo.com,*.uve.weibo.com
-weibo_splash = type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua),requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
-weibo_ads = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/(photos/pic_recommend_status|live/media_homelist)|video/tiny_stream_video_list|photo/info|remind/unread_count),requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
-# > Zhihu - www.zhihu.com,api.zhihu.com
-知乎_處理用戶信息 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/people\/,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
-知乎_信息流去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/(moments|topstory)(\/|\?)?(recommend|action=|feed_type=)(?!\/people),script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
-知乎_回答列表去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/v4\/questions,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
-知乎_預置關鍵詞去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/search\/preset_words\?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
-知乎_熱搜去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/search\/top_search\/tabs\/hot\/items,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
-知乎_熱榜去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/topstory\/hot-lists?(\?|\/),script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
-知乎_評論去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
-# > SMZDM - homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com
-什麼值得買_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app-api\.smzdm\.com\/util\/loading,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-什麼值得買_首頁去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/homepage-api\.smzdm\.com\/v3\/home,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-什麼值得買_好價去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/haojia-api\.smzdm\.com\/home\/list,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-什麼值得買_好價詳情頁去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/article_releated_modul,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-什麼值得買_百科去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/baike-api\.smzdm\.com\/home_v3\/list,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-什麼值得買_搜索結果去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/list_v10,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-什麼值得買_搜索標籤去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-什麼值得買_值會員權益中心banner去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-# > bilibili
-Bilibili_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com/x/v\d/splash/list,script-path=https://raw.githubusercontent.com/srk24/profile/master/js/bilibili_splash.js
-# @Nebulosa-Cat
-disney_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/disney_check.js?version=1637153952428
-reload.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/reload.js,type=generic
-netflixCheck = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/NetflixCheck.js,timeout=30
-premiumCheck = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/YouTubePremiumCheck.js,timeout=30
-flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
-net-info-panel.js=script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/networkCheck.js,type=generic
-
 [Map Local]
 # WeChat
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad data="https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Rewrite/WeChat.json"
@@ -1367,14 +1126,256 @@ net-info-panel.js=script-path=https://raw.githubusercontent.com/specialmenfo/Sur
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/.+monitor\? data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
 ^https?:\/\/mp\.weixin\.qq\.com\/bizmall\/reward\? data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
 
+[Script]
+取關京東店鋪商品 = type=cron,cronexp=55 23 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_unsubscribe.js
+京東資產變動通知 = type=cron,cronexp=2 9 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_bean_change.js
+# Apple全家桶
+#  Replace Apple Weather with 🇺🇸US @waqi.info
+# 切換空氣質量數據源為waqi.info，並更改標準為AQI(US)
+Apple_Weather.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_Weather.js,requires-body=true,tag=Apple_Weather,type=http-response,pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather.*(?!dataSets=forecastNextHour)(include=.*air_quality.*|dataSets=.*airQuality.*).*(country=[A-Z]{2})?.*
+#  Replace Apple Weather with 🇺🇸US @waqi.info
+# 切換空氣質量數據源為waqi.info，並更改標準為AQI(US)
+Apple_Weather_Map.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_Weather_Map.js,tag=Apple_Weather_Map,type=http-request,pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/airQuality\?.*(country=CN)?.*
+Apple_Weather_Map.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_Weather_Map.js,requires-body=true,tag=Apple_Weather_Map,type=http-response,pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/airQuality\?.*(country=CN)?.*
+#  Response Geo Services to 🇺🇸US
+# 只作用於檢測地區，不修改Apple Maps和Apple News，可以通過搭配使用其他模塊達成混合效果。
+# Response Geo Services to US
+Geo_Services.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Geo_Services.js,argument=GeoCountryCode=US,requires-body=false,tag=Geo_Services,type=http-request,pattern=^https?:\/\/gspe\d*-ssl\.ls\.apple\.com(\/pep\/gcc)
+#  Enable Siri Suggestions
+# 在聚焦搜索(Spotlight)和查詢(Look Up)中啓用Siri建議(Siri Suggestions)功能。
+# Redirect Siri Suggestions Service
+# Bag (iOS/macOS)
+Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/bag\?(.*)
+# Spotlight & Look Up Search (iOS/macOS)
+Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/search\?(.*)
+# Siri Infomation Card (macOS)
+Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/card\?(.*)
+#  Enable Apple TV app
+# 解鎖TV app全功能：使用🇺🇸US「體育節目」和「兒童」頁面，優先簡體中文(zh-Hans)
+# Enable All TV app Tabs
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,requires-body=true,timeout=3,tag=Apple_TV,type=http-response,pattern=^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/configurations\?.*
+# TV app Tabs, Redirect Desktop Platform to AppleTV, Redirect Sports and Kids Tabs StoreFront to US (143441)
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/canvases\/Roots\/(watchNow|tahoma_watchnow|movies|tv|sports|kids)\?.*
+# TV app movies and shows and sports infomation Webs, Redirect Desktop Platform to AppleTV
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/(movies|shows|sports|sporting-events).*
+# TV UpNext, Redirect Desktop Platform to AppleTV
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/shelves\/uts.col.UpNext.*
+# TV channels, Redirect StoreFront to US (143441)
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/brands\?.*
+# TV Live Playables, Redirect StoreFront to US (143441)
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/playables.*
+# TV Favorites Teams web, Redirect StoreFront to US (143441)
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/favorites\?.*
+# TV Watchlist Function, Redirect desktop Platform to iPad
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/watchlist.*
+# Enable TV Favorites Teams Function, Redirect StoreFront to US (143441)
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,requires-body=true,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/favorites\/(add|remove).*
+# TV Product View, no Redirect
+// Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/view\/product\/.*
+#  Unlock Apple News 🇺🇸US
+# 解鎖🇺🇸US地區的News，注：需配合域名集使用，使用過程中gateway.icloud.com需走代理線路。
+Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js,requires-body=true,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(edge|events)\.apple\.com\/(v1\/configs|analyticseventsv2\/async).*
+Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(client-search)\.apple\.com\/(v1\/search\?).*
+# Google重定向
+bstar_login = type=http-request,pattern=^https?:\/\/passport\.biliintl\.com\/x\/intl\/passport-login\/(sms\/send|reg\/sms|oauth2\/access_token|login\/sms),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Rewrite/bstar.js,script-update-interval=0
+bstar_play = type=http-request,pattern=^https?:\/\/app\.biliintl\.com\/(intl\/gateway\/v\d\/app\/data\/report\/heartbeat\/mobile|x\/(history|reply)/v\d/add),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Rewrite/bstar.js,script-update-interval=0
+# JD App 顯示歷史價格
+jd_price.js = type=http-response,requires-body=1,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+# Taobao App 顯示歷史價格
+tb_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/zwf234/rules/master/js/tb_price.js,type=http-request,pattern=^http:\/\/.+\/amdc\/mobileDispatch
+tb_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/zwf234/rules/master/js/tb_price.js,type=http-response,pattern=^https?:\/\/trade-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.detail\.getdetail
+# 微信
+微信外鏈 = type=http-response,pattern=^https:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/weixin-external-links.js,script-update-interval=0
+解除WeChat鏈接限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
+解除WeChat鏈接限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js,argument=taobaoNotifyJump=false&useGoogleCache=true
+解除WeChat鏈接限制 = type=http-response,pattern=^https:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/weixin-external-links.js,script-update-interval=0
+# 嗶哩嗶哩, 港澳台番劇自動切換地區 & 顯示豆瓣評分
+Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/Bili_Auto_Regions.js,script-update-interval=0
+# 可選, 適用於搜索指定地區的番劇
+# 如需搜索指定地區番劇, 可在搜索框添加後綴" 港", " 台", " 中". 例如: 進擊的巨人 港(後面空格加上港、台、中）
+# 台灣動漫需要以繁體中文搜索 否則搜不出來
+Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/main/Bili_Auto_Regions.js,requires-body=0,script-update-interval=0
+# Netflix評分
+netflix_rating.js = script-path=https://kinta.ma/surge/scripts/netflix_rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+netflix_rating.js = requires-body=1,script-path=https://kinta.ma/surge/scripts/netflix_rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+# Spotify Premium
+spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
+# 彩雲天氣_SVIP
+彩雲天氣_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/nxyd/Surge/main/caiyun_svip.js
+# 酷我VIP
+酷我vip解鎖 = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js,script-update-interval=0
+# 嗶哩嗶哩番劇開啓1080P+
+嗶哩嗶哩番劇開啓1080P+ = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,timeout=10,script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/backup/bilifj.js,script-update-interval=0
+BiliBili_推薦去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+BiliBili_追番去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+BiliBili_直播去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+BiliBili_動態去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+BiliBili_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+BiliBili_標籤頁處理 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+BiliBili_我的頁面處理 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 百度防跳轉App Store
+百度防跳轉 = type=http-response,pattern=^https:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js
+# 微信公眾號廣告屏蔽
+微信公眾號廣告屏蔽 = type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
+# 微博廣告屏蔽
+wb_launch.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js,type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)
+wb_ad.js = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js,type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/(photos/pic_recommend_status|live/media_homelist)|video/tiny_stream_video_list|photo/info|remind/unread_count)
+去廣告 = type=http-response,pattern=^(https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations|api\.zhihu\.com\/(topstory\/recommend|commercial_api\/real_time_launch_v2|questions\/\d+\/feeds\?|v4\/questions\/\d+\/answers\?)|magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/deeplink\/geturl|v1\/(client\/getconf|adv\/getadvlistbatch\?positions=iOS_tab|dailyrecommend\/getdailyrecommend))|news\.ssp\.qq\.com\/app|r\.inews\.qq\.com\/(getQQNewsUnreadList|getQQNewsMixedList|getTopicSelectList)|us\.l\.qq\.com\/exapp|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?)|http:\/\/app02\.vgtime\.com:8080\/vgtime-app\/api\/v2\/init\/ad\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/ad.js,script-update-interval=0
+# 餓了麼
+# 打開餓了麼，點擊我的-點擊超級吃貨卡 自動獲取Cookie
+餓了麼_領取吃貨豆 = type=cron,cronexp=10 00 * * *,timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js
+餓了麼_領取任務 = type=cron,cronexp=00 10 * * *,timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_mission.js
+餓了麼_獲取cookie = type=http-request,pattern=^https?:\/\/h5\.ele\.me\/restapi\/biz\.svip_scene\/svip\/engine\/queryTrafficSupply,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js
+# WPS
+# 打開 APP , 進入簽到頁面, 系統提示: 獲取會話: 成功 (簽到) (不用手動簽到)
+# 運行一次腳本, 如果提示重復簽到, 那就算成功了!
+wps.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js,type=http-request,pattern=^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list
+wps.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js,type=cron,cronexp=10 0 0 * * *
+# 喜馬拉雅
+# 打開 APP, 訪問下右下角賬號
+# 系統提示: 獲取Cookie: 成功 & 獲取Token: 成功（如果不提示獲取成功, 嘗試殺進程再進賬號）
+ximalaya.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js,type=http-request,pattern=^https?:\/\/.*\/mobile\-user\/(v1\/)?homePage\/.*
+ximalaya.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js,type=cron,cronexp=10 0 0 * * *
+# 百度貼吧
+# 用瀏覽器訪問一下: https://tieba.baidu.com 或者 https://tieba.baidu.com/index/
+# 系統提示: 獲取Cookie: 成功
+tieba.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js,type=http-request,pattern=^https?:\/\/tieba\.baidu\.com\/?.?
+tieba.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js,type=cron,cronexp=10 0 0 * *
+# 什麼值得買
+# 瀏覽器訪問並登錄: https://zhiyou.smzdm.com/user/login
+# 打開瀏覽器訪問: https://www.smzdm.com
+# Surge提示: Cookie [什麼值得買] 寫入成功
+smzdm.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.cookie.js,type=http-request,pattern=^https:\/\/www\.smzdm\.com\/?.?
+smzdm.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js,type=cron,cronexp=10 0 0 * * *
+# 順豐速運
+# APP 我的順豐 > 任務中心 > 去簽到
+# 提示 獲取會話: 成功
+Rewrite: 順豐速運 = type=http-request,pattern=^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js,requires-body=true
+sfexpress.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js,type=cron,cronexp=1 0 * * *
+# 網易雲音樂
+# 先登錄: https://music.163.com/m/login
+# 再訪問: https://music.163.com/#/user/level
+# 提示: 獲取會話: 成功!
+neteasemusic.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,requires-body=true,type=http-request,pattern=^https:\/\/music.163.com\/weapi\/user\/level
+neteasemusic.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,type=cron,cronexp=10 0 0 * * *
+# 哈囉出行
+# 打開 APP 進入簽到頁面: 我的 > 有哈有車
+# 系統提示: 首次寫入 哈囉出行 Token 成功 🎉
+# 運行一次腳本, 如果提示重復簽到, 那就算成功了!
+hellobike.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js,requires-body=true,type=http-request,pattern=^https:\/\/gameapi\.hellobike\.com\/api
+hellobike.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js,type=cron,cronexp=5 0 * * *
+# 威鋒網
+# 在 威鋒網 APP 下使用 賬號密碼 方式登錄
+# 提示 獲取會話: 成功
+Rewrite: feng = type=http-request,pattern=^https?:\/\/api.wfdata.club\/v1\/auth\/signin,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/feng/feng.cookie.js,requires-body=true
+feng.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/feng/feng.js,type=cron,cronexp=10 0 0 * * *
+# 芒果TV
+# 打開 APP 然後手動簽到 1 次, 系統提示: 獲取Cookie: 成功
+mgtv.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.cookie.js,type=http-request,pattern=^https:\/\/credits.bz.mgtv.com\/user\/creditsTake
+mgtv.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.js,type=cron,cronexp=10 0 0 * * *
+# 京東
+# 使用方法：複製 https://home.m.jd.com/myJd/newhome.action 到瀏覽器打開 ，在個人中心自動獲取 cookie，
+# 若彈出成功則正常使用。否則繼續再此頁面繼續刷新一下試試。
+# 如果還不行，請使用Safari瀏覽器打開登錄 https://home.m.jd.com/myJd/newhome.action 點擊"我的"頁面
+# 或者使用舊版網址 https://bean.m.jd.com/bean/signIndex.action 點擊簽到並且出現簽到日曆
+# 如果通知獲取Cookie成功, 則可以使用此簽到腳本. 注: 請勿在京東APP內獲取!!!
+# 獲取京東金融簽到Body說明: 正確添加腳本配置後, 進入"京東金融"APP, 在"首頁"點擊"簽到"並簽到一次, 待通知提示成功即可.
+# 由於cookie的有效性(經測試網頁Cookie有效週期最長31天)，如果腳本後續彈出cookie無效的通知，則需要重復上述步驟。
+京東多合一簽到 = type=cron,cronexp=0 0 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
+獲取京東Cookie = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,max-size=0,script-update-interval=0
+京東資產變動通知 = type=cron,cronexp=2 9 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_bean_change.js
+省錢大贏家之翻翻樂 = type=cron,cronexp=30 0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_big_winner.js
+口袋書店 = type=cron,cronexp="1 8,12,18 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_bookshop.js
+京東汽車 = type=cron,cronexp=10 7 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_car.js
+京東汽車兌換 = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_car_exchange.js
+簽到領現金 = type=cron,cronexp=2 0-23/4 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_cash.js
+搖京豆 = type=cron,cronexp=30 0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_club_lottery.js
+京喜工廠 = type=cron,cronexp=30 0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_dreamFactory.js
+京喜工廠助力 = type=cron,cronexp=30 0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_dreamFactory_help.js
+獲取多賬號京東Cookie = type=http-request,pattern=^https:\/\/me-api\.jd\.com\/user_new\/info\/GetJDUserInfoUnion,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/JD_extra_cookie.js,script-update-interval=0
+東東農場 = type=cron,cronexp=5 6-18/6 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_fruit.js
+金榜創造營 = type=cron,cronexp="13 1,22 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_gold_creator.js
+東東健康社區 = type=cron,cronexp="13 1,6,22 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_health2.js
+東東健康社區收集能量 = type=cron,cronexp=5-45/20 * * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_health_collect.js
+東東工廠 = type=cron,cronexp=30 0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_jdfactory.js
+領金貼 = type=cron,cronexp=10 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_jin_tie.js
+京喜農場 = type=cron,cronexp="0 9,12,18 * * *",timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_jxnc.js
+京東快遞簽到 = type=cron,cronexp=10 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_kd.js
+京東直播 = type=cron,cronexp=10-20/5 12 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_live.js
+幸運大轉盤 = type=cron,cronexp=4 10 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_market_lottery.js
+京東秒秒幣 = type=cron,cronexp=10 7 * * *,wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_ms.js
+女裝盲盒 = type=cron,cronexp="35 1,23 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_nzmh.js
+東東萌寵 = type=cron,cronexp=15 6-18/6 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_pet.js
+京東金融養豬豬 = type=cron,cronexp=12 0-23/6 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_pigPet.js
+京東種豆得豆 = type=cron,cronexp=1 7-21/2 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_plantBean.js
+閃購盲盒 = type=cron,cronexp=20 8 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_sgmh.js
+進店領豆 = type=cron,cronexp=30 0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_shop.js
+京東極速版紅包 = type=cron,cronexp="20 0,22 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_speed_redpocke.js
+京東極速版 = type=cron,cronexp=0 7 * * *,wake-system=1,timeout=33600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_speed_sign.js
+東東超市 = type=cron,cronexp=11 * * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_superMarket.js
+取關京東店鋪商品 = type=cron,cronexp=55 23 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_unsubscribe.js
+# 愛奇藝
+# 獲取Cookie說明：
+# 打開愛奇藝App後(AppStore中國區)，點擊"我的", 如通知成功獲取cookie, 則可以使用此簽到腳本.
+# 每天00:05:10執行一次.
+愛奇藝簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,wake-system=1,script-update-interval=0
+愛奇藝獲取Cookie = type=http-request,pattern=^https?:\/\/iface(\d)?\.iqiyi\.com\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+# 騰訊視頻
+# 先把*.video.qq.com加到[MITM]已添加 默認不用加
+# 手機瀏覽器訪問: https://film.qq.com/和http://v.qq.com/x/bu/mobile_checkin
+# 隨便選 1 部電影觀看
+# 系統提示: 獲取Cookie: 成功 （如果不提示獲取成功, 點自己頭像退出登錄, 重新登錄應該就能獲取）
+# 每天00:05:10執行一次.
+騰訊視頻獲取Cookie = type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
+騰訊視頻簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js
+# 叮咚買菜
+# 先把maicai.api.ddxq.mobi加到[MITM]已添加 默認不用加
+# 打開 APP, 訪問下我的>積分
+# 系統提示: 獲取Cookie: 成功 （如果不提示獲取成功, 嘗試殺進程再進個人中心）
+# 每天00:05:10執行一次.
+叮咚買菜獲取Cookie = type=http-request,pattern=^https:\/\/maicai.api.ddxq.mobi\/point\/home,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.cookie.js
+叮咚買菜簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.js
+# 神機
+# > Douyin(<= 16.2.0) - api*.amemv.com, aweme.snssdk.com
+douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v\d\/feed\/,requires-body=1,script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/douyin.js
+# > Weibo - api.weibo.cn,mapi.weibo.com,*.uve.weibo.com
+weibo_splash = type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua),requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
+weibo_ads = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/(photos/pic_recommend_status|live/media_homelist)|video/tiny_stream_video_list|photo/info|remind/unread_count),requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
+# > Zhihu - www.zhihu.com,api.zhihu.com
+知乎_處理用戶信息 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/people\/,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_信息流去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/(moments|topstory)(\/|\?)?(recommend|action=|feed_type=)(?!\/people),script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_回答列表去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/v4\/questions,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_預置關鍵詞去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/search\/preset_words\?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_熱搜去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/search\/top_search\/tabs\/hot\/items,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_熱榜去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/topstory\/hot-lists?(\?|\/),script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+知乎_評論去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
+# > SMZDM - homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com
+什麼值得買_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app-api\.smzdm\.com\/util\/loading,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+什麼值得買_首頁去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/homepage-api\.smzdm\.com\/v3\/home,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+什麼值得買_好價去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/haojia-api\.smzdm\.com\/home\/list,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+什麼值得買_好價詳情頁去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/article_releated_modul,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+什麼值得買_百科去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/baike-api\.smzdm\.com\/home_v3\/list,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+什麼值得買_搜索結果去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/list_v10,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+什麼值得買_搜索標籤去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+什麼值得買_值會員權益中心banner去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+# > bilibili
+Bilibili_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com/x/v\d/splash/list,script-path=https://raw.githubusercontent.com/srk24/profile/master/js/bilibili_splash.js
+# @Nebulosa-Cat
+disney_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/disney_check.js?version=1637153952428
+reload.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/reload.js,type=generic
+netflixCheck = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/NetflixCheck.js,timeout=30
+premiumCheck = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/YouTubePremiumCheck.js,timeout=30
+flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
+net-info-panel.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/networkCheck.js,type=generic
+
 [Panel]
 SurgePro = title=Surge Pro® Licenses Status,content=授權有效期 : 永久Premium,icon=checkmark.icloud,icon-color=#1B813E,update-interval=1
 Profile-Reload = title=Profile Reload,content=點擊以重新整理,style=info,script-name=reload.js,update-interval=-1
+NetInfoPanel = style=info,script-name=net-info-panel.js,update-interval=1
 netflixCheck = script-name=netflixCheck,update-interval=1
 disney_check = script-name=disney_check,title=Disney+ 影劇版權IP鎖測試,style=alert,content=請刷新,update-interval=1800
 premiumCheck = script-name=premiumCheck,title=YouTube Premium 跨區解鎖測試,update-interval=1
 flushDNS = script-name=flushDNS,update-interval=600
-NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
 
 [Host]
 ip-api.com = 208.95.112.1
