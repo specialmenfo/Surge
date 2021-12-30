@@ -8,7 +8,7 @@ const DEFAULT_OPTIONS = {
   fullIcon: '',
   fullIconColor: '',
   fullStyle: 'good',
-  onlyOriginalContent: ''目前 IP 僅支援收看自製劇\n解鎖國家：#REGION_FLAG# #REGION_NAME#',
+  onlyOriginalContent: '目前 IP 僅支援收看自製劇\n解鎖國家：#REGION_FLAG# #REGION_NAME#',
   onlyOriginalIcon: '',
   onlyOriginalIconColor: '',
   onlyOriginalStyle: 'info',
