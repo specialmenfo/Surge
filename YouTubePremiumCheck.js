@@ -1,27 +1,3 @@
-/**
- *
- * [Panel]
- * youtube_premium_check = script-name=youtube_premium_check, title="YouTube Premium 解鎖檢測", update-interval=1
- *
- * [Script]
- * youtube_premium_check = type=generic, script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/YouTubePremiumCheck.js?version=1633074636264, argument=title=YouTube 解鎖檢測
- *
- * 支持使用腳本使用 argument 參數自定義配置，如：argument=key1=URLEncode(value1)&key2=URLEncode(value2)，具體參數如下所示，
- * title: 面板標題
- * availableContent: 解鎖時展示的的文本內容，支持兩個區域佔位符 #REGION_FLAG# 和 #REGION_CODE#，用來展示解鎖區域國旗 emoji 和解鎖區域編碼
- * availableIcon: 解鎖時展示的圖標，內容為任意有效的 SF Symbol Name
- * availableIconColor:  解鎖時展示的圖標顏色，內容為顏色的 HEX 編碼
- * availableStyle: 解鎖時展示的圖標樣式，參數可選值有 good, info, alert, error
- * notAvailableContent: 不支持解鎖時展示的文本內容
- * notAvailableIcon: 不支持解鎖時展示的圖標
- * notAvailableIconColor: 不支持解鎖時展示的圖標顏色
- * notAvailableStyle: 不支持解鎖時展示的圖標樣式
- * errorContent: 檢測異常時展示的文本內容
- * errorIcon: 檢測異常時展示的圖標
- * errorIconColor: 檢測異常時展示的圖標顏色
- * errorStyle: 檢測異常時展示的圖標樣式
- */
-
 const BASE_URL = ‘https://www.youtube.com/premium’
 
 const DEFAULT_OPTIONS = {
