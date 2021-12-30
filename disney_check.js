@@ -44,7 +44,8 @@ const STATUS_ERROR = -2
 
 const DEFAULT_OPTIONS = {
   title: 'Disney+ 影劇版權 IP 鎖測試',
-  availableContent: '支持 Disney+ ➟ #REGION_FLAG# #REGION_NAME#',
+  availableContent: '目前 IP 可完整收看 Disney+ 影劇',
+  availableContent: '解鎖國家： #REGION_FLAG# #REGION_NAME#',
   availableIcon: undefined,
   availableIconColor: undefined,
   availableStyle: 'good',
