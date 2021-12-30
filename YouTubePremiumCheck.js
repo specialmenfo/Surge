@@ -105,7 +105,7 @@ function timeout(delay = 5000) {
 
 function getCountryFlagEmoji(countryCode) {
   if (countryCode.toUpperCase() == 'TW') {
-    countryCode = 'CN'
+    countryCode = 'TW'
   }
   const codePoints = countryCode
     .toUpperCase()
