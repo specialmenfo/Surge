@@ -2,11 +2,11 @@ const BASE_URL = 'https://www.youtube.com/premium'
 
 const DEFAULT_OPTIONS = {
   title: 'YouTube Premium 解鎖檢測',
-  availableContent: '目前 IP 已完整解鎖 YouTube Premium\n解鎖國家：#REGION_FLAG# #REGION_NAME#',
+  availableContent: '目前 IP 可支援 YouTube Premium\n解鎖國家：#REGION_FLAG# #REGION_NAME#',
   availableIcon: '',
   availableIconColor: '',
   availableStyle: 'good',
-  notAvailableContent: '目前 IP 不支援解鎖 YouTube Premium',
+  notAvailableContent: '目前 IP 不支援 YouTube Premium',
   notAvailableIcon: '',
   notAvailableIconColor: '',
   notAvailableStyle: 'alert',
