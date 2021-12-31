@@ -3,7 +3,7 @@ const $ = new Env('BoxJs')
 // 為 eval 準備的上下文環境
 const $eval_env = {}
 
-$.version = '0.7.90'
+$.version = '0.7.91'
 $.versionType = 'beta'
 
 // 發出的請求需要需要 Surge、QuanX 的 rewrite
@@ -616,12 +616,12 @@ async function apiRunScript() {
       // 所以需要 `$request = undefined`
       $eval_env.request = $request
       $request = undefined
-      // 重寫 console.log, 把日誌記錄到 $.cached_logs
-      $.cached_logs = []
+      // 重寫 console.log, 把日誌記錄到 $eval_env.cached_logs
+      $eval_env.cached_logs = []
       console.cloned_log = console.log
       console.log = (l) => {
         console.cloned_log(l)
-        $.cached_logs.push(l)
+        $eval_env.cached_logs.push(l)
       }
       // 重寫腳本內的 $done, 調用 $done() 即是調用 $eval_env.resolve()
       script_text = script_text.replace(/\$done/g, '$eval_env.resolve')
@@ -629,7 +629,7 @@ async function apiRunScript() {
       try {
         eval(script_text)
       } catch (e) {
-        $.cached_logs.push(e)
+        $eval_env.cached_logs.push(e)
         resolve()
       }
     })
@@ -640,7 +640,7 @@ async function apiRunScript() {
     // 返回數據
     $.json = {
       result: '',
-      output: $.cached_logs.join('\n')
+      output: $eval_env.cached_logs.join('\n')
     }
   }
 }
