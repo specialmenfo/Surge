@@ -1,5 +1,6 @@
 # NAME: 🌍 國外網站
 # AUTHOR: IEQ0P
+USER-AGENT,*AssistantServices*
 DOMAIN-SUFFIX,myptt.cc
 DOMAIN,activedirectory.windowsazure.com
 DOMAIN,.activedirectory.windowsazure.com
