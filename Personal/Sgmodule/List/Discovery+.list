@@ -1,5 +1,7 @@
 # NAME: Discovery+
 # AUTHOR: IEQ0P
+
+DOMAIN-SUFFIX,us1-prod.disco-api.com
 DOMAIN-SUFFIX,x-default-stgec.uplynk.com
 DOMAIN-SUFFIX,content-ause2-ur-discovery1.uplynk.com
 DOMAIN-SUFFIX,content-discovery.uplynk.com
