@@ -201,6 +201,8 @@ GEOIP,CN,🎯 全球直連,no-resolve
 FINAL,🐟 漏網之魚,dns-failed
 
 [Host]
+*video.iqiyi.com* = server:223.5.5.5
+*tw.inter.iqiyi.com* = server:223.5.5.5
 *douyin* = server:223.5.5.5
 *speedtest* = server:101.101.101.101
 *gov.cn* = server:223.5.5.5
