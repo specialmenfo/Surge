@@ -1,3 +1,6 @@
 DOMAIN,cache.video.iqiyi.com
 DOMAIN,cache.video.qiyi.com
-DOMAIN,ip.geo.iqiyi.com
+DOMAIN-SUFFIX,ip.geo.iqiyi.com
+DOMAIN-SUFFIX,intl.iqiyi.com
+DOMAIN,intl-rcd.iqiyi.com
+DOMAIN,intl-subscription.iqiyi.com
