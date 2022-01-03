@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,syndication.twitter.com,🛑 廣告攔截
 DOMAIN-SUFFIX,syndication-o.twitter.com,🛑 廣告攔截
 DOMAIN-SUFFIX,urls.api.twitter.com,🛑 廣告攔截
 # 京東
+URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$",DIRECT
 URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$",REJECT
 
 [URL Rewrite]
