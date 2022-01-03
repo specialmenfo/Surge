@@ -4,6 +4,9 @@
 # Facebook 可用
 DOMAIN-SUFFIX,staticxx.facebook.com
 
+# 招商銀行 App
+DOMAIN-SUFFIX,log.cmbchina.com
+
 # Twitter
 DOMAIN-SUFFIX,ads.twitter.com
 DOMAIN-SUFFIX,ads-twitter.com
@@ -81,7 +84,6 @@ DOMAIN-SUFFIX,znsv.baidu.com
 DOMAIN-SUFFIX,zz.bdstatic.com
 
 # Other
-DOMAIN-SUFFIX,log.cmbchina.com
 DOMAIN-KEYWORD,admarvel
 DOMAIN-KEYWORD,admdfs
 DOMAIN-KEYWORD,adnewnc
