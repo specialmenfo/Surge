@@ -17,9 +17,5 @@ DOMAIN-SUFFIX,urls.api.twitter.com,🛑 廣告攔截
 URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$",DIRECT
 URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$",REJECT
 
-[URL Rewrite]
-# 招商銀行
-^https?://mlife.cmbchina.com/ClientFace/preCacheAdvertise.json - reject
-
 [Host]
-hostname = mlife.cmbchina.com
+hostname = *.cmbchina.com
