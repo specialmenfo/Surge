@@ -1,5 +1,5 @@
-DOMAIN,cache.video.iqiyi.com
-DOMAIN,cache.video.qiyi.com
+DOMAIN-SUFFIX,cache.video.iqiyi.com
+DOMAIN-SUFFIX,cache.video.qiyi.com
 DOMAIN-SUFFIX,intl.iqiyi.com
 DOMAIN,intl-rcd.iqiyi.com
 DOMAIN,intl-subscription.iqiyi.com
