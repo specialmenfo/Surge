@@ -81,6 +81,7 @@ DOMAIN-SUFFIX,znsv.baidu.com
 DOMAIN-SUFFIX,zz.bdstatic.com
 
 # Other
+DOMAIN-SUFFIX,log.cmbchina.com
 DOMAIN-KEYWORD,admarvel
 DOMAIN-KEYWORD,admdfs
 DOMAIN-KEYWORD,adnewnc
