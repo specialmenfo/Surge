@@ -53,6 +53,11 @@ hide-udp = 1
 v2ray.vmess.aead.forced = false
 
 [Rule]
+DOMAIN-SUFFIX,afdback.iq.com,REJECT
+DOMAIN-SUFFIX,chuangcachecdnoversea-tw.inter.iqiyi.com,REJECT
+DOMAIN-SUFFIX,meta-cdn.video.iq.com,REJECT
+DOMAIN-SUFFIX,scs-hcdn.iqiyi.com,REJECT
+DOMAIN-SUFFIX,huaweicdnoversea.inter.iq.com,REJECT
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AMC%2B.list,🇺🇸 AMC+
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/All4/All4.list,🇬🇧 All4
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/iQiYiTW.list,🇹🇼 愛奇藝台灣
