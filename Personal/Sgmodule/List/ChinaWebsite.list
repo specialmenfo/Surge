@@ -48,6 +48,57 @@ DOMAIN,pull-f5.flive.douyincdn.com
 DOMAIN,pull-f5.flive.douyincdn.com/*
 DOMAIN,*.douyincdn.com/*
 AND,((OR,((DEST-PORT,443), (DEST-PORT,80))), (OR,((IP-CIDR,129.226.3.47/32,no-resolve), (IP-CIDR,101.32.118.25/16,no-resolve))), (PROTOCOL,TCP))
+# 下載
+URL-REGEX,"(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?"
+URL-REGEX,"(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)"
+URL-REGEX,"(.+\.|^)(360|so)\.(cn|com)"
+URL-REGEX,"(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)"
+URL-REGEX,"(Subject|HELO|SMTP)"
+URL-REGEX,"(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com"
+URL-REGEX,"(torrent|announce.php\?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=)"
+PROCESS-NAME,aria2c
+PROCESS-NAME,aria2c.exe
+PROCESS-NAME,baidunetdisk.exe
+PROCESS-NAME,bitcomet
+PROCESS-NAME,bitcomet.exe
+PROCESS-NAME,bitcomet_x64.exe
+PROCESS-NAME,downloadservice
+PROCESS-NAME,downloadservice.exe
+PROCESS-NAME,fdm
+PROCESS-NAME,fdm.exe
+PROCESS-NAME,folx
+PROCESS-NAME,folx.exe
+PROCESS-NAME,nettransport
+PROCESS-NAME,nettransport.exe
+PROCESS-NAME,qbittorrent
+PROCESS-NAME,qbittorrent.exe
+PROCESS-NAME,thunder
+PROCESS-NAME,thunder.exe
+PROCESS-NAME,transmission
+PROCESS-NAME,transmission.exe
+PROCESS-NAME,utorrent
+PROCESS-NAME,utorrent.exe
+PROCESS-NAME,webtorrent
+PROCESS-NAME,webtorrent.exe
+PROCESS-NAME,webtorrenthelper
+PROCESS-NAME,webtorrenthelper.exe
+PROCESS-NAME,weiyun
+PROCESS-NAME,weiyun.exe
+# SteamCN
+DOMAIN-SUFFIX,csgo.wmsj.cn
+DOMAIN-SUFFIX,dl.steam.ksyna.com
+DOMAIN-SUFFIX,dota2.wmsj.cn
+DOMAIN-SUFFIX,st.dl.bscstorage.net
+DOMAIN-SUFFIX,st.dl.eccdnx.com
+DOMAIN-SUFFIX,st.dl.pinyuncloud.com
+DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net
+DOMAIN-SUFFIX,steamcontent.com
+DOMAIN-SUFFIX,steamgames.com
+DOMAIN-SUFFIX,steampowered.com.8686c.com
+DOMAIN-SUFFIX,steamstat.us
+DOMAIN-SUFFIX,steamstatic.com
+DOMAIN-SUFFIX,steamusercontent.com
+DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
 # China
 DOMAIN-KEYWORD,.tmall.com
 IP-CIDR,1.0.1.0/24,no-resolve
