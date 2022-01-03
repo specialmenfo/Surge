@@ -1,4 +1,2 @@
 DOMAIN,cache.video.iqiyi.com
-DOMAIN, cache.video.qiyi.com
-DOMAIN,*subscription.iqiyi.com
-DOMAIN,*l.rcd.iqiyi.com
+DOMAIN,cache.video.qiyi.com
