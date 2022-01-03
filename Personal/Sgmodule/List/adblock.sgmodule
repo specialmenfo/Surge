@@ -1,5 +1,5 @@
-#!name= AdBlock
-#!desc= AdBlock
+#!name= AdBlock Personal
+#!desc= AdBlock Personal By @specialmenfo
 
 [Rule]
 # Facebook 可用
@@ -23,7 +23,7 @@ DOMAIN-SUFFIX,www.114so.cn,REJECT
 DOMAIN-SUFFIX,hivedata.cc,REJECT
 DOMAIN-SUFFIX,navi.gd.chinamobile.com,REJECT
 
-# Baidu
+# 百度
 DOMAIN-SUFFIX,a.baidu.com,REJECT
 DOMAIN-SUFFIX,adm.baidu.com,REJECT
 DOMAIN-SUFFIX,adscdn.baidu.com,REJECT
@@ -2882,11 +2882,11 @@ URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$",REJE
 // Facebook
 ^https?://connect.facebook.net/en_US/fbadnw.js - reject
 
-// JD
+// 京東
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start - reject
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) - reject
 
-// Baidu
+// 百度
 (ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map)?\.(baidu|n\.shifen)\.com - reject
 ^https?://afd.baidu.com/afd/entry - reject
 ^https?://als.baidu.com/clog/clog - reject
@@ -2900,7 +2900,7 @@ URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$",REJE
 ^https?://tb1.bdstatic.com/tb/cms/ngmis/adsense/*.jpg - reject
 ^https?://tb2.bdstatic.com/tb/mobile/spb/widget/jump - reject
 
-// Baidu Wenku
+// 百度文庫
 ^https?://wapwenku.baidu.com/view/fengchao/ - reject
 ^https?://wapwenku.baidu.com/view/fengchaoTwojump/ - reject
 ^https?://wenku.baidu.com/shifen/ - reject
