@@ -1,7 +1,7 @@
-const ScriptName = "京東|淘寶 比價";
+const ScriptName = "京東比價";
 const $ = new Env(ScriptName);
 
-const ScriptIdentifier = "jd_tb_price";
+const ScriptIdentifier = "jdprice";
 const ScriptVersion = 8;
 const ScriptUrl = `https://service.2ti.st/QuanX/Script/${ScriptIdentifier}`
 
