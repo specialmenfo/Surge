@@ -1,4 +1,5 @@
-DOMAIN,*intl.igiyi.com
+DOMAIN-SUFFIX,data.video.iqiyi.com
+DOMAIN-SUFFIX,intl-im-hist-api.igiyi.com
 DOMAIN-SUFFIX,iq.com
 USER-AGENT,iQIYI*
 USER-AGENT,QIYIVideo*
