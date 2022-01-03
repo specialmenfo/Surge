@@ -1,3 +1,6 @@
+#!name= AdBlock
+#!desc= AdBlock
+
 [Rule]
 # Facebook
 DOMAIN-SUFFIX,staticxx.facebook.com
