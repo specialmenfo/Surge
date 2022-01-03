@@ -461,6 +461,8 @@ hdslb.com = server:119.29.29.29
 ip-api.com = 208.95.112.1
 
 [URL Rewrite]
+^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start - reject
+^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) - reject
 # Apple全家桶
 #  Replace Apple Weather Map with 🇺🇸US @waqi.info
 # 切換空氣質量地圖數據源為waqi.info，並更改標準為AQI(US)
