@@ -1338,8 +1338,8 @@ Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/s
 京東比價 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/jdprice.js
 # 淘寶 App 歷史價格
 # 淘寶價格在保障裡面查看
-淘寶比價 = type=http-request,requires-body=1,pattern=^http://.+/amdc/mobileDispatch,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_tb_price.js
-淘寶比價 = type=http-response,requires-body=1,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_tb_price.js
+淘寶比價 = type=http-request,requires-body=1,pattern=^http://.+/amdc/mobileDispatch,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/tbprice.list
+淘寶比價 = type=http-response,requires-body=1,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/tbprice.list
 # Netflix評分
 netflix_rating.js = script-path=https://kinta.ma/surge/scripts/netflix_rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
 netflix_rating.js = requires-body=1,script-path=https://kinta.ma/surge/scripts/netflix_rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
