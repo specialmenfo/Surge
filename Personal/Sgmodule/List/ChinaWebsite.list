@@ -1,5 +1,9 @@
 # NAME: 直連
 # AUTHOR: IEQ0P
+DOMAIN,gm.mmstat.com
+DOMAIN,log.mmstat.com
+DOMAIN-SUFFIX,gm.mmstat.com
+DOMAIN-SUFFIX,log.mmstat.com
 DOMAIN,app.zhoudamozi.com
 DOMAIN-SUFFIX,youzibank.com
 DOMAIN-SUFFIX,mituyuedu.com
