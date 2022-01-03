@@ -53,7 +53,6 @@ hide-udp = 1
 v2ray.vmess.aead.forced = false
 
 [Rule]
-DOMAIN-SET,https://raw.githubusercontent.com/mieqq/mieqq/master/In-AppTracker.txt,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apkpure/Apkpure.list,🇺🇸 Apkpure
 RULE-SET,https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Liby.list,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/Hvftk/eHpo1/master/Surge4/Ruleset/Tide.list,🛑 廣告攔截
