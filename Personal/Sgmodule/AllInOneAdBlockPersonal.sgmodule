@@ -1,7 +1,6 @@
-#!name= All In One AdBlock Personal
-#!desc= AdBlock Personal By @specialmenfo
+# AdBlock Personal
+# AdBlock Personal By @specialmenfo
 
-[Rule]
 # Facebook 可用
 DOMAIN-SUFFIX,staticxx.facebook.com,🛑 廣告攔截
 
@@ -2871,50 +2870,3 @@ IP-CIDR,61.191.206.4/32,REJECT,no-resolve
 IP-CIDR,69.28.57.245/32,REJECT,no-resolve
 IP-CIDR,74.117.182.77/32,REJECT,no-resolve
 IP-CIDR,78.140.131.214/32,REJECT,no-resolve
-
-# 京東
-URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$",DIRECT
-URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$",REJECT
-
-[URL Rewrite]
-// Facebook
-^https?://connect.facebook.net/en_US/fbadnw.js - reject
-
-// 京東
-^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start - reject
-^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) - reject
-
-// 百度
-(ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map)?\.(baidu|n\.shifen)\.com - reject
-^https?://afd.baidu.com/afd/entry - reject
-^https?://als.baidu.com/clog/clog - reject
-^https?://baichuan.baidu.com/rs/adpmobile/launch - reject
-^https?://bj.bcebos.com/fc-feed/0/pic/ - reject
-^https?://c.tieba.baidu.com/c/p/img\?src= - reject
-^https?://c.tieba.baidu.com/c/s/logtogether\?cmd= - reject
-^https?://gss0.bdstatic.com/.+/static/wiseindex/img/bd_red_packet.png - reject
-^https?://imgsrc.baidu.com\/forum\/pic\/item/ - reject
-^https?://sm.domobcdn.com/ugc/\w/ - reject
-^https?://tb1.bdstatic.com/tb/cms/ngmis/adsense/*.jpg - reject
-^https?://tb2.bdstatic.com/tb/mobile/spb/widget/jump - reject
-
-// 百度文庫
-^https?://wapwenku.baidu.com/view/fengchao/ - reject
-^https?://wapwenku.baidu.com/view/fengchaoTwojump/ - reject
-^https?://wenku.baidu.com/shifen/ - reject
-
-// 10086
-^.+/gmccapp/file/image/preloading/preloading\d{17}.jpg - reject
-^https?://\w{2}.10086.cn/upfile/khd/loadingpage/ reject
-^https?://app.10086.cn/group - reject
-^https?://mbusihall.sh.chinamobile.com:\d{4}/upload/v4/img/homePage/ - reject
-
-// 10000
-^https?://image1.chinatelecom-ec.com/images/.+/\d{13}.jpg - reject
-
-// 10010
-^https://\w{11,12}.wo.com.cn - reject
-^https?://m.client.10010.com/mobileService/activity/get_client_adv - reject
-^https?://m.client.10010.com/mobileService/activity/get_startadv - reject
-^https?://m1.ad.10010.com/noticeMag/images/imageUpload/2\d{3} - reject
-^https?://res.mall.10010.cn/mall/common/js/fa.js?referer= - reject
