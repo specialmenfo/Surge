@@ -7,3 +7,13 @@ DOMAIN-SUFFIX,www.surveycake.com
 DOMAIN-SUFFIX,email-messaging.com
 DOMAIN-SUFFIX,.email-messaging.com
 DOMAIN-SUFFIX,kkbox.email-messaging.com
+USER-AGENT,*KKBOX
+DOMAIN-SUFFIX,kkbox.com
+DOMAIN-SUFFIX,kkbox.com.tw
+DOMAIN-SUFFIX,kfs.io
+USER-AGENT,KKTV*
+USER-AGENT,com.kktv*
+DOMAIN-SUFFIX,kktv.me
+DOMAIN-SUFFIX,kktv.com.tw
+DOMAIN,kktv-theater.kk.stream
+DOMAIN,theater-kktv.cdn.hinet.net
