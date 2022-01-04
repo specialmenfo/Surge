@@ -230,7 +230,7 @@ function GetRawInfo(t) {
 	})
 }
 
-function nobyda() {
+function specialmenfo() {
 	const isHTTP = typeof $httpClient != "undefined";
 	const isLoon = typeof $loon != "undefined";
 	const isQuanX = typeof $task != "undefined";
