@@ -214,10 +214,6 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sg
 # 京東
 URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$",DIRECT
 URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$",REJECT
-# 網易雲音樂
-URL-REGEX,img\w\.126\.net,REJECT
-URL-REGEX,s\w\.music\.126\.net,REJECT
-URL-REGEX,p\w\.music\.126\.net,REJECT
 GEOIP,CN,🎯 全球直連,no-resolve
 FINAL,🐟 漏網之魚,dns-failed
 
