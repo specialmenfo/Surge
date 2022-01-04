@@ -33,11 +33,11 @@ async function SwitchRegion(play) {
 
 function SwitchStatus(status, original, newPolicy) {
 	if (status) {
-		return `${original}  =>  ${newPolicy}  =>  🎉`;
+		return `${original}  =>  ${newPolicy}  =>  已成功切換 🎉`;
 	} else if (original === 2) {
 		return `切換失敗, 策略組名未填寫或填寫有誤 ⚠️`
 	} else if (original === 3) {
-		return `切換失敗, 不支持您的VPN應用版本 ⚠️`
+		return `切換失敗, 不支援您的代理服務商 ⚠️`
 	} else if (status === 0) {
 		return `切換失敗, 子策略名未填寫或填寫有誤 ⚠️`
 	} else {
