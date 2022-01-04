@@ -201,10 +201,10 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/TaiWanWebsite.list,🇹🇼 台灣網站
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AmericaWebsite.list,🇺🇸 美國網站
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list,🇨🇳 國內網站
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockFaceBookTest.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTest.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTwitterTest.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockYouTubeTest.list,🛑 廣告攔截
+DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockFaceBookTest.list,🛑 廣告攔截
+DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTest.list,🛑 廣告攔截
+DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTwitterTest.list,🛑 廣告攔截
+DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockYouTubeTest.list,🛑 廣告攔截
 GEOIP,CN,🎯 全球直連,no-resolve
 FINAL,🐟 漏網之魚,dns-failed
 
