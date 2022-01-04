@@ -1,78 +1,4 @@
-/**************************
-
-嗶哩嗶哩, 港澳台番劇自動切換地區 & 顯示豆瓣評分
-
-如需禁用豆瓣評分或策略通知, 可前往BoxJs設置.
-BoxJs訂閱地址: https://raw.githubusercontent.com/NobyDa/Script/master/NobyDa_BoxJs.json
-
-Update: 2021.09.26
-Author: @NobyDa
-Use: Surge, QuanX, Loon
-
-****************************
-港澳台自動切換地區說明 :
-****************************
-
-地區自動切換功能僅適用於Surge4.7+(iOS)，Loon2.1.10(286)+，QuanX1.0.22(543)+
-低於以上版本僅顯示豆瓣評分.
-
-您需要配置相關規則集:
-Surge、Loon: 
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/StreamingSE.list
-
-QuanX: 
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/StreamingSE.list
-
-綁定相關select或static策略組，並且需要具有相關的區域代理服務器納入您的子策略中，子策略可以是服務器也可以是其他區域策略組．
-最後，您可以通過BoxJs設置策略名和子策略名，或者手動填入腳本.
-
-如需搜索指定地區番劇, 可在搜索框添加後綴" 港", " 台", " 中". 例如: 進擊的巨人 港
-
-QX用戶注: 使用切換地區功能請確保您的QX=>其他設置=>溫和策略機制處於關閉狀態, 以及填寫策略名和子策略名時注意大小寫.
-
-****************************
-Surge 4.7+ 遠程腳本配置 :
-****************************
-[Script]
-Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
-
-#可選, 適用於搜索指定地區的番劇
-Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
-
-[MITM]
-hostname = ap?.bilibili.com
-
-****************************
-Quantumult X 遠程腳本配置 :
-****************************
-[rewrite_local]
-^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
-
-#可選, 適用於搜索指定地區的番劇
-^https:\/\/app\.bilibili\.com\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)& url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
-
-[mitm]
-hostname = ap?.bilibili.com
-
-[filter_local]
-#可選, 由於qx純tun特性, 不添加規則可能會導致腳本失效.
-ip-cidr, 203.107.1.1/24, reject
-
-****************************
-Loon 遠程腳本配置 :
-****************************
-[Script]
-http-response ^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js, requires-body=true, tag=bili自動地區
-
-#可選, 適用於搜索指定地區的番劇
-http-request ^https:\/\/app\.bilibili\.com\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)& script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js, requires-body=true, tag=bili自動地區(搜索)
-
-[Mitm]
-hostname = ap?.bilibili.com
-
-***************************/
-
-let $ = nobyda();
+let $ = special_menfo();
 let run = EnvInfo();
 
 async function SwitchRegion(play) {
@@ -107,13 +33,13 @@ async function SwitchRegion(play) {
 
 function SwitchStatus(status, original, newPolicy) {
 	if (status) {
-		return `${original}  =>  ${newPolicy}  =>  🎉`;
+		return `${original}  =>  ${newPolicy}  =>  成功🎉`;
 	} else if (original === 2) {
 		return `切換失敗, 策略組名未填寫或填寫有誤 ⚠️`
 	} else if (original === 3) {
-		return `切換失敗, 不支持您的VPN應用版本 ⚠️`
+		return `切換失敗, 不支援您的代理⚠️`
 	} else if (status === 0) {
-		return `切換失敗, 子策略名未填寫或填寫有誤 ⚠️`
+		return `切換失敗, 策略名未填寫或填寫有誤 ⚠️`
 	} else {
 		return `策略切換失敗, 未知錯誤 ⚠️`
 	}
