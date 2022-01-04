@@ -7,6 +7,14 @@ DOMAIN-SUFFIX,staticxx.facebook.com
 # 招商銀行 App
 DOMAIN-SUFFIX,log.cmbchina.com
 
+# 網易雲音樂
+DOMAIN-SUFFIX,imgw.126.net
+DOMAIN-SUFFIX,sw.music.126.net
+DOMAIN-SUFFIX,pw.music.126.net
+DOMAIN,imgw.126.net
+DOMAIN,sw.music.126.net
+DOMAIN,pw.music.126.net
+
 # Twitter
 DOMAIN-SUFFIX,ads.twitter.com
 DOMAIN-SUFFIX,ads-twitter.com
