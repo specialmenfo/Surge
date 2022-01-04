@@ -16,7 +16,6 @@ DOMAIN,sw.music.126.net
 DOMAIN,pw.music.126.net
 
 # Twitter
-DOMAIN-SUFFIX,api.140proof.com
 DOMAIN-SUFFIX,ads.twitter.com
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,analytics.twitter.com
