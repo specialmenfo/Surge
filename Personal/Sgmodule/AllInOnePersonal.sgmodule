@@ -205,6 +205,12 @@ DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTest.list,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTwitterTest.list,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockYouTubeTest.list,🛑 廣告攔截
+DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTest2.list,🛑 廣告攔截
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockFaceBookTest.list,🛑 廣告攔截
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTest.list,🛑 廣告攔截
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTwitterTest.list,🛑 廣告攔截
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockYouTubeTest.list,🛑 廣告攔截
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTest2.list,🛑 廣告攔截
 GEOIP,CN,🎯 全球直連,no-resolve
 FINAL,🐟 漏網之魚,dns-failed
 
