@@ -1,0 +1,8 @@
+#!name= Sub Info
+#!desc= 應修改Script裡面的中文
+
+[Panel]
+Sub_info = script-name=Sub_info,update-interval=600
+
+[Script]
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Nebulosa-Cat/Surge/main/Panel/Sub-Info/subInfo.js,script-update-interval=0,argument=url=此處填寫你在https://sub.v1.mk已經轉換好的地址鏈接&reset_day=此處填寫你每月重置流量的天數&title=此處填寫你想要顯示的名字&icon=bonjour&color=#007aff
