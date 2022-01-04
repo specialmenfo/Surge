@@ -1,5 +1,5 @@
 # Miaona可直接套用
-# 複製到本地Proxy Group，再添加RULE SET.sgmodule
+# 複製到本地Proxy Group，再添加AllInOnePersonal.sgmodule搭配使用
 
 
 [Proxy]
