@@ -4,7 +4,7 @@
 
 ***************************/
 
-let $ = specialmenfo();
+let $ = ();
 let run = EnvInfo();
 
 async function SwitchRegion(play) {
