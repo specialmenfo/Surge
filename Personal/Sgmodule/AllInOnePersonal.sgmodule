@@ -453,6 +453,7 @@ ip-api.com = 208.95.112.1
 *163* = server:119.29.29.29
 *alicdn* = server:223.5.5.5
 *aliyun* = server:223.5.5.5
+*baidu* = server:223.5.5.5
 *baidu* = server:syslib
 *bdstatic* = server:syslib
 *bilibili* = server:119.29.29.29
