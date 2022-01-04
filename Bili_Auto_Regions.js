@@ -5,8 +5,6 @@
 如需禁用豆瓣評分或策略通知, 可前往BoxJs設置.
 BoxJs訂閱地址: https://raw.githubusercontent.com/NobyDa/Script/master/NobyDa_BoxJs.json
 
-Update: 2021.09.26
-Author: @NobyDa
 Use: Surge, QuanX, Loon
 
 ****************************
