@@ -470,6 +470,7 @@ cdn.pcbeta.css.inimc.com = 120.52.19.113
 cdn.pcbeta.static.inimc.com = 120.52.19.113
 hdslb.com = server:119.29.29.29
 ip-api.com = 208.95.112.1
+api.140proof.com = server:127.0.0.1
 
 [URL Rewrite]
 # Apple全家桶
