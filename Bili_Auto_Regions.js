@@ -39,7 +39,7 @@ function SwitchStatus(status, original, newPolicy) {
 	} else if (original === 3) {
 		return `切換失敗, 不支援您的代理服務商 ⚠️`
 	} else if (status === 0) {
-		return `切換失敗, 子策略名未填寫或填寫有誤 ⚠️`
+		return `切換失敗, 策略名稱未填寫或填寫有誤 ⚠️`
 	} else {
 		return `策略切換失敗, 未知錯誤 ⚠️`
 	}
