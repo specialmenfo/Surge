@@ -50,7 +50,6 @@ keyword-filter-type = whitelist
 hide-apple-request = 1
 hide-crash-reporter-request = 1
 hide-udp = 1
-v2ray.vmess.aead.forced = false
 
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AMC%2B.list,🇺🇸 AMC+
