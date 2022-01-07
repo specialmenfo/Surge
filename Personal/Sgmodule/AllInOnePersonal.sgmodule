@@ -35,12 +35,8 @@ hijack-dns = 8.8.8.8:53, 8.8.4.4:53
 # TCP Force HTTP Hosts
 # 讓 Surge 把 TCP 連接當作 HTTP 請求來處理。Surge HTTP 引擎將處理這些請求，所有的高級功能，如捕獲、重寫和腳本等都可以使用。
 force-http-engine-hosts = *.cp31.ott.cibntv.net, *.ott.cibntv.net, 119.79*, 124.14*, 124.193*, 211.162*, 220.112*, intl.iqiyi.com, maicai.api.ddxq.mobi, mobileapi-v6.elong.com, weibointl.api.weibo.cn, wmapi.meituan.com, *.cp31.ott.cibntv.net, *.ott.cibntv.net, 119.79*, 124.14*, 124.193*, 211.162*, 220.112*, intl.iqiyi.com, maicai.api.ddxq.mobi, mobileapi-v6.elong.com, weibointl.api.weibo.cn, interface3.music.163.com:80, interface3.music.163.com:443, interface3.music.163.com.163jiasu.com:80, interface3.music.163.com.163jiasu.com:443, vali.cp31.ott.cibntv.net, intl.iqiyi.com, maicai.api.ddxq.mobi, mobileapi-v6.elong.com, wmapi.meituan.com, weibointl.api.weibo.cn, *.ott.cibntv.net
-# VIF Excluded Routes
-# Surge VIF 只能處理 TCP 和 UDP 協議。使用此選項可以繞過特定的 IP 範圍，允許所有流量通過。
-tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 239.255.255.250/32
-# VIF Included Routes
-# 默認情況下，Surge VIF 接口會聲明自己是默認路由。但是，由於 Wi-Fi 接口的路由較小，有些流量可能不會通過 Surge VIF 接口。使用此選項可以添加一條較小的路由。
-tun-included-routes = 192.168.1.12/32
+# 當遇到 REJECT 策略時返回錯誤頁
+show-error-page-for-reject = false
 include-all-networks = false
 include-local-networks = false
 geoip-maxmind-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
