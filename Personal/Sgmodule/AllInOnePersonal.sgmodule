@@ -182,9 +182,10 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Verizon/Verizon.list,🇺🇸 Yahoo
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list,🇺🇸 YouTube
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTubeMusic/YouTubeMusic.list,🇺🇸 YouTube Music
-RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,🛑 廣告攔截
+DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTest2.list,🛑 廣告攔截
+DOMAIN-SET,https://anti-ad.net/surge2.txt,🛑 廣告攔截
+DOMAIN-SET,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt,🛑 廣告攔截
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockPersonal.list,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockPersonal.list,🛑 廣告攔截
@@ -197,36 +198,6 @@ DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ru
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/GlobalWebsite.list,🌏 國外網站
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/TaiWanWebsite.list,🇹🇼 台灣網站
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AmericaWebsite.list,🇺🇸 美國網站
-DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTwitterTest.list,🛑 廣告攔截
-DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockYouTubeTest.list,🛑 廣告攔截
-DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTest2.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTwitterTest.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockYouTubeTest.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTest2.list,🛑 廣告攔截
-DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_Domain.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking.list,🛑 廣告攔截
-DOMAIN-SET,https://anti-ad.net/surge2.txt,🛑 廣告攔截
-DOMAIN-SET,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt,🛑 廣告攔截
-PROCESS-NAME,v2ray,DIRECT
-PROCESS-NAME,xray,DIRECT
-PROCESS-NAME,clash,DIRECT
-PROCESS-NAME,naive,DIRECT
-PROCESS-NAME,trojan,DIRECT
-PROCESS-NAME,trojan-go,DIRECT
-PROCESS-NAME,ss-local,DIRECT
-PROCESS-NAME,privoxy,DIRECT
-PROCESS-NAME,leaf,DIRECT
-PROCESS-NAME,Thunder,DIRECT
-PROCESS-NAME,DownloadService,DIRECT
-PROCESS-NAME,qBittorrent,DIRECT
-PROCESS-NAME,Transmission,DIRECT
-PROCESS-NAME,fdm,DIRECT
-PROCESS-NAME,aria2c,DIRECT
-PROCESS-NAME,Folx,DIRECT
-PROCESS-NAME,NetTransport,DIRECT
-PROCESS-NAME,uTorrent,DIRECT
-PROCESS-NAME,WebTorrent,DIRECT
 RULE-SET,SYSTEM,DIRECT
 RULE-SET,LAN,DIRECT
 GEOIP,CN,🎯 全球直連,no-resolve
