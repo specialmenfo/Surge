@@ -1,5 +1,4 @@
 # NAME: 🌍 國外網站
-# AUTHOR: IEQ0P
 USER-AGENT,*AssistantServices*
 DOMAIN-SUFFIX,myptt.cc
 DOMAIN,activedirectory.windowsazure.com
@@ -47,7 +46,6 @@ DOMAIN-SUFFIX,9to5toys.com
 DOMAIN-SUFFIX,dronedj.com
 DOMAIN-SUFFIX,electrek.co
 DOMAIN-SUFFIX,spaceexplored.com
-# —————————————————————
 DOMAIN-KEYWORD,abematv.akamaized.net
 DOMAIN-KEYWORD,dualstack.apiproxy-
 DOMAIN-KEYWORD,dualstack.apiproxy-device-prod-nlb-
