@@ -16,4 +16,3 @@ DOMAIN,players.brightcove.net
 DOMAIN,s3-ap-southeast-1.amazonaws.com
 DOMAIN,wmff.warnermediacdn.com
 USER-AGENT,HBO%20GO%20PROD*
-DOMAIN,hbogoasia.com,no-resolve
