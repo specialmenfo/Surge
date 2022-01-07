@@ -1,4 +1,6 @@
 # NAME: 🌍 國外網站
+DOMAIN-SUFFIX,tac.googleapis.com
+DOMAIN-SUFFIX,dl.google.com
 USER-AGENT,*AssistantServices*
 DOMAIN-SUFFIX,myptt.cc
 DOMAIN,activedirectory.windowsazure.com
