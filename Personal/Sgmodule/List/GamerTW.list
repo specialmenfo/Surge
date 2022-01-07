@@ -1,5 +1,3 @@
-# NAME: 動畫瘋
-# AUTHOR: IEQ0P
 DOMAIN,gamer.com.tw
 DOMAIN,.gamer.com.tw
 DOMAIN,*.gamer.com.tw
@@ -8,3 +6,8 @@ DOMAIN-SUFFIX,gamer.com.tw
 DOMAIN-SUFFIX,.gamer.com.tw
 DOMAIN-SUFFIX,*.gamer.com.tw
 DOMAIN-SUFFIX,api.gamer.com.tw
+USER-AGENT,Anime*
+DOMAIN-SUFFIX,bahamut.com.tw
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN,gamer-cds.cdn.hinet.net
+DOMAIN,gamer2-cds.cdn.hinet.net
