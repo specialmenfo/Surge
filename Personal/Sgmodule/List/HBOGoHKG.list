@@ -17,4 +17,4 @@ DOMAIN-SUFFIX,now.com.hk
 DOMAIN-SUFFIX,nowe.com
 DOMAIN-SUFFIX,nowe.hk
 USER-AGENT,HBO%20GO%20PROD%20HKG*
-DOMAIN-SUFFIX,hbogoasia.com,no-resolve
+DOMAIN,hbogoasia.com,no-resolve
