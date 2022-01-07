@@ -1,5 +1,4 @@
 # HBO Go HKG
-DOMAIN-SUFFIX,api*.hbogoasia.com
 DOMAIN-SUFFIX,api2.hbogoasia.com
 DOMAIN,wmff.warnermediacdn.com
 DOMAIN-SUFFIX,hboasia.com
