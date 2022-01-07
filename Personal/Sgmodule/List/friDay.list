@@ -1,4 +1,7 @@
 # NAME: friDay
 # AUTHOR: IEQ0P
+USER-AGENT,friDay*
 DOMAIN-SUFFIX,fetnet.net
 DOMAIN-SUFFIX,friday.tw
+DOMAIN-SUFFIX,fridaylogger.com
+DOMAIN,aka01p.akamaized.net
