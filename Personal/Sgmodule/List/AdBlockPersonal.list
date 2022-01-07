@@ -1,7 +1,6 @@
 # NAME: AdBlock Personal
-# AUTHOR: By @specialmenfo(IEQ0P)
 
-# Facebook 可用
+# Facebook
 DOMAIN-SUFFIX,staticxx.facebook.com
 
 # 招商銀行 App
