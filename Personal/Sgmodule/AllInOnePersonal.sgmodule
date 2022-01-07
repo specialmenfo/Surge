@@ -11,6 +11,9 @@ proxy-test-url = http://cp.cloudflare.com/generate_204
 test-timeout = 5
 loglevel = notify
 hide-vpn-icon = true
+bypass-system = true
+# DNS設置或根據自己網絡情況進行相應設置
+bypass-tun = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
 skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,localhost,*.local,e.crashlytics.com,captive.apple.com,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1,passenger.t3go.cn
 allow-wifi-access = false
 ipv6 = true
@@ -38,8 +41,6 @@ tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 239.255.255.250
 # VIF Included Routes
 # 默認情況下，Surge VIF 接口會聲明自己是默認路由。但是，由於 Wi-Fi 接口的路由較小，有些流量可能不會通過 Surge VIF 接口。使用此選項可以添加一條較小的路由。
 tun-included-routes = 192.168.1.12/32
-# 當遇到 REJECT 策略時返回錯誤頁
-show-error-page-for-reject = false
 include-all-networks = false
 include-local-networks = false
 geoip-maxmind-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
