@@ -1,6 +1,8 @@
 # NAME: 🌍 國外網站
 DOMAIN-SUFFIX,tac.googleapis.com
 DOMAIN-SUFFIX,dl.google.com
+DOMAIN-SUFFIX,imgur.com
+DOMAIN-SUFFIX,imgurinc.com
 USER-AGENT,*AssistantServices*
 DOMAIN-SUFFIX,myptt.cc
 DOMAIN,activedirectory.windowsazure.com
