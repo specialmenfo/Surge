@@ -227,9 +227,7 @@ PROCESS-NAME,Folx,🎯 全球直連
 PROCESS-NAME,NetTransport,🎯 全球直連
 PROCESS-NAME,uTorrent,🎯 全球直連
 PROCESS-NAME,WebTorrent,🎯 全球直連
-RULE-SET,SYSTEM,🎯 全球直連
-RULE-SET,LAN,🎯 全球直連
-GEOIP,CN,🎯 全球直連
+GEOIP,CN,🎯 全球直連,no-resolve
 FINAL,🐟 漏網之魚,dns-failed
 
 [Host]
