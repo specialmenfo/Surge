@@ -8,3 +8,4 @@ DOMAIN-SUFFIX,tv.apple.com
 USER-AGENT,AppleTV*
 USER-AGENT,com.apple.tv*
 PROCESS-NAME,tv
+DOMAIN-SUFFIX,uts-api.itunes.apple.com/uts/v3/configitions
