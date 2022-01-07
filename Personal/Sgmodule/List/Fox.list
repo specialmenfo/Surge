@@ -1,4 +1,16 @@
 # NAME: Fox
+DOMAIN-SUFFIX,fox.com
+DOMAIN-SUFFIX,foxdcg.com
+DOMAIN-SUFFIX,theplatform.com
+DOMAIN-SUFFIX,uplynk.com
+USER-AGENT,FOX%20NOW*
+DOMAIN,cdn-fox-networks-group-green.akamaized.net
+DOMAIN,d3cv4a9a9wh0bt.cloudfront.net
+DOMAIN,foxsports01-i.akamaihd.net
+DOMAIN,foxsports02-i.akamaihd.net
+DOMAIN,foxsports03-i.akamaihd.net
+DOMAIN,staticasiafox.akamaized.net
+DOMAIN-SUFFIX,foxplus.com
 DOMAIN-SUFFIX,afewmomentswith.com
 DOMAIN-SUFFIX,anidom.com
 DOMAIN-SUFFIX,bentobox.tv
