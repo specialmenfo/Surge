@@ -1240,6 +1240,13 @@ DOMAIN-SUFFIX,notion-static.com
 DOMAIN-SUFFIX,notion.new
 DOMAIN-SUFFIX,notion.so
 
+# Plex
+# AUTHOR: IEQ0P
+DOMAIN-SUFFIX,analytics.plex.tv
+DOMAIN-SUFFIX,plex.tv
+DOMAIN-SUFFIX,.plex.tv
+DOMAIN-SUFFIX,pubsub.plex.tv
+
 # Other
 USER-AGENT,*AssistantServices*
 DOMAIN-SUFFIX,myptt.cc
