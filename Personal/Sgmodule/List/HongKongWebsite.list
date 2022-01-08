@@ -1,3 +1,47 @@
+# Apple TV
+DOMAIN,hls-amt.itunes.apple.com
+DOMAIN,hls.itunes.apple.com
+DOMAIN,np-edge.itunes.apple.com
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN,uts-api.itunes.apple.com
+DOMAIN-SUFFIX,tv.apple.com
+USER-AGENT,AppleTV*
+USER-AGENT,com.apple.tv*
+PROCESS-NAME,tv
+DOMAIN-SUFFIX,uts-api.itunes.apple.com/uts/v3/configitions
+
+# Apple Siri
+DOMAIN,guzzoni.apple.com
+
+# Apple Mail
+DOMAIN-SUFFIX,mail.icloud.com.cn
+DOMAIN-SUFFIX,mail.me.com
+
+# Apple Daily
+DOMAIN-SUFFIX,appledaily.com
+DOMAIN-SUFFIX,appledaily.com.hk
+DOMAIN-SUFFIX,appledaily.com.tw
+DOMAIN-SUFFIX,appledaily.hk
+DOMAIN-SUFFIX,atnext.com
+DOMAIN-SUFFIX,eracom.com.tw
+DOMAIN-SUFFIX,next.hk
+DOMAIN-SUFFIX,nextdigital.com.hk
+DOMAIN-SUFFIX,nextmag.com.tw
+DOMAIN-SUFFIX,nextmedia.com
+DOMAIN-SUFFIX,nextmgz.com
+DOMAIN-SUFFIX,nexttv.com.tw
+DOMAIN-SUFFIX,sharpdaily.tw
+
+# Apple iCloud
+DOMAIN-SUFFIX,gateway.icloud.com
+
+# Apple News
+DOMAIN-SUFFIX,news-edge.apple.com
+DOMAIN-SUFFIX,news-events.apple.com
+DOMAIN-SUFFIX,apple.comscoreresearch.com
+# Apple News+ Audio
+URL-REGEX,^https?:\/\/news-assets\.apple\.com\/.*(audio-narrative).*
+
 # Apkpure
 DOMAIN-SUFFIX,apkpure.com
 DOMAIN-SUFFIX,cdnpure.com
@@ -44,6 +88,12 @@ DOMAIN-SUFFIX,collector1.afreecatv.com
 DOMAIN-SUFFIX,vod.afreecatv.com
 DOMAIN-SUFFIX,standbygw.afreecatv.com
 DOMAIN-SUFFIX,.afreecatv.com
+
+# BiliBili國際
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN,upos-hz-mirrorakam.akamaized.net
+DOMAIN-KEYWORD,cn-hk-eq-bcache-
 
 # Carousell
 DOMAIN-SUFFIX,click.mail.carousell.com
@@ -156,32 +206,6 @@ DOMAIN-SUFFIX,acheterdesfollowersinstagram.com
 DOMAIN-SUFFIX,acheterfollowersinstagram.com
 DOMAIN-SUFFIX,advancediddetection.com
 DOMAIN-SUFFIX,askfacebook.net
-
-# FlipBoard
-DOMAIN-SUFFIX,flipboard.com
-DOMAIN-SUFFIX,flipchina.cn
-
-# JOOX
-DOMAIN-SUFFIX,joox.com
-USER-AGENT,JOOX*
-USER-AGENT,WeMusic*
-PROCESS-NAME,com.tencent.ibg.joox
-
-# MEGA
-DOMAIN-SUFFIX,mega.co.nz
-DOMAIN-SUFFIX,mega.io
-DOMAIN-SUFFIX,mega.nz
-IP-CIDR,185.206.24.0/22,no-resolve
-IP-CIDR,66.203.126.0/23,no-resolve
-IP-CIDR,94.24.36.0/23,no-resolve
-IP-CIDR6,2a0b:e40:1::/48,no-resolve
-IP-CIDR6,2a0b:e40:2::/47,no-resolve
-IP-CIDR6,2a0b:e41:1::/48,no-resolve
-IP-CIDR6,2a0b:e42:1::/48,no-resolve
-IP-CIDR6,2a0b:e43:1::/48,no-resolve
-IP-CIDR6,2a0b:e44:1::/48,no-resolve
-IP-CIDR6,2a0b:e45:1::/48,no-resolve
-PROCESS-NAME,mega.privacy.android.app
 DOMAIN-SUFFIX,askfacebook.org
 DOMAIN-SUFFIX,atdmt2.com
 DOMAIN-SUFFIX,atlasdmt.com
@@ -749,6 +773,10 @@ IP-CIDR,69.171.224.0/19,no-resolve
 IP-CIDR,69.63.176.0/20,no-resolve
 IP-CIDR,74.119.76.0/22,no-resolve
 
+# FlipBoard
+DOMAIN-SUFFIX,flipboard.com
+DOMAIN-SUFFIX,flipchina.cn
+
 # GitHub
 DOMAIN-SUFFIX,atom.io
 DOMAIN-SUFFIX,dependabot.com
@@ -781,9 +809,35 @@ DOMAIN-SUFFIX,thegithubshop.com
 DOMAIN-SUFFIX,tac.googleapis.com
 DOMAIN-SUFFIX,dl.google.com
 
+# HBO Go HKG
+DOMAIN,wmff.warnermediacdn.com
+DOMAIN-SUFFIX,hboasia1-i.akamaihd.net
+DOMAIN-SUFFIX,hboasia2-i.akamaihd.net
+DOMAIN-SUFFIX,hboasia3-i.akamaihd.net
+DOMAIN-SUFFIX,hboasia4-i.akamaihd.net
+DOMAIN-SUFFIX,hboasia5-i.akamaihd.net
+DOMAIN-SUFFIX,hboasialive.akamaized.net
+DOMAIN-SUFFIX,hbogo.com
+DOMAIN,hbogoasia.com
+DOMAIN-SUFFIX,hbogoasia.hk
+DOMAIN-SUFFIX,hbogoprod-vod.akamaized.net
+DOMAIN-SUFFIX,hbomaxcdn.com
+DOMAIN-SUFFIX,now-ashare.com
+DOMAIN-SUFFIX,now-tv.com
+DOMAIN-SUFFIX,now.com.hk
+DOMAIN-SUFFIX,nowe.com
+DOMAIN-SUFFIX,nowe.hk
+USER-AGENT,HBO%20GO%20PROD%20HKG*
+
 # Imgur
 DOMAIN-SUFFIX,imgur.com
 DOMAIN-SUFFIX,imgurinc.com
+
+# JOOX
+DOMAIN-SUFFIX,joox.com
+USER-AGENT,JOOX*
+USER-AGENT,WeMusic*
+PROCESS-NAME,com.tencent.ibg.joox
 
 # JustWatch
 DOMAIN-SUFFIX,i.tw.cx
@@ -941,6 +995,50 @@ DOMAIN-SUFFIX,plex.tv
 DOMAIN-SUFFIX,.plex.tv
 DOMAIN-SUFFIX,pubsub.plex.tv
 
+# PUBG New State Mobile
+DOMAIN,*img.enter-pubg-new-state.com
+DOMAIN,*-img.enter-pubg-new-state.com
+DOMAIN,event-img.enter-pubg-new-state.com
+DOMAIN-SUFFIX,*img.enter-pubg-new-state.com
+DOMAIN-SUFFIX,*-img.enter-pubg-new-state.com
+DOMAIN-SUFFIX,event-img.enter-pubg-new-state.com
+DOMAIN,enter-pubg-new-state.com
+DOMAIN,.enter-pubg-new-state.com
+DOMAIN,*.enter-pubg-new-state.com
+DOMAIN,ebdsw.enter-pubg-new-state.com
+DOMAIN-SUFFIX,enter-pubg-new-state.com
+DOMAIN-SUFFIX,.enter-pubg-new-state.com
+DOMAIN-SUFFIX,*.enter-pubg-new-state.com
+DOMAIN-SUFFIX,ebdsw.enter-pubg-new-state.com
+DOMAIN,newstate.pubg.com
+DOMAIN,.newstate.pubg.com
+DOMAIN,*.newstate.pubg.com
+DOMAIN,api.newstate.pubg.com
+DOMAIN-SUFFIX,newstate.pubg.com
+DOMAIN-SUFFIX,.newstate.pubg.com
+DOMAIN-SUFFIX,*.newstate.pubg.com
+DOMAIN-SUFFIX,api.newstate.pubg.com
+DOMAIN,newstate.pubg.com
+DOMAIN,.newstate.pubg.com
+DOMAIN,*.newstate.pubg.com
+DOMAIN,wstatic.newstate.pubg.com
+DOMAIN-SUFFIX,newstate.pubg.com
+DOMAIN-SUFFIX,.newstate.pubg.com
+DOMAIN-SUFFIX,*.newstate.pubg.com
+DOMAIN-SUFFIX,wstatic.newstate.pubg.com
+DOMAIN,pubg-ns-gate.com
+DOMAIN,.pubg-ns-gate.com
+DOMAIN,*.pubg-ns-gate.com
+DOMAIN-SUFFIX,pubg-ns-gate.com
+DOMAIN-SUFFIX,.pubg-ns-gate.com
+DOMAIN-SUFFIX,*.pubg-ns-gate.com
+DOMAIN,country-code.pubg-ns-gate.com
+DOMAIN-SUFFIX,country-code.pubg-ns-gate.com
+DOMAIN,newstate.pubg.com
+DOMAIN-SUFFIX,newstate.pubg.com
+DOMAIN,newstate.pubg.com/en
+DOMAIN-SUFFIX,newstate.pubg.com/en
+
 # Reddit
 DOMAIN-SUFFIX,redd.it
 DOMAIN-SUFFIX,reddit.com
@@ -1081,6 +1179,33 @@ DOMAIN-SUFFIX,viki.io
 DOMAIN-SUFFIX,viki.net
 DOMAIN-SUFFIX,vikidash.akamaized.net
 DOMAIN-SUFFIX,vikiplatform.com
+
+# Viu
+DOMAIN-SUFFIX,pccw-cf-epl.akamaized.net
+DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com
+DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net
+DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com
+DOMAIN-SUFFIX,viu.com
+DOMAIN-SUFFIX,viu.now.com
+DOMAIN-SUFFIX,viu.tv
+USER-AGENT,Viu*
+USER-AGENT,ViuTV*
+PROCESS-NAME,com.viu.pad
+PROCESS-NAME,com.viu.phone
+PROCESS-NAME,com.vuclip.viu
+
+# WeTV
+DOMAIN-SUFFIX,iflix-images.akamaized.net
+DOMAIN-SUFFIX,iflix.com
+DOMAIN-SUFFIX,v.smtcdns.com
+DOMAIN-SUFFIX,v.smtcdns.net
+DOMAIN-SUFFIX,vv.video.qq.com
+DOMAIN-SUFFIX,wetv.vip
+DOMAIN-SUFFIX,wetvinfo.com
+IP-CIDR,150.109.28.51/32,no-resolve
+USER-AGENT,WeTV*
+PROCESS-NAME,com.tencent.qqlivei18n
+PROCESS-NAME,com.tencent.qqlivei18n.us
 
 # WildRift
 DOMAIN-SUFFIX,pvp.net
