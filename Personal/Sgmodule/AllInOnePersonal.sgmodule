@@ -1482,4 +1482,4 @@ flushDNS = script-name=flushDNS,update-interval=600
 NetInfoPanel = style=info,script-name=net-info-panel.js,update-interval=1
 nf_check = script-name=nf_check,title=Netflix 影劇版權IP鎖測試,style=alert,content=請刷新,update-interval=1800
 disney_check = script-name=disney_check,title=Disney+ 影劇版權IP鎖測試,style=alert,content=請刷新,update-interval=1800
-youtube_premium_check = script-name=youtube_premium_check,title=YouTube Premium 跨區解鎖測試,update-interval=1
+youtube_premium_check = script-name=youtube_premium_check,title=YouTube Premium & Music 解鎖檢測,update-interval=1
