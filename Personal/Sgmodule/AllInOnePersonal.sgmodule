@@ -1356,8 +1356,6 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/api\.izuiyou\.com\/ad\/ - reject
 # > Zhan - tiku.zhan.com
 ^https?:\/\/tiku\.zhan\.com\/Common\/newAd\/ - reject
-# > Douyin(<= 16.2.0) By Choler
-^https?:\/\/api.*\.amemv\.com\/aweme\/v2\/feed\/ https://aweme.snssdk.com/aweme/v1/feed/ header
 
 [Map Local]
 # 知乎其他廣告攔截
