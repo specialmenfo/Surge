@@ -92,6 +92,12 @@ DOMAIN-SUFFIX,welcometobestbuy.ca
 DOMAIN-SUFFIX,wolfatbestbuy.com
 DOMAIN-SUFFIX,wolfatbestbuy.net
 DOMAIN-SUFFIX,www-bestbuystores.com
+# ESPN
+DOMAIN-SUFFIX,espn.com
+DOMAIN-SUFFIX,espn.net
+DOMAIN-SUFFIX,espncdn.com
+DOMAIN-SUFFIX,espnqa.com
+DOMAIN-SUFFIX,watchespn.com
 
 DOMAIN-SUFFIX,onelogin.com
 DOMAIN-SUFFIX,.onelogin.com
