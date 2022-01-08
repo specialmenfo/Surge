@@ -447,6 +447,21 @@ DOMAIN-SUFFIX,movetv.com
 DOMAIN-SUFFIX,sling.com
 DOMAIN-SUFFIX,slinginternational.com
 
+# ShowTime
+DOMAIN-SUFFIX,smetrics.showtime.com
+DOMAIN-SUFFIX,marketingcloudapis.com
+DOMAIN-SUFFIX,mcbb326bcd8q4wr369f4zt8hw-f1.device.marketingcloudapis.com
+DOMAIN-SUFFIX,www.showtime.com
+DOMAIN-SUFFIX,showtime.com
+DOMAIN-SUFFIX,www.showtimeanytime.com
+DOMAIN-SUFFIX,showtime.penthera.com
+DOMAIN-SUFFIX,www.sho.com
+DOMAIN-SUFFIX,*.sho.com
+DOMAIN-SUFFIX,.sho.com
+DOMAIN-SUFFIX,sho.com
+DOMAIN-SUFFIX,*.sho.com/*
+DOMAIN-SUFFIX,smetrics.sho.com
+
 # Target
 DOMAIN,carts.target.com
 DOMAIN,sapphire-api.target.com
