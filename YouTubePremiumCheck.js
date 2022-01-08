@@ -1,7 +1,7 @@
 const BASE_URL = 'https://www.youtube.com/premium'
 
 const DEFAULT_OPTIONS = {
-  title: 'YouTube Premium 解鎖檢測',
+  title: 'YouTube Premium & Music 解鎖檢測',
   availableContent: '目前 IP 可支援 YouTube Premium\n解鎖國家：#REGION_FLAG# #REGION_NAME#',
   availableIcon: '',
   availableIconColor: '',
