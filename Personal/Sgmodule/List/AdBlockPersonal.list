@@ -1,5 +1,8 @@
 # NAME: AdBlock Personal
 
+# 京東
+URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$"
+
 # Facebook
 DOMAIN-SUFFIX,staticxx.facebook.com
 
