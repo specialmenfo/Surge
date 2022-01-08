@@ -1,1 +1,44 @@
+# Discovery+ 菲律賓
+DOMAIN-SUFFIX,mobile-collector.newrelic.com
+DOMAIN-SUFFIX,api.getblueshift.com
+DOMAIN-SUFFIX,ap2-prod.disco-api.com
+DOMAIN-SUFFIX,int.vaicore.site
+DOMAIN-SUFFIX,dplus-ph-prod-vod.akamaized.net
 
+# Globe
+DOMAIN-SUFFIX,checkoutshopper-live.adyen.com
+DOMAIN-SUFFIX,gcash.com
+DOMAIN-SUFFIX,.gcash.com
+DOMAIN-SUFFIX,www.gcash.com
+DOMAIN-SUFFIX,.globe.com.ph
+DOMAIN-SUFFIX,globe.com.ph
+DOMAIN-SUFFIX,www.globe.com.ph
+DOMAIN-SUFFIX,live-cortex-gw.al.ep.cloudops.globe.com.ph
+DOMAIN-SUFFIX,.smart.com.ph
+DOMAIN-SUFFIX,*.smart.com.ph
+DOMAIN-SUFFIX,smart.com.ph
+DOMAIN-SUFFIX,app1.smart.com.ph
+
+# Lazada
+DOMAIN-SUFFIX,lazada.com.ph
+DOMAIN-SUFFIX,.lazada.com.ph
+DOMAIN-SUFFIX,.slatic.net
+DOMAIN-SUFFIX,slatic.net
+DOMAIN-SUFFIX,pages.lazada.com.ph
+DOMAIN-SUFFIX,ph-test-11.slatic.net
+DOMAIN-SUFFIX,ph-live-01.slatic.net
+DOMAIN-SUFFIX,lazada.arms.aliyuncs.com
+DOMAIN-SUFFIX,retcode-sg-lazada.arms.aliyuncs.com
+
+# Shopee
+DOMAIN-SUFFIX,shopee.co.id
+DOMAIN-SUFFIX,shopee.co.th
+DOMAIN-SUFFIX,shopee.com
+DOMAIN-SUFFIX,shopee.com.br
+DOMAIN-SUFFIX,shopee.com.my
+DOMAIN-SUFFIX,shopee.ph
+DOMAIN-SUFFIX,shopee.sg
+DOMAIN-SUFFIX,shopee.tw
+DOMAIN-SUFFIX,shopee.vn
+DOMAIN-SUFFIX,shopeemobile.com
+DOMAIN-SUFFIX,shp.ee
