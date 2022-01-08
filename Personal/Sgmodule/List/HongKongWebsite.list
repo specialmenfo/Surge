@@ -777,6 +777,14 @@ DOMAIN-SUFFIX,rawgit.com
 DOMAIN-SUFFIX,rawgithub.com
 DOMAIN-SUFFIX,thegithubshop.com
 
+# Google
+DOMAIN-SUFFIX,tac.googleapis.com
+DOMAIN-SUFFIX,dl.google.com
+
+# Imgur
+DOMAIN-SUFFIX,imgur.com
+DOMAIN-SUFFIX,imgurinc.com
+
 # JustWatch
 DOMAIN-SUFFIX,i.tw.cx
 DOMAIN-SUFFIX,www.justwatch.com
@@ -833,6 +841,29 @@ USER-AGENT,mytv*
 DOMAIN-SUFFIX,nowe.com
 DOMAIN-SUFFIX,nowestatic.com
 
+# Notion
+DOMAIN-SUFFIX,notion-static.com
+DOMAIN-SUFFIX,notion.new
+DOMAIN-SUFFIX,notion.so
+
+# NYTimes
+DOMAIN-SUFFIX,d1f1eryiqyjs0r.cloudfront.net
+DOMAIN-SUFFIX,d3lar09xbwlsge.cloudfront.net
+DOMAIN-SUFFIX,d3q1qj9jzsu8nw.cloudfront.net
+DOMAIN-SUFFIX,dc8xl0ndzn2cb.cloudfront.net
+DOMAIN-SUFFIX,nyt.com
+DOMAIN-SUFFIX,nyt.net
+DOMAIN-SUFFIX,nytchina.com
+DOMAIN-SUFFIX,nytcn.me
+DOMAIN-SUFFIX,nytco.com
+DOMAIN-SUFFIX,nyti.ms
+DOMAIN-SUFFIX,nytimes.com
+DOMAIN-SUFFIX,nytimg.com
+DOMAIN-SUFFIX,nytlog.com
+DOMAIN-SUFFIX,nytstyle.com
+DOMAIN-SUFFIX,timestalks.com
+DOMAIN-SUFFIX,tynt.comm
+
 # OneDrive
 DOMAIN-SUFFIX,1drv.com
 DOMAIN-SUFFIX,livefilestore.com
@@ -878,6 +909,37 @@ DOMAIN,www.pinterest.com
 DOMAIN-SUFFIX,pinterest.com
 DOMAIN,pinterest.com
 DOMAIN-SUFFIX,pinimg.com
+
+# PCCW
+DOMAIN-SUFFIX,1010.com.hk
+DOMAIN-SUFFIX,esmarthealth.com
+DOMAIN-SUFFIX,hkcsl.com
+DOMAIN-SUFFIX,hkt-enterprise.com
+DOMAIN-SUFFIX,hkt-eye.com
+DOMAIN-SUFFIX,hkt.com
+DOMAIN-SUFFIX,hkteducation.com
+DOMAIN-SUFFIX,hktpremier.com
+DOMAIN-SUFFIX,hktshop.com
+DOMAIN-SUFFIX,moov.hk
+DOMAIN-SUFFIX,netvigator.com
+DOMAIN-SUFFIX,now-ashare.com
+DOMAIN-SUFFIX,now-tv.com
+DOMAIN-SUFFIX,now.com
+DOMAIN-SUFFIX,now.com.hk
+DOMAIN-SUFFIX,nowe.com
+DOMAIN-SUFFIX,nowe.hk
+DOMAIN-SUFFIX,pccw.com
+DOMAIN-SUFFIX,pccwglobal.com
+DOMAIN-SUFFIX,pccwsolutions.com
+DOMAIN-SUFFIX,theclub.com.hk
+DOMAIN-SUFFIX,uhub.com
+
+# Plex
+# AUTHOR: IEQ0P
+DOMAIN-SUFFIX,analytics.plex.tv
+DOMAIN-SUFFIX,plex.tv
+DOMAIN-SUFFIX,.plex.tv
+DOMAIN-SUFFIX,pubsub.plex.tv
 
 # Reddit
 DOMAIN-SUFFIX,redd.it
@@ -1208,44 +1270,6 @@ DOMAIN-SUFFIX,yahoodns.net
 DOMAIN-SUFFIX,yimg.com
 DOMAIN-SUFFIX,yimg.jp
 DOMAIN-SUFFIX,yourdigitalrebatecenter.com
-
-# Google
-DOMAIN-SUFFIX,tac.googleapis.com
-DOMAIN-SUFFIX,dl.google.com
-
-# NYTimes
-DOMAIN-SUFFIX,d1f1eryiqyjs0r.cloudfront.net
-DOMAIN-SUFFIX,d3lar09xbwlsge.cloudfront.net
-DOMAIN-SUFFIX,d3q1qj9jzsu8nw.cloudfront.net
-DOMAIN-SUFFIX,dc8xl0ndzn2cb.cloudfront.net
-DOMAIN-SUFFIX,nyt.com
-DOMAIN-SUFFIX,nyt.net
-DOMAIN-SUFFIX,nytchina.com
-DOMAIN-SUFFIX,nytcn.me
-DOMAIN-SUFFIX,nytco.com
-DOMAIN-SUFFIX,nyti.ms
-DOMAIN-SUFFIX,nytimes.com
-DOMAIN-SUFFIX,nytimg.com
-DOMAIN-SUFFIX,nytlog.com
-DOMAIN-SUFFIX,nytstyle.com
-DOMAIN-SUFFIX,timestalks.com
-DOMAIN-SUFFIX,tynt.comm
-
-# Imgur
-DOMAIN-SUFFIX,imgur.com
-DOMAIN-SUFFIX,imgurinc.com
-
-# Notion
-DOMAIN-SUFFIX,notion-static.com
-DOMAIN-SUFFIX,notion.new
-DOMAIN-SUFFIX,notion.so
-
-# Plex
-# AUTHOR: IEQ0P
-DOMAIN-SUFFIX,analytics.plex.tv
-DOMAIN-SUFFIX,plex.tv
-DOMAIN-SUFFIX,.plex.tv
-DOMAIN-SUFFIX,pubsub.plex.tv
 
 # Other
 USER-AGENT,*AssistantServices*
