@@ -2,6 +2,7 @@
 DOMAIN-SUFFIX,qici.iqiyi.com
 DOMAIN-SUFFIX,community.iqiyi.com
 DOMAIN-SUFFIX,comic.iqiyi.com
+DOMAIN-SUFFIX,api.iqiyi.com
 
 # 京東
 URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$"
