@@ -472,6 +472,12 @@ DOMAIN,typeahead.target.com
 DOMAIN,redoak.target.com
 DOMAIN-SUFFIX,target.com
 
+# UNIDAYS
+DOMAIN-SUFFIX,*.myunidays.com
+DOMAIN-SUFFIX,.myunidays.com
+DOMAIN-SUFFIX,unidays.com
+DOMAIN-SUFFIX,myunidays.com
+
 # Other
 DOMAIN-SUFFIX,onelogin.com
 DOMAIN-SUFFIX,.onelogin.com
