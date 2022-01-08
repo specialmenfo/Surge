@@ -1,3 +1,6 @@
+# 京東
+URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$"
+
 # AppStore
 DOMAIN,apps.apple.com
 DOMAIN,itunes.apple.com
