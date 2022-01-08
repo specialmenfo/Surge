@@ -9,6 +9,7 @@ DOMAIN-SUFFIX,*.amcplus.com
 DOMAIN-SUFFIX,.amcplus.com
 DOMAIN-SUFFIX,amcplus.com
 DOMAIN-SUFFIX,*.amcplus.com/*
+
 # Bestbuy
 DOMAIN-SUFFIX,bby.com
 DOMAIN-SUFFIX,bbycastatic.ca
@@ -92,12 +93,14 @@ DOMAIN-SUFFIX,welcometobestbuy.ca
 DOMAIN-SUFFIX,wolfatbestbuy.com
 DOMAIN-SUFFIX,wolfatbestbuy.net
 DOMAIN-SUFFIX,www-bestbuystores.com
+
 # ESPN
 DOMAIN-SUFFIX,espn.com
 DOMAIN-SUFFIX,espn.net
 DOMAIN-SUFFIX,espncdn.com
 DOMAIN-SUFFIX,espnqa.com
 DOMAIN-SUFFIX,watchespn.com
+
 # Fox
 DOMAIN-SUFFIX,fox.com
 DOMAIN-SUFFIX,foxdcg.com
@@ -367,6 +370,7 @@ DOMAIN-SUFFIX,wofl.tv
 DOMAIN-SUFFIX,woflthenewsstation.com
 DOMAIN-SUFFIX,wogx.com
 USER-AGENT,FOX%20NOW*
+
 # eBay
 DOMAIN-SUFFIX,about.co.kr
 DOMAIN-SUFFIX,auction.co.kr
@@ -412,16 +416,27 @@ DOMAIN-SUFFIX,ebaystatic.com
 DOMAIN-SUFFIX,esmplus.com
 DOMAIN-SUFFIX,g9.co.kr
 DOMAIN-SUFFIX,gmarket.co.kr
+
 # Pandora
 DOMAIN-SUFFIX,p-cdn.us
 DOMAIN-SUFFIX,pandora.com
 USER-AGENT,Pandora*
+
 # PandoraTV
 DOMAIN-SUFFIX,kmplayer.com
 DOMAIN-SUFFIX,pandora.tv
+
 # Peacock
 DOMAIN-SUFFIX,peacocktv.com
 USER-AGENT,PeacockMobile*
+
+# Sling
+DOMAIN-SUFFIX,dishworld.com
+DOMAIN-SUFFIX,movenetworks.com
+DOMAIN-SUFFIX,movetv.com
+DOMAIN-SUFFIX,sling.com
+DOMAIN-SUFFIX,slinginternational.com
+
 # Other
 DOMAIN-SUFFIX,onelogin.com
 DOMAIN-SUFFIX,.onelogin.com
