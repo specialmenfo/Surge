@@ -437,6 +437,16 @@ DOMAIN-SUFFIX,movetv.com
 DOMAIN-SUFFIX,sling.com
 DOMAIN-SUFFIX,slinginternational.com
 
+# Target
+DOMAIN,carts.target.com
+DOMAIN,sapphire-api.target.com
+DOMAIN,taglocker.target.com
+DOMAIN,gsp.target.com
+DOMAIN,api.target.com
+DOMAIN,typeahead.target.com
+DOMAIN,redoak.target.com
+DOMAIN-SUFFIX,target.com
+
 # Other
 DOMAIN-SUFFIX,onelogin.com
 DOMAIN-SUFFIX,.onelogin.com
