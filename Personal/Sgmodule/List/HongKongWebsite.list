@@ -777,6 +777,16 @@ DOMAIN-SUFFIX,rawgit.com
 DOMAIN-SUFFIX,rawgithub.com
 DOMAIN-SUFFIX,thegithubshop.com
 
+# JustWatch
+DOMAIN-SUFFIX,i.tw.cx
+DOMAIN-SUFFIX,www.justwatch.com
+DOMAIN-SUFFIX,g.justwatch.com
+DOMAIN-SUFFIX,userapi.justwatch.com
+DOMAIN-SUFFIX,images.justwatch.com
+DOMAIN-SUFFIX,justwatch.com
+DOMAIN-SUFFIX,.justwatch.com
+DOMAIN-SUFFIX,sentry.justwatch.com
+
 # MOOV
 DOMAIN-SUFFIX,moov.hk
 DOMAIN-SUFFIX,mtg.now.com
