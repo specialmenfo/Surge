@@ -61,7 +61,6 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Amazon.list,🇺🇸 Amazon
 RULE-SET,https://raw.githubusercontent.com/VirgilClyne/iRingo/main/RuleSet/Apple_News.list,🇺🇸 Apple News+
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AppleSiri.list,🇺🇸 Apple Siri
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AfreecaTV.list,🇰🇷 AfreecaTV
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Apkpure.list,🇺🇸 Apkpure
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AppleTV.list,🇺🇸 Apple TV
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AppleiCloud.list,🇺🇸 Apple iCloud
@@ -74,13 +73,8 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Britbox.list,🇺🇸 Britbox
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/BiliBiliGlobal.list,🌍 BiliBili國際
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/CATCHPLAY%2B.list,🇹🇼 CATCHPLAY+
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Crunchyroll.list,🇺🇸 Crunchyroll
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Carousell.list,🇭🇰 CarouSell
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Cloudflare.list,🇺🇸 Cloudflare
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/DAZN.list,🇯🇵 DAZN
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/GamerTW.list,📺 動畫瘋
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Dropbox.list,🇺🇸 Dropbox
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Discord.list,🇺🇸 Discord
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Disney%2B.list,🇺🇸 Disney+
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Disney%2B%2B.list,🇺🇸 Disney++
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Discovery%2B.list,🇺🇸 Discovery+
@@ -91,8 +85,6 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/OdysseyEMBY.list,🌍 EMBY
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/FuboTV.list,🇺🇸 FuboTV
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/friDay.list,🇹🇼 friDay
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Facebook%2B.list,🇺🇸 Facebook+
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/FlipBoard.list,🇺🇸 FlipBoard
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Globe.list,🇵🇭 Globe
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/GitHub.list,🇺🇸 GitHub
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Garena.list,🇹🇼 Garena
@@ -101,7 +93,6 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/HBOGo%2B%2B.list,🌏 HBO Go換區
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/HBOGo.list,🇹🇼 HBO Go
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/HBOGoHKG.list,🇭🇰 HBO Go HKG
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/JOOX.list,🇭🇰 JOOX
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/JustWatch.list,🇦🇺 JustWatch
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/KKTV%26KKBOX.list,🇹🇼 KKBOX & KKTV
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/KakaoTalk.list,🇰🇷 KakaoTalk
@@ -109,22 +100,15 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/LiTV.list,🇹🇼 LiTV
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Lazada.list,🇵🇭 Lazada
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/myVideo.list,🇹🇼 myVideo
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/MOOV.list,🇭🇰 MOOV
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/MEGA.list,🇺🇸 MEGA
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/myTVSUPER.list,🇭🇰 myTVSUPER
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list,🇺🇸 Microsoft
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/NowE/NowE.list,🇭🇰 NowE
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list,🇺🇸 Netflix
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Microsoft.list,🇺🇸 Microsoft
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Netflix.list,🇺🇸 Netflix
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Nintendo/Nintendo.list,🇯🇵 Nintendo
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Origin/Origin.list,🇺🇸 Origin
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Octopus.list,🇭🇰 Octopus 八達通
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OneDrive/OneDrive.list,🇺🇸 OneDrive
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Plex.list,🌍 Plex
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/PCCW.list,🇭🇰 PCCW
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Pixiv/Pixiv.list,🇯🇵 Pixiv
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Pixnet/Pixnet.list,🇹🇼 痞客邦
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/PayPal.list,🇺🇸 PayPal
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Pinterest.list,🇺🇸 Pinterest
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PChomeTW/PChomeTW.list,🇹🇼 PChomeTW
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Pinterest/Pinterest.list,🇺🇸 Pinterest
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PlayStation/PlayStation.list,🇯🇵 PlayStation
@@ -132,40 +116,24 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/PUBGNewStateMobile.list,🇰🇷 PUBG New State Mobile
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Qobuz/Qobuz.list,🇺🇸 Qobuz
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Riot/Riot.list,🇺🇸 Riot
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list,🇺🇸 Reddit
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Rockstar/Rockstar.list,🇺🇸 Rockstar
 RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Star%2B.list,🇧🇷 Star+
 RULE-SET,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Star%2B%2B.list,🇺🇸 Star++
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Snap/Snap.list,🇺🇸 Snap
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list,🇺🇸 Steam
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/ShowTime.list,🇺🇸 ShowTime
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Spotify/Spotify.list,🇺🇸 Spotify
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SmarTone/SmarTone.list,🇭🇰 SmarTone
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Speedtest/Speedtest.list,🇺🇸 Speedtest
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TVB/TVB.list,🇭🇰 TVB
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TIDAL/TIDAL.list,🇺🇸 Tidal
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Tap%26Go.list,🇭🇰 Tap & Go
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitch/Twitch.list,🇺🇸 Twitch
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Tumblr/Tumblr.list,🇺🇸 Tumblr
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list,🇺🇸 TikTok
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list,🇺🇸 Twitter
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list,🇺🇸 Telegram
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TeamViewer/TeamViewer.list,🇺🇸 TeamViewer
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/UNIDAYS.list,🇺🇸 UNIDAYS
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Viu%2B%2B.list,🌏 Viu換區
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Viu.list,🇭🇰 Viu
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/VK/VK.list,🇷🇺 VK
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Viki/Viki.list,🇯🇵 Viki
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/VISAAgentina.list,🇦🇷 VISA-薅Star+/Disney+
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/WeTV/WeTV.list,🌍 WeTV
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/WildRift/WildRift.list,🇺🇸 WildRift
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Xbox/Xbox.list,🇺🇸 Xbox
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Shopee/Shopee.list,🇵🇭 蝦皮
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Yandex.list,🇷🇺 Yandex
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Yandex/Yandex.list,🇷🇺 Yandex
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Verizon/Verizon.list,🇺🇸 Yahoo
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list,🇺🇸 YouTube
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTubeMusic/YouTubeMusic.list,🇺🇸 YouTube Music
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/YouTube%26YouTubeMusic.list,🇺🇸 YouTube & YouTube Music
 DOMAIN-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AdBlockTest2.list,🛑 廣告攔截
 DOMAIN-SET,https://anti-ad.net/surge2.txt,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt,🛑 廣告攔截
@@ -178,10 +146,10 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising_Domain.list,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_Domain.list,🛑 廣告攔截
 DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/private.txt,🎯 全球直連
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt,🌏 國外網站,force-remote-dns
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/GlobalWebsite.list,🌏 國外網站
+DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt,🇭🇰 香港網站,force-remote-dns
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/TaiWanWebsite.list,🇹🇼 台灣網站
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AmericaWebsite.list,🇺🇸 美國網站
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/HongKongWebsite.list,🇭🇰 香港網站
 RULE-SET,SYSTEM,DIRECT
 RULE-SET,LAN,DIRECT
 GEOIP,CN,🎯 全球直連,no-resolve
