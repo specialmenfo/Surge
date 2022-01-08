@@ -1,5 +1,0 @@
-# NAME: JOOX
-DOMAIN-SUFFIX,joox.com
-USER-AGENT,JOOX*
-USER-AGENT,WeMusic*
-PROCESS-NAME,com.tencent.ibg.joox
