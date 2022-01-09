@@ -1,5 +1,5 @@
 #!name= All In One Personal
-#!desc= 分流規則 收集於GitHub及部分自添加 包含Panel、腳本、去廣告、Rewrite以及MitM 可能有重合規則，暫時還沒發現有什麼影響！廣告無效請先清除 App 緩存，如清除緩存依舊無效，請卸載重裝！
+#!desc= 收集於GitHub及部分自添加 包含Panel、腳本、去廣告、Rewrite以及MitM 可能有重合規則，暫時還沒發現有什麼影響！廣告無效請先清除 App 緩存，如清除緩存依舊無效，請卸載重裝！
 #!author= IEQ0P
 
 [General]
@@ -51,37 +51,6 @@ hide-udp = 1
 keyword-filter-type = whitelist
 hide-apple-request = 1
 hide-crash-reporter-request = 1
-
-[Rule]
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_remove_ads.list,REJECT-DROP
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list,🛑 廣告攔截
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite.list,🛑 廣告攔截
-DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising_Domain.list,🛑 廣告攔截
-DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_Domain.list,🛑 廣告攔截
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,🛑 廣告攔截DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/private.txt,🎯 全球直連
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/ChinaWebsite.list,🎯 全球直連
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/UKWebsite.list,🇬🇧 英國Website
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/JapanWebsite.list,🇯🇵 日本Website
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/BrazilWebsite.list,🇧🇷 巴西Website
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/TaiWanWebsite.list,🇹🇼 台灣Website
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/AmericaWebsite.list,🇺🇸 美國Website
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/RussiaWebsite.list,🇷🇺 俄羅斯Website
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/TurkeyWebsite.list,🇹🇷 土耳其Website
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/HongKongWebsite.list,🇭🇰 香港Website
-DOMAIN-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt,🇭🇰 香港Website,force-remote-dns
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/SingaporeWebsite.list,🇸🇬 新加坡Website
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/PhilippinesWebsite.list,🇵🇭 菲律賓Website
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/DAZN.list,🌍 DAZN 專供
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Viu%2B%2B.list,🌏 Viu 換區
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/HBOGo.list,🌏 HBO Go 國際換區
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/OdysseyEMBY.list,🌍 EMBY 專供
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Netflix.list,🌍 Netflix 專供
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/Paramount%2B.list,🌏 Paramount+ 換區
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/Master/Personal/Sgmodule/List/HBOGo%2B%2B.list,🌏 HBO Go 國際/香港換區
-RULE-SET,LAN,DIRECT
-RULE-SET,SYSTEM,DIRECT
-GEOIP,CN,🎯 全球直連,no-resolve
-FINAL,🐟 漏網之魚,dns-failed
 
 [URL Rewrite]
 # Apple全家桶
