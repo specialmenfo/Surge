@@ -1,5 +1,5 @@
 #!name= All In One Personal INI
-#!desc= 收集於GitHub及部分自添加 包含Panel、腳本、去廣告、Rewrite以及MitM 可能有重合規則，暫時還沒發現有什麼影響！廣告無效請先清除 App 緩存，如清除緩存依舊無效，請卸載重裝！
+#!desc= 此模塊沒有 MITM 功能
 #!author= IEQ0P
 
 [General]
