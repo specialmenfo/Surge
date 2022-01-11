@@ -1,5 +1,4 @@
 # iQiYiTW
-USER-AGENT,QIYIVideo*
 USER-AGENT,QYPlayer*
 USER-AGENT,QTP*
 PROCESS-NAME,com.iqiyi.i18n
