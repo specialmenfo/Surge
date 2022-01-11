@@ -1,9 +1,3 @@
-# BiliBili
-DOMAIN-SUFFIX,biliapi.net
-DOMAIN-SUFFIX,bilibili.com
-DOMAIN,upos-hz-mirrorakam.akamaized.net
-DOMAIN-KEYWORD,cn-hk-eq-bcache-
-
 # YouTube
 DOMAIN,youtubei.googleapis.com
 DOMAIN,yt3.ggpht.com
