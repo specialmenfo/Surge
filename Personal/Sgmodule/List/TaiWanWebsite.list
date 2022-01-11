@@ -7,8 +7,6 @@ PROCESS-NAME,com.iqiyi.i18n.tv
 DOMAIN-SUFFIX,iq.com
 // 首頁
 DOMAIN-SUFFIX,intl.iqiyi.com
-// 歷史
-DOMAIN,intl-rcd.iqiyi.com
 // 收藏
 DOMAIN,intl-subscription.iqiyi.com
 // 播放
