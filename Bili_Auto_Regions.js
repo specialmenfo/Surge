@@ -11,7 +11,7 @@ async function SwitchRegion(play) {
 		if (/\u50c5[\u4e00-\u9fa5]+\u6e2f|%20%E6%B8%AF&/.test(play)) {
 			if (current != HK) return HK;
 		} else if (/\u50c5[\u4e00-\u9fa5]+\u53f0|%20%E5%8F%B0&/.test(play)) {
-			if (current != TW) return TW;
+			if (current != CN) return TW;
 		} else if (current != CN) return CN;
 	})()
 
