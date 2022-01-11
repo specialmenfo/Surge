@@ -999,7 +999,6 @@ weibo_ads = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(status
 什麼值得買_值會員權益中心banner去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
 # > bilibili
 Bilibili_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com/x/v\d/splash/list,script-path=https://raw.githubusercontent.com/srk24/profile/master/js/bilibili_splash.js
-
 # 微信
 微信外鏈 = type=http-response,pattern=^https:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/weixin-external-links.js,script-update-interval=0
 解除WeChat鏈接限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
@@ -1046,27 +1045,6 @@ wb_ad.js = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent
 餓了麼_領取吃貨豆 = type=cron,cronexp=10 00 * * *,timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js
 餓了麼_領取任務 = type=cron,cronexp=00 10 * * *,timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_mission.js
 餓了麼_獲取cookie = type=http-request,pattern=^https?:\/\/h5\.ele\.me\/restapi\/biz\.svip_scene\/svip\/engine\/queryTrafficSupply,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js
-# WPS
-# 打開 APP , 進入簽到頁面, 系統提示: 獲取會話: 成功 (簽到) (不用手動簽到)
-# 運行一次腳本, 如果提示重復簽到, 那就算成功了!
-wps.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js,type=http-request,pattern=^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list
-wps.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js,type=cron,cronexp=10 0 0 * * *
-# 喜馬拉雅
-# 打開 APP, 訪問下右下角賬號
-# 系統提示: 獲取Cookie: 成功 & 獲取Token: 成功（如果不提示獲取成功, 嘗試殺進程再進賬號）
-ximalaya.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js,type=http-request,pattern=^https?:\/\/.*\/mobile\-user\/(v1\/)?homePage\/.*
-ximalaya.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js,type=cron,cronexp=10 0 0 * * *
-# 百度貼吧
-# 用瀏覽器訪問一下: https://tieba.baidu.com 或者 https://tieba.baidu.com/index/
-# 系統提示: 獲取Cookie: 成功
-tieba.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js,type=http-request,pattern=^https?:\/\/tieba\.baidu\.com\/?.?
-tieba.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js,type=cron,cronexp=10 0 0 * *
-# 什麼值得買
-# 瀏覽器訪問並登錄: https://zhiyou.smzdm.com/user/login
-# 打開瀏覽器訪問: https://www.smzdm.com
-# Surge提示: Cookie [什麼值得買] 寫入成功
-smzdm.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.cookie.js,type=http-request,pattern=^https:\/\/www\.smzdm\.com\/?.?
-smzdm.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js,type=cron,cronexp=10 0 0 * * *
 # 順豐速運
 # APP 我的順豐 > 任務中心 > 去簽到
 # 提示 獲取會話: 成功
@@ -1078,21 +1056,6 @@ sfexpress.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/
 # 提示: 獲取會話: 成功!
 neteasemusic.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,requires-body=true,type=http-request,pattern=^https:\/\/music.163.com\/weapi\/user\/level
 neteasemusic.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,type=cron,cronexp=10 0 0 * * *
-# 哈囉出行
-# 打開 APP 進入簽到頁面: 我的 > 有哈有車
-# 系統提示: 首次寫入 哈囉出行 Token 成功 🎉
-# 運行一次腳本, 如果提示重復簽到, 那就算成功了!
-hellobike.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js,requires-body=true,type=http-request,pattern=^https:\/\/gameapi\.hellobike\.com\/api
-hellobike.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js,type=cron,cronexp=5 0 * * *
-# 威鋒網
-# 在 威鋒網 APP 下使用 賬號密碼 方式登錄
-# 提示 獲取會話: 成功
-Rewrite: feng = type=http-request,pattern=^https?:\/\/api.wfdata.club\/v1\/auth\/signin,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/feng/feng.cookie.js,requires-body=true
-feng.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/feng/feng.js,type=cron,cronexp=10 0 0 * * *
-# 芒果TV
-# 打開 APP 然後手動簽到 1 次, 系統提示: 獲取Cookie: 成功
-mgtv.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.cookie.js,type=http-request,pattern=^https:\/\/credits.bz.mgtv.com\/user\/creditsTake
-mgtv.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.js,type=cron,cronexp=10 0 0 * * *
 # 京東
 # 使用方法：複製 https://home.m.jd.com/myJd/newhome.action 到瀏覽器打開 ，在個人中心自動獲取 cookie，
 # 若彈出成功則正常使用。否則繼續再此頁面繼續刷新一下試試。
@@ -1103,33 +1066,6 @@ mgtv.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/maste
 # 由於cookie的有效性(經測試網頁Cookie有效週期最長31天)，如果腳本後續彈出cookie無效的通知，則需要重復上述步驟。
 京東多合一簽到 = type=cron,cronexp=0 0 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/Master/JDJS/JD_DailyBonus.js,script-update-interval=0
 獲取京東Cookie = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,max-size=0,script-update-interval=0
-省錢大贏家之翻翻樂 = type=cron,cronexp=20 * * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_big_winner.js
-口袋書店 = type=cron,cronexp="1 8,12,18 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_bookshop.js
-京東汽車 = type=cron,cronexp=10 7 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_car.js
-京東汽車兌換 = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_car_exchange.js
-簽到領現金 = type=cron,cronexp=2 0-23/4 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_cash.js
-搖京豆 = type=cron,cronexp="5 0,23 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_club_lottery.js
-京喜工廠 = type=cron,cronexp=10 * * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_dreamFactory.js
-京喜工廠助力 = type=cron,cronexp=10 * * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_dreamFactory_help.js
-獲取多賬號京東Cookie = type=http-request,pattern=^https:\/\/me-api\.jd\.com\/user_new\/info\/GetJDUserInfoUnion,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/JD_extra_cookie.js,script-update-interval=0
-京東家庭號 = type=cron,cronexp="1 12,23 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_family.js
-東東農場 = type=cron,cronexp=5 6-18/6 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_fruit.js
-金榜創造營 = type=cron,cronexp="13 1,22 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_gold_creator.js
-東東健康社區收集能量 = type=cron,cronexp=5-45/20 * * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_health_collect.js
-東東工廠 = type=cron,cronexp=10 * * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_jdfactory.js
-領金貼 = type=cron,cronexp=10 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_jin_tie.js
-京東快遞簽到 = type=cron,cronexp=10 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_kd.js
-京東直播 = type=cron,cronexp=10-20/5 12 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_live.js
-幸運大轉盤 = type=cron,cronexp=4 10 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_market_lottery.js
-京東秒秒幣 = type=cron,cronexp=10 7 * * *,wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_ms.js
-女裝盲盒 = type=cron,cronexp="35 1,23 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_nzmh.js
-東東萌寵 = type=cron,cronexp=15 6-18/6 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_pet.js
-京東種豆得豆 = type=cron,cronexp=1 7-21/2 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_plantBean.js
-閃購盲盒 = type=cron,cronexp=20 8 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_sgmh.js
-進店領豆 = type=cron,cronexp=10 0 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_shop.js
-京東極速版紅包 = type=cron,cronexp="20 0,22 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_speed_redpocke.js
-京東極速版 = type=cron,cronexp=0 7 * * *,wake-system=1,timeout=33600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_speed_sign.js
-東東超市 = type=cron,cronexp=11 * * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_superMarket.js
 # 愛奇藝
 # 獲取Cookie說明：
 # 打開愛奇藝App後(AppStore中國區)，點擊"我的", 如通知成功獲取cookie, 則可以使用此簽到腳本.
