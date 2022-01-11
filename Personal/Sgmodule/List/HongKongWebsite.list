@@ -1,6 +1,3 @@
-USER-AGENT,ViuTV*
-DOMAIN-SUFFIX,viu.tv
-
 # YouTube
 DOMAIN,youtubei.googleapis.com
 DOMAIN,yt3.ggpht.com
@@ -366,7 +363,6 @@ DOMAIN-SUFFIX,wholeplanetfoundation.org
 DOMAIN-SUFFIX,yamaxun.cn
 DOMAIN-SUFFIX,yamaxun.com
 DOMAIN-SUFFIX,z.cn
-IP-CIDR,13.32.0.0/15,no-resolve
 IP-CIDR,13.35.0.0/17,no-resolve
 IP-CIDR,18.184.0.0/15,no-resolve
 IP-CIDR,18.194.0.0/15,no-resolve
@@ -2040,6 +2036,10 @@ DOMAIN-SUFFIX,vikidash.akamaized.net
 DOMAIN-SUFFIX,vikiplatform.com
 
 # Viu
+USER-AGENT,ViuTV*
+DOMAIN-SUFFIX,viu.tv
+USER-AGENT,Viu*
+DOMAIN-SUFFIX,viu.com
 DOMAIN-SUFFIX,pccw-cf-epl.akamaized.net
 DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com
 DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net
