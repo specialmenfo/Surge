@@ -1,3 +1,6 @@
+USER-AGENT,ViuTV*
+DOMAIN-SUFFIX,viu.tv
+
 # YouTube
 DOMAIN,youtubei.googleapis.com
 DOMAIN,yt3.ggpht.com
