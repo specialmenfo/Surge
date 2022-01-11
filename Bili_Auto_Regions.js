@@ -2,7 +2,7 @@ let $ = specialmenfo();
 let run = EnvInfo();
 
 async function SwitchRegion(play) {
-	const Group = $.read('BiliArea_Policy') || '🎯 全球直連'; //Your blibli policy group name.
+	const Group = $.read('BiliArea_Policy') || '🇭🇰 香港節點'; //Your blibli policy group name.
 	const CN = $.read('BiliArea_CN') || '🎯 全球直連'; //Your China sub-policy name.
 	const TW = $.read('BiliArea_TW') || '🇹🇼 台灣節點'; //Your Taiwan sub-policy name.
 	const HK = $.read('BiliArea_HK') || '🇭🇰 香港節點'; //Your HongKong sub-policy name.
