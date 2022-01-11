@@ -1,4 +1,7 @@
 # YouTube
+
+app.bilibili.com/x/v2/search
+
 DOMAIN,youtubei.googleapis.com
 DOMAIN,yt3.ggpht.com
 DOMAIN-SUFFIX,ggpht.cn
