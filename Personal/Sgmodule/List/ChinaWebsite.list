@@ -1,12 +1,6 @@
 # 京東
 URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$"
 
-# BiliBili
-DOMAIN-SUFFIX,biliapi.net
-DOMAIN-SUFFIX,bilibili.com
-DOMAIN,upos-hz-mirrorakam.akamaized.net
-DOMAIN-KEYWORD,cn-hk-eq-bcache-
-
 # AppStore
 DOMAIN,apps.apple.com
 DOMAIN,itunes.apple.com
