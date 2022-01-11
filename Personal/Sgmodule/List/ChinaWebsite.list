@@ -29,8 +29,6 @@ DOMAIN-SUFFIX,ppsurl.com
 DOMAIN-SUFFIX,qiyi.cn
 DOMAIN-SUFFIX,qiyi.com
 DOMAIN-SUFFIX,qiyipic.com
-DOMAIN-SUFFIX,qy.com
-DOMAIN-SUFFIX,qy.net
 DOMAIN-SUFFIX,suike.cn
 IP-CIDR,101.224.0.0/13,no-resolve
 IP-CIDR,103.44.56.0/22,no-resolve
