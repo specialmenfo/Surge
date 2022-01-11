@@ -43,7 +43,7 @@ tun-included-routes = 192.168.1.12/32
 show-error-page-for-reject = false
 include-all-networks = false
 include-local-networks = false
-geoip-maxmind-url = https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
+geoip-maxmind-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
 exclude-simple-hostnames = true
 
 [Replica]
