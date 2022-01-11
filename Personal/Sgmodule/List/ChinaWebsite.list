@@ -1,6 +1,8 @@
 # 京東
 URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$"
 
+app.bilibili.com/x/v2/search
+
 # AppStore
 DOMAIN,apps.apple.com
 DOMAIN,itunes.apple.com
