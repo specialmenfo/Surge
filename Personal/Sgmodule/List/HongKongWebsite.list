@@ -922,12 +922,6 @@ DOMAIN-SUFFIX,vod.afreecatv.com
 DOMAIN-SUFFIX,standbygw.afreecatv.com
 DOMAIN-SUFFIX,.afreecatv.com
 
-# BiliBili國際
-DOMAIN-SUFFIX,biliapi.net
-DOMAIN-SUFFIX,bilibili.com
-DOMAIN,upos-hz-mirrorakam.akamaized.net
-DOMAIN-KEYWORD,cn-hk-eq-bcache-
-
 # Carousell
 DOMAIN-SUFFIX,click.mail.carousell.com
 DOMAIN,click.mail.carousell.com/*
