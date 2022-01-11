@@ -54,8 +54,6 @@ IP-CIDR,23.40.242.10/32,no-resolve
 IP-CIDR,23.53.32.88/32,no-resolve
 USER-AGENT,PPStream*
 USER-AGENT,QYPlayer*
-USER-AGENT,iQIYI*
-USER-AGENT,iQiYi*
 PROCESS-NAME,com.qiyi.video
 
 # 京東
