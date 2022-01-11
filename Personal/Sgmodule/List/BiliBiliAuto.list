@@ -1,2 +1,6 @@
 # BiliBili
 app.bilibili.com/x/v2/search
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN,upos-hz-mirrorakam.akamaized.net
+DOMAIN-KEYWORD,cn-hk-eq-bcache-
