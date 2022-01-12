@@ -1081,8 +1081,8 @@ neteasemusic.js = script-path=https://raw.githubusercontent.com/specialmenfo/Sur
 # 如果通知獲取Cookie成功, 則可以使用此簽到腳本. 注: 請勿在京東APP內獲取!!!
 # 獲取京東金融簽到Body說明: 正確添加腳本配置後, 進入"京東金融"APP, 在"首頁"點擊"簽到"並簽到一次, 待通知提示成功即可.
 # 由於cookie的有效性(經測試網頁Cookie有效週期最長31天)，如果腳本後續彈出cookie無效的通知，則需要重復上述步驟。
-京東多合一簽到 = type=cron,cronexp=0 0 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/JDJS/JD_DailyBonus.js,script-update-interval=0
-獲取京東Cookie = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/JDJS/JD_DailyBonus.js,max-size=0,script-update-interval=0
+京東多合一簽到 = type=cron,cronexp=0 0 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/JD/JD_DailyBonus.js,script-update-interval=0
+獲取京東Cookie = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/JD/JD_DailyBonus.js,max-size=0,script-update-interval=0
 
 # 愛奇藝
 # 獲取Cookie說明：
