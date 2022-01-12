@@ -5,7 +5,7 @@
 QuantumultX:
 
 [rewrite_local]
-https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
+https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/BaiduCloud.js
 
 [mitm]
 hostname = pan.baidu.com
@@ -14,7 +14,7 @@ hostname = pan.baidu.com
 Surge4 or Loon:
 
 [Script]
-http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
+http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/BaiduCloud.js
 
 [MITM]
 hostname = pan.baidu.com
