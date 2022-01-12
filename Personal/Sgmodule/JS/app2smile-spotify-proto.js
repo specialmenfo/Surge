@@ -24,7 +24,7 @@ if(url.indexOf("bootstrap/v1/bootstrap") !== -1 && method === postMethod){
     body = ucsResponseWrapperType.encode(ucsResponseWrapperMessage).finish();
     console.log('customize');
 } else {
-    $notification.post('spotify解锁premium', "路径/请求方法匹配错误:", method + "," + url);
+    $notification.post('spotify解鎖premium', "路徑/請求方法匹配錯誤:", method + "," + url);
 }
 console.log(`${body.byteLength}---${body.buffer.byteLength}`);
 if(isQuanX){
@@ -85,9 +85,9 @@ function processMap(accountAttributesMap){
 
 function deepCopy(data, hash = new WeakMap()) {
     if(typeof data !== 'object' || data === null){
-        throw new TypeError('传入参数不是对象')
+        throw new TypeError('傳入參數不是對象')
     }
-    // 判断传入的待拷贝对象的引用是否存在于hash中
+    // 判斷傳入的待拷貝對象的引用是否存在於hash中
     if(hash.has(data)) {
         return hash.get(data)
     }
@@ -95,22 +95,22 @@ function deepCopy(data, hash = new WeakMap()) {
     const dataKeys = Object.keys(data);
     dataKeys.forEach(value => {
         const currentDataValue = data[value];
-        // 基本数据类型的值和函数直接赋值拷贝
+        // 基本數據類型的值和函數直接賦值拷貝
         if (typeof currentDataValue !== "object" || currentDataValue === null) {
             newData[value] = currentDataValue;
         } else if (Array.isArray(currentDataValue)) {
-            // 实现数组的深拷贝
+            // 實現數組的深拷貝
             newData[value] = [...currentDataValue];
         } else if (currentDataValue instanceof Set) {
-            // 实现set数据的深拷贝
+            // 實現set數據的深拷貝
             newData[value] = new Set([...currentDataValue]);
         } else if (currentDataValue instanceof Map) {
-            // 实现map数据的深拷贝
+            // 實現map數據的深拷貝
             newData[value] = new Map([...currentDataValue]);
         } else {
-            // 将这个待拷贝对象的引用存于hash中
+            // 將這個待拷貝對象的引用存於hash中
             hash.set(data,data);
-            // 普通对象则递归赋值
+            // 普通對象則遞歸賦值
             newData[value] = deepCopy(currentDataValue, hash);
         }
     });
