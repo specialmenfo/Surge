@@ -1,4 +1,4 @@
-const $ = new Env('顺丰速运')
+const $ = new Env('順豐速運')
 $.KEY_login = 'chavy_login_sfexpress'
 
 !(async () => {
@@ -66,7 +66,7 @@ function queryDailyTask() {
 async function signDailyTasks() {
   await queryDailyTask()
 
-  // 移除每日签到
+  // 移除每日簽到
   const skipType = ['sign', 'mailPerMonThan3']
   $.tasks = $.tasks.filter((t) => !skipType.includes(t.pageType))
 
@@ -76,7 +76,7 @@ async function signDailyTasks() {
       await doTask(task)
       await getPoint(task)
     } else if (task.status === 3) {
-      task.result = '积分已领取！'
+      task.result = '積分已領取！'
     } else {
       task.result = '未知'
     }
@@ -111,22 +111,22 @@ function getPoint(task) {
 
 function showmsg() {
   const success = $.sign && $.sign.success
-  $.subt = `签到: `
+  $.subt = `簽到: `
   $.desc = []
   if (success) {
     $.subt += `成功`
-    $.desc.push(`说明: +${$.sign.obj} 积分`)
+    $.desc.push(`說明: +${$.sign.obj} 積分`)
   } else {
     const errmsg = $.sign.errorMessage
-    if (errmsg === '已经发送过积分') {
-      $.subt += `重复`
-      $.desc.push(`说明: ${errmsg}`)
+    if (errmsg === '已經發送過積分') {
+      $.subt += `重復`
+      $.desc.push(`說明: ${errmsg}`)
     } else {
-      $.subt += `失败`
+      $.subt += `失敗`
     }
   }
 
-  $.desc.push('', `每日任务: `)
+  $.desc.push('', `每日任務: `)
   for (let i = 0; i < $.tasks.length; i++) {
     const name = $.tasks[i].title
     const result = $.tasks[i].result
