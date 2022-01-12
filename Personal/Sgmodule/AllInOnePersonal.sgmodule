@@ -919,7 +919,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 [Script]
 # 多賬號Cookie保存切換
 # 訪問: http://boxjs.com管理
-BoxJs = type=http-request,pattern=^https?://boxjs.com(/api|/home|/sub|/my|/app|/log|/revert)?($|\/),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/boxjs.js,requires-body=1,timeout=120,max-size=0,script-update-interval=0
+BoxJs = type=http-request,pattern=^https?://boxjs.com(/api|/home|/sub|/my|/app|/log|/revert)?($|\/),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/boxjs.js,requires-body=1,timeout=120,max-size=0,script-update-interval=0
 # Apple全家桶
 # Enable All TV app Tabs
 http-response ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/configurations\?.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, requires-body=true, timeout=3, tag=Apple_TV
@@ -1005,7 +1005,7 @@ Bilibili_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern
 解除WeChat鏈接限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js,argument=taobaoNotifyJump=false&useGoogleCache=true
 解除WeChat鏈接限制 = type=http-response,pattern=^https:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/weixin-external-links.js,script-update-interval=0
 # 嗶哩嗶哩, 港澳台番劇自動切換地區 & 顯示豆瓣評分
-Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Bili_Auto_Regions.js,script-update-interval=0
+Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Bili_Auto_Regions.js,script-update-interval=0
 # 可選, 適用於搜索指定地區的番劇
 # 如需搜索指定地區番劇, 可在搜索框添加後綴" 港", " 台", " 中". 例如: 進擊的巨人 港(後面空格加上港、台、中）
 # 台灣動漫需要以繁體中文搜索 否則搜不出來
@@ -1021,7 +1021,7 @@ spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com
 酷我vip解鎖 = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js,script-update-interval=0
 # EMBY Unlock iOS
 # EMBY 解鎖會員，解鎖完成後會顯示*Already Unlock EMBY Premium，即代表完成解鎖！如遇到進入 App 一直轉圈，請關閉 EMBY App，然後重新打開（大概3～4次可正常）
-embyPremiere.js = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/EMBY.js
+embyPremiere.js = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/EMBY.js
 # 百度網盤 解鎖倍率/清晰度
 # hostname = *.baidu.com
 https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://github.com/NobyDa/Script/raw/master/Surge/JS/BaiduCloud.js
@@ -1088,12 +1088,12 @@ neteasemusic.js = script-path=https://raw.githubusercontent.com/chavyleung/scrip
 叮咚買菜獲取Cookie = type=http-request,pattern=^https:\/\/maicai.api.ddxq.mobi\/point\/home,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.cookie.js
 叮咚買菜簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.js
 # @Nebulosa-Cat
-disney_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/disney_check.js?version=1637153952428
-reload.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/reload.js,type=generic
+disney_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/disney_check.js?version=1637153952428
+reload.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/reload.js,type=generic
 flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
-nf_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/NetflixCheck.js,argument=title=Netflix 影劇版權IP鎖測試
-youtube_premium_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/YouTubePremiumCheck.js,argument=title=YouTube Premium 解鎖檢測
-net-info-panel.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/networkCheck.js,type=generic
+nf_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/NetflixCheck.js,argument=title=Netflix 影劇版權IP鎖測試
+youtube_premium_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/YouTubePremiumCheck.js,argument=title=YouTube Premium 解鎖檢測
+net-info-panel.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/networkCheck.js,type=generic
 
 [Panel]
 Profile-Reload = title=Profile Reload,content=點擊以重新整理,style=info,script-name=reload.js,update-interval=-1
