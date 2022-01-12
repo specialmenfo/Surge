@@ -1,3 +1,6 @@
+# Gmail
+DOMAIN-SUFFIX,smtp.gmail.com
+
 # iQiYiTW
 DOMAIN,intl-im-hist-api.iqiyi.com
 DOMAIN-SUFFIX,iq.com
