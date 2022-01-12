@@ -3,11 +3,11 @@
  * hostname = biz.caiyunapp.com
  * 
  * [Script]
- * 彩云天气_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/nxyd_caiyun_svip.js
+ * 彩雲天氣_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/nxyd_caiyun_svip.js
  * 
  */
 
-const SCRIPT_NAME = '彩云天气';
+const SCRIPT_NAME = '彩雲天氣';
 const USER_REGEX = /https?:\/\/biz\.caiyunapp\.com\/v2\/user/;
 const RIGHTS_REGEX = /https?:\/\/biz\.caiyunapp\.com\/membership_rights/;
 const RESULT = {
@@ -148,7 +148,7 @@ function Main(){
         magicJS.done({body});
       }
       catch(err){
-        magicJS.log(`解锁SVIP失败，异常信息${err}`);
+        magicJS.log(`解鎖SVIP失敗，異常信息${err}`);
         magicJS.done();
       }
     }
@@ -231,7 +231,7 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
         else{
           let levelNum = this.logLevels[level];
           if (typeof levelNum === 'undefined'){
-            this.logError(`获取MagicJS日志级别错误，已强制设置为DEBUG级别。传入日志级别：${level}。`)
+            this.logError(`獲取MagicJS日誌級別錯誤，已強制設置為DEBUG級別。傳入日誌級別：${level}。`)
             return this.logLevels.DEBUG;
           }
           else{
@@ -240,14 +240,14 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
         }
       }
       catch(err){
-        this.logError(`获取MagicJS日志级别错误，已强制设置为DEBUG级别。传入日志级别：${level}，异常信息：${err}。`)
+        this.logError(`獲取MagicJS日誌級別錯誤，已強制設置為DEBUG級別。傳入日誌級別：${level}，異常信息：${err}。`)
         return this.logLevels.DEBUG;
       }
     }
 
     read(key, session=''){
       let val = '';
-      // 读取原始数据
+      // 讀取原始數據
       if (this.isSurge || this.isLoon) {
         val = $persistentStore.read(key);
       }
@@ -261,10 +261,10 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
         val = $file.read('drive://MagicJS/magic.json').string;
       }
       try {
-        // Node 和 JSBox数据处理
+        // Node 和 JSBox數據處理
         if (this.isNode) val = val[key]
         if (this.isJSBox) val = JSON.parse(val)[key];
-        // 带Session的情况
+        // 帶Session的情況
         if (!!session){
           if(typeof val === 'string') val = JSON.parse(val);
           val = !!val && typeof val === 'object' ? val[session]: null;
@@ -283,7 +283,7 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
 
     write(key, val, session=''){
       let data = !!session ? {} : '';
-      // 读取原先存储的JSON格式数据
+      // 讀取原先存儲的JSON格式數據
       if (!!session && (this.isSurge || this.isLoon)) {
         data = $persistentStore.read(key);
       }
@@ -297,7 +297,7 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
         data = JSON.parse($file.read('drive://MagicJS/magic.json').string);
       }
       if (!!session){
-        // 有Session，要求所有数据都是Object
+        // 有Session，要求所有數據都是Object
         try {
           if (typeof data === 'string') data = JSON.parse(data)
           data = typeof data === 'object' && !!data ? data : {};
@@ -308,14 +308,14 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
           data = {};
         };
         if (this.isJSBox || this.isNode){
-          // 构造数据
+          // 構造數據
           if (!data.hasOwnProperty(key) || typeof data[key] != 'object'){
             data[key] = {};
           }
           if (!data[key].hasOwnProperty(session)){
             data[key][session] = null;
           }
-          // 写入或删除数据
+          // 寫入或刪除數據
           if (typeof val === 'undefined'){
             delete data[key][session];
           }
@@ -324,7 +324,7 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
           }
         }
         else {
-          // 写入或删除数据      
+          // 寫入或刪除數據      
           if (typeof val === 'undefined'){
             delete data[session];
           }
@@ -333,10 +333,10 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
           }
         }
       }
-      // 没有Session时
+      // 沒有Session時
       else{
         if (this.isNode || this.isJSBox){
-          // 删除数据
+          // 刪除數據
           if (typeof val === 'undefined'){
             delete data[key];
           }
@@ -345,7 +345,7 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
           }
         }        
         else{    
-          // 删除数据      
+          // 刪除數據      
           if (typeof val === 'undefined'){
             data = null;
           }
@@ -354,7 +354,7 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
           }
         }
       }
-      // 数据回写
+      // 數據回寫
       if (typeof data === 'object') data = JSON.stringify(data);
       if (this.isSurge || this.isLoon) {
         $persistentStore.write(data, key);
@@ -377,16 +377,16 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
     }
 
     /**
-     * iOS系统通知
-     * @param {*} title 通知标题
-     * @param {*} subTitle 通知副标题
-     * @param {*} body 通知内容
-     * @param {*} options 通知选项，目前支持传入超链接或Object
-     * Surge不支持通知选项，Loon仅支持打开URL，QuantumultX支持打开URL和多媒体通知
-     * options "applestore://" 打开Apple Store
-     * options "https://www.apple.com.cn/" 打开Apple.com.cn
-     * options {'open-url': 'https://www.apple.com.cn/'} 打开Apple.com.cn
-     * options {'open-url': 'https://www.apple.com.cn/', 'media-url': 'https://raw.githubusercontent.com/Orz-3/mini/master/Apple.png'} 打开Apple.com.cn，显示一个苹果Logo
+     * iOS系統通知
+     * @param {*} title 通知標題
+     * @param {*} subTitle 通知副標題
+     * @param {*} body 通知內容
+     * @param {*} options 通知選項，目前支持傳入超鏈接或Object
+     * Surge不支持通知選項，Loon僅支持打開URL，QuantumultX支持打開URL和多媒體通知
+     * options "applestore://" 打開Apple Store
+     * options "https://www.apple.com.cn/" 打開Apple.com.cn
+     * options {'open-url': 'https://www.apple.com.cn/'} 打開Apple.com.cn
+     * options {'open-url': 'https://www.apple.com.cn/', 'media-url': 'https://raw.githubusercontent.com/Orz-3/mini/master/Apple.png'} 打開Apple.com.cn，顯示一個蘋果Logo
      */ 
     notify(title=this.scriptName, subTitle='', body='', options=''){
       let convertOptions = (_options) =>{
@@ -402,7 +402,7 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
         return newOptions;
       }
       options = convertOptions(options);
-      // 支持单个参数通知
+      // 支持單個參數通知
       if (arguments.length == 1){
         title = this.scriptName;
         subTitle = '',
@@ -412,7 +412,7 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
         $notification.post(title, subTitle, body);
       }
       else if (this.isLoon){
-        // 2020.08.11 Loon2.1.3(194)TF 如果不加这个log，在跑测试用例连续6次通知，会漏掉一些通知，已反馈给作者。
+        // 2020.08.11 Loon2.1.3(194)TF 如果不加這個log，在跑測試用例連續6次通知，會漏掉一些通知，已反饋給作者。
         this.logInfo(`title: ${title}, subTitle：${subTitle}, body：${body}, options：${options}`);
         if (!!options) $notification.post(title, subTitle, body, options);
         else $notification.post(title, subTitle, body);
@@ -549,20 +549,20 @@ function MagicJS(scriptName='MagicJS', logLevel='INFO'){
     }
 
     /**
-     * 对await执行中出现的异常进行捕获并返回，避免写过多的try catch语句
-     * @param {*} promise Promise 对象
-     * @param {*} defaultValue 出现异常时返回的默认值
-     * @returns 返回两个值，第一个值为异常，第二个值为执行结果
+     * 對await執行中出現的異常進行捕獲並返回，避免寫過多的try catch語句
+     * @param {*} promise Promise 對象
+     * @param {*} defaultValue 出現異常時返回的默認值
+     * @returns 返回兩個值，第一個值為異常，第二個值為執行結果
      */
     attempt(promise, defaultValue=null){ return promise.then((args)=>{return [null, args]}).catch(ex=>{this.log('raise exception:' + ex); return [ex, defaultValue]})};
 
     /**
-     * 重试方法
-     * @param {*} fn 需要重试的函数
-     * @param {number} [retries=5] 重试次数
-     * @param {number} [interval=0] 每次重试间隔
-     * @param {function} [callback=null] 函数没有异常时的回调，会将函数执行结果result传入callback，根据result的值进行判断，如果需要再次重试，在callback中throw一个异常，适用于函数本身没有异常但仍需重试的情况。
-     * @returns 返回一个Promise对象
+     * 重試方法
+     * @param {*} fn 需要重試的函數
+     * @param {number} [retries=5] 重試次數
+     * @param {number} [interval=0] 每次重試間隔
+     * @param {function} [callback=null] 函數沒有異常時的回調，會將函數執行結果result傳入callback，根據result的值進行判斷，如果需要再次重試，在callback中throw一個異常，適用於函數本身沒有異常但仍需重試的情況。
+     * @returns 返回一個Promise對象
      */
     retry(fn, retries=5, interval=0, callback=null) {
       return (...args)=>{
