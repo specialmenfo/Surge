@@ -866,6 +866,7 @@ DOMAIN-SUFFIX,sharpdaily.tw
 
 # iCloud
 DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN-SUFFIX,gspe35-ssl.ls.apple.com
 
 # Apple News
 DOMAIN-SUFFIX,news-edge.apple.com
