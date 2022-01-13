@@ -389,7 +389,7 @@ DOMAIN-SUFFIX,media-amazon.com,Prime Video
 DOMAIN-SUFFIX,pv-cdn.net,Prime Video
 DOMAIN-SUFFIX,aiv-cdn.net,Prime Video
 DOMAIN-SUFFIX,aiv-delivery.net,Prime Video
-// DOMAIN,www.amazon.com,Prime Video // 网页版 Prime Video 验证地区
+// DOMAIN,www.amazon.com,Prime Video // 網頁版 Prime Video 驗證地區
 DOMAIN,ktpx.amazon.com,Prime Video
 DOMAIN,atv-ps.amazon.com,Prime Video
 DOMAIN,avodmp4s3ww-a.akamaihd.net,Prime Video
