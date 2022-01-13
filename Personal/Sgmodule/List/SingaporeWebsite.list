@@ -1,4 +1,6 @@
 # EPIN
+IP-CIDR,104.16.0.0/12,no-resolve
+IP-CIDR,172.64.0.0/13,no-resolve
 DOMAIN-SUFFIX,trendyol.com
 DOMAIN-SUFFIX,.trendyol.com
 DOMAIN-SUFFIX,*.trendyol.com
