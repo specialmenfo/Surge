@@ -864,14 +864,14 @@ DOMAIN-SUFFIX,nextmgz.com
 DOMAIN-SUFFIX,nexttv.com.tw
 DOMAIN-SUFFIX,sharpdaily.tw
 
-# Apple iCloud
+# iCloud
 DOMAIN-SUFFIX,gateway.icloud.com
 
 # Apple News
 DOMAIN-SUFFIX,news-edge.apple.com
 DOMAIN-SUFFIX,news-events.apple.com
 DOMAIN-SUFFIX,apple.comscoreresearch.com
-# Apple News+ Audio
+# News+ Audio
 URL-REGEX,^https?:\/\/news-assets\.apple\.com\/.*(audio-narrative).*
 
 # Apkpure
