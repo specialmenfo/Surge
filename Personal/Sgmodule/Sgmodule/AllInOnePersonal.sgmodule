@@ -983,11 +983,13 @@ Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/
 Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/card\?(.*)
 #  Unlock Apple News 🇺🇸US
 # 解鎖🇺🇸US地區的News，注：需配合域名集使用，使用過程中gateway.icloud.com需走代理線路。
-Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js,requires-body=true,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(edge|events)\.apple\.com\/(v1\/configs|analyticseventsv2\/async).*
-Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(client-search)\.apple\.com\/(v1\/search\?).*
+http-request ^https?:\/\/news-(edge|events)\.apple\.com\/(v1\/configs|analyticseventsv2\/async).* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js, requires-body=true, tag=Apple_News
+http-request ^https?:\/\/news-(client-search)\.apple\.com\/(v1\/search\?).* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js, tag=Apple_News
+
 # Google重定向
 bstar_login = type=http-request,pattern=^https?:\/\/passport\.biliintl\.com\/x\/intl\/passport-login\/(sms\/send|reg\/sms|oauth2\/access_token|login\/sms),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/GoogleBstar.js,script-update-interval=0
 bstar_play = type=http-request,pattern=^https?:\/\/app\.biliintl\.com\/(intl\/gateway\/v\d\/app\/data\/report\/heartbeat\/mobile|x\/(history|reply)/v\d/add),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/GoogleBstar.js,script-update-interval=0
+
 # TestFlight解除區域限制
 TestFlight Unlock = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/TestFlight_Unlock.js
 
