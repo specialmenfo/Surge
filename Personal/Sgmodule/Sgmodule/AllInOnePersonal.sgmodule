@@ -83,6 +83,7 @@ GEOIP,CN,🎯 全球直連,no-resolve
 FINAL,🐟 漏網之魚,dns-failed
 
 [URL Rewrite]
+# Google
 # Turn Off Google Safesearch(Beta)
 # 主要用於解決被 Google 識別成中國大陸(即訪問不了 https://www.google.com/maps/timeline)的節點導致 Google 香港安全搜索鎖死的問題。Desktop 請使用 https://google.com/ncr
 (https:\/\/www\.google\.com([.a-z]+)?\/.+)(&safe=(active|strict)&)(.+) $1&safe=off 302
