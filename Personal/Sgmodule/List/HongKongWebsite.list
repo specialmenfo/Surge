@@ -849,32 +849,6 @@ DOMAIN,guzzoni.apple.com
 DOMAIN-SUFFIX,mail.icloud.com.cn
 DOMAIN-SUFFIX,mail.me.com
 
-# Apple Daily
-DOMAIN-SUFFIX,appledaily.com
-DOMAIN-SUFFIX,appledaily.com.hk
-DOMAIN-SUFFIX,appledaily.com.tw
-DOMAIN-SUFFIX,appledaily.hk
-DOMAIN-SUFFIX,atnext.com
-DOMAIN-SUFFIX,eracom.com.tw
-DOMAIN-SUFFIX,next.hk
-DOMAIN-SUFFIX,nextdigital.com.hk
-DOMAIN-SUFFIX,nextmag.com.tw
-DOMAIN-SUFFIX,nextmedia.com
-DOMAIN-SUFFIX,nextmgz.com
-DOMAIN-SUFFIX,nexttv.com.tw
-DOMAIN-SUFFIX,sharpdaily.tw
-
-# iCloud
-DOMAIN-SUFFIX,gateway.icloud.com
-DOMAIN-SUFFIX,gspe35-ssl.ls.apple.com
-
-# Apple News
-DOMAIN-SUFFIX,news-edge.apple.com
-DOMAIN-SUFFIX,news-events.apple.com
-DOMAIN-SUFFIX,apple.comscoreresearch.com
-# News+ Audio
-URL-REGEX,^https?:\/\/news-assets\.apple\.com\/.*(audio-narrative).*
-
 # Apkpure
 DOMAIN-SUFFIX,apkpure.com
 DOMAIN-SUFFIX,cdnpure.com
