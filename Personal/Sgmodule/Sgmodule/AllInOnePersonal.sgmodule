@@ -82,20 +82,11 @@ GEOIP,CN,🎯 全球直連,no-resolve
 FINAL,🐟 漏網之魚,dns-failed
 
 [URL Rewrite]
-# Apple全家桶
-#  Replace Apple Weather Map with 🇺🇸US @waqi.info
-# 切換空氣質量地圖數據源為waqi.info，並更改標準為AQI(US)
-# Convert Apple Weather Air Quality Map
-^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/airQuality\?x=(-?\d+)&y=(-?\d+)&z=(-?\d+).*(country=CN)?.* https://tiles.waqi.info/tiles/usepa-aqi/$4/$2/$3.png?&scale=2&country=US&colorFormat=agr header
-#  Redirect Apple Maps to 🇺🇸US
-# 只作用於Apple Maps，不修改定位服務和地區檢測，可以通過搭配使用其他模塊達成混合效果。
-# Redirect Apple Maps to US
-(^https?:\/\/gspe\d*-ssl\.ls\.apple\.)(com|cn)(\/.*)(country_code=[A-Z]{2})(.*) $1$2$3country_code=US$5 header
-(^https?:\/\/gspe\d*-ssl\.ls\.apple\.)(com|cn)(\/.*)(environment=[a-z/-]{4,})(.*) $1$2$3environment=prod$5 header
 # Turn Off Google Safesearch(Beta)
 # 主要用於解決被 Google 識別成中國大陸(即訪問不了 https://www.google.com/maps/timeline)的節點導致 Google 香港安全搜索鎖死的問題。Desktop 請使用 https://google.com/ncr
 (https:\/\/www\.google\.com([.a-z]+)?\/.+)(&safe=(active|strict)&)(.+) $1&safe=off 302
 https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/search?q=$1&safe=off 302
+
 # Google 重定向
 # Redirect Google Search Service
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
@@ -920,51 +911,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 # 多賬號Cookie保存切換
 # 訪問: http://boxjs.com管理
 BoxJs = type=http-request,pattern=^https?://boxjs.com(/api|/home|/sub|/my|/app|/log|/revert)?($|\/),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/boxjs.js,requires-body=1,timeout=120,max-size=0,script-update-interval=0
-# Apple全家桶
-# Enable All TV app Tabs
-http-response ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/configurations\?.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, requires-body=true, timeout=3, tag=Apple_TV
-# TV app Tabs, Redirect Desktop Platform to AppleTV, Redirect Sports and Kids Tabs StoreFront to US (143441)
-http-request ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/canvases\/Roots\/(watchNow|tahoma_watchnow|movies|tv|sports|kids)\?.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, timeout=3, tag=Apple_TV
-# TV app movies and shows and sports infomation Webs, Redirect Desktop Platform to AppleTV
-http-request ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/(movies|shows|sports|sporting-events).* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, timeout=3, tag=Apple_TV
-# TV UpNext, Redirect Desktop Platform to AppleTV
-http-request ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/shelves\/uts.col.UpNext.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, timeout=3, tag=Apple_TV
-# TV channels, Redirect StoreFront to US (143441)
-http-request ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/brands\?.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, timeout=3, tag=Apple_TV
-# TV Live Playables, Redirect StoreFront to US (143441)
-http-request ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/playables.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, timeout=3, tag=Apple_TV
-# TV Favorites Teams web, Redirect StoreFront to US (143441)
-http-request ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/favorites\?.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, timeout=3, tag=Apple_TV
-# TV Watchlist Function, Redirect desktop Platform to iPad
-http-request ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/watchlist.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, timeout=3, tag=Apple_TV
-# Enable TV Favorites Teams Function, Redirect StoreFront to US (143441)
-http-request ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/favorites\/(add|remove).* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, requires-body=true, timeout=3, tag=Apple_TV
-# TV Product View, no Redirect
-# http-request ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/view\/product\/.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, timeout=3, tag=Apple_TV
-#  Replace Apple Weather with 🇺🇸US @waqi.info
-# 切換空氣質量數據源為waqi.info，並更改標準為AQI(US)
-Apple_Weather.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_Weather.js,requires-body=true,tag=Apple_Weather,type=http-response,pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather.*(?!dataSets=forecastNextHour)(include=.*air_quality.*|dataSets=.*airQuality.*).*(country=[A-Z]{2})?.*
-#  Replace Apple Weather with 🇺🇸US @waqi.info
-# 切換空氣質量數據源為waqi.info，並更改標準為AQI(US)
-Apple_Weather_Map.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_Weather_Map.js,tag=Apple_Weather_Map,type=http-request,pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/airQuality\?.*(country=CN)?.*
-Apple_Weather_Map.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_Weather_Map.js,requires-body=true,tag=Apple_Weather_Map,type=http-response,pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/airQuality\?.*(country=CN)?.*
-#  Response Geo Services to 🇺🇸US
-# 只作用於檢測地區，不修改Apple Maps和Apple News，可以通過搭配使用其他模塊達成混合效果。
-# Response Geo Services to US
-Geo_Services.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Geo_Services.js,argument=GeoCountryCode=US,requires-body=false,tag=Geo_Services,type=http-request,pattern=^https?:\/\/gspe\d*-ssl\.ls\.apple\.com(\/pep\/gcc)
-#  Enable Siri Suggestions
-# 在聚焦搜索(Spotlight)和查詢(Look Up)中啓用Siri建議(Siri Suggestions)功能。
-# Redirect Siri Suggestions Service
-# Bag (iOS/macOS)
-Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/bag\?(.*)
-# Spotlight & Look Up Search (iOS/macOS)
-Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/search\?(.*)
-# Siri Infomation Card (macOS)
-Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/card\?(.*)
-#  Unlock Apple News 🇺🇸US
-# 解鎖🇺🇸US地區的News，注：需配合域名集使用，使用過程中gateway.icloud.com需走代理線路。
-Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js,requires-body=true,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(edge|events)\.apple\.com\/(v1\/configs|analyticseventsv2\/async).*
-Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(client-search)\.apple\.com\/(v1\/search\?).*
+
 # Google重定向
 bstar_login = type=http-request,pattern=^https?:\/\/passport\.biliintl\.com\/x\/intl\/passport-login\/(sms\/send|reg\/sms|oauth2\/access_token|login\/sms),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/GoogleBstar.js,script-update-interval=0
 bstar_play = type=http-request,pattern=^https?:\/\/app\.biliintl\.com\/(intl\/gateway\/v\d\/app\/data\/report\/heartbeat\/mobile|x\/(history|reply)/v\d/add),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/GoogleBstar.js,script-update-interval=0
