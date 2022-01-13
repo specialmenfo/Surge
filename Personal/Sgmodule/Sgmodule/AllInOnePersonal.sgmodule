@@ -836,23 +836,26 @@ neteasemusic.js = script-path=https://raw.githubusercontent.com/specialmenfo/Sur
 # 獲取Cookie說明：
 # 打開愛奇藝App後(AppStore中國區)，點擊"我的", 如通知成功獲取cookie, 則可以使用此簽到腳本.
 # 每天00:05:10執行一次.
-愛奇藝簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,wake-system=1,script-update-interval=0
-愛奇藝獲取Cookie = type=http-request,pattern=^https?:\/\/iface(\d)?\.iqiyi\.com\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+愛奇藝簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js,wake-system=1,script-update-interval=0
+愛奇藝獲取Cookie = type=http-request,pattern=^https?:\/\/iface(\d)?\.iqiyi\.com\/,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
+
 # 騰訊視頻
 # 先把*.video.qq.com加到[MITM]已添加 默認不用加
 # 手機瀏覽器訪問: https://film.qq.com/和http://v.qq.com/x/bu/mobile_checkin
 # 隨便選 1 部電影觀看
 # 系統提示: 獲取Cookie: 成功 （如果不提示獲取成功, 點自己頭像退出登錄, 重新登錄應該就能獲取）
 # 每天00:05:10執行一次.
-騰訊視頻獲取Cookie = type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
-騰訊視頻簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js
+騰訊視頻獲取Cookie = type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/TVideo/videoqq.cookie.js
+騰訊視頻簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/TVideo/videoqq.js
+
 # 叮咚買菜
 # 先把maicai.api.ddxq.mobi加到[MITM]已添加 默認不用加
 # 打開 APP, 訪問下我的>積分
 # 系統提示: 獲取Cookie: 成功 （如果不提示獲取成功, 嘗試殺進程再進個人中心）
 # 每天00:05:10執行一次.
-叮咚買菜獲取Cookie = type=http-request,pattern=^https:\/\/maicai.api.ddxq.mobi\/point\/home,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.cookie.js
-叮咚買菜簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.js
+叮咚買菜獲取Cookie = type=http-request,pattern=^https:\/\/maicai.api.ddxq.mobi\/point\/home,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/DDMC/ddmccookie.js
+叮咚買菜簽到 = type=cron,cronexp=10 10 0 * * *,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/DDMC/ddmc.js
+
 # @Nebulosa-Cat
 disney_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/disney_check.js?version=1637153952428
 reload.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/reload.js,type=generic
