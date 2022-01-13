@@ -87,15 +87,18 @@ FINAL,🐟 漏網之魚,dns-failed
 # 切換空氣質量地圖數據源為waqi.info，並更改標準為AQI(US)
 # Convert Apple Weather Air Quality Map
 ^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/airQuality\?x=(-?\d+)&y=(-?\d+)&z=(-?\d+).*(country=CN)?.* https://tiles.waqi.info/tiles/usepa-aqi/$4/$2/$3.png?&scale=2&country=US&colorFormat=agr header
+
 #  Redirect Apple Maps to 🇺🇸US
 # 只作用於Apple Maps，不修改定位服務和地區檢測，可以通過搭配使用其他模塊達成混合效果。
 # Redirect Apple Maps to US
 (^https?:\/\/gspe\d*-ssl\.ls\.apple\.)(com|cn)(\/.*)(country_code=[A-Z]{2})(.*) $1$2$3country_code=US$5 header
 (^https?:\/\/gspe\d*-ssl\.ls\.apple\.)(com|cn)(\/.*)(environment=[a-z/-]{4,})(.*) $1$2$3environment=prod$5 header
+
 # Turn Off Google Safesearch(Beta)
 # 主要用於解決被 Google 識別成中國大陸(即訪問不了 https://www.google.com/maps/timeline)的節點導致 Google 香港安全搜索鎖死的問題。Desktop 請使用 https://google.com/ncr
 (https:\/\/www\.google\.com([.a-z]+)?\/.+)(&safe=(active|strict)&)(.+) $1&safe=off 302
 https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/search?q=$1&safe=off 302
+
 # Google 重定向
 # Redirect Google Search Service
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
@@ -114,6 +117,7 @@ https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/
 ^http:\/\/img\.allahall\.com\/img\/59\/6a13a75dfe46ebfdac96bd27ef098885\.jpg - reject
 ^https?:\/\/img\.alipaycashyuan\.com\/img\/59\/6a13a75dfe46ebfdac96bd27ef098885\.+ - reject
 ^http:\/\/app\.zhoudamozi\.com\/ad\/.+ - reject
+
 # 書旗小說去廣告
 ^http:\/\/ut2\.shuqistat\.com\/.+\.gif - reject
 ^https?:\/\/sq\.sljkj\.com\/api\/sdk\/ads2 - reject
@@ -126,50 +130,64 @@ https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/
 ^http:\/\/101\.91\.69\.26:8080\/.+ - reject
 ^http:\/\/feedback.uc.cn\/feedback\/api\/get_unread_status - reject
 ^http:\/\/.+\.shuqireader\.com\/sapi\/.+ - reject
+
 # 每日優鮮開屏廣告->j-image.missfresh.cn
 ^https:\/\/j-image\.missfresh\.cn\/img_(.+)\.gif$ - reject
 ^https:\/\/j-image\.missfresh\.cn\/img_(.+)\.(jpg|jpeg|gif|png)\?iopcmd=convert&dst=webp&q=85$ - reject
+
 # 網易雲廣告->m.ads.8le8le.com,iadmusicmat.music.com
 ^https?:\/\/iadmusicmat\.music\.126\.net\/.+\.jpg - reject
 ^http:\/\/interface\.music\.163\.com\/eapi\/ad\/config\/get - reject
 ^https?:\//m\.ads\.8le8le\.com\/adShow - reject
+
 # 高德地圖廣告
 ^http:\/\/ems\.youku\.com\/imp\? - reject
 ^http:\/\/optimus-ads\.amap\.com\/uploadimg\/.+ - reject
+
 # 攜程廣告->ma-adx.ctrip.com,m.ctrip.com
 ^https:\/\/ma-adx\.ctrip\.com\/_ma\.gif - reject
 ^https:\/\/m\.ctrip\.com\/restapi\/.+\/json\/tripAds - reject
 ^https:\/\/mbd\.baidu\.com\/newspage\/api\/getmobads\?page\=landingshare - reject
+
 # 愛奇藝廣告屏蔽
 ^http:\/\/.+\.iqiyipic\.com\/image\/.+\/ad\/.+\.jpg - reject
 ^http:\/\/static-s\.iqiyi\.com\/common\/.+\/Small_video/a2/af/.+\.png - reject
 ^http://msga/.cupid/.iqiyi/.com\/scp2\.gif - reject
 https?:\/\/ssports\.iqiyi\.com\/app\/ - reject
+
 # 愛奇藝->act.vip.iqiyi.com
 ^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject
 ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do - reject
 ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v\d\/show - reject
+
 # 網易郵箱->appconf.mail.163.com,analytics.163.com
 https:\/\/appconf\.mail\.163\.com\/mmad\/get\.do - reject
 http:\/\/analytics\.163\.com\/ntes - reject
+
 # 淘寶->gw.alicdn.com,heic.alicdn.com
 ^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/.+\.jpg_(9\d{2}|\d{4}) - reject
 ^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4}) - reject
+
 # > 21st Century Business Herald - api.21jingji.com
 ^https?:\/\/api\.21jingji\.com\/ad\/ - reject
+
 # > 4gTV - service.4gtv.tv
 ^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/(GetAD|ADLog) - reject
+
 # > 58 - app.58.com,pic?.ajkimg.com
 ^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv)\/ - reject
 ^https?:\/\/app\.58\.com\/api\/home\/invite\/popupAdv - reject
 ^https?:\/\/app\.58\.com\/api\/log\/ - reject
 ^https?:\/\/pic\d\.ajkimg\.com\/mat\/\w+\?imageMogr\d\/format\/jpg\/thumbnail\/\d{3}x\d{4}$ - reject
 ^https?:\/\/\w+\.58cdn\.com\.cn\/brandads\/ - reject
+
 # Facebook
 ^https?://connect.facebook.net/en_US/fbadnw.js - reject
+
 # 京東
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start - reject
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) - reject
+
 # 百度
 (ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map)?\.(baidu|n\.shifen)\.com - reject
 ^https?://afd.baidu.com/afd/entry - reject
@@ -183,17 +201,21 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?://sm.domobcdn.com/ugc/\w/ - reject
 ^https?://tb1.bdstatic.com/tb/cms/ngmis/adsense/*.jpg - reject
 ^https?://tb2.bdstatic.com/tb/mobile/spb/widget/jump - reject
+
 # 百度文庫
 ^https?://wapwenku.baidu.com/view/fengchao/ - reject
 ^https?://wapwenku.baidu.com/view/fengchaoTwojump/ - reject
 ^https?://wenku.baidu.com/shifen/ - reject
+
 # 10086
 ^.+/gmccapp/file/image/preloading/preloading\d{17}.jpg - reject
 ^https?://\w{2}.10086.cn/upfile/khd/loadingpage/ reject
 ^https?://app.10086.cn/group - reject
 ^https?://mbusihall.sh.chinamobile.com:\d{4}/upload/v4/img/homePage/ - reject
+
 # 10000
 ^https?://image1.chinatelecom-ec.com/images/.+/\d{13}.jpg - reject
+
 # 10010
 ^https://\w{11,12}.wo.com.cn - reject
 ^https?://m.client.10010.com/mobileService/activity/get_client_adv - reject
@@ -220,6 +242,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/api-new\.app\.acfun\.cn\/rest\/app\/flash\/screen\/ - reject
 # > AiMeiJu - api.bjxkhc.com
 ^https?:\/\/api\.bjxkhc\.com\/index\.php\/app\/ios\/ads\/ - reject
+
 # B
 # > ByteDance
 ^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ - reject
@@ -260,6 +283,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/www\.bodivis\.com\.cn\/app\/splashAdvertise - reject
 # > BabyHealth - yxyapi*.drcuiyutao.com
 ^https?:\/\/yxyapi\d\.drcuiyutao\.com\/yxy-api-gateway\/api\/json\/advert\/ - reject
+
 # C
 # > ChinaMobile - clientaccess.10086.cn
 ^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit - reject
@@ -289,6 +313,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/app-gw\.csdn\.net\/cms-app\/v\d\/home_page\/open_advertisement - reject
 # > Ctrip - m.ctrip.com
 ^https?:\/\/m\.ctrip\.com\/restapi\/[\w\/]+tripAds - reject
+
 # D
 # > DU - app.dewu.com
 ^https?:\/\/app\.dewu\.com\/api\/v\d\/app\/advertisement\/ - reject
@@ -311,6 +336,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/app\.ddpai\.com\/d\/api\/v\d\/config\/get\/bootscreen - reject
 # > DingDongMaiCai - maicai.api.ddxq.mobi
 ^https?:\/\/maicai\.api\.ddxq\.mobi\/advert\/ - reject
+
 # E
 # > eLong - mobileapi-v6.elong.com
 ^https?:\/\/mobileapi-v6\.elong\.com\/adgateway\/ - reject
@@ -323,6 +349,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/cube\.elemecdn\.com\/\w\/\w{2}\/\w+mp4\.mp4\? - reject
 # > ezviz ViedoGo - i.ys7.com
 ^https?:\/\/i\.ys7\.com\/api\/ads - reject
+
 # F
 # > Foodie
 ^https?:\/\/foodie-api\.yiruikecorp\.com\/v\d\/(banner|notice)\/overview - reject
@@ -335,6 +362,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 # > FaceBeauty - *-release.wuta-cam.com
 ^https?:\/\/api-release\.wuta-cam\.com\/ad_tree - reject
 ^https?:\/\/res-release\.wuta-cam\.com\/json\/ads_component_cache\.json - reject
+
 # G
 # > Google - *.googlevideo.com,www.youtube.com,s.youtube.com
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
@@ -344,6 +372,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/gateway\.shouqiev\.com(:8443)?\/fsda\/app\/bootImage\.json - reject
 # > Guotai Junan Securities - dl.app.gtja.com
 ^https?:\/\/dl\.app\.gtja\.com\/dzswem\/kvController\/[\w\/]+\.jpg$ - reject
+
 # H
 # > HangZhou CityzenCard - smkmp.96225.com
 ^https?:\/\/smkmp\.96225.com\/smkcenter\/ad/ - reject
@@ -351,6 +380,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/api\.hanju\.koudaibaobao\.com\/api\/carp\/kp\? - reject
 # > Huya - business.msstatic.com
 ^https?:\/\/business\.msstatic\.com\/advertiser\/ - reject
+
 # I
 # > iFLY Input - imeclient.openspeech.cn
 ^https?:\/\/imeclient\.openspeech\.cn\/adservice\/ - reject
@@ -371,6 +401,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml - reject
 # > IKOSPro
 ^https?:\/\/tracker-download\.oss-cn-beijing\.aliyuncs\.com\/SIMPlus\/(ad_|AD\/) - reject
+
 # J
 # > JD - api.m.jd.com
 # ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start - reject
@@ -380,6 +411,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/api\.jxedt\.com\/ad\/ - reject
 # > JiaKaoBaoDian - *.kakamobi.cn
 ^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ - reject
+
 # K
 # > Kingsoft - *.kingsoft-office-service.com
 ^https?:\/\/\w+\.kingsoft-office-service\.com\/ad - reject
@@ -389,11 +421,13 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad/ - reject
 # > Kuaikan Comics - api.kkmh.com
 ^https?:\/\/api\.kkmh\.com\/v\d+\/(ad|advertisement)\/ - reject
+
 # L
 # > LaiFeng
 ^https?:\/\/api\.laifeng\.com\/v\d\/start\/ads - reject
 # > Lenovo - api.club.lenovo.cn
 ^https?:\/\/api\.club\.lenovo\.cn\/common\/open_ad - reject
+
 # M
 # > MI - api.m.mi.com,api.jr.mi.com,api-mifit.huami.com,home.mi.com
 ^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start - reject
@@ -412,6 +446,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/mapi\.mafengwo\.cn\/(travelguide\/)?ad\/ - reject
 # > MixC - app.mixcapp.com
 ^https?:\/\/app\.mixcapp\.com\/mixc\/api\/v\d\/ad - reject
+
 # N
 # ---(NetEase)---
 # > NetEase MailMaster - appconf.mail.163.com
@@ -431,10 +466,12 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/app-api\.niu\.com\/v\d\/advertisement\/ - reject
 # > Naver TV - gfp.veta.naver.com
 ^https?:\/\/gfp\.veta\.naver\.com\/adcall\? - reject
+
 # O
 # > Oray - slapi.oray.net
 ^https?:\/\/slapi\.oray\.net\/client\/ad - reject
 ^https?:\/\/slapi\.oray\.net\/adver - reject
+
 # P
 # > PiaoGen - pss.txffp.com
 ^https?:\/\/pss\.txffp\.com\/piaogen\/images\/launchScreen/ - reject
@@ -446,6 +483,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/mrobot\.(pcauto|pconline)\.com\.cn\/v\d\/ad\dp - reject
 ^https?:\/\/mrobot\.pconline\.com\.cn\/s\/onlineinfo\/ad\/ - reject
 ^https?:\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/(ad|preload) - reject
+
 # Q
 # > QYER - open.qyer.com,media.qyer.com
 ^https?:\/\/open\.qyer\.com\/qyer\/startpage\/ - reject
@@ -455,9 +493,11 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/api\.qbb6\.com\/ad\/ - reject
 # > QDReader - magev6.if.qidian.com
 ^https?:\/\/magev6\.if\.qidian\.com\/argus\/api\/v\d\/client\/getsplashscreen - reject
+
 # R
 # > RRtv - api.rr.tv
 ^https?:\/\/api\.rr\.tv\/ad\/ - reject
+
 # S
 # ---(Sina)---
 # > Weibo - *.uve.weibo.com,weibointl.api.weibo.cn
@@ -493,11 +533,13 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/shopic\.sf-express\.com\/crm\/mobile\/common\/flashscreen - reject
 # > SuperFriday
 ^https?:\/\/.+?(:\d+)?\/V\d\/splash\/getSplashV\d\.action$ - reject
+
 # T
 # > TuNiu - m.tuniu.com
 ^https?:\/\/m\.tuniu\.com\/api\/operation\/splash\/ - reject
 # > TVBCLive - mob.mddcloud.com
 ^https?:\/\/mob\.mddcloud\.com\.cn\/api\/(ad|advert)\/ - reject
+
 # U
 # > UCar - img*.10101111cdn.com
 ^https?:\/\/img\d+\.10101111cdn\.com\/adpos\/ - reject
@@ -505,6 +547,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https:\/\/msg\.umengcloud\.com\/admsg\/ - reject
 # > Umetrip
 ^https?:\/\/img\.umetrip\.com\/fs\/advert\/ - reject
+
 # V
 # > VUE - api.vuevideo.net
 ^https?:\/\/api\.vuevideo\.net\/api\/v\d\/ad\/ - reject
@@ -514,6 +557,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/api\.cdmcaac\.com\/ad\/ - reject
 # > VISTOPIA - api.vistopia.com.cn
 ^https?:\/\/api\.vistopia\.com\.cn\/api\/v\d\/home\/advertisement - reject
+
 # W
 # > Weidian - thor.weidian.com
 ^https?:\/\/thor\.weidian\.com\/ares\/home\.splash\/ - reject
@@ -521,6 +565,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/api\.waitwaitpay\.com\/\/api\/splash - reject
 # > WallStCN - api-one.wallstcn.com
 ^https?:\/\/api-one\.wallstcn\.com\/apiv\d\/advertising\/ - reject
+
 # X
 # > Xiachufang - api.xiachufang.com
 ^https?:\/\/api\.xiachufang\.com\/v\d\/ad/ - reject
@@ -535,11 +580,13 @@ http:\/\/analytics\.163\.com\/ntes - reject
 # > Xiaohongshu - www.xiaohongshu.com
 ^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config - reject
 ^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/ads\/ - reject
+
 # Y
 # > YinxiangNote - app.yinxiang.com
 ^https?:\/\/app\.yinxiang\.com\/ads\/ - reject
 # > YXLiveVideo - api.yizhibo.com
 ^https?:\/\/api\.yizhibo\.com\/common\/api\/(api_)?pz$ - reject
+
 # Z
 # > Zhihu - www.zhihu.com,api.zhihu.com
 ^https?:\/\/api\.zhihu\.com\/commercial_api\/ - reject
@@ -895,8 +942,10 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/y\.gtimg\.cn\/music\/.*?_Ad/\d+\.png data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/targeted_ads data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 ^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
+
 # 工商銀行
 ^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/ data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
+
 # Facebook
 ^https?:\/\/connect\.facebook\.net\/en_US\/fbadnw\.js data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
 ^https?:\/\/graph\.facebook\.com\/.+activities data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
@@ -906,6 +955,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/www\.facebook\.com\/adnw_logging\/* data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
 ^https?:\/\/www\.facebook\.com\/adnw_sync\/* data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
 ^https?:\/\/www\.facebook\.com\/tr data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
+
 # 網易雲音樂
 ^https?:\/\/interface3?\.music\.163\.com\/eapi\/(ad|abtest|sp|hot|log|mlivestream|store|mlog|search/(specialkeyword|defaultkeyword|hot)) data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
 ^http?:\/\/music\.163\.com\/eapi\/ad\/loading\/get data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
@@ -913,6 +963,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^http?:\/\/music\.163\.com\/api\/feedback\/client data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/eapi\/ad\/ data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/eapi\/v1\/content\/exposure\/comment\/banner data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
+
 # 優酷
 ^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/ data="https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Mock/empty.json"
 
@@ -920,6 +971,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 # 多賬號Cookie保存切換
 # 訪問: http://boxjs.com管理
 BoxJs = type=http-request,pattern=^https?://boxjs.com(/api|/home|/sub|/my|/app|/log|/revert)?($|\/),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/boxjs.js,requires-body=1,timeout=120,max-size=0,script-update-interval=0
+
 # Apple全家桶
 # Enable All TV app Tabs
 http-response ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/configurations\?.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, requires-body=true, timeout=3, tag=Apple_TV
@@ -941,17 +993,21 @@ http-request ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\
 http-request ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/favorites\/(add|remove).* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, requires-body=true, timeout=3, tag=Apple_TV
 # TV Product View, no Redirect
 # http-request ^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/view\/product\/.* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_TV.js, timeout=3, tag=Apple_TV
+
 #  Replace Apple Weather with 🇺🇸US @waqi.info
 # 切換空氣質量數據源為waqi.info，並更改標準為AQI(US)
 Apple_Weather.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_Weather.js,requires-body=true,tag=Apple_Weather,type=http-response,pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather.*(?!dataSets=forecastNextHour)(include=.*air_quality.*|dataSets=.*airQuality.*).*(country=[A-Z]{2})?.*
+
 #  Replace Apple Weather with 🇺🇸US @waqi.info
 # 切換空氣質量數據源為waqi.info，並更改標準為AQI(US)
 Apple_Weather_Map.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_Weather_Map.js,tag=Apple_Weather_Map,type=http-request,pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/airQuality\?.*(country=CN)?.*
 Apple_Weather_Map.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_Weather_Map.js,requires-body=true,tag=Apple_Weather_Map,type=http-response,pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/airQuality\?.*(country=CN)?.*
+
 #  Response Geo Services to 🇺🇸US
 # 只作用於檢測地區，不修改Apple Maps和Apple News，可以通過搭配使用其他模塊達成混合效果。
 # Response Geo Services to US
 Geo_Services.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Geo_Services.js,argument=GeoCountryCode=US,requires-body=false,tag=Geo_Services,type=http-request,pattern=^https?:\/\/gspe\d*-ssl\.ls\.apple\.com(\/pep\/gcc)
+
 #  Enable Siri Suggestions
 # 在聚焦搜索(Spotlight)和查詢(Look Up)中啓用Siri建議(Siri Suggestions)功能。
 # Redirect Siri Suggestions Service
@@ -961,22 +1017,27 @@ Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/
 Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/search\?(.*)
 # Siri Infomation Card (macOS)
 Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/card\?(.*)
+
 #  Unlock Apple News 🇺🇸US
 # 解鎖🇺🇸US地區的News，注：需配合域名集使用，使用過程中gateway.icloud.com需走代理線路。
 Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js,requires-body=true,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(edge|events)\.apple\.com\/(v1\/configs|analyticseventsv2\/async).*
 Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(client-search)\.apple\.com\/(v1\/search\?).*
+
 # Google重定向
 bstar_login = type=http-request,pattern=^https?:\/\/passport\.biliintl\.com\/x\/intl\/passport-login\/(sms\/send|reg\/sms|oauth2\/access_token|login\/sms),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/GoogleBstar.js,script-update-interval=0
 bstar_play = type=http-request,pattern=^https?:\/\/app\.biliintl\.com\/(intl\/gateway\/v\d\/app\/data\/report\/heartbeat\/mobile|x\/(history|reply)/v\d/add),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/GoogleBstar.js,script-update-interval=0
+
 # TestFlight解除區域限制
 TestFlight Unlock = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/TestFlight_Unlock.js
 
 # 神機
 # > Douyin(<= 16.2.0) - api*.amemv.com, aweme.snssdk.com
 douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v\d\/feed\/,requires-body=1,script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/douyin.js
+
 # > Weibo - api.weibo.cn,mapi.weibo.com,*.uve.weibo.com
 weibo_splash = type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua),requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
 weibo_ads = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/(photos/pic_recommend_status|live/media_homelist)|video/tiny_stream_video_list|photo/info|remind/unread_count),requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
+
 # > Zhihu
 知乎_处理用户信息 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/people\/,script-path=https://gist.githubusercontent.com/blackmatrix7/2e550ebf28ca60d620654e394ec47e0b/raw/zhihu.js
 知乎_信息流去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/(moments|topstory)(\/|\?)?(recommend|action=|feed_type=)(?!\/people),script-path=https://gist.githubusercontent.com/blackmatrix7/2e550ebf28ca60d620654e394ec47e0b/raw/zhihu.js
@@ -990,6 +1051,7 @@ weibo_ads = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(status
 知乎_热榜去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/topstory\/hot-lists?(\?|\/),script-path=https://gist.githubusercontent.com/blackmatrix7/2e550ebf28ca60d620654e394ec47e0b/raw/zhihu.js
 知乎_评论去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments?,script-path=https://gist.githubusercontent.com/blackmatrix7/2e550ebf28ca60d620654e394ec47e0b/raw/zhihu.js
 知乎_解锁关键词屏蔽 = type=http-request,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/feed-root\/block,script-path=https://gist.githubusercontent.com/blackmatrix7/2e550ebf28ca60d620654e394ec47e0b/raw/zhihu.js
+
 # > SMZDM - homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com
 什麼值得買_開屏去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app-api\.smzdm\.com\/util\/loading,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
 什麼值得買_首頁去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/homepage-api\.smzdm\.com\/v3\/home,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
@@ -999,6 +1061,7 @@ weibo_ads = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(status
 什麼值得買_搜索結果去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/list_v10,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
 什麼值得買_搜索標籤去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
 什麼值得買_值會員權益中心banner去廣告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+
 # 微信
 微信外鏈 = type=http-response,pattern=^https:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/weixin-external-links.js,script-update-interval=0
 解除WeChat鏈接限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
