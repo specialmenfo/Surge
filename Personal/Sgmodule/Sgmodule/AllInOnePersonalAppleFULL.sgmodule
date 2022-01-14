@@ -43,8 +43,8 @@ http-request ^https?:\/\/uts-api\.itunes\.apple\.com\/uts\/(v1|v2|v3)\/favorites
 # http-request ^https?:\/\/uts-api\.itunes\.apple\.com(\/uts\/)(v1|v2|v3)\/view\/product\/.* script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/AppleTV.js, timeout=3, tag=Apple_TV
 
 # 解鎖🇺🇸US地區的News，注：需配合域名集使用，使用過程中gateway.icloud.com需走代理線路
-http-request ^https?:\/\/news-(edge|events)\.apple\.com\/(v1\/configs|analyticseventsv2\/async).* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js, requires-body=true, tag=Apple_News
-http-request ^https?:\/\/news-(client-search)\.apple\.com\/(v1\/search\?).* script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_News.js, tag=Apple_News
+http-request ^https?:\/\/news-(edge|events)\.apple\.com\/(v1\/configs|analyticseventsv2\/async).* script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/AppleNews.js, requires-body=true, tag=Apple_News
+http-request ^https?:\/\/news-(client-search)\.apple\.com\/(v1\/search\?).* script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/AppleNews.js, tag=Apple_News
 
 [URL Rewrite]
 # 切換空氣質量地圖數據源為waqi.info，並更改標準為AQI(US)
