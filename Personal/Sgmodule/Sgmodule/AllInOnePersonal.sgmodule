@@ -263,10 +263,16 @@ http:\/\/analytics\.163\.com\/ntes - reject
 
 # C
 # > ChinaMobile - clientaccess.10086.cn
+^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit" - reject
+^https?:\/\/res\.mall\.10010\.cn\/mall\/common\/js\/fa\.js?referer=" - reject
 ^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit - reject
 ^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query - reject
 # ---
 # > ChinaUnicom - m.client.10010.com
+^https?:\/\/m1\.ad\.10010\.com\/noticeMag\/images\/imageUpload\/2\d{3}" - reject
+^https?:\/\/m\.client\.10010\.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv)" - reject
+^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd)" - reject
+^https?:\/\/res\.mall\.10010\.cn\/mall\/common\/js\/fa\.js?referer=" - reject
 ^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm - reject
 ^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/getWelcomeAd - reject
 # ---(ChinaTelecom)---
@@ -290,6 +296,8 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/app-gw\.csdn\.net\/cms-app\/v\d\/home_page\/open_advertisement - reject
 # > Ctrip - m.ctrip.com
 ^https?:\/\/m\.ctrip\.com\/restapi\/[\w\/]+tripAds - reject
+# > CMB
+^https?:\/\/pic1cdn\.cmbchina\.com\/appinitads\/" - reject
 
 # D
 # > DU - app.dewu.com
@@ -313,6 +321,12 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/app\.ddpai\.com\/d\/api\/v\d\/config\/get\/bootscreen - reject
 # > DingDongMaiCai - maicai.api.ddxq.mobi
 ^https?:\/\/maicai\.api\.ddxq\.mobi\/advert\/ - reject
+# > DouYin
+^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/aweme\/stats\/" - reject
+^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/device\/update\/" - reject
+^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/" - reject
+^https?:\/\/aweme\.snssdk\.com\/service\/1\/app_logout\/" - reject
+^https?:\/\/aweme\.snssdk\.com\/service\/2\/app_log" - reject
 
 # E
 # > eLong - mobileapi-v6.elong.com
@@ -349,6 +363,8 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/gateway\.shouqiev\.com(:8443)?\/fsda\/app\/bootImage\.json - reject
 # > Guotai Junan Securities - dl.app.gtja.com
 ^https?:\/\/dl\.app\.gtja\.com\/dzswem\/kvController\/[\w\/]+\.jpg$ - reject
+# > 廣發銀行
+^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d{25}\.(png|jpg)" - reject
 
 # H
 # > HangZhou CityzenCard - smkmp.96225.com
@@ -378,6 +394,10 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml - reject
 # > IKOSPro
 ^https?:\/\/tracker-download\.oss-cn-beijing\.aliyuncs\.com\/SIMPlus\/(ad_|AD\/) - reject
+# > ICIB
+^https?:\/\/dict-mobile\.iciba\.com\/interface\/index\.php\?.+?(c=ad|collectFeedsAdShowCount|KSFeedsAdCardViewController)" - reject
+^https?:\/\/mobile-pic\.cache\.iciba\.com\/feeds_ad\/" - reject
+^https?:\/\/service\.iciba\.com\/popo\/open\/screens\/v\d\?adjson" - reject
 
 # J
 # > JD - api.m.jd.com
@@ -398,6 +418,9 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad/ - reject
 # > Kuaikan Comics - api.kkmh.com
 ^https?:\/\/api\.kkmh\.com\/v\d+\/(ad|advertisement)\/ - reject
+# > Kuaidi100
+^https?:\/\/p\.kuaidi100\.com\/mobile\/(mainapi|mobileapi)\.do" - reject
+^https?:\/\/cdn\.kuaidi100\.com\/images\/open\/appads" - reject
 
 # L
 # > LaiFeng
@@ -423,9 +446,22 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/mapi\.mafengwo\.cn\/(travelguide\/)?ad\/ - reject
 # > MixC - app.mixcapp.com
 ^https?:\/\/app\.mixcapp\.com\/mixc\/api\/v\d\/ad - reject
+# > MeiTuan
+^https?:\/\/img\.meituan\.net\/(adunion|display|dpmobile|midas)\/\w+\.(gif|jpg|jpg\.webp)$" - reject
+^https?:\/\/img\.meituan\.net\/midas\/" - reject
+^https?:\/\/s3plus\.meituan\.net\/v1\/mss_a002" - reject
+^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture" - reject
+^https?:\/\/flowplus\.meituan\.net\/v\d\/\w+\/linglong\/\d+\.(gif|jpg|mp4)" - reject
+^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4)" - reject
+^https?:\/\/p\d.meituan.net\/movie\/.*?\?may_covertWebp" - reject
+^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg" - reject
+^https?:\/\/p\d\.meituan\.net\/(mmc|wmbanner)\/" - reject
+^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp" - reject
+^https?:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+\.jpg" - reject
 
 # N
 # ---(NetEase)---
+^https?:\/\/p\.du\.163\.com\/ad\/" - reject
 # > NetEase MailMaster - appconf.mail.163.com
 ^https?:\/\/appconf\.mail\.163\.com\/mmad\/ - reject
 # > NetEase CloudMusic - interface*.music.163.com
@@ -517,6 +553,10 @@ http:\/\/analytics\.163\.com\/ntes - reject
 # > TVBCLive - mob.mddcloud.com
 ^https?:\/\/mob\.mddcloud\.com\.cn\/api\/(ad|advert)\/ - reject
 
+# > TikTok 
+^https?:\/\/api\d?\.musical\.ly\/api\/ad\/" - reject
+^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/" - reject
+
 # U
 # > UCar - img*.10101111cdn.com
 ^https?:\/\/img\d+\.10101111cdn\.com\/adpos\/ - reject
@@ -542,6 +582,14 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/api\.waitwaitpay\.com\/\/api\/splash - reject
 # > WallStCN - api-one.wallstcn.com
 ^https?:\/\/api-one\.wallstcn\.com\/apiv\d\/advertising\/ - reject
+# > WeChat
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint" - reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video" - reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report" - reject
+^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport)" - reject
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/ad.*" - reject
+# > WOBANK
+^https?:\/\/bank\.wo\.cn\/v9\/getstartpage" - reject
 
 # X
 # > Xiachufang - api.xiachufang.com
