@@ -1,12 +1,58 @@
+# Apple TV
+DOMAIN,hls-amt.itunes.apple.com
+DOMAIN,hls.itunes.apple.com
+DOMAIN,np-edge.itunes.apple.com
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN,uts-api.itunes.apple.com
+DOMAIN-SUFFIX,tv.apple.com
+USER-AGENT,AppleTV*
+USER-AGENT,com.apple.tv*
+PROCESS-NAME,tv
+
+# Apple Siri
+DOMAIN,guzzoni.apple.com
+
+# Apple Mail
+DOMAIN-SUFFIX,mail.icloud.com.cn
+DOMAIN-SUFFIX,mail.me.com
+
 # iCloud
 DOMAIN-SUFFIX,gateway.icloud.com
 
 # Apple News
+DOMAIN,apple.comscoreresearch.com
+DOMAIN,gateway.icloud.com
+DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN,news-assets.apple.com
+DOMAIN,news-client-search.apple.com
+DOMAIN,news-client.apple.com
+DOMAIN,news-edge.apple.com
+DOMAIN,news-events.apple.com
+DOMAIN-SUFFIX,apple.news
+USER-AGENT,AppleNews*
+USER-AGENT,com.apple.news*
+PROCESS-NAME,news
+USER-AGENT,*AppleNews*
 DOMAIN-SUFFIX,news-edge.apple.com
 DOMAIN-SUFFIX,news-events.apple.com
 DOMAIN-SUFFIX,apple.comscoreresearch.com
 # News+ Audio
 URL-REGEX,^https?:\/\/news-assets\.apple\.com\/.*(audio-narrative).*
+
+# Apple Daily
+DOMAIN-SUFFIX,appledaily.com
+DOMAIN-SUFFIX,appledaily.com.hk
+DOMAIN-SUFFIX,appledaily.com.tw
+DOMAIN-SUFFIX,appledaily.hk
+DOMAIN-SUFFIX,atnext.com
+DOMAIN-SUFFIX,eracom.com.tw
+DOMAIN-SUFFIX,next.hk
+DOMAIN-SUFFIX,nextdigital.com.hk
+DOMAIN-SUFFIX,nextmag.com.tw
+DOMAIN-SUFFIX,nextmedia.com
+DOMAIN-SUFFIX,nextmgz.com
+DOMAIN-SUFFIX,nexttv.com.tw
+DOMAIN-SUFFIX,sharpdaily.tw
 
 # YouTube
 DOMAIN,youtubei.googleapis.com
@@ -839,25 +885,6 @@ USER-AGENT,OneDrive*
 USER-AGENT,OneDriveiOSApp*
 PROCESS-NAME,onedrive
 PROCESS-NAME,onedriveupdater
-
-# Apple TV
-DOMAIN,hls-amt.itunes.apple.com
-DOMAIN,hls.itunes.apple.com
-DOMAIN,np-edge.itunes.apple.com
-DOMAIN,play-edge.itunes.apple.com
-DOMAIN,uts-api.itunes.apple.com
-DOMAIN-SUFFIX,tv.apple.com
-USER-AGENT,AppleTV*
-USER-AGENT,com.apple.tv*
-PROCESS-NAME,tv
-DOMAIN-SUFFIX,uts-api.itunes.apple.com/uts/v3/configitions
-
-# Apple Siri
-DOMAIN,guzzoni.apple.com
-
-# Apple Mail
-DOMAIN-SUFFIX,mail.icloud.com.cn
-DOMAIN-SUFFIX,mail.me.com
 
 # Apkpure
 DOMAIN-SUFFIX,apkpure.com
