@@ -17,7 +17,7 @@ IP-CIDR,184.51.102.0/24,no-resolve
 IP-CIDR,203.74.95.130/28,no-resolve
 IP-CIDR,203.80.97.203/32,no-resolve
 IP-CIDR,210.71.227.202/32,no-resolve
-
+DOMAIN-SUFFIX,intl.iqiyi.com
 DOMAIN,intl-im-hist-api.iqiyi.com
 DOMAIN-SUFFIX,iq.com
 DOMAIN,intl-rcd.iqiyi.com
