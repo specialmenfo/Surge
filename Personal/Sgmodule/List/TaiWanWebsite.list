@@ -417,6 +417,8 @@ USER-AGENT,encoreTVB*
 USER-AGENT,mytv*
 
 # TikTok
+DOMAIN-SUFFIX,tiktokcdn-us.com
+DOMAIN,p19-sign.tiktokcdn-us.com
 DOMAIN,p16-tiktokcdn-com.akamaized.net
 DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,ibytedtos.com
