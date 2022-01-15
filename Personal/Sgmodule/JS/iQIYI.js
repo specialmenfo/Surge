@@ -1,25 +1,87 @@
+/*
+愛奇藝會員簽到腳本
+
+腳本兼容: QuantumultX, Surge4, Loon, JsBox, Node.js
+
+獲取Cookie說明：
+打開愛奇藝App後(AppStore中國區)，點擊"我的", 如通知成功獲取cookie, 則可以使用此簽到腳本.
+獲取Cookie後, 請將Cookie腳本禁用並移除主機名，以免產生不必要的MITM.
+腳本將在每天上午9:00執行, 您可以修改執行時間。
+
+如果使用Node.js, 需自行安裝'request'模塊. 例: npm install request -g
+
+JsBox, Node.js用戶抓取Cookie說明：
+開啓抓包, 打開愛奇藝App後(AppStore中國區)，點擊"我的" 返回抓包App 搜索請求頭關鍵字 psp_cki= 或 P00001= 或 authcookie=
+提取字母數字混合字段, 到&結束, 填入以下單引號內即可.
+*/
+
+var cookie = ''
+
+var barkKey = ''; //Bark APP 通知推送Key
+
+/*********************
+QuantumultX 遠程腳本配置:
+**********************
+[task_local]
+# 愛奇藝會員簽到
+0 9 * * * https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
+
+[rewrite_local]
+# 獲取Cookie
+^https?:\/\/iface(\d)?\.iqiyi\.com\/ url script-request-header https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
+
+[mitm] 
+hostname= ifac*.iqiyi.com
+
+**********************
+Surge 4.2.0+ 腳本配置:
+**********************
+[Script]
+愛奇藝簽到 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
+
+愛奇藝獲取Cookie = type=http-request,pattern=^https?:\/\/iface(\d)?\.iqiyi\.com\/,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
+
+[MITM] 
+hostname= ifac*.iqiyi.com
+
+************************
+Loon 2.1.0+ 腳本配置:
+************************
+
+[Script]
+# 愛奇藝簽到
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
+
+# 獲取Cookie
+http-request ^https?:\/\/iface(\d)?\.iqiyi\.com\/ script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
+
+[Mitm] 
+hostname= ifac*.iqiyi.com
+
+*/
+
 var LogDetails = false; // 響應日誌
 
 var out = 0; // 超時 (毫秒) 如填寫, 則不少於3000
 
-var $nobyda = nobyda();
+var $specialmenfo = specialmenfo();
 
 (async () => {
-  out = $nobyda.read("iQIYI_TimeOut") || out
-  cookie = cookie || $nobyda.read("CookieQY")
-  LogDetails = $nobyda.read("iQIYI_LogDetails") === "true" ? true : LogDetails
-  if ($nobyda.isRequest) {
+  out = $specialmenfo.read("iQIYI_TimeOut") || out
+  cookie = cookie || $specialmenfo.read("CookieQY")
+  LogDetails = $specialmenfo.read("iQIYI_LogDetails") === "true" ? true : LogDetails
+  if ($specialmenfo.isRequest) {
     GetCookie()
   } else if (cookie) {
     await login();
     await Checkin();
     await Lottery(500);
-    await $nobyda.time();
+    await $specialmenfo.time();
   } else {
-    $nobyda.notify("愛奇藝會員", "", "簽到終止, 未獲取Cookie");
+    $specialmenfo.notify("愛奇藝會員", "", "簽到終止, 未獲取Cookie");
   }
 })().finally(() => {
-  $nobyda.done();
+  $specialmenfo.done();
 })
 
 function login() {
@@ -31,11 +93,11 @@ function login() {
         t: '479112291'
       }
     }
-    $nobyda.get(URL, function(error, response, data) {
+    $specialmenfo.get(URL, function(error, response, data) {
       const Details = LogDetails ? data ? `response:\n${data}` : '' : ''
       if (!error && data.match(/\"text\":\"\d.+?\u5230\u671f\"/)) {
-        $nobyda.expire = data.match(/\"text\":\"(\d.+?\u5230\u671f)\"/)[1]
-        console.log(`愛奇藝-查詢成功: ${$nobyda.expire} ${Details}`)
+        $specialmenfo.expire = data.match(/\"text\":\"(\d.+?\u5230\u671f)\"/)[1]
+        console.log(`愛奇藝-查詢成功: ${$specialmenfo.expire} ${Details}`)
       } else {
         console.log(`愛奇藝-查詢失敗${error || ': 無到期數據 ⚠️'} ${Details}`)
       }
@@ -50,10 +112,10 @@ function Checkin() {
     var URL = {
       url: 'https://tc.vip.iqiyi.com/taskCenter/task/queryUserTask?autoSign=yes&P00001=' + cookie
     }
-    $nobyda.get(URL, function(error, response, data) {
+    $specialmenfo.get(URL, function(error, response, data) {
       if (error) {
-        $nobyda.data = "簽到失敗: 接口請求出錯 ‼️"
-        console.log(`愛奇藝-${$nobyda.data} ${error}`)
+        $specialmenfo.data = "簽到失敗: 接口請求出錯 ‼️"
+        console.log(`愛奇藝-${$specialmenfo.data} ${error}`)
       } else {
         const obj = JSON.parse(data)
         const Details = LogDetails ? `response:\n${data}` : ''
@@ -62,15 +124,15 @@ function Checkin() {
             var AwardName = obj.data.signInfo.data.rewards[0].name;
             var quantity = obj.data.signInfo.data.rewards[0].value;
             var continued = obj.data.signInfo.data.cumulateSignDaysSum;
-            $nobyda.data = "簽到成功: " + AwardName + quantity + ", 累計簽到" + continued + "天 🎉"
-            console.log(`愛奇藝-${$nobyda.data} ${Details}`)
+            $specialmenfo.data = "簽到成功: " + AwardName + quantity + ", 累計簽到" + continued + "天 🎉"
+            console.log(`愛奇藝-${$specialmenfo.data} ${Details}`)
           } else {
-            $nobyda.data = "簽到失敗: " + obj.data.signInfo.msg + " ⚠️"
-            console.log(`愛奇藝-${$nobyda.data} ${Details}`)
+            $specialmenfo.data = "簽到失敗: " + obj.data.signInfo.msg + " ⚠️"
+            console.log(`愛奇藝-${$specialmenfo.data} ${Details}`)
           }
         } else {
-          $nobyda.data = "簽到失敗: Cookie無效 ⚠️"
-          console.log(`愛奇藝-${$nobyda.data} ${Details}`)
+          $specialmenfo.data = "簽到失敗: Cookie無效 ⚠️"
+          console.log(`愛奇藝-${$specialmenfo.data} ${Details}`)
         }
       }
       resolve()
@@ -81,38 +143,38 @@ function Checkin() {
 
 function Lottery(s) {
   return new Promise(resolve => {
-    $nobyda.times++
+    $specialmenfo.times++
       const URL = {
         url: 'https://iface2.iqiyi.com/aggregate/3.0/lottery_activity?app_k=0&app_v=0&platform_id=0&dev_os=0&dev_ua=0&net_sts=0&qyid=0&psp_uid=0&psp_cki=' + cookie + '&psp_status=0&secure_p=0&secure_v=0&req_sn=0'
       }
     setTimeout(() => {
-      $nobyda.get(URL, async function(error, response, data) {
+      $specialmenfo.get(URL, async function(error, response, data) {
         if (error) {
-          $nobyda.data += "\n抽獎失敗: 接口請求出錯 ‼️"
-          console.log(`愛奇藝-抽獎失敗: 接口請求出錯 ‼️ ${error} (${$nobyda.times})`)
-          //$nobyda.notify("愛奇藝", "", $nobyda.data)
+          $specialmenfo.data += "\n抽獎失敗: 接口請求出錯 ‼️"
+          console.log(`愛奇藝-抽獎失敗: 接口請求出錯 ‼️ ${error} (${$specialmenfo.times})`)
+          //$specialmenfo.notify("愛奇藝", "", $specialmenfo.data)
         } else {
           const obj = JSON.parse(data);
           const Details = LogDetails ? `response:\n${data}` : ''
-          $nobyda.last = data.match(/(機會|已經)用完/) ? true : false
+          $specialmenfo.last = data.match(/(機會|已經)用完/) ? true : false
           if (obj.awardName && obj.code == 0) {
-            $nobyda.data += !$nobyda.last ? `\n抽獎成功: ${obj.awardName.replace(/《.+》/, "未中獎")} 🎉` : `\n抽獎失敗: 今日已抽獎 ⚠️`
-            console.log(`愛奇藝-抽獎明細: ${obj.awardName.replace(/《.+》/, "未中獎")} 🎉 (${$nobyda.times}) ${Details}`)
+            $specialmenfo.data += !$specialmenfo.last ? `\n抽獎成功: ${obj.awardName.replace(/《.+》/, "未中獎")} 🎉` : `\n抽獎失敗: 今日已抽獎 ⚠️`
+            console.log(`愛奇藝-抽獎明細: ${obj.awardName.replace(/《.+》/, "未中獎")} 🎉 (${$specialmenfo.times}) ${Details}`)
           } else if (data.match(/\"errorReason\"/)) {
             const msg = data.match(/msg=.+?\)/) ? data.match(/msg=(.+?)\)/)[1].replace(/用戶(未登錄|不存在)/, "Cookie無效") : ""
-            $nobyda.data += `\n抽獎失敗: ${msg || `未知錯誤`} ⚠️`
-            console.log(`愛奇藝-抽獎失敗: ${msg || `未知錯誤`} ⚠️ (${$nobyda.times}) ${msg ? Details : `response:\n${data}`}`)
+            $specialmenfo.data += `\n抽獎失敗: ${msg || `未知錯誤`} ⚠️`
+            console.log(`愛奇藝-抽獎失敗: ${msg || `未知錯誤`} ⚠️ (${$specialmenfo.times}) ${msg ? Details : `response:\n${data}`}`)
           } else {
-            $nobyda.data += "\n抽獎錯誤: 已輸出日誌 ⚠️"
-            console.log(`愛奇藝-抽獎失敗: \n${data} (${$nobyda.times})`)
+            $specialmenfo.data += "\n抽獎錯誤: 已輸出日誌 ⚠️"
+            console.log(`愛奇藝-抽獎失敗: \n${data} (${$specialmenfo.times})`)
           }
         }
-        if (!$nobyda.last && $nobyda.times < 3) {
+        if (!$specialmenfo.last && $specialmenfo.times < 3) {
           await Lottery(s)
         } else {
-          const expires = $nobyda.expire ? $nobyda.expire.replace(/\u5230\u671f/, "") : "獲取失敗 ⚠️"
-          if (!$nobyda.isNode) $nobyda.notify("愛奇藝", "到期時間: " + expires, $nobyda.data);
-          if (barkKey) await BarkNotify($nobyda, barkKey, '愛奇藝', `到期時間: ${expires}\n${$nobyda.data}`);
+          const expires = $specialmenfo.expire ? $specialmenfo.expire.replace(/\u5230\u671f/, "") : "獲取失敗 ⚠️"
+          if (!$specialmenfo.isNode) $specialmenfo.notify("愛奇藝", "到期時間: " + expires, $specialmenfo.data);
+          if (barkKey) await BarkNotify($specialmenfo, barkKey, '愛奇藝', `到期時間: ${expires}\n${$specialmenfo.data}`);
         }
         resolve()
       })
@@ -125,16 +187,16 @@ function GetCookie() {
   var CKA = $request.url.match(/(psp_cki=|P00001=|authcookie=)([A-Za-z0-9]+)/)
   var CKB = JSON.stringify($request.headers).match(/(psp_cki=|P00001=|authcookie=)([A-Za-z0-9]+)/)
   var iQIYI = CKA || CKB || null
-  var RA = $nobyda.read("CookieQY")
+  var RA = $specialmenfo.read("CookieQY")
   if (iQIYI) {
     if (RA != iQIYI[2]) {
-      var OldTime = $nobyda.read("CookieQYTime")
-      if (!$nobyda.write(iQIYI[2], "CookieQY")) {
-        $nobyda.notify(`${RA?`更新`:`首次寫入`}愛奇藝簽到Cookie失敗‼️`, "", "")
+      var OldTime = $specialmenfo.read("CookieQYTime")
+      if (!$specialmenfo.write(iQIYI[2], "CookieQY")) {
+        $specialmenfo.notify(`${RA?`更新`:`首次寫入`}愛奇藝簽到Cookie失敗‼️`, "", "")
       } else {
         if (!OldTime || OldTime && (Date.now() - OldTime) / 1000 >= 21600) {
-          $nobyda.write(JSON.stringify(Date.now()), "CookieQYTime")
-          $nobyda.notify(`${RA?`更新`:`首次寫入`}愛奇藝簽到Cookie成功 🎉`, "", "")
+          $specialmenfo.write(JSON.stringify(Date.now()), "CookieQYTime")
+          $specialmenfo.notify(`${RA?`更新`:`首次寫入`}愛奇藝簽到Cookie成功 🎉`, "", "")
         } else {
           console.log(`\n更新愛奇藝Cookie成功! 🎉\n檢測到頻繁通知, 已轉為輸出日誌`)
         }
@@ -149,7 +211,7 @@ function GetCookie() {
 
 async function BarkNotify(c,k,t,b){for(let i=0;i<3;i++){console.log(`🔷Bark notify >> Start push (${i+1})`);const s=await new Promise((n)=>{c.post({url:'https://api.day.app/push',headers:{'Content-Type':'application/json'},body:JSON.stringify({title:t,body:b,device_key:k,ext_params:{group:t}})},(e,r,d)=>r&&r.status==200?n(1):n(d||e))});if(s===1){console.log('✅Push success!');break}else{console.log(`❌Push failed! >> ${s.message||s}`)}}}
 
-function nobyda() {
+function specialmenfo() {
   const times = 0
   const start = Date.now()
   const isRequest = typeof $request != "undefined"
@@ -268,7 +330,7 @@ function nobyda() {
   const log = (message) => console.log(message)
   const time = () => {
     const end = ((Date.now() - start) / 1000).toFixed(2)
-    return console.log('\n簽到用時: ' + end + ' 秒')
+    return console.log('\n签到用时: ' + end + ' 秒')
   }
   const done = (value = {}) => {
     if (isQuanX) return $done(value)
