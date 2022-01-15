@@ -3,8 +3,10 @@ DOMAIN-SUFFIX,smtp.gmail.com
 DOMAIN-SUFFIX,smtp.yandex.ru
 
 # iQiYiTW
-DOMAIN,cache.m.iqiyi.com
-DOMAIN,video.iqiyi.com
+DOMAIN,cache.video.iqiyi.com
+DOMAIN,cache.video.qiyi.com
+DOMAIN,subscription.iqiyi.com
+DOMAIN,l.rcd.iqiyi.com
 DOMAIN-SUFFIX,intl.iqiyi.com
 DOMAIN,intl-im-hist-api.iqiyi.com
 DOMAIN-SUFFIX,iq.com
