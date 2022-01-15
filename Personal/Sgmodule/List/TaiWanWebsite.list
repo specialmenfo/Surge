@@ -442,7 +442,6 @@ DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-KEYWORD,musical.ly
 USER-AGENT,TikTok*
 PROCESS-NAME,com.zhiliaoapp.musically
-DOMAIN-SUFFIX,amemv.com
 
 # Other
 DOMAIN,smtp.office365.com
