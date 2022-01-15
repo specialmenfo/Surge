@@ -695,7 +695,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 
 [Script]
 # Sub-Store
-# https://sub-store.vercel.app/?#/
+# 訪問https://sub-store.vercel.app/?#/管理
 Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Peng-YM-sub-store.min.js,requires-body=true,timeout=120,max-size=131072
 
 # 多賬號Cookie保存切換
