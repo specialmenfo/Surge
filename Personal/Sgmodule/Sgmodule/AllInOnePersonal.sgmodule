@@ -75,27 +75,6 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Netflix.list,🌍 Netflix 專供
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Paramount%2B.list,🌏 Paramount+ 換區
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HBOGo%2B%2B.list,🌏 HBO Go 國際/香港換區
-PROCESS-NAME,v2ray,DIRECT
-PROCESS-NAME,xray,DIRECT
-PROCESS-NAME,clash,DIRECT
-PROCESS-NAME,naive,DIRECT
-PROCESS-NAME,trojan,DIRECT
-PROCESS-NAME,trojan-go,DIRECT
-PROCESS-NAME,ss-local,DIRECT
-PROCESS-NAME,privoxy,DIRECT
-PROCESS-NAME,leaf,DIRECT
-PROCESS-NAME,Thunder,DIRECT
-PROCESS-NAME,DownloadService,DIRECT
-PROCESS-NAME,qBittorrent,DIRECT
-PROCESS-NAME,Transmission,DIRECT
-PROCESS-NAME,fdm,DIRECT
-PROCESS-NAME,aria2c,DIRECT
-PROCESS-NAME,Folx,DIRECT
-PROCESS-NAME,NetTransport,DIRECT
-PROCESS-NAME,uTorrent,DIRECT
-PROCESS-NAME,WebTorrent,DIRECT
-RULE-SET,SYSTEM,DIRECT
-RULE-SET,LAN,DIRECT
 GEOIP,CN,🎯 全球直連,no-resolve
 FINAL,🐟 漏網之魚,dns-failed
 
