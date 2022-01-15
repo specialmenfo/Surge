@@ -172,6 +172,9 @@ PROCESS-NAME,music
 DOMAIN,beta.apple.com
 DOMAIN,testflight.apple.com
 
+# 抖音
+DOMAIN-SUFFIX,amemv.com
+
 # Riot
 DOMAIN-SUFFIX,championshipseriesleague.com
 DOMAIN-SUFFIX,convrgencegame.com
