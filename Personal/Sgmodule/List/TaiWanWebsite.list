@@ -1,5 +1,3 @@
-DOMAIN-SUFFIX,sub.store
-
 # Mail SMTP
 DOMAIN-SUFFIX,smtp.gmail.com
 DOMAIN-SUFFIX,smtp.yandex.ru
