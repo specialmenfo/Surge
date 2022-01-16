@@ -5,9 +5,6 @@ DOMAIN,guzzoni.apple.com
 DOMAIN-SUFFIX,mail.icloud.com.cn
 DOMAIN-SUFFIX,mail.me.com
 
-# iCloud
-DOMAIN-SUFFIX,gateway.icloud.com
-
 # Apple News
 DOMAIN,apple.comscoreresearch.com
 DOMAIN,gateway.icloud.com
