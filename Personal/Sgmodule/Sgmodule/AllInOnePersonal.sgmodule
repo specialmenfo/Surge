@@ -76,7 +76,7 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Paramount%2B.list,🌏 Paramount+ 換區
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HBOGo%2B%2B.list,🌏 HBO Go 國際/香港換區
 GEOIP,CN,🎯 全球直連,no-resolve
-FINAL,🐟 漏網之魚,dns-failed
+FINAL,🐟 漏網之魚
 
 [URL Rewrite]
 # 有兔閱讀(米兔)
