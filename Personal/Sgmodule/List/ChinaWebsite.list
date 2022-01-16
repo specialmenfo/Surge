@@ -1,6 +1,7 @@
 # 順豐速運
-DOMAIN-SUFFIX,ump.sit.sf-express.com
+DOMAIN,ump.sit.sf-express.com
 DOMAIN-SUFFIX,sf-express.com
+DOMAIN-SUFFIX,sub.store
 
 # 愛奇藝
 DOMAIN-SUFFIX,71.am
