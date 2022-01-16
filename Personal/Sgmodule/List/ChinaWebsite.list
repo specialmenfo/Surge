@@ -1,7 +1,17 @@
+# Apple TV
+DOMAIN,hls-amt.itunes.apple.com
+DOMAIN,hls.itunes.apple.com
+DOMAIN,np-edge.itunes.apple.com
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN,uts-api.itunes.apple.com
+DOMAIN-SUFFIX,tv.apple.com
+USER-AGENT,AppleTV*
+USER-AGENT,com.apple.tv*
+PROCESS-NAME,tv
+
 # 順豐速運
 DOMAIN,ump.sit.sf-express.com
 DOMAIN-SUFFIX,sf-express.com
-DOMAIN-SUFFIX,sub.store
 
 # 愛奇藝
 DOMAIN-SUFFIX,71.am
