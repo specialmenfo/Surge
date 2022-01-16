@@ -11,6 +11,7 @@ proxy-test-url = http://cp.cloudflare.com/generate_204
 test-timeout = 5
 loglevel = notify
 hide-vpn-icon = true
+dns-server = 101.101.101.101, 223.5.5.5, 119.29.29.29, 8.8.8.8, 1.1.1.1, 2001:de4::101, 2001:de4::102, 2606:4700:4700::1111, 223.6.6.6
 skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,localhost,*.local,e.crashlytics.com,captive.apple.com,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1,passenger.t3go.cn
 allow-wifi-access = false
 ipv6 = true
