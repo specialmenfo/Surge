@@ -1,3 +1,7 @@
+# 小紅書
+DOMAIN,xiaohongshu.com/speedtest
+DOMAIN-SUFFIX,xiaohongshu.com
+
 # Apple TV
 DOMAIN,hls-amt.itunes.apple.com
 DOMAIN,hls.itunes.apple.com
