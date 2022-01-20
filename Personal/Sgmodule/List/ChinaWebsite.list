@@ -1,4 +1,7 @@
 # 小紅書
+USER-AGENT,XIAOHONGSHU*
+USER-AGENT,*XIAOHONGSHU*
+USER-AGENT,*xiaohongshu*
 USER-AGENT,xiaohongshu*
 DOMAIN-SUFFIX,xhscdn.com
 DOMAIN,xiaohongshu.com/speedtest
