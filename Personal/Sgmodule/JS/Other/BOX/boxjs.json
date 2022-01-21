@@ -70,13 +70,13 @@
         }
       ],
       "author": "@VirgilClyne",
-      "repo": "https://github.com/VirgilClyne/Specialmenfo/blob/main/js/Cloudflare_DNS.js",
-      "script": "https://raw.githubusercontent.com/VirgilClyne/Specialmenfo/main/js/Cloudflare.js",
+      "repo": "https://github.com/specialmenfo/Surge/blob/master/Personal/Sgmodule/JS/Other/JS/Cloudflare_DNS.js",
+      "script": "https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Other/JS/Cloudflare_DNS.js",
       "icons": ["https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Cloudflare.png", "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png"]
     },
     {
       "id": "@Specialmenfo.Cloudflare.WARP",
-      "name": "Cloudflare WARP β",
+      "name": "Cloudflare WARP",
       "keys": ["@Specialmenfo.Cloudflare.WARP"],
       "settings": [
         {
@@ -208,13 +208,13 @@
         }
       ],
       "author": "@VirgilClyne",
-      "repo": "https://github.com/VirgilClyne/Specialmenfo/blob/beta/js/Cloudflare_WARP.beta.js",
-      "script": "https://raw.githubusercontent.com/VirgilClyne/Specialmenfo/beta/js/Cloudflare_WARP.beta.js",
+      "repo": "https://github.com/specialmenfo/Surge/blob/master/Personal/Sgmodule/JS/Other/JS/Cloudflare_WARP.js",
+      "script": "https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Other/JS/Cloudflare_WARP.js",
       "icons": ["https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Cloudflare.png", "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png"]
     },
     {
       "id": "@Specialmenfo.WireGuard",
-      "name": "WireGuard β",
+      "name": "WireGuard",
       "keys": ["@Specialmenfo.WireGuard"],
       "settings": [
         {
@@ -398,8 +398,8 @@
         }
       ],
       "author": "@VirgilClyne",
-      "repo": "https://github.com/VirgilClyne/Specialmenfo/blob/main/js/Netflix.js",
-      "script": "https://raw.githubusercontent.com/VirgilClyne/Specialmenfo/main/js/Netflix.js",
+      "repo": "https://github.com/specialmenfo/Surge/blob/master/Personal/Sgmodule/JS/Other/JS/Netflix.js",
+      "script": "https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Other/JS/Netflix.js",
       "icons": ["https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netflix.png", "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png"]
     }
   ]
