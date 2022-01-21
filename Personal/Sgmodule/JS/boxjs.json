@@ -1,0 +1,219 @@
+{
+  "id": "specialmenfo.app.sub",
+  "name": "Personal",
+  "author": "@specialmenfo",
+  "description": "Nope",
+    {
+      "id": "@specialmenfo.Cloudflare.WARP",
+      "name": "Cloudflare WARP",
+      "keys": ["@Specialmenfo.Cloudflare.WARP"],
+      "settings": [
+        {
+          "id": "@Specialmenfo.Cloudflare.WARP.setupMode",
+          "name": "WARP: 運行方式/setupMode",
+          "val": "RegisterNewAccountwithPublicKey",
+          "type": "radios",
+          "items": [
+            {
+              "key": "RegisterNewAccount",
+              "label": "註冊新賬戶/Register New Account"
+            },
+            {
+              "key": "RegisterNewAccountwithPublicKey",
+              "label": "註冊新賬戶(用自定義密鑰對)並生成WireGuard配置文件/Register New Account(with custom Keypair)and output WireGuard Config"
+            },
+            {
+              "key": "RegisterNewDevice",
+              "label": "註冊新設備(註冊ID)/Register New Device(Registration Id/id)"
+            },
+            {
+              "key": "RebindingLicense",
+              "label": "重綁定許可證(許可證 & 註冊ID)/Rebinding License(license & Registration Id/id)"
+            },
+            {
+              "key": "AccountDetail",
+              "label": "查詢賬戶信息(創建日期/剩餘流量/邀請人數等)/Check Account Detail"
+            },
+            {
+              "key": "DeviceDetail",
+              "label": "查詢設備配置(設備名稱/設備類型/創建日期/活動狀態等)/Check Device Detail"
+            },
+            {
+              "key": "AutoAffWARP+",
+              "label": "自動邀請新用戶刷Warp+流量/Auto Aff New User for WARP+"
+            }
+          ],
+          "desc": "個人版的WARP的驗證方式默認只有Token，Team版的不知道"
+        },
+        {
+          "id": "@Specialmenfo.WireGuard.PrivateKey",
+          "name": "WireGuard: 私鑰/Private Key",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": "在Wireguard的iOS客戶端里新建隧道，生成一個密鑰對，私鑰貼在這裡，公鑰貼下面"
+        },
+        {
+          "id": "@Specialmenfo.WireGuard.PublicKey",
+          "name": "WireGuard: 公鑰/Public Key",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": "在Wireguard的iOS客戶端里新建隧道，生成一個密鑰對，公鑰貼在這裡，私鑰貼上面"
+        },
+        {
+          "id": "@Specialmenfo.Cloudflare.WARP.Verify.License",
+          "name": "WARP: 許可證(賬戶)/License(Account)",
+          "val": "",
+          "type": "text",
+          "placeholder": "1A2B3C4D-5E6F7G8H-9I0J1K2L",
+          "desc": "相當於匿名的WARP賬號，妥善保管，使用與獲取的流量、設備均算在此許可證密鑰的使用量當中"
+        },
+        {
+          "id": "@Specialmenfo.Cloudflare.WARP.Verify.RegistrationId",
+          "name": "WARP: 註冊ID(設備ID/客戶端ID/配置文件ID)/Registration Id(Device ID/Client ID/Config ID)",
+          "val": "",
+          "type": "text",
+          "placeholder": "123e4567-e89b-12d3-a456-426614174000",
+          "desc": "設備ID, UUID, 請妥善保管，註冊新設備時可以自己通過UUID生成器生成，每個設備和對應配置文件的唯一身份識別代碼，不填寫的話視為新設備註冊，會自動生成，一個設備生成一個配置文件，想找回配置文件可以通過設備ID找回"
+        },
+        {
+          "id": "@Specialmenfo.Cloudflare.WARP.Verify.Mode",
+          "name": "WARP: 驗證方式/Verify Mode",
+          "val": "Token",
+          "type": "radios",
+          "items": [
+            {
+              "key": "Token",
+              "label": "令牌/Token"
+            }
+          ],
+          "desc": "個人版的WARP的驗證方式默認只有Token，Team版的不知道"
+        },
+        {
+          "id": "@Specialmenfo.Cloudflare.WARP.Verify.Content",
+          "name": "WARP: 驗證內容/Verify Content",
+          "val": "",
+          "type": "text",
+          "placeholder": "8M7wS6hCpXVc-DoRnPPY_UCWPgy8aea4Wy6kCe5T",
+          "desc": "‘令牌’驗證方式的值寫一行即可，不填寫的話視為新設備註冊，會自動生成"
+        },
+        {
+          "id": "@Specialmenfo.Cloudflare.WARP.env.deviceType",
+          "name": "WARP: 客戶端用戶代理類型/Client Device Type",
+          "val": "iOS",
+          "type": "radios",
+          "items": [
+            {
+              "key": "Windows",
+              "label": "Windows"
+            },
+            {
+              "key": "Linux",
+              "label": "Linux"
+            },
+            {
+              "key": "Android",
+              "label": "Android"
+            },
+            {
+              "key": "iOS",
+              "label": "iOS"
+            },
+            {
+              "key": "macOS",
+              "label": "macOS"
+            }
+          ],
+          "desc": "要偽裝的客戶端類型，默認iOS客戶端"
+        },
+        {
+          "id": "@Specialmenfo.Cloudflare.WARP.env.Version",
+          "name": "WARP: 客戶端API版本/Client API Version",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": "客戶端版本，不懂就留空別填寫，會用對應設備類型的默認值"
+        }
+      ],
+      "author": "@VirgilClyne",
+      "repo": "https://github.com/VirgilClyne/Specialmenfo/blob/beta/js/Cloudflare_WARP.beta.js",
+      "script": "https://raw.githubusercontent.com/VirgilClyne/Specialmenfo/beta/js/Cloudflare_WARP.beta.js",
+      "icons": ["https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Cloudflare.png", "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png"]
+    },
+    {
+      "id": "@Specialmenfo.WireGuard",
+      "name": "WireGuard β",
+      "keys": ["@Specialmenfo.WireGuard"],
+      "settings": [
+        {
+          "id": "@Specialmenfo.WireGuard.PrivateKey",
+          "name": "Interface: 私鑰",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": "在Wireguard的iOS客戶端里新建隧道，生成一個密鑰對，私鑰貼在這裡，公鑰貼下面"
+        },
+        {
+          "id": "@Specialmenfo.WireGuard.PublicKey",
+          "name": "Interface: 公鑰",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": "在Wireguard的iOS客戶端里新建隧道，生成一個密鑰對，公鑰貼在這裡，私鑰貼上面"
+        },
+        {
+          "id": "@Specialmenfo.WireGuard.config.interface.addresses.v4",
+          "name": "Interface: IPV4地址",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": ""
+        },
+        {
+          "id": "@Specialmenfo.WireGuard.config.interface.addresses.v6",
+          "name": "Interface: IPV6地址",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": ""
+        },
+        {
+          "id": "@Specialmenfo.WireGuard.config.peers[0].public_key",
+          "name": "Peer: 公鑰",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": ""
+        },
+        {
+          "id": "@Specialmenfo.WireGuard.config.peers[0].endpoint.host",
+          "name": "Peer: endpoint 主機名",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": ""
+        },
+        {
+          "id": "@Specialmenfo.WireGuard.config.peers[0].endpoint.v4",
+          "name": "Peer: endpoint IPV4地址",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": ""
+        },
+        {
+          "id": "@Specialmenfo.WireGuard.config.peers[0].endpoint.v6",
+          "name": "Peer: endpoint IPV6地址",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": ""
+        }
+
+      ],
+      "author": "@VirgilClyne",
+      "icons": ["https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Cloudflare.png", "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png"]
+    },
+  ]
+}
