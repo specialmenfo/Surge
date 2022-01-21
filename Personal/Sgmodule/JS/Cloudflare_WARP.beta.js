@@ -1,9 +1,13 @@
 /*
-README:https://github.com/VirgilClyne/GetSomeFries
 */
 
-// refer:https://github.com/ViRb3/wgcf
-// refer:https://github.com/yyuueexxiinngg/some-scripts/blob/master/cloudflare/warp2wireguard.js
+***************************
+Surge4:
+
+[Script]
+Cloudflare WARP = type=cron,cronexp="*/5 * * * *",timeout=60,argument=DeviceId=設備ID&AccessToken=訪問令牌&PrivateKey=私鑰&LicenseKey=許可證密鑰,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Cloudflare_WARP.beta.js
+
+**************************/
 
 const $ = new Env('Cloudflare WARP');
 
