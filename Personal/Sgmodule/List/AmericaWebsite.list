@@ -99,6 +99,7 @@ DOMAIN-SUFFIX,wolfatbestbuy.net
 DOMAIN-SUFFIX,www-bestbuystores.com
 
 # Cloudflare
+DOMAIN-SUFFIX,1.1.1.1
 DOMAIN-SUFFIX,cloudflare-dns.com
 DOMAIN-SUFFIX,cloudflare-ipfs.com
 DOMAIN-SUFFIX,cloudflare-quic.com
