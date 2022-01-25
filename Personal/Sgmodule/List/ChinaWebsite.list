@@ -830,3 +830,18 @@ DOMAIN-SUFFIX,ue.indoorloc.map.qq.com
 DOMAIN-SUFFIX,apis.map.qq.com
 USER-AGENT,WeChat*
 USER-AGENT,MicroMessenger*
+
+# 其他
+DOMAIN,router.asus.com
+DOMAIN-SUFFIX,lan
+DOMAIN-SUFFIX,localdomain
+DOMAIN-SUFFIX,example
+DOMAIN-SUFFIX,invalid
+DOMAIN-SUFFIX,localhost
+DOMAIN-SUFFIX,test
+DOMAIN-SUFFIX,local
+DOMAIN-SUFFIX,home.arpa
+DOMAIN-SUFFIX,msftconnecttest.com
+DOMAIN-SUFFIX,msftncsi.com
+DOMAIN-SUFFIX,localhost.sec.qq.com
+DOMAIN-SUFFIX,localhost.ptlogin2.qq.com
