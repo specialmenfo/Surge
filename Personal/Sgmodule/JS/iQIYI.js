@@ -30,12 +30,11 @@ QuantumultX 遠程腳本配置:
 **********************
 [task_local]
 # 愛奇藝會員簽到
-0 9 * * * https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+0 9 * * * https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
 
 [rewrite_local]
 # 獲取Cookie
-^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-
+^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action url script-request-header https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
 [mitm]
 hostname= passport.iqiyi.com
 
@@ -43,10 +42,8 @@ hostname= passport.iqiyi.com
 Surge 4.2.0+ 腳本配置:
 **********************
 [Script]
-愛奇藝簽到 = type=cron,cronexp=0 9 * * *,timeout=120,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-
-愛奇藝獲取Cookie = type=http-request,pattern=^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-
+愛奇藝簽到 = type=cron,cronexp=0 9 * * *,timeout=120,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
+愛奇藝獲取Cookie = type=http-request,pattern=^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
 [MITM]
 hostname= passport.iqiyi.com
 
@@ -56,10 +53,10 @@ Loon 2.1.0+ 腳本配置:
 
 [Script]
 # 愛奇藝簽到
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
 
 # 獲取Cookie
-http-request ^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+http-request ^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
 
 [Mitm]
 hostname= passport.iqiyi.com
