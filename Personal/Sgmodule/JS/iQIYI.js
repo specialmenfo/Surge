@@ -6,7 +6,7 @@
 獲取Cookie說明：
 Safari瀏覽器打開 https://m.iqiyi.com/user.html 使用密碼登錄, 如通知成功獲取cookie則可使用該腳本.
 獲取Cookie後, 請將Cookie腳本禁用並移除主機名，以免產生不必要的MITM.
-腳本將在每天上午9:00執行, 您可以修改執行時間。
+腳本將在每天00:10執行, 您可以修改執行時間。
 
 如果使用Node.js, 需自行安裝'request'模塊. 例: npm install request -g
 
@@ -30,7 +30,7 @@ QuantumultX 遠程腳本配置:
 **********************
 [task_local]
 # 愛奇藝會員簽到
-0 9 * * * https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
+10 10 0 * * * https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
 
 [rewrite_local]
 # 獲取Cookie
@@ -42,7 +42,7 @@ hostname= passport.iqiyi.com
 Surge 4.2.0+ 腳本配置:
 **********************
 [Script]
-愛奇藝簽到 = type=cron,cronexp=0 9 * * *,timeout=120,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
+愛奇藝簽到 = type=cron,cronexp=10 10 0 * * *,timeout=120,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
 愛奇藝獲取Cookie = type=http-request,pattern=^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
 [MITM]
 hostname= passport.iqiyi.com
@@ -53,7 +53,7 @@ Loon 2.1.0+ 腳本配置:
 
 [Script]
 # 愛奇藝簽到
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
+cron "10 10 0 * * *" script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
 
 # 獲取Cookie
 http-request ^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js
