@@ -116,7 +116,7 @@ async function createTabsGroup() {
 	/*
 	 // 繁體中文改Tabs語言
 	 if (locale) var esl = locale.match(/[a-z]{2}_[A-Za-z]{2,3}/g)
-	 if (esl != "zh_Hant_HK" || region != "HK") {
+	 if (esl != "zh_Hant" || region != "TW") {
 		 if (platform == "iphone" || platform == "ipad") var maps = new Map([['立即觀看', 'Watch Now'], ['原創內容', 'Originals'], ['電影', 'Movies'], ['電視節目', 'TV'], ['體育節目', 'Sports'], ['兒童', 'Kids'], ['商店', 'Store'], ['資料庫', 'Library'], ['搜索', 'Search']])
 		 else var maps = new Map([['立即觀看', 'Watch Now'], ['Apple TV+', 'Apple TV+'], ['電影', 'Movies'], ['電視節目', 'TV'], ['體育節目', 'Sports'], ['兒童', 'Kids'], ['商店', 'Store'], ['資料庫', 'Library'], ['搜索', 'Search']]);
 		 Tabs = Tabs.map(element => { element.title = maps.get(element.title); return element; });
@@ -140,15 +140,15 @@ function outputData(api, caller, platform, locale, region, body, Tabs, TabsGroup
 			else if (api == "v3") {
 				// 注入數據
 				//條件運算符 & 可選鏈操作符 
-				//configurations.data.applicationProps.requiredParamsMap.WithoutUtsk.locale = "zh_Hant_HK";
-				//configurations.data.applicationProps.requiredParamsMap.Default.locale = "zh_Hant_HK";
+				//configurations.data.applicationProps.requiredParamsMap.WithoutUtsk.locale = "zh_Hant";
+				//configurations.data.applicationProps.requiredParamsMap.Default.locale = "zh_Hant";
 				configurations.data.applicationProps.tabs = Tabs;
 				//configurations.data.applicationProps.tabs = createTabsGroup("Tabs", caller, platform, locale, region);
 				configurations.data.applicationProps.tabsSplitScreen = TabsGroup;
 				//configurations.data.applicationProps.tabsSplitScreen = createTabsGroup("TabsGroup", caller, platform, locale, region);
 				configurations.data.applicationProps.tvAppEnabledInStorefront = true;
 				configurations.data.applicationProps.enabledClientFeatures = [{ "domain": "tvapp", "name": "expanse" }, { "domain": "tvapp", "name": "syndication" }, { "domain": "tvapp", "name": "snwpcr" }, { "domain": "tvapp", "name": "store_tab" }];
-				configurations.data.applicationProps.storefront.localesSupported = ["zh_Hant_HK", "zh_Hans", "yue-Hant", "en_US", "en_GB"];
+				configurations.data.applicationProps.storefront.localesSupported = [“zh_Hant", "yue-Hant", "en_US", "en_GB"];
 				//configurations.data.applicationProps.storefront.storefrontId = 143470;
 				configurations.data.applicationProps.featureEnablers = {
 					"topShelf": true,
