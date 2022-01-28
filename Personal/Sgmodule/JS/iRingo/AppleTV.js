@@ -114,7 +114,7 @@ async function createTabsGroup() {
 	const Tabs = [WatchNow, Originals, Store, Sports, Kids, Library, Search];
 	const TabsGroup = [WatchNow, Originals, Store, Sports, Library, Search];
 	/*
-	 // 簡體中文改Tabs語言
+	 // 繁體中文改Tabs語言
 	 if (locale) var esl = locale.match(/[a-z]{2}_[A-Za-z]{2,3}/g)
 	 if (esl != "zh_Hans" || region != "CN") {
 		 if (platform == "iphone" || platform == "ipad") var maps = new Map([['立即觀看', 'Watch Now'], ['原創內容', 'Originals'], ['電影', 'Movies'], ['電視節目', 'TV'], ['體育節目', 'Sports'], ['兒童', 'Kids'], ['商店', 'Store'], ['資料庫', 'Library'], ['搜索', 'Search']])
