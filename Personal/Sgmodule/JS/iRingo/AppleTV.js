@@ -96,16 +96,16 @@ function getOrigin(url) {
 // Create Tabs Group
 async function createTabsGroup() {
 	//構建Tab內容
-	let WatchNow = { "destinationType": "Target", "target": { "id": "tahoma_watchnow", "type": "Root", "url": "https://tv.apple.com/watch-now" }, "title": "立即觀看", "type": "WatchNow", "universalLinks": ["https://tv.apple.com/watch-now"] };
-	let Originals = { "destinationType": "Target", "target": { "id": "tvs.sbd.4000", "type": "Brand", "url": "https://tv.apple.com/us/channel/tvs.sbd.4000" }, "title": "原創內容", "type": "Originals", "universalLinks": ["https://tv.apple.com/channel/tvs.sbd.4000", "https://tv.apple.com/atv"] };
+	let WatchNow = { "destinationType": "Target", "target": { "id": "tahoma_watchnow", "type": "Root", "url": "https://tv.apple.com/watch-now" }, "title": "即睇", "type": "WatchNow", "universalLinks": ["https://tv.apple.com/watch-now"] };
+	let Originals = { "destinationType": "Target", "target": { "id": "tvs.sbd.4000", "type": "Brand", "url": "https://tv.apple.com/us/channel/tvs.sbd.4000" }, "title": "原創", "type": "Originals", "universalLinks": ["https://tv.apple.com/channel/tvs.sbd.4000", "https://tv.apple.com/atv"] };
 	let Store = {
 		"destinationType": "SubTabs",
-		"subTabs": [{ "destinationType": "Target", "target": { "id": "tahoma_movies", "type": "Root", "url": "https://tv.apple.com/movies" }, "title": "電影", "type": "Movies", "universalLinks": ["https://tv.apple.com/movies"] }, { "destinationType": "Target", "target": { "id": "tahoma_tvshows", "type": "Root", "url": "https://tv.apple.com/tv-shows" }, "title": "電視節目", "type": "TV", "universalLinks": ["https://tv.apple.com/tv-shows"] }],
-		"title": "商店",
+		"subTabs": [{ "destinationType": "Target", "target": { "id": "tahoma_movies", "type": "Root", "url": "https://tv.apple.com/movies" }, "title": "電影", "type": "Movies", "universalLinks": ["https://tv.apple.com/movies"] }, { "destinationType": "Target", "target": { "id": "tahoma_tvshows", "type": "Root", "url": "https://tv.apple.com/tv-shows" }, "title": "電視節", "type": "TV", "universalLinks": ["https://tv.apple.com/tv-shows"] }],
+		"title": "商城",
 		"type": "Store",
 		"universalLinks": ["https://tv.apple.com/store"]
 	};
-	let Sports = { "destinationType": "Target", "target": { "id": "tahoma_sports", "type": "Root", "url": "https://tv.apple.com/sports" }, "title": "體育節目", "type": "Sports", "universalLinks": ["https://tv.apple.com/sports"] };
+	let Sports = { "destinationType": "Target", "target": { "id": "tahoma_sports", "type": "Root", "url": "https://tv.apple.com/sports" }, "title": "體育", "type": "Sports", "universalLinks": ["https://tv.apple.com/sports"] };
 	let Kids = { "destinationType": "Target", "target": { "id": "tahoma_kids", "type": "Root", "url": "https://tv.apple.com/kids" }, "title": "兒童", "secondaryEnabled": true, "type": "Kids", "universalLinks": ["https://tv.apple.com/kids"] };
 	let Library = { "destinationType": "Client", "title": "資料庫", "type": "Library" };
 	let Search = { "destinationType": "Target", "target": { "id": "tahoma_searchlanding", "type": "Root", "url": "https://tv.apple.com/search" }, "title": "搜索", "type": "Search", "universalLinks": ["https://tv.apple.com/search"] };
@@ -117,8 +117,8 @@ async function createTabsGroup() {
 	 // 繁體中文改Tabs語言
 	 if (locale) var esl = locale.match(/[a-z]{2}_[A-Za-z]{2,3}/g)
 	 if (esl != "zh_Hant" || region != "HK") {
-		 if (platform == "iphone" || platform == "ipad") var maps = new Map([['立即觀看', 'Watch Now'], ['原創內容', 'Originals'], ['電影', 'Movies'], ['電視節目', 'TV'], ['體育節目', 'Sports'], ['兒童', 'Kids'], ['商店', 'Store'], ['資料庫', 'Library'], ['搜索', 'Search']])
-		 else var maps = new Map([['立即觀看', 'Watch Now'], ['Apple TV+', 'Apple TV+'], ['電影', 'Movies'], ['電視節目', 'TV'], ['體育節目', 'Sports'], ['兒童', 'Kids'], ['商店', 'Store'], ['資料庫', 'Library'], ['搜索', 'Search']]);
+		 if (platform == "iphone" || platform == "ipad") var maps = new Map([['即睇', 'Watch Now'], ['原創', 'Originals'], ['電影', 'Movies'], ['電視', 'TV'], ['體育', 'Sports'], ['兒童', 'Kids'], ['商店', 'Store'], ['資料庫', 'Library'], ['搜索', 'Search']])
+		 else var maps = new Map([['立即觀看', 'Watch Now'], ['Apple TV+', 'Apple TV+'], ['電影', 'Movies'], ['電視', 'TV'], ['體育', 'Sports'], ['兒童', 'Kids'], ['商城', 'Store'], ['資料庫', 'Library'], ['搜索', 'Search']]);
 		 Tabs = Tabs.map(element => { element.title = maps.get(element.title); return element; });
 	 };
 	 */
