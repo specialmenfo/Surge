@@ -45,6 +45,7 @@ IP-CIDR6,2a06:98c0::/29,no-resolve
 IP-CIDR6,2c0f:f248::/32,no-resolve
 
 # Odyssey EMBY
+IP-CIDR,144.76.175.55/32
 DOMAIN-SUFFIX,emby.wtf
 DOMAIN-SUFFIX,plusmedia.site
 DOMAIN-SUFFIX,mickeycloud.com
