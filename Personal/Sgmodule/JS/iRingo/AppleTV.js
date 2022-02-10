@@ -4,75 +4,124 @@ README:https://github.com/VirgilClyne/iRingo
 const $ = new Env('Apple TV');
 $.VAL = {
 	"url": $request.url,
-	"body": $request?.body ?? (typeof $response != "undefined") ? $response?.body : null
+	"body": ($request.body) ? $request.body : (typeof $response != "undefined") ? $response.body : null
 };
+console.log($.VAL)
+
+/***************** Async *****************/
 
 !(async () => {
 	if ($.VAL.url.indexOf("/uts/v3/configurations?") != -1) { // https://uts-api.itunes.apple.com/uts/v3/configurations?
 		const Parameter = await getOrigin($.VAL.url)
-		if (Parameter.caller == "wta") $.done() // 丟棄caller=wta的configurations數據
+		if (Parameter.caller == "wta") $.done() // 不修改caller=wta的configurations數據
 		else {
-			let [Tabs, TabsGroup] = await createTabsGroup();
-			$.VAL.body = await outputData(Parameter.Version, Parameter.caller, Parameter.platform, Parameter.locale, Parameter.region, $.VAL.body, Tabs, TabsGroup);
+			let TabsGroup = await createTabsGroup(Parameter);
+			$.VAL.body = await outputData(Parameter, $.VAL.body, TabsGroup);
 			$.done({ "body": $.VAL.body });
 		}
 	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Roots/watchNow?") != -1 || $.VAL.url.indexOf("/uts/v3/canvases/roots/tahoma_watchnow?") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Roots/watchNow? https://uts-api.itunes.apple.com/uts/v3/canvases/roots/tahoma_watchnow?
-		if (processQuery($.VAL.url, 'pfm') == 'desktop') $.VAL.url = processQuery($.VAL.url, 'pfm', 'appletv');
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'appletv') : $.VAL.url;
 		$.done({ "url": $.VAL.url });
 	} else if ($.VAL.url.indexOf("/uts/v3/shelves/uts.col.UpNext?") != -1) { // https://uts-api.itunes.apple.com/uts/v3/shelves/uts.col.UpNext?
-		if (processQuery($.VAL.url, 'pfm') == 'desktop') $.VAL.url = processQuery($.VAL.url, 'pfm', 'ipad');
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
 		$.done({ "url": $.VAL.url });
 	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Channels/tvs.sbd.4000?") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Channels/tvs.sbd.4000?
 		$.done({ "url": $.VAL.url });
 	} else if ($.VAL.url.indexOf("/uts/v2/brands?") != -1) { // https://uts-api.itunes.apple.com/uts/v2/brands?
-		$.VAL.body = processQuery($.VAL.url, 'sf', '143441');
+		$.VAL.url = processQuery($.VAL.url, 'sf', '143441');
 		$.done({ "url": $.VAL.url });
 	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Roots/movies?") != -1 || $.VAL.url.indexOf("/uts/v3/movies/") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Roots/Movies? https://uts-api.itunes.apple.com/uts/v3/movies/
-		if (processQuery($.VAL.url, 'pfm') == 'desktop') $.VAL.url = processQuery($.VAL.url, 'pfm', 'ipad');
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
 		$.done({ "url": $.VAL.url });
 	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Roots/tv?") != -1 || $.VAL.url.indexOf("/uts/v3/shows/") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Roots/TV? https://uts-api.itunes.apple.com/uts/v3/shows/
-		if (processQuery($.VAL.url, 'pfm') == 'desktop') $.VAL.url = processQuery($.VAL.url, 'pfm', 'ipad');
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
 		$.done({ "url": $.VAL.url });
 	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Roots/sports?") != -1 || $.VAL.url.indexOf("/uts/v2/sports/") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Roots/Sports? https://uts-api.itunes.apple.com/uts/v2/sports/
-		if (processQuery($.VAL.url, 'pfm') == 'desktop') $.VAL.url = processQuery($.VAL.url, 'pfm', 'ipad');
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
 		$.VAL.url = processQuery($.VAL.url, 'sf', '143441');
 		$.done({ "url": $.VAL.url });
 	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Roots/Kids?") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Roots/Kids?
 		$.VAL.url = processQuery($.VAL.url, 'sf', '143441');
 		$.done({ "url": $.VAL.url });
 	} else if ($.VAL.url.indexOf("/uts/v3/watchlist") != -1) { // https://uts-api.itunes.apple.com/uts/v3/watchlist
-		if (processQuery($.VAL.url, 'pfm') == 'desktop') $.VAL.url = processQuery($.VAL.url, 'pfm', 'ipad');
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
 		$.done({ "url": $.VAL.url });
 	} else if ($.VAL.url.indexOf("/uts/v3/playables/") != -1) { // https://uts-api.itunes.apple.com/uts/v3/playables/
-		$.VAL.body = processQuery($.VAL.url, 'sf', '143441');
+		$.VAL.url = processQuery($.VAL.url, 'sf', '143441');
+		$.done({ "url": $.VAL.url });
+	} else if ($.VAL.url.indexOf("/uts/v2/favorites") != -1) { // https://uts-api.itunes.apple.com/uts/v2/favorites
+		$.VAL.url = processQuery($.VAL.url, 'sf', '143441');
+		$.VAL.body = ($.VAL?.body) ? $.VAL.body.replace(sf = /[\d]{6}/g, sf = 143441) : null;
+		$.done({ "url": $.VAL.url, "body": $.VAL.body });
+	} else if ($.VAL.url.indexOf("/uts/v3/sporting-events/") != -1) { // https://uts-api.itunes.apple.com/uts/v3/sporting-events/
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
+		$.VAL.url = processQuery($.VAL.url, 'sf', '143441');
+		$.done({ "url": $.VAL.url });
+	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Persons/") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Persons/
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
+		$.done({ "url": $.VAL.url });
+	}
+	/*
+	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Roots/watchNow?") != -1 || $.VAL.url.indexOf("/uts/v3/canvases/roots/tahoma_watchnow?") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Roots/watchNow? https://uts-api.itunes.apple.com/uts/v3/canvases/roots/tahoma_watchnow?
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'appletv') : $.VAL.url;
+		$.done({ "url": $.VAL.url });
+	} else if ($.VAL.url.indexOf("/uts/v3/shelves/uts.col.UpNext?") != -1) { // https://uts-api.itunes.apple.com/uts/v3/shelves/uts.col.UpNext?
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
+		$.done({ "url": $.VAL.url });
+	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Channels/tvs.sbd.4000?") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Channels/tvs.sbd.4000?
+		$.done({ "url": $.VAL.url });
+	} else if ($.VAL.url.indexOf("/uts/v2/brands?") != -1) { // https://uts-api.itunes.apple.com/uts/v2/brands?
+		$.VAL.url = processQuery($.VAL.url, 'sf', '143441');
+		$.done({ "url": $.VAL.url });
+	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Roots/movies?") != -1 || $.VAL.url.indexOf("/uts/v3/movies/") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Roots/Movies? https://uts-api.itunes.apple.com/uts/v3/movies/
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
+		$.done({ "url": $.VAL.url });
+	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Roots/tv?") != -1 || $.VAL.url.indexOf("/uts/v3/shows/") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Roots/TV? https://uts-api.itunes.apple.com/uts/v3/shows/
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
+		$.done({ "url": $.VAL.url });
+	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Roots/sports?") != -1 || $.VAL.url.indexOf("/uts/v2/sports/") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Roots/Sports? https://uts-api.itunes.apple.com/uts/v2/sports/
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
+		$.VAL.url = processQuery($.VAL.url, 'sf', '143441');
+		$.done({ "url": $.VAL.url });
+	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Roots/Kids?") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Roots/Kids?
+		$.VAL.url = processQuery($.VAL.url, 'sf', '143441');
+		$.done({ "url": $.VAL.url });
+	} else if ($.VAL.url.indexOf("/uts/v3/watchlist") != -1) { // https://uts-api.itunes.apple.com/uts/v3/watchlist
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
+		$.done({ "url": $.VAL.url });
+	} else if ($.VAL.url.indexOf("/uts/v3/playables/") != -1) { // https://uts-api.itunes.apple.com/uts/v3/playables/
+		$.VAL.url = processQuery($.VAL.url, 'sf', '143441');
 		$.done({ "url": $.VAL.url });
 	} else if ($.VAL.url.indexOf("/uts/v2/favorites?") != -1) { // https://uts-api.itunes.apple.com/uts/v2/favorites?
-		$.VAL.body = processQuery($.VAL.url, 'sf', '143441');
+		$.VAL.url = processQuery($.VAL.url, 'sf', '143441');
 		$.done({ "url": $.VAL.url });
 	} else if ($.VAL.url.indexOf("/uts/v2/favorites/") != -1) { // https://uts-api.itunes.apple.com/uts/v2/favorites/
 		$.VAL.body = $.VAL.body.replace(sf = /[\d]{6}/g, sf = 143441);
-		$.log(`🎉 ${$.name}, redirectFavorites, Finish`, `$.VAL.body = ${$.VAL.body}`, '')
+		//$.log(`🎉 ${$.name}, redirectFavorites, Finish`, `$.VAL.body = ${$.VAL.body}`, '')
 		$.done({ "body": $.VAL.body });
 	} else if ($.VAL.url.indexOf("/uts/v3/sporting-events/") != -1) { // https://uts-api.itunes.apple.com/uts/v3/sporting-events/
-		if (processQuery($.VAL.url, 'pfm') == 'desktop') $.VAL.url = processQuery($.VAL.url, 'pfm', 'ipad');
-		$.VAL.url = processQuery(url, 'sf', '143441');
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
+		$.VAL.url = processQuery($.VAL.url, 'sf', '143441');
 		$.done({ "url": $.VAL.url });
 	} else if ($.VAL.url.indexOf("/uts/v3/canvases/Persons/") != -1) { // https://uts-api.itunes.apple.com/uts/v3/canvases/Persons/
-		if (processQuery($.VAL.url, 'pfm') == 'desktop') $.VAL.url = processQuery($.VAL.url, 'pfm', 'ipad');
+		$.VAL.url = (processQuery($.VAL.url, 'pfm') == 'desktop') ? processQuery($.VAL.url, 'pfm', 'ipad') : $.VAL.url;
 		$.done({ "url": $.VAL.url });
 	}
+	*/
 })()
 	.catch((e) => $.logErr(e))
 	.finally(() => $.done())
 
+/***************** Async Function *****************/
 // Step 1
 // Get Origin Parameter
 function getOrigin(url) {
 	return new Promise((resolve) => {
-		const Regular = /^https?:\/\/(?<dataServer>uts-api|uts-api-siri)\.itunes\.apple\.com\/uts\/(?<Version>v1|v2|v3)\/configurations\?.*/;
+		const Regular = /^https?:\/\/(?<dataServer>uts-api|uts-api-siri)\.itunes\.apple\.com\/uts\/(?<Version>v1|v2|v3)\/configurations\?.*v=(?<ConfVer>\d{2,}).*/i;
 		try {
 			//[$.url, $.dataServer, $.apiVer] = url.match(Regular);
 			var Parameter = url.match(Regular).groups;
+			Parameter.ConfVer = Number(Parameter.ConfVer);
 			Parameter.caller = processQuery(url, 'caller');
 			Parameter.platform = processQuery(url, 'pfm');
 			if (Parameter.caller == 'wlk' || Parameter.caller == "js") {
@@ -94,10 +143,12 @@ function getOrigin(url) {
 
 // Step 2
 // Create Tabs Group
-async function createTabsGroup() {
+async function createTabsGroup(Parameter) {
 	//構建Tab內容
 	let WatchNow = { "destinationType": "Target", "target": { "id": "tahoma_watchnow", "type": "Root", "url": "https://tv.apple.com/watch-now" }, "title": "立即觀看", "type": "WatchNow", "universalLinks": ["https://tv.apple.com/watch-now"] };
 	let Originals = { "destinationType": "Target", "target": { "id": "tvs.sbd.4000", "type": "Brand", "url": "https://tv.apple.com/us/channel/tvs.sbd.4000" }, "title": "原創內容", "type": "Originals", "universalLinks": ["https://tv.apple.com/channel/tvs.sbd.4000", "https://tv.apple.com/atv"] };
+	let Movies = { "universalLinks": ["https://tv.apple.com/movies"], "title": "電影", "destinationType": "Target", "secondaryEnabled": true, "target": { "id": "tahoma_movies", "type": "Root", "url": "https://tv.apple.com/movies" }, "type": "Movies" };
+	let TV = { "universalLinks": ["https://tv.apple.com/tv-shows"], "title": "電視節目", "destinationType": "Target", "secondaryEnabled": true, "target": { "id": "tahoma_tvshows", "type": "Root", "url": "https://tv.apple.com/tv-shows" }, "type": "TV" };
 	let Store = {
 		"destinationType": "SubTabs",
 		"subTabs": [{ "destinationType": "Target", "target": { "id": "tahoma_movies", "type": "Root", "url": "https://tv.apple.com/movies" }, "title": "電影", "type": "Movies", "universalLinks": ["https://tv.apple.com/movies"] }, { "destinationType": "Target", "target": { "id": "tahoma_tvshows", "type": "Root", "url": "https://tv.apple.com/tv-shows" }, "title": "電視節目", "type": "TV", "universalLinks": ["https://tv.apple.com/tv-shows"] }],
@@ -105,50 +156,54 @@ async function createTabsGroup() {
 		"type": "Store",
 		"universalLinks": ["https://tv.apple.com/store"]
 	};
-	let Sports = { "destinationType": "Target", "target": { "id": "tahoma_sports", "type": "Root", "url": "https://tv.apple.com/sports" }, "title": "體育節目", "type": "Sports", "universalLinks": ["https://tv.apple.com/sports"] };
+	let Sports = { "destinationType": "Target", "target": { "id": "tahoma_sports", "type": "Root", "url": "https://tv.apple.com/sports" }, "title": "體育節目", "secondaryEnabled": true, "type": "Sports", "universalLinks": ["https://tv.apple.com/sports"] };
 	let Kids = { "destinationType": "Target", "target": { "id": "tahoma_kids", "type": "Root", "url": "https://tv.apple.com/kids" }, "title": "兒童", "secondaryEnabled": true, "type": "Kids", "universalLinks": ["https://tv.apple.com/kids"] };
 	let Library = { "destinationType": "Client", "title": "資料庫", "type": "Library" };
-	let Search = { "destinationType": "Target", "target": { "id": "tahoma_searchlanding", "type": "Root", "url": "https://tv.apple.com/search" }, "title": "搜索", "type": "Search", "universalLinks": ["https://tv.apple.com/search"] };
+	let Search = { "destinationType": "Target", "target": { "id": "tahoma_searchlanding", "type": "Root", "url": "https://tv.apple.com/search" }, "title": "搜尋", "type": "Search", "universalLinks": ["https://tv.apple.com/search"] };
 
 	// 創建分組
-	const Tabs = [WatchNow, Originals, Store, Sports, Kids, Library, Search];
-	const TabsGroup = [WatchNow, Originals, Store, Sports, Library, Search];
+	var tabs = (Parameter.ConfVer > 53) ? [WatchNow, Originals, Store, Sports, Kids, Library, Search]
+		: [WatchNow, Originals, Movies, TV, Sports, Kids, Library, Search];
+	var tabsSplitScreen =  [WatchNow, Originals, Store, Library, Search];
+	
 	/*
-	 // 繁體中文改Tabs語言
-	 if (locale) var esl = locale.match(/[a-z]{2}_[A-Za-z]{2,3}/g)
-	 if (esl != "zh_Hans" || region != "CN") {
-		 if (platform == "iphone" || platform == "ipad") var maps = new Map([['立即觀看', 'Watch Now'], ['原創內容', 'Originals'], ['電影', 'Movies'], ['電視節目', 'TV'], ['體育節目', 'Sports'], ['兒童', 'Kids'], ['商店', 'Store'], ['資料庫', 'Library'], ['搜索', 'Search']])
-		 else var maps = new Map([['立即觀看', 'Watch Now'], ['Apple TV+', 'Apple TV+'], ['電影', 'Movies'], ['電視節目', 'TV'], ['體育節目', 'Sports'], ['兒童', 'Kids'], ['商店', 'Store'], ['資料庫', 'Library'], ['搜索', 'Search']]);
-		 Tabs = Tabs.map(element => { element.title = maps.get(element.title); return element; });
-	 };
-	 */
+	// 繁體中文改Tabs語言
+	if (locale) var esl = locale.match(/[a-z]{2}_[A-Za-z]{2,3}/g)
+	if (esl != "zh_Hant" || esl != "zh_Hant" || esl != "yue-Hant" || region != "CN") {
+		if (platform == "iphone" || platform == "ipad") var maps = new Map([['立即觀看', 'Watch Now'], ['原創內容', 'Originals'], ['電影', 'Movies'], ['電視節目', 'TV'], ['體育節目', 'Sports'], ['兒童', 'Kids'], ['商店', 'Store'], ['資料庫', 'Library'], ['搜尋', 'Search']])
+		else var maps = new Map([['立即觀看', 'Watch Now'], ['Apple TV+', 'Apple TV+'], ['電影', 'Movies'], ['電視節目', 'TV'], ['體育節目', 'Sports'], ['兒童', 'Kids'], ['商店', 'Store'], ['資料庫', 'Library'], ['搜尋', 'Search']]);
+		tabs = tabs.map(element => { element.title = maps.get(element.title); return element; });
+	};
+	*/
+	
 	// 輸出
-	return [Tabs, TabsGroup];
+	return [tabs, tabsSplitScreen];
 };
 
 // Step 3
 // Output Tabs Data
-function outputData(api, caller, platform, locale, region, body, Tabs, TabsGroup) {
+function outputData(Parameter, body, [tabs, tabsSplitScreen]) {
 	return new Promise((resolve) => {
 		// Input Data
 		let configurations = JSON.parse(body);
 		try {
 			//檢測版本
-			$.log(`⚠️ ${$.name}, ${outputData.name}檢測`, `API: ${api}`, '');
-			if (api == "v1") $.done()
-			else if (api == "v2") $.done()
-			else if (api == "v3") {
+			$.log(`⚠️ ${$.name}, ${outputData.name}檢測`, `API: ${Parameter.Version}`, '');
+			if (Parameter.Version == "v1") $.done()
+			else if (Parameter.Version == "v2") $.done()
+			else if (Parameter.Version == "v3") {
 				// 注入數據
 				//條件運算符 & 可選鏈操作符 
-				//configurations.data.applicationProps.requiredParamsMap.WithoutUtsk.locale = "zh_Hans";
-				//configurations.data.applicationProps.requiredParamsMap.Default.locale = "zh_Hans";
-				configurations.data.applicationProps.tabs = Tabs;
+				//configurations.data.applicationProps.requiredParamsMap.WithoutUtsk.locale = "zh_Hant";
+				//configurations.data.applicationProps.requiredParamsMap.Default.locale = "zh_Hant";
+				configurations.data.applicationProps.tabs = tabs;
 				//configurations.data.applicationProps.tabs = createTabsGroup("Tabs", caller, platform, locale, region);
-				configurations.data.applicationProps.tabsSplitScreen = TabsGroup;
+				if (Parameter.ConfVer > 53) configurations.data.applicationProps.tabsSplitScreen = tabsSplitScreen;
 				//configurations.data.applicationProps.tabsSplitScreen = createTabsGroup("TabsGroup", caller, platform, locale, region);
 				configurations.data.applicationProps.tvAppEnabledInStorefront = true;
-				configurations.data.applicationProps.enabledClientFeatures = [{ "domain": "tvapp", "name": "expanse" }, { "domain": "tvapp", "name": "syndication" }, { "domain": "tvapp", "name": "snwpcr" }, { "domain": "tvapp", "name": "store_tab" }];
-				configurations.data.applicationProps.storefront.localesSupported = ["zh_Hans", "zh_Hant", "yue-Hant", "en_US", "en_GB"];
+				configurations.data.applicationProps.enabledClientFeatures = (Parameter.ConfVer > 53) ? [{ "domain": "tvapp", "name": "snwpcr" }, { "domain": "tvapp", "name": "store_tab" }]
+					: [{ "domain": "tvapp", "name": "expanse" }, { "domain": "tvapp", "name": "syndication" }, { "domain": "tvapp", "name": "snwpcr" }];
+				configurations.data.applicationProps.storefront.localesSupported = ["zh_Hant", "yue-Hant", "en_US", "en_GB"];
 				//configurations.data.applicationProps.storefront.storefrontId = 143470;
 				configurations.data.applicationProps.featureEnablers = {
 					"topShelf": true,
@@ -174,7 +229,6 @@ function outputData(api, caller, platform, locale, region, body, Tabs, TabsGroup
 };
 
 /***************** Fuctions *****************/
-
 // Function 0
 // process Query URL
 // 查詢並替換自身,url為鏈接,variable為參數,parameter為新值(如果有就替換)
