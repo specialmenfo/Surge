@@ -12,8 +12,8 @@
         Surge:
 
         [Script]
-        HBO-Max-Dualsub = type=http-response,pattern=https:\/\/(manifests.v2.api.hbo.com|.+hbomaxcdn.com)\/(hls.m3u8.+|video.+\.vtt$),requires-body=1,max-size=0,timeout=30,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Dualsub/HBO-Max-Dualsub.js
-        HBO-Max-Dualsub-Setting = type=http-request,pattern=https:\/\/setting.hbomaxcdn.com\/vtt\?action=(get|set),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Dualsub/HBO-Max-Dualsub.js
+        HBO-Max-Dualsub = type=http-response,pattern=https:\/\/(manifests.v2.api.hbo.com|.+hbomaxcdn.com)\/(hls.m3u8.+|video.+\.vtt$),requires-body=1,max-size=0,timeout=30,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Dualsub/HBO-Max-Dualsub.js,script-update-interval=0
+        HBO-Max-Dualsub-Setting = type=http-request,pattern=https:\/\/setting.hbomaxcdn.com\/vtt\?action=(get|set),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Dualsub/HBO-Max-Dualsub.js,script-update-interval=0
 
         [MITM]
         hostname = *.api.hbo.com, *.hbomaxcdn.com
