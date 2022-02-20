@@ -9,7 +9,7 @@
         Surge:
 
         [Script]
-        YouTube-Subtrans = type=http-request,pattern=https:\/\/www.youtube.com\/api\/timedtext.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Dualsub/YouTube-Subtrans.js
+        YouTube-Subtrans = type=http-request,pattern=https:\/\/www.youtube.com\/api\/timedtext.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Dualsub/YouTube-Subtrans.js,script-update-interval=0
  
         [MITM]
         hostname = www.youtube.com
