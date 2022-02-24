@@ -1,7 +1,5 @@
 # Benz
 DOMAIN-SUFFIX,mercedes-benz.com
-USER-AGENT,benz*
-USER-AGENT,mercedes-benz*
 PROCESS-NAME,benz
 
 # JINGDONG
