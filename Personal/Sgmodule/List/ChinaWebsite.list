@@ -1,3 +1,10 @@
+# Benz
+DOMAIN,api.oneweb.mercedes-benz.com
+DOMAIN-SUFFIX,mercedes-benz.com
+USER-AGENT,benz*
+USER-AGENT,mercedes-benz*
+PROCESS-NAME,benz
+
 # JINGDONG
 DOMAIN-SUFFIX,3.cn
 DOMAIN-SUFFIX,300hu.com
