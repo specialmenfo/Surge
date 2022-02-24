@@ -1,5 +1,4 @@
 # Benz
-DOMAIN,api.oneweb.mercedes-benz.com
 DOMAIN-SUFFIX,mercedes-benz.com
 USER-AGENT,benz*
 USER-AGENT,mercedes-benz*
