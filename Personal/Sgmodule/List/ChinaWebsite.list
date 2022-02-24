@@ -1,6 +1,12 @@
 # Benz
+IP-CIDR,183.240.132.59/30
+DOMAIN,api.oneweb.mercedes-benz.com
+DOMAIN-SUFFIX,mbcac.net
+DOMAIN-SUFFIX,mercedes-benz.com
 DOMAIN-SUFFIX,mercedes-benz.com.cn
 PROCESS-NAME,benz
+PROCESS-NAME,usercentrics
+DOMAIN-KEYWORD,183.240.132.
 
 # JINGDONG
 DOMAIN-SUFFIX,3.cn
