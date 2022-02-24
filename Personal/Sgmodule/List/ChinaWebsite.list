@@ -1,10 +1,17 @@
 # Benz
 IP-CIDR,183.240.132.59/30
+IP-CIDR,120.232.174.114/30
 DOMAIN,api.oneweb.mercedes-benz.com
+DOMAIN,daimlergreaterchina.demdex.net
+DOMAIN,daimlergreaterchinal.tt.omtrdc.net
+DOMAIN,sundown-prod.risingstars-cn.daimler.com
 DOMAIN-SUFFIX,mbcac.net
 DOMAIN-SUFFIX,usercentrics.eu
 DOMAIN-SUFFIX,mercedes-benz.com
 DOMAIN-SUFFIX,mercedes-benz.com.cn
+DOMAIN-SUFFIX,tt.omtrdc.net
+DOMAIN-SUFFIX,demdex.net
+DOMAIN-SUFFIX,risingstars-cn.daimler.com
 PROCESS-NAME,benz
 PROCESS-NAME,mercedes-benz
 
