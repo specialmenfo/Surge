@@ -1,14 +1,13 @@
 /*
     Dualsub for Surge by Neurogram
  
-        - Disney+, Star+, HBO Max, Netflix bilingual subtitles
-        - Disney+, Star+, HBO Max Official subtitles support
-        - Disney+, Star+, HBO Max, Netflix Machine translation support (Google, DeepL)
+        - Disney+, Star+, HBO Max official bilingual subtitles
+        - Disney+, Star+, HBO Max, Netflix, Paramount+ machine translation bilingual subtitles (Google, DeepL)
         - YouTube subtitles auto-translate
         - Customized language support
  
     Manual:
-        Setting tool for Shortcuts: https://www.icloud.com/shortcuts/7b6ee34a64d9465f8abd8d1608251dca
+        Setting tool for Shortcuts: https://www.icloud.com/shortcuts/1e6f1b9e1726476a9c6203e907c398cb
 
         Surge:
 
@@ -19,16 +18,17 @@
         Dualsub-setting = type=http-request,pattern=https:\/\/(setting|www).(media.(dss|star)ott|hbomaxcdn|nflxvideo|youtube).(com|net)\/(\?action=(g|s)et|api\/timedtext.+),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Dualsub/ALLCC.js
 
         [MITM]
-        hostname = *.media.dssott.com, *.media.starott.com, *.api.hbo.com, *.hbomaxcdn.com, *.nflxvideo.net, *.youtube.com
+        hostname = *.media.dssott.com, *.media.starott.com, *.api.hbo.com, *.hbomaxcdn.com, *.nflxvideo.net, *.cbsaavideo.com, *.cbsivideo.com, *.youtube.com
 
+    Author:
+        Telegram: Neurogram
+        GitHub: Neurogram-R
 */
 
 let url = $request.url
 let headers = $request.headers
 
-let settings = $persistentStore.read()
-
-if (!settings) settings = {
+let default_settings = {
     Disney: {
         type: "Official", // Official, Google, DeepL, Disable
         lang: "English [CC]",
@@ -74,6 +74,21 @@ if (!settings) settings = {
         subtitles_tl: "null",
         subtitles_line: "null",
     },
+    Paramount: {
+        type: "Google", // Google, DeepL, Disable
+        lang: "English",
+        sl: "auto",
+        tl: "en",
+        line: "s", // f, s
+        dkey: "null", // DeepL API key
+        s_subtitles_url: "null",
+        t_subtitles_url: "null",
+        subtitles: "null",
+        subtitles_type: "null",
+        subtitles_sl: "null",
+        subtitles_tl: "null",
+        subtitles_line: "null",
+    },
     YouTube: {
         type: "Enable", // Enable, Disable
         lang: "English",
@@ -82,16 +97,22 @@ if (!settings) settings = {
     }
 }
 
+let settings = $persistentStore.read()
+
+if (!settings) settings = default_settings
+
 if (typeof (settings) == "string") settings = JSON.parse(settings)
 
 let service = ""
 if (url.match(/(dss|star)ott.com/)) service = "Disney"
 if (url.match(/hbo(maxcdn)*.com/)) service = "HBOMax"
 if (url.match(/nflxvideo.net/)) service = "Netflix"
+if (url.match(/cbs(aa|i)video.com/)) service = "Paramount"
 if (url.match(/youtube.com/)) service = "YouTube"
 
 if (!service) $done({})
 
+if (!settings[service]) settings[service] = default_settings[service]
 let setting = settings[service]
 
 if (url.match(/action=get/)) {
@@ -102,6 +123,7 @@ if (url.match(/action=get/)) {
 
 if (url.match(/action=set/)) {
     let new_setting = JSON.parse($request.body)
+    if (new_setting.type == "Reset") new_setting = default_settings[service]
     if (new_setting.type) settings[service].type = new_setting.type
     if (new_setting.lang) settings[service].lang = new_setting.lang
     if (new_setting.sl) settings[service].sl = new_setting.sl
@@ -126,9 +148,7 @@ if (setting.type == "Disable") $done({})
 if (service == "YouTube") {
     let patt = new RegExp(`lang=${setting.tl}`)
 
-    if (url.match(patt)) $done({})
-
-    if (url.match(/&tlang=/)) $done({})
+    if (url.match(patt) || url.match(/&tlang=/)) $done({})
 
     $done({ url: `${url}&tlang=${setting.tl == "zh-CN" ? "zh-Hans" : setting.tl == "zh-TW" ? "zh-Hant" : setting.tl}` })
 }
@@ -199,18 +219,18 @@ if (url.match(/\.vtt/) || service == "Netflix") {
 
 async function machine_subtitles(type) {
 
-    body = body.replace(/(\d+:\d\d:\d\d.\d\d\d -->.+line.+\n.+)\n(.+)/g, "$1 $2")
-    body = body.replace(/(\d+:\d\d:\d\d.\d\d\d -->.+line.+\n.+)\n(.+)/g, "$1 $2")
+    body = body.replace(/(\d+:\d\d:\d\d.\d\d\d --> \d+:\d\d:\d\d.\d.+\n.+)\n(.+)/g, "$1 $2")
+    body = body.replace(/(\d+:\d\d:\d\d.\d\d\d --> \d+:\d\d:\d\d.\d.+\n.+)\n(.+)/g, "$1 $2")
 
-    let dialogue = body.match(/\d+:\d\d:\d\d.\d\d\d -->.+line.+\n.+/g)
+    let dialogue = body.match(/\d+:\d\d:\d\d.\d\d\d --> \d+:\d\d:\d\d.\d.+\n.+/g)
 
     if (!dialogue) $done({})
 
-    let timeline = body.match(/\d+:\d\d:\d\d.\d\d\d -->.+line.+/g)
+    let timeline = body.match(/\d+:\d\d:\d\d.\d\d\d --> \d+:\d\d:\d\d.\d.+/g)
 
     let s_sentences = []
     for (var i in dialogue) {
-        s_sentences.push(`${type == "Google" ? "~" + i + "~" : "&text="}${dialogue[i].replace(/<\/*(c\.[^>]+|i)>/g, "").replace(/\d+:\d\d:\d\d.\d\d\d -->.+line.+\n/, "")}`)
+        s_sentences.push(`${type == "Google" ? "~" + i + "~" : "&text="}${dialogue[i].replace(/<\/*(c\.[^>]+|i)>/g, "").replace(/\d+:\d\d:\d\d.\d\d\d --> \d+:\d\d:\d\d.\d.+\n/, "")}`)
     }
     s_sentences = groupAgain(s_sentences, type == "Google" ? 80 : 50)
 
@@ -311,10 +331,10 @@ async function official_subtitles(subtitles_urls_data) {
         result.push(await send_request(options, "get"))
     }
 
-    body = body.replace(/(\d+:\d\d:\d\d.\d\d\d -->.+line.+\n.+)\n(.+)/g, "$1 $2")
-    body = body.replace(/(\d+:\d\d:\d\d.\d\d\d -->.+line.+\n.+)\n(.+)/g, "$1 $2")
+    body = body.replace(/(\d+:\d\d:\d\d.\d\d\d --> \d+:\d\d:\d\d.\d.+\n.+)\n(.+)/g, "$1 $2")
+    body = body.replace(/(\d+:\d\d:\d\d.\d\d\d --> \d+:\d\d:\d\d.\d.+\n.+)\n(.+)/g, "$1 $2")
 
-    let timeline = body.match(/\d+:\d\d:\d\d.\d\d\d -->.+line.+/g)
+    let timeline = body.match(/\d+:\d\d:\d\d.\d\d\d --> \d+:\d\d:\d\d.\d.+/g)
 
     for (var i in timeline) {
         let patt1 = new RegExp(`(${timeline[i]})`)
@@ -322,14 +342,14 @@ async function official_subtitles(subtitles_urls_data) {
 
         let time = timeline[i].match(/^\d+:\d\d:\d\d/)[0]
 
-        let patt2 = new RegExp(`${time}.\\d\\d\\d -->.+line.+(\\n.+)+`)
+        let patt2 = new RegExp(`${time}.\\d\\d\\d --> \\d+:\\d\\d:\\d\\d.\\d.+(\\n.+)+`)
 
         let dialogue = result.join("\n\n").match(patt2)
 
         if (dialogue) body = body.replace(
             patt1,
             `$1\n${dialogue[0]
-                .replace(/\d+:\d\d:\d\d.\d\d\d -->.+line.+\n/, "")
+                .replace(/\d+:\d\d:\d\d.\d\d\d --> \d+:\d\d:\d\d.\d.+\n/, "")
                 .replace(/\n/, " ")}`
         )
     }
