@@ -20,9 +20,6 @@
         [MITM]
         hostname = *.media.dssott.com, *.media.starott.com, *.api.hbo.com, *.hbomaxcdn.com, *.nflxvideo.net, *.cbsaavideo.com, *.cbsivideo.com, *.youtube.com
 
-    Author:
-        Telegram: Neurogram
-        GitHub: Neurogram-R
 */
 
 let url = $request.url
