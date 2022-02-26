@@ -1,25 +1,3 @@
-/*
-    Dualsub for Surge by Neurogram
- 
-        - Disney+, Star+, HBO Max official bilingual subtitles
-        - Disney+, Star+, HBO Max, Netflix, Paramount+ machine translation bilingual subtitles (Google, DeepL)
-        - YouTube subtitles auto-translate
-        - Customized language support
- 
-    Manual:
-        Setting tool for Shortcuts: https://www.icloud.com/shortcuts/1e6f1b9e1726476a9c6203e907c398cb
-
-        Surge:
-
-        [Script]
-
-        // all in one
-        Dualsub = type=http-response,pattern=https:\/\/(.+media.(dss|star)ott|manifests.v2.api.hbo|.+hbomaxcdn|.+nflxvideo).(com|net)\/((.+(.vtt|-all-.+.m3u8.*))|hls.m3u8.+|\?o=\d+&v=\d+&e=.+),requires-body=1,max-size=0,timeout=30,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Dualsub/ALLCC.js
-        Dualsub-setting = type=http-request,pattern=https:\/\/(setting|www).(media.(dss|star)ott|hbomaxcdn|nflxvideo|youtube).(com|net)\/(\?action=(g|s)et|api\/timedtext.+),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Dualsub/ALLCC.js
-
-        [MITM]
-        hostname = *.media.dssott.com, *.media.starott.com, *.api.hbo.com, *.hbomaxcdn.com, *.nflxvideo.net, *.cbsaavideo.com, *.cbsivideo.com, *.youtube.com
-
 */
 
 let url = $request.url
