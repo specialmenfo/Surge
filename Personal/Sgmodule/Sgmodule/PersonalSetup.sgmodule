@@ -132,6 +132,8 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Netflix.list,🌍 Netflix 專供
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Paramount%2B.list,🌏 Paramount+ 換區
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HBOGo%2B%2B.list,🌏 HBO Go 國際/香港換區
+RULE-SET,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt,🛑 廣告攔截
+DOMAIN-SET,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt,🛑 廣告攔截
 PROCESS-NAME,v2ray,🎯 全球直連
 PROCESS-NAME,xray,🎯 全球直連
 PROCESS-NAME,clash,🎯 全球直連
