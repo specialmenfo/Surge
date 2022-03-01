@@ -415,3 +415,123 @@ cdn.pcbeta.css.inimc.com = 120.52.19.113
 cdn.pcbeta.static.inimc.com = 120.52.19.113
 hdslb.com = server:119.29.29.29
 api.cloudflareclient.com = server:1.1.1.1
+
+[URL Rewrite]
+# 只作用於Apple Maps，不修改定位服務和地區檢測，可以通過搭配使用其他模塊達成混合效果
+# Redirect Apple Maps to 🇺🇳I18N
+^https?:\/\/gspe\d*-ssl\.ls\.apple\.)(com|cn)(\/.*)(country_code=[A-Z]{2})(.*) $1$2$3country_code=CN$5 header
+^https?:\/\/gspe\d*-ssl\.ls\.apple\.)(com|cn)(\/.*)(environment=[a-z/-]{4,})(.*) $1$2$3environment=prod$5 header
+
+[Script]
+動畫瘋簽到 = type=cron,cronexp=0 8 * * *,wake-system=1,timeout=30,script-path=動畫瘋簽到.js
+取關京東店鋪商品 = type=cron,cronexp=55 23 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/JD/jd_unsubscribe.js,script-update-interval=0
+京東資產變動通知 = type=cron,cronexp=2 9 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/JD/jd_bean_change.js,script-update-interval=0
+# 聚合CC
+Dualsub = type=http-response,pattern=https:\/\/.*(media.(dss|star)ott|manifests.v2.api.hbo|hbomaxcdn|nflxvideo|cbs(aa|i)video).(com|net)\/((.+(\.vtt(\?m=\d+)*|-all-.+.m3u8.*))|hls.m3u8.+|\?o=\d+&v=\d+&e=.+),requires-body=1,max-size=0,timeout=30,script-path=Dualsub.js
+Dualsub-setting = type=http-request,pattern=https:\/\/(setting|www).(media.dssott|hbomaxcdn|nflxvideo|youtube|cbsivideo).(com|net)\/(\?action=(g|s)et|api\/timedtext.+),requires-body=1,max-size=0,script-path=Dualsub.js
+# 騰訊視頻 *.video.qq.com
+# 1.手機瀏覽器訪問並登錄: https://film.qq.com/
+videoqq.cookie.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/TVideo/videoqq.cookie.js,type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh
+videoqq.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/TVideo/videoqq.js,type=cron,cronexp=10 0 0 * * *
+# 愛奇藝
+# Safari瀏覽器打開 https://m.iqiyi.com/user.html 使用密碼登錄, 如通知成功獲取cookie則可使用該腳本
+愛奇藝簽到 = type=cron,cronexp=10 10 0 * * *,timeout=120,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js,script-update-interval=0
+愛奇藝獲取Cookie = type=http-request,pattern=^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js,requires-body=0,script-update-interval=0
+# Sub-Store
+# 訪問https://sub-store.vercel.app/?#/管理
+Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Peng-YM-sub-store.min.js,requires-body=true,timeout=120,max-size=131072
+# 多賬號Cookie保存切換
+# 訪問: http://boxjs.com管理
+BoxJs = type=http-request,pattern=^https?://boxjs.net,script-path=BoxJs.js,requires-body=1,timeout=120,max-size=0,script-update-interval=0
+# TestFlight解除區域限制
+TestFlight Unlock = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/TestFlight_Unlock.js
+# 嗶哩嗶哩, 港澳台番劇自動切換地區 & 顯示豆瓣評分
+Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Bili_Auto_Regions.js,script-update-interval=0
+# 可選, 適用於搜索指定地區的番劇
+# 如需搜索指定地區番劇, 可在搜索框添加後綴" 港", " 台", " 中". 例如: 進擊的巨人 港(後面空格加上港、台、中）
+# 台灣動漫需要以繁體中文搜索 否則搜不出來
+Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Bili_Auto_Regions.js,requires-body=0,script-update-interval=0
+# Netflix評分
+netflix_rating.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/netflix_rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+netflix_rating.js = requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/netflix_rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+# EMBY 破解
+EmbyPremiere = type=http-response,script-path=https://subweb.s3.fr-par.scw.cloud/Script/embyPremiere.js,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,max-size=131072,requires-body=1,timeout=10,enable=true,script-update-interval=0
+# Spotify Premium
+spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/app2smile-spotify-proto.js,script-update-interval=0
+# 彩雲天氣_SVIP
+彩雲天氣_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/nxyd_caiyun_svip.js
+# 酷我VIP
+酷我vip解鎖 = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Kuwo.js,script-update-interval=0
+# 百度防跳轉App Store
+百度防跳轉 = type=http-response,pattern=^https:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/app2smile_baidu-no-redirect.js
+# 京東
+# 獲取 Cookie: https://bean.m.jd.com/bean/signIndex.action
+# 使用方法：複製上方網址到瀏覽器打開 ，點擊個人中心自動獲取 cookie
+# 獲取京東金融簽到Body Cookie 說明: 正確添加腳本配置後, 進入"京東金融"APP, 在"首頁"點擊"簽到"並簽到一次, 待通知提示成功即可.
+# 由於cookie的有效性(經測試網頁Cookie有效週期最長31天)，如果腳本後續彈出cookie無效的通知，則需要重復上述步驟。
+# 若彈出成功則正常使用。否則繼續再此頁面繼續刷新一下試試。
+# 如果還不行，請使用Safari瀏覽器打開登錄 https://home.m.jd.com/myJd/newhome.action 點擊"我的"頁面
+# 或者使用 https://home.m.jd.com/myJd/newhome.action 點擊簽到並且出現簽到日曆
+# 如果通知獲取Cookie成功, 則可以使用此簽到腳本. 注: 請勿在京東APP內獲取!!!
+京東多合一簽到 = type=cron,cronexp=0 0 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/JD/JD_DailyBonus.js,script-update-interval=0
+獲取京東Cookie = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/JD/JD_DailyBonus.js,max-size=0,script-update-interval=0
+# Enable All TV app Tabs
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,requires-body=1,timeout=3,tag=Apple_TV,type=http-response,pattern=^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/configurations\?.*,max-size=0,script-update-interval=0
+# TV app Tabs, Redirect Desktop Platform to AppleTV, Redirect Sports and Kids Tabs StoreFront to US (143441)
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/canvases\/Roots\/(watchNow|tahoma_watchnow|movies|tv|sports|kids)\?.*,requires-body=0,script-update-interval=0
+# TV app movies and shows and sports infomation Webs, Redirect Desktop Platform to AppleTV
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/(movies|shows|sports|sporting-events).*,requires-body=0,script-update-interval=0
+# TV UpNext, Redirect Desktop Platform to AppleTV
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/shelves\/uts.col.UpNext.*,requires-body=0,script-update-interval=0
+# TV channels, Redirect StoreFront to US (143441)
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/brands\?.*,requires-body=0,script-update-interval=0
+# TV Live Playables, Redirect StoreFront to US (143441)
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/playables.*,requires-body=0,script-update-interval=0
+# TV Favorites Teams web, Redirect StoreFront to US (143441)
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/favorites\?.*,requires-body=0,script-update-interval=0
+# TV Watchlist Function, Redirect desktop Platform to iPad
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/watchlist.*,requires-body=0,script-update-interval=0
+# Enable TV Favorites Teams Function, Redirect StoreFront to US (143441)
+Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,requires-body=1,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/favorites\/(add|remove).*,max-size=0,script-update-interval=0
+# TV Product View, no Redirect
+// Apple_TV.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_TV.js,timeout=3,tag=Apple_TV,type=http-request,pattern=^https?:\/\/(uts-api\.itunes\.apple\.com|uts-api-cdn\.itunes-apple\.com\.akadns\.net|uts-api\.itunes\.apple\.com\.edgesuite\.net|a1956\.dscb\.akamai\.net)\/uts\/(v1|v2|v3)\/view\/product\/.*
+# Apple Weather
+Apple_Weather.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_Weather.beta.js,requires-body=1,tag=Apple_Weather,type=http-response,pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather.*(?!dataSets=forecastNextHour)(include=.*air_quality.*|dataSets=.*airQuality.*).*(country=[A-Z]{2})?.*,max-size=0,script-update-interval=0
+# 修改定位服務(Location Services)配置文件(Configs)和GCC(Geo Country Code)檢測結果
+# Response Location Services Geo Country Code Check Result to US
+Location_Services.beta = type=http-request,pattern=^https?:\/\/gspe\d*-ssl\.ls\.apple\.com(\/pep\/gcc),requires-body=0,binary-body-mode=0,max-size=0,script-update-interval=0,argument=GeoCountryCode=US,script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Location_Services.beta.js
+# Rewrite Location Services Configuration Functions Internationalization
+Location_Services.beta = type=http-request,pattern=^https?:\/\/configuration\.ls\.apple\.com(\/config\/defaults\?).*,requires-body=0,binary-body-mode=0,max-size=0,script-update-interval=0,script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Location_Services.beta.js
+Location_Services.beta = type=http-response,pattern=^https?:\/\/configuration\.ls\.apple\.com(\/config\/defaults\?).*,requires-body=1,binary-body-mode=0,max-size=0,script-update-interval=0,argument=EnableAlberta=false&GEOAddressCorrectionEnabled=true&LocalitiesAndLandmarksSupported=true&PedestrianAREnabled=true&ShouldEnableLagunaBeach=true,script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Location_Services.beta.js
+# Rewrite AutoNavi Dispatcher from com.apple.compass
+Location_Services.beta = type=http-request,pattern=^https?:\/\/dispatcher\.is\.autonavi\.com(\/dispatcher),requires-body=1,binary-body-mode=1,max-size=0,script-update-interval=0,script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Location_Services.beta.js
+# 在聚焦搜索(Spotlight)和查詢(Look Up)中啓用Siri建議(Siri Suggestions)功能
+# Redirect Siri Suggestions Service
+# Bag (iOS/macOS)
+Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/bag\?(.*)
+# Spotlight & Look Up Search (iOS/macOS)
+Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/search\?(.*)
+# Siri Infomation Card (macOS)
+Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Siri_Suggestions.js,timeout=3,tag=Siri_Suggestions,type=http-request,pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/card\?(.*)
+# 解鎖🇺🇸US地區的News，注：需配合域名集使用，使用過程中gateway.icloud.com需走代理線路
+Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_News.js,requires-body=true,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(edge|events)\.apple\.com\/(v1\/configs|analyticseventsv2\/async).*
+Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_News.js,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(client-search)\.apple\.com\/(v1\/search\?).*
+# Panel
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/sub_info_panel.js,script-update-interval=0,argument=url=https://api.v1.mk/sub?target=surge&ver=4&url=https%3A%2F%2Fsublink.online%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Da387db9f9e6edcfba9a71dae7c421f78&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FMeilieage%2Fwebcdn%2Fmain%2Frule%2FArea_Media_NoAuto.ini&emoji=true&list=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&sort=false&reset_day=27&title=主用&icon=bonjour&color=#007aff
+Sub_info 1 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/sub_info_panel.js,script-update-interval=0,argument=url=https://api.v1.mk/sub?target=surge&ver=4&url=https%3A%2F%2Fwxma2nua.bygcloud.com%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Dd5f1aa771b3353739d4d243cb9f2a05e&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FMeilieage%2Fwebcdn%2Fmain%2Frule%2FArea_Media_NoAuto.ini&emoji=true&list=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&sort=false&reset_day=27&title=備用&icon=bonjour&color=#007aff
+disney_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/disney_check.js?version=1637153952428
+reload.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/reload.js,type=generic
+flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/zZPiglet_flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
+nf_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/NetflixCheck.js,argument=title=Netflix 影劇版權IP鎖測試
+
+[Panel]
+Sub_info = script-name=Sub_info,update-interval=600
+Sub_info 1 = script-name=Sub_info 1,update-interval=600
+Profile-Reload = title=Profile Reload,content=點擊以重新整理,style=info,script-name=reload.js,update-interval=-1
+flushDNS = script-name=flushDNS,update-interval=600
+nf_check = script-name=nf_check,title=Netflix 影劇版權IP鎖測試,style=alert,content=請刷新,update-interval=1800
+disney_check = script-name=disney_check,title=Disney+ 影劇版權IP鎖測試,style=alert,content=請刷新,update-interval=1800
+
+[MITM]
+tcp-connection = true
+hostname = %INSERT% m.gdoil.cn, sub.store, ap?.bilibili.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, app.bilibili.com, grpc.biliapi.net, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, spclient.wg.spotify.com, biz.caiyunapp.com, vip1.kuwo.cn, *.baidu.com, boxer.baidu.com, magev6.if.qidian.com, api.zhihu.com, www.zhihu.com, api-access.pangolin-sdk-toutiao.com, news.ssp.qq.com, r.inews.qq.com, us.l.qq.com, mi.gdt.qq.com, h5.ele.me, ccsp-egmas.sf-express.com, music.163.com, ms.jr.jd.com, me-api.jd.com, api.m.jd.com, ifac*.iqiyi.com, *.video.qq.com, maicai.api.ddxq.mobi, testflight.apple.com, pan.baidu.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mb3admin.com, -*snssdk.com, -*amemv.com, j-image.missfresh.cn, m.ads.8le8le.com, iadmusicmat.music.com, ma-adx.ctrip.com, m.ctrip.com, appconf.mail.163.com, analytics.163.com, api.21jingji.com, service.4gtv.tv, app.58.com, pic?.ajkimg.com, gw.alicdn.com, acs.m.taobao.com, m*.amap.com, gw.kaola.com, api-new.app.acfun.cn, issuecdn.baidupcs.com, newclient.map.baidu.com, mime.baidu.com, app.api.ke.com, m.client.10010.com, cloud.189.cn, www.cntv.com, api.chelaile.net.cn, web.chelaile.net.cn, app-gw.csdn.net, m.ctrip.com, app.dewu.com, api.douban.com, rtbapi.douyucdn.cn, api.dangdang.com, e.dangdang.com, daoyu.sdo.com, capis*.didapinche.com, *-release.wuta-cam.com, *.googlevideo.com, www.youtube.com, s.youtube.com, business.msstatic.com, ib-soft.net, list-app-m.i4.cn, api.jxedt.com, *.kakamobi.cn, *.kingsoft-office-service.com, api.gotokeep.com, api.kkmh.com, api.m.mi.com, api.jr.mi.com, api-mifit.huami.com, home.mi.com, appconf.mail.163.com, interface*.music.163.com, support.you.163.com, p.du.163.com, gfp.veta.naver.com, tqt.weibo.cn, *.k.sohu.com, *.tv.sohu.com, ap*.smzdm.com, gw-passenger.01zhuanche.com, mpcs.suning.com, ccsp-egmas.sf-express.com, shopic.sf-express.com, m.tuniu.com, img*.10101111cdn.com, msg.umengcloud.com, api.vuevideo.net, thor.weidian.com, api.waitwaitpay.com, api.xiachufang.com, api.yizhibo.com, a.qiumibao.com, *.zhuishushenqi.com, syh.zybang.com, api.izuiyou.com, tiku.zhan.com, bank.wo.cn, cdn.kuaidi100.com, clientaccess.10086.cn, cloud.189.cn, connect.facebook.net, fb.fbstatic.cn, m1.ad.10010.com, mp.weixin.qq.com, mps.95508.com, p.kuaidi100.com, pic1cdn.cmbchina.com, res.mall.10010.cn, s3plus.meituan.net, mobile-pic.cache.iciba.com, dict-mobile.iciba.com, service.iciba.com, smusic.app.wechat.com, szextshort.weixin.qq.com, thor.weidian.com, tiasdk.app.wechat.com, wmapi.meituan.com, www.cmbc.com.cn, zjh5api.189smarthome.com, zt-app.go189.cn, flowplus.meituan.net, img.meituan.net, p*.meituan.net, basejumper.apple.com, mesu.apple.com, lcdn-registration.apple.com, init.ess.apple.com, init-p01md.apple.com, cdn.apple-mapkit.com, gs-loc.apple.com, gs-loc-cn.apple.com, cl4-cn.apple.com, *.smoot.apple.com, *.smoot.apple.cn, lookup-api.apple.com, *.ls.apple.com, *.is.autonavi.com, c.apple.news, news-assets.apple.com, news-client.apple.com, news-client-search.apple.com, news-edge.apple.com, news-events.apple.com, newsletter-edge.apple.com, weather-data.apple.com, weather-data-origin.apple.com, weather-map.apple.com, weather-edge.apple.com, apple-finance.query.yahoo.com, stocks-sparkline.apple.com, stocks-edge.apple.com, upp.itunes.apple.com, sb.music.apple.com, js-cdn.music.apple.com, p42-mailws.icloud.com, p42-contacts.icloud.com, p68-caldav.icloud.com, p68-availability.icloud.com, p68-fmf.icloud.com, p68-fmfmobile.icloud.com, p68-streams.icloud.com, p102-acsegateway.icloud.com, -amp-api.videos.apple.com, -music.apple.com, -amp-api.music.apple.com, -bag.itunes.apple.com, -init.itunes.apple.com, -play.itunes.apple.com, -pd.itunes.apple.com, -se2.itunes.apple.com, -sp.itunes.apple.com, -client-api.itunes.apple.com, -configuration.apple.com, -swallow.apple.com, -cl4.apple.com, -cl5.apple.com, -updates.cdn-apple.com, -smp-device-content.apple.com, -pr-pod2-smp-device.apple.com, -init.homekit.push.apple.com, -*.fitness.apple.com, -gateway.icloud.com, -metrics.icloud.com, -metrics-config.icloud.com, -p68-fmip.icloud.com, -p102-quota.icloud.com, -p102-content.icloud.com, -*.icloud-content.com, -*.mzstatic.com, ccsp-egmas.sf-express.com, passport.iqiyi.com, uts-api.itunes.apple.com, uts-api-cdn.itunes-apple.com.akadns.net, uts-api.itunes.apple.com.edgesuite.net, a1956.dscb.akamai.net, mp.weixin.qq.com, *.media.dssott.com, *.media.starott.com, *.api.hbo.com, *.hbomaxcdn.com, *.nflxvideo.net, *.cbsaavideo.com, *.cbsivideo.com, *.youtube.com, mb3admin.com
