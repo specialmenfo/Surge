@@ -423,12 +423,6 @@ api.cloudflareclient.com = server:1.1.1.1
 ^https?:\/\/gspe\d*-ssl\.ls\.apple\.)(com|cn)(\/.*)(environment=[a-z/-]{4,})(.*) $1$2$3environment=prod$5 header
 
 [Script]
-動畫瘋簽到 = type=cron,cronexp=0 8 * * *,wake-system=1,timeout=30,script-path=動畫瘋簽到.js
-取關京東店鋪商品 = type=cron,cronexp=55 23 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/JD/jd_unsubscribe.js,script-update-interval=0
-京東資產變動通知 = type=cron,cronexp=2 9 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/JD/jd_bean_change.js,script-update-interval=0
-# 聚合CC
-Dualsub = type=http-response,pattern=https:\/\/.*(media.(dss|star)ott|manifests.v2.api.hbo|hbomaxcdn|nflxvideo|cbs(aa|i)video).(com|net)\/((.+(\.vtt(\?m=\d+)*|-all-.+.m3u8.*))|hls.m3u8.+|\?o=\d+&v=\d+&e=.+),requires-body=1,max-size=0,timeout=30,script-path=Dualsub.js
-Dualsub-setting = type=http-request,pattern=https:\/\/(setting|www).(media.dssott|hbomaxcdn|nflxvideo|youtube|cbsivideo).(com|net)\/(\?action=(g|s)et|api\/timedtext.+),requires-body=1,max-size=0,script-path=Dualsub.js
 # 騰訊視頻 *.video.qq.com
 # 1.手機瀏覽器訪問並登錄: https://film.qq.com/
 videoqq.cookie.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/TVideo/videoqq.cookie.js,type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh
@@ -440,9 +434,6 @@ videoqq.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/ma
 # Sub-Store
 # 訪問https://sub-store.vercel.app/?#/管理
 Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Peng-YM-sub-store.min.js,requires-body=true,timeout=120,max-size=131072
-# 多賬號Cookie保存切換
-# 訪問: http://boxjs.com管理
-BoxJs = type=http-request,pattern=^https?://boxjs.net,script-path=BoxJs.js,requires-body=1,timeout=120,max-size=0,script-update-interval=0
 # TestFlight解除區域限制
 TestFlight Unlock = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/TestFlight_Unlock.js
 # 嗶哩嗶哩, 港澳台番劇自動切換地區 & 顯示豆瓣評分
