@@ -516,21 +516,6 @@ Siri_Suggestions.js = script-path=https://raw.githubusercontent.com/VirgilClyne/
 # 解鎖🇺🇸US地區的News，注：需配合域名集使用，使用過程中gateway.icloud.com需走代理線路
 Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_News.js,requires-body=true,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(edge|events)\.apple\.com\/(v1\/configs|analyticseventsv2\/async).*
 Apple_News.js = script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/beta/js/Apple_News.js,tag=Apple_News,type=http-request,pattern=^https?:\/\/news-(client-search)\.apple\.com\/(v1\/search\?).*
-# Panel
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/sub_info_panel.js,script-update-interval=0,argument=url=https://api.v1.mk/sub?target=surge&ver=4&url=https%3A%2F%2Fsublink.online%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Da387db9f9e6edcfba9a71dae7c421f78&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FMeilieage%2Fwebcdn%2Fmain%2Frule%2FArea_Media_NoAuto.ini&emoji=true&list=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&sort=false&reset_day=27&title=主用&icon=bonjour&color=#007aff
-Sub_info 1 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/sub_info_panel.js,script-update-interval=0,argument=url=https://api.v1.mk/sub?target=surge&ver=4&url=https%3A%2F%2Fwxma2nua.bygcloud.com%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Dd5f1aa771b3353739d4d243cb9f2a05e&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FMeilieage%2Fwebcdn%2Fmain%2Frule%2FArea_Media_NoAuto.ini&emoji=true&list=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&sort=false&reset_day=27&title=備用&icon=bonjour&color=#007aff
-disney_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/disney_check.js?version=1637153952428
-reload.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/reload.js,type=generic
-flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/zZPiglet_flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
-nf_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/NetflixCheck.js,argument=title=Netflix 影劇版權IP鎖測試
-
-[Panel]
-Sub_info = script-name=Sub_info,update-interval=600
-Sub_info 1 = script-name=Sub_info 1,update-interval=600
-Profile-Reload = title=Profile Reload,content=點擊以重新整理,style=info,script-name=reload.js,update-interval=-1
-flushDNS = script-name=flushDNS,update-interval=600
-nf_check = script-name=nf_check,title=Netflix 影劇版權IP鎖測試,style=alert,content=請刷新,update-interval=1800
-disney_check = script-name=disney_check,title=Disney+ 影劇版權IP鎖測試,style=alert,content=請刷新,update-interval=1800
 
 [MITM]
 tcp-connection = true
