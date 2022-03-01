@@ -2,7 +2,6 @@
 #!desc= General,Replica,Proxy,Proxy Group,Rule,Host
 
 [General]
-# 屏蔽廣告版
 # INTERNET 測試 URL
 internet-test-url = http://wifi.vivo.com.cn/generate_204
 # 代理測速 URL
@@ -47,7 +46,6 @@ geoip-maxmind-url = https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mm
 exclude-simple-hostnames = true
 
 [Replica]
-hide-udp = 1
 keyword-filter-type = whitelist
 hide-apple-request = 1
 hide-crash-reporter-request = 1
