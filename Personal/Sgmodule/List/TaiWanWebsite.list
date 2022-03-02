@@ -302,23 +302,6 @@ DOMAIN-SUFFIX,friday.tw
 DOMAIN-SUFFIX,fridaylogger.com
 DOMAIN,aka01p.akamaized.net
 
-# Garena
-DOMAIN-SUFFIX,avatargarenanow-a.akamaihd.net
-DOMAIN-SUFFIX,cdngarenanow-a.akamaihd.net
-DOMAIN-SUFFIX,dlmobilegarena-a.akamaihd.net
-DOMAIN-SUFFIX,garena.co.id
-DOMAIN-SUFFIX,garena.co.th
-DOMAIN-SUFFIX,garena.com
-DOMAIN-SUFFIX,garena.live
-DOMAIN-SUFFIX,garena.my
-DOMAIN-SUFFIX,garena.ph
-DOMAIN-SUFFIX,garena.sg
-DOMAIN-SUFFIX,garena.tv
-DOMAIN-SUFFIX,garena.tw
-DOMAIN-SUFFIX,garena.vn
-DOMAIN-SUFFIX,garenanow.com
-DOMAIN-SUFFIX,seagroup.com
-
 # Kinta
 DOMAIN-SUFFIX,kinta.ma
 
