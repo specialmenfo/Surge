@@ -995,6 +995,7 @@ DOMAIN-SUFFIX,wmsjsteam.com
 DOMAIN-SUFFIX,pvp.net
 DOMAIN-SUFFIX,riotcdn.net
 DOMAIN-SUFFIX,riotgames.com
+IP-CIDR,35.160.0.0/13,no-resolve
 IP-CIDR,104.16.0.0/12,no-resolve
 IP-CIDR,172.64.0.0/13,no-resolve
 
