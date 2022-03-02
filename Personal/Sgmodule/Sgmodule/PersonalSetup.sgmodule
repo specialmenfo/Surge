@@ -50,17 +50,6 @@ keyword-filter-type = whitelist
 hide-apple-request = 1
 hide-crash-reporter-request = 1
 
-[Proxy]
-DIRECT = direct
-🌍 Cloudflare Teams WireGuard 1 = wireguard, section-name=Cloudflare Teams WireGuard 1
-🌍 Cloudflare Teams WireGuard 2 = wireguard, section-name=Cloudflare Teams WireGuard 2
-🌍 Cloudflare Teams WireGuard 3 = wireguard, section-name=Cloudflare Teams WireGuard 3
-🌍 Cloudflare Teams WireGuard 4 = wireguard, section-name=Cloudflare Teams WireGuard 4
-🌍 Cloudflare Teams WireGuard 5 = wireguard, section-name=Cloudflare Teams WireGuard 5
-🌍 Cloudflare Teams WireGuard 6 = wireguard, section-name=Cloudflare Teams WireGuard 6
-🌍 Cloudflare Teams WireGuard 7 = wireguard, section-name=Cloudflare Teams WireGuard 7
-🌍 Cloudflare Teams WireGuard 8 = wireguard, section-name=Cloudflare Teams WireGuard 8
-
 [Proxy Group]
 🌍 BiliBili 換區 = select, 🎯 全球直連, 🇭🇰 香港節點, 🇹🇼 台灣節點, 👋 手動選擇, no-alert=0, hidden=0
 🌏 Viu 換區 = select, 🇭🇰 香港節點, 🇸🇬 獅城節點, 🇵🇭 菲律賓節點, 🇹🇭 泰國節點, 🇻🇳 越南節點, 🇮🇩 印尼節點, 🛑 廣告攔截, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0
