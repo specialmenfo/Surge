@@ -50,57 +50,6 @@ keyword-filter-type = whitelist
 hide-apple-request = 1
 hide-crash-reporter-request = 1
 
-[Proxy Group]
-🌍 BiliBili 換區 = select, 🎯 全球直連, 🇭🇰 香港節點, 🇹🇼 台灣節點, 👋 手動選擇, no-alert=0, hidden=0
-🌏 Viu 換區 = select, 🇭🇰 香港節點, 🇸🇬 獅城節點, 🇵🇭 菲律賓節點, 🇹🇭 泰國節點, 🇻🇳 越南節點, 🇮🇩 印尼節點, 🛑 廣告攔截, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0
-🌏 Paramount+ 換區 = select, 🇦🇺 澳洲節點, 🇺🇲 美國節點, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0
-🌏 HBO Go 國際換區 = select, 🇹🇼 台灣節點, 🇭🇰 香港節點, 🇸🇬 獅城節點, 🇦🇺 澳洲節點, 🇵🇭 菲律賓節點, 🇹🇭 泰國節點, 🇻🇳 越南節點, 🇮🇩 印尼節點, 🛑 廣告攔截, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0
-🌏 HBO Go 國際/香港換區 = select, 🇹🇼 台灣節點, 🇭🇰 香港節點, 🇸🇬 獅城節點, 🇵🇭 菲律賓節點, 🇹🇭 泰國節點, 🇻🇳 越南節點, 🇮🇩 印尼節點, 🛑 廣告攔截, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0
-🌍 DAZN 專供 = url-test, no-alert=1, hidden=0, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=日本Sonet 01|加拿大Limewave 01
-🌍 EMBY 專供 = url-test, 🌍 Cloudflare WireGuard, no-alert=1, hidden=0
-🌍 Netflix 專供 = url-test, no-alert=1, hidden=0, policy-path=https://sub.store/download/Netflix, update-interval=0, persistent=0
-🌍 Cloudflare WireGuard = url-test, 🌍 Cloudflare Teams WireGuard 1, 🌍 Cloudflare Teams WireGuard 2, 🌍 Cloudflare Teams WireGuard 3, 🌍 Cloudflare Teams WireGuard 4, 🌍 Cloudflare Teams WireGuard 5, 🌍 Cloudflare Teams WireGuard 6, 🌍 Cloudflare Teams WireGuard 7, 🌍 Cloudflare Teams WireGuard 8, no-alert=1, hidden=0, update-interval=0, policy-path=https://sub.store/download/Menfo, policy-regex-filter=🇺🇸 Cloudflare, persistent=0
-🎯 全球直連 = select, DIRECT, no-alert=0, hidden=0
-👋 手動選擇 = select, 🌍 Cloudflare WireGuard, DIRECT, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=Cloudflare|🇭🇰|🇲🇴|🇹🇼|🇯🇵|🇺🇸|🇸🇬|🇰🇷|🇦🇺|🇬🇧|🇵🇭|🇷🇺|🇧🇷|🇹🇭|🇻🇳|🇮🇩|🇨🇭|🇸🇪|🇳🇱|🇫🇷|🇩🇪|🇮🇳|🇨🇦|🇦🇷|🇹🇷|🇭🇺|🇮🇹|🇵🇰|🇪🇪|🇿🇦|🇮🇱|🇱🇺|🇮🇪|🇦🇪|🇲🇾
-🐟 漏網之魚 = url-test, 🇭🇰 香港節點, 🌍 Cloudflare WireGuard, 🇹🇼 台灣節點, 🇯🇵 日本節點, 🇸🇬 獅城節點, 🇺🇲 美國節點, 🇰🇷 韓國節點, 🇲🇴 澳門節點, 🇦🇺 澳洲節點, 🇬🇧 英國節點, 🇵🇭 菲律賓節點, 🇷🇺 俄羅斯節點, 🇧🇷 巴西節點, 🇹🇭 泰國節點, 🇻🇳 越南節點, 🇮🇩 印尼節點, 🇨🇭 瑞士節點, 🇳🇱 荷蘭節點, 🇫🇷 法國節點, 🇮🇳 印度節點, 🇩🇪 德國節點, 🇨🇦 加拿大節點, 🇦🇷 阿根廷節點, 🇹🇷 土耳其節點, 🇮🇹 義大利節點, 🇵🇰 巴基斯坦節點, 🇪🇪 愛沙尼亞節點, no-alert=1, hidden=0
-🛑 廣告攔截 = select, REJECT, no-alert=0, hidden=0
-🇭🇰 香港Website = select, 🇭🇰 香港節點, 🌍 Cloudflare WireGuard, no-alert=1, hidden=0, update-interval=0
-🇹🇼 台灣Website = select, 🇹🇼 台灣節點, 👋 手動選擇, no-alert=1, hidden=0, update-interval=0
-🇯🇵 日本Website = select, 🇯🇵 日本節點, 👋 手動選擇, no-alert=1, hidden=0, update-interval=0
-🇺🇸 美國Website = url-test, 🇺🇲 美國節點, 🌍 Cloudflare WireGuard, no-alert=1, hidden=0, update-interval=0
-🇬🇧 英國Website = select, 🇬🇧 英國節點, 👋 手動選擇, no-alert=1, hidden=0, update-interval=0
-🇧🇷 巴西Website = select, 🇧🇷 巴西節點, 👋 手動選擇, no-alert=1, hidden=0, update-interval=0
-🇸🇬 新加坡Website = select, 🇸🇬 獅城節點, 👋 手動選擇, no-alert=1, hidden=0, update-interval=0
-🇷🇺 俄羅斯Website = select, 🇷🇺 俄羅斯節點, 👋 手動選擇, no-alert=1, hidden=0, update-interval=0
-🇹🇷 土耳其Website = select, 🇹🇷 土耳其節點, 👋 手動選擇, no-alert=1, hidden=0, update-interval=0
-🇵🇭 菲律賓Website = select, 🇵🇭 菲律賓節點, 👋 手動選擇, no-alert=1, hidden=0, update-interval=0
-🇭🇰 香港節點 = url-test, no-alert=1, hidden=0, persistent=0, update-interval=0, policy-path=https://sub.store/download/Menfo, policy-regex-filter=🇭🇰
-🇹🇼 台灣節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇹🇼
-🇯🇵 日本節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇯🇵
-🇸🇬 獅城節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇸🇬
-🇺🇲 美國節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇺🇸|Cloudflare
-🇰🇷 韓國節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇰🇷
-🇲🇴 澳門節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇲🇴
-🇦🇺 澳洲節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇦🇺
-🇬🇧 英國節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇬🇧
-🇧🇷 巴西節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇧🇷
-🇹🇭 泰國節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇹🇭
-🇻🇳 越南節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇻🇳
-🇮🇩 印尼節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇮🇩
-🇨🇭 瑞士節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇨🇭
-🇳🇱 荷蘭節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇳🇱
-🇩🇪 德國節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇩🇪
-🇫🇷 法國節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇫🇷
-🇮🇳 印度節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇮🇳
-🇵🇭 菲律賓節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇵🇭
-🇨🇦 加拿大節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-path=https://sub.store/download/Menfo, update-interval=0, policy-regex-filter=🇨🇦
-🇦🇷 阿根廷節點 = url-test, no-alert=1, hidden=0, persistent=1, update-interval=0, policy-path=https://sub.store/download/Menfo, policy-regex-filter=🇦🇷
-🇹🇷 土耳其節點 = url-test, no-alert=1, hidden=0, persistent=1, update-interval=0, policy-path=https://sub.store/download/Menfo, policy-regex-filter=🇹🇷
-🇷🇺 俄羅斯節點 = url-test, no-alert=1, hidden=0, persistent=1, update-interval=0, policy-path=https://sub.store/download/Menfo, policy-regex-filter=🇷🇺
-🇮🇹 義大利節點 = url-test, no-alert=1, hidden=0, persistent=1, update-interval=0, policy-path=https://sub.store/download/Menfo, policy-regex-filter=🇮🇹|意呆利
-🇵🇰 巴基斯坦節點 = url-test, no-alert=1, hidden=0, persistent=1, update-interval=0, policy-path=https://sub.store/download/Menfo, policy-regex-filter=🇵🇰
-🇪🇪 愛沙尼亞節點 = url-test, no-alert=1, hidden=0, persistent=1, update-interval=0, policy-path=https://sub.store/download/Menfo, policy-regex-filter=🇪🇪
-
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ChinaWebsite.list,🎯 全球直連
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/UKWebsite.list,🇬🇧 英國Website
