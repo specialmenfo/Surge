@@ -1,10 +1,6 @@
 # Apple Siri
 DOMAIN,guzzoni.apple.com
 
-# Apple Mail
-DOMAIN-SUFFIX,mail.icloud.com.cn
-DOMAIN-SUFFIX,mail.me.com
-
 # Apple News
 DOMAIN,apple.comscoreresearch.com
 DOMAIN,gateway.icloud.com
