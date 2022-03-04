@@ -524,15 +524,18 @@ DOMAIN-SUFFIX,peacocktv.com
 USER-AGENT,PeacockMobile*
 
 # PayPal
+DOMAIN,*.paypalobjects.comimages
 DOMAIN,paypalobjects.com
 DOMAIN,.paypalobjects.com
 DOMAIN,*.paypalobjects.com
+DOMAIN-SUFFIX,paypalobjects.comimages
 DOMAIN-SUFFIX,paypalobjects.com
 DOMAIN-SUFFIX,.paypalobjects.com
 DOMAIN-SUFFIX,*.paypalobjects.com
 DOMAIN,www.paypalobjects.com
 DOMAIN-SUFFIX,www.paypalobjects.com
-
+IP-CIDR,113.105.147.165/30,no-resolve
+IP-CIDR,113.105.147.165/32,no-resolve
 DOMAIN,www.paypal-mktg.com
 DOMAIN-SUFFIX,account-paypal.info
 DOMAIN-SUFFIX,account-paypal.net
