@@ -1,4 +1,4 @@
-# EPIN
+# Turkey Game Pay
 IP-CIDR,104.16.0.0/12,no-resolve
 IP-CIDR,172.64.0.0/13,no-resolve
 DOMAIN-SUFFIX,trendyol.com
@@ -105,3 +105,4 @@ PROCESS-NAME,www.turgame.com
 DOMAIN-SUFFIX,.turgame.com
 DOMAIN-SUFFIX,*.turgame.com
 DOMAIN-SUFFIX,www.turgame.com
+IP-CIDR,104.16.0.0/12,no-resolve
