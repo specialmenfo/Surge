@@ -381,6 +381,8 @@ PROCESS-NAME,music
 # Apple TestFlight
 DOMAIN,beta.apple.com
 DOMAIN,testflight.apple.com
+DOMAIN,sandbox.itunes.apple.com
+DOMAIN-SUFFIX,sandbox.itunes.apple.com
 
 # ByteDance
 DOMAIN-SUFFIX,2333333333333.com
