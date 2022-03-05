@@ -264,6 +264,10 @@ URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$"
 # AppStore
 DOMAIN,apps.apple.com
 DOMAIN,itunes.apple.com
+DOMAIN,buy.itunes.apple.com
+DOMAIN-SUFFIX,buy.itunes.apple.com
+USER-AGENT,iTunes*
+PROCESS-NAME,itunes
 
 # Apple Mail
 DOMAIN-SUFFIX,mail.icloud.com.cn
