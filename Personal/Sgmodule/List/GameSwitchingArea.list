@@ -1,3 +1,25 @@
+# Arena of Valor
+DOMAIN-SUFFIX,sg.intlgame.com
+DOMAIN,tdatamaster.com
+DOMAIN,intlgame.com
+DOMAIN,gcloudcs.com
+DOMAIN,iegcom.com
+DOMAIN,singaporepaya.com
+DOMAIN,proximabeta.com
+DOMAIN,ngame.proximabeta.com
+DOMAIN-SUFFIX,app.adjust.com
+DOMAIN-SUFFIX,sg.intlgame.com
+DOMAIN-SUFFIX,sg.tdatamaster.com
+DOMAIN-SUFFIX,sg-dr.intlgame.com
+DOMAIN-SUFFIX,sec-dl.intlgame.com
+DOMAIN-SUFFIX,sg.voice.gcloudcs.com
+DOMAIN-SUFFIX,sg-bugly-ios.iegcom.com
+DOMAIN-SUFFIX,midas.singaporepaya.com
+DOMAIN-SUFFIX,image.ngame.proximabeta.com
+DOMAIN-SUFFIX,asia.csoversea.ace.iegcom.com
+DOMAIN-SUFFIX,gs.asia.ngame.proximabeta.com
+DOMAIN-SUFFIX,rs.asia.ngame.proximabeta.com
+
 # Battle
 DOMAIN,blizzard.nefficient.co.kr
 DOMAIN,blzddist1-a.akamaihd.net
