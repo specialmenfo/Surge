@@ -1,10 +1,10 @@
 /*
 
 [Proxy Group]
-AmyInfo = select, policy-path=http://sub.info?url=機場節點鏈接&reset_day=1&alert=1, update-interval=3600
+Proxy Group 自定義名稱 = select, policy-path=http://sub.info?url=機場節點鏈接&reset_day=1&alert=1, update-interval=3600
 
 [Script]
-Sub_info = type=http-request,pattern=http://sub\.info,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info.js,timeout=10
+Sub info Proxy Group = type=http-request,pattern=http://sub\.info,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Sub_Info_Proxy_Group.js,timeout=10
 ----------------------------------------
 
 先將帶有流量信息的節點訂閱鏈接encode，用encode後的鏈接替換"url="後面的[機場節點鏈接]
