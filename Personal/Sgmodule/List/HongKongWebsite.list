@@ -1966,18 +1966,6 @@ DOMAIN-SUFFIX,viki.net
 DOMAIN-SUFFIX,vikidash.akamaized.net
 DOMAIN-SUFFIX,vikiplatform.com
 
-# WeTV
-DOMAIN-SUFFIX,iflix-images.akamaized.net
-DOMAIN-SUFFIX,iflix.com
-DOMAIN-SUFFIX,v.smtcdns.com
-DOMAIN-SUFFIX,v.smtcdns.net
-DOMAIN-SUFFIX,wetv.vip
-DOMAIN-SUFFIX,wetvinfo.com
-IP-CIDR,150.109.28.51/32,no-resolve
-USER-AGENT,WeTV*
-PROCESS-NAME,com.tencent.qqlivei18n
-PROCESS-NAME,com.tencent.qqlivei18n.us
-
 # Verizon & Yahoo
 DOMAIN-SUFFIX,advertising.com
 DOMAIN-SUFFIX,aol.co.uk
@@ -2161,6 +2149,52 @@ DOMAIN-SUFFIX,yahoodns.net
 DOMAIN-SUFFIX,yimg.com
 DOMAIN-SUFFIX,yimg.jp
 DOMAIN-SUFFIX,yourdigitalrebatecenter.com
+
+# WeTV
+DOMAIN-SUFFIX,iflix-images.akamaized.net
+DOMAIN-SUFFIX,iflix.com
+DOMAIN-SUFFIX,v.smtcdns.com
+DOMAIN-SUFFIX,v.smtcdns.net
+DOMAIN-SUFFIX,wetv.vip
+DOMAIN-SUFFIX,wetvinfo.com
+IP-CIDR,150.109.28.51/32,no-resolve
+USER-AGENT,WeTV*
+PROCESS-NAME,com.tencent.qqlivei18n
+PROCESS-NAME,com.tencent.qqlivei18n.us
+
+# Wiki
+DOMAIN-SUFFIX,mediawiki.org
+DOMAIN-SUFFIX,toolforge.org
+DOMAIN-SUFFIX,w.wiki
+DOMAIN-SUFFIX,wikibooks.org
+DOMAIN-SUFFIX,wikidata.org
+DOMAIN-SUFFIX,wikileaks.org
+DOMAIN-SUFFIX,wikimedia.org
+DOMAIN-SUFFIX,wikimediacloud.org
+DOMAIN-SUFFIX,wikimediafoundation.org
+DOMAIN-SUFFIX,wikinews.org
+DOMAIN-SUFFIX,wikipedia.com
+DOMAIN-SUFFIX,wikipedia.org
+DOMAIN-SUFFIX,wikiquote.org
+DOMAIN-SUFFIX,wikisource.org
+DOMAIN-SUFFIX,wikiversity.org
+DOMAIN-SUFFIX,wikivoyage.org
+DOMAIN-SUFFIX,wiktionary.org
+DOMAIN-SUFFIX,wmcloud.org
+DOMAIN-SUFFIX,wmflabs.org
+DOMAIN-SUFFIX,wmfusercontent.org
+DOMAIN-SUFFIX,mediawiki.org
+DOMAIN-SUFFIX,wikibooks.org
+DOMAIN-SUFFIX,wikidata.org
+DOMAIN-SUFFIX,wikileaks.org
+DOMAIN-SUFFIX,wikimedia.org
+DOMAIN-SUFFIX,wikinews.org
+DOMAIN-SUFFIX,wikipedia.org
+DOMAIN-SUFFIX,wikiquote.org
+DOMAIN-SUFFIX,wikisource.org
+DOMAIN-SUFFIX,wikiversity.org
+DOMAIN-SUFFIX,wikivoyage.org
+DOMAIN-SUFFIX,wiktionary.org
 
 # Other
 USER-AGENT,*AssistantServices*
