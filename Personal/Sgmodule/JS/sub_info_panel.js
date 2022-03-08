@@ -4,7 +4,7 @@
 ----------------------------------------
 
 [Script]
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/sub_info_panel.js,script-update-interval=0,argument=url=[URL encode 后的机场节点链接]&reset_day=1&title=AmyInfo&icon=bonjour&color=#007aff
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/sub_info_panel.js,script-update-interval=0,argument=url="此處開始替換 包含"號[URL encode 後的機場節點鏈接]此處結束替換 包含"號"&reset_day=1&title=AmyInfo&icon=bonjour&color=#007aff
 
 [Panel]
 Sub_info = script-name=Sub_info,update-interval=600
