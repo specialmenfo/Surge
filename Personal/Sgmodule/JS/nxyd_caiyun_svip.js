@@ -13,12 +13,12 @@ const RIGHTS_REGEX = /https?:\/\/biz\.caiyunapp\.com\/membership_rights/;
 const RESULT = {
   is_vip: true,
   vip_type: "s",
-  svip_expired_at: 22221882066669.99999452950954,
+  svip_expired_at: 9999999999.9999999999,
 }
 const RESULT_WT = {
   vip: {
     enable: true,
-    svip_expired_at: 22221882066669.99999452950954
+    svip_expired_at: 9999999999.9999999999
   }
 }
 const RIGHTS = { 
