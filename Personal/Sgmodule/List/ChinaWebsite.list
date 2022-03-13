@@ -417,7 +417,7 @@ DOMAIN-SUFFIX,douyutv.com
 DOMAIN-SUFFIX,doyonoc.com
 DOMAIN-SUFFIX,oywtv.com
 
-# NAME: DiDi
+# DiDi
 DOMAIN-SUFFIX,apptaxi.com.cn
 DOMAIN-SUFFIX,cxyule.com
 DOMAIN-SUFFIX,didi-food.com
@@ -710,7 +710,6 @@ DOMAIN-SUFFIX,yihaomall.com
 DOMAIN-SUFFIX,yixun.com
 DOMAIN-SUFFIX,yiyaojd.com
 DOMAIN-SUFFIX,yizhitou.com
-URL-REGEX,"^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$"
 
 # NetEaseMusic
 DOMAIN,iadmat.nosdn.127.net
