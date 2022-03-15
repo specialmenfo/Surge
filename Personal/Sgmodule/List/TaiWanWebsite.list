@@ -109,6 +109,7 @@ DOMAIN,litvfreemobile-hichannel.cdn.hinet.net
 DOMAIN-SUFFIX,litv.tv
 
 # Line & Naver
+DOMAIN,torimochi.line-apps.com
 DOMAIN,web-pay.line.me
 DOMAIN,api.line.me
 DOMAIN,static.line-scdn.net
