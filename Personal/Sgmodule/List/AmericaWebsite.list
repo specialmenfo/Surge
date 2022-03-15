@@ -786,6 +786,11 @@ USER-AGENT,PayPal*
 # Star++
 DOMAIN-SUFFIX,media.starott.com
 
+# Starz
+DOMAIN,playdata.starz.com
+DOMAIN,auth.starz.com
+DOMAIN-SUFFIX,starz.com
+
 # Sling
 DOMAIN-SUFFIX,dishworld.com
 DOMAIN-SUFFIX,movenetworks.com
