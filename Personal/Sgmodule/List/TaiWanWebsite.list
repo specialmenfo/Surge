@@ -109,6 +109,8 @@ DOMAIN,litvfreemobile-hichannel.cdn.hinet.net
 DOMAIN-SUFFIX,litv.tv
 
 # Line & Naver
+DOMAIN,dispatcher.is.autonavi.com
+DOMAIN,1eaf.cardinalcommerce.com
 DOMAIN-SUFFIX,lin.ee
 DOMAIN-SUFFIX,line-apps.com
 DOMAIN-SUFFIX,line-cdn.net
@@ -140,6 +142,8 @@ DOMAIN-SUFFIX,chocotv.com.tw
 DOMAIN-SUFFIX,line-cdn.net
 DOMAIN-SUFFIX,line-scdn.net
 DOMAIN-SUFFIX,linetv.tw
+DOMAIN-SUFFIX,autonavi.com
+DOMAIN-SUFFIX,cardinalcommerce.com
 USER-AGENT,LINE%20TV*
 PROCESS-NAME,com.linecorp.linetv
 
