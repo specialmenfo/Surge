@@ -1,6 +1,7 @@
 # Paramount+
+DOMAIN,vod-gcs-cedexis.cbsaavideo.com
 DOMAIN-SUFFIX,cbs.penthera.com
-DOMAIN-SUFFIX,cbsi.live.ott.irdeto.com
+DOMAIN,cbsi.live.ott.irdeto.com
 DOMAIN,cbsi.live.ott.irdeto.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
@@ -42,7 +43,8 @@ DOMAIN,pubads.g.doubleclick.net
 DOMAIN,cbsnews.akamaized.net
 DOMAIN,cbsservice.aws.syncbak.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
-
+DOMAIN,cbsi.live.ott.irdeto.com
+IP-CIDR,52.24.0.0/14,no-resolve
 AND,((DOMAIN,cbsi.live.ott.irdeto.com), (USER-AGENT,PPlus*))
 AND,((DOMAIN,cbsi.live.ott.irdeto.com), (USER-AGENT,Paramountlus*))
 AND,((DOMAIN,cbsi.live.ott.irdeto.com), (USER-AGENT,ParamountPlus*))
