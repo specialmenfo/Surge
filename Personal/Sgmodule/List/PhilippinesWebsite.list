@@ -1,4 +1,5 @@
 # Discovery+ PH
+// DOMAIN-SUFFIX,disco-api.com
 // DOMAIN,ap2-prod-direct.discoveryplus.com
 // DOMAIN,ap2-prod.disco-api.com
 // DOMAIN,ap2-prod-images.disco-api.com
