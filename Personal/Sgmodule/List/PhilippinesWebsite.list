@@ -1,20 +1,3 @@
-# Discovery+ 菲律賓
-DOMAIN-SUFFIX,mobile-collector.newrelic.com
-DOMAIN-SUFFIX,api.getblueshift.com
-DOMAIN-SUFFIX,ap2-prod.disco-api.com
-DOMAIN-SUFFIX,int.vaicore.site
-DOMAIN-SUFFIX,dplus-ph-prod-vod.akamaized.net
-DOMAIN-SUFFIX,discoveryplus.com
-DOMAIN-SUFFIX,discoveryplus.ph
-DOMAIN,ap2-prod.disco-api.com
-DOMAIN,ap2-prod-images.disco-api.com
-DOMAIN,ap2-prod-direct.discoveryplus.com
-DOMAIN,discovery-ap.conax.cloud
-DOMAIN,gdvm0o88gc3qseqotiavvvhim.litix.io
-DOMAIN,dplus-ph-prod-vod.akamaized.net
-DOMAIN,dplus-ph-google-v2.prod-vod.h264.io
-URL-REGEX,^https?:\/\/www\.discoveryplus\.com\/ph\/
-
 # Globe
 DOMAIN-SUFFIX,checkoutshopper-live.adyen.com
 DOMAIN-SUFFIX,gcash.com
