@@ -1,5 +1,5 @@
 /**
-M1 系列 Mac 解除 iOS 軟件限制
+M1 系列 Mac 解除 iOS TestFlight 軟件限制
 ***************************
 Surge:
 [Script]
