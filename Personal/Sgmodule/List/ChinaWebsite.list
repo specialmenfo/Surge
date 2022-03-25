@@ -752,6 +752,17 @@ USER-AGENT,NeteaseMusic**
 USER-AGENT,网易云音乐*
 USER-AGENT,网易云音乐**
 
+# Oracle
+DOMAIN,shop.oracle.com
+DOMAIN,c.oracleinfinity.io
+DOMAIN,oracle.sc.omtrdc.net
+DOMAIN,www.oracle.com
+DOMAIN,dc.oracleinfinity.io
+DOMAIN-SUFFIX,oracle.com
+USER-AGENT,Oracle*
+USER-AGENT,com.oracle*
+PROCESS-NAME,oracle
+
 # 順豐速運
 DOMAIN,ump.sit.sf-express.com
 DOMAIN-SUFFIX,sf-express.com
