@@ -765,6 +765,8 @@ DOMAIN-SUFFIX,oracle.com
 DOMAIN-SUFFIX,rfihub.com
 DOMAIN-SUFFIX,trustarc.com
 DOMAIN-SUFFIX,bluekai.com
+DOMAIN-SUFFIX,oracleinfinity.io
+DOMAIN-SUFFIX,omtrdc.net
 USER-AGENT,Oracle*
 USER-AGENT,com.oracle*
 PROCESS-NAME,oracle
