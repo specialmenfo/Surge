@@ -753,6 +753,11 @@ USER-AGENT,网易云音乐*
 USER-AGENT,网易云音乐**
 
 # Oracle
+DOMAIN,ocsp.digicert.com
+DOMAIN,www.oracleimg.com
+DOMAIN,tags.tiqcdn.com
+DOMAIN,c.go-mpulse.net
+DOMAIN,684d0d42.akstat.io
 DOMAIN,shop.oracle.com
 DOMAIN,c.oracleinfinity.io
 DOMAIN,oracle.sc.omtrdc.net
@@ -775,6 +780,17 @@ DOMAIN,courier-service.oraclecloud.com
 DOMAIN,vsvippi01.rightnowtech.com
 DOMAIN,sc-oal-en.widget.custhelp.com
 DOMAIN,sc-oal-en.custhelp.com
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,oracleimg.com
+DOMAIN-SUFFIX,tiqcdn.com
+DOMAIN-SUFFIX,go-mpulse.net
+DOMAIN-SUFFIX,akstat.io
+DOMAIN-SUFFIX,oracleinfinity.io
+DOMAIN-SUFFIX,sc.omtrdc.net
+DOMAIN-SUFFIX,omtrdc.net
+DOMAIN-SUFFIX,tiqcdn.com
+DOMAIN-SUFFIX,go-mpulse.net
+DOMAIN-SUFFIX,akstat.io
 DOMAIN-SUFFIX,rightnowtech.com
 DOMAIN-SUFFIX,widget.custhelp.com
 DOMAIN-SUFFIX,custhelp.com
