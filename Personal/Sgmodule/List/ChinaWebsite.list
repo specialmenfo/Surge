@@ -758,7 +758,13 @@ DOMAIN,c.oracleinfinity.io
 DOMAIN,oracle.sc.omtrdc.net
 DOMAIN,www.oracle.com
 DOMAIN,dc.oracleinfinity.io
+DOMAIN,20754664p.rfihub.com
+DOMAIN,consent.trustarc.com
+DOMAIN,stags.bluekai.com
 DOMAIN-SUFFIX,oracle.com
+DOMAIN-SUFFIX,rfihub.com
+DOMAIN-SUFFIX,trustarc.com
+DOMAIN-SUFFIX,bluekai.com
 USER-AGENT,Oracle*
 USER-AGENT,com.oracle*
 PROCESS-NAME,oracle
