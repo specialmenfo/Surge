@@ -3,7 +3,7 @@ M1 系列 Mac 解除 iOS 軟件限制
 ***************************
 Surge:
 [Script]
-ForceInstallTF= type=http-response,pattern=^https:\/\/testflight\.apple\.com((\/v3\/accounts\/.+?\/apps$)|(\/v2\/accounts\/.+?\/apps\/.+?\/builds\/.+)),script-path=https://raw.githubusercontent.com/Skyxim/Profile/main/Script/TestFlight/ForceInstall.js, requires-body=true, timeout=10
+ForceInstallTF= type=http-response,pattern=^https:\/\/testflight\.apple\.com((\/v3\/accounts\/.+?\/apps$)|(\/v2\/accounts\/.+?\/apps\/.+?\/builds\/.+)),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Skyxim-ForceInstall.js, requires-body=true, timeout=10
 
 [MITM]
 hostname = %APPEND% testflight.apple.com
