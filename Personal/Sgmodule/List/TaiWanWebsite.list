@@ -220,6 +220,8 @@ USER-AGENT,Naver%20TV*
 
 # myVideo
 USER-AGENT,myVideo*
+DOMAIN,agent.tamedia.com.tw
+DOMAIN-SUFFIX,tamedia.com.tw
 DOMAIN-SUFFIX,myvideo.net.tw
 DOMAIN-SUFFIX,catch.net.tw
 USER-AGENT,myVideo*
