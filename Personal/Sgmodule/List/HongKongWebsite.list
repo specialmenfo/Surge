@@ -936,6 +936,7 @@ USER-AGENT,YouTubeMusic*
 USER-AGENT,com.google.ios.youtubemusic*
 
 # Carousell
+DOMAIN,www.carousell.com.hk
 DOMAIN,api.carousell.io
 DOMAIN,carousell.zendesk.com
 DOMAIN-SUFFIX,zendesk.com
@@ -948,6 +949,7 @@ DOMAIN,click.mail.carousell.com/ls/click?upn*
 DOMAIN-SUFFIX,click.mail.carousell.com/ls/click?upn*
 DOMAIN-SUFFIX,carousell.com
 DOMAIN-SUFFIX,.carousell.hk
+DOMAIN-SUFFIX,carousell.com.hk
 DOMAIN-SUFFIX,carousell.hk
 DOMAIN-SUFFIX,carousell.sg
 DOMAIN-SUFFIX,.carousell.sg
