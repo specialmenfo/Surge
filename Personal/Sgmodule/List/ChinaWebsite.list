@@ -743,6 +743,14 @@ DOMAIN-SUFFIX,yixun.com
 DOMAIN-SUFFIX,yiyaojd.com
 DOMAIN-SUFFIX,yizhitou.com
 
+# liviBank
+DOMAIN,appgw.livibank.com
+DOMAIN,appgw.livibank.com/basic/aksHandShake
+DOMAIN,livibank.com
+USER-AGENT,livibank*
+USER-AGENT,*livibank
+PROCESS-NAME,livibank
+
 # NetEaseMusic
 DOMAIN,iadmat.nosdn.127.net
 DOMAIN,netease.ugcvideoss.ourdvs.com
