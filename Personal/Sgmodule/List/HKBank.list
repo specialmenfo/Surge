@@ -27,9 +27,26 @@ DOMAIN-SUFFIX,octopuscards.com
 DOMAIN-SUFFIX,.octopuscards.com
 DOMAIN-SUFFIX,*.octopuscards.com
 DOMAIN,www.octopuscards.com
+USER-AGENT,octopuscards
+USER-AGENT,octopus
+USER-AGENT,octopus*
+USER-AGENT,*octopus
+USER-AGENT,oepay
+USER-AGENT,ptfss
+USER-AGENT,oepay*
+USER-AGENT,*oepay
+USER-AGENT,ptfss*
+USER-AGENT,*ptfss
+PROCESS-NAME,octopus
+PROCESS-NAME,ptfss
+PROCESS-NAME,oepay
 
 # Tap & Go
 DOMAIN-SUFFIX,tapngo.com.hk
 DOMAIN-SUFFIX,.tapngo.com.hk
 DOMAIN-SUFFIX,*.tapngo.com.hk
 DOMAIN,wallet.tapngo.com.hk
+USER-AGENT,tapngo
+USER-AGENT,tapngo*
+USER-AGENT,*tapngo
+PROCESS-NAME,tapngo
