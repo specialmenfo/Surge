@@ -1,0 +1,32 @@
+# liviBank
+DOMAIN,appgw.livibank.com
+DOMAIN,appgw.livibank.com/basic/aksHandShake
+DOMAIN,livibank.com
+USER-AGENT,livibank*
+USER-AGENT,*livibank
+PROCESS-NAME,livibank
+
+# 八達通
+DOMAIN-SUFFIX,octopus.com.hk
+DOMAIN-SUFFIX,.octopus.com.hk
+DOMAIN-SUFFIX,*.octopus.com.hk
+DOMAIN-SUFFIX,www.octopus.com.hk
+DOMAIN-SUFFIX,ptfss.hk
+DOMAIN-SUFFIX,.ptfss.hk
+DOMAIN-SUFFIX,*.ptfss.hk
+DOMAIN-SUFFIX,subsidy-app.ptfss.hk
+DOMAIN-SUFFIX,octopus.queue-it.net
+DOMAIN-SUFFIX,octopus-cards.com
+DOMAIN-SUFFIX,.octopus-cards.com
+DOMAIN-SUFFIX,*.octopus-cards.com
+DOMAIN-SUFFIX,app.oepay.octopus-cards.com
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,.octopuscards.com
+DOMAIN-SUFFIX,*.octopuscards.com
+DOMAIN-SUFFIX,www.octopuscards.com
+
+# Tap & Go
+DOMAIN-SUFFIX,tapngo.com.hk
+DOMAIN-SUFFIX,.tapngo.com.hk
+DOMAIN-SUFFIX,*.tapngo.com.hk
+DOMAIN-SUFFIX,wallet.tapngo.com.hk

@@ -1,7 +1,0 @@
-# liviBank
-DOMAIN,appgw.livibank.com
-DOMAIN,appgw.livibank.com/basic/aksHandShake
-DOMAIN,livibank.com
-USER-AGENT,livibank*
-USER-AGENT,*livibank
-PROCESS-NAME,livibank
