@@ -1,5 +1,6 @@
 # Apple TV
 DOMAIN,hls-amt.itunes.apple.com
+DOMAIN,uts-api.itunes.apple.com
 DOMAIN,hls.itunes.apple.com
 DOMAIN,np-edge.itunes.apple.com
 DOMAIN,play-edge.itunes.apple.com
