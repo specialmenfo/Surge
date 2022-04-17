@@ -1,59 +1,48 @@
 # Paramount+
-DOMAIN,uts-api.itunes.apple.com
-IP-CIDR,44.230.0.0/16,no-resolve
-DOMAIN,auth.mtvnservices.com
-DOMAIN,mobile-collector.newrelic.com
-DOMAIN,int.vaicore.site
-DOMAIN,co.vaicore.site
-DOMAIN,cbsn-us.cbsnstream.cbsnews.com
-DOMAIN,cbs.penthera.com
-DOMAIN,sdk.iad-03.appboy.com
-DOMAIN,mobile-data.onetrust.io
-DOMAIN,cbsi.live.ott.irdeto.com
-DOMAIN,cbsplaylistserver.aws.syncbak.com
-DOMAIN,cbsservice.aws.syncbak.com
-DOMAIN,link.theplatform.com
-DOMAIN-SUFFIX,amlg.io
-DOMAIN-SUFFIX,cbs
-DOMAIN-SUFFIX,cbs.com
-DOMAIN-SUFFIX,cbsaavideo.com
-DOMAIN-SUFFIX,cbscorporation.com
-DOMAIN-SUFFIX,cbsi.com
-DOMAIN-SUFFIX,cbsi.live.ott.irdeto.com
-DOMAIN-SUFFIX,cbsi.video
-DOMAIN-SUFFIX,cbsiam.com
-DOMAIN-SUFFIX,cbsig.net
-DOMAIN-SUFFIX,cbsimg.net
-DOMAIN-SUFFIX,cbsinteractive.com
-DOMAIN-SUFFIX,cbsistatic.com
-DOMAIN-SUFFIX,cbsivideo.com
-DOMAIN-SUFFIX,cbsnews.com
-DOMAIN-SUFFIX,cbsplaylistserver.aws.syncbak.com
-DOMAIN-SUFFIX,cbspressexpress.com
-DOMAIN-SUFFIX,cbsradio.com
-DOMAIN-SUFFIX,cbsservice.aws.syncbak.com
-DOMAIN-SUFFIX,cbssports.com
-DOMAIN-SUFFIX,cbsstatic.com
-DOMAIN-SUFFIX,cbsstore.com
-DOMAIN-SUFFIX,cbssvideo.com
-DOMAIN-SUFFIX,cbstelevisioncity.com
-DOMAIN-SUFFIX,mtvnservices.com
-DOMAIN-SUFFIX,paramount.com
-DOMAIN-SUFFIX,paramountplus.com
-DOMAIN-SUFFIX,pluto.tv
-DOMAIN-SUFFIX,pplusstatic.com
-DOMAIN-SUFFIX,showtime.com
-DOMAIN-SUFFIX,viacbs.com
-DOMAIN-SUFFIX,viacom.com
-DOMAIN-SUFFIX,viacomcbs.com
-DOMAIN-SUFFIX,viacomcbspressexpress.com
-DOMAIN-SUFFIX,cbsaavideo.com
-DOMAIN-SUFFIX,cbsi.com
-DOMAIN-SUFFIX,cbsivideo.com
-DOMAIN-SUFFIX,paramountplus.com
-DOMAIN-SUFFIX,p
-USER-AGENT,cbs*
-USER-AGENT,*cbs
+// US UA
 USER-AGENT,PPlus*
-PROCESS-NAME,com.cbs.app
-PROCESS-NAME,com.showtime.standalone
+// Intl. UA
+USER-AGENT,ParamountPlus*
+DOMAIN-SUFFIX,cbsi.com
+// DOMAIN-SUFFIX,cbsaavideo.com #播放
+DOMAIN-SUFFIX,cbsivideo.com
+DOMAIN-SUFFIX,paramountplus.com
+DOMAIN-SUFFIX,pplusstatic.com
+// DOMAIN-SUFFIX,mtvnservices.com #MTV
+// DOMAIN-SUFFIX,cws.conviva.com
+DOMAIN,link.theplatform.com
+// US
+AND,((DOMAIN,cbsi.live.ott.irdeto.com), (USER-AGENT,PPlus*))
+// Intl.
+AND,((DOMAIN,cbsi.live.ott.irdeto.com), (USER-AGENT,Paramountlus*))
+// 播放驗證，此條 Paramount+ 國際版與美國版共用，可使用 AND 語法區分。iOS 15 下 UA 不可用需 MITM 相關 HOST
+DOMAIN,cbsi.live.ott.irdeto.com
+// DOMAIN,thumbnails.cbsig.net #縮略圖
+// DOMAIN,cbsinteractive.hb.omtrdc.net
+// DOMAIN,ads.play.cbsi.video #片頭動畫，可屏蔽
+// DOMAIN,pubads.g.doubleclick.net #不可屏蔽
+// DOMAIN,cbsnews.akamaized.net #CBSN Live
+// CBS live丨US
+DOMAIN,cbsservice.aws.syncbak.com
+DOMAIN,cbsplaylistserver.aws.syncbak.com
+
+# 一些無需驗證地區的 HOST
+DOMAIN-SUFFIX,cbsaavideo.com
+DOMAIN-SUFFIX,mtvnservices.com
+DOMAIN-SUFFIX,cws.conviva.com
+DOMAIN,thumbnails.cbsig.net
+DOMAIN,cbsinteractive.hb.omtrdc.net
+DOMAIN,cbsnews.akamaized.net
+
+# 僅在同時使用 Paramount+ 國際版及美國版時需要此分流以作分離，Surge 可通過 USER-AGENT 區分（iOS 15 需 MITM 相關域名），Clash Surfboard 可通過 PROCESS-NAME 區分
+# Paramount+ Intl. 上線地區較冷門，通過 PROCESS-NAME 分流時部分冷門地區節點串流效果不佳，可前置 Paramount++.yaml 使部分無需驗證地區的 HOST 走其他節點代理
+USER-AGENT,ParamountPlus*
+PROCESS-NAME,com.cbs.ca
+DOMAIN-KEYWORD,intl.pplus
+DOMAIN-KEYWORD,intl.paramountplus
+DOMAIN-SUFFIX,intl.paramountplus.com
+DOMAIN,wwwimage-intl.pplusstatic.com
+// iOS 15 下 UA 不可用，需 MITM cbsi.live.ott.irdeto.com
+AND,((DOMAIN,cbsi.live.ott.irdeto.com), (USER-AGENT,ParamountPlus*))
+// 播放驗證，此條 Paramount+ 國際版與美國版衝突，故使用 AND 語法區分
+// DOMAIN,cbsi.live.ott.irdeto.com
