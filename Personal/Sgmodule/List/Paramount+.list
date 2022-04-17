@@ -1,5 +1,8 @@
 # Paramount+
 IP-CIDR,44.230.0.0/16,no-resolve
+DOMAIN,dpm.demdex.net
+DOMAIN,co.vaicore.site
+DOMAIN,mobile-collector.newrelic.com
 DOMAIN,cbsi.live.ott.irdeto.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
@@ -43,6 +46,8 @@ DOMAIN-SUFFIX,cbsi.com
 DOMAIN-SUFFIX,cbsivideo.com
 DOMAIN-SUFFIX,paramountplus.com
 DOMAIN-SUFFIX,p
+USER-AGENT,cbs*
+USER-AGENT,*cbs
 USER-AGENT,PPlus*
 PROCESS-NAME,com.cbs.app
 PROCESS-NAME,com.showtime.standalone
