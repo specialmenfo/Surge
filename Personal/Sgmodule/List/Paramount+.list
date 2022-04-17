@@ -1,9 +1,8 @@
 # Paramount+
 IP-CIDR,44.230.0.0/16,no-resolve
-DOMAIN,int.vaicore.site
-DOMAIN,dpm.demdex.net
-DOMAIN,co.vaicore.site
-DOMAIN,mobile-collector.newrelic.com
+DOMAIN,cbs.penthera.com
+DOMAIN,sdk.iad-03.appboy.com
+DOMAIN,mobile-data.onetrust.io
 DOMAIN,cbsi.live.ott.irdeto.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
