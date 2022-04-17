@@ -1,5 +1,10 @@
 # Paramount+
 IP-CIDR,44.230.0.0/16,no-resolve
+DOMAIN,auth.mtvnservices.com
+DOMAIN,mobile-collector.newrelic.com
+DOMAIN,int.vaicore.site
+DOMAIN,co.vaicore.site
+DOMAIN,cbsn-us.cbsnstream.cbsnews.com
 DOMAIN,cbs.penthera.com
 DOMAIN,sdk.iad-03.appboy.com
 DOMAIN,mobile-data.onetrust.io
