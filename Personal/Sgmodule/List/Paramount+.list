@@ -1,4 +1,5 @@
 # Paramount+
+DOMAIN,uts-api.itunes.apple.com
 IP-CIDR,44.230.0.0/16,no-resolve
 DOMAIN,auth.mtvnservices.com
 DOMAIN,mobile-collector.newrelic.com
