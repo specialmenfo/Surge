@@ -1,5 +1,6 @@
 # Paramount+
 IP-CIDR,44.230.0.0/16,no-resolve
+DOMAIN,int.vaicore.site
 DOMAIN,dpm.demdex.net
 DOMAIN,co.vaicore.site
 DOMAIN,mobile-collector.newrelic.com
