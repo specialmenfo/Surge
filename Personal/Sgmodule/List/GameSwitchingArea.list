@@ -8,6 +8,7 @@ DOMAIN,proximabeta.com
 DOMAIN,file.myqcloud.com
 DOMAIN,singaporepaya.com
 DOMAIN,ngame.proximabeta.com
+DOMAIN,download.2.100000003.aovrugcloud.iegcom.com
 DOMAIN-SUFFIX,sg.intlgame.com
 DOMAIN-SUFFIX,app.adjust.com
 DOMAIN-SUFFIX,sg.intlgame.com
@@ -22,6 +23,9 @@ DOMAIN-SUFFIX,asia.csoversea.ace.iegcom.com
 DOMAIN-SUFFIX,gs.asia.ngame.proximabeta.com
 DOMAIN-SUFFIX,rs.asia.ngame.proximabeta.com
 DOMAIN-SUFFIX,gcloud-ngame-ru-1255981408.file.myqcloud.com
+DOMAIN-SUFFIX,aovrugcloud.iegcom.com
+IP-CIDR,150.109.29.118/32,no-resolve
+IP-CIDR,183.240.181.35/32,no-resolve
 
 # Battle
 DOMAIN,blizzard.nefficient.co.kr
