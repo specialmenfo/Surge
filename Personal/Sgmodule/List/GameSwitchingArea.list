@@ -1,14 +1,17 @@
 # Arena of Valor
-DOMAIN,iegcom.com
-DOMAIN,myqcloud.com
-DOMAIN,intlgame.com
-DOMAIN,gcloudcs.com
-DOMAIN,tdatamaster.com
-DOMAIN,proximabeta.com
-DOMAIN,file.myqcloud.com
-DOMAIN,singaporepaya.com
-DOMAIN,ngame.proximabeta.com
+DOMAIN,*.iegcom.com
+DOMAIN,aihelp.net
+DOMAIN,faqs.aihelp.net
+DOMAIN,*.myqcloud.com
+DOMAIN,*.intlgame.com
+DOMAIN,*.gcloudcs.com
+DOMAIN,*.tdatamaster.com
+DOMAIN,*.proximabeta.com
+DOMAIN,*.file.myqcloud.com
+DOMAIN,*.singaporepaya.com
+DOMAIN,*.ngame.proximabeta.com
 DOMAIN,download.2.100000003.aovrugcloud.iegcom.com
+DOMAIN-SUFFIX,aihelp.net
 DOMAIN-SUFFIX,sg.intlgame.com
 DOMAIN-SUFFIX,app.adjust.com
 DOMAIN-SUFFIX,sg.intlgame.com
