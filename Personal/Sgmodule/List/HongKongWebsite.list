@@ -2020,6 +2020,7 @@ IP-CIDR,209.237.192.0/19,no-resolve
 IP-CIDR,69.195.160.0/19,no-resolve
 
 # Tap & Go
+DOMAIN,tapngo.queue-it.net
 DOMAIN-SUFFIX,tapngo.com.hk
 DOMAIN-SUFFIX,.tapngo.com.hk
 DOMAIN-SUFFIX,*.tapngo.com.hk
@@ -2028,6 +2029,7 @@ USER-AGENT,tapngo
 USER-AGENT,tapngo*
 USER-AGENT,*tapngo
 PROCESS-NAME,tapngo
+IP-CIDR,52.48.0.0/14,no-resolve
 
 # VK
 DOMAIN-SUFFIX,mvk.com
