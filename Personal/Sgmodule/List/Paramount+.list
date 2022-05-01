@@ -1,5 +1,24 @@
 # Paramount+
 DOMAIN,co.vaicore.site
+DOMAIN,cbs.penthera.com
+DOMAIN,dpm.demdex.net
+DOMAIN,mobile-collector.newrelic.com
+DOMAIN-SUFFIX,demdex.net
+DOMAIN-SUFFIX,.demdex.net
+DOMAIN-SUFFIX,*.demdex.net
+DOMAIN-SUFFIX,newrelic.com
+DOMAIN-SUFFIX,.newrelic.com
+DOMAIN-SUFFIX,*.newrelic.com
+DOMAIN-SUFFIX,penthera.com
+DOMAIN-SUFFIX,.penthera.com
+DOMAIN-SUFFIX,*.penthera.com
+DOMAIN-SUFFIX,vaicore.site
+DOMAIN-SUFFIX,.vaicore.site
+DOMAIN-SUFFIX,*.vaicore.site
+DOMAIN-SUFFIX,conviva.com
+DOMAIN-SUFFIX,cws.conviva.com
+DOMAIN-SUFFIX,*.cws.conviva.com
+DOMAIN-SUFFIX,.cws.conviva.com
 DOMAIN-SUFFIX,amlg.io
 DOMAIN-SUFFIX,cbs
 DOMAIN-SUFFIX,cbs.com
