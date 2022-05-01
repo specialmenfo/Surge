@@ -4,6 +4,7 @@ DOMAIN,cbs.penthera.com
 DOMAIN,dpm.demdex.net
 DOMAIN,sdk.iad-03.appboy.com
 DOMAIN,mobile-collector.newrelic.com
+DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,demdex.net
 DOMAIN-SUFFIX,.demdex.net
 DOMAIN-SUFFIX,*.demdex.net
