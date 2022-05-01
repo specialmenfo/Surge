@@ -1,3 +1,7 @@
+# Sub
+DOMAIN-SUFFIX,sub.store
+DOMAIN-SUFFIX,sub.store/download/*
+
 # Apple Weather
 DOMAIN,weather-data.apple.com
 DOMAIN,weather-analytics-events.apple.com
