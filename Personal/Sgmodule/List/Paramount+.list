@@ -1,12 +1,8 @@
 # Paramount+
+DOMAIN,cbsinteractive.hb.omtrdc.net
 DOMAIN,co.vaicore.site
 DOMAIN,cbs.penthera.com
-DOMAIN,dpm.demdex.net
-DOMAIN,sdk.iad-03.appboy.com
-DOMAIN,mobile-collector.newrelic.com
-DOMAIN-SUFFIX,demdex.net
-DOMAIN-SUFFIX,.demdex.net
-DOMAIN-SUFFIX,*.demdex.net
+DOMAIN-SUFFIX,omtrdc.net
 DOMAIN-SUFFIX,newrelic.com
 DOMAIN-SUFFIX,.newrelic.com
 DOMAIN-SUFFIX,*.newrelic.com
