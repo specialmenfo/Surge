@@ -4,7 +4,10 @@ DOMAIN,cbs.penthera.com
 DOMAIN,dpm.demdex.net
 DOMAIN,sdk.iad-03.appboy.com
 DOMAIN,mobile-collector.newrelic.com
-DOMAIN-SUFFIX,google.com
+DOMAIN,api2.branch.io
+DOMAIN-SUFFIX,branch.io
+DOMAIN-SUFFIX,.branch.io
+DOMAIN-SUFFIX,*.branch.io
 DOMAIN-SUFFIX,demdex.net
 DOMAIN-SUFFIX,.demdex.net
 DOMAIN-SUFFIX,*.demdex.net
@@ -58,7 +61,10 @@ DOMAIN-SUFFIX,viacomcbspressexpress.com
 USER-AGENT,PPlus*
 PROCESS-NAME,com.cbs.app
 PROCESS-NAME,com.showtime.standalone
-
+IP-CIDR,17.253.14.253/19,no-resolve
+IP-CIDR,17.253.14.253/20,no-resolve
+IP-CIDR,17.253.14.253/22,no-resolve
+IP-CIDR,17.253.14.253/32,no-resolve
 DOMAIN,cbsi.live.ott.irdeto.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
