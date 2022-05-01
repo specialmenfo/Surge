@@ -1,5 +1,7 @@
 # Apple Weather
 DOMAIN,weather-data.apple.com
+DOMAIN,weather-analytics-events.apple.com
+DOMAIN,play.itunes.apple.com
 
 # Apple Siri
 DOMAIN,guzzoni.apple.com
