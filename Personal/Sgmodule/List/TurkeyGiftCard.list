@@ -1,4 +1,27 @@
 # Turkey Game Pay
+USER-AGENT,*epin*
+USER-AGENT,*epin
+USER-AGENT,epin*
+PROCESS-NAME,epin
+USER-AGENT,*turgame*
+USER-AGENT,*turgame
+USER-AGENT,turgame*
+PROCESS-NAME,turgame
+USER-AGENT,*oyunfor*
+USER-AGENT,*oyunfor
+USER-AGENT,oyunfor*
+PROCESS-NAME,oyunfor
+USER-AGENT,*fastpay*
+USER-AGENT,*fastpay
+USER-AGENT,fastpay*
+PROCESS-NAME,fastpay
+USER-AGENT,*gpay*
+USER-AGENT,*gpay
+USER-AGENT,gpay*
+PROCESS-NAME,gpay
+DOMAIN,va.tawk.to
+DOMAIN,epin-cdn.s3.eu-central-1.amazonaws.com
+DOMAIN,epin-cdn.*
 IP-CIDR,113.105.147.165/30,no-resolve
 IP-CIDR,172.64.0.0/13,no-resolve
 DOMAIN,*.seagm.com
