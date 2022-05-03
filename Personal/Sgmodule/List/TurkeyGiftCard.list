@@ -25,6 +25,7 @@ DOMAIN,epin-cdn.*
 IP-CIDR,113.105.147.165/30,no-resolve
 IP-CIDR,172.64.0.0/13,no-resolve
 DOMAIN,*.seagm.com
+DOMAIN-SUFFIX,tawk.to
 DOMAIN-SUFFIX,seagm.com
 DOMAIN-SUFFIX,trendyol.com
 DOMAIN-SUFFIX,.trendyol.com
