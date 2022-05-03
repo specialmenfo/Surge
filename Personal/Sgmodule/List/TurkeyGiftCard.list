@@ -21,10 +21,17 @@ USER-AGENT,gpay*
 PROCESS-NAME,gpay
 DOMAIN,va.tawk.to
 DOMAIN,epin-cdn.s3.eu-central-1.amazonaws.com
+DOMAIN,epin-static.ams3.digitaloceanspaces.com
+DOMAIN,inter-vpos.com.tr
 DOMAIN,epin-cdn.*
+DOMAIN,epin-static.*
+DOMAIN,*.com.tr
 IP-CIDR,113.105.147.165/30,no-resolve
 IP-CIDR,172.64.0.0/13,no-resolve
 DOMAIN,*.seagm.com
+DOMAIN-SUFFIX,epin-cdn
+DOMAIN-SUFFIX,epin-static
+DOMAIN-SUFFIX,com.tr
 DOMAIN-SUFFIX,tawk.to
 DOMAIN-SUFFIX,seagm.com
 DOMAIN-SUFFIX,trendyol.com
