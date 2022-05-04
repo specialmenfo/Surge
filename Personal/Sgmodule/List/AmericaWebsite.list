@@ -583,6 +583,29 @@ DOMAIN-SUFFIX,.myunidays.com
 DOMAIN-SUFFIX,unidays.com
 DOMAIN-SUFFIX,myunidays.com
 
+# Walmart
+DOMAIN,drfdisvc.walmart.com
+DOMAIN,i5.walmartimages.com
+DOMAIN,analytics.mobile.walmart.com
+DOMAIN,walmart-app.quantummetric.com
+DOMAIN,cdn.quantummetric.com
+DOMAIN,rl.quantummetric.com
+DOMAIN,www.walmart.com
+DOMAIN,rptrcks.walmart.com
+DOMAIN,tap.walmart.com
+DOMAIN,app-beta.smartmailcloud.com
+DOMAIN-SUFFIX,*.walmart.com
+DOMAIN-SUFFIX,*.walmartimages.com
+DOMAIN-SUFFIX,*.mobile.walmart.com
+DOMAIN-SUFFIX,*.quantummetric.com
+DOMAIN-SUFFIX,*.smartmailcloud.com
+DOMAIN-SUFFIX,walmart-app.*
+DOMAIN-SUFFIX,walmart.com
+DOMAIN-SUFFIX,walmartimages.com
+DOMAIN-SUFFIX,mobile.walmart.com
+DOMAIN-SUFFIX,quantummetric.com
+DOMAIN-SUFFIX,smartmailcloud.com
+
 # Other
 DOMAIN-SUFFIX,onelogin.com
 DOMAIN-SUFFIX,.onelogin.com
