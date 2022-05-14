@@ -1,4 +1,5 @@
-# > Paramount+
+# Paramount+
+DOMAIN-SUFFIX,cbsaavideo.com
 // US UA
 USER-AGENT,PPlus*
 // Intl. UA
