@@ -9,3 +9,9 @@ DOMAIN-SUFFIX,cbsivideo.com
 DOMAIN-SUFFIX,paramountplus.com
 DOMAIN-SUFFIX,pplusstatic.com
 USER-AGENT,PPlus*
+USER-AGENT,ParamountPlus*
+PROCESS-NAME,com.cbs.ca
+DOMAIN-KEYWORD,intl.pplus
+DOMAIN-KEYWORD,intl.paramountplus
+DOMAIN-SUFFIX,intl.paramountplus.com
+DOMAIN,wwwimage-intl.pplusstatic.com
