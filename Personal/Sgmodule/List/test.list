@@ -1,34 +1,26 @@
-# ParamountPlus
-DOMAIN,cbsi.live.ott.irdeto.com
-DOMAIN,cbsplaylistserver.aws.syncbak.com
-DOMAIN,cbsservice.aws.syncbak.com
-DOMAIN,link.theplatform.com
-DOMAIN-SUFFIX,cbsaavideo.com
-DOMAIN-SUFFIX,cbsi.com
-DOMAIN-SUFFIX,cbsivideo.com
-DOMAIN-SUFFIX,paramountplus.com
-DOMAIN-SUFFIX,pplusstatic.com
+# > Paramount+
+// US UA
 USER-AGENT,PPlus*
-USER-AGENT,ParamountPlus*
-PROCESS-NAME,com.cbs.ca
-DOMAIN-KEYWORD,intl.pplus
-DOMAIN-KEYWORD,intl.paramountplus
-DOMAIN-SUFFIX,intl.paramountplus.com
-DOMAIN,wwwimage-intl.pplusstatic.com
-DOMAIN,cbsi.live.ott.irdeto.com
-DOMAIN,thumbnails.cbsig.net
-DOMAIN,cbsinteractive.hb.omtrdc.net
-DOMAIN,ads.play.cbsi.video
-DOMAIN,pubads.g.doubleclick.net
-DOMAIN,cbsnews.akamaized.net
-DOMAIN,cbsservice.aws.syncbak.com
-DOMAIN,cbsplaylistserver.aws.syncbak.com
+// Intl. UA
 USER-AGENT,ParamountPlus*
 DOMAIN-SUFFIX,cbsi.com
-DOMAIN-SUFFIX,cbsaavideo.com
+// DOMAIN-SUFFIX,cbsaavideo.com
 DOMAIN-SUFFIX,cbsivideo.com
 DOMAIN-SUFFIX,paramountplus.com
 DOMAIN-SUFFIX,pplusstatic.com
-DOMAIN-SUFFIX,mtvnservices.com
-DOMAIN-SUFFIX,cws.conviva.com
+// DOMAIN-SUFFIX,mtvnservices.com
+// DOMAIN-SUFFIX,cws.conviva.com
 DOMAIN,link.theplatform.com
+// US
+AND,((DOMAIN,cbsi.live.ott.irdeto.com), (USER-AGENT,PPlus*))
+// Intl.
+AND,((DOMAIN,cbsi.live.ott.irdeto.com), (USER-AGENT,Paramountlus*))
+DOMAIN,cbsi.live.ott.irdeto.com
+// DOMAIN,thumbnails.cbsig.net
+// DOMAIN,cbsinteractive.hb.omtrdc.net
+// DOMAIN,ads.play.cbsi.video
+// DOMAIN,pubads.g.doubleclick.net
+// DOMAIN,cbsnews.akamaized.net
+// CBS live丨US
+DOMAIN,cbsservice.aws.syncbak.com
+DOMAIN,cbsplaylistserver.aws.syncbak.com
