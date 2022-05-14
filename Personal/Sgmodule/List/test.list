@@ -1,4 +1,11 @@
 # Paramount+
+DOMAIN,auth.mtvnservices.com
+DOMAIN,mobile-collector.newrelic.com
+DOMAIN,sdk.iad-03.appboy.com
+DOMAIN,17.253.14.253
+DOMAIN-SUFFIX,mtvnservices.com
+DOMAIN-SUFFIX,newrelic.com
+DOMAIN-SUFFIX,appboy.com
 DOMAIN,dpm.demdex.net
 DOMAIN,8cb691e535702e64106a3948d54b901798889ee3.cws.conviva.com
 DOMAIN,cbs.penthera.com
