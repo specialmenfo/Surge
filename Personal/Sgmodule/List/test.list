@@ -1,4 +1,8 @@
 # Paramount+
+DOMAIN,cbsinteractive.hb.omtrdc.net
+DOMAIN,cbsn-us.cbsnstream.cbsnews.com
+DOMAIN-SUFFIX,omtrdc.net
+DOMAIN-SUFFIX,cbsnews.com
 DOMAIN,z.moatads.com
 DOMAIN,mobile-data.onetrust.io
 DOMAIN,thumbnails.cbsig.net
