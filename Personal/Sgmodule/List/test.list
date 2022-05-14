@@ -1,4 +1,12 @@
 # Paramount+
+DOMAIN,bakery-pplus.cbs.com
+DOMAIN,cbsi.live.ott.irdeto.com
+DOMAIN,bakery-pplus.cbs.com
+DOMAIN,bakery-pplus.cbs.com/l(fr,de,it)/intl_vms/2022/03/31/2018425411768/1287523_fp_hls/master.m3u8
+DOMAIN,cbsi.live.ott.irdeto.com/streaming/getckc?CrmId=cbsi&AccountId=cbsi&ContentId=QAqph8tB1Gz2y1WxCelcbs4etvi0HpxB&KeyId=8f62b257-2428-4217-9d59-24976ab3a292
+DOMAIN,bakery-pplus.cbs.com/l(fr,de,it)/intl_vms/2022/03/31/2018425411768/1287523_fp_hls/master.m3u8
+DOMAIN-SUFFIX,irdeto.com
+DOMAIN-SUFFIX,cbs.com
 DOMAIN,auth.mtvnservices.com
 DOMAIN,mobile-collector.newrelic.com
 DOMAIN,sdk.iad-03.appboy.com
