@@ -1,4 +1,12 @@
 # Paramount+
+DOMAIN,z.moatads.com
+DOMAIN,mobile-data.onetrust.io
+DOMAIN,thumbnails.cbsig.net
+DOMAIN-SUFFIX,moatads.com
+DOMAIN-SUFFIX,onetrust.io
+DOMAIN-SUFFIX,cbsig.net
+IP-CIDR,34.208.0.0/12,no-resolve
+IP-CIDR,34.248.0.0/13,no-resolve
 DOMAIN,bakery-pplus.cbs.com
 DOMAIN,cbsi.live.ott.irdeto.com
 DOMAIN,bakery-pplus.cbs.com
