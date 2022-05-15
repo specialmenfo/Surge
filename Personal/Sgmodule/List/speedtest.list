@@ -1,4 +1,7 @@
 # Speedtest
+
+DOMAIN,speed.coe.ad.jp
+DOMAIN,speed.udx.icscoe.jp
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-SUFFIX,speed.cloudflare.com
