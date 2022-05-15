@@ -1,6 +1,14 @@
 # Speedtest
 DOMAIN,speed.coe.ad.jp
 DOMAIN,speed.udx.icscoe.jp
+DOMAIN,www.speedtest.net
+DOMAIN,ipgeo.wlvpn.com
+DOMAIN,ookla.mbspeed.net
+DOMAIN,lg-tok.fdcservers.net
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN-SUFFIX,wlvpn.com
+DOMAIN-SUFFIX,mbspeed.net
+DOMAIN-SUFFIX,fdcservers.net
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-SUFFIX,speed.cloudflare.com
