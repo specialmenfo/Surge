@@ -18,6 +18,8 @@ DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-SUFFIX,speed.cloudflare.com
 DOMAIN-SUFFIX,speed.dler.io
 DOMAIN-KEYWORD,speedtest
+DOMAIN-KEYWORD,spttp
 DOMAIN-KEYWORD,speed
 USER-AGENT,SpeedTest*
 USER-AGENT,Speed*
+USER-AGENT,spttp*
