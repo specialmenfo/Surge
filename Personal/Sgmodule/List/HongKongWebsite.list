@@ -36,7 +36,15 @@ DOMAIN,play.itunes.apple.com
 DOMAIN,guzzoni.apple.com
 DOMAIN,seed.siri.apple.com
 
+# iCloud
+DOMAIN-SUFFIX,gateway.icloud.com
+
 # Apple News
+DOMAIN-SUFFIX,news-edge.apple.com
+DOMAIN-SUFFIX,news-events.apple.com
+DOMAIN-SUFFIX,apple.comscoreresearch.com
+# News+ Audio
+URL-REGEX,^https?:\/\/news-assets\.apple\.com\/.*(audio-narrative).*
 DOMAIN,apple.comscoreresearch.com
 DOMAIN,gateway.icloud.com
 DOMAIN,gspe1-ssl.ls.apple.com
