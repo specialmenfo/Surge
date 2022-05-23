@@ -156,6 +156,16 @@ DOMAIN-SUFFIX,sandbox.itunes.apple.com
 DOMAIN,log.mmstat.com
 DOMAIN,sycm.mmstat.com
 
+# BOSC 上海銀行
+DOMAIN,pmbanalysis.bosc.cn
+DOMAIN,pmbservice.bosc.cn
+DOMAIN-SUFFIX,bosc.cn
+USER-AGENT,bosc*
+USER-AGENT,*bosc
+USER-AGENT,*bosc*
+USER-AGENT,bosc
+PROCESS-NAME,bosc
+
 # ByteDance
 DOMAIN-SUFFIX,2333333333333.com
 DOMAIN-SUFFIX,365yg.com
