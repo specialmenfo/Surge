@@ -502,6 +502,16 @@ DOMAIN,app.adjust.com
 DOMAIN,app.appsflyer.com
 DOMAIN,bdtj.tagtic.cn
 
+# HunanTV
+DOMAIN-SUFFIX,hifuntv.com
+DOMAIN-SUFFIX,hitv.com
+DOMAIN-SUFFIX,hunaniptv.com
+DOMAIN-SUFFIX,hunantv.com
+DOMAIN-SUFFIX,imgo.tv
+DOMAIN-SUFFIX,mgtv.com
+DOMAIN-SUFFIX,tazai.com
+USER-AGENT,MGTV*
+
 # HuYa
 DOMAIN-SUFFIX,huya.com
 DOMAIN-SUFFIX,huyagame.cn
