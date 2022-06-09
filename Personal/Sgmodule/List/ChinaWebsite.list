@@ -1431,3 +1431,9 @@ DOMAIN-SUFFIX,msftncsi.com
 DOMAIN-SUFFIX,localhost.sec.qq.com
 DOMAIN-SUFFIX,localhost.ptlogin2.qq.com
 DOMAIN-SUFFIX,vv.video.qq.com
+DOMAIN-KEYWORD,dhl
+DOMAIN-SUFFIX,dhl.com
+DOMAIN-SUFFIX,livibank.com
+DOMAIN-KEYWORD,livibank.com
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-KEYWORD,hsbc.com.hk
