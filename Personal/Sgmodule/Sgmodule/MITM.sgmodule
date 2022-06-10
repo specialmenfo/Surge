@@ -1,6 +1,6 @@
 #!name=MITM 收集
 #!desc=MITM 收集
-#!system=mac/iOS
+#!system=mac/ios
 
 [MITM]
 tcp-connection = true
