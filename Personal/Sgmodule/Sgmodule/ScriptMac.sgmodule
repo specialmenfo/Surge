@@ -1,7 +1,6 @@
 #!name=Script 收集
 #!desc=Script 收集
 #!system=mac
-#!system=ios
 
 [Script]
 # M1 系列 Mac 解除 iOS 軟件限制 testflight.apple.com
