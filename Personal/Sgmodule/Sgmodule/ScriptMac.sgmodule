@@ -3,8 +3,6 @@
 #!system=mac
 
 [Script]
-# M1 系列 Mac 解除 iOS 軟件限制 testflight.apple.com
-M1 系列 Mac 解除 iOS TestFlight 軟件限制 = type=http-response,pattern=^https:\/\/testflight\.apple\.com((\/v3\/accounts\/.+?\/apps$)|(\/v2\/accounts\/.+?\/apps\/.+?\/builds\/.+)),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/M1MacTestflightUnlock.js,requires-body=1,timeout=10,max-size=0,script-update-interval=0
 # Sub-Store
 # 訪問 https://sub-store.vercel.app/?#/ 管理
 Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
