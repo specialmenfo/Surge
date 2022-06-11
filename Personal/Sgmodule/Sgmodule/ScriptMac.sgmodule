@@ -8,10 +8,6 @@ M1 系列 Mac 解除 iOS TestFlight 軟件限制 = type=http-response,pattern=^h
 # Sub-Store
 # 訪問 https://sub-store.vercel.app/?#/ 管理
 Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
-# TestFlight 解除區域限制
-TestFlight Unlock = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/TestFlight_Unlock.js
-# Testflight 下載修正
-TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,script-update-interval=-1,max-size=0,script-path=https://gist.githubusercontent.com/specialmenfo/6e2af49b6d707987a4c1c5aeb7d162c7/raw/836749654acd9577a8e3be1a8dad2453244547c0/TestFlight_Unlock.js
 # 嗶哩嗶哩, 港澳台番劇自動切換地區 & 顯示豆瓣評分
 Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Bili_Auto_Regions.js,script-update-interval=0
 # 可選, 適用於搜索指定地區的番劇
