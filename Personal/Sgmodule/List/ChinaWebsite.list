@@ -152,10 +152,6 @@ DOMAIN,testflight.apple.com
 DOMAIN,sandbox.itunes.apple.com
 DOMAIN-SUFFIX,sandbox.itunes.apple.com
 
-# Alibaba
-DOMAIN,log.mmstat.com
-DOMAIN,sycm.mmstat.com
-
 # BOSC 上海銀行
 DOMAIN,pmbanalysis.bosc.cn
 DOMAIN,pmbservice.bosc.cn
@@ -165,6 +161,10 @@ USER-AGENT,*bosc
 USER-AGENT,*bosc*
 USER-AGENT,bosc
 PROCESS-NAME,bosc
+
+# Alibaba
+DOMAIN,log.mmstat.com
+DOMAIN,sycm.mmstat.com
 
 # ByteDance
 DOMAIN-SUFFIX,2333333333333.com
