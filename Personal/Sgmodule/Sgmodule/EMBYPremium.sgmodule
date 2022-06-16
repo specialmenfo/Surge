@@ -1,0 +1,9 @@
+#!name=EMBY Premium
+#!desc=EMBY Premium
+
+[MITM]
+hostname = %APPEND% mb3admin.com
+
+[Script]
+# EMBY Premium mb3admin.com
+EmbyPremiere = type=http-response,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/EMBY.js,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,max-size=131072,requires-body=1,timeout=10,enable=true,script-update-interval=0
