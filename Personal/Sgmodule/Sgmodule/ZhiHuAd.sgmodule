@@ -1,0 +1,11 @@
+#!name=知乎App去廣告
+#!desc=開屏頁廣告,首頁右下角懸浮框,推薦列表廣告,問題回答列表廣告,具體回答下廣告
+
+[Rule]
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ZhiHuAd.list,REJECT-DROP
+
+[MITM]
+hostname = %APPEND% api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com
+
+[Script]
+知乎json = type=http-response,pattern=^https:\/\/(appcloud2\.zhihu\.com\/v3\/config$|www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations|api\.zhihu\.com\/(topstory\/recommend|commercial_api\/(real_time_launch_v2|app_float_layer$)|questions\/\d+\/feeds\?|v4\/questions\/\d+\/answers\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/ZhiHuAd1.js
