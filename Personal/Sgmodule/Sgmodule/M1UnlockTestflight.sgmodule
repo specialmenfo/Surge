@@ -1,0 +1,9 @@
+#!name=M1 系列 Mac 解除 iOS 軟件限制
+#!desc=M1 系列 Mac 解除 iOS 軟件限制
+
+[MITM]
+hostname = %APPEND% testflight.apple.com
+
+[Script]
+# M1 系列 Mac 解除 iOS 軟件限制 testflight.apple.com
+M1 系列 Mac 解除 iOS TestFlight 軟件限制 = type=http-response,pattern=^https:\/\/testflight\.apple\.com((\/v3\/accounts\/.+?\/apps$)|(\/v2\/accounts\/.+?\/apps\/.+?\/builds\/.+)),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/M1MacTestflightUnlock.js,requires-body=1,timeout=10,max-size=0,script-update-interval=0
