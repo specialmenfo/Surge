@@ -1,0 +1,11 @@
+#!name=VideoQQ
+#!desc=簽到
+
+[MITM]
+hostname = %APPEND% *.video.qq.com
+
+[Script]
+# *.video.qq.com
+# 1.手機瀏覽器訪問並登錄: https://film.qq.com/
+videoqq.cookie.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/TVideo/videoqq.cookie.js,type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh
+videoqq.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/TVideo/videoqq.js,type=cron,cronexp=10 0 0 * * *
