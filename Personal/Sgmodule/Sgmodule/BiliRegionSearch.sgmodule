@@ -2,7 +2,7 @@
 #!desc=Bili Region/Search
 
 [mitm]
-hostname = ap?.bili*i.com, ap?.bili*i.net
+hostname = %APPEND% ap?.bili*i.com, ap?.bili*i.net
 
 [Script]
 # 嗶哩嗶哩, 港澳台番劇自動切換地區 & 顯示豆瓣評分
