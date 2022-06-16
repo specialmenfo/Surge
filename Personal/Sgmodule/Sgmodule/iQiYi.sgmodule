@@ -1,0 +1,7 @@
+#!name=iQiYi
+#!desc=https://m.iqiyi.com/user.html，搭配 MITM.sgmodule
+
+[Script]
+# Safari 瀏覽器打開 https://m.iqiyi.com/user.html 使用密碼登錄, 如通知成功獲取 cookie 則可使用該腳本
+愛奇藝簽到 = type=cron,cronexp=10 10 0 * * *,timeout=120,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js,script-update-interval=0
+愛奇藝獲取Cookie = type=http-request,pattern=^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/iQIYI.js,requires-body=0,script-update-interval=0
