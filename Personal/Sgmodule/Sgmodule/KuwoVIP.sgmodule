@@ -1,0 +1,9 @@
+#!name=Kuwo VIP
+#!desc=Kuwo VIP
+
+[MITM]
+hostname = %APPEND% vip1.kuwo.cn
+
+[Script]
+# Kuwo VIP vip1.kuwo.cn
+Kuwo vip = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Kuwo.js,script-update-interval=0
