@@ -74,12 +74,6 @@ DOMAIN-SUFFIX,apple.comscoreresearch.com
 # News+ Audio
 URL-REGEX,^https?:\/\/news-assets\.apple\.com\/.*(audio-narrative).*
 
-# Mail SMTP
-DOMAIN-SUFFIX,smtp.gmail.com
-DOMAIN-SUFFIX,smtp.yandex.ru
-DOMAIN,smtp.office365.com
-DOMAIN-SUFFIX,smtp.office365.com
-
 # Apkpure
 DOMAIN-SUFFIX,apkpure.com
 DOMAIN-SUFFIX,cdnpure.com
@@ -973,35 +967,6 @@ USER-AGENT,*com.google.ios.youtubemusic*
 USER-AGENT,YouTubeMusic*
 USER-AGENT,com.google.ios.youtubemusic*
 
-# Carousell
-DOMAIN,www.carousell.com.hk
-DOMAIN,api.carousell.io
-DOMAIN,carousell.zendesk.com
-DOMAIN-SUFFIX,zendesk.com
-DOMAIN-SUFFIX,click.mail.carousell.com
-DOMAIN,click.mail.carousell.com/*
-DOMAIN-SUFFIX,click.mail.carousell.com/*
-DOMAIN,click.mail.carousell.com/ls/*
-DOMAIN-SUFFIX,click.mail.carousell.com/ls/*
-DOMAIN,click.mail.carousell.com/ls/click?upn*
-DOMAIN-SUFFIX,click.mail.carousell.com/ls/click?upn*
-DOMAIN-SUFFIX,carousell.com
-DOMAIN-SUFFIX,.carousell.hk
-DOMAIN-SUFFIX,carousell.com.hk
-DOMAIN-SUFFIX,carousell.hk
-DOMAIN-SUFFIX,carousell.sg
-DOMAIN-SUFFIX,.carousell.sg
-DOMAIN-SUFFIX,carousell.sg
-DOMAIN-SUFFIX,*.karousell.com
-DOMAIN-SUFFIX,.karousell.com
-DOMAIN-SUFFIX,karousell.com
-DOMAIN-SUFFIX,carousell.io
-IP-CIDR,104.16.0.0/12,no-resolve
-IP-CIDR,104.16.51.111/32,no-resolve
-USER-AGENT,*carousell
-USER-AGENT,carousell*
-USER-AGENT,*carousell*
-
 # Crunchyroll
 USER-AGENT,Crunchyroll*
 DOMAIN-SUFFIX,crunchyroll.com
@@ -1845,39 +1810,7 @@ DOMAIN-SUFFIX,nytimg.com
 DOMAIN-SUFFIX,nytlog.com
 DOMAIN-SUFFIX,nytstyle.com
 DOMAIN-SUFFIX,timestalks.com
-DOMAIN-SUFFIX,tynt.comm
-
-# 八達通
-DOMAIN-SUFFIX,octopus.com.hk
-DOMAIN-SUFFIX,.octopus.com.hk
-DOMAIN-SUFFIX,*.octopus.com.hk
-DOMAIN,www.octopus.com.hk
-DOMAIN-SUFFIX,ptfss.hk
-DOMAIN-SUFFIX,.ptfss.hk
-DOMAIN-SUFFIX,*.ptfss.hk
-DOMAIN-SUFFIX,subsidy-app.ptfss.hk
-DOMAIN-SUFFIX,octopus.queue-it.net
-DOMAIN-SUFFIX,octopus-cards.com
-DOMAIN-SUFFIX,.octopus-cards.com
-DOMAIN-SUFFIX,*.octopus-cards.com
-DOMAIN,app.oepay.octopus-cards.com
-DOMAIN-SUFFIX,octopuscards.com
-DOMAIN-SUFFIX,.octopuscards.com
-DOMAIN-SUFFIX,*.octopuscards.com
-DOMAIN,www.octopuscards.com
-USER-AGENT,octopuscards
-USER-AGENT,octopus
-USER-AGENT,octopus*
-USER-AGENT,*octopus
-USER-AGENT,oepay
-USER-AGENT,ptfss
-USER-AGENT,oepay*
-USER-AGENT,*oepay
-USER-AGENT,ptfss*
-USER-AGENT,*ptfss
-PROCESS-NAME,octopus
-PROCESS-NAME,ptfss
-PROCESS-NAME,oepay
+DOMAIN-SUFFIX,tynt.com
 
 # OneDrive
 DOMAIN-SUFFIX,1drv.com
@@ -2081,18 +2014,6 @@ IP-CIDR,199.96.56.0/21,no-resolve
 IP-CIDR,202.160.128.0/22,no-resolve
 IP-CIDR,209.237.192.0/19,no-resolve
 IP-CIDR,69.195.160.0/19,no-resolve
-
-# Tap & Go
-DOMAIN,tapngo.queue-it.net
-DOMAIN-SUFFIX,tapngo.com.hk
-DOMAIN-SUFFIX,.tapngo.com.hk
-DOMAIN-SUFFIX,*.tapngo.com.hk
-DOMAIN,wallet.tapngo.com.hk
-USER-AGENT,tapngo
-USER-AGENT,tapngo*
-USER-AGENT,*tapngo
-PROCESS-NAME,tapngo
-IP-CIDR,52.48.0.0/14,no-resolve
 
 # VK
 DOMAIN-SUFFIX,mvk.com
