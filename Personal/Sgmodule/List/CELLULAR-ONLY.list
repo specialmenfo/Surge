@@ -54,9 +54,17 @@ DOMAIN-SUFFIX,livibank.com
 DOMAIN-KEYWORD,livibank.com
 
 # Mail SMTP
+DOMAIN,imap.gmail.com
+DOMAIN,smtp.gmail.com
+DOMAIN-SUFFIX,imap.gmail.com
 DOMAIN-SUFFIX,smtp.gmail.com
+DOMAIN,imap.yandex.ru
+DOMAIN,smtp.yandex.ru
+DOMAIN-SUFFIX,imap.yandex.ru
 DOMAIN-SUFFIX,smtp.yandex.ru
+DOMAIN,imap.office365.com
 DOMAIN,smtp.office365.com
+DOMAIN-SUFFIX,imap.office365.com
 DOMAIN-SUFFIX,smtp.office365.com
 
 # Octopus 八達通
