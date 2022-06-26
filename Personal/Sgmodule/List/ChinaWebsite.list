@@ -152,16 +152,6 @@ DOMAIN,testflight.apple.com
 DOMAIN,sandbox.itunes.apple.com
 DOMAIN-SUFFIX,sandbox.itunes.apple.com
 
-# BOSC 上海銀行
-DOMAIN,pmbanalysis.bosc.cn
-DOMAIN,pmbservice.bosc.cn
-DOMAIN-SUFFIX,bosc.cn
-USER-AGENT,bosc*
-USER-AGENT,*bosc
-USER-AGENT,*bosc*
-USER-AGENT,bosc
-PROCESS-NAME,bosc
-
 # Alibaba
 DOMAIN,log.mmstat.com
 DOMAIN,sycm.mmstat.com
@@ -1431,15 +1421,3 @@ DOMAIN-SUFFIX,msftncsi.com
 DOMAIN-SUFFIX,localhost.sec.qq.com
 DOMAIN-SUFFIX,localhost.ptlogin2.qq.com
 DOMAIN-SUFFIX,vv.video.qq.com
-DOMAIN-KEYWORD,dhl
-DOMAIN-SUFFIX,dhl.com
-DOMAIN-SUFFIX,livibank.com
-DOMAIN-KEYWORD,livibank.com
-DOMAIN-SUFFIX,hsbc.com.hk
-DOMAIN-KEYWORD,hsbc.com.hk
-DOMAIN-KEYWORD,wlbank
-DOMAIN-SUFFIX,wlbank.com.mo
-DOMAIN,opening.wlbank.com.mo
-DOMAIN-SUFFIX,za.group
-DOMAIN-KEYWORD,za.group
-DOMAIN-KEYWORD,za
