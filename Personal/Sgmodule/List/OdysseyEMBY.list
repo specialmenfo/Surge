@@ -102,3 +102,7 @@ DOMAIN,sg.odysseyplus.*
 DOMAIN,sg2.odysseyplus.*
 DOMAIN,ru.odysseyplus.*
 DOMAIN,sp.odysseyplus.*
+DOMAIN,jp.odysseyplus.site
+DOMAIN,kr.odysseyplus.site
+DOMAIN,us.odysseyplus.site
+DOMAIN-SUFFIX,odysseyplus.site
