@@ -2254,12 +2254,6 @@ IP-CIDR,8.253.129.113/32,no-resolve
 IP-CIDR,8.252.18.126/32,no-resolve
 IP-CIDR,8.252.73.254/32,no-resolve
 IP-CIDR,8.252.192.126/32,no-resolve
-IP-CIDR,8.252.*/32,no-resolve
-IP-CIDR,8.251.*/32,no-resolve
-IP-CIDR,8.253.*/32,no-resolve
-IP-CIDR,8.250.*/32,no-resolve
-IP-CIDR,13.107.*/32,no-resolve
-IP-CIDR,8.249.*/32,no-resolve
 IP-CIDR,8.252.176.254/32,no-resolve
 IP-CIDR,8.250.197.254/32,no-resolve
 IP-CIDR,8.252.176.254/32,no-resolve
