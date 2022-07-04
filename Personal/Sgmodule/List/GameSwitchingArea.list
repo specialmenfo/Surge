@@ -2259,4 +2259,17 @@ IP-CIDR,8.251.*/32,no-resolve
 IP-CIDR,8.253.*/32,no-resolve
 IP-CIDR,8.250.*/32,no-resolve
 IP-CIDR,13.107.*/32,no-resolve
+IP-CIDR,8.249.*/32,no-resolve
+IP-CIDR,8.252.176.254/32,no-resolve
+IP-CIDR,8.250.197.254/32,no-resolve
+IP-CIDR,8.252.176.254/32,no-resolve
+IP-CIDR,8.249.23.254/32,no-resolve
+IP-CIDR,8.253.129.66/32,no-resolve
+IP-CIDR,8.250.161.254/32,no-resolve
+IP-CIDR,8.252.176.254/32,no-resolve
+IP-CIDR,8.253.142.233/32,no-resolve
+IP-CIDR,8.253.142.233/32,no-resolve
+IP-CIDR,8.252.42.126/32,no-resolve
+IP-CIDR,8.252.42.126/32,no-resolve
+IP-CIDR,8.253.142.233/32,no-resolve
 PROTOCOL,udp
