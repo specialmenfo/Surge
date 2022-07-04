@@ -2242,4 +2242,16 @@ IP-CIDR,137.221.105.2/32,no-resolve
 IP-CIDR,185.60.112.158/32,no-resolve
 IP-CIDR,210.71.148.11/32,no-resolve
 IP-CIDR,211.115.104.1/32,no-resolve
+IP-CIDR,8.252.192.126/32,no-resolve
+IP-CIDR,8.253.142.248/32,no-resolve
+IP-CIDR,13.107.42.15/32,no-resolve
+IP-CIDR,8.252.72.126/32,no-resolve
+IP-CIDR,8.252.72.126/32,no-resolve
+IP-CIDR,8.252.111.126/32,no-resolve
+IP-CIDR,8.253.142.249/32,no-resolve
+IP-CIDR,8.251.31.254/32,no-resolve
+IP-CIDR,8.253.129.113/32,no-resolve
+IP-CIDR,8.252.18.126/32,no-resolve
+IP-CIDR,8.252.73.254/32,no-resolve
+IP-CIDR,8.252.192.126/32,no-resolve
 PROTOCOL,udp
