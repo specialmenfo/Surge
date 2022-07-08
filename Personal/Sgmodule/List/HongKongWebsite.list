@@ -960,6 +960,20 @@ USER-AGENT,Crunchyroll*
 DOMAIN-SUFFIX,crunchyroll.com
 DOMAIN-SUFFIX,vrv.co
 
+# CTMO
+DOMAIN,www.1888.com.mo
+DOMAIN,wechat.ctcmo.com
+DOMAIN-SUFFIX,1888.com.mo
+DOMAIN-SUFFIX,ctcmo.com
+USER-AGENT,ctcmo*
+USER-AGENT,1888*
+USER-AGENT,*ctcmo
+USER-AGENT,*1888
+PROCESS-NAME,ctcmo
+PROCESS-NAME,1888
+DOMAIN-KEYWORD,1888
+DOMAIN-KEYWORD,ctcmo
+
 # Disney++
 DOMAIN-SUFFIX,media.dssott.com
 DOMAIN,prod-ripcut-delivery.disney-plus.net
