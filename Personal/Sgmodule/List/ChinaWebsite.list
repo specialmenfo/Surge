@@ -1,4 +1,6 @@
 # Apple Daily
+DOMAIN,netcts.cdn-apple.com
+DOMAIN-SUFFIX,cdn-apple.com
 DOMAIN-SUFFIX,appledaily.com
 DOMAIN-SUFFIX,appledaily.com.hk
 DOMAIN-SUFFIX,appledaily.com.tw
