@@ -7,7 +7,6 @@ ip-api.com = 208.95.112.1
 [Script]
 # Panel
 net-info-panel.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/networkCheck.js,type=generic
-disney_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/disney_check.js,script-update-interval=0
 reload.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/reload.js,type=generic
 flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/zZPiglet_flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
 nf_check = type=generic,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/NetflixCheck.js,argument=title=Netflix 影劇版權IP鎖測試,script-update-interval=0
@@ -17,4 +16,3 @@ NetInfoPanel = style=info,script-name=net-info-panel.js,update-interval=1
 Profile-Reload = title=Profile Reload,content=點擊以重新整理,style=info,script-name=reload.js,update-interval=-1
 flushDNS = script-name=flushDNS,update-interval=600
 nf_check = script-name=nf_check,title=Netflix 影劇版權IP鎖測試,style=alert,content=請刷新,update-interval=1800
-disney_check = script-name=disney_check,title=Disney+ 影劇版權IP鎖測試,style=alert,content=請刷新,update-interval=1800
