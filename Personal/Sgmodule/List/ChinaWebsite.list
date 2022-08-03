@@ -2516,6 +2516,12 @@ DOMAIN-SUFFIX,unionpay.net
 DOMAIN-SUFFIX,unionpayintl.com
 DOMAIN-SUFFIX,unionpaysecure.com
 
+# Weibo
+DOMAIN-SUFFIX,weibo.cn
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,weibocdn.com
+DOMAIN-KEYWORD,weibo
+
 # WeChat
 DOMAIN-KEYWORD,101.226.211.
 DOMAIN-KEYWORD,101.226.222.
