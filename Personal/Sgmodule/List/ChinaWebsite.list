@@ -444,6 +444,10 @@ DOMAIN-SUFFIX,sandbox.itunes.apple.com
 DOMAIN,log.mmstat.com
 DOMAIN,sycm.mmstat.com
 
+# BenDiBao
+DOMAIN,m.bendibao.com
+DOMAIN-SUFFIX,bendibao.com
+
 # ByteDance
 DOMAIN-SUFFIX,2333333333333.com
 DOMAIN-SUFFIX,365yg.com
