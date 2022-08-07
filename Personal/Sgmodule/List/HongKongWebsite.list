@@ -1,4 +1,12 @@
 # Codashop
+DOMAIN,api.segment.io
+DOMAIN,sg1.wzrkt.com
+DOMAIN,wallet-api.codacash.com
+DOMAIN,api-f3cb6187-cb42-4cd1-95fc-1c46f8856006.sendbird.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,wzrkt.com
+DOMAIN-SUFFIX,codacash.com
+DOMAIN-SUFFIX,sendbird.com
 DOMAIN-SUFFIX,codashop.com
 
 # Google推送
