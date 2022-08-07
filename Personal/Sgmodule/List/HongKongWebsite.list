@@ -4,6 +4,7 @@ DOMAIN,cdn.segment.com
 DOMAIN,sslwidget.criteo.com
 DOMAIN,csm.sg1.as.criteo.net
 DOMAIN,d2r1yp2w7bby2u.cloudfront.net
+IP-CIDR,17.253.84.251/12,no-resolve
 IP-CIDR,17.253.84.251/32,no-resolve
 DOMAIN,api.segment.io
 DOMAIN,sg1.wzrkt.com
