@@ -1,25 +1,3 @@
-# Codashop
-DOMAIN,static.hotjar.com
-DOMAIN,cdn.segment.com
-DOMAIN,sslwidget.criteo.com
-DOMAIN,csm.sg1.as.criteo.net
-DOMAIN,d2r1yp2w7bby2u.cloudfront.net
-IP-CIDR,17.253.84.251/12,no-resolve
-IP-CIDR,17.253.84.251/32,no-resolve
-DOMAIN,api.segment.io
-DOMAIN,sg1.wzrkt.com
-DOMAIN,wallet-api.codacash.com
-DOMAIN,api-f3cb6187-cb42-4cd1-95fc-1c46f8856006.sendbird.com
-DOMAIN-SUFFIX,hotjar.com
-DOMAIN-SUFFIX,segment.com
-DOMAIN-SUFFIX,criteo.com
-DOMAIN-SUFFIX,criteo.net
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,wzrkt.com
-DOMAIN-SUFFIX,codacash.com
-DOMAIN-SUFFIX,sendbird.com
-DOMAIN-SUFFIX,codashop.com
-
 # Google推送
 DOMAIN,alt1-mtalk.google.com
 DOMAIN,alt2-mtalk.google.com
