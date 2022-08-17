@@ -1,4 +1,7 @@
 # Codashop
+DOMAIN,tngdigital.com.my
+DOMAIN,cdn.tngdigital.com.my
+DOMAIN,mdap.tngdigital.com.my
 DOMAIN,sg1.wzrkt.com
 DOMAIN,api.segment.io
 DOMAIN,cdn.segment.com
@@ -6,6 +9,7 @@ DOMAIN,static.hotjar.com
 DOMAIN,sslwidget.criteo.com
 DOMAIN,csm.sg1.as.criteo.net
 DOMAIN,d2r1yp2w7bby2u.cloudfront.net
+DOMAIN-SUFFIX,tngdigital.com.my
 DOMAIN-SUFFIX,codashop.com
 DOMAIN-SUFFIX,codapayments.com
 DOMAIN,wallet-api.codacash.com
@@ -20,5 +24,17 @@ DOMAIN-SUFFIX,segment.com
 DOMAIN-SUFFIX,codacash.com
 DOMAIN-SUFFIX,sendbird.com
 DOMAIN-SUFFIX,codashop.com
+DOMAIN-KEYWORD,codashop
+DOMAIN-KEYWORD,tngdigital
+USER-AGENT,*codashop
+USER-AGENT,codashop*
+USER-AGENT,*codashop*
+USER-AGENT,codashop*
+USER-AGENT,*tngdigital
+USER-AGENT,tngdigital*
+USER-AGENT,*tngdigital*
+USER-AGENT,tngdigital*
+PROCESS-NAME,codashop
+PROCESS-NAME,tngdigital
 IP-CIDR,17.253.84.251/12,no-resolve
 IP-CIDR,17.253.84.251/32,no-resolve
