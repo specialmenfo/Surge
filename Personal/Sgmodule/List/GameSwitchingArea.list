@@ -1,5 +1,4 @@
 # Arena of Valor
-PROTOCOL,udp
 DOMAIN,*.iegcom.com
 DOMAIN,aihelp.net
 DOMAIN,faqs.aihelp.net
@@ -2283,4 +2282,3 @@ IP-CIDR,13.77.150.45/32,no-resolve
 IP-CIDR,8.249.11.254/32,no-resolve
 IP-CIDR,8.250.161.254/32,no-resolve
 IP-CIDR,8.250.203.254/32,no-resolve
-PROTOCOL,udp
