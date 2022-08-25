@@ -3469,3 +3469,4 @@ IP-CIDR6,fe80::/10,no-resolve
 
 # CN
 DOMAIN-SUFFIX,cn
+DOMAIN-SUFFIX,gov.cn
