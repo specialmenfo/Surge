@@ -3047,6 +3047,7 @@ DOMAIN,*.activedirectory.windowsazure.com
 DOMAIN,account.activedirectory.windowsazure.com/*
 DOMAIN,account.activedirectory.windowsazure.com/
 DOMAIN,account.activedirectory.windowsazure.com/changepassword.aspx
+DOMAIN-SUFFIX,mynt.xyz
 DOMAIN-SUFFIX,activedirectory.windowsazure.com
 DOMAIN-SUFFIX,.activedirectory.windowsazure.com
 DOMAIN-SUFFIX,*.activedirectory.windowsazure.com
