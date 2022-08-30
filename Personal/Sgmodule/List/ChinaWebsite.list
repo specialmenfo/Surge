@@ -3449,6 +3449,7 @@ DOMAIN-SUFFIX,router.ctc
 DOMAIN-SUFFIX,routerlogin.com
 DOMAIN-SUFFIX,tendawifi.com
 DOMAIN-SUFFIX,zte.home
+DOMAIN-SUFFIX,bendibao.com
 IP-CIDR,0.0.0.0/8,no-resolve
 IP-CIDR,10.0.0.0/8,no-resolve
 IP-CIDR,100.64.0.0/10,no-resolve
