@@ -3039,6 +3039,8 @@ PROCESS-NAME,yuurewards
 PROCESS-NAME,dmall
 
 # Other
+DOMAIN,sc.menfo.xyz
+DOMAIN-SUFFIX,menfo.xyz
 USER-AGENT,*AssistantServices*
 DOMAIN-SUFFIX,myptt.cc
 DOMAIN,activedirectory.windowsazure.com
