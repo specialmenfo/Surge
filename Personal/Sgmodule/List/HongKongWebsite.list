@@ -140,6 +140,7 @@ DOMAIN,seed.siri.apple.com
 DOMAIN-SUFFIX,gateway.icloud.com
 
 # Apple News
+DOMAIN,c.apple.news
 DOMAIN,apple.comscoreresearch.com
 DOMAIN,gateway.icloud.com
 DOMAIN,gspe1-ssl.ls.apple.com
