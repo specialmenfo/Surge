@@ -95,8 +95,21 @@ DOMAIN,buy.itunes.apple.com
 DOMAIN-SUFFIX,buy.itunes.apple.com
 USER-AGENT,iTunes*
 PROCESS-NAME,itunes
-IP-CIDR,138.2.81.238/22,no-resolve
-IP-CIDR,138.2.89.124/24,no-resolve
+IP-CIDR,17.188.130.0/32,no-resolve
+IP-CIDR,17.188.130.181/32,no-resolve
+IP-CIDR,17.120.252.0/32,no-resolve
+IP-CIDR,17.120.252.0/32,no-resolve
+IP-CIDR,17.120.252.47/32,no-resolve
+IP-CIDR,17.57.145.171/32,no-resolve
+IP-CIDR,17.57.145.55/32,no-resolve
+IP-CIDR,17.57.145.172/32,no-resolve
+IP-CIDR,17.120.252.50/32,no-resolve
+IP-CIDR,17.188.18.231/32,no-resolve
+IP-CIDR,17.188.18.212/32,no-resolve
+IP-CIDR,17.120.252.49/32,no-resolve
+IP-CIDR,138.2.81.238/32,no-resolve
+IP-CIDR,138.2.81.238/32,no-resolve
+IP-CIDR,138.2.89.124/32,no-resolve
 
 # Apple Mail
 DOMAIN-SUFFIX,mail.icloud.com.cn
