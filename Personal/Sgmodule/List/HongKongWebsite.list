@@ -1817,6 +1817,8 @@ DOMAIN-SUFFIX,spreadprivacy.com
 # Facebook & Instagram & WhatsApp
 DOMAIN,g.whatsapp.net
 DOMAIN,dit.whatsapp.net
+DOMAIN,media-hkg4-1.cdn.whatsapp.net
+DOMAIN-SUFFIX,whatsapp.net
 DOMAIN-SUFFIX,aboutfacebook.com
 DOMAIN-SUFFIX,accessfacebookfromschool.com
 DOMAIN-SUFFIX,accountkit.com
