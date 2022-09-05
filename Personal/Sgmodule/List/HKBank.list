@@ -88,6 +88,14 @@ PROCESS-NAME,ptfss
 PROCESS-NAME,oepay
 
 # SC
+DOMAIN,ds-aksb-a.akamaihd.net
+DOMAIN,secure.quantserve.com
+DOMAIN,js.adsrvr.org
+DOMAIN,s.yimg.com
+DOMAIN,insight.adsrvr.org
+DOMAIN,rules.quantcount.com
+DOMAIN,match.adsrvr.org
+DOMAIN,pixel.quantserve.com
 DOMAIN,standchartbank.demdex.net
 DOMAIN,fast.standchartbank.demdex.net
 DOMAIN,standchartbank.sc.omtrdc.net
