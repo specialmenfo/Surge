@@ -2422,6 +2422,8 @@ DOMAIN-SUFFIX,flipboard.com
 DOMAIN-SUFFIX,flipchina.cn
 
 # GitHub & GitLab
+DOMAIN,raw.githubusercontent.com
+DOMAIN,avatars.githubusercontent.com
 DOMAIN,alive.github.com
 DOMAIN,github.com
 DOMAIN,github.githubassets.com
@@ -2493,6 +2495,10 @@ USER-AGENT,githubassets
 USER-AGENT,githubassets*
 USER-AGENT,*githubassets
 PROCESS-NAME,githubassets
+USER-AGENT,githubusercontent
+USER-AGENT,githubusercontent*
+USER-AGENT,*githubusercontent
+PROCESS-NAME,githubusercontent
 
 # Google
 DOMAIN-SUFFIX,tac.googleapis.com
