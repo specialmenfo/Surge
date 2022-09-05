@@ -35,6 +35,10 @@ DOMAIN-SUFFIX,we-stats.com
 USER-AGENT,hsbc
 USER-AGENT,hsbc*
 USER-AGENT,*hsbc
+USER-AGENT,payme
+USER-AGENT,payme*
+USER-AGENT,*payme
+PROCESS-NAME,payme
 PROCESS-NAME,hsbc
 IP-CIDR,162.159.193.3/22,no-resolve
 IP-CIDR,162.159.193.5/22,no-resolve
