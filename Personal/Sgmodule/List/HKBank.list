@@ -13,6 +13,13 @@ DOMAIN,19981.paymebiz.hsbc.com.hk
 DOMAIN,collect-ap-east-1.tealiumiq.com
 DOMAIN,collect.tealiumiq.com
 DOMAIN,www.m.security.online-banking.hsbc.com.hk
+DOMAIN,eapi.preferences.prod.ap-east-1.vam-hk.cloud1.vv1865.com
+DOMAIN,z3.loggos.liveperson.net
+DOMAIN,messaging.prod.ap-east-1.vam-hk.cloud1.vv1865.com
+DOMAIN,sy.idp.liveperson.net
+DOMAIN,ocsp.digicert.com
+DOMAIN,sy.push.liveperson.net
+DOMAIN,log-58144bf0.we-stats.com
 DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN-SUFFIX,online-banking.hsbc.com.hk
 DOMAIN,rbwm-api.hsbc.com.hk
@@ -20,10 +27,17 @@ DOMAIN,m.mobilex-static.hsbc.com.hk
 DOMAIN-SUFFIX,siteintercept.qualtrics.com
 DOMAIN-SUFFIX,qualtrics.com
 DOMAIN-SUFFIX,tealiumiq.com
+DOMAIN-SUFFIX,cloud1.vv1865.com
+DOMAIN-SUFFIX,liveperson.net
+DOMAIN-SUFFIX,vv1865.com
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,we-stats.com
 USER-AGENT,hsbc
 USER-AGENT,hsbc*
 USER-AGENT,*hsbc
 PROCESS-NAME,hsbc
+IP-CIDR,162.159.193.3/22,no-resolve
+IP-CIDR,162.159.193.5/22,no-resolve
 
 
 # liviBank
