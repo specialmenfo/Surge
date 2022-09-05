@@ -1,3 +1,31 @@
+# HSBC
+DOMAIN,www.isstprod.hsbc.com.hk
+DOMAIN,www.m.security.online-banking.hsbc.com.hk
+DOMAIN,rbwm-api.hsbc.com.hk
+DOMAIN,m.mobilex-static.hsbc.com.hk
+DOMAIN,zn1x4bay9t3d099pf-hsbcdigital.siteintercept.qualtrics.com
+DOMAIN,rbwm-api.hsbc.com.hk
+DOMAIN,insurance.hsbc.com.hk
+DOMAIN,cdnbc-wup.hsbc.com.hk
+DOMAIN,m.mobilex-static.hsbc.com.hk
+DOMAIN,payme-api-secure.hsbc.com.hk
+DOMAIN,19981.paymebiz.hsbc.com.hk
+DOMAIN,collect-ap-east-1.tealiumiq.com
+DOMAIN,collect.tealiumiq.com
+DOMAIN,www.m.security.online-banking.hsbc.com.hk
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,online-banking.hsbc.com.hk
+DOMAIN,rbwm-api.hsbc.com.hk
+DOMAIN,m.mobilex-static.hsbc.com.hk
+DOMAIN-SUFFIX,siteintercept.qualtrics.com
+DOMAIN-SUFFIX,qualtrics.com
+DOMAIN-SUFFIX,tealiumiq.com
+USER-AGENT,hsbc
+USER-AGENT,hsbc*
+USER-AGENT,*hsbc
+PROCESS-NAME,hsbc
+
+
 # liviBank
 DOMAIN,ms.livibank.com
 DOMAIN,appgw.livibank.com
