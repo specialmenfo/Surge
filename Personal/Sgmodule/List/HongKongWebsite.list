@@ -2422,6 +2422,9 @@ DOMAIN-SUFFIX,flipboard.com
 DOMAIN-SUFFIX,flipchina.cn
 
 # GitHub & GitLab
+DOMAIN,alive.github.com
+DOMAIN,github.com
+DOMAIN,github.githubassets.com
 DOMAIN-SUFFIX,gitlab-assets.oss-cn-hongkong.aliyuncs.com
 DOMAIN-SUFFIX,gitlab-static.net
 DOMAIN-SUFFIX,gitlab.com
@@ -2482,6 +2485,14 @@ DOMAIN-SUFFIX,npmjs.org
 DOMAIN-SUFFIX,rawgit.com
 DOMAIN-SUFFIX,rawgithub.com
 DOMAIN-SUFFIX,thegithubshop.com
+USER-AGENT,github
+USER-AGENT,github*
+USER-AGENT,*github
+PROCESS-NAME,github
+USER-AGENT,githubassets
+USER-AGENT,githubassets*
+USER-AGENT,*githubassets
+PROCESS-NAME,githubassets
 
 # Google
 DOMAIN-SUFFIX,tac.googleapis.com
