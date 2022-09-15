@@ -3540,3 +3540,7 @@ IP-CIDR6,fe80::/10,no-resolve
 # CN
 DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,gov.cn
+
+# DHL
+DOMAIN,weixin.5ihl.com
+DOMAIN-SUFFIX,5ihl.com
