@@ -3122,6 +3122,8 @@ PROCESS-NAME,dmall
 
 # Other
 DOMAIN,sc.menfo.xyz
+DOMAIN,agirls.aotter.net
+DOMAIN-SUFFIX,aotter.net
 DOMAIN-SUFFIX,menfo.xyz
 USER-AGENT,*AssistantServices*
 DOMAIN-SUFFIX,myptt.cc
