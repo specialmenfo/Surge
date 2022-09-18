@@ -1,4 +1,7 @@
 # Codashop
+DOMAIN,centrifugo.boost-my.com
+DOMAIN,onlinepayment.boost-my.com
+DOMAIN,securepay.e-ghl.com/IPG/Payment.aspx
 DOMAIN,m.tngdigital.com.my
 DOMAIN,tngdigital.com.my
 DOMAIN,cdn.tngdigital.com.my
@@ -10,6 +13,8 @@ DOMAIN,static.hotjar.com
 DOMAIN,sslwidget.criteo.com
 DOMAIN,csm.sg1.as.criteo.net
 DOMAIN,d2r1yp2w7bby2u.cloudfront.net
+DOMAIN-SUFFIX,boost-my.com
+DOMAIN-SUFFIX,e-ghl.com
 DOMAIN-SUFFIX,tngdigital.com.my
 DOMAIN-SUFFIX,codashop.com
 DOMAIN-SUFFIX,codapayments.com
