@@ -3122,8 +3122,10 @@ PROCESS-NAME,dmall
 
 # Other
 DOMAIN,www.wkbhjlq.tw
+DOMAIN,signup.paveapp.com
 DOMAIN,sc.menfo.xyz
 DOMAIN,agirls.aotter.net
+DOMAIN-SUFFIX,paveapp.com
 DOMAIN-SUFFIX,wkbhjlq.tw
 DOMAIN-SUFFIX,aotter.net
 DOMAIN-SUFFIX,menfo.xyz
