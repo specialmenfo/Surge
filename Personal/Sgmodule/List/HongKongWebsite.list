@@ -3122,10 +3122,12 @@ PROCESS-NAME,dmall
 
 # Other
 DOMAIN,www.wkbhjlq.tw
+DOMAIN,mrmad.com.tw
 DOMAIN,signup.paveapp.com
 DOMAIN,sc.menfo.xyz
 DOMAIN,agirls.aotter.net
 DOMAIN,www.neatcommerce.com
+DOMAIN-SUFFIX,mrmad.com.tw
 DOMAIN-SUFFIX,neatcommerce.com
 DOMAIN-SUFFIX,paveapp.com
 DOMAIN-SUFFIX,wkbhjlq.tw
