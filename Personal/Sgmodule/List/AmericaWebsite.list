@@ -98,6 +98,11 @@ DOMAIN-SUFFIX,wolfatbestbuy.com
 DOMAIN-SUFFIX,wolfatbestbuy.net
 DOMAIN-SUFFIX,www-bestbuystores.com
 
+# Credit
+DOMAIN,credit.com
+DOMAIN,www.credit.com
+DOMAIN-SUFFIX,credit.com
+
 # > Discovery+
 // US
 DOMAIN,us1-prod.disco-api.com
