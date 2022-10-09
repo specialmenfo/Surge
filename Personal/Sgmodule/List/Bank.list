@@ -1,4 +1,5 @@
 # AmericanExpress
+DOMAIN,assets.adobedtm.com
 DOMAIN,iwmapapi.americanexpress.com
 DOMAIN,zndhztugwqhlulqht-aexpfeedback.siteintercept.qualtrics.com
 DOMAIN,omns.americanexpress.com
@@ -58,6 +59,20 @@ USER-AGENT,*aexp
 PROCESS-NAME,aexp
 
 # CHASE
+DOMAIN,cdn.zimperium.com
+DOMAIN,mpi-prod.zimperium.com
+DOMAIN,d.agkn.com
+DOMAIN,pippio.com
+DOMAIN,stest.zimperium.com
+DOMAIN,auth.split.io
+DOMAIN,config2.mparticle.com
+DOMAIN,skadsdkless.appsflyer.com
+DOMAIN,streaming.split.io
+DOMAIN,launches.appsflyer.com
+DOMAIN,nativesdks.mparticle.com
+DOMAIN,identity.mparticle.com
+DOMAIN,inapps.appsflyer.com
+DOMAIN,skadsdkless.appsflyer.com
 DOMAIN,www.chase.com
 DOMAIN,sites.chase.com
 DOMAIN,midas.chase.com
@@ -92,6 +107,12 @@ DOMAIN,www.chase.co.uk
 DOMAIN,telemetry.chase.co.uk
 DOMAIN,secure.chase.com
 DOMAIN,secure07c.chase.com
+DOMAIN-SUFFIX,zimperium.com
+DOMAIN-SUFFIX,agkn.com
+DOMAIN-SUFFIX,pippio.com
+DOMAIN-SUFFIX,split.io
+DOMAIN-SUFFIX,mparticle.com
+DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,chase.com
 DOMAIN-SUFFIX,chase.co.uk
 DOMAIN-SUFFIX,chase.com
