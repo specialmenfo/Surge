@@ -1,4 +1,4 @@
-# Surge 請使用HongKongWebsite.list
+# 路由器遠程配置用，Surge本地配置/Surge Mac請使用HongKongWebsite.list和Mail.list
 
 # Mail
 DOMAIN,imap.gmail.com
