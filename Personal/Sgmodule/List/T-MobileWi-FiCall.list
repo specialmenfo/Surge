@@ -1,5 +1,5 @@
 # T-Mobile Wi-Fi Call
-# Surge Mac：AND,((PROTOCOL,UDP), (RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/GameSwitchingArea.list)),🌏 遊戲換區
+# Surge Mac：AND,((PROTOCOL,UDP), (RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/T-MobileWi-FiCall.list)),🇺🇲 美國節點
 DOMAIN,crl.t-mobile.com
 DOMAIN,eas3.msg.t-mobile.com
 DOMAIN,mascns.t-mobile.com
