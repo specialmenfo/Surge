@@ -684,3 +684,14 @@ DOMAIN-SUFFIX,quobuz.fr
 DOMAIN-SUFFIX,static-qobuz.com
 IP-CIDR,52.211.1.180/32,no-resolve
 IP-CIDR,99.81.97.56/32,no-resolve
+
+# T-Mobile Wi-Fi Call
+DOMAIN,crl.t-mobile.com
+DOMAIN,eas3.msg.t-mobile.com
+DOMAIN,mascns.t-mobile.com
+DOMAIN,ns.sipgeo.t-mobile.com
+DOMAIN,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org
+DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+IP-CIDR,66.94.0.0/19
+IP-CIDR,208.54.0.0/16
