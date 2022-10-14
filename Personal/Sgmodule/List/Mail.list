@@ -1,4 +1,5 @@
 # Mail SMTP
+# Surge: AND,((PROTOCOL,UDP), (RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Mail.list)),🌏 Mail
 DOMAIN,imap.gmail.com
 DOMAIN,smtp.gmail.com
 DOMAIN-SUFFIX,imap.gmail.com
