@@ -21,3 +21,6 @@ DOMAIN-SUFFIX,apple.imap.mail.yahoo.com
 DOMAIN-SUFFIX,m.hotmail.com
 DOMAIN-SUFFIX,imap.office365.com
 DOMAIN-SUFFIX,smtp.office365.com
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,googlemail.com
+DOMAIN-KEYWORD,gmail
