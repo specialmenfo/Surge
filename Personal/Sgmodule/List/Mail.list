@@ -1,26 +1,12 @@
 # Mail SMTP
 # Surge Mac/iOS（丟進RULE即可） : RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Mail.list,HYBRID
-DOMAIN,imap.gmail.com
+
 DOMAIN,smtp.gmail.com
-DOMAIN-SUFFIX,imap.gmail.com
 DOMAIN-SUFFIX,smtp.gmail.com
-DOMAIN,imap.yandex.ru
 DOMAIN,smtp.yandex.ru
-DOMAIN-SUFFIX,imap.yandex.ru
 DOMAIN-SUFFIX,smtp.yandex.ru
-DOMAIN,imap.office365.com
 DOMAIN,smtp.office365.com
-DOMAIN,imap-mail.outlook.com
-DOMAIN,imap.gmail.com
-DOMAIN,outlook.office365.com
-DOMAIN,pop.gmail.com
 DOMAIN,smtp-mail.outlook.com
 DOMAIN,smtp.gmail.com
 DOMAIN,smtp.office365.com
-DOMAIN-SUFFIX,apple.imap.mail.yahoo.com
-DOMAIN-SUFFIX,m.hotmail.com
-DOMAIN-SUFFIX,imap.office365.com
 DOMAIN-SUFFIX,smtp.office365.com
-DOMAIN-SUFFIX,gmail.com
-DOMAIN-SUFFIX,googlemail.com
-DOMAIN-KEYWORD,gmail
