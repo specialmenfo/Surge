@@ -15,6 +15,10 @@ DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,googlemail.com
 DOMAIN-KEYWORD,gmail
 
+# UKMailBox
+DOMAIN,london-portal.ukmailboxdirect.co.uk
+DOMAIN-SUFFIX,ukmailboxdirect.co.uk
+
 # Google推送
 DOMAIN,alt1-mtalk.google.com
 DOMAIN,alt2-mtalk.google.com
