@@ -196,6 +196,23 @@ USER-AGENT,*livibank
 PROCESS-NAME,livibank
 IP-CIDR,183.240.181.35/22,no-resolve
 
+# N26（DE）
+DOMAIN,api.tech26.de
+DOMAIN,cdn.number26.de
+DOMAIN,images.ctfassets.net
+USER-AGENT,tech26
+USER-AGENT,tech26*
+USER-AGENT,*tech26
+PROCESS-NAME,tech26
+USER-AGENT,number26
+USER-AGENT,number26*
+USER-AGENT,*number26
+PROCESS-NAME,number26
+IP-CIDR,172.217.160.74/22,no-resolve
+IP-CIDR,142.251.42.234/22,no-resolve
+IP-CIDR,172.217.163.42/22,no-resolve
+IP-CIDR,128.65.211.26/22,no-resolve
+
 # 八達通
 DOMAIN-SUFFIX,octopus.com.hk
 DOMAIN-SUFFIX,.octopus.com.hk
