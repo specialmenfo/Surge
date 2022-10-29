@@ -139,6 +139,28 @@ USER-AGENT,chase*
 USER-AGENT,*chase
 PROCESS-NAME,chase
 
+# Curve
+DOMAIN,apollo-graphql-gateway.production.curve.app
+DOMAIN,account-subscriptions.production.curve.app
+DOMAIN,collector.bi.imaginecurve.com
+DOMAIN,curve.api.kustomerapp.com
+DOMAIN,clientapi.production.curve.app
+DOMAIN,client-orchestrator.production.curve.app
+DOMAIN,apollo-graphql-gateway.production.curve.app
+DOMAIN,clientapi.production.curve.app
+DOMAIN,account-onboarding-orchestrator.production.curve.app
+DOMAIN-SUFFIX,curve.app
+DOMAIN-SUFFIX,imaginecurve.com
+DOMAIN-SUFFIX,kustomerapp.com
+USER-AGENT,curve
+USER-AGENT,curve*
+USER-AGENT,*curve
+PROCESS-NAME,curve
+USER-AGENT,imaginecurve
+USER-AGENT,imaginecurve*
+USER-AGENT,*imaginecurve
+PROCESS-NAME,imaginecurve
+
 # HSBC
 DOMAIN,www.isstprod.hsbc.com.hk
 DOMAIN,www.m.security.online-banking.hsbc.com.hk
