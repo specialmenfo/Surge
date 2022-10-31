@@ -162,6 +162,10 @@ USER-AGENT,*imaginecurve
 PROCESS-NAME,imaginecurve
 
 # HSBC
+DOMAIN,www.expat.hsbc.com
+DOMAIN,www.security.online-banking.ciiom.hsbc.com
+DOMAIN,ciiom.hsbc.com
+DOMAIN,www.chub.expat.hsbc.com
 DOMAIN,status.mobilex.vpc.hsbc.co.uk
 DOMAIN,www.security.online-banking.hsbc.ca
 DOMAIN,zn5vxrjwvhjpxv0lr-hsbcdigital.siteintercept.qualtrics.com
@@ -227,6 +231,11 @@ DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN-SUFFIX,hsbc.com.sg
 DOMAIN-SUFFIX,appdynamics.com
 DOMAIN-SUFFIX,personal-banking.hsbc.com.sg
+DOMAIN-SUFFIX,expat.hsbc.com
+DOMAIN-SUFFIX,security.online-banking.ciiom.hsbc.com
+DOMAIN-SUFFIX,ciiom.hsbc.com
+DOMAIN-SUFFIX,hsbc.com
+DOMAIN-SUFFIX,chub.expat.hsbc.com
 USER-AGENT,hsbc
 USER-AGENT,hsbc*
 USER-AGENT,*hsbc
@@ -235,6 +244,18 @@ USER-AGENT,payme*
 USER-AGENT,*payme
 PROCESS-NAME,payme
 PROCESS-NAME,hsbc
+USER-AGENT,expat
+USER-AGENT,expat*
+USER-AGENT,*expat
+USER-AGENT,ciiom
+USER-AGENT,ciiom*
+USER-AGENT,*ciiom
+USER-AGENT,online-banking
+USER-AGENT,online-banking*
+USER-AGENT,*online-banking
+PROCESS-NAME,expat
+PROCESS-NAME,ciiom
+PROCESS-NAME,online-banking
 IP-CIDR,162.159.193.3/22,no-resolve
 IP-CIDR,162.159.193.5/22,no-resolve
 IP-CIDR,104.99.48.140/22,no-resolve
