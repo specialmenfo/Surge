@@ -162,6 +162,28 @@ USER-AGENT,*imaginecurve
 PROCESS-NAME,imaginecurve
 
 # HSBC
+DOMAIN,status.mobilex.vpc.hsbc.co.uk
+DOMAIN,www.security.online-banking.hsbc.ca
+DOMAIN,zn5vxrjwvhjpxv0lr-hsbcdigital.siteintercept.qualtrics.com
+DOMAIN,mobile.eum-appdynamics.com
+DOMAIN,collect-eu-central-1.tealiumiq.com
+DOMAIN,www.hsbc.ca
+DOMAIN,mcm-prod.hsbc.ca
+DOMAIN,www.services.online-banking.hsbc.ca
+DOMAIN,cdnbc-logs.hsbc.com.hk
+DOMAIN,www.isstsgh.hsbc.com.sg
+DOMAIN,cdn.hsbc.com.sg
+DOMAIN,www.hsbc.com.sg
+DOMAIN,www.isstsgh.hsbc.com.sg
+DOMAIN,status.mobilex.vpc.hsbc.co.uk
+DOMAIN,www.isstsgh.hsbc.com.sg
+DOMAIN,cdn.appdynamics.com
+DOMAIN,www.services.online-banking.hsbc.ca
+DOMAIN,mobile.eum-appdynamics.com
+DOMAIN,rbwm-api.hsbc.com.hk
+DOMAIN,mobile.eum-appdynamics.com
+DOMAIN,investments4.personal-banking.hsbc.com.sg
+DOMAIN,rbwm-api.hsbc.com.hk
 DOMAIN,www.isstprod.hsbc.com.hk
 DOMAIN,www.m.security.online-banking.hsbc.com.hk
 DOMAIN,rbwm-api.hsbc.com.hk
@@ -195,6 +217,16 @@ DOMAIN-SUFFIX,liveperson.net
 DOMAIN-SUFFIX,vv1865.com
 DOMAIN-SUFFIX,digicert.com
 DOMAIN-SUFFIX,we-stats.com
+DOMAIN-SUFFIX,hsbc.co.uk
+DOMAIN-SUFFIX,hsbc.ca
+DOMAIN-SUFFIX,hsbcdigital.siteintercept.qualtrics.com
+DOMAIN-SUFFIX,qualtrics.com
+DOMAIN-SUFFIX,eum-appdynamics.com
+DOMAIN-SUFFIX,tealiumiq.com
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,hsbc.com.sg
+DOMAIN-SUFFIX,appdynamics.com
+DOMAIN-SUFFIX,personal-banking.hsbc.com.sg
 USER-AGENT,hsbc
 USER-AGENT,hsbc*
 USER-AGENT,*hsbc
@@ -205,7 +237,7 @@ PROCESS-NAME,payme
 PROCESS-NAME,hsbc
 IP-CIDR,162.159.193.3/22,no-resolve
 IP-CIDR,162.159.193.5/22,no-resolve
-
+IP-CIDR,104.99.48.140/22,no-resolve
 
 # liviBank
 DOMAIN,ms.livibank.com
