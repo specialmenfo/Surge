@@ -162,6 +162,8 @@ USER-AGENT,*imaginecurve
 PROCESS-NAME,imaginecurve
 
 # HSBC
+DOMAIN,dco-ao.hsbc.co.uk/current/premier/eligibility
+DOMAIN,dco-ao.hsbc.co.uk
 DOMAIN,www.expat.hsbc.com
 DOMAIN,www.security.online-banking.ciiom.hsbc.com
 DOMAIN,ciiom.hsbc.com
@@ -213,6 +215,7 @@ DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN-SUFFIX,online-banking.hsbc.com.hk
 DOMAIN,rbwm-api.hsbc.com.hk
 DOMAIN,m.mobilex-static.hsbc.com.hk
+DOMAIN-SUFFIX,hsbc.co.uk
 DOMAIN-SUFFIX,siteintercept.qualtrics.com
 DOMAIN-SUFFIX,qualtrics.com
 DOMAIN-SUFFIX,tealiumiq.com
@@ -253,6 +256,10 @@ USER-AGENT,*ciiom
 USER-AGENT,online-banking
 USER-AGENT,online-banking*
 USER-AGENT,*online-banking
+USER-AGENT,premier
+USER-AGENT,premier*
+USER-AGENT,*premier
+PROCESS-NAME,premier
 PROCESS-NAME,expat
 PROCESS-NAME,ciiom
 PROCESS-NAME,online-banking
