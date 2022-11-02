@@ -4303,8 +4303,7 @@ DOMAIN-SUFFIX,5ihl.com
 
 # Other
 DOMAIN,sc.menfo.xyz
-DOMAIN,sub-store.vercel.app
+DOMAIN,sub.menfo.xyz
 DOMAIN,sub.store/download
 DOMAIN-SUFFIX,menfo.xyz
-DOMAIN-SUFFIX,vercel.app
 DOMAIN-SUFFIX,sub.store
