@@ -3129,7 +3129,6 @@ PROCESS-NAME,dmall
 DOMAIN,www.wkbhjlq.tw
 DOMAIN,mrmad.com.tw
 DOMAIN,signup.paveapp.com
-DOMAIN,sc.menfo.xyz
 DOMAIN,agirls.aotter.net
 DOMAIN,www.neatcommerce.com
 DOMAIN-SUFFIX,mrmad.com.tw
@@ -3137,7 +3136,6 @@ DOMAIN-SUFFIX,neatcommerce.com
 DOMAIN-SUFFIX,paveapp.com
 DOMAIN-SUFFIX,wkbhjlq.tw
 DOMAIN-SUFFIX,aotter.net
-DOMAIN-SUFFIX,menfo.xyz
 USER-AGENT,*AssistantServices*
 DOMAIN-SUFFIX,myptt.cc
 DOMAIN,activedirectory.windowsazure.com
@@ -3180,4 +3178,3 @@ DOMAIN-SUFFIX,thumb-g1.toomics.info
 DOMAIN,switchr.imagility.io
 DOMAIN-SUFFIX,switchr.imagility.io
 DOMAIN-SUFFIX,jable.tv
-DOMAIN,retail.sc.com
