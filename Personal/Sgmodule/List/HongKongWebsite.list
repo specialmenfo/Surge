@@ -3126,6 +3126,7 @@ PROCESS-NAME,yuurewards
 PROCESS-NAME,dmall
 
 # Other
+DOMAIN,sub-store.vercel.app
 DOMAIN,www.wkbhjlq.tw
 DOMAIN,mrmad.com.tw
 DOMAIN,signup.paveapp.com
@@ -3178,3 +3179,4 @@ DOMAIN-SUFFIX,thumb-g1.toomics.info
 DOMAIN,switchr.imagility.io
 DOMAIN-SUFFIX,switchr.imagility.io
 DOMAIN-SUFFIX,jable.tv
+DOMAIN-SUFFIX,vercel.app
