@@ -9,3 +9,4 @@ DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 IP-CIDR,66.94.0.0/19
 IP-CIDR,208.54.0.0/16
+IP-CIDR,206.29.177.36/32
