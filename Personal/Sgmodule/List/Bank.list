@@ -239,9 +239,6 @@ USER-AGENT,number26
 USER-AGENT,number26*
 USER-AGENT,*number26
 PROCESS-NAME,number26
-IP-CIDR,172.217.160.74/22,no-resolve
-IP-CIDR,172.217.163.42/22,no-resolve
-IP-CIDR,128.65.211.26/22,no-resolve
 
 # 八達通
 DOMAIN-SUFFIX,octopus.com.hk
