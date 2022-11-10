@@ -1,45 +1,46 @@
 # 路由器遠程配置用，Surge本地配置/Surge Mac請使用HongKongWebsite.list和Mail.list
 
-# Apple Daily
-DOMAIN-SUFFIX,appledaily.com
-DOMAIN-SUFFIX,appledaily.com.hk
-DOMAIN-SUFFIX,appledaily.com.tw
-DOMAIN-SUFFIX,appledaily.hk
-DOMAIN-SUFFIX,atnext.com
-DOMAIN-SUFFIX,eracom.com.tw
-DOMAIN-SUFFIX,next.hk
-DOMAIN-SUFFIX,nextdigital.com.hk
-DOMAIN-SUFFIX,nextmag.com.tw
-DOMAIN-SUFFIX,nextmedia.com
-DOMAIN-SUFFIX,nextmgz.com
-DOMAIN-SUFFIX,nexttv.com.tw
-DOMAIN-SUFFIX,sharpdaily.tw
-
-# Mail
-DOMAIN,imap.gmail.com
+# Surge Mac/iOS（丟進RULE即可） : RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Mail.list,HYBRID
+# Mail SMTP
 DOMAIN,smtp.gmail.com
-DOMAIN-SUFFIX,imap.gmail.com
 DOMAIN-SUFFIX,smtp.gmail.com
-DOMAIN,imap.yandex.ru
 DOMAIN,smtp.yandex.ru
-DOMAIN-SUFFIX,imap.yandex.ru
 DOMAIN-SUFFIX,smtp.yandex.ru
-DOMAIN,imap.office365.com
 DOMAIN,smtp.office365.com
+DOMAIN,smtp-mail.outlook.com
+DOMAIN,smtp.gmail.com
+DOMAIN,smtp.office365.com
+DOMAIN-SUFFIX,smtp.office365.com
+
+# Mail iMAP
+DOMAIN,imap.gmail.com
+DOMAIN-SUFFIX,imap.gmail.com
+DOMAIN,imap.yandex.ru
+DOMAIN-SUFFIX,imap.yandex.ru
+DOMAIN,imap.office365.com
 DOMAIN,imap-mail.outlook.com
 DOMAIN,imap.gmail.com
 DOMAIN,outlook.office365.com
 DOMAIN,pop.gmail.com
-DOMAIN,smtp-mail.outlook.com
-DOMAIN,smtp.gmail.com
-DOMAIN,smtp.office365.com
 DOMAIN-SUFFIX,apple.imap.mail.yahoo.com
 DOMAIN-SUFFIX,m.hotmail.com
 DOMAIN-SUFFIX,imap.office365.com
-DOMAIN-SUFFIX,smtp.office365.com
 DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,googlemail.com
 DOMAIN-KEYWORD,gmail
+
+# MailBox
+DOMAIN,eu.clevver.io
+DOMAIN,api.anytimemailbox.com
+DOMAIN,www.anytimemailbox.com
+DOMAIN,cdn.anytimemailbox.com
+DOMAIN,anytimemailbox.referralrock.com
+DOMAIN,bigboxhk.anytimemailbox.com
+DOMAIN,london-portal.ukmailboxdirect.co.uk
+DOMAIN-SUFFIX,clevver.io
+DOMAIN-SUFFIX,ukmailboxdirect.co.uk
+DOMAIN-SUFFIX,anytimemailbox.com
+DOMAIN-SUFFIX,referralrock.com
 
 # Google推送
 DOMAIN,alt1-mtalk.google.com
@@ -848,6 +849,10 @@ DOMAIN-KEYWORD,blogspot
 DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,gstatic
 DOMAIN-KEYWORD,recaptcha
+IP-CIDR,172.217.160.74/22,no-resolve
+IP-CIDR,172.217.163.42/22,no-resolve
+IP-CIDR,128.65.211.26/22,no-resolve
+IP-CIDR,142.251.42.234/22,no-resolve
 IP-CIDR,172.110.32.0/21,no-resolve
 IP-CIDR,173.194.0.0/16,no-resolve
 IP-CIDR,216.73.80.0/20,no-resolve
@@ -3133,10 +3138,10 @@ PROCESS-NAME,yuurewards
 PROCESS-NAME,dmall
 
 # Other
+DOMAIN,sub-store.vercel.app
 DOMAIN,www.wkbhjlq.tw
 DOMAIN,mrmad.com.tw
 DOMAIN,signup.paveapp.com
-DOMAIN,sc.menfo.xyz
 DOMAIN,agirls.aotter.net
 DOMAIN,www.neatcommerce.com
 DOMAIN-SUFFIX,mrmad.com.tw
@@ -3144,7 +3149,6 @@ DOMAIN-SUFFIX,neatcommerce.com
 DOMAIN-SUFFIX,paveapp.com
 DOMAIN-SUFFIX,wkbhjlq.tw
 DOMAIN-SUFFIX,aotter.net
-DOMAIN-SUFFIX,menfo.xyz
 USER-AGENT,*AssistantServices*
 DOMAIN-SUFFIX,myptt.cc
 DOMAIN,activedirectory.windowsazure.com
@@ -3187,4 +3191,4 @@ DOMAIN-SUFFIX,thumb-g1.toomics.info
 DOMAIN,switchr.imagility.io
 DOMAIN-SUFFIX,switchr.imagility.io
 DOMAIN-SUFFIX,jable.tv
-DOMAIN,retail.sc.com
+DOMAIN-SUFFIX,vercel.app
