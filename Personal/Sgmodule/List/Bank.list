@@ -102,6 +102,13 @@ USER-AGENT,*imaginecurve
 PROCESS-NAME,imaginecurve
 
 # HSBC
+DOMAIN,www.hsbc.fr
+DOMAIN,mobile.clients.hsbc.fr
+DOMAIN,a1806.dscw154.akamai.net
+DOMAIN,e673.dsce9.akamaiedge.net
+DOMAIN,e673.dsce9.akamaiedge.net
+DOMAIN-SUFFIX,hsbc.fr
+DOMAIN-SUFFIX,clients.hsbc.fr
 DOMAIN,dco-ao.hsbc.co.uk/current/premier/eligibility
 DOMAIN,dco-ao.hsbc.co.uk
 DOMAIN,www.expat.hsbc.com
@@ -206,6 +213,8 @@ PROCESS-NAME,online-banking
 IP-CIDR,162.159.193.3/22,no-resolve
 IP-CIDR,162.159.193.5/22,no-resolve
 IP-CIDR,104.99.48.140/22,no-resolve
+IP-CIDR,17.171.78.198/22,no-resolve
+IP-CIDR,23.45.52.76/22,no-resolve
 
 # liviBank
 DOMAIN,ms.livibank.com
