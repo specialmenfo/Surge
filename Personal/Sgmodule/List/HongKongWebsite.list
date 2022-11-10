@@ -15,11 +15,18 @@ DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,googlemail.com
 DOMAIN-KEYWORD,gmail
 
-# UKMailBox
+# MailBox
 DOMAIN,eu.clevver.io
+DOMAIN,api.anytimemailbox.com
+DOMAIN,www.anytimemailbox.com
+DOMAIN,cdn.anytimemailbox.com
+DOMAIN,anytimemailbox.referralrock.com
+DOMAIN,bigboxhk.anytimemailbox.com
 DOMAIN,london-portal.ukmailboxdirect.co.uk
 DOMAIN-SUFFIX,clevver.io
 DOMAIN-SUFFIX,ukmailboxdirect.co.uk
+DOMAIN-SUFFIX,anytimemailbox.com
+DOMAIN-SUFFIX,referralrock.com
 
 # Google推送
 DOMAIN,alt1-mtalk.google.com
