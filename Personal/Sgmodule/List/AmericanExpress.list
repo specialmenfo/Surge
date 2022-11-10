@@ -1,4 +1,7 @@
 # AmericanExpress
+DOMAIN,mobileone.americanexpress.com
+DOMAIN,mobileonemicromsl.americanexpress.com
+DOMAIN,eu.gateway.mastercard.com
 DOMAIN,assets.adobedtm.com
 DOMAIN,iwmapapi.americanexpress.com
 DOMAIN,zndhztugwqhlulqht-aexpfeedback.siteintercept.qualtrics.com
@@ -49,6 +52,7 @@ DOMAIN-SUFFIX,contentsquare.net
 DOMAIN-SUFFIX,adnxs.com
 DOMAIN-SUFFIX,contentsquare.net
 DOMAIN-SUFFIX,aexp-static.com
+DOMAIN-SUFFIX,mastercard.com
 USER-AGENT,americanexpress
 USER-AGENT,americanexpress*
 USER-AGENT,*americanexpress
