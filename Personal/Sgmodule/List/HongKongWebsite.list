@@ -31,7 +31,9 @@ DOMAIN-SUFFIX,googlemail.com
 DOMAIN-KEYWORD,gmail
 
 # UKMailBox
+DOMAIN,eu.clevver.io
 DOMAIN,london-portal.ukmailboxdirect.co.uk
+DOMAIN-SUFFIX,clevver.io
 DOMAIN-SUFFIX,ukmailboxdirect.co.uk
 
 # Google推送
