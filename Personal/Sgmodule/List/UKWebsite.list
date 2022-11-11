@@ -17,3 +17,7 @@ DOMAIN,vod-dash-uk-live.akamaized.net
 DOMAIN,vod-thumb-uk-live.akamaized.net
 DOMAIN,vod-dash-uk-live.bbcfmt.hs.llnwd.net
 DOMAIN,vod-thumb-uk-live.bbcfmt.hs.llnwd.net
+
+# Experian
+DOMAIN,www.experianidentityservice.co.uk
+DOMAIN-SUFFIX,experianidentityservice.co.uk
