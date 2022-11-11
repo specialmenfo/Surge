@@ -3124,6 +3124,7 @@ PROCESS-NAME,yuurewards
 PROCESS-NAME,dmall
 
 # Other
+DOMAIN,www.1stformations.co.uk
 DOMAIN,sub-store.vercel.app
 DOMAIN,www.wkbhjlq.tw
 DOMAIN,mrmad.com.tw
@@ -3143,6 +3144,7 @@ DOMAIN,*.activedirectory.windowsazure.com
 DOMAIN,account.activedirectory.windowsazure.com/*
 DOMAIN,account.activedirectory.windowsazure.com/
 DOMAIN,account.activedirectory.windowsazure.com/changepassword.aspx
+DOMAIN-SUFFIX,1stformations.co.uk
 DOMAIN-SUFFIX,mynt.xyz
 DOMAIN-SUFFIX,activedirectory.windowsazure.com
 DOMAIN-SUFFIX,.activedirectory.windowsazure.com
