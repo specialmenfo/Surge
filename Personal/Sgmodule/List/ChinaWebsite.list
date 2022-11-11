@@ -24,6 +24,7 @@ DOMAIN,buy.itunes.apple.com
 DOMAIN-SUFFIX,buy.itunes.apple.com
 USER-AGENT,iTunes*
 PROCESS-NAME,itunes
+IP-CIDR,2.20.195.238/32,no-resolve
 IP-CIDR,17.188.130.0/32,no-resolve
 IP-CIDR,17.188.130.181/32,no-resolve
 IP-CIDR,17.120.252.0/32,no-resolve
