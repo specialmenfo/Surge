@@ -102,6 +102,9 @@ USER-AGENT,*imaginecurve
 PROCESS-NAME,imaginecurve
 
 # HSBC
+DOMAIN,hsbcglobalcmb.sc.omtrdc.net
+DOMAIN,hsbckinetic.co.uk
+DOMAIN,device-api.urbanairship.com
 DOMAIN,www.hsbc.fr
 DOMAIN,mobile.clients.hsbc.fr
 DOMAIN,a1806.dscw154.akamai.net
