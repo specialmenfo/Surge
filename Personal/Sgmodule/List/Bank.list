@@ -102,6 +102,7 @@ USER-AGENT,*imaginecurve
 PROCESS-NAME,imaginecurve
 
 # HSBC
+DOMAIN,www.services.online-banking.hsbc.com.cn
 DOMAIN,hsbcglobalcmb.sc.omtrdc.net
 DOMAIN,hsbckinetic.co.uk
 DOMAIN,device-api.urbanairship.com
@@ -165,6 +166,9 @@ DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN-SUFFIX,online-banking.hsbc.com.hk
 DOMAIN,rbwm-api.hsbc.com.hk
 DOMAIN,m.mobilex-static.hsbc.com.hk
+DOMAIN-SUFFIX,services.online-banking.hsbc.com.cn
+DOMAIN-SUFFIX,online-banking.hsbc.com.cn
+DOMAIN-SUFFIX,hsbc.com.cn
 DOMAIN-SUFFIX,hsbc.co.uk
 DOMAIN-SUFFIX,siteintercept.qualtrics.com
 DOMAIN-SUFFIX,qualtrics.com
