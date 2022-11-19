@@ -485,6 +485,17 @@ DOMAIN-SUFFIX,*.turgame.com
 DOMAIN-SUFFIX,www.turgame.com
 IP-CIDR,104.16.0.0/12,no-resolve
 
+# USBANK
+DOMAIN,api.usbank.com
+DOMAIN,data.pendo.io
+DOMAIN,usbank.tt.omtrdc.net
+DOMAIN,usbank-sync.quantummetric.com
+DOMAIN,usbank.sc.omtrdc.net
+DOMAIN,content.usbank.com
+DOMAIN,auth.usbank.com
+DOMAIN,usbank.tt.omtrdc.net
+DOMAIN,transec.usbank.com
+
 # Wise
 DOMAIN,wise.com
 DOMAIN,www.wise.com
