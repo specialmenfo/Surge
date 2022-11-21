@@ -604,3 +604,15 @@ USER-AGENT,wise
 USER-AGENT,wise*
 USER-AGENT,*wise
 PROCESS-NAME,wise
+
+# Zelle
+DOMAIN,api.zellepay.com
+DOMAIN-SUFFIX,zellepay.com
+USER-AGENT,zellepay
+USER-AGENT,zellepay*
+USER-AGENT,*zellepay
+PROCESS-NAME,zellepay
+USER-AGENT,zelle
+USER-AGENT,zelle*
+USER-AGENT,*zelle
+PROCESS-NAME,zelle
