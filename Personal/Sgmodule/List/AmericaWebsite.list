@@ -542,6 +542,17 @@ DOMAIN-SUFFIX,pandora.tv
 DOMAIN-SUFFIX,peacocktv.com
 DOMAIN-SUFFIX,mparticle.com
 USER-AGENT,PeacockMobile*
+USER-AGENT,PeacockMobile
+USER-AGENT,*PeacockMobile
+PROCESS-NAME,PeacockMobile
+USER-AGENT,peacocktv*
+USER-AGENT,peacocktv
+USER-AGENT,*peacocktv
+PROCESS-NAME,peacocktv
+USER-AGENT,peacock*
+USER-AGENT,peacock
+USER-AGENT,*peacock
+PROCESS-NAME,peacock
 
 # Star++
 DOMAIN-SUFFIX,media.starott.com
