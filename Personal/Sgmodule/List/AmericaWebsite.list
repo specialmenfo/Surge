@@ -542,6 +542,9 @@ DOMAIN-SUFFIX,pandora.tv
 DOMAIN-SUFFIX,peacocktv.com
 USER-AGENT,PeacockMobile*
 
+# Peacock NOADS
+DOMAIN,video-ads-module.ad-tech.nbcuni.com,REJECT
+
 # Star++
 DOMAIN-SUFFIX,media.starott.com
 
