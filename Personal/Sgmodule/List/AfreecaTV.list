@@ -1,4 +1,9 @@
 # AfreecaTV
+DOMAIN,liveimg.afreeca.co.kr
+DOMAIN,ssp.meba.kr
+DOMAIN,mtag.mman.kr
+DOMAIN,xconf.cauly.co.kr
+DOMAIN,afreeca.co.kr
 DOMAIN-SUFFIX,afreecatv.co.kr
 DOMAIN-SUFFIX,afreecatv.com
 DOMAIN-SUFFIX,payco.com
@@ -38,3 +43,12 @@ DOMAIN-SUFFIX,collector1.afreecatv.com
 DOMAIN-SUFFIX,vod.afreecatv.com
 DOMAIN-SUFFIX,standbygw.afreecatv.com
 DOMAIN-SUFFIX,.afreecatv.com
+USER-AGENT,afreecatv
+USER-AGENT,afreecatv*
+USER-AGENT,*afreecatv
+PROCESS-NAME,afreecatv
+USER-AGENT,afreeca
+USER-AGENT,afreeca*
+USER-AGENT,*afreeca
+PROCESS-NAME,afreeca
+PROTOCOL,udp
