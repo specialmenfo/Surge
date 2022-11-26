@@ -281,6 +281,14 @@ USER-AGENT,*livibank
 PROCESS-NAME,livibank
 IP-CIDR,183.240.181.35/22,no-resolve
 
+# MasterCard
+DOMAIN,eu.gateway.mastercard.com
+DOMAIN-SUFFIX,mastercard.com
+USER-AGENT,mastercard
+USER-AGENT,mastercard*
+USER-AGENT,*mastercard
+PROCESS-NAME,mastercard
+
 # N26（DE）
 DOMAIN,api.tech26.de
 DOMAIN,cdn.number26.de
