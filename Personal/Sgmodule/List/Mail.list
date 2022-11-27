@@ -8,3 +8,4 @@ DOMAIN,smtp-mail.outlook.com
 DOMAIN,smtp.gmail.com
 DOMAIN,smtp.office365.com
 DOMAIN-SUFFIX,smtp.office365.com
+PROTOCOL,udp
