@@ -149,6 +149,10 @@ USER-AGENT,*extra
 PROCESS-NAME,extra
 
 # HSBC
+DOMAIN,va.v.liveperson.net
+DOMAIN,va.push.liveperson.net
+DOMAIN,rbwm-api.us.hsbc.com
+DOMAIN,status.mobilex.vpc.hsbc.co.uk
 DOMAIN,www.services.online-banking.hsbc.com.cn
 DOMAIN,hsbcglobalcmb.sc.omtrdc.net
 DOMAIN,hsbckinetic.co.uk
@@ -240,6 +244,9 @@ DOMAIN-SUFFIX,security.online-banking.ciiom.hsbc.com
 DOMAIN-SUFFIX,ciiom.hsbc.com
 DOMAIN-SUFFIX,hsbc.com
 DOMAIN-SUFFIX,chub.expat.hsbc.com
+DOMAIN-SUFFIX,liveperson.net
+DOMAIN-SUFFIX,us.hsbc.com
+DOMAIN-SUFFIX,hsbc.co.uk
 USER-AGENT,hsbc
 USER-AGENT,hsbc*
 USER-AGENT,*hsbc
