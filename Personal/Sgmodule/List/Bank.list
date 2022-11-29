@@ -453,6 +453,10 @@ USER-AGENT,*gpay*
 USER-AGENT,*gpay
 USER-AGENT,gpay*
 PROCESS-NAME,gpay
+USER-AGENT,*paytr*
+USER-AGENT,*paytr
+USER-AGENT,paytr*
+PROCESS-NAME,paytr
 DOMAIN,va.tawk.to
 DOMAIN,epin-cdn.s3.eu-central-1.amazonaws.com
 DOMAIN,epin-static.ams3.digitaloceanspaces.com
@@ -462,7 +466,9 @@ DOMAIN,epin-static.*
 DOMAIN,*.com.tr
 IP-CIDR,113.105.147.165/30,no-resolve
 IP-CIDR,172.64.0.0/13,no-resolve
+DOMAIN,www.paytr.com
 DOMAIN,*.seagm.com
+DOMAIN-SUFFIX,paytr.com
 DOMAIN-SUFFIX,epin-cdn
 DOMAIN-SUFFIX,epin-static
 DOMAIN-SUFFIX,com.tr
