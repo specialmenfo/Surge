@@ -1,4 +1,5 @@
 # Codashop
+DOMAIN,cognito-idp.ap-southeast-1.amazonaws.com
 DOMAIN,centrifugo.boost-my.com
 DOMAIN,onlinepayment.boost-my.com
 DOMAIN,securepay.e-ghl.com/IPG/Payment.aspx
