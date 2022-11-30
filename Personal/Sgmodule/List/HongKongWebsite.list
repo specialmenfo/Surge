@@ -1,20 +1,3 @@
-# Mail iMAP
-DOMAIN,imap.gmail.com
-DOMAIN-SUFFIX,imap.gmail.com
-DOMAIN,imap.yandex.ru
-DOMAIN-SUFFIX,imap.yandex.ru
-DOMAIN,imap.office365.com
-DOMAIN,imap-mail.outlook.com
-DOMAIN,imap.gmail.com
-DOMAIN,outlook.office365.com
-DOMAIN,pop.gmail.com
-DOMAIN-SUFFIX,apple.imap.mail.yahoo.com
-DOMAIN-SUFFIX,m.hotmail.com
-DOMAIN-SUFFIX,imap.office365.com
-DOMAIN-SUFFIX,gmail.com
-DOMAIN-SUFFIX,googlemail.com
-DOMAIN-KEYWORD,gmail
-
 # MailBox
 DOMAIN,eu.clevver.io
 DOMAIN,api.anytimemailbox.com
