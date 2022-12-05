@@ -18,6 +18,14 @@ DOMAIN,vod-thumb-uk-live.akamaized.net
 DOMAIN,vod-dash-uk-live.bbcfmt.hs.llnwd.net
 DOMAIN,vod-thumb-uk-live.bbcfmt.hs.llnwd.net
 
+# ClearScore
+DOMAIN,auth.clearscore.com
+DOMAIN-SUFFIX,clearscore.com
+USER-AGENT,clearscore
+USER-AGENT,clearscore*
+USER-AGENT,*clearscore
+PROCESS-NAME,clearscore
+
 # Experian
 DOMAIN,creditmatcher.experian.co.uk
 DOMAIN,www.experianidentityservice.co.uk
