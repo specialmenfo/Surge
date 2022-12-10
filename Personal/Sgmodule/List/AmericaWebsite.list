@@ -8,6 +8,13 @@ DOMAIN-SUFFIX,.amcplus.com
 DOMAIN-SUFFIX,amcplus.com
 DOMAIN-SUFFIX,*.amcplus.com/*
 
+# Alliant
+DOMAIN-SUFFIX,alliantcreditunion.com
+USER-AGENT,alliantcreditunion
+USER-AGENT,alliantcreditunion*
+USER-AGENT,*alliantcreditunion
+PROCESS-NAME,alliantcreditunion
+
 # Britbox
 USER-AGENT,Britbox*
 DOMAIN-SUFFIX,britbox.com
