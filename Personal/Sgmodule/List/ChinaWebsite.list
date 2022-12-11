@@ -2502,6 +2502,8 @@ DOMAIN,app.appsflyer.com
 DOMAIN,bdtj.tagtic.cn
 
 # HunanTV
+DOMAIN,www.mgtv.com
+DOMAIN-SUFFIX,mgtv.com
 DOMAIN-SUFFIX,hifuntv.com
 DOMAIN-SUFFIX,hitv.com
 DOMAIN-SUFFIX,hunaniptv.com
@@ -2532,6 +2534,22 @@ DOMAIN-KEYWORD,hifuntv
 DOMAIN-KEYWORD,hunantv
 DOMAIN-KEYWORD,hunaniptv
 USER-AGENT,MGTV*
+USER-AGENT,mgtv
+USER-AGENT,mgtv*
+USER-AGENT,*mgtv
+PROCESS-NAME,mgtv
+USER-AGENT,hunantv
+USER-AGENT,hunantv*
+USER-AGENT,*hunantv
+PROCESS-NAME,hunantv
+USER-AGENT,hunaniptv
+USER-AGENT,hunaniptv*
+USER-AGENT,*hunaniptv
+PROCESS-NAME,hunaniptv
+USER-AGENT,hitv
+USER-AGENT,hitv*
+USER-AGENT,*hitv
+PROCESS-NAME,hitv
 
 # HuYa
 DOMAIN-SUFFIX,huya.com
