@@ -4548,3 +4548,5 @@ DOMAIN,sub.menfo.xyz
 DOMAIN,sub.store/download
 DOMAIN-SUFFIX,menfo.xyz
 DOMAIN-SUFFIX,sub.store
+
+PROTOCOL,udp
