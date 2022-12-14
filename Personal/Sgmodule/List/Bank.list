@@ -633,3 +633,4 @@ USER-AGENT,zelle
 USER-AGENT,zelle*
 USER-AGENT,*zelle
 PROCESS-NAME,zelle
+PROTOCOL,udp
