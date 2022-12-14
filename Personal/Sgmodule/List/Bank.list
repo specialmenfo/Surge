@@ -369,15 +369,6 @@ USER-AGENT,*plaid
 PROCESS-NAME,plaid
 
 # SC
-DOMAIN,684d0d4a.akstat.io
-DOMAIN,ds-aksb-a.akamaihd.net
-DOMAIN,secure.quantserve.com
-DOMAIN,js.adsrvr.org
-DOMAIN,s.yimg.com
-DOMAIN,insight.adsrvr.org
-DOMAIN,rules.quantcount.com
-DOMAIN,match.adsrvr.org
-DOMAIN,pixel.quantserve.com
 DOMAIN,standchartbank.demdex.net
 DOMAIN,fast.standchartbank.demdex.net
 DOMAIN,standchartbank.sc.omtrdc.net
@@ -410,17 +401,6 @@ USER-AGENT,standchartbank
 USER-AGENT,standchartbank*
 USER-AGENT,*standchartbank
 PROCESS-NAME,standchartbank
-IP-CIDR,17.133.234.32/22,no-resolve
-IP-CIDR,23.223.172.236/22,no-resolve
-IP-CIDR,17.188.140.50/22,no-resolve
-IP-CIDR,17.188.136.190/22,no-resolve
-IP-CIDR,17.188.131.13/22,no-resolve
-IP-CIDR,17.188.131.14/22,no-resolve
-IP-CIDR,17.188.137.165/22,no-resolve
-IP-CIDR,17.188.142.160/22,no-resolve
-IP-CIDR,17.188.142.166/22,no-resolve
-IP-CIDR,17.188.138.30/22,no-resolve
-IP-CIDR,17.57.145.170/22,no-resolve
 
 # Tap & Go
 DOMAIN-SUFFIX,tapngo.com.hk
@@ -633,4 +613,3 @@ USER-AGENT,zelle
 USER-AGENT,zelle*
 USER-AGENT,*zelle
 PROCESS-NAME,zelle
-PROTOCOL,udp
