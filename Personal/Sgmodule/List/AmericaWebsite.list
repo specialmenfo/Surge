@@ -530,6 +530,7 @@ DOMAIN,wmff.warnermediacdn.com
 DOMAIN-SUFFIX,cinemax.com
 DOMAIN-SUFFIX,hbomax.com
 DOMAIN-SUFFIX,hbomaxcdn.com
+DOMAIN-SUFFIX,hbomaxcdn.com
 DOMAIN-SUFFIX,hbonow.com
 DOMAIN-SUFFIX,maxgo.com
 USER-AGENT,HBOMAX*
