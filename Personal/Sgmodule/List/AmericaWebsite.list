@@ -144,6 +144,9 @@ DOMAIN-SUFFIX,espncdn.com
 DOMAIN-SUFFIX,espnqa.com
 DOMAIN-SUFFIX,watchespn.com
 
+# EXPERIAN
+DOMAIN,usa.experian.com
+
 # Fox
 DOMAIN-SUFFIX,fox.com
 DOMAIN-SUFFIX,foxdcg.com
