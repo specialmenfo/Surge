@@ -152,6 +152,12 @@ DOMAIN-SUFFIX,espncdn.com
 DOMAIN-SUFFIX,espndotcom.tt.omtrdc.net
 DOMAIN-SUFFIX,espnqa.com
 DOMAIN-SUFFIX,watchespn.com
+DOMAIN,espn.api.edge.bamgrid.com
+DOMAIN,us.edge.bamgrid.com
+USER-AGENT,espn
+USER-AGENT,espn*
+USER-AGENT,*espn
+PROCESS-NAME,espn
 
 # EXPERIAN
 DOMAIN,usa.experian.com
