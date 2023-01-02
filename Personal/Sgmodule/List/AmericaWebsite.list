@@ -138,9 +138,18 @@ DOMAIN-SUFFIX,dnitv.com
 DOMAIN,kvinit-prod.api.kochava.com
 
 # ESPN
+DOMAIN,espn.connections.edge.bamgrid.com
 DOMAIN-SUFFIX,espn.com
 DOMAIN-SUFFIX,espn.net
 DOMAIN-SUFFIX,espncdn.com
+DOMAIN-SUFFIX,espnqa.com
+DOMAIN-SUFFIX,watchespn.com
+DOMAIN-SUFFIX,espn.co.uk
+DOMAIN-SUFFIX,espn.com
+DOMAIN-SUFFIX,espn.hb.omtrdc.net
+DOMAIN-SUFFIX,espn.net
+DOMAIN-SUFFIX,espncdn.com
+DOMAIN-SUFFIX,espndotcom.tt.omtrdc.net
 DOMAIN-SUFFIX,espnqa.com
 DOMAIN-SUFFIX,watchespn.com
 
