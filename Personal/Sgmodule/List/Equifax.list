@@ -1,0 +1,9 @@
+DOMAIN,my.equifax.com
+DOMAIN,www.equifax.com
+DOMAIN,www.equifax.co.uk
+DOMAIN-SUFFIX,equifax.com
+DOMAIN-SUFFIX,equifax.co.uk
+USER-AGENT,equifax
+USER-AGENT,equifax*
+USER-AGENT,*equifax
+PROCESS-NAME,equifax
