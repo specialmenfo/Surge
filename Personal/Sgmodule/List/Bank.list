@@ -379,6 +379,8 @@ USER-AGENT,*tapngo
 PROCESS-NAME,tapngo
 
 # Turkey Game Pay
+DOMAIN,vpos3.isbank.com.tr
+DOMAIN-SUFFIX,isbank.com.tr
 USER-AGENT,*epin*
 USER-AGENT,*epin
 USER-AGENT,epin*
