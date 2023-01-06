@@ -107,3 +107,9 @@ USER-AGENT,nationwidebuildingso
 USER-AGENT,nationwidebuildingso*
 USER-AGENT,*nationwidebuildingso
 PROCESS-NAME,nationwidebuildingso
+
+# Yonder
+DOMAIN,yonder.page.link
+DOMAIN,www.yondercard.com
+DOMAIN-SUFFIX,yonder.page.link
+DOMAIN-SUFFIX,yondercard.com
