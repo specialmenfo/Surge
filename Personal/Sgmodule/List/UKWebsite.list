@@ -29,7 +29,9 @@ PROCESS-NAME,clearscore
 # Experian
 DOMAIN,creditmatcher.experian.co.uk
 DOMAIN,www.experianidentityservice.co.uk
+DOMAIN,platformresources.runpathdigital.com
 DOMAIN-SUFFIX,experian.co.uk
+DOMAIN-SUFFIX,platformresources.runpathdigital.com
 DOMAIN-SUFFIX,experianidentityservice.co.uk
 
 # Halifax
