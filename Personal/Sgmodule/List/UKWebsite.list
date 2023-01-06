@@ -77,6 +77,20 @@ USER-AGENT,lloydsbankinggroup*
 USER-AGENT,*lloydsbankinggroup
 PROCESS-NAME,lloydsbankinggroup
 
+# moneysavingexpert
+DOMAIN,experian.moneysavingexpert.com
+DOMAIN,prod-api.moneysavingexpert.com
+DOMAIN,webapi.moneysavingexpert.com
+DOMAIN,clubs.moneysavingexpert.com
+DOMAIN,images6.moneysavingexpert.com
+DOMAIN,cdn.moneysavingexpert.com
+DOMAIN,www.moneysavingexpert.com
+DOMAIN-SUFFIX,www.moneysavingexpert.com
+USER-AGENT,moneysavingexpert
+USER-AGENT,moneysavingexpert*
+USER-AGENT,*moneysavingexpert
+PROCESS-NAME,moneysavingexpert
+
 # Nationwide
 DOMAIN,smetrics.nationwide.co.uk
 DOMAIN,nationwidebuildingso.tt.omtrdc.net
