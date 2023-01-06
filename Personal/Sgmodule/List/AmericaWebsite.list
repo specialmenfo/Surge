@@ -161,6 +161,8 @@ PROCESS-NAME,espn
 
 # EXPERIAN
 DOMAIN,usa.experian.com
+DOMAIN,www.experian.com
+DOMAIN-SUFFIX,experian.com
 
 # Fox
 DOMAIN-SUFFIX,fox.com
