@@ -1,7 +1,12 @@
 # Paramount+
+DOMAIN,co.dewrain.life
+DOMAIN,meuzd7ljo0xjk00lo49k10i6mqldf1673092883.uaid.imrworldwide.com
+DOMAIN,secure-dcr.imrworldwide.com
 DOMAIN,cbsinteractive.hb.omtrdc.net
 DOMAIN,co.vaicore.site
 DOMAIN,cbs.penthera.com
+DOMAIN-SUFFIX,dewrain.life
+DOMAIN-SUFFIX,imrworldwide.com
 DOMAIN-SUFFIX,newrelic.com
 DOMAIN-SUFFIX,.newrelic.com
 DOMAIN-SUFFIX,*.newrelic.com
