@@ -108,6 +108,16 @@ USER-AGENT,nationwidebuildingso*
 USER-AGENT,*nationwidebuildingso
 PROCESS-NAME,nationwidebuildingso
 
+# Santander
+DOMAIN,santanderuk.sc.omtrdc.net
+DOMAIN,retail.mobile.santander.co.uk
+DOMAIN,cdn-ukwest.onetrust.com
+DOMAIN,www.santander.co.uk
+DOMAIN,smetrics.santander.co.uk
+DOMAIN,santander.demdex.net
+DOMAIN,resources.digital-cloud-uk.medallia.eu
+DOMAIN-SUFFIX,santander.co.uk
+
 # Yonder
 DOMAIN,yonder.page.link
 DOMAIN,www.yondercard.com
