@@ -3188,6 +3188,9 @@ DOMAIN-SUFFIX,meituan.net
 DOMAIN-SUFFIX,mtyun.com
 DOMAIN-SUFFIX,neixin.cn
 DOMAIN-SUFFIX,sankuai.com
+DOMAIN-SUFFIX,meituan.net
+DOMAIN-SUFFIX,d.meituan.net
+DOMAIN-SUFFIX,maplocatesdksnapshot.d.meituan.net
 
 # MeiTu
 DOMAIN-SUFFIX,meipai.com
@@ -4810,3 +4813,27 @@ DOMAIN,sub.store/download
 DOMAIN-SUFFIX,menfo.xyz
 DOMAIN-SUFFIX,sub.store
 DOMAIN,api.panther.macpaw.com
+
+IP-CIDR,76.223.12.1/32
+IP-CIDR,76.223.12.1/32
+IP-CIDR,23.213.230.83/32
+IP-CIDR,23.213.230.83/32
+IP-CIDR,23.1.101.127/32
+DOMAIN-SUFFIX,safebrowsing.apple
+IP-CIDR,17.56.12.226/32
+DOMAIN-SUFFIX,112114.xyz
+DOMAIN,epg.112114.xyz
+DOMAIN-SUFFIX,52tb.xyz
+DOMAIN,api.52tb.xyz
+DOMAIN,api.revenuecat.com
+DOMAIN,epg.112114.xyz
+DOMAIN-SUFFIX,52tb.xyz
+IP-CIDR,17.188.23.74/32
+IP-CIDR,17.120.252.50/32
+IP-CIDR,17.57.145.166/32
+IP-CIDR,17.36.206.7/32
+DOMAIN-SUFFIX,in.appcenter.ms
+IP-CIDR,208.95.112.1/32
+DOMAIN-SUFFIX,epg.112114.xyz
+DOMAIN-SUFFIX,api.52tb.xyz
+DOMAIN-SUFFIX,api.revenuecat.com
