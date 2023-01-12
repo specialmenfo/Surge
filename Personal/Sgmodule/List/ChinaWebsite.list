@@ -3181,6 +3181,8 @@ DOMAIN-SUFFIX,kuaidi100.com
 DOMAIN-SUFFIX,kuaidilab.com
 
 # MeiTuan
+DOMAIN,route-stats.d.meituan.net
+DOMAIN,maplocatesdksnapshot.d.meituan.net
 DOMAIN-SUFFIX,dianping.com
 DOMAIN-SUFFIX,maoyan.com
 DOMAIN-SUFFIX,meituan.com
