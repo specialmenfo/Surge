@@ -479,6 +479,17 @@ DOMAIN-SUFFIX,unrealengine.com
 DOMAIN-SUFFIX,unrealtournament.com
 
 # Garena
+DOMAIN,logs.papertrailapp.com
+DOMAIN,connect.garenanow.com
+DOMAIN,cloudctrl.codm.activision.com
+DOMAIN,sg.tdatamaster.com
+DOMAIN,dir.4.497948935.codmsg.gcloudcs.com
+DOMAIN,dlmobilegarena-a.akamaihd.net
+DOMAIN,dl.listdl.com
+DOMAIN,download.2.497948935.codmsg.gcloudcs.com
+DOMAIN,asia.csoversea.mbgame.anticheatexpert.com
+DOMAIN,100082.msdk.garena.com
+DOMAIN,xjp.garena.com
 DOMAIN-SUFFIX,avatargarenanow-a.akamaihd.net
 DOMAIN-SUFFIX,cdngarenanow-a.akamaihd.net
 DOMAIN-SUFFIX,dlmobilegarena-a.akamaihd.net
