@@ -118,6 +118,14 @@ DOMAIN,santander.demdex.net
 DOMAIN,resources.digital-cloud-uk.medallia.eu
 DOMAIN-SUFFIX,santander.co.uk
 
+# Vanquis
+DOMAIN,www.vanquis.co.uk
+DOMAIN,providentfinancialmanagement.d3.sc.omtrdc.net
+DOMAIN,providentpersonalcre.tt.omtrdc.net
+DOMAIN,mpsnare.iesnare.com
+DOMAIN,cdn-p.vanquis.co.uk
+DOMAIN-SUFFIX,vanquis.co.uk
+
 # Yonder
 DOMAIN,yonder.page.link
 DOMAIN,www.yondercard.com
