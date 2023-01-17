@@ -5,3 +5,11 @@ DOMAIN-SUFFIX,nbcuni.com
 
 # Viu App NoAD
 DOMAIN-SUFFIX,doubleclick.net
+
+# XiaoMi
+DOMAIN,gr.kkens.cn
+DOMAIN,ad.xiaomi.com
+DOMAIN,ad1.xiaomi.com
+DOMAIN,ad.mi.com
+DOMAIN,tat.pandora.xiaomi.com
+DOMAIN,api.ad.xiaomi.com
