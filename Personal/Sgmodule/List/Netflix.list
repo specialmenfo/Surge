@@ -2160,3 +2160,11 @@ IP-CIDR6,2a00:86c0::/32,no-resolve
 IP-CIDR6,2a03:5640::/32,no-resolve
 USER-AGENT,Argo*
 PROCESS-NAME,com.netflix.mediaclient
+USER-AGENT,netflix
+USER-AGENT,netflix*
+USER-AGENT,*netflix
+PROCESS-NAME,netflix
+USER-AGENT,Netflix
+USER-AGENT,Netflix*
+USER-AGENT,*Netflix
+PROCESS-NAME,Netflix
