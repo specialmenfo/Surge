@@ -490,6 +490,10 @@ DOMAIN,download.2.497948935.codmsg.gcloudcs.com
 DOMAIN,asia.csoversea.mbgame.anticheatexpert.com
 DOMAIN,100082.msdk.garena.com
 DOMAIN,xjp.garena.com
+DOMAIN,test-dr.intlgame.com
+DOMAIN,control-out.mna.qq.com
+DOMAIN-SUFFIX,intlgame.com
+DOMAIN-SUFFIX,mna.qq.com
 DOMAIN-SUFFIX,avatargarenanow-a.akamaihd.net
 DOMAIN-SUFFIX,cdngarenanow-a.akamaihd.net
 DOMAIN-SUFFIX,dlmobilegarena-a.akamaihd.net
@@ -505,6 +509,9 @@ DOMAIN-SUFFIX,garena.tw
 DOMAIN-SUFFIX,garena.vn
 DOMAIN-SUFFIX,garenanow.com
 DOMAIN-SUFFIX,seagroup.com
+IP-CIDR,124.108.137.209/32,no-resolve
+IP-CIDR,43.154.252.89/32,no-resolve
+IP-CIDR,124.108.137.209/32,no-resolve
 
 # Microsoft
 DOMAIN-SUFFIX,a-msedge.net
