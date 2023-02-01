@@ -1,16 +1,3 @@
-# iPostal1
-DOMAIN,wchat.freshchat.com
-DOMAIN,d29kwco7x3tz0r.cloudfront.net
-DOMAIN,www.clickcease.com
-DOMAIN,cdn.freshbots.ai
-DOMAIN,portal.ipostal1.com
-DOMAIN,rts-us-fcht.freshworksapi.com
-DOMAIN-SUFFIX,freshchat.com
-DOMAIN-SUFFIX,clickcease.com
-DOMAIN-SUFFIX,ipostal1.com
-DOMAIN-SUFFIX,freshbots.ai
-DOMAIN-SUFFIX,freshworksapi.com
-
 # Apple iCloud
 DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apple-icloud.cn
