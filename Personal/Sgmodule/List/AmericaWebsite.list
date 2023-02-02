@@ -651,6 +651,15 @@ DOMAIN-SUFFIX,mobile.walmart.com
 DOMAIN-SUFFIX,quantummetric.com
 DOMAIN-SUFFIX,smartmailcloud.com
 
+# offerup
+DOMAIN,events.statsigapi.net
+DOMAIN,client-graphql.offerup.com
+DOMAIN-SUFFIX,offerup.com
+USER-AGENT,offerup
+USER-AGENT,offerup*
+USER-AGENT,*offerup
+PROCESS-NAME,offerup
+
 # Other
 DOMAIN-SUFFIX,onelogin.com
 DOMAIN-SUFFIX,.onelogin.com
