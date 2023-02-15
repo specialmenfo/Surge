@@ -30,6 +30,9 @@ DOMAIN-SUFFIX,gs.asia.ngame.proximabeta.com
 DOMAIN-SUFFIX,rs.asia.ngame.proximabeta.com
 DOMAIN-SUFFIX,gcloud-ngame-ru-1255981408.file.myqcloud.com
 DOMAIN-SUFFIX,aovrugcloud.iegcom.com
+DOMAIN-SUFFIX,codm.garena.com
+DOMAIN-SUFFIX,itopsdk.com
+DOMAIN-SUFFIX,tdatamaster.com
 IP-CIDR,150.109.29.118/32,no-resolve
 IP-CIDR,124.108.137.246/32,no-resolve
 IP-CIDR,124.108.137.208/32,no-resolve
