@@ -1,0 +1,25 @@
+# 僅適用於某些外國App必須連接本地網絡，不走代理
+
+# Capital One
+DOMAIN,m-metrics.capitalone.com
+DOMAIN,ecm.capitalone.com
+DOMAIN,m.capitalone.com
+DOMAIN,m-metrics.capitalone.com
+DOMAIN,control.kochava.com
+DOMAIN,kvinit-prod.api.kochava.com
+DOMAIN,verified.capitalone.com
+DOMAIN,capitalone-udc.digital-cloud.medallia.com
+DOMAIN,capitalone-resources.digital-cloud.medallia.com
+DOMAIN,deviceinfo.capitalone.com
+DOMAIN,capitaloneservices.demdex.net
+DOMAIN,capitaloneservices.tt.omtrdc.net
+DOMAIN,smetrics.capitalone.com
+DOMAIN,tms.capitalone.com
+DOMAIN,ecm.capitalone.com
+DOMAIN,bfp.capitalone.com
+DOMAIN,www.capitalone.com
+DOMAIN-SUFFIX,capitalone.com
+USER-AGENT,capitalone
+USER-AGENT,capitalone*
+USER-AGENT,*capitalone
+PROCESS-NAME,capitalone
