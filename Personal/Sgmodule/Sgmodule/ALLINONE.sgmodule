@@ -3,7 +3,7 @@
 
 [General]
 force-http-engine-hosts = %APPEND% *.hls.row.aiv-cdn.net, *avodhlss3ww-a.akamaihd.net, d25xi40x97liuc.cloudfront.net, dmqdd6hw24ucf.cloudfront.net, d22qjgkvxw22r6.cloudfront.net, d1v5ir2lpwr8os.cloudfront.net, d27xxe7juh1us6.cloudfront.net, assets.huluim.com, vod-*.live.cf.md.bbci.co.uk, vod-*-live.akamaized.net, boxjs.com, boxjs.net
-skip-proxy = %APPEND% iosapps.itunes.apple.com
+skip-proxy = %APPEND% iosapps.itunes.apple.com, pmbanalysis.bosc.cn, pmbservice.bosc.cn, *.bosc.cn, *.ccb.com, www.baidu.com, yunbusiness.ccb.com, www.apple.com, iosapps.itunes.apple.com, www.baidu.com, yunbusiness.ccb.com, 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, passenger.t3go.cn, e.crashlytics.com, captive.apple.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, 127.0.0.1/32, 169.254.0.0/16, 224.0.0.0/4, 240.0.0.0/4, ::1/128, fc00::/7, fd00::/8, fe80::/10, ff00::/8, 2001::/32, 2001:db8::/32, 2002::/16, ::ffff:0:0:0:0/1, ::ffff:128:0:0:0/1, guzzoni.apple.com, 0.0.0.0/8, 17.0.0.0/8, 127.0.0.0/8, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 255.255.255.255/32, 192.168.2.1, 17.0.0.0/8, *.crashlytics.com
 
 [Rule]
 # 知乎AD Block
