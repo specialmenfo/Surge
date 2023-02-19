@@ -1,3 +1,23 @@
+# Advanzia
+DOMAIN,identity.omc.advanzia.com
+DOMAIN,app.omc.advanzia.com
+DOMAIN,aggregator.service.usercentrics.eu
+DOMAIN,api.usercentrics.eu
+DOMAIN,www.advanzia.com
+DOMAIN,www.gebührenfrei.de
+DOMAIN-SUFFIX,omc.advanzia.com
+DOMAIN-SUFFIX,advanzia.com
+DOMAIN-SUFFIX,usercentrics.eu
+DOMAIN-SUFFIX,gebührenfrei.de
+USER-AGENT,gebührenfrei
+USER-AGENT,gebührenfrei*
+USER-AGENT,*gebührenfrei
+PROCESS-NAME,gebührenfrei
+USER-AGENT,advanzia
+USER-AGENT,advanzia*
+USER-AGENT,*advanzia
+PROCESS-NAME,advanzia
+
 # Vodafone DE
 DOMAIN,beta.vodafone.de
 DOMAIN,fc.vodafone.de
