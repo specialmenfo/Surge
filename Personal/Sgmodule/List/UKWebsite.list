@@ -49,6 +49,15 @@ USER-AGENT,halifax*
 USER-AGENT,*halifax
 PROCESS-NAME,halifax
 
+# JOHN LEWIS & PARTNERS / NEW DAY
+DOMAIN,mobile.newdaycards.com
+DOMAIN,portal-mobile.newdaycards.com
+DOMAIN-SUFFIX,newdaycards.com
+USER-AGENT,newdaycards
+USER-AGENT,newdaycards*
+USER-AGENT,*newdaycards
+PROCESS-NAME,newdaycards
+
 # Lloyds Bank
 DOMAIN,lloydsbankinggroup.d3.sc.omtrdc.net
 DOMAIN,check2.lloydsbank.co.uk
