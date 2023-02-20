@@ -134,6 +134,10 @@ DOMAIN,providentpersonalcre.tt.omtrdc.net
 DOMAIN,mpsnare.iesnare.com
 DOMAIN,cdn-p.vanquis.co.uk
 DOMAIN-SUFFIX,vanquis.co.uk
+USER-AGENT,vanquis
+USER-AGENT,vanquis*
+USER-AGENT,*vanquis
+PROCESS-NAME,vanquis
 
 # Yonder
 DOMAIN,yonder.page.link
