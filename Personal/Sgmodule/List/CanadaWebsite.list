@@ -1,0 +1,15 @@
+# PC Financial
+DOMAIN,pcfinancial.sc.omtrdc.net
+DOMAIN,pc-financial.ada.support
+DOMAIN,udc-neb.kampyle.com
+DOMAIN,secure.pcfinancial.ca
+DOMAIN,app.pcfinancial.ca
+DOMAIN-SUFFIX,pcfinancial.ca
+USER-AGENT,pcfinancial
+USER-AGENT,pcfinancial*
+USER-AGENT,*pcfinancial
+PROCESS-NAME,pcfinancial
+USER-AGENT,pc-financial
+USER-AGENT,pc-financial*
+USER-AGENT,*pc-financial
+PROCESS-NAME,pc-financial
