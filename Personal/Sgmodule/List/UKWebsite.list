@@ -26,6 +26,13 @@ USER-AGENT,clearscore*
 USER-AGENT,*clearscore
 PROCESS-NAME,clearscore
 
+# Credit Karma
+DOMAIN,sponge.creditkarma.co.uk
+DOMAIN,sierra.kilo.ckapis.com
+DOMAIN,api.creditkarma.co.uk
+DOMAIN,www.creditkarma.co.uk
+DOMAIN-SUFFIX,creditkarma.co.uk
+
 # Experian
 DOMAIN,creditmatcher.experian.co.uk
 DOMAIN,www.experianidentityservice.co.uk
