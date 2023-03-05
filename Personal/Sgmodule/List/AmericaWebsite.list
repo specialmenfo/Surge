@@ -117,7 +117,19 @@ DOMAIN,authclient.config-cdn.a.intuit.com
 DOMAIN,api.creditkarma.com
 DOMAIN,sponge.creditkarma.com
 DOMAIN,sentry.io
+DOMAIN,bam-cell.nr-data.net
+DOMAIN,logging.api.intuit.com
+DOMAIN,ckfiles.com
+DOMAIN,creditkarmacdn-a.akamaihd.net
 DOMAIN-SUFFIX,creditkarma.com
+USER-AGENT,creditkarmacdn
+USER-AGENT,creditkarmacdn*
+USER-AGENT,*creditkarmacdn
+PROCESS-NAME,creditkarmacdn
+USER-AGENT,creditkarma
+USER-AGENT,creditkarma*
+USER-AGENT,*creditkarma
+PROCESS-NAME,creditkarma
 
 # > Discovery+
 // US
