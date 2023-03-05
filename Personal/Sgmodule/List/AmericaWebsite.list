@@ -110,6 +110,15 @@ DOMAIN,credit.com
 DOMAIN,www.credit.com
 DOMAIN-SUFFIX,credit.com
 
+# Credit Karma
+DOMAIN,cdn.native.creditkarma.com
+DOMAIN,embedded.creditkarma.com
+DOMAIN,authclient.config-cdn.a.intuit.com
+DOMAIN,api.creditkarma.com
+DOMAIN,sponge.creditkarma.com
+DOMAIN,sentry.io
+DOMAIN-SUFFIX,creditkarma.com
+
 # > Discovery+
 // US
 DOMAIN,us1-prod.disco-api.com
