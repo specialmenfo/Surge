@@ -1,16 +1,3 @@
-# iPostal1
-DOMAIN,wchat.freshchat.com
-DOMAIN,d29kwco7x3tz0r.cloudfront.net
-DOMAIN,www.clickcease.com
-DOMAIN,cdn.freshbots.ai
-DOMAIN,portal.ipostal1.com
-DOMAIN,rts-us-fcht.freshworksapi.com
-DOMAIN-SUFFIX,freshchat.com
-DOMAIN-SUFFIX,clickcease.com
-DOMAIN-SUFFIX,ipostal1.com
-DOMAIN-SUFFIX,freshbots.ai
-DOMAIN-SUFFIX,freshworksapi.com
-
 # Apple Daily
 DOMAIN-SUFFIX,appledaily.com
 DOMAIN-SUFFIX,appledaily.com.hk
@@ -2816,6 +2803,19 @@ USER-AGENT,HBO%20GO%20PROD%20HKG*
 DOMAIN-SUFFIX,imgur.com
 DOMAIN-SUFFIX,imgurinc.com
 
+# iPostal1
+DOMAIN,wchat.freshchat.com
+DOMAIN,d29kwco7x3tz0r.cloudfront.net
+DOMAIN,www.clickcease.com
+DOMAIN,cdn.freshbots.ai
+DOMAIN,portal.ipostal1.com
+DOMAIN,rts-us-fcht.freshworksapi.com
+DOMAIN-SUFFIX,freshchat.com
+DOMAIN-SUFFIX,clickcease.com
+DOMAIN-SUFFIX,ipostal1.com
+DOMAIN-SUFFIX,freshbots.ai
+DOMAIN-SUFFIX,freshworksapi.com
+
 # JOOX
 DOMAIN-SUFFIX,joox.com
 USER-AGENT,JOOX*
@@ -2900,6 +2900,14 @@ DOMAIN-SUFFIX,nytlog.com
 DOMAIN-SUFFIX,nytstyle.com
 DOMAIN-SUFFIX,timestalks.com
 DOMAIN-SUFFIX,tynt.com
+
+# Ozan
+DOMAIN,op-prod-tr.ozan.com
+DOMAIN-SUFFIX,ozan.com
+USER-AGENT,ozan
+USER-AGENT,ozan*
+USER-AGENT,*ozan
+PROCESS-NAME,ozan
 
 # Octopus 八達通
 DOMAIN-SUFFIX,octopus.com.hk
