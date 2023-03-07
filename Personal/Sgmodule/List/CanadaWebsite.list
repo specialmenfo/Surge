@@ -2,6 +2,14 @@
 DOMAIN,www.creditkarma.ca
 DOMAIN-SUFFIX,creditkarma.ca
 
+# KOHO
+DOMAIN,api.koho.ca
+DOMAIN-SUFFIX,koho.ca
+USER-AGENT,koho
+USER-AGENT,koho*
+USER-AGENT,*koho
+PROCESS-NAME,koho
+
 # PC Financial
 DOMAIN,pcfinancial.sc.omtrdc.net
 DOMAIN,pc-financial.ada.support
