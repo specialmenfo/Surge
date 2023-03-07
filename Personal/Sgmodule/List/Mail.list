@@ -1,4 +1,6 @@
-# Surge請用 NO-HYBRID / HYBRID
+# Spark
+IP-CIDR,142.251.8.109/32
+
 # Mail iMAP
 DOMAIN,imap.gmail.com
 DOMAIN-SUFFIX,imap.gmail.com
