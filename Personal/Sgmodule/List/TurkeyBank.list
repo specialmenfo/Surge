@@ -1,4 +1,12 @@
-# Turkey Game Pay
+# Ozan
+DOMAIN,op-prod-tr.ozan.com
+DOMAIN-SUFFIX,ozan.com
+USER-AGENT,ozan
+USER-AGENT,ozan*
+USER-AGENT,*ozan
+PROCESS-NAME,ozan
+
+# Oyunfor
 DOMAIN,node2.oyunfor.com
 DOMAIN,vpos3.isbank.com.tr
 DOMAIN,spos.isbank.com.tr
