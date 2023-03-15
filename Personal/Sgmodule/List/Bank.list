@@ -125,6 +125,8 @@ USER-AGENT,*extra
 PROCESS-NAME,extra
 
 # HSBC
+DOMAIN,cdnbc-wup.hsbc.com.au
+DOMAIN,www.m.security.online-banking.hsbc.com.au
 DOMAIN,va.v.liveperson.net
 DOMAIN,va.push.liveperson.net
 DOMAIN,rbwm-api.us.hsbc.com
@@ -223,6 +225,7 @@ DOMAIN-SUFFIX,chub.expat.hsbc.com
 DOMAIN-SUFFIX,liveperson.net
 DOMAIN-SUFFIX,us.hsbc.com
 DOMAIN-SUFFIX,hsbc.co.uk
+DOMAIN-SUFFIX,hsbc.com.au
 USER-AGENT,hsbc
 USER-AGENT,hsbc*
 USER-AGENT,*hsbc
