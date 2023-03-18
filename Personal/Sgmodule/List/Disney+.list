@@ -1,4 +1,10 @@
 # Disney+
+USER-AGENT,disney*
+USER-AGENT,*disney
+PROCESS-NAME,disney
+DOMAIN,prod-ripcut-delivery.disney-plus.net
+DOMAIN,disney.my.sentry.io
+DOMAIN,disney.content.edge.bamgrid.com
 USER-AGENT,Disney*
 DOMAIN-SUFFIX,disneyplus.com
 DOMAIN-SUFFIX,disney-plus.net
