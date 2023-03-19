@@ -2,7 +2,7 @@
 #!desc=模塊合集
 
 [General]
-skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, www.apple.com, iosapps.itunes.apple.com, e.crashlytics.com, captive.apple.com, guzzoni.apple.com
+skip-proxy = %APPEND% pmbanalysis.bosc.cn, pmbservice.bosc.cn, *.bosc.cn, *.ccb.com, yunbusiness.ccb.com, yunbusiness.ccb.com, 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, www.apple.com, iosapps.itunes.apple.com, e.crashlytics.com, captive.apple.com, guzzoni.apple.com
 force-http-engine-hosts = %APPEND% *.hls.row.aiv-cdn.net, *avodhlss3ww-a.akamaihd.net, d25xi40x97liuc.cloudfront.net, dmqdd6hw24ucf.cloudfront.net, d22qjgkvxw22r6.cloudfront.net, d1v5ir2lpwr8os.cloudfront.net, d27xxe7juh1us6.cloudfront.net, assets.huluim.com, vod-*.live.cf.md.bbci.co.uk, vod-*-live.akamaized.net, *.hls.row.aiv-cdn.net, *avodhlss3ww-a.akamaihd.net, d25xi40x97liuc.cloudfront.net, dmqdd6hw24ucf.cloudfront.net, d22qjgkvxw22r6.cloudfront.net, d1v5ir2lpwr8os.cloudfront.net, d27xxe7juh1us6.cloudfront.net, assets.huluim.com, vod-*.live.cf.md.bbci.co.uk, vod-*-live.akamaized.net, boxjs.com, boxjs.net
 
 [Rule]
