@@ -4590,14 +4590,3 @@ DOMAIN-SUFFIX,gdga.gd.gov.cn
 DOMAIN-SUFFIX,ga.sz.gov.cn
 DOMAIN-SUFFIX,gd.gov.cn
 DOMAIN-SUFFIX,gov.cn
-IP-CIDR,124.108.137.209/32,no-resolve
-IP-CIDR,43.154.252.89/32,no-resolve
-IP-CIDR,124.108.137.209/32,no-resolve
-IP-CIDR,129.226.2.234/32,no-resolve
-IP-CIDR,124.108.137.238/32,no-resolve
-IP-CIDR,150.109.0.77/32,no-resolve
-IP-CIDR,101.32.110.252/32,no-resolve
-IP-CIDR,101.32.110.254/32,no-resolve
-IP-CIDR,101.32.110.253/32,no-resolve
-IP-CIDR,101.32.171.190/32,no-resolve
-IP-CIDR,101.32.171.191/32,no-resolve
