@@ -48,6 +48,8 @@ IP-CIDR,101.32.110.253/32,no-resolve
 IP-CIDR,101.32.171.190/32,no-resolve
 IP-CIDR,101.32.171.191/32,no-resolve
 IP-CIDR,43.159.55.223/32,no-resolve
+IP-CIDR,124.108.137.209/32,DIRECT
+IP-CIDR,17.57.145.170/32,DIRECT
 
 # Battle
 DOMAIN,blizzard.nefficient.co.kr
