@@ -4578,6 +4578,12 @@ DOMAIN,weixin.5ihl.com
 DOMAIN-SUFFIX,5ihl.com
 
 # Other
+DOMAIN,route-stats.d.meituan.net
+DOMAIN,maplocatesdksnapshot.d.meituan.net
+DOMAIN-SUFFIX,meituan.net
+DOMAIN-SUFFIX,d.meituan.net
+DOMAIN,f-cashloan.snssdk.com
+DOMAIN,f-cpay.snssdk.com
 DOMAIN,sc.menfo.xyz
 DOMAIN,sub.menfo.xyz
 DOMAIN,sub.store/download
