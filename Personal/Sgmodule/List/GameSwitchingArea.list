@@ -498,6 +498,7 @@ DOMAIN,100082.msdk.garena.com
 DOMAIN,xjp.garena.com
 DOMAIN,test-dr.intlgame.com
 DOMAIN,control-out.mna.qq.com
+DOMAIN-SUFFIX,gcloud.kgtw.garenanow.com
 DOMAIN-SUFFIX,gcloudcs.com
 DOMAIN,qoshw.gcloudsdk.com
 DOMAIN-SUFFIX,intlgame.com
