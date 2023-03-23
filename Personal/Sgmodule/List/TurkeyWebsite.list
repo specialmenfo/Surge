@@ -8,6 +8,7 @@ PROCESS-NAME,ozan
 
 # Oyunfor
 DOMAIN,node2.oyunfor.com
+DOMAIN,node2.oyunfor.com
 DOMAIN,vpos3.isbank.com.tr
 DOMAIN,spos.isbank.com.tr
 DOMAIN-SUFFIX,isbank.com.tr
@@ -46,6 +47,7 @@ IP-CIDR,113.105.147.165/30,no-resolve
 IP-CIDR,172.64.0.0/13,no-resolve
 DOMAIN,www.paytr.com
 DOMAIN,*.seagm.com
+DOMAIN-SUFFIX,oyunfor.com
 DOMAIN-SUFFIX,paytr.com
 DOMAIN-SUFFIX,epin-cdn
 DOMAIN-SUFFIX,epin-static
