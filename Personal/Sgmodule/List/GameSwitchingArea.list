@@ -33,23 +33,6 @@ DOMAIN-SUFFIX,aovrugcloud.iegcom.com
 DOMAIN-SUFFIX,codm.garena.com
 DOMAIN-SUFFIX,itopsdk.com
 DOMAIN-SUFFIX,tdatamaster.com
-IP-CIDR,150.109.29.118/32,no-resolve
-IP-CIDR,124.108.137.246/32,no-resolve
-IP-CIDR,124.108.137.208/32,no-resolve
-IP-CIDR,124.108.137.209/32,no-resolve
-IP-CIDR,43.154.252.89/32,no-resolve
-IP-CIDR,124.108.137.209/32,no-resolve
-IP-CIDR,129.226.2.234/32,no-resolve
-IP-CIDR,124.108.137.238/32,no-resolve
-IP-CIDR,150.109.0.77/32,no-resolve
-IP-CIDR,101.32.110.252/32,no-resolve
-IP-CIDR,101.32.110.254/32,no-resolve
-IP-CIDR,101.32.110.253/32,no-resolve
-IP-CIDR,101.32.171.190/32,no-resolve
-IP-CIDR,101.32.171.191/32,no-resolve
-IP-CIDR,43.159.55.223/32,no-resolve
-IP-CIDR,43.156.165.30/32,no-resolve
-IP-CIDR,43.128.240.62/32,no-resolve
 
 # Battle
 DOMAIN,blizzard.nefficient.co.kr
