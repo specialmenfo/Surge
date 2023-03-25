@@ -1,4 +1,5 @@
 # Arena of Valor
+DOMAIN,res.sgameglobal.com
 DOMAIN,*.iegcom.com
 DOMAIN,aihelp.net
 DOMAIN,faqs.aihelp.net
@@ -14,6 +15,7 @@ DOMAIN,tsg.tdatamaster.com
 DOMAIN,logs.papertrailapp.com
 DOMAIN,cloud2.gsdk.proximabeta.com
 DOMAIN,download.2.100000003.aovrugcloud.iegcom.com
+DOMAIN-SUFFIX,sgameglobal.com
 DOMAIN-SUFFIX,aihelp.net
 DOMAIN-SUFFIX,sg.intlgame.com
 DOMAIN-SUFFIX,app.adjust.com
@@ -46,6 +48,7 @@ IP-CIDR,43.159.55.223/32,no-resolve
 IP-CIDR,43.156.165.30/32,no-resolve
 IP-CIDR,43.128.240.62/32,no-resolve
 IP-CIDR,124.108.137.246/32,no-resolve
+IP-CIDR,18.229.175.189/32,no-resolve
 IP-CIDR,150.109.0.0/16
 IP-CIDR,43.154.0.0/16
 IP-CIDR,129.226.0.0/16
@@ -58,6 +61,7 @@ IP-CIDR,101.32.0.0/16
 IP-CIDR,43.159.0.0/16
 IP-CIDR,43.156.0.0/16
 IP-CIDR,43.128.0.0/16
+IP-CIDR,18.229.0.0/16
 
 # Battle
 DOMAIN,blizzard.nefficient.co.kr
