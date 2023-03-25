@@ -43,5 +43,3 @@ USER-AGENT,*tngdigital*
 USER-AGENT,tngdigital*
 PROCESS-NAME,codashop
 PROCESS-NAME,tngdigital
-IP-CIDR,17.253.84.251/12,no-resolve
-IP-CIDR,17.253.84.251/32,no-resolve
