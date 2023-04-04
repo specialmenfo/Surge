@@ -1,0 +1,6 @@
+DOMAIN,chat.openai.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,tidalhifi.com
+DOMAIN-SUFFIX,wimpmusic.com
+USER-AGENT,openai*
+USER-AGENT,*openai
