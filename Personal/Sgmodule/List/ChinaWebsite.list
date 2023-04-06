@@ -4596,6 +4596,7 @@ DOMAIN-SUFFIX,gdga.gd.gov.cn
 DOMAIN-SUFFIX,ga.sz.gov.cn
 DOMAIN-SUFFIX,gd.gov.cn
 DOMAIN-SUFFIX,gov.cn
+DOMAIN-KEYWORD,speedtest
 IP-CIDR,124.108.137.209/32,no-resolve
 IP-CIDR,17.57.145.170/32,no-resolve
 IP-CIDR,43.156.103.19/32,no-resolve
