@@ -115,6 +115,19 @@ USER-AGENT,imaginecurve*
 USER-AGENT,*imaginecurve
 PROCESS-NAME,imaginecurve
 
+# Currenxie
+DOMAIN-SUFFIX,currenxie.com
+DOMAIN-KEYWORD,currenxie
+DOMAIN-KEYWORD,Currenxie
+USER-AGENT,currenxie
+USER-AGENT,currenxie*
+USER-AGENT,*currenxie
+PROCESS-NAME,currenxie
+USER-AGENT,Currenxie
+USER-AGENT,Currenxie*
+USER-AGENT,*Currenxie
+PROCESS-NAME,Currenxie
+
 # EXTRA
 DOMAIN,track.extra.app
 DOMAIN,growthbook-api.extra.app
