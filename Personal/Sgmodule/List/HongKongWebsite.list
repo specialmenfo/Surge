@@ -2045,6 +2045,19 @@ DOMAIN-SUFFIX,dropboxusercontent.com
 DOMAIN-SUFFIX,getdropbox.com
 DOMAIN-SUFFIX,paper-attachments.s3.amazonaws.com
 
+# Currenxie
+DOMAIN-SUFFIX,currenxie.com
+DOMAIN-KEYWORD,currenxie
+DOMAIN-KEYWORD,Currenxie
+USER-AGENT,currenxie
+USER-AGENT,currenxie*
+USER-AGENT,*currenxie
+PROCESS-NAME,currenxie
+USER-AGENT,Currenxie
+USER-AGENT,Currenxie*
+USER-AGENT,*Currenxie
+PROCESS-NAME,Currenxie
+
 # Duckduckgo
 DOMAIN-SUFFIX,cispaletter.com
 DOMAIN-SUFFIX,cispaletter.org
