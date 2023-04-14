@@ -90,36 +90,6 @@ USER-AGENT,newdaycards*
 USER-AGENT,*newdaycards
 PROCESS-NAME,newdaycards
 
-# Lloyds Bank
-DOMAIN,lloydsbankinggroup.d3.sc.omtrdc.net
-DOMAIN,check2.lloydsbank.co.uk
-DOMAIN,apio.lloydsbank.co.uk
-DOMAIN,apis.lloydsbank.co.uk
-DOMAIN,lp-07.asynchronousmessaging.dashboard.co.uk
-DOMAIN,analytics.data.lloydsbankinggroup.com
-DOMAIN,zn9a03hitpyaxheon-DOMAIN,lloydsbankinggroup.siteintercept.qualtrics.com
-DOMAIN,lp-01.asynchronousmessaging.dashboard.co.uk
-DOMAIN,lloydsbankinggroup-col.cjteradata.com
-DOMAIN,secure.lloydsbank.co.uk
-DOMAIN,online.lloydsbank.co.uk
-DOMAIN,lloydsbankinggroup.d3.sc.omtrdc.net
-DOMAIN,wup-16c9d93d.lloydsbank.co.uk
-DOMAIN,optimisation.data.lloydsbankinggroup.com
-DOMAIN,www.lloydsbank.com
-DOMAIN,bcdn-16c9d93d.lloydsbank.co.uk
-DOMAIN,lloydsbankinggroup-col.cjteradata.com
-DOMAIN-SUFFIX,lloydsbank.com
-DOMAIN-SUFFIX,lloydsbank.co.uk
-DOMAIN-SUFFIX,lloydsbankinggroup.com
-USER-AGENT,lloydsbank
-USER-AGENT,lloydsbank*
-USER-AGENT,*lloydsbank
-PROCESS-NAME,lloydsbank
-USER-AGENT,lloydsbankinggroup
-USER-AGENT,lloydsbankinggroup*
-USER-AGENT,*lloydsbankinggroup
-PROCESS-NAME,lloydsbankinggroup
-
 # moneysavingexpert
 DOMAIN,experian.moneysavingexpert.com
 DOMAIN,prod-api.moneysavingexpert.com
