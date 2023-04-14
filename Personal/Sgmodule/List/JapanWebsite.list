@@ -1,3 +1,9 @@
+# ChatGPT
+DOMAIN,chat.openai.com
+DOMAIN-SUFFIX,openai.com
+USER-AGENT,openai*
+USER-AGENT,*openai
+
 # Pixiv
 DOMAIN-SUFFIX,booth.pm
 DOMAIN-SUFFIX,fanbox.cc
