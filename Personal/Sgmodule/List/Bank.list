@@ -267,6 +267,20 @@ USER-AGENT,*livibank
 PROCESS-NAME,livibank
 IP-CIDR,183.240.181.35/22,no-resolve
 
+# MARCUS
+DOMAIN,www.marcus.com
+DOMAIN,smetrics.marcus.com
+DOMAIN,goldmansachs.my.sentry.io
+DOMAIN-SUFFIX,marcus.com
+USER-AGENT,marcus
+USER-AGENT,marcus*
+USER-AGENT,*marcus
+PROCESS-NAME,marcus
+USER-AGENT,goldmansachs
+USER-AGENT,goldmansachs*
+USER-AGENT,*goldmansachs
+PROCESS-NAME,goldmansachs
+
 # MasterCard
 DOMAIN,eu.gateway.mastercard.com
 DOMAIN-SUFFIX,mastercard.com
