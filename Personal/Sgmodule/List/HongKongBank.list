@@ -174,17 +174,6 @@ IP-CIDR,104.99.48.140/22,no-resolve
 IP-CIDR,17.171.78.198/22,no-resolve
 IP-CIDR,23.45.52.76/22,no-resolve
 
-# liviBank
-DOMAIN,ms.livibank.com
-DOMAIN,appgw.livibank.com
-DOMAIN,appgw.livibank.com/basic/aksHandShake
-DOMAIN-SUFFIX,livibank.com
-USER-AGENT,livibank
-USER-AGENT,livibank*
-USER-AGENT,*livibank
-PROCESS-NAME,livibank
-IP-CIDR,183.240.181.35/22,no-resolve
-
 # MasterCard
 DOMAIN,eu.gateway.mastercard.com
 DOMAIN-SUFFIX,mastercard.com
