@@ -4581,6 +4581,7 @@ USER-AGENT,*lloydsbankinggroup
 PROCESS-NAME,lloydsbankinggroup
 
 # liviBank
+DOMAIN,livibank.queue-it.net
 DOMAIN-SUFFIX,livibank.com
 DOMAIN-KEYWORD,livibank.com
 DOMAIN,ms.livibank.com
