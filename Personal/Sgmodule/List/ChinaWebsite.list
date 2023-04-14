@@ -4092,53 +4092,6 @@ PROCESS-NAME,bosc
 DOMAIN-KEYWORD,dhl
 DOMAIN-SUFFIX,dhl.com
 
-# HSBC
-DOMAIN-SUFFIX,hsbc.com.hk
-DOMAIN-KEYWORD,hsbc.com.hk
-DOMAIN-SUFFIX,hsbc.com.cn
-DOMAIN-KEYWORD,hsbc.com.cn
-
-# liviBank
-DOMAIN-SUFFIX,livibank.com
-DOMAIN-KEYWORD,livibank.com
-DOMAIN,ms.livibank.com
-DOMAIN,appgw.livibank.com
-DOMAIN,appgw.livibank.com/basic/aksHandShake
-DOMAIN-SUFFIX,livibank.com
-USER-AGENT,livibank
-USER-AGENT,livibank*
-USER-AGENT,*livibank
-PROCESS-NAME,livibank
-IP-CIDR,183.240.181.35/22,no-resolve
-
-# Tap & Go
-DOMAIN,tapngo.queue-it.net
-DOMAIN-SUFFIX,tapngo.com.hk
-DOMAIN-SUFFIX,.tapngo.com.hk
-DOMAIN-SUFFIX,*.tapngo.com.hk
-DOMAIN,wallet.tapngo.com.hk
-USER-AGENT,tapngo
-USER-AGENT,tapngo*
-USER-AGENT,*tapngo
-PROCESS-NAME,tapngo
-IP-CIDR,52.48.0.0/14,no-resolve
-
-# wlbank
-DOMAIN-KEYWORD,wlbank
-DOMAIN-SUFFIX,wlbank.com.mo
-DOMAIN,opening.wlbank.com.mo
-
-# ZA Bank
-DOMAIN-SUFFIX,za.group
-DOMAIN-KEYWORD,za.group
-DOMAIN-KEYWORD,za
-
-# 中信銀行（國際）
-DOMAIN,ibanking.cncbinternational.com
-DOMAIN-SUFFIX,cncbinternational.com
-DOMAIN-KEYWORD,cncbinternational.com
-DOMAIN-KEYWORD,cncbinternational
-
 # Lan
 DOMAIN,instant.arubanetworks.com
 DOMAIN,router.asus.com
