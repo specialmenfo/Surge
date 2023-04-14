@@ -18,6 +18,19 @@ USER-AGENT,advanzia*
 USER-AGENT,*advanzia
 PROCESS-NAME,advanzia
 
+# N26（DE）
+DOMAIN,api.tech26.de
+DOMAIN,cdn.number26.de
+DOMAIN,images.ctfassets.net
+USER-AGENT,tech26
+USER-AGENT,tech26*
+USER-AGENT,*tech26
+PROCESS-NAME,tech26
+USER-AGENT,number26
+USER-AGENT,number26*
+USER-AGENT,*number26
+PROCESS-NAME,number26
+
 # Vodafone DE
 DOMAIN,beta.vodafone.de
 DOMAIN,fc.vodafone.de
