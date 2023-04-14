@@ -1,128 +1,46 @@
-# Bank Of America
-DOMAIN,mservice.bankofamerica.com
-DOMAIN,sofa.bankofamerica.com
-DOMAIN,mservice.bankofamerica.com
-DOMAIN,tilt-ws.bankofamerica.com
-DOMAIN,bankofamerica1.sc.omtrdc.net
-DOMAIN,www.bac-assets.com
-DOMAIN-SUFFIX,bankofamerica.com
-DOMAIN-SUFFIX,bac-assets.com
-USER-AGENT,bankofamerica
-USER-AGENT,bankofamerica*
-USER-AGENT,*bankofamerica
-PROCESS-NAME,bankofamerica
-USER-AGENT,bac
-USER-AGENT,bac*
-USER-AGENT,*bac
-PROCESS-NAME,bac
+# SC
+DOMAIN,standchartbank.demdex.net
+DOMAIN,fast.standchartbank.demdex.net
+DOMAIN,standchartbank.sc.omtrdc.net
+DOMAIN,www.sc.com
+DOMAIN,svc2.sc.com
+DOMAIN,marketing.online.standardchartered.com
+DOMAIN,dpm.demdex.net
+DOMAIN,standchartbank.tt.omtrdc.net
+DOMAIN,2jtgv0awr236wn6ti5fpguiqu4vn4iny46udjligd831d45e4bbb968dsac.d.aa.online-metrix.net
+DOMAIN,aa.online-metrix.net
+DOMAIN,k.clarity.ms
+DOMAIN,ibank.standardchartered.com.hk
+DOMAIN,c.go-mpulse.net
+DOMAIN,t0.c.appier.net
+DOMAIN,sp.analytics.yahoo.com
+DOMAIN,anylist.c.appier.net
+DOMAIN,s.c.appier.net
+DOMAIN-SUFFIX,standchartbank.demdex.net
+DOMAIN-SUFFIX,sc.com
+DOMAIN-SUFFIX,standardchartered.com
+DOMAIN-SUFFIX,online-metrix.net
+DOMAIN-SUFFIX,clarity.ms
+DOMAIN-SUFFIX,standardchartered.com.hk
+DOMAIN-SUFFIX,go-mpulse.net
+DOMAIN-SUFFIX,appier.net
+USER-AGENT,standchartbank
+USER-AGENT,standchartbank*
+USER-AGENT,*standchartbank
+PROCESS-NAME,standchartbank
 
-# CHASE
-DOMAIN,cdn.zimperium.com
-DOMAIN,mpi-prod.zimperium.com
-DOMAIN,d.agkn.com
-DOMAIN,pippio.com
-DOMAIN,stest.zimperium.com
-DOMAIN,auth.split.io
-DOMAIN,skadsdkless.appsflyer.com
-DOMAIN,streaming.split.io
-DOMAIN,launches.appsflyer.com
-DOMAIN,inapps.appsflyer.com
-DOMAIN,skadsdkless.appsflyer.com
-DOMAIN,www.chase.com
-DOMAIN,sites.chase.com
-DOMAIN,midas.chase.com
-DOMAIN,static.chasecdn.com
-DOMAIN,measure.chase.com
-DOMAIN,target.chase.com
-DOMAIN,analytics.chase.com
-DOMAIN,ocsp.entrust.net
-DOMAIN,account.chase.com
-DOMAIN,script.crazyegg.com
-DOMAIN,pagestates-tracking.crazyegg.com
-DOMAIN,assets-tracking.crazyegg.com
-DOMAIN,tracking.crazyegg.com
-DOMAIN,cdn.f9client.com
-DOMAIN,creditcards.chase.com
-DOMAIN,targeting.chasecreditcards.com
-DOMAIN,chase-mp.zeronaught.com
-DOMAIN,login.dotomi.com
-DOMAIN,pixel.mathtag.com
-DOMAIN,tags.mediaforge.com
-DOMAIN,t.acxiom-online.com
-DOMAIN,rc.rlcdn.com
-DOMAIN,ut.rd.linksynergy.com
-DOMAIN,personal.chase.com
-DOMAIN,ocsp.entrust.net
-DOMAIN,secure07b.chase.com
-DOMAIN,secure07b.chase.com
-DOMAIN,proxy.safebrowsing.apple
-DOMAIN,api.chase.co.uk
-DOMAIN,static.chase.co.uk
-DOMAIN,www.chase.co.uk
-DOMAIN,telemetry.chase.co.uk
-DOMAIN,secure.chase.com
-DOMAIN,secure07c.chase.com
-DOMAIN-SUFFIX,zimperium.com
-DOMAIN-SUFFIX,agkn.com
-DOMAIN-SUFFIX,pippio.com
-DOMAIN-SUFFIX,split.io
-DOMAIN-SUFFIX,appsflyer.com
-DOMAIN-SUFFIX,chase.com
-DOMAIN-SUFFIX,chase.co.uk
-DOMAIN-SUFFIX,chase.com
-DOMAIN-SUFFIX,chasecdn.com
-DOMAIN-SUFFIX,entrust.net
-DOMAIN-SUFFIX,crazyegg.com
-DOMAIN-SUFFIX,f9client.com
-DOMAIN-SUFFIX,chasecreditcards.com
-DOMAIN-SUFFIX,zeronaught.com
-DOMAIN-SUFFIX,dotomi.com
-DOMAIN-SUFFIX,mathtag.com
-DOMAIN-SUFFIX,mediaforge.com
-DOMAIN-SUFFIX,acxiom-online.com
-DOMAIN-SUFFIX,rlcdn.com
-DOMAIN-SUFFIX,linksynergy.com
-DOMAIN-SUFFIX,entrust.net
-DOMAIN-SUFFIX,safebrowsing.apple
-USER-AGENT,chasecdn
-USER-AGENT,chasecdn*
-USER-AGENT,*chasecdn
-PROCESS-NAME,chasecdn
-USER-AGENT,chase
-USER-AGENT,chase*
-USER-AGENT,*chase
-PROCESS-NAME,chase
-
-# Curve
-DOMAIN,apollo-graphql-gateway.production.curve.app
-DOMAIN,account-subscriptions.production.curve.app
-DOMAIN,collector.bi.imaginecurve.com
-DOMAIN,curve.api.kustomerapp.com
-DOMAIN,clientapi.production.curve.app
-DOMAIN,client-orchestrator.production.curve.app
-DOMAIN,apollo-graphql-gateway.production.curve.app
-DOMAIN,clientapi.production.curve.app
-DOMAIN,account-onboarding-orchestrator.production.curve.app
-DOMAIN-SUFFIX,curve.app
-DOMAIN-SUFFIX,imaginecurve.com
-DOMAIN-SUFFIX,kustomerapp.com
-USER-AGENT,curve
-USER-AGENT,curve*
-USER-AGENT,*curve
-PROCESS-NAME,curve
-USER-AGENT,imaginecurve
-USER-AGENT,imaginecurve*
-USER-AGENT,*imaginecurve
-PROCESS-NAME,imaginecurve
-
-# EXTRA
-DOMAIN,track.extra.app
-DOMAIN,growthbook-api.extra.app
-DOMAIN-SUFFIX,extra.app
-USER-AGENT,extra
-USER-AGENT,extra*
-USER-AGENT,*extra
-PROCESS-NAME,extra
+# Currenxie
+DOMAIN-SUFFIX,currenxie.com
+DOMAIN-KEYWORD,currenxie
+DOMAIN-KEYWORD,Currenxie
+USER-AGENT,currenxie
+USER-AGENT,currenxie*
+USER-AGENT,*currenxie
+PROCESS-NAME,currenxie
+USER-AGENT,Currenxie
+USER-AGENT,Currenxie*
+USER-AGENT,*Currenxie
+PROCESS-NAME,Currenxie
 
 # HSBC
 DOMAIN,cdnbc-wup.hsbc.com.au
@@ -267,20 +185,6 @@ USER-AGENT,*livibank
 PROCESS-NAME,livibank
 IP-CIDR,183.240.181.35/22,no-resolve
 
-# MARCUS
-DOMAIN,www.marcus.com
-DOMAIN,smetrics.marcus.com
-DOMAIN,goldmansachs.my.sentry.io
-DOMAIN-SUFFIX,marcus.com
-USER-AGENT,marcus
-USER-AGENT,marcus*
-USER-AGENT,*marcus
-PROCESS-NAME,marcus
-USER-AGENT,goldmansachs
-USER-AGENT,goldmansachs*
-USER-AGENT,*goldmansachs
-PROCESS-NAME,goldmansachs
-
 # MasterCard
 DOMAIN,eu.gateway.mastercard.com
 DOMAIN-SUFFIX,mastercard.com
@@ -289,20 +193,37 @@ USER-AGENT,mastercard*
 USER-AGENT,*mastercard
 PROCESS-NAME,mastercard
 
-# N26（DE）
-DOMAIN,api.tech26.de
-DOMAIN,cdn.number26.de
-DOMAIN,images.ctfassets.net
-USER-AGENT,tech26
-USER-AGENT,tech26*
-USER-AGENT,*tech26
-PROCESS-NAME,tech26
-USER-AGENT,number26
-USER-AGENT,number26*
-USER-AGENT,*number26
-PROCESS-NAME,number26
-
-# 八達通
+# Octopus 八達通
+DOMAIN-SUFFIX,octopus.com.hk
+DOMAIN-SUFFIX,.octopus.com.hk
+DOMAIN-SUFFIX,*.octopus.com.hk
+DOMAIN,www.octopus.com.hk
+DOMAIN-SUFFIX,ptfss.hk
+DOMAIN-SUFFIX,.ptfss.hk
+DOMAIN-SUFFIX,*.ptfss.hk
+DOMAIN-SUFFIX,subsidy-app.ptfss.hk
+DOMAIN-SUFFIX,octopus.queue-it.net
+DOMAIN-SUFFIX,octopus-cards.com
+DOMAIN-SUFFIX,.octopus-cards.com
+DOMAIN-SUFFIX,*.octopus-cards.com
+DOMAIN,app.oepay.octopus-cards.com
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,.octopuscards.com
+DOMAIN-SUFFIX,*.octopuscards.com
+DOMAIN,www.octopuscards.com
+USER-AGENT,octopuscards
+USER-AGENT,octopus
+USER-AGENT,octopus*
+USER-AGENT,*octopus
+USER-AGENT,oepay
+USER-AGENT,ptfss
+USER-AGENT,oepay*
+USER-AGENT,*oepay
+USER-AGENT,ptfss*
+USER-AGENT,*ptfss
+PROCESS-NAME,octopus
+PROCESS-NAME,ptfss
+PROCESS-NAME,oepay
 DOMAIN-SUFFIX,octopus.com.hk
 DOMAIN-SUFFIX,.octopus.com.hk
 DOMAIN-SUFFIX,*.octopus.com.hk
@@ -334,33 +255,6 @@ PROCESS-NAME,octopus
 PROCESS-NAME,ptfss
 PROCESS-NAME,oepay
 
-# PASSBOOK
-DOMAIN,www.remitly.com
-DOMAIN,passbook-api.remitly.io
-DOMAIN,help.passbook.app
-DOMAIN,analytics.plaid.com
-DOMAIN,production.plaid.com
-DOMAIN,secure.plaid.com
-DOMAIN,cdn.plaid.com
-DOMAIN,production.plaid.com
-DOMAIN,production.plaid.com
-DOMAIN-SUFFIX,remitly.com
-DOMAIN-SUFFIX,remitly.io
-DOMAIN-SUFFIX,passbook.app
-DOMAIN-SUFFIX,plaid.com
-USER-AGENT,remitly
-USER-AGENT,remitly*
-USER-AGENT,*remitly
-PROCESS-NAME,remitly
-USER-AGENT,passbook
-USER-AGENT,passbook*
-USER-AGENT,*passbook
-PROCESS-NAME,passbook
-USER-AGENT,plaid
-USER-AGENT,plaid*
-USER-AGENT,*plaid
-PROCESS-NAME,plaid
-
 # Tap & Go
 DOMAIN-SUFFIX,tapngo.com.hk
 DOMAIN-SUFFIX,.tapngo.com.hk
@@ -370,27 +264,6 @@ USER-AGENT,tapngo
 USER-AGENT,tapngo*
 USER-AGENT,*tapngo
 PROCESS-NAME,tapngo
-
-# USBANK
-DOMAIN,api.usbank.com
-DOMAIN,data.pendo.io
-DOMAIN,usbank.tt.omtrdc.net
-DOMAIN,usbank-sync.quantummetric.com
-DOMAIN,usbank.sc.omtrdc.net
-DOMAIN,content.usbank.com
-DOMAIN,auth.usbank.com
-DOMAIN,usbank.tt.omtrdc.net
-DOMAIN,transec.usbank.com
-DOMAIN,usbank-app.quantummetric.com
-DOMAIN,cdn.quantummetric.com
-DOMAIN,smetrics.usbank.com
-DOMAIN-SUFFIX,usbank.com
-DOMAIN-SUFFIX,pendo.io
-DOMAIN-SUFFIX,quantummetric.com
-USER-AGENT,usbank
-USER-AGENT,usbank*
-USER-AGENT,*usbank
-PROCESS-NAME,usbank
 
 # Wise
 DOMAIN,wise.com
@@ -413,14 +286,49 @@ USER-AGENT,wise*
 USER-AGENT,*wise
 PROCESS-NAME,wise
 
-# Zelle
-DOMAIN,api.zellepay.com
-DOMAIN-SUFFIX,zellepay.com
-USER-AGENT,zellepay
-USER-AGENT,zellepay*
-USER-AGENT,*zellepay
-PROCESS-NAME,zellepay
-USER-AGENT,zelle
-USER-AGENT,zelle*
-USER-AGENT,*zelle
-PROCESS-NAME,zelle
+# HSBC
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-KEYWORD,hsbc.com.hk
+DOMAIN-SUFFIX,hsbc.com.cn
+DOMAIN-KEYWORD,hsbc.com.cn
+
+# liviBank
+DOMAIN-SUFFIX,livibank.com
+DOMAIN-KEYWORD,livibank.com
+DOMAIN,ms.livibank.com
+DOMAIN,appgw.livibank.com
+DOMAIN,appgw.livibank.com/basic/aksHandShake
+DOMAIN-SUFFIX,livibank.com
+USER-AGENT,livibank
+USER-AGENT,livibank*
+USER-AGENT,*livibank
+PROCESS-NAME,livibank
+IP-CIDR,183.240.181.35/22,no-resolve
+
+# Tap & Go
+DOMAIN,tapngo.queue-it.net
+DOMAIN-SUFFIX,tapngo.com.hk
+DOMAIN-SUFFIX,.tapngo.com.hk
+DOMAIN-SUFFIX,*.tapngo.com.hk
+DOMAIN,wallet.tapngo.com.hk
+USER-AGENT,tapngo
+USER-AGENT,tapngo*
+USER-AGENT,*tapngo
+PROCESS-NAME,tapngo
+IP-CIDR,52.48.0.0/14,no-resolve
+
+# wlbank
+DOMAIN-KEYWORD,wlbank
+DOMAIN-SUFFIX,wlbank.com.mo
+DOMAIN,opening.wlbank.com.mo
+
+# ZA Bank
+DOMAIN-SUFFIX,za.group
+DOMAIN-KEYWORD,za.group
+DOMAIN-KEYWORD,za
+
+# 中信銀行（國際）
+DOMAIN,ibanking.cncbinternational.com
+DOMAIN-SUFFIX,cncbinternational.com
+DOMAIN-KEYWORD,cncbinternational.com
+DOMAIN-KEYWORD,cncbinternational
