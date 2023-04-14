@@ -261,37 +261,6 @@ DOMAIN-SUFFIX,ukipad.com
 DOMAIN-SUFFIX,wwwipodlounge.com
 DOMAIN-SUFFIX,wwwmacbookair.com
 
-# SC
-DOMAIN,standchartbank.demdex.net
-DOMAIN,fast.standchartbank.demdex.net
-DOMAIN,standchartbank.sc.omtrdc.net
-DOMAIN,www.sc.com
-DOMAIN,svc2.sc.com
-DOMAIN,marketing.online.standardchartered.com
-DOMAIN,dpm.demdex.net
-DOMAIN,standchartbank.tt.omtrdc.net
-DOMAIN,2jtgv0awr236wn6ti5fpguiqu4vn4iny46udjligd831d45e4bbb968dsac.d.aa.online-metrix.net
-DOMAIN,aa.online-metrix.net
-DOMAIN,k.clarity.ms
-DOMAIN,ibank.standardchartered.com.hk
-DOMAIN,c.go-mpulse.net
-DOMAIN,t0.c.appier.net
-DOMAIN,sp.analytics.yahoo.com
-DOMAIN,anylist.c.appier.net
-DOMAIN,s.c.appier.net
-DOMAIN-SUFFIX,standchartbank.demdex.net
-DOMAIN-SUFFIX,sc.com
-DOMAIN-SUFFIX,standardchartered.com
-DOMAIN-SUFFIX,online-metrix.net
-DOMAIN-SUFFIX,clarity.ms
-DOMAIN-SUFFIX,standardchartered.com.hk
-DOMAIN-SUFFIX,go-mpulse.net
-DOMAIN-SUFFIX,appier.net
-USER-AGENT,standchartbank
-USER-AGENT,standchartbank*
-USER-AGENT,*standchartbank
-PROCESS-NAME,standchartbank
-
 # MailBox
 DOMAIN,eu.clevver.io
 DOMAIN,api.anytimemailbox.com
@@ -2045,19 +2014,6 @@ DOMAIN-SUFFIX,dropboxusercontent.com
 DOMAIN-SUFFIX,getdropbox.com
 DOMAIN-SUFFIX,paper-attachments.s3.amazonaws.com
 
-# Currenxie
-DOMAIN-SUFFIX,currenxie.com
-DOMAIN-KEYWORD,currenxie
-DOMAIN-KEYWORD,Currenxie
-USER-AGENT,currenxie
-USER-AGENT,currenxie*
-USER-AGENT,*currenxie
-PROCESS-NAME,currenxie
-USER-AGENT,Currenxie
-USER-AGENT,Currenxie*
-USER-AGENT,*Currenxie
-PROCESS-NAME,Currenxie
-
 # Duckduckgo
 DOMAIN-SUFFIX,cispaletter.com
 DOMAIN-SUFFIX,cispaletter.org
@@ -2916,38 +2872,6 @@ DOMAIN-SUFFIX,nytlog.com
 DOMAIN-SUFFIX,nytstyle.com
 DOMAIN-SUFFIX,timestalks.com
 DOMAIN-SUFFIX,tynt.com
-
-# Octopus 八達通
-DOMAIN-SUFFIX,octopus.com.hk
-DOMAIN-SUFFIX,.octopus.com.hk
-DOMAIN-SUFFIX,*.octopus.com.hk
-DOMAIN,www.octopus.com.hk
-DOMAIN-SUFFIX,ptfss.hk
-DOMAIN-SUFFIX,.ptfss.hk
-DOMAIN-SUFFIX,*.ptfss.hk
-DOMAIN-SUFFIX,subsidy-app.ptfss.hk
-DOMAIN-SUFFIX,octopus.queue-it.net
-DOMAIN-SUFFIX,octopus-cards.com
-DOMAIN-SUFFIX,.octopus-cards.com
-DOMAIN-SUFFIX,*.octopus-cards.com
-DOMAIN,app.oepay.octopus-cards.com
-DOMAIN-SUFFIX,octopuscards.com
-DOMAIN-SUFFIX,.octopuscards.com
-DOMAIN-SUFFIX,*.octopuscards.com
-DOMAIN,www.octopuscards.com
-USER-AGENT,octopuscards
-USER-AGENT,octopus
-USER-AGENT,octopus*
-USER-AGENT,*octopus
-USER-AGENT,oepay
-USER-AGENT,ptfss
-USER-AGENT,oepay*
-USER-AGENT,*oepay
-USER-AGENT,ptfss*
-USER-AGENT,*ptfss
-PROCESS-NAME,octopus
-PROCESS-NAME,ptfss
-PROCESS-NAME,oepay
 
 # OneDrive
 DOMAIN-SUFFIX,1drv.com
