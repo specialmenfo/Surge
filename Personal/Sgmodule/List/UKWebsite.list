@@ -3,6 +3,30 @@ DOMAIN-SUFFIX,c4assets.com
 DOMAIN-SUFFIX,channel4.com
 USER-AGENT,All4*
 
+# Barclays
+DOMAIN,barclaysbankplc.demdex.net
+DOMAIN,www.barclays.co.uk
+DOMAIN,bank.barclays.co.uk
+DOMAIN,www.barclays.mobi
+DOMAIN,bmb.secure.barclays.com
+DOMAIN,barclaysuk.sc.omtrdc.net
+DOMAIN,bclays-ads.aimatch.com
+DOMAIN-SUFFIX,barclays.co.uk
+DOMAIN-SUFFIX,barclays.mobi
+DOMAIN-SUFFIX,barclays.com
+USER-AGENT,halifax
+USER-AGENT,halifax*
+USER-AGENT,*halifax
+PROCESS-NAME,halifax
+USER-AGENT,barclaysbankplc
+USER-AGENT,barclaysbankplc*
+USER-AGENT,*barclaysbankplc
+PROCESS-NAME,barclaysbankplc
+USER-AGENT,barclaysuk
+USER-AGENT,barclaysuk*
+USER-AGENT,*barclaysuk
+PROCESS-NAME,barclaysuk
+
 # BBC iPlayer
 USER-AGENT,BBCiPlayer*
 DOMAIN-KEYWORD,bbcfmt
