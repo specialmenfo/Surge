@@ -4579,3 +4579,16 @@ USER-AGENT,lloydsbankinggroup
 USER-AGENT,lloydsbankinggroup*
 USER-AGENT,*lloydsbankinggroup
 PROCESS-NAME,lloydsbankinggroup
+
+# liviBank
+DOMAIN-SUFFIX,livibank.com
+DOMAIN-KEYWORD,livibank.com
+DOMAIN,ms.livibank.com
+DOMAIN,appgw.livibank.com
+DOMAIN,appgw.livibank.com/basic/aksHandShake
+DOMAIN-SUFFIX,livibank.com
+USER-AGENT,livibank
+USER-AGENT,livibank*
+USER-AGENT,*livibank
+PROCESS-NAME,livibank
+IP-CIDR,183.240.181.35/22,no-resolve
