@@ -4600,6 +4600,14 @@ DOMAIN,app.oepay.octopus-cards.com
 DOMAIN,monitor.octopus-cards.com
 DOMAIN-SUFFIX,octopuscards.com
 DOMAIN-SUFFIX,octopus-cards.com
+DOMAIN-SUFFIX,.octopus-cards.com
+DOMAIN-SUFFIX,*.octopus-cards.com
+DOMAIN,app.oepay.octopus-cards.com
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,.octopuscards.com
+DOMAIN-SUFFIX,*.octopuscards.com
+DOMAIN,www.octopuscards.com
+USER-AGENT,octopuscards
 USER-AGENT,octopuscards
 USER-AGENT,octopuscards*
 USER-AGENT,*octopuscards
