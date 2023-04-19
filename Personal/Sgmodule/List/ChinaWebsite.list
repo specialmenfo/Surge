@@ -4593,3 +4593,14 @@ USER-AGENT,livibank*
 USER-AGENT,*livibank
 PROCESS-NAME,livibank
 IP-CIDR,183.240.181.35/22,no-resolve
+
+# Octopus Merchant Edition
+DOMAIN,www.octopuscards.com
+DOMAIN,app.oepay.octopus-cards.com
+DOMAIN,monitor.octopus-cards.com
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,octopus-cards.com
+USER-AGENT,octopuscards
+USER-AGENT,octopuscards*
+USER-AGENT,*octopuscards
+PROCESS-NAME,octopuscards
