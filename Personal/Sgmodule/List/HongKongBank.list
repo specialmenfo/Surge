@@ -29,6 +29,56 @@ USER-AGENT,standchartbank*
 USER-AGENT,*standchartbank
 PROCESS-NAME,standchartbank
 
+# BOCHK
+DOMAIN,bochk01.etnet.com.hk
+USER-AGENT,bochk
+USER-AGENT,bochk*
+USER-AGENT,*bochk
+PROCESS-NAME,bochk
+
+# AirstarBank
+DOMAIN,data.help.jr.mi.com
+DOMAIN,verify.sec.xiaomi.comcaptcha
+DOMAIN,www.airstarbank.com
+DOMAIN-SUFFIX,xiaomi.comcaptcha
+USER-AGENT,airstarbank
+USER-AGENT,airstarbank*
+USER-AGENT,*airstarbank
+PROCESS-NAME,airstarbank
+
+# liviBank
+DOMAIN,livibank.queue-it.net
+DOMAIN-SUFFIX,livibank.com
+DOMAIN-KEYWORD,livibank.com
+DOMAIN,ms.livibank.com
+DOMAIN,appgw.livibank.com
+DOMAIN,appgw.livibank.com/basic/aksHandShake
+DOMAIN-SUFFIX,livibank.com
+USER-AGENT,livibank
+USER-AGENT,livibank*
+USER-AGENT,*livibank
+PROCESS-NAME,livibank
+IP-CIDR,183.240.181.35/22,no-resolve
+
+# Octopus Merchant Edition
+DOMAIN,www.octopuscards.com
+DOMAIN,app.oepay.octopus-cards.com
+DOMAIN,monitor.octopus-cards.com
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,octopus-cards.com
+DOMAIN-SUFFIX,.octopus-cards.com
+DOMAIN-SUFFIX,*.octopus-cards.com
+DOMAIN,app.oepay.octopus-cards.com
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,.octopuscards.com
+DOMAIN-SUFFIX,*.octopuscards.com
+DOMAIN,www.octopuscards.com
+USER-AGENT,octopuscards
+USER-AGENT,octopuscards
+USER-AGENT,octopuscards*
+USER-AGENT,*octopuscards
+PROCESS-NAME,octopuscards
+
 # Currenxie
 DOMAIN-SUFFIX,currenxie.com
 DOMAIN-KEYWORD,currenxie
