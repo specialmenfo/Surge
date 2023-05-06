@@ -1,40 +1,3 @@
-# SC
-DOMAIN,standchartbank.demdex.net
-DOMAIN,fast.standchartbank.demdex.net
-DOMAIN,standchartbank.sc.omtrdc.net
-DOMAIN,www.sc.com
-DOMAIN,svc2.sc.com
-DOMAIN,marketing.online.standardchartered.com
-DOMAIN,dpm.demdex.net
-DOMAIN,standchartbank.tt.omtrdc.net
-DOMAIN,2jtgv0awr236wn6ti5fpguiqu4vn4iny46udjligd831d45e4bbb968dsac.d.aa.online-metrix.net
-DOMAIN,aa.online-metrix.net
-DOMAIN,k.clarity.ms
-DOMAIN,ibank.standardchartered.com.hk
-DOMAIN,c.go-mpulse.net
-DOMAIN,t0.c.appier.net
-DOMAIN,sp.analytics.yahoo.com
-DOMAIN,anylist.c.appier.net
-DOMAIN,s.c.appier.net
-DOMAIN-SUFFIX,standchartbank.demdex.net
-DOMAIN-SUFFIX,sc.com
-DOMAIN-SUFFIX,standardchartered.com
-DOMAIN-SUFFIX,online-metrix.net
-DOMAIN-SUFFIX,clarity.ms
-DOMAIN-SUFFIX,standardchartered.com.hk
-DOMAIN-SUFFIX,go-mpulse.net
-DOMAIN-SUFFIX,appier.net
-USER-AGENT,standchartbank
-USER-AGENT,standchartbank*
-USER-AGENT,*standchartbank
-PROCESS-NAME,standchartbank
-
-# BOCHK
-DOMAIN,bochk01.etnet.com.hk
-USER-AGENT,bochk
-USER-AGENT,bochk*
-USER-AGENT,*bochk
-PROCESS-NAME,bochk
 
 # AirstarBank
 DOMAIN,data.help.jr.mi.com
@@ -46,38 +9,12 @@ USER-AGENT,airstarbank*
 USER-AGENT,*airstarbank
 PROCESS-NAME,airstarbank
 
-# liviBank
-DOMAIN,livibank.queue-it.net
-DOMAIN-SUFFIX,livibank.com
-DOMAIN-KEYWORD,livibank.com
-DOMAIN,ms.livibank.com
-DOMAIN,appgw.livibank.com
-DOMAIN,appgw.livibank.com/basic/aksHandShake
-DOMAIN-SUFFIX,livibank.com
-USER-AGENT,livibank
-USER-AGENT,livibank*
-USER-AGENT,*livibank
-PROCESS-NAME,livibank
-IP-CIDR,183.240.181.35/22,no-resolve
-
-# Octopus Merchant Edition
-DOMAIN,www.octopuscards.com
-DOMAIN,app.oepay.octopus-cards.com
-DOMAIN,monitor.octopus-cards.com
-DOMAIN-SUFFIX,octopuscards.com
-DOMAIN-SUFFIX,octopus-cards.com
-DOMAIN-SUFFIX,.octopus-cards.com
-DOMAIN-SUFFIX,*.octopus-cards.com
-DOMAIN,app.oepay.octopus-cards.com
-DOMAIN-SUFFIX,octopuscards.com
-DOMAIN-SUFFIX,.octopuscards.com
-DOMAIN-SUFFIX,*.octopuscards.com
-DOMAIN,www.octopuscards.com
-USER-AGENT,octopuscards
-USER-AGENT,octopuscards
-USER-AGENT,octopuscards*
-USER-AGENT,*octopuscards
-PROCESS-NAME,octopuscards
+# BOCHK
+DOMAIN,bochk01.etnet.com.hk
+USER-AGENT,bochk
+USER-AGENT,bochk*
+USER-AGENT,*bochk
+PROCESS-NAME,bochk
 
 # Currenxie
 DOMAIN-SUFFIX,currenxie.com
@@ -92,7 +29,24 @@ USER-AGENT,Currenxie*
 USER-AGENT,*Currenxie
 PROCESS-NAME,Currenxie
 
+# DAH SING
+DOMAIN,ds-direct.dahsing.com
+DOMAIN,www.dahsing.com
+DOMAIN,dahsing.d2.sc.omtrdc.net
+DOMAIN,cm.everesttech.net
+DOMAIN,dahsing.demdex.net
+DOMAIN,dahsing.sc.omtrdc.net
+DOMAIN-SUFFIX,dahsing.com
+USER-AGENT,dahsing
+USER-AGENT,dahsing*
+USER-AGENT,*dahsing
+PROCESS-NAME,dahsing
+
 # HSBC
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-KEYWORD,hsbc.com.hk
+DOMAIN-SUFFIX,hsbc.com.cn
+DOMAIN-KEYWORD,hsbc.com.cn
 DOMAIN,cdnbc-wup.hsbc.com.au
 DOMAIN,www.m.security.online-banking.hsbc.com.au
 DOMAIN,va.v.liveperson.net
@@ -224,6 +178,20 @@ IP-CIDR,104.99.48.140/22,no-resolve
 IP-CIDR,17.171.78.198/22,no-resolve
 IP-CIDR,23.45.52.76/22,no-resolve
 
+# liviBank
+DOMAIN,livibank.queue-it.net
+DOMAIN-SUFFIX,livibank.com
+DOMAIN-KEYWORD,livibank.com
+DOMAIN,ms.livibank.com
+DOMAIN,appgw.livibank.com
+DOMAIN,appgw.livibank.com/basic/aksHandShake
+DOMAIN-SUFFIX,livibank.com
+USER-AGENT,livibank
+USER-AGENT,livibank*
+USER-AGENT,*livibank
+PROCESS-NAME,livibank
+IP-CIDR,183.240.181.35/22,no-resolve
+
 # MasterCard
 DOMAIN,eu.gateway.mastercard.com
 DOMAIN-SUFFIX,mastercard.com
@@ -270,7 +238,62 @@ PROCESS-NAME,octopus
 PROCESS-NAME,ptfss
 PROCESS-NAME,oepay
 
+# Octopus Merchant Edition
+DOMAIN,www.octopuscards.com
+DOMAIN,app.oepay.octopus-cards.com
+DOMAIN,monitor.octopus-cards.com
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,octopus-cards.com
+DOMAIN-SUFFIX,.octopus-cards.com
+DOMAIN-SUFFIX,*.octopus-cards.com
+DOMAIN,app.oepay.octopus-cards.com
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,.octopuscards.com
+DOMAIN-SUFFIX,*.octopuscards.com
+DOMAIN,www.octopuscards.com
+USER-AGENT,octopuscards
+USER-AGENT,octopuscards
+USER-AGENT,octopuscards*
+USER-AGENT,*octopuscards
+PROCESS-NAME,octopuscards
+
+# SC
+DOMAIN,standchartbank.demdex.net
+DOMAIN,fast.standchartbank.demdex.net
+DOMAIN,standchartbank.sc.omtrdc.net
+DOMAIN,www.sc.com
+DOMAIN,svc2.sc.com
+DOMAIN,marketing.online.standardchartered.com
+DOMAIN,dpm.demdex.net
+DOMAIN,standchartbank.tt.omtrdc.net
+DOMAIN,2jtgv0awr236wn6ti5fpguiqu4vn4iny46udjligd831d45e4bbb968dsac.d.aa.online-metrix.net
+DOMAIN,aa.online-metrix.net
+DOMAIN,k.clarity.ms
+DOMAIN,ibank.standardchartered.com.hk
+DOMAIN,c.go-mpulse.net
+DOMAIN,t0.c.appier.net
+DOMAIN,sp.analytics.yahoo.com
+DOMAIN,anylist.c.appier.net
+DOMAIN,s.c.appier.net
+DOMAIN-SUFFIX,standchartbank.demdex.net
+DOMAIN-SUFFIX,sc.com
+DOMAIN-SUFFIX,standardchartered.com
+DOMAIN-SUFFIX,online-metrix.net
+DOMAIN-SUFFIX,clarity.ms
+DOMAIN-SUFFIX,standardchartered.com.hk
+DOMAIN-SUFFIX,go-mpulse.net
+DOMAIN-SUFFIX,appier.net
+USER-AGENT,standchartbank
+USER-AGENT,standchartbank*
+USER-AGENT,*standchartbank
+PROCESS-NAME,standchartbank
+
 # Tap & Go
+DOMAIN-SUFFIX,tapngo.com.hk
+DOMAIN-SUFFIX,.tapngo.com.hk
+DOMAIN-SUFFIX,*.tapngo.com.hk
+DOMAIN,wallet.tapngo.com.hk
+DOMAIN,tapngo.queue-it.net
 DOMAIN-SUFFIX,tapngo.com.hk
 DOMAIN-SUFFIX,.tapngo.com.hk
 DOMAIN-SUFFIX,*.tapngo.com.hk
@@ -279,6 +302,11 @@ USER-AGENT,tapngo
 USER-AGENT,tapngo*
 USER-AGENT,*tapngo
 PROCESS-NAME,tapngo
+USER-AGENT,tapngo
+USER-AGENT,tapngo*
+USER-AGENT,*tapngo
+PROCESS-NAME,tapngo
+IP-CIDR,52.48.0.0/14,no-resolve
 
 # Wise
 DOMAIN,wise.com
@@ -300,24 +328,6 @@ USER-AGENT,wise
 USER-AGENT,wise*
 USER-AGENT,*wise
 PROCESS-NAME,wise
-
-# HSBC
-DOMAIN-SUFFIX,hsbc.com.hk
-DOMAIN-KEYWORD,hsbc.com.hk
-DOMAIN-SUFFIX,hsbc.com.cn
-DOMAIN-KEYWORD,hsbc.com.cn
-
-# Tap & Go
-DOMAIN,tapngo.queue-it.net
-DOMAIN-SUFFIX,tapngo.com.hk
-DOMAIN-SUFFIX,.tapngo.com.hk
-DOMAIN-SUFFIX,*.tapngo.com.hk
-DOMAIN,wallet.tapngo.com.hk
-USER-AGENT,tapngo
-USER-AGENT,tapngo*
-USER-AGENT,*tapngo
-PROCESS-NAME,tapngo
-IP-CIDR,52.48.0.0/14,no-resolve
 
 # wlbank
 DOMAIN-KEYWORD,wlbank
