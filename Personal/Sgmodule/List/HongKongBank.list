@@ -11,6 +11,8 @@ PROCESS-NAME,airstarbank
 
 # BOCHK
 DOMAIN,bochk01.etnet.com.hk
+DOMAIN-SUFFIX,bochk.com
+DOMAIN-SUFFIX,bochkonline.com
 USER-AGENT,bochk
 USER-AGENT,bochk*
 USER-AGENT,*bochk
