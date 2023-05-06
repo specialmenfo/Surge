@@ -4579,36 +4579,3 @@ USER-AGENT,lloydsbankinggroup
 USER-AGENT,lloydsbankinggroup*
 USER-AGENT,*lloydsbankinggroup
 PROCESS-NAME,lloydsbankinggroup
-
-# liviBank
-DOMAIN,livibank.queue-it.net
-DOMAIN-SUFFIX,livibank.com
-DOMAIN-KEYWORD,livibank.com
-DOMAIN,ms.livibank.com
-DOMAIN,appgw.livibank.com
-DOMAIN,appgw.livibank.com/basic/aksHandShake
-DOMAIN-SUFFIX,livibank.com
-USER-AGENT,livibank
-USER-AGENT,livibank*
-USER-AGENT,*livibank
-PROCESS-NAME,livibank
-IP-CIDR,183.240.181.35/22,no-resolve
-
-# Octopus Merchant Edition
-DOMAIN,www.octopuscards.com
-DOMAIN,app.oepay.octopus-cards.com
-DOMAIN,monitor.octopus-cards.com
-DOMAIN-SUFFIX,octopuscards.com
-DOMAIN-SUFFIX,octopus-cards.com
-DOMAIN-SUFFIX,.octopus-cards.com
-DOMAIN-SUFFIX,*.octopus-cards.com
-DOMAIN,app.oepay.octopus-cards.com
-DOMAIN-SUFFIX,octopuscards.com
-DOMAIN-SUFFIX,.octopuscards.com
-DOMAIN-SUFFIX,*.octopuscards.com
-DOMAIN,www.octopuscards.com
-USER-AGENT,octopuscards
-USER-AGENT,octopuscards
-USER-AGENT,octopuscards*
-USER-AGENT,*octopuscards
-PROCESS-NAME,octopuscards
