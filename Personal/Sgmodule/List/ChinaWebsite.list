@@ -1,3 +1,51 @@
+# Apple
+DOMAIN,websitereview.corp.apple.com
+DOMAIN,www.gstatic.com
+DOMAIN,wps.apple.com
+
+# DouYin
+DOMAIN,tp-pay.snssdk.com
+DOMAIN,mon.snssdk.com
+DOMAIN,log.snssdk.com
+DOMAIN,i.snssdk.com
+DOMAIN,mon.snssdk.com
+DOMAIN,f-cpay.snssdk.com
+DOMAIN,is.snssdk.com
+DOMAIN,pigeon.snssdk.com
+DOMAIN,f-cashloan.snssdk.com
+
+# Other
+DOMAIN-SUFFIX,us-west-1.amazonaws.com
+
+# Celcom
+DOMAIN-SUFFIX,celcom.com.my
+DOMAIN,celcomaxiata.sc.omtrdc.net
+DOMAIN,epdg.epc.mnc003.mcc515.pub.3gppnetwork.org
+
+# Tencent Game
+DOMAIN-SUFFIX,voice.gcloudcs.com
+DOMAIN,cn.voice.gcloudcs.com
+DOMAIN,speedeu.warsongmobile.com
+
+# China Bank
+DOMAIN-SUFFIX,95516.comskfenfx6eosppxl 
+DOMAIN-SUFFIX,95516.com
+
+# Stripe
+DOMAIN-SUFFIX,stripe.com
+
+# AirWallex
+DOMAIN-KEYWORD,airwallex
+DOMAIN-SUFFIX,airwallex.com
+
+# SEAGM
+DOMAIN-KEYWORD,seagm
+DOMAIN-SUFFIX,seagm.com
+DOMAIN,livechat.seagm.com
+
+# yunteacher
+DOMAIN-SUFFIX,yunteacher.com
+
 # TencentLoLMobile
 DOMAIN-SUFFIX,riotcdn.net
 DOMAIN-SUFFIX,riotgames.com
