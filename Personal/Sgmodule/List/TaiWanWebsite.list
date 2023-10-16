@@ -88,6 +88,7 @@ DOMAIN-SUFFIX,inter.iqiyi.com
 DOMAIN-SUFFIX,intl.iqiyi.com
 // 歷史
 DOMAIN,intl-rcd.iqiyi.com
+DOMAIN,intl-im-hist-api.iqiyi.com
 // 收藏
 DOMAIN,intl-subscription.iqiyi.com
 // 播放
@@ -105,6 +106,52 @@ IP-CIDR,184.51.102.0/24,no-resolve
 IP-CIDR,203.74.95.130/28,no-resolve
 IP-CIDR,203.80.97.203/32,no-resolve
 IP-CIDR,210.71.227.202/32,no-resolve
+
+DOMAIN,cache.video.iqiyi.com
+DOMAIN-SUFFIX,inter.iqiyi.com
+DOMAIN-SUFFIX,intl-rcd.iqiyi.com
+DOMAIN-SUFFIX,intl-subscription.iqiyi.com
+DOMAIN-SUFFIX,intl.iqiyi.com
+DOMAIN-SUFFIX,iq.com
+IP-CIDR,104.85.165.17/32,no-resolve
+IP-CIDR,110.238.107.47/32,no-resolve
+IP-CIDR,118.26.32.162/32,no-resolve
+IP-CIDR,159.138.102.146/32,no-resolve
+IP-CIDR,184.51.102.0/24,no-resolve
+IP-CIDR,203.80.97.203/32,no-resolve
+IP-CIDR,210.71.227.202/32,no-resolve
+IP-CIDR,23.200.145.146/32,no-resolve
+IP-CIDR,23.210.215.186/32,no-resolve
+IP-CIDR,23.211.15.0/24,no-resolve
+IP-CIDR,23.219.172.0/24,no-resolve
+IP-CIDR,23.40.242.10/32,no-resolve
+IP-CIDR,23.59.252.0/24,no-resolve
+PROCESS-NAME,com.iqiyi.i18n
+PROCESS-NAME,com.iqiyi.i18n.tv
+
+DOMAIN,msg-intl.qy.net
+DOMAIN,ip.geo.iqiyi.com
+DOMAIN,akmcdnoversea.inter.iqiyi.com
+DOMAIN,akmcdnoversea.inter.ptqy.gitv.tv
+DOMAIN,chuangcachecdnoversea.inter.iqiyi.com
+DOMAIN,chuangcachecdnoversea.inter.ptqy.gitv.tv
+DOMAIN,akmcdnoversea-tw.inter.iqiyi.com
+DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
+DOMAIN,chuangcachecdnoversea-tw.inter.iqiyi.com
+DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
+DOMAIN-KEYWORD,akmcdnoverse
+DOMAIN-KEYWORD,chuangcachecdnoversea
+IP-CIDR,2.21.22.17/32,no-resolve 
+IP-CIDR,23.40.241.251/32,no-resolve
+IP-CIDR,23.40.242.10/32,no-resolve
+IP-CIDR,110.238.107.47/32,no-resolve
+IP-CIDR,110.238.109.184/32,no-resolve
+IP-CIDR,114.119.175.88/32,no-resolve
+IP-CIDR,118.26.32.0/22,no-resolve
+IP-CIDR,159.138.102.146/32,no-resolve
+IP-CIDR,203.80.97.208/32,no-resolve
+IP-CIDR,203.198.80.99/32,no-resolve
+
 
 # CATCHPLAY+
 USER-AGENT,CATCHPLAY*
