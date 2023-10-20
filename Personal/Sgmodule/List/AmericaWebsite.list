@@ -661,6 +661,10 @@ DOMAIN-SUFFIX,yb.uncn.jp
 PROCESS-NAME,com.hulu.plus
 
 # HBO Max
+USER-AGENT,Max*
+PROCESS-NAME,com.wbd.stream
+DOMAIN-SUFFIX,max.com
+DOMAIN-SUFFIX,discomax.com
 DOMAIN-SUFFIX,sessions.api.hbo.com
 DOMAIN-SUFFIX,oauth.api.hbo.com
 DOMAIN,wmff.warnermediacdn.com
