@@ -63,6 +63,9 @@ USER-AGENT,iQiYi*
 PROCESS-NAME,com.qiyi.video
 
 # Apple
+DOMAIN,bpapi.apple.com
+DOMAIN,entitlements.itunes.apple.com
+DOMAIN-SUFFIX,itunes.apple.com
 DOMAIN,websitereview.corp.apple.com
 DOMAIN,www.gstatic.com
 DOMAIN,wps.apple.com
