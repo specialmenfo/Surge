@@ -375,6 +375,12 @@ AND,((PROTOCOL,UDP),(IP-CIDR,17.0.0.0/8,no-resolve),(DEST-PORT,443))
 AND,((PROTOCOL,TCP),(USER-AGENT,Transparent%20network%20proxy%20for%20Apple%20system%20services*),(DEST-PORT,443))
 DOMAIN,mask-api.icloud.com
 DOMAIN,mask-api.fe.apple-dns.net
+DOMAIN,mask.icloud.com
+DOMAIN,mask.apple-dns.net
+DOMAIN,mask-canary.icloud.com
+DOMAIN,canary.mask.apple-dns.net
+DOMAIN,mask-h2.icloud.com
+DOMAIN,mask-t.apple-dns.net
 AND,((PROTOCOL,TCP),(DOMAIN,mask.icloud.com),(DEST-PORT,443))
 AND,((PROTOCOL,TCP),(DOMAIN,mask.apple-dns.net),(DEST-PORT,443))
 AND,((PROTOCOL,TCP),(DOMAIN,mask-h2.icloud.com),(DEST-PORT,443))
