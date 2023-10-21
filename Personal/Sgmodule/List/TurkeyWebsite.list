@@ -43,8 +43,6 @@ DOMAIN,inter-vpos.com.tr
 DOMAIN,epin-cdn.*
 DOMAIN,epin-static.*
 DOMAIN,*.com.tr
-IP-CIDR,113.105.147.165/30,no-resolve
-IP-CIDR,172.64.0.0/13,no-resolve
 DOMAIN,www.paytr.com
 DOMAIN,*.seagm.com
 DOMAIN-SUFFIX,oyunfor.com
@@ -158,4 +156,3 @@ PROCESS-NAME,www.turgame.com
 DOMAIN-SUFFIX,.turgame.com
 DOMAIN-SUFFIX,*.turgame.com
 DOMAIN-SUFFIX,www.turgame.com
-IP-CIDR,104.16.0.0/12,no-resolve
