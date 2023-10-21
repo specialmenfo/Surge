@@ -23,11 +23,7 @@ DOMAIN,d.agkn.com
 DOMAIN,pippio.com
 DOMAIN,stest.zimperium.com
 DOMAIN,auth.split.io
-DOMAIN,skadsdkless.appsflyer.com
 DOMAIN,streaming.split.io
-DOMAIN,launches.appsflyer.com
-DOMAIN,inapps.appsflyer.com
-DOMAIN,skadsdkless.appsflyer.com
 DOMAIN,www.chase.com
 DOMAIN,sites.chase.com
 DOMAIN,midas.chase.com
@@ -66,7 +62,6 @@ DOMAIN-SUFFIX,zimperium.com
 DOMAIN-SUFFIX,agkn.com
 DOMAIN-SUFFIX,pippio.com
 DOMAIN-SUFFIX,split.io
-DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,chase.com
 DOMAIN-SUFFIX,chase.co.uk
 DOMAIN-SUFFIX,chase.com
