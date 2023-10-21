@@ -4800,6 +4800,7 @@ DOMAIN,weixin.5ihl.com
 DOMAIN-SUFFIX,5ihl.com
 
 # Other
+DOMAIN-SUFFIX,gov.hk
 DOMAIN,app-measurement.com
 DOMAIN-SUFFIX,measurement.com
 DOMAIN-SUFFIX,app-measurement.com
