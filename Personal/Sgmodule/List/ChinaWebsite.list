@@ -4654,6 +4654,9 @@ DOMAIN,weixin.5ihl.com
 DOMAIN-SUFFIX,5ihl.com
 
 # Other
+DOMAIN,app-measurement.com
+DOMAIN-SUFFIX,measurement.com
+DOMAIN-SUFFIX,app-measurement.com
 DOMAIN,route-stats.d.meituan.net
 DOMAIN,maplocatesdksnapshot.d.meituan.net
 DOMAIN-SUFFIX,meituan.net
