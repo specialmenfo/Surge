@@ -17,6 +17,14 @@ DOMAIN-KEYWORD,viu
 DOMAIN-SUFFIX,viu.com
 DOMAIN-KEYWORD,viu
 DOMAIN-SUFFIX,viu.com
+USER-AGENT,Viu*
+DOMAIN-SUFFIX,viu.com
+DOMAIN,pccw-cf-video.akamaized.net
+DOMAIN,dfp6rglgjqszk.cloudfront.net
+DOMAIN,d1k2us671qcoau.cloudfront.net
+DOMAIN,d2anahhhmp1ffz.cloudfront.net
+DOMAIN,d3o7oi00quuwqu.cloudfront.net
+DOMAIN,d31rgcmny3inu.cloudfront.net
 IP-CIDR,54.230.0.0/16,no-resolve
 IP-CIDR,99.84.0.0/16,no-resolve
 IP-CIDR,13.35.0.0/16,no-resolve
@@ -25,3 +33,17 @@ IP-CIDR,54.230.0.0/16,no-resolve
 IP-CIDR,99.84.0.0/16,no-resolve
 IP-CIDR,13.35.0.0/16,no-resolve
 IP-CIDR,13.226.0.0/16,no-resolve
+
+# ViuTV
+DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com
+DOMAIN-SUFFIX,d1k2us671qcoau.cloudfront.net
+DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net
+DOMAIN-SUFFIX,dfp6rglgjqszk.cloudfront.net
+DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com
+DOMAIN-SUFFIX,viu.com
+DOMAIN-SUFFIX,viu.now.com
+DOMAIN-SUFFIX,viu.tv
+USER-AGENT,Viu*
+PROCESS-NAME,com.viu.pad
+PROCESS-NAME,com.viu.phone
+PROCESS-NAME,com.vuclip.viu
