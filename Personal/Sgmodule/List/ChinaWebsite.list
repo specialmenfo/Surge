@@ -4883,6 +4883,10 @@ USER-AGENT,lloydsbankinggroup*
 USER-AGENT,*lloydsbankinggroup
 PROCESS-NAME,lloydsbankinggroup
 
+# 三星更新
+DOMAIN,dms.ospserver.net
+DOMAIN-SUFFIX,ospserver.net
+
 # Other
 DOMAIN,*.seagm.com
 DOMAIN-SUFFIX,seagm.com
