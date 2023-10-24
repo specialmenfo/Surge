@@ -31,3 +31,11 @@ DOMAIN-SUFFIX,shopee.vn
 DOMAIN-SUFFIX,shopeemobile.com
 DOMAIN-SUFFIX,shopeesz.com
 DOMAIN-SUFFIX,shp.ee
+DOMAIN,log-collector.shopee.ph
+DOMAIN,gslb.sgw.shopeemobile.com
+DOMAIN,c-api-bit.shopeemobile.com
+DOMAIN,gslb.sgw.shopeemobile.com
+DOMAIN-KEYWORD,shopeemobile
+USER-AGENT,shopeemobile
+DOMAIN-KEYWORD,shopee
+USER-AGENT,shopee
