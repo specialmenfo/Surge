@@ -3540,10 +3540,9 @@ IP-CIDR6,2620:10f:d000::/44,no-resolve
 IP-CIDR6,2a02:6b8::/29,no-resolve
 
 # Other
-DOMAIN-SUFFIX,mayabank.ph
-DOMAIN-SUFFIX,paymaya.com
-DOMAIN-KEYWORD,paymaya
-DOMAIN-KEYWORD,mayabank
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,bankserv.co.za
+DOMAIN,acstutuka.bankserv.co.za
 DOMAIN-SUFFIX,maildrop.cc
 DOMAIN-SUFFIX,duoduo.uno
 DOMAIN,www.1stformations.co.uk
