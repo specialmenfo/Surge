@@ -26,7 +26,16 @@ DOMAIN-SUFFIX,.globe.com.ph
 DOMAIN-SUFFIX,globe.com.ph
 DOMAIN-SUFFIX,www.globe.com.ph
 DOMAIN-SUFFIX,live-cortex-gw.al.ep.cloudops.globe.com.ph
+
+# Smart
 DOMAIN-SUFFIX,.smart.com.ph
 DOMAIN-SUFFIX,*.smart.com.ph
 DOMAIN-SUFFIX,smart.com.ph
 DOMAIN-SUFFIX,app1.smart.com.ph
+
+# Maya
+DOMAIN-SUFFIX,cryptosrvc.com,extended-matching
+DOMAIN-KEYWORD,paymaya,extended-matching
+DOMAIN-SUFFIX,paymaya.com,extended-matching
+DOMAIN-KEYWORD,mayabank,extended-matching
+DOMAIN-SUFFIX,mayabank.ph,extended-matching
