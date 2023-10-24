@@ -19,13 +19,17 @@ URL-REGEX,^https?:\/\/www\.discoveryplus\.com\/ph\/
 
 # Globe
 DOMAIN-SUFFIX,checkoutshopper-live.adyen.com
-DOMAIN-SUFFIX,gcash.com
-DOMAIN-SUFFIX,.gcash.com
-DOMAIN-SUFFIX,www.gcash.com
 DOMAIN-SUFFIX,.globe.com.ph
 DOMAIN-SUFFIX,globe.com.ph
 DOMAIN-SUFFIX,www.globe.com.ph
 DOMAIN-SUFFIX,live-cortex-gw.al.ep.cloudops.globe.com.ph
+
+# Gcash
+DOMAIN,gcash-api.pulseid.com,extended-matching
+DOMAIN-SUFFIX,gcash.com,extended-matching
+DOMAIN-SUFFIX,.gcash.com,extended-matching
+DOMAIN-SUFFIX,www.gcash.com,extended-matching
+DOMAIN-KEYWORD,gcash,extended-matching
 
 # Smart
 DOMAIN-SUFFIX,.smart.com.ph
