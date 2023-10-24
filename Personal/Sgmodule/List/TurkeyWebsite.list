@@ -45,14 +45,12 @@ DOMAIN,epin-cdn.*
 DOMAIN,epin-static.*
 DOMAIN,*.com.tr
 DOMAIN,www.paytr.com
-DOMAIN,*.seagm.com
 DOMAIN-SUFFIX,oyunfor.com
 DOMAIN-SUFFIX,paytr.com
 DOMAIN-SUFFIX,epin-cdn
 DOMAIN-SUFFIX,epin-static
 DOMAIN-SUFFIX,com.tr
 DOMAIN-SUFFIX,tawk.to
-DOMAIN-SUFFIX,seagm.com
 DOMAIN-SUFFIX,trendyol.com
 DOMAIN-SUFFIX,.trendyol.com
 DOMAIN-SUFFIX,*.trendyol.com
