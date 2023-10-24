@@ -4884,6 +4884,9 @@ USER-AGENT,*lloydsbankinggroup
 PROCESS-NAME,lloydsbankinggroup
 
 # Other
+DOMAIN,*.seagm.com
+DOMAIN-SUFFIX,seagm.com
+USER-AGENT,seagm
 DOMAIN-SUFFIX,celcom.com.my
 DOMAIN,celcomaxiata.sc.omtrdc.net
 DOMAIN,epdg.epc.mnc003.mcc515.pub.3gppnetwork.org
