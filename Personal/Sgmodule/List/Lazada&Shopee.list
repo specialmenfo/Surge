@@ -1,3 +1,22 @@
+# Grab
+DOMAIN,api.grab.com
+DOMAIN,p.grabtaxi.com
+DOMAIN,portal.grab.com
+DOMAIN,hermes2.grabtaxi.com
+DOMAIN,partner-api.grab.com
+DOMAIN,assets-mobile.grab.com
+DOMAIN,mcd-gateway.grabtaxi.com
+DOMAIN,api.grabpay.com
+DOMAIN-SUFFIX,grab.com
+DOMAIN-SUFFIX,grabtaxi.com
+DOMAIN-SUFFIX,grabpay.com
+DOMAIN-KEYWORD,grab
+DOMAIN-KEYWORD,grabtaxi
+DOMAIN-KEYWORD,grabpay
+USER-AGENT,grab
+USER-AGENT,grabtaxi
+USER-AGENT,grabpay
+
 # Lazada
 DOMAIN-SUFFIX,lazada.com.ph
 DOMAIN-SUFFIX,.lazada.com.ph
