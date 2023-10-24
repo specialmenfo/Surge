@@ -27,3 +27,5 @@ DOMAIN-SUFFIX,carousell.io
 USER-AGENT,*carousell
 USER-AGENT,carousell*
 USER-AGENT,*carousell*
+DOMAIN-KEYWORD,carousell
+DOMAIN-KEYWORD,karousell
