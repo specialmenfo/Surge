@@ -4883,9 +4883,24 @@ USER-AGENT,lloydsbankinggroup*
 USER-AGENT,*lloydsbankinggroup
 PROCESS-NAME,lloydsbankinggroup
 
-# 三星更新
+# 三星
+DOMAIN-SUFFIX,anrdoezrs.net
+DOMAIN-SUFFIX,galaxyappstore.com
+DOMAIN-SUFFIX,galaxymobile.jp
+DOMAIN-SUFFIX,game-platform.net
+DOMAIN-SUFFIX,knoxemm.com
+DOMAIN-SUFFIX,samsung.com
+DOMAIN-SUFFIX,samsungapps.com
+DOMAIN-SUFFIX,samsungcloud.com
+DOMAIN-SUFFIX,samsungdm.com
+DOMAIN-SUFFIX,samsungeshop.com.cn
+DOMAIN-SUFFIX,samsunggalaxyfriends.com
+DOMAIN-SUFFIX,samsungknox.com
+DOMAIN-SUFFIX,samsungqbe.com
 DOMAIN,dms.ospserver.net
 DOMAIN-SUFFIX,ospserver.net
+DOMAIN-KEYWORD,samsung
+USER-AGENT,samsung
 
 # Other
 DOMAIN,*.seagm.com
