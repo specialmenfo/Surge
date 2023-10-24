@@ -13,36 +13,65 @@ DOMAIN,node2.oyunfor.com
 DOMAIN,vpos3.isbank.com.tr
 DOMAIN,spos.isbank.com.tr
 DOMAIN-SUFFIX,isbank.com.tr
-USER-AGENT,*epin*
-USER-AGENT,*epin
-USER-AGENT,epin*
-PROCESS-NAME,epin
-USER-AGENT,*turgame*
-USER-AGENT,*turgame
-USER-AGENT,turgame*
-PROCESS-NAME,turgame
 USER-AGENT,*oyunfor*
 USER-AGENT,*oyunfor
 USER-AGENT,oyunfor*
 PROCESS-NAME,oyunfor
-USER-AGENT,*fastpay*
-USER-AGENT,*fastpay
-USER-AGENT,fastpay*
-PROCESS-NAME,fastpay
-USER-AGENT,*gpay*
-USER-AGENT,*gpay
-USER-AGENT,gpay*
-PROCESS-NAME,gpay
-USER-AGENT,*paytr*
-USER-AGENT,*paytr
-USER-AGENT,paytr*
-PROCESS-NAME,paytr
-DOMAIN,va.tawk.to
+
+# EPIN
+USER-AGENT,*epin*
+USER-AGENT,*epin
+USER-AGENT,epin*
+PROCESS-NAME,epin
 DOMAIN,epin-cdn.s3.eu-central-1.amazonaws.com
 DOMAIN,epin-static.ams3.digitaloceanspaces.com
 DOMAIN,inter-vpos.com.tr
 DOMAIN,epin-cdn.*
 DOMAIN,epin-static.*
+
+# Turgame
+USER-AGENT,*turgame*
+USER-AGENT,*turgame
+USER-AGENT,turgame*
+PROCESS-NAME,turgame
+
+# iyzico
+DOMAIN,static.iyzipay.com
+DOMAIN,countly.iyzico.com
+DOMAIN,lb.iyzico.com
+DOMAIN-KEYWORD,iyzipay
+DOMAIN-SUFFIX,iyzipay.com
+DOMAIN-KEYWORD,iyzico
+DOMAIN-SUFFIX,iyzico.com
+USER-AGENT,*iyzico*
+USER-AGENT,*iyzico
+USER-AGENT,iyzico*
+PROCESS-NAME,iyzico
+USER-AGENT,*iyzipay*
+USER-AGENT,*iyzipay
+USER-AGENT,iyzipay*
+PROCESS-NAME,iyzipay
+
+# FastPay
+USER-AGENT,*fastpay*
+USER-AGENT,*fastpay
+USER-AGENT,fastpay*
+PROCESS-NAME,fastpay
+
+# GPay
+USER-AGENT,*gpay*
+USER-AGENT,*gpay
+USER-AGENT,gpay*
+PROCESS-NAME,gpay
+
+# PayTR
+USER-AGENT,*paytr*
+USER-AGENT,*paytr
+USER-AGENT,paytr*
+PROCESS-NAME,paytr
+DOMAIN,va.tawk.to
+
+# Other
 DOMAIN,*.com.tr
 DOMAIN,www.paytr.com
 DOMAIN-SUFFIX,oyunfor.com
