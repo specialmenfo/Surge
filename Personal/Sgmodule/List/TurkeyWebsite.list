@@ -5,6 +5,7 @@ USER-AGENT,ozan
 USER-AGENT,ozan*
 USER-AGENT,*ozan
 PROCESS-NAME,ozan
+DOMAIN-SUFFIX,ozan.com
 
 # Oyunfor
 DOMAIN,node2.oyunfor.com
