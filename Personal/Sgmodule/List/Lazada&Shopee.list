@@ -8,6 +8,8 @@ DOMAIN-SUFFIX,ph-test-11.slatic.net
 DOMAIN-SUFFIX,ph-live-01.slatic.net
 DOMAIN-SUFFIX,lazada.arms.aliyuncs.com
 DOMAIN-SUFFIX,retcode-sg-lazada.arms.aliyuncs.com
+DOMAIN-KEYWORD,lazada
+USER-AGENT,lazada
 
 # Shopee
 DOMAIN-SUFFIX,shopee.cl
