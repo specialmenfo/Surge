@@ -1,6 +1,8 @@
 # Plati.Market
 DOMAIN,plati.market
+DOMAIN,graph.digiseller.ru
 DOMAIN-SUFFIX,plati.market
+DOMAIN-SUFFIX,digiseller.ru
 
 # Yandex
 DOMAIN-SUFFIX,nic.yandex
