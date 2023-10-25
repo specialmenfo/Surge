@@ -12,4 +12,4 @@ DOMAIN-SUFFIX,cloudflareinsights-cn.com
 DOMAIN-SUFFIX,cloudflareprod.com
 DOMAIN-SUFFIX,cloudflarestaging.com
 DOMAIN-SUFFIX,cloudflarestoragegw.com
-IP-CIDR,104.16.0.0/16,no-resolve
+
