@@ -7,6 +7,7 @@ DOMAIN-SUFFIX,digiseller.ru
 # WebMoney
 DOMAIN,events.webmoney.ru
 DOMAIN,login.webmoney.com
+DOMAIN-SUFFIX,web.money
 DOMAIN-SUFFIX,webmoney.ru
 DOMAIN-SUFFIX,webmoney.com
 
