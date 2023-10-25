@@ -4,6 +4,12 @@ DOMAIN,graph.digiseller.ru
 DOMAIN-SUFFIX,plati.market
 DOMAIN-SUFFIX,digiseller.ru
 
+# WebMoney
+DOMAIN,events.webmoney.ru
+DOMAIN,login.webmoney.com
+DOMAIN-SUFFIX,webmoney.ru
+DOMAIN-SUFFIX,webmoney.com
+
 # Yandex
 DOMAIN-SUFFIX,nic.yandex
 DOMAIN-SUFFIX,xn--d1acpjx3f.xn--p1ai
