@@ -346,6 +346,14 @@ DOMAIN-KEYWORD,wlbank
 DOMAIN-SUFFIX,wlbank.com.mo
 DOMAIN,opening.wlbank.com.mo
 
+# Wonder
+DOMAIN-SUFFIX,wonder.app
+DOMAIN-KEYWORD,wonder
+USER-AGENT,wonder
+USER-AGENT,wonder*
+USER-AGENT,*wonder
+PROCESS-NAME,wonder
+
 # ZA Bank
 DOMAIN-SUFFIX,za.group
 DOMAIN-KEYWORD,za.group
