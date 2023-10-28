@@ -1,3 +1,10 @@
+# DMarket
+DOMAIN-SUFFIX,dmarket.com
+DOMAIN-KEYWORD,dmarket
+USER-AGENT,dmarket*
+PROCESS-NAME,dmarket
+USER-AGENT,*dmarket*
+
 # WhatsApp
 DOMAIN,graph.facebook.com
 DOMAIN-SUFFIX,bintray.com
