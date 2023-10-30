@@ -42,6 +42,13 @@ DOMAIN,vod-thumb-uk-live.akamaized.net
 DOMAIN,vod-dash-uk-live.bbcfmt.hs.llnwd.net
 DOMAIN,vod-thumb-uk-live.bbcfmt.hs.llnwd.net
 
+# Chase UK
+DOMAIN,api.chase.co.uk
+DOMAIN,static.chase.co.uk
+DOMAIN,www.chase.co.uk
+DOMAIN,telemetry.chase.co.uk
+DOMAIN-SUFFIX,chase.co.uk
+
 # ClearScore
 DOMAIN,auth.clearscore.com
 DOMAIN-SUFFIX,clearscore.com
