@@ -52,10 +52,6 @@ DOMAIN,ocsp.entrust.net
 DOMAIN,secure07b.chase.com
 DOMAIN,secure07b.chase.com
 DOMAIN,proxy.safebrowsing.apple
-DOMAIN,api.chase.co.uk
-DOMAIN,static.chase.co.uk
-DOMAIN,www.chase.co.uk
-DOMAIN,telemetry.chase.co.uk
 DOMAIN,secure.chase.com
 DOMAIN,secure07c.chase.com
 DOMAIN-SUFFIX,zimperium.com
@@ -63,7 +59,6 @@ DOMAIN-SUFFIX,agkn.com
 DOMAIN-SUFFIX,pippio.com
 DOMAIN-SUFFIX,split.io
 DOMAIN-SUFFIX,chase.com
-DOMAIN-SUFFIX,chase.co.uk
 DOMAIN-SUFFIX,chase.com
 DOMAIN-SUFFIX,chasecdn.com
 DOMAIN-SUFFIX,entrust.net
