@@ -49,6 +49,23 @@ DOMAIN,www.chase.co.uk
 DOMAIN,telemetry.chase.co.uk
 DOMAIN-SUFFIX,chase.co.uk
 
+# Credit Thing
+DOMAIN,bus-ext.getkoto.com
+DOMAIN,zuul-ext.getkoto.com
+DOMAIN,auth-ext.getkoto.com
+DOMAIN,ava.getkoto.com
+DOMAIN,thecreditthing.com
+DOMAIN-SUFFIX,getkoto.com
+DOMAIN-SUFFIX,thecreditthing.com
+USER-AGENT,getkoto
+USER-AGENT,getkoto*
+USER-AGENT,*getkoto
+PROCESS-NAME,getkoto
+USER-AGENT,thecreditthing
+USER-AGENT,thecreditthing*
+USER-AGENT,*thecreditthing
+PROCESS-NAME,thecreditthing
+
 # ClearScore
 DOMAIN,auth.clearscore.com
 DOMAIN-SUFFIX,clearscore.com
