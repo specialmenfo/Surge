@@ -1,5 +1,5 @@
-#!name = DNSPod-DoH
-#!desc = 使用Tencent DNS-over-HTTPS (DoH)
+#!name = Tencent DNSPod-DoH
+#!desc = Tencent DNS-over-HTTPS (DoH)
 
 [General]
 dns-server = 119.29.29.29, 223.5.5.5
