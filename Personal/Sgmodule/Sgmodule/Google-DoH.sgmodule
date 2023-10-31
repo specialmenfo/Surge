@@ -1,6 +1,0 @@
-#!name = Google-DoH
-#!desc = Google-DNS-over-HTTPS (DoH)
-
-[General]
-dns-server = 8.8.8.8, 8.8.4.4
-encrypted-dns-server = https://dns.google/dns-query
