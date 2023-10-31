@@ -4,6 +4,3 @@
 [General]
 dns-server = 8.8.8.8, 8.8.4.4
 encrypted-dns-server = https://dns.google/dns-query
-
-[Host]
-miwifi.com = 192.168.31.1
