@@ -1,3 +1,9 @@
+# Slikpay
+DOMAIN,silksoftgroup.com
+DOMAIN,pay.silksoftgroup.com
+DOMAIN,api.silksoftgroup.com
+DOMAIN-SUFFIX,silksoftgroup.com
+
 # DMarket
 DOMAIN-SUFFIX,dmarket.com
 DOMAIN-KEYWORD,dmarket
