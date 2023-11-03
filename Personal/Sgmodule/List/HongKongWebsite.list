@@ -1,8 +1,18 @@
 # Slikpay
+DOMAIN,s1lkpay.com
 DOMAIN,silksoftgroup.com
 DOMAIN,pay.silksoftgroup.com
 DOMAIN,api.silksoftgroup.com
+DOMAIN-SUFFIX,s1lkpay.com
 DOMAIN-SUFFIX,silksoftgroup.com
+DOMAIN-KEYWORD,s1lkpay
+USER-AGENT,s1lkpay*
+PROCESS-NAME,s1lkpay
+USER-AGENT,*s1lkpay*
+DOMAIN-KEYWORD,silksoftgroup
+USER-AGENT,silksoftgroup*
+PROCESS-NAME,silksoftgroup
+USER-AGENT,*silksoftgroup*
 
 # DMarket
 DOMAIN-SUFFIX,dmarket.com
