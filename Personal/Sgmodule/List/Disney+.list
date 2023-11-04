@@ -4,6 +4,7 @@ DOMAIN-KEYWORD,disneyplus
 USER-AGENT,disney*
 USER-AGENT,*disney
 PROCESS-NAME,disney
+DOMAIN,pcs.bamgrid.com
 DOMAIN,prod-ripcut-delivery.disney-plus.net
 DOMAIN,disney.my.sentry.io
 DOMAIN,disney.content.edge.bamgrid.com
