@@ -1,4 +1,6 @@
 # Disney+
+DOMAIN-KEYWORD,disney
+DOMAIN-KEYWORD,disneyplus
 USER-AGENT,disney*
 USER-AGENT,*disney
 PROCESS-NAME,disney
