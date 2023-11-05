@@ -7,9 +7,16 @@ DOMAIN-SUFFIX,digiseller.ru
 # WebMoney
 DOMAIN,events.webmoney.ru
 DOMAIN,login.webmoney.com
+DOMAIN,wmtransfer.com
+DOMAIN,exchanger.money
+DOMAIN,login.wmtransfer.com
 DOMAIN-SUFFIX,web.money
 DOMAIN-SUFFIX,webmoney.ru
 DOMAIN-SUFFIX,webmoney.com
+DOMAIN-SUFFIX,wmtransfer.com
+DOMAIN-SUFFIX,exchanger.money
+DOMAIN-SUFFIX,login.wmtransfer.com
+
 
 # Yandex
 DOMAIN-SUFFIX,nic.yandex
