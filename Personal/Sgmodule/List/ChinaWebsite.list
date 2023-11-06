@@ -69,6 +69,7 @@ DOMAIN-SUFFIX,itunes.apple.com
 DOMAIN,websitereview.corp.apple.com
 DOMAIN,www.gstatic.com
 DOMAIN,wps.apple.com
+DOMAIN,configuration.ls.apple.com
 
 # DouYin
 DOMAIN,tp-pay.snssdk.com
