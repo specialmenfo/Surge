@@ -1,3 +1,20 @@
+# LatinPay
+DOMAIN,latin-pay.com
+DOMAIN,api-latinpay-prd.azure-api.net
+DOMAIN-SUFFIX,latin-pay.com
+DOMAIN-KEYWORD,latin-pay
+DOMAIN-KEYWORD,latinpay
+PROCESS-NAME,latin-pay
+USER-AGENT,latin-pay
+USER-AGENT,latin-pay*
+USER-AGENT,*latin-pay
+USER-AGENT,*latin-pay*
+PROCESS-NAME,latinpay
+USER-AGENT,latinpay
+USER-AGENT,latinpay*
+USER-AGENT,*latinpay
+USER-AGENT,*latinpay*
+
 # Slikpay
 DOMAIN,s1lkpay.com
 DOMAIN,silksoftgroup.com
