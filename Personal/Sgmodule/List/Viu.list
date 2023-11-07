@@ -14,7 +14,6 @@ DOMAIN-KEYWORD,viu
 DOMAIN-SUFFIX,viu.com
 DOMAIN-KEYWORD,viu
 DOMAIN-SUFFIX,viu.com
-USER-AGENT,Viu*
 DOMAIN-SUFFIX,viu.com
 DOMAIN,pccw-cf-video.akamaized.net
 IP-CIDR,54.230.0.0/16,no-resolve
@@ -32,7 +31,6 @@ DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com
 DOMAIN-SUFFIX,viu.com
 DOMAIN-SUFFIX,viu.now.com
 DOMAIN-SUFFIX,viu.tv
-USER-AGENT,Viu*
 PROCESS-NAME,com.viu.pad
 PROCESS-NAME,com.viu.phone
 PROCESS-NAME,com.vuclip.viu
