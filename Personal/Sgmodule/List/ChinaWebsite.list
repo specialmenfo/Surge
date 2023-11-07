@@ -20,6 +20,16 @@ DOMAIN-SUFFIX,cbsnews.com
 DOMAIN-SUFFIX,cws.conviva.com
 DOMAIN-SUFFIX,cbsaavideo.com
 
+# Prime Video 播放
+DOMAIN,s3.amazonaws.com
+DOMAIN-SUFFIX,aiv-cdn.net
+DOMAIN-SUFFIX,devices.a2z.com
+DOMAIN-SUFFIX,hls.row.aiv-cdn.net
+DOMAIN-SUFFIX,s3.amazonaws.com
+DOMAIN-SUFFIX,ll.hls.row.aiv-cdn.net
+DOMAIN-SUFFIX,minerva.devices.a2z.com
+DOMAIN-SUFFIX,m-3349s3.ll.hls.row.aiv-cdn.net
+
 # Disney+ 加載圖片
 DOMAIN-SUFFIX,images.edge.bamgrid.com
 
