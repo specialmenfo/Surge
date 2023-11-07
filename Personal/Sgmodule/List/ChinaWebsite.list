@@ -8,6 +8,9 @@ DOMAIN-SUFFIX,cbsnews.com
 DOMAIN-SUFFIX,cws.conviva.com
 DOMAIN-SUFFIX,cbsaavideo.com
 
+# Disney+ 加載圖片
+DOMAIN-SUFFIX,images.edge.bamgrid.com
+
 # iQIYI
 DOMAIN-SUFFIX,71.am
 DOMAIN-SUFFIX,71.am.com
