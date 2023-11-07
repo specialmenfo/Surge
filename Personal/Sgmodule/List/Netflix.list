@@ -1031,7 +1031,6 @@ IP-CIDR,54.255.254.192/26,no-resolve
 IP-CIDR,54.68.0.0/15,no-resolve
 IP-CIDR,54.74.0.0/15,no-resolve
 IP-CIDR,54.76.0.0/15,no-resolve
-IP-CIDR,54.86.0.0/16,no-resolve
 IP-CIDR,64.120.128.0/17,no-resolve
 IP-CIDR,65.0.192.176/28,no-resolve
 IP-CIDR,65.0.192.224/27,no-resolve
