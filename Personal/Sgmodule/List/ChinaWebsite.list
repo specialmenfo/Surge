@@ -11,6 +11,9 @@ DOMAIN-SUFFIX,cbsaavideo.com
 # Disney+ 加載圖片
 DOMAIN-SUFFIX,images.edge.bamgrid.com
 
+# Discovery+ US 播放
+DOMAIN-SUFFIX,litix.io
+
 # Afreecatv 播放
 DOMAIN-SUFFIX,res.afreecatv.com
 DOMAIN,standbygw.afreecatv.com
