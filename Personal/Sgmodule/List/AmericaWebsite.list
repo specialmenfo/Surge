@@ -162,7 +162,6 @@ DOMAIN-SUFFIX,discoveryplus.in
 DOMAIN-SUFFIX,dnitv.com
 DOMAIN-SUFFIX,fwmrm.net
 DOMAIN-SUFFIX,getblueshift.com
-DOMAIN-SUFFIX,litix.io
 DOMAIN-SUFFIX,mobile-collector.newrelic.com
 DOMAIN-SUFFIX,uplynk.com
 DOMAIN-KEYWORD,discovery.uplynk.com
@@ -171,7 +170,6 @@ USER-AGENT,discovery+*
 // US
 DOMAIN,us1-prod.disco-api.com
 DOMAIN,us1-prod-images.disco-api.com
-DOMAIN,4unal8ngvngjm07lj2q2umlc4.litix.io
 // DOMAIN,content-ause1-ur-discovery1.uplynk.com
 // DOMAIN,content-ausw1-ur-discovery1.uplynk.com
 // DOMAIN,content-ausw2-ur-discovery1.uplynk.com
@@ -182,7 +180,6 @@ DOMAIN-SUFFIX,discoveryplus.ph
 // DOMAIN,ap2-prod-images.disco-api.com
 DOMAIN,discovery-ap.conax.cloud
 // DOMAIN,ap2-prod-direct.discoveryplus.com
-DOMAIN,gdvm0o88gc3qseqotiavvvhim.litix.io
 // DOMAIN,dplus-ph-prod-vod.akamaized.net
 // DOMAIN,dplus-ph-google-v2.prod-vod.h264.io
 
