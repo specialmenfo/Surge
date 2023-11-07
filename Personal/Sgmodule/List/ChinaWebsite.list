@@ -1,3 +1,12 @@
+# Paramount+ 播放/加載封面圖片（需搭配Paramount+.list）
+DOMAIN,saa.paramountplus.com
+DOMAIN,wwwimage-intl.pplusstatic.com
+DOMAIN,sparrow.intl.paramountplus.com
+DOMAIN-SUFFIX,dewrain.life
+DOMAIN-SUFFIX,conviva.com
+DOMAIN-SUFFIX,cbsnews.com
+DOMAIN-SUFFIX,cbsaavideo.com
+
 # iQIYI
 DOMAIN-SUFFIX,71.am
 DOMAIN-SUFFIX,71.am.com
