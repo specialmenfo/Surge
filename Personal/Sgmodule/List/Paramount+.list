@@ -3,19 +3,15 @@ DOMAIN,cbsi.live.ott.irdeto.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
 DOMAIN,link.theplatform.com
-DOMAIN-SUFFIX,cbsaavideo.com
 DOMAIN-SUFFIX,cbsi.com
 DOMAIN-SUFFIX,cbsivideo.com
-DOMAIN-SUFFIX,paramountplus.com
 DOMAIN-SUFFIX,pplusstatic.com
 USER-AGENT,PPlus*
-DOMAIN,co.dewrain.life
 DOMAIN,meuzd7ljo0xjk00lo49k10i6mqldf1673092883.uaid.imrworldwide.com
 DOMAIN,secure-dcr.imrworldwide.com
 DOMAIN,cbsinteractive.hb.omtrdc.net
 DOMAIN,co.vaicore.site
 DOMAIN,cbs.penthera.com
-DOMAIN-SUFFIX,dewrain.life
 DOMAIN-SUFFIX,imrworldwide.com
 DOMAIN-SUFFIX,newrelic.com
 DOMAIN-SUFFIX,.newrelic.com
@@ -26,14 +22,9 @@ DOMAIN-SUFFIX,*.penthera.com
 DOMAIN-SUFFIX,vaicore.site
 DOMAIN-SUFFIX,.vaicore.site
 DOMAIN-SUFFIX,*.vaicore.site
-DOMAIN-SUFFIX,conviva.com
-DOMAIN-SUFFIX,cws.conviva.com
-DOMAIN-SUFFIX,*.cws.conviva.com
-DOMAIN-SUFFIX,.cws.conviva.com
 DOMAIN-SUFFIX,amlg.io
 DOMAIN-SUFFIX,cbs
 DOMAIN-SUFFIX,cbs.com
-DOMAIN-SUFFIX,cbsaavideo.com
 DOMAIN-SUFFIX,cbscorporation.com
 DOMAIN-SUFFIX,cbsi.com
 DOMAIN-SUFFIX,cbsi.live.ott.irdeto.com
@@ -44,7 +35,6 @@ DOMAIN-SUFFIX,cbsimg.net
 DOMAIN-SUFFIX,cbsinteractive.com
 DOMAIN-SUFFIX,cbsistatic.com
 DOMAIN-SUFFIX,cbsivideo.com
-DOMAIN-SUFFIX,cbsnews.com
 DOMAIN-SUFFIX,cbsplaylistserver.aws.syncbak.com
 DOMAIN-SUFFIX,cbspressexpress.com
 DOMAIN-SUFFIX,cbsradio.com
@@ -56,7 +46,6 @@ DOMAIN-SUFFIX,cbssvideo.com
 DOMAIN-SUFFIX,cbstelevisioncity.com
 DOMAIN-SUFFIX,mtvnservices.com
 DOMAIN-SUFFIX,paramount.com
-DOMAIN-SUFFIX,paramountplus.com
 DOMAIN-SUFFIX,pluto.tv
 DOMAIN-SUFFIX,pplusstatic.com
 DOMAIN-SUFFIX,showtime.com
@@ -77,10 +66,8 @@ DOMAIN,cbsi.live.ott.irdeto.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
 DOMAIN,link.theplatform.com
-DOMAIN-SUFFIX,cbsaavideo.com
 DOMAIN-SUFFIX,cbsi.com
 DOMAIN-SUFFIX,cbsivideo.com
-DOMAIN-SUFFIX,paramountplus.com
 DOMAIN-SUFFIX,pplusstatic.com
 USER-AGENT,PPlus*
 
@@ -89,12 +76,9 @@ USER-AGENT,PPlus*
 // Intl. UA
 USER-AGENT,ParamountPlus*
 DOMAIN-SUFFIX,cbsi.com
-// DOMAIN-SUFFIX,cbsaavideo.com #播放
 DOMAIN-SUFFIX,cbsivideo.com
-DOMAIN-SUFFIX,paramountplus.com
 DOMAIN-SUFFIX,pplusstatic.com
 // DOMAIN-SUFFIX,mtvnservices.com #MTV
-// DOMAIN-SUFFIX,cws.conviva.com
 DOMAIN,link.theplatform.com
 // US
 AND,((DOMAIN,cbsi.live.ott.irdeto.com), (USER-AGENT,PPlus*))
@@ -112,9 +96,7 @@ DOMAIN,cbsservice.aws.syncbak.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 
 # 一些無需驗證地區的 HOST
-DOMAIN-SUFFIX,cbsaavideo.com
 DOMAIN-SUFFIX,mtvnservices.com
-DOMAIN-SUFFIX,cws.conviva.com
 DOMAIN,thumbnails.cbsig.net
 DOMAIN,cbsinteractive.hb.omtrdc.net
 DOMAIN,cbsnews.akamaized.net
@@ -123,10 +105,6 @@ DOMAIN,cbsnews.akamaized.net
 # Paramount+ Intl. 上線地區較冷門，通過 PROCESS-NAME 分流時部分冷門地區節點串流效果不佳，可前置 Paramount++.yaml 使部分無需驗證地區的 HOST 走其他節點代理
 USER-AGENT,ParamountPlus*
 PROCESS-NAME,com.cbs.ca
-DOMAIN-KEYWORD,intl.pplus
-DOMAIN-KEYWORD,intl.paramountplus
-DOMAIN-SUFFIX,intl.paramountplus.com
-DOMAIN,wwwimage-intl.pplusstatic.com
 // iOS 15 下 UA 不可用，需 MITM cbsi.live.ott.irdeto.com
 AND,((DOMAIN,cbsi.live.ott.irdeto.com), (USER-AGENT,ParamountPlus*))
 // 播放驗證，此條 Paramount+ 國際版與美國版衝突，故使用 AND 語法區分
