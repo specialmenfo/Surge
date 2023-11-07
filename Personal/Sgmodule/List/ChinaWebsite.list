@@ -14,8 +14,11 @@ DOMAIN-SUFFIX,images.edge.bamgrid.com
 # Discovery+ US 播放
 DOMAIN-SUFFIX,litix.io
 DOMAIN-SUFFIX,h264.io
+DOMAIN,discovery-us.conax.cloud
 DOMAIN,4unal8ngvngjm07lj2q2umlc4.litix.io
 DOMAIN,dplus-northamerica-cloudfront-gcs.prod-vod.h264.io
+IP-CIDR,34.208.0.0/12,no-resolve
+IP-CIDR,34.208.0.0/16,no-resolve
 
 # Afreecatv 播放
 DOMAIN-SUFFIX,res.afreecatv.com
