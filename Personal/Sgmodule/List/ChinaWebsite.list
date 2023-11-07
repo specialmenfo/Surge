@@ -13,6 +13,9 @@ DOMAIN-SUFFIX,images.edge.bamgrid.com
 
 # Discovery+ US 播放
 DOMAIN-SUFFIX,litix.io
+DOMAIN-SUFFIX,h264.io
+DOMAIN,4unal8ngvngjm07lj2q2umlc4.litix.io
+DOMAIN,dplus-northamerica-cloudfront-gcs.prod-vod.h264.io
 
 # Afreecatv 播放
 DOMAIN-SUFFIX,res.afreecatv.com
