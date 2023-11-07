@@ -1,0 +1,17 @@
+# HBO Max / Max
+USER-AGENT,Max*
+PROCESS-NAME,com.wbd.stream
+DOMAIN-SUFFIX,max.com
+DOMAIN-SUFFIX,discomax.com
+DOMAIN-SUFFIX,sessions.api.hbo.com
+DOMAIN-SUFFIX,oauth.api.hbo.com
+DOMAIN,wmff.warnermediacdn.com
+DOMAIN-SUFFIX,cinemax.com
+DOMAIN-SUFFIX,hbomax.com
+DOMAIN-SUFFIX,hbomaxcdn.com
+DOMAIN-SUFFIX,hbomaxcdn.com
+DOMAIN-SUFFIX,hbonow.com
+DOMAIN-SUFFIX,maxgo.com
+USER-AGENT,HBOMAX*
+PROCESS-NAME,com.hbo.hbonow
+DOMAIN-SUFFIX,hbo.com
