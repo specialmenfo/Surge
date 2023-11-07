@@ -24,6 +24,8 @@ DOMAIN-SUFFIX,cbsaavideo.com
 DOMAIN-SUFFIX,images.edge.bamgrid.com
 
 # Discovery+ US 播放
+DOMAIN-SUFFIX,brightline.tv
+DOMAIN,services.brightline.tv
 DOMAIN-SUFFIX,litix.io
 DOMAIN-SUFFIX,h264.io
 DOMAIN,discovery-us.conax.cloud
