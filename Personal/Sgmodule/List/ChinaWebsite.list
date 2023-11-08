@@ -144,7 +144,8 @@ DOMAIN,websitereview.corp.apple.com
 DOMAIN,www.gstatic.com
 DOMAIN,wps.apple.com
 DOMAIN,configuration.ls.apple.com
-init.push.apple.com
+DOMAIN,init.push.apple.com
+DOMAIN-SUFFIX,push.apple.com
 IP-CIDR,17.188.179.34/32,no-resolve
 IP-CIDR,17.188.0.0/16,no-resolve
 
