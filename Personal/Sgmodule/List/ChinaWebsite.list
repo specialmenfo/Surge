@@ -25,6 +25,8 @@ DOMAIN-SUFFIX,conviva.com
 DOMAIN-SUFFIX,cbsnews.com
 DOMAIN-SUFFIX,cws.conviva.com
 DOMAIN-SUFFIX,cbsaavideo.com
+DOMAIN-SUFFIX,ipv4.cws.conviva.com
+DOMAIN-SUFFIX,ipv6.cws.conviva.com
 
 # Prime Video 播放
 DOMAIN,s3.amazonaws.com
