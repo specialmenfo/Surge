@@ -1,3 +1,9 @@
+# HBO Max 播放
+DOMAIN,art-gallery-latam.api.hbo.com
+DOMAIN,latam.hbomaxcdn.com
+DOMAIN-SUFFIX,art-gallery-latam.api.hbo.com
+DOMAIN-SUFFIX,latam.hbomaxcdn.com
+
 # Viu 播放
 DOMAIN,d2anahhhmp1ffz.cloudfront.net
 DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net
