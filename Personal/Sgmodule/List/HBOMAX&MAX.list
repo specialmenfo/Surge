@@ -1,4 +1,11 @@
 # HBO Max / Max
+DOMAIN-SUFFIX,gateway.api.hbo.com
+DOMAIN-SUFFIX,user-comet-latam.api.hbo.com
+DOMAIN-SUFFIX,telegraph.api.hbo.com
+DOMAIN-SUFFIX,comet-latam.api.hbo.com
+DOMAIN-SUFFIX,sessions.api.hbo.com
+DOMAIN-SUFFIX,comet-latam.api.hbo.com
+DOMAIN-SUFFIX,markers-latam.api.hbo.com
 USER-AGENT,Max*
 PROCESS-NAME,com.wbd.stream
 DOMAIN-SUFFIX,max.com
