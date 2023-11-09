@@ -16,14 +16,6 @@ DOMAIN-KEYWORD,viu
 DOMAIN-SUFFIX,viu.com
 DOMAIN-SUFFIX,viu.com
 DOMAIN,pccw-cf-video.akamaized.net
-IP-CIDR,54.230.0.0/16,no-resolve
-IP-CIDR,99.84.0.0/16,no-resolve
-IP-CIDR,13.35.0.0/16,no-resolve
-IP-CIDR,13.226.0.0/16,no-resolve
-IP-CIDR,54.230.0.0/16,no-resolve
-IP-CIDR,99.84.0.0/16,no-resolve
-IP-CIDR,13.35.0.0/16,no-resolve
-IP-CIDR,13.226.0.0/16,no-resolve
 
 # ViuTV
 DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com
