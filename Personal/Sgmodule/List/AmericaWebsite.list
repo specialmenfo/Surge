@@ -152,7 +152,6 @@ USER-AGENT,*creditkarma
 PROCESS-NAME,creditkarma
 
 # > Discovery+
-DOMAIN,dplus-northamerica.media-edge.prod-vod.h264.io
 DOMAIN-SUFFIX,disco-api.com
 DOMAIN-SUFFIX,discovery.com
 DOMAIN-SUFFIX,discoveryplus.co.uk
