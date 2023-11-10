@@ -1,3 +1,8 @@
+# Pluto TV 播放
+DOMAIN-SUFFIX,siloh-fs.plutotv.net
+DOMAIN-SUFFIX,images.pluto.tv
+DOMAIN-SUFFIX,sp.pluto.tv
+
 # HBO Max 播放
 DOMAIN,art-gallery-latam.api.hbo.com
 DOMAIN,latam.hbomaxcdn.com
