@@ -1,9 +1,3 @@
-# Tidal
-DOMAIN-SUFFIX,et.tidal.com
-DOMAIN-SUFFIX,fa.tidal.com
-DOMAIN-SUFFIX,pulsar.tidal.com
-DOMAIN-SUFFIX,api.tidal.com
-
 # HBO Max 播放
 DOMAIN,art-gallery-latam.api.hbo.com
 DOMAIN,latam.hbomaxcdn.com
