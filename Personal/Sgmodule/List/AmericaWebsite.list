@@ -744,6 +744,7 @@ DOMAIN,service-vod.clusters.pluto.tv
 DOMAIN,boot.pluto.tv
 DOMAIN,service-watchlist-ga.prd.pluto.tv
 DOMAIN,t.pluto.tv
+DOMAIN-SUFFIX,clusters.pluto.tv
 
 # Other
 DOMAIN-SUFFIX,onelogin.com
