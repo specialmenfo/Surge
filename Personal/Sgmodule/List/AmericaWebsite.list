@@ -740,7 +740,10 @@ USER-AGENT,*offerup
 PROCESS-NAME,offerup
 
 # Pluto TV
-DOMAIN-SUFFIX,pluto.tv
+DOMAIN,service-vod.clusters.pluto.tv
+DOMAIN,boot.pluto.tv
+DOMAIN,service-watchlist-ga.prd.pluto.tv
+DOMAIN,t.pluto.tv
 
 # Other
 DOMAIN-SUFFIX,onelogin.com
