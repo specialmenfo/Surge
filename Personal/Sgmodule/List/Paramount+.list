@@ -49,14 +49,12 @@ DOMAIN-SUFFIX,cbstelevisioncity.com
 DOMAIN-SUFFIX,mtvnservices.com
 DOMAIN-SUFFIX,paramount.com
 DOMAIN-SUFFIX,pplusstatic.com
-DOMAIN-SUFFIX,showtime.com
 DOMAIN-SUFFIX,viacbs.com
 DOMAIN-SUFFIX,viacom.com
 DOMAIN-SUFFIX,viacomcbs.com
 DOMAIN-SUFFIX,viacomcbspressexpress.com
 USER-AGENT,PPlus*
 PROCESS-NAME,com.cbs.app
-PROCESS-NAME,com.showtime.standalone
 IP-CIDR,17.253.14.253/19,no-resolve
 IP-CIDR,17.253.14.253/20,no-resolve
 IP-CIDR,17.253.14.253/22,no-resolve
