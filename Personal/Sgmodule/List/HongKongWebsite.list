@@ -2156,7 +2156,6 @@ IP-CIDR,208.43.122.128/27,no-resolve
 IP-CIDR,50.22.198.204/30,no-resolve
 IP-CIDR,54.242.0.0/15,no-resolve
 IP-CIDR,69.171.235.0/16,no-resolve
-IP-CIDR,75.126.150.0/16,no-resolve
 DOMAIN,g.whatsapp.net
 DOMAIN,dit.whatsapp.net
 DOMAIN,media-hkg4-1.cdn.whatsapp.net
