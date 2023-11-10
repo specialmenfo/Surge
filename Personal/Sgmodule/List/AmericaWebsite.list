@@ -739,6 +739,9 @@ USER-AGENT,offerup*
 USER-AGENT,*offerup
 PROCESS-NAME,offerup
 
+# Pluto TV
+DOMAIN-SUFFIX,pluto.tv
+
 # Other
 DOMAIN-SUFFIX,onelogin.com
 DOMAIN-SUFFIX,.onelogin.com
