@@ -25,6 +25,7 @@ DOMAIN-SUFFIX,d1k2us671qcoau.cloudfront.net
 DOMAIN-SUFFIX,dfp6rglgjqszk.cloudfront.net
 
 # Paramount+ 播放/加載封面圖片（需搭配Paramount+.list）
+DOMAIN-SUFFIX,vaicore.store
 DOMAIN,sparrow.paramountplus.com
 DOMAIN,saa.paramountplus.com
 DOMAIN,wwwimage-intl.pplusstatic.com
