@@ -7,9 +7,7 @@ DOMAIN-SUFFIX,plutotv.net
 DOMAIN-SUFFIX,clusters.pluto.tv
 
 # HBO Max 播放
-DOMAIN,art-gallery-latam.api.hbo.com
 DOMAIN,latam.hbomaxcdn.com
-DOMAIN-SUFFIX,art-gallery-latam.api.hbo.com
 DOMAIN-SUFFIX,latam.hbomaxcdn.com
 IP-CIDR,199.59.0.0/12,no-resolve
 IP-CIDR,199.59.0.0/16,no-resolve
