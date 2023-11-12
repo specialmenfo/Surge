@@ -1,0 +1,9 @@
+# Littio
+DOMAIN,littio-api.co
+DOMAIN-SUFFIX,littio-api.co
+DOMAIN-KEYWORD,littio
+PROCESS-NAME,littio
+USER-AGENT,littio
+USER-AGENT,littio*
+USER-AGENT,*littio
+USER-AGENT,*littio*
