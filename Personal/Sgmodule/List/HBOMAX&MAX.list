@@ -1,4 +1,5 @@
 # HBO Max / Max
+DOMAIN,static.hbo.com
 DOMAIN-SUFFIX,gateway.api.hbo.com
 DOMAIN-SUFFIX,user-comet-latam.api.hbo.com
 DOMAIN-SUFFIX,telegraph.api.hbo.com
@@ -18,3 +19,4 @@ DOMAIN-SUFFIX,hbomax.com
 DOMAIN-SUFFIX,hbonow.com
 DOMAIN-SUFFIX,maxgo.com
 PROCESS-NAME,com.hbo.hbonow
+
