@@ -2156,7 +2156,6 @@ IP-CIDR,184.173.128.0/17,no-resolve
 IP-CIDR,208.43.122.128/27,no-resolve
 IP-CIDR,50.22.198.204/30,no-resolve
 IP-CIDR,54.242.0.0/15,no-resolve
-IP-CIDR,69.171.235.0/16,no-resolve
 DOMAIN,g.whatsapp.net
 DOMAIN,dit.whatsapp.net
 DOMAIN,media-hkg4-1.cdn.whatsapp.net
@@ -2732,7 +2731,6 @@ IP-CIDR,54.173.34.141/32,no-resolve
 IP-CIDR,54.235.23.242/32,no-resolve
 IP-CIDR,54.93.124.31/32,no-resolve
 IP-CIDR,66.220.144.0/20,no-resolve
-IP-CIDR,69.171.224.0/19,no-resolve
 IP-CIDR,74.119.76.0/22,no-resolve
 
 # FlipBoard
