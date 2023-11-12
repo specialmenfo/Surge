@@ -1,4 +1,6 @@
 # HBO Max / Max
+DOMAIN,art-gallery-latam.api.hbo.com
+DOMAIN-SUFFIX,art-gallery-latam.api.hbo.com
 DOMAIN,static.hbo.com
 DOMAIN-SUFFIX,gateway.api.hbo.com
 DOMAIN-SUFFIX,user-comet-latam.api.hbo.com
