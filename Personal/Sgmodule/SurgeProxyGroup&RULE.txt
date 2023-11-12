@@ -42,6 +42,7 @@
 🇨🇦 加拿大Website = select, 🇨🇦 加拿大節點, 👋 手動選擇, no-alert=0, hidden=0, include-all-proxies=0, update-interval=0
 🇹🇷 土耳其Website = select, 🇹🇷 土耳其節點, 🇭🇰 香港節點, 🇵🇭 菲律賓節點, 🎯 全球直連, 🇹🇼 台灣節點, 🇸🇬 新加坡節點, 🇯🇵 日本節點, 🇺🇲 美國節點, 🇦🇺 澳洲節點, 🇬🇧 英國節點, 🇰🇷 韓國節點, 🇩🇪 德國節點, 🇫🇷 法國節點, 🇲🇾 馬來西亞節點, 🇦🇷 阿根廷節點, 👋 手動選擇, no-alert=0, hidden=0, include-all-proxies=0
 🇲🇽 墨西哥Website = select, 🇲🇽 墨西哥節點, 👋 手動選擇, 🐟 漏網之魚, 🎯 全球直連, no-alert=0, hidden=0, include-all-proxies=0
+🇨🇴 哥倫比亞Website = select, 🇨🇴 哥倫比亞節點, 👋 手動選擇, 🐟 漏網之魚, 🎯 全球直連, no-alert=0, hidden=0, include-all-proxies=0
 🇭🇰 香港節點 = url-test, no-alert=1, hidden=0, persistent=0, policy-regex-filter=^(?!.*防失联)(?!.*Xin)(?!.*Lshiy)(?!.*HKT 02)(?!.*HKT 03)(?!.*HKT 05)(?!.*HKT)(?!.*3X)(?!.*6X).*🇭🇰, include-all-proxies=1
 🇹🇼 台灣節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-regex-filter=^(?!.*3X)(?!.*6X).*🇹🇼, include-all-proxies=1
 🇯🇵 日本節點 = url-test, no-alert=1, hidden=0, persistent=1, policy-regex-filter=^(?!.*3X)(?!.*6X).*🇯🇵, include-all-proxies=1
@@ -127,6 +128,7 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/CanadaWebsite.list,🇨🇦 加拿大Website
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/RussiaWebsite.list,🇷🇺 俄羅斯Website
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/MexicoWebsite.list,🇲🇽 墨西哥Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ColombiaWebsite.list,🇨🇴 哥倫比亞Website
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Paramount%2B.list,🌏 Paramount+ 換區
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/BiliBiliAuto.list,🌏 BiliBili 換區
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/DAZN.list,🌏 DAZN 換區
