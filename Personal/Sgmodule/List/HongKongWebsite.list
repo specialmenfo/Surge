@@ -1,3 +1,13 @@
+# Littio
+DOMAIN,littio-api.co
+DOMAIN-SUFFIX,littio-api.co
+DOMAIN-KEYWORD,littio
+PROCESS-NAME,littio
+USER-AGENT,littio
+USER-AGENT,littio*
+USER-AGENT,*littio
+USER-AGENT,*littio*
+
 # HBO Go 國際區換區播放（搭配HBOGo.list換區）
 DOMAIN,onwardsmg.com
 DOMAIN,mahmlcgaq0tuqn2ksc0kgfmgb.litix.io
