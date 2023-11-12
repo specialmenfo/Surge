@@ -11,6 +11,10 @@ USER-AGENT,Max*
 PROCESS-NAME,com.wbd.stream
 DOMAIN-SUFFIX,max.com
 DOMAIN-SUFFIX,discomax.com
+DOMAIN-SUFFIX,oauth-latam.api.hbo.com
+DOMAIN-SUFFIX,gateway-latam.api.hbo.com
+DOMAIN-SUFFIX,sessions-latam.api.hbo.com
+DOMAIN-SUFFIX,herald.caps.hbo.com
 DOMAIN-SUFFIX,sessions.api.hbo.com
 DOMAIN-SUFFIX,oauth.api.hbo.com
 DOMAIN,wmff.warnermediacdn.com
