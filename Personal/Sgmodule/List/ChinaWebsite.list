@@ -11,6 +11,13 @@ DOMAIN,art-gallery-latam.api.hbo.com
 DOMAIN,latam.hbomaxcdn.com
 DOMAIN-SUFFIX,art-gallery-latam.api.hbo.com
 DOMAIN-SUFFIX,latam.hbomaxcdn.com
+IP-CIDR,199.59.0.0/12,no-resolve
+IP-CIDR,199.59.0.0/16,no-resolve
+IP-CIDR,115.126.0.0/12,no-resolve
+IP-CIDR,115.126.0.0/16,no-resolve
+IP-CIDR,69.63.0.0/12,no-resolve
+IP-CIDR,69.63.0.0/16,no-resolve
+IP-CIDR,69.63.176.0/20,no-resolve
 
 # Viu 播放
 DOMAIN,d2anahhhmp1ffz.cloudfront.net
