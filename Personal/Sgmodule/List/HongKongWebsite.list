@@ -2137,6 +2137,7 @@ DOMAIN-SUFFIX,spreadprivacy.com
 
 # Facebook & Instagram & WhatsApp
 DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbcdn.net
 DOMAIN,graph.facebook.com
 DOMAIN-SUFFIX,bintray.com
 DOMAIN-SUFFIX,whatsapp.biz
