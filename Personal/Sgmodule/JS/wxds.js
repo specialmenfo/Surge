@@ -7,7 +7,7 @@
 
 [rewrite_local]
 
-^https:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/txwxds.js
+^https:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary url script-response-body https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/wxds.js
 
 [mitm] 
 
