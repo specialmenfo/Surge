@@ -132,6 +132,7 @@ USER-AGENT,*creditkarma
 PROCESS-NAME,creditkarma
 
 # > Discovery+
+DOMAIN,auth.discoveryplus.com
 DOMAIN-SUFFIX,disco-api.com
 DOMAIN-SUFFIX,discovery.com
 DOMAIN-SUFFIX,discoveryplus.co.uk
