@@ -3644,3 +3644,10 @@ DOMAIN,switchr.imagility.io
 DOMAIN-SUFFIX,switchr.imagility.io
 DOMAIN-SUFFIX,jable.tv
 DOMAIN-SUFFIX,vercel.app
+IP-CIDR,199.59.0.0/12,no-resolve
+IP-CIDR,199.59.0.0/16,no-resolve
+IP-CIDR,115.126.0.0/12,no-resolve
+IP-CIDR,115.126.0.0/16,no-resolve
+IP-CIDR,69.63.0.0/12,no-resolve
+IP-CIDR,69.63.0.0/16,no-resolve
+IP-CIDR,69.63.176.0/20,no-resolve
