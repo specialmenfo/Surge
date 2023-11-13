@@ -26,6 +26,7 @@ DOMAIN-SUFFIX,hbomax.com
 DOMAIN-SUFFIX,hbonow.com
 DOMAIN-SUFFIX,maxgo.com
 PROCESS-NAME,com.hbo.hbonow
+IP-CIDR,179.60.193.16/32
 
 # HBO Max 播放
 DOMAIN,latam.hbomaxcdn.com
