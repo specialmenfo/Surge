@@ -27,14 +27,3 @@ DOMAIN-SUFFIX,hbonow.com
 DOMAIN-SUFFIX,maxgo.com
 PROCESS-NAME,com.hbo.hbonow
 IP-CIDR,179.60.193.16/32
-
-# HBO Max 播放
-DOMAIN,latam.hbomaxcdn.com
-DOMAIN-SUFFIX,latam.hbomaxcdn.com
-IP-CIDR,199.59.0.0/12,no-resolve
-IP-CIDR,199.59.0.0/16,no-resolve
-IP-CIDR,115.126.0.0/12,no-resolve
-IP-CIDR,115.126.0.0/16,no-resolve
-IP-CIDR,69.63.0.0/12,no-resolve
-IP-CIDR,69.63.0.0/16,no-resolve
-IP-CIDR,69.63.176.0/20,no-resolve
