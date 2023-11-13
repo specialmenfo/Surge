@@ -13,7 +13,7 @@
 🌏 Equifax = select, 🇺🇲 美國節點, 🇬🇧 英國節點, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0, include-all-proxies=0
 🌏 HBO Go 換區 = select, 🇹🇼 台灣節點, 🇭🇰 香港節點, 🇸🇬 新加坡節點, 🇵🇭 菲律賓節點, 🛑 廣告攔截, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0, include-all-proxies=0
 🌏 HBO Max & Max 換區 = select, 🌏 HBO Max Select, 🌏 媒體播放選擇, 🇺🇲 美國節點, no-alert=0, hidden=0, include-all-proxies=0
-🌏 HBO Max Select = select, 🇳🇱 荷蘭節點, 🇸🇪 瑞典節點, 🇵🇱 波蘭節點, 🇷🇴 羅馬節點, 🇨🇿 捷克節點, 🇳🇴 挪威節點, 🇧🇷 巴西節點, 🇩🇰 丹麥節點, 🇨🇱 智利節點, 🇫🇮 芬蘭節點, 🇦🇩 安道爾節點, 🇦🇷 阿根廷節點, 🇵🇹 葡萄牙節點, 🇪🇸 西班牙節點, 🇲🇽 墨西哥節點, 🇨🇴 哥倫比亞節點, 🇲🇩 摩爾多瓦節點, no-alert=1, hidden=0, include-all-proxies=0
+🌏 HBO Max Select = select, 🇺🇲 美國節點, 🇬🇧 英國節點, 🇦🇷 阿根廷節點, 🇳🇱 荷蘭節點, 🇸🇪 瑞典節點, 🇵🇱 波蘭節點, 🇷🇴 羅馬節點, 🇨🇿 捷克節點, 🇳🇴 挪威節點, 🇧🇷 巴西節點, 🇩🇰 丹麥節點, 🇨🇱 智利節點, 🇫🇮 芬蘭節點, 🇦🇩 安道爾節點, 🇵🇹 葡萄牙節點, 🇪🇸 西班牙節點, 🇲🇽 墨西哥節點, 🇨🇴 哥倫比亞節點, 🇲🇩 摩爾多瓦節點, no-alert=1, hidden=0, include-all-proxies=0
 🌏 媒體播放選擇 = select, 🇭🇰 香港節點, 🇹🇼 台灣節點, 🇸🇬 新加坡節點, 🇵🇭 菲律賓節點, 🛑 廣告攔截, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, 🇳🇱 荷蘭節點, 🇸🇪 瑞典節點, 🇵🇱 波蘭節點, 🇷🇴 羅馬節點, 🇨🇿 捷克節點, 🇳🇴 挪威節點, 🇧🇷 巴西節點, 🇩🇰 丹麥節點, 🇨🇱 智利節點, 🇫🇮 芬蘭節點, 🇦🇩 安道爾節點, 🇦🇷 阿根廷節點, 🇵🇹 葡萄牙節點, 🇪🇸 西班牙節點, 🇲🇽 墨西哥節點, 🇨🇴 哥倫比亞節點, 🇲🇩 摩爾多瓦節點, no-alert=1, hidden=0, include-all-proxies=0
 🌏 Mail = select, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=1, hidden=0, persistent=0, update-interval=0, policy-regex-filter=^(?!.*中国-韩国)(?!.*韩国 전라북도 전주시 商宽)(?!.*IEPL).*🇰🇷, include-all-proxies=0
 🌏 Netflix 換區 = select, 🌏 Netflix 節點, 🇭🇰 香港節點, 🇸🇬 新加坡節點, 🇹🇼 台灣節點, 🇦🇺 澳洲節點, 🇯🇵 日本節點, 🇺🇲 美國節點, 🇬🇧 英國節點, 🇵🇭 菲律賓節點, 🇹🇷 土耳其節點, no-alert=1, hidden=0, update-interval=0, persistent=0, policy-regex-filter=^(?!.*1)(?!.*2)(?!.*3).*台湾|^(?!.*RackNerd).*🇺🇸|🇸🇬|🇹🇼 Taiwan|🇦🇺|🇵🇭, include-all-proxies=0
