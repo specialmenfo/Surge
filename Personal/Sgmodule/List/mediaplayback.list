@@ -1,3 +1,5 @@
+# 可直連，但個別流媒體速度可能較慢，Viu可以直接直連播放
+
 # HBO Max 播放
 DOMAIN,latam.hbomaxcdn.com
 DOMAIN-SUFFIX,latam.hbomaxcdn.com
