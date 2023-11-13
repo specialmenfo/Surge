@@ -1,5 +1,11 @@
 # 可直連，但個別流媒體速度可能較慢，Viu可以直接直連播放
 
+# Hulu 播放
+DOMAIN-SUFFIX,ib.hulu.com
+DOMAIN-SUFFIX,hulustream.com
+DOMAIN-SUFFIX,assets.huluim.com
+DOMAIN-SUFFIX,http-a-darwin.hulustream.com
+
 # HBO Max 播放
 DOMAIN,latam.hbomaxcdn.com
 DOMAIN-SUFFIX,latam.hbomaxcdn.com
