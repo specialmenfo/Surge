@@ -1,4 +1,5 @@
 # HBO Max / Max
+DOMAIN-SUFFIX,dynamic-content-frontdoor-latam.api.hbo.com
 DOMAIN,art-gallery-latam.api.hbo.com
 DOMAIN-SUFFIX,art-gallery-latam.api.hbo.com
 DOMAIN,static.hbo.com
