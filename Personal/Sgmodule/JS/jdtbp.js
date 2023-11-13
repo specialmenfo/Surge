@@ -237,7 +237,7 @@ function handleGetdetail() {
 
                 setTBItems(consumerProtection.items, createTBItem("價格詳情", text));
                 if (consumerProtection.serviceProtection)
-                    setTBItems(consumerProtection.serviceProtection.basicService.services, createTBItem("价格详情", [text]));
+                    setTBItems(consumerProtection.serviceProtection.basicService.services, createTBItem(“價格詳情”, [text]));
 
             } catch (e) {
                 $.logErr(e, "handleGetdetail handle body error");
@@ -381,14 +381,14 @@ function handleBijiago(data) {
         }
     }
 
-    for (let promo_day of obj['analysis']['promo_days']) {
-        let show = promo_day['show'];
-        let price = Math.round(promo_day['price']);
-        let date = promo_day['date'];
-        if (promo_day['show'].indexOf("618价格") != -1) {
-            historyObj._618['price'] = price;
-            historyObj._618['date'] = date;
-        } else if (promo_day['show'].indexOf("双11价格") != -1) {
+    for (let promo_day of obj[‘analysis’][‘promo_days’]) {
+        let show = promo_day[‘show’];
+        let price = Math.round(promo_day[‘price’]);
+        let date = promo_day[‘date’];
+        if (promo_day[‘show’].indexOf(“618價格”) != -1) {
+            historyObj._618[‘price’] = price;
+            historyObj._618[‘date’] = date;
+        } else if (promo_day[‘show’].indexOf(“雙11價格”) != -1) {
             historyObj._1111['price'] = price;
             historyObj._1111['date'] = date;
         } else
@@ -432,7 +432,7 @@ function getBijiagoCookie(callback) {
                 'Connection': 'keep-alive',
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36',
                 'Accept': '*/*',
-                'Accept-Language': 'zh-CN,zh;q=0.9',
+                'Accept-Language': 'zh-HK,zh;q=0.9',
             },
             timeout: 2000
         };
