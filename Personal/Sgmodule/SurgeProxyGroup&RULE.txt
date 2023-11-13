@@ -12,8 +12,9 @@
 🌏 EMBY 換區 = url-test, no-alert=1, hidden=0, include-all-proxies=0
 🌏 Equifax = select, 🇺🇲 美國節點, 🇬🇧 英國節點, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0, include-all-proxies=0
 🌏 HBO Go 換區 = select, 🇹🇼 台灣節點, 🇭🇰 香港節點, 🇸🇬 新加坡節點, 🇵🇭 菲律賓節點, 🛑 廣告攔截, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0, include-all-proxies=0
-🌏 HBO Max & Max 換區 = select, 🌏 HBO Max Url-Test, 🇺🇲 美國節點, no-alert=0, hidden=0, include-all-proxies=0
-🌏 HBO Max Url-Test = url-test, 🇳🇱 荷蘭節點, 🇸🇪 瑞典節點, 🇵🇱 波蘭節點, 🇷🇴 羅馬節點, 🇨🇿 捷克節點, 🇳🇴 挪威節點, 🇧🇷 巴西節點, 🇩🇰 丹麥節點, 🇨🇱 智利節點, 🇫🇮 芬蘭節點, 🇦🇩 安道爾節點, 🇦🇷 阿根廷節點, 🇵🇹 葡萄牙節點, 🇪🇸 西班牙節點, 🇲🇽 墨西哥節點, 🇨🇴 哥倫比亞節點, 🇲🇩 摩爾多瓦節點, no-alert=1, hidden=0, include-all-proxies=0
+🌏 HBO Max & Max 換區 = select, 🌏 HBO Max Select, 🌏 媒體播放選擇, 🇺🇲 美國節點, no-alert=0, hidden=0, include-all-proxies=0
+🌏 HBO Max Select = select, 🇳🇱 荷蘭節點, 🇸🇪 瑞典節點, 🇵🇱 波蘭節點, 🇷🇴 羅馬節點, 🇨🇿 捷克節點, 🇳🇴 挪威節點, 🇧🇷 巴西節點, 🇩🇰 丹麥節點, 🇨🇱 智利節點, 🇫🇮 芬蘭節點, 🇦🇩 安道爾節點, 🇦🇷 阿根廷節點, 🇵🇹 葡萄牙節點, 🇪🇸 西班牙節點, 🇲🇽 墨西哥節點, 🇨🇴 哥倫比亞節點, 🇲🇩 摩爾多瓦節點, no-alert=1, hidden=0, include-all-proxies=0
+🌏 媒體播放選擇 = select, 🇭🇰 香港節點, 🇹🇼 台灣節點, 🇸🇬 新加坡節點, 🇵🇭 菲律賓節點, 🛑 廣告攔截, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, 🇳🇱 荷蘭節點, 🇸🇪 瑞典節點, 🇵🇱 波蘭節點, 🇷🇴 羅馬節點, 🇨🇿 捷克節點, 🇳🇴 挪威節點, 🇧🇷 巴西節點, 🇩🇰 丹麥節點, 🇨🇱 智利節點, 🇫🇮 芬蘭節點, 🇦🇩 安道爾節點, 🇦🇷 阿根廷節點, 🇵🇹 葡萄牙節點, 🇪🇸 西班牙節點, 🇲🇽 墨西哥節點, 🇨🇴 哥倫比亞節點, 🇲🇩 摩爾多瓦節點, no-alert=1, hidden=0, include-all-proxies=0
 🌏 Mail = select, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=1, hidden=0, persistent=0, update-interval=0, policy-regex-filter=^(?!.*中国-韩国)(?!.*韩国 전라북도 전주시 商宽)(?!.*IEPL).*🇰🇷, include-all-proxies=0
 🌏 Netflix 換區 = select, 🌏 Netflix 節點, 🇭🇰 香港節點, 🇸🇬 新加坡節點, 🇹🇼 台灣節點, 🇦🇺 澳洲節點, 🇯🇵 日本節點, 🇺🇲 美國節點, 🇬🇧 英國節點, 🇵🇭 菲律賓節點, 🇹🇷 土耳其節點, no-alert=1, hidden=0, update-interval=0, persistent=0, policy-regex-filter=^(?!.*1)(?!.*2)(?!.*3).*台湾|^(?!.*RackNerd).*🇺🇸|🇸🇬|🇹🇼 Taiwan|🇦🇺|🇵🇭, include-all-proxies=0
 🌏 Netflix 節點 = select, 🇭🇰 香港節點, update-interval=0, policy-regex-filter=^(?!.*台湾 01)(?!.*台湾 02)(?!.*台湾05)(?!.*台湾06).*🇹🇼|(?!.*日本028)(?!.*日本029)(?!.*日本 01)(?!.*日本 02)(?!.*日本 03).*🇯🇵|(?!.*定时)(?!.*新加坡032)(?!.*新加坡034)(?!.*新加坡057)(?!.*Catixs)(?!.*新加坡 01)(?!.*新加坡 02)(?!.*新加坡 03)(?!.*新加坡-Xu).*🇸🇬|(?!.*040)(?!.*067)(?!.*069)(?!.*038)(?!.*039)(?!.*美国 01)(?!.*美国 02)(?!.*美国 03).*🇺🇸| (?!.*马来西亚)🇲🇾|(?!.*071)(?!.*澳大利亚).*🇦🇺|(?!.*045)(?!.*英国).*🇬🇧|(?!.*042)(?!.*土耳其).*🇹🇷|(?!.*菲律宾).*🇵🇭, no-alert=0, hidden=0, include-all-proxies=0
@@ -98,19 +99,13 @@
 
 [Rule]
 # Rule
-# DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising_Domain.list,REJECT
-# RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising_Resolve.list,REJECT
-# RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking_Resolve.list,REJECT
-# DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_Domain.list,REJECT
-# RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_Resolve.list,REJECT
-# DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list,REJECT
-# DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/EasyPrivacy/EasyPrivacy_Domain.list,REJECT
 # 知乎AD Block
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ZhiHuAd.list,REJECT
 DOMAIN-SUFFIX,g.doubleclick.net,REJECT
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Mail.list,🌏 Mail
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/TaiWanWebsite.list,🇹🇼 台灣Website
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HongKongWebsite.list,🇭🇰 香港Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/mediaplayback.list,🌏 媒體播放選擇
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Disney%2B.list,🌏 Disney+ 換區
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Viu.list,🌏 Viu 換區
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Netflix.list,🌏 Netflix 換區
