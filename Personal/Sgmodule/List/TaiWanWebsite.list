@@ -16,14 +16,6 @@ DOMAIN,intl-im-hist-api.iqiyi.com
 DOMAIN,intl-subscription.iqiyi.com
 // 播放
 DOMAIN,ip.geo.iqiyi.com
-DOMAIN,akmcdnoversea.inter.iqiyi.com
-DOMAIN,akmcdnoversea.inter.ptqy.gitv.tv
-DOMAIN,chuangcachecdnoversea.inter.iqiyi.com
-DOMAIN,chuangcachecdnoversea.inter.ptqy.gitv.tv
-DOMAIN,akmcdnoversea-tw.inter.iqiyi.com
-DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
-DOMAIN,chuangcachecdnoversea-tw.inter.iqiyi.com
-DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN-KEYWORD,akmcdnoverse
 DOMAIN-KEYWORD,chuangcachecdnoversea
 IP-CIDR,23.40.241.251/32,no-resolve
@@ -33,7 +25,6 @@ IP-CIDR,118.26.32.162/32,no-resolve
 IP-CIDR,159.138.102.146/32,no-resolve
 IP-CIDR,203.80.97.208/32,no-resolve
 IP-CIDR,203.198.80.99/32,no-resolve
-DOMAIN-SUFFIX,inter.iqiyi.com
 DOMAIN-SUFFIX,intl-rcd.iqiyi.com
 DOMAIN-SUFFIX,intl-subscription.iqiyi.com
 DOMAIN-SUFFIX,intl.iqiyi.com
@@ -54,7 +45,6 @@ IP-CIDR,23.40.242.10/32,no-resolve
 IP-CIDR,23.59.252.0/24,no-resolve
 PROCESS-NAME,com.iqiyi.i18n
 PROCESS-NAME,com.iqiyi.i18n.tv
-DOMAIN-SUFFIX,inter.iqiyi.com
 DOMAIN-SUFFIX,intl-rcd.iqiyi.com
 DOMAIN-SUFFIX,intl-subscription.iqiyi.com
 DOMAIN-SUFFIX,intl.iqiyi.com
@@ -83,7 +73,6 @@ USER-AGENT,QTP*
 PROCESS-NAME,com.iqiyi.i18n
 PROCESS-NAME,com.iqiyi.i18n.tv
 DOMAIN-SUFFIX,iq.com
-DOMAIN-SUFFIX,inter.iqiyi.com
 // 首頁
 DOMAIN-SUFFIX,intl.iqiyi.com
 // 歷史
@@ -108,7 +97,6 @@ IP-CIDR,203.80.97.203/32,no-resolve
 IP-CIDR,210.71.227.202/32,no-resolve
 
 DOMAIN,cache.video.iqiyi.com
-DOMAIN-SUFFIX,inter.iqiyi.com
 DOMAIN-SUFFIX,intl-rcd.iqiyi.com
 DOMAIN-SUFFIX,intl-subscription.iqiyi.com
 DOMAIN-SUFFIX,intl.iqiyi.com
@@ -131,14 +119,6 @@ PROCESS-NAME,com.iqiyi.i18n.tv
 
 DOMAIN,msg-intl.qy.net
 DOMAIN,ip.geo.iqiyi.com
-DOMAIN,akmcdnoversea.inter.iqiyi.com
-DOMAIN,akmcdnoversea.inter.ptqy.gitv.tv
-DOMAIN,chuangcachecdnoversea.inter.iqiyi.com
-DOMAIN,chuangcachecdnoversea.inter.ptqy.gitv.tv
-DOMAIN,akmcdnoversea-tw.inter.iqiyi.com
-DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
-DOMAIN,chuangcachecdnoversea-tw.inter.iqiyi.com
-DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN-KEYWORD,akmcdnoverse
 DOMAIN-KEYWORD,chuangcachecdnoversea
 IP-CIDR,2.21.22.17/32,no-resolve 
