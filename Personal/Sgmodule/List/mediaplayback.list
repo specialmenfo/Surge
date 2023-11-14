@@ -1,5 +1,16 @@
 # 可直連，但個別流媒體速度可能較慢
 
+# iQ 播放
+DOMAIN-SUFFIX,inter.iqiyi.com
+DOMAIN,akmcdnoversea.inter.iqiyi.com
+DOMAIN,akmcdnoversea.inter.ptqy.gitv.tv
+DOMAIN,chuangcachecdnoversea.inter.iqiyi.com
+DOMAIN,chuangcachecdnoversea.inter.ptqy.gitv.tv
+DOMAIN,akmcdnoversea-tw.inter.iqiyi.com
+DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
+DOMAIN,chuangcachecdnoversea-tw.inter.iqiyi.com
+DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
+
 # Hulu 播放
 DOMAIN-SUFFIX,ib.hulu.com
 DOMAIN-SUFFIX,hulustream.com
