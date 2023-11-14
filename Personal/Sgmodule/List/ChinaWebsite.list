@@ -88,6 +88,8 @@ DOMAIN,init.push.apple.com
 DOMAIN-SUFFIX,push.apple.com
 IP-CIDR,17.188.179.34/32,no-resolve
 IP-CIDR,17.188.0.0/16,no-resolve
+IP-CIDR,23.222.140.232/16,no-resolve
+IP-CIDR,23.222.140.232/20,no-resolve
 
 # DouYin
 DOMAIN,tp-pay.snssdk.com
