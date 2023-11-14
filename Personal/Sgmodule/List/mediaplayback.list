@@ -1,4 +1,4 @@
-# 可直連，但個別流媒體速度可能較慢，Viu可以直接直連播放
+# 可直連，但個別流媒體速度可能較慢
 
 # Hulu 播放
 DOMAIN-SUFFIX,ib.hulu.com
@@ -26,6 +26,7 @@ DOMAIN-SUFFIX,plutotv.net
 DOMAIN-SUFFIX,clusters.pluto.tv
 
 # Viu 播放
+DOMAIN,stream-hk.viu.com:443
 DOMAIN,d2anahhhmp1ffz.cloudfront.net
 DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net
 DOMAIN-SUFFIX,d1k2us671qcoau.cloudfront.net
