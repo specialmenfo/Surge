@@ -76,6 +76,7 @@ USER-AGENT,iQiYi*
 PROCESS-NAME,com.qiyi.video
 
 # Apple
+DOMAIN,testflight.apple.com
 DOMAIN,bpapi.apple.com
 DOMAIN,entitlements.itunes.apple.com
 DOMAIN-SUFFIX,itunes.apple.com
