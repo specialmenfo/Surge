@@ -799,6 +799,12 @@ USER-AGENT,testflight*
 USER-AGENT,*testflight*
 PROCESS-NAME,testflight
 DOMAIN-KEYWORD,testflight
+IP-CIDR,23.37.0.0/12,no-resolve
+IP-CIDR,23.213.0.0/12,no-resolve
+IP-CIDR,23.43.0.0/12,no-resolve
+IP-CIDR,104.103.0.0/12,no-resolve
+IP-CIDR,104.89.0.0/12,no-resolve
+IP-CIDR,17.188.0.0/12,no-resolve
 
 # Adobe
 DOMAIN,cc-ext-prod-pkgs.s3.amazonaws.com
