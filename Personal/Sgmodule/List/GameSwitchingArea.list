@@ -486,9 +486,6 @@ DOMAIN-SUFFIX,garena.vn
 DOMAIN-SUFFIX,garenanow.com
 DOMAIN-SUFFIX,seagroup.com
 
-# Game
-PROTOCOL,udp
-
 # Gog
 DOMAIN,gog.salesmanago.com
 DOMAIN-SUFFIX,gog-statics.com
