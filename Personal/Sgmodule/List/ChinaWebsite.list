@@ -358,7 +358,10 @@ DOMAIN,apps.apple.com
 DOMAIN,itunes.apple.com
 DOMAIN,apps.apple.com
 DOMAIN,itunes.apple.com
+DOMAIN,gdmf.apple.com
 DOMAIN,buy.itunes.apple.com
+DOMAIN,fpinit.itunes.apple.com
+DOMAIN,e17437.dsct.akamaiedge.net
 DOMAIN-SUFFIX,buy.itunes.apple.com
 USER-AGENT,iTunes*
 PROCESS-NAME,itunes
@@ -418,6 +421,8 @@ IP-CIDR,17.188.18.231/32,no-resolve
 IP-CIDR,17.120.252.47/32,no-resolve
 IP-CIDR,17.188.18.212/32,no-resolve
 IP-CIDR,17.188.18.231/32,no-resolve
+IP-CIDR,17.188.18.178/32,no-resolve
+IP-CIDR,17.171.47.23/32,no-resolve
 
 # Apple Music
 DOMAIN,aod-ssl.itunes.apple.com
