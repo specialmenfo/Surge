@@ -777,6 +777,7 @@ DOMAIN,testflight.apple.com
 DOMAIN,sandbox.itunes.apple.com
 DOMAIN-SUFFIX,sandbox.itunes.apple.com
 IP-CIDR,23.37.0.0/16,no-resolve
+IP-CIDR,23.213.0.0/16,no-resolve
 DOMAIN-SUFFIX,testflight.apple.com
 IP-CIDR,17.188.0.0/16,no-resolve
 DOMAIN-SUFFIX,musicstatus.itunes.apple.com
