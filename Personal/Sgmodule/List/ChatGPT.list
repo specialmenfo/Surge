@@ -1,3 +1,5 @@
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,AI.com
 DOMAIN-SUFFIX,akamaized.net
 DOMAIN-SUFFIX,api-iam.intercom.io
