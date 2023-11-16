@@ -12,3 +12,4 @@ DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-KEYWORD,openai
+IP-CIDR,8.219.0.0/12,no-resolve
