@@ -63,6 +63,7 @@ IP-CIDR,43.156.0.0/16,no-resolve
 IP-CIDR,43.128.0.0/16,no-resolve
 IP-CIDR,18.229.0.0/16,no-resolve
 IP-CIDR,124.108.0.0/12,no-resolve
+IP-CIDR,103.247.0.0/12,no-resolve
 
 # Assassin'sCreed-Origins
 IP-CIDR,104.92.145.0/24,no-resolve
