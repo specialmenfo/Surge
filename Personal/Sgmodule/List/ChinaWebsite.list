@@ -355,6 +355,8 @@ DOMAIN-SUFFIX,www-cdn.icloud.com.akadns.net
 DOMAIN-SUFFIX,wwwicloud.com
 DOMAIN-KEYWORD,icloud.com.akadns.net
 DOMAIN,kt-prod.ess.apple.com
+DOMAIN,fbs.smoot.apple.com
+DOMAIN,token.safebrowsing.apple
 
 # AppStore
 DOMAIN,apps.apple.com
