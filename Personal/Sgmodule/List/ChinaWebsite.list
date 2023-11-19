@@ -348,6 +348,7 @@ DOMAIN-SUFFIX,mylcloud.net
 DOMAIN-SUFFIX,www-cdn.icloud.com.akadns.net
 DOMAIN-SUFFIX,wwwicloud.com
 DOMAIN-KEYWORD,icloud.com.akadns.net
+DOMAIN,kt-prod.ess.apple.com
 
 # AppStore
 DOMAIN,apps.apple.com
