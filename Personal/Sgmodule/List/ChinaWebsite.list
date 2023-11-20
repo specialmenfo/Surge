@@ -104,6 +104,7 @@ DOMAIN,f-cashloan.snssdk.com
 
 # Other
 DOMAIN-SUFFIX,us-west-1.amazonaws.com
+IP-CIDR,43.156.222.216/32,no-resolve
 
 # Celcom
 DOMAIN-SUFFIX,celcom.com.my
