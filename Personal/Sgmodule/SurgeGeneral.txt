@@ -1,7 +1,8 @@
-✈️：Y😂Too
+所有資源均來自 GitHub 和網上收集，僅作為本人備份及自用。
 修改地方：https://gist.githubusercontent.com/githubname/gistlink 改成你 Sub Store 同步配置的 Gist Link
 切勿變更 RULE 順序，否則部分分流不起作用。
-所有資源均來自 GitHub 和網上收集，僅作為本人備份及自用。
+✈️：Y😂Too
+
 模組推薦：
 🍟 薯條 解鎖完整的 Apple功能和集成服務 GitHub：https://github.com/VirgilClyne/iRingo
 🍟 薯條 流媒體平台字幕增強及雙語模塊 GitHub：https://github.com/DualSubs/Universal
