@@ -1,3 +1,13 @@
+# Albo
+DOMAIN-SUFFIX,albo.live
+DOMAIN,albo-mirai-app.albo.live
+DOMAIN-KEYWORD,albo
+PROCESS-NAME,albo
+USER-AGENT,albo
+USER-AGENT,albo*
+USER-AGENT,*albo
+USER-AGENT,*albo*
+
 # Bank Of America
 DOMAIN,mservice.bankofamerica.com
 DOMAIN,sofa.bankofamerica.com
