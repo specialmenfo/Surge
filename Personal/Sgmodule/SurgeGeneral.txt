@@ -2,6 +2,15 @@
 修改地方：https://gist.githubusercontent.com/githubname/gistlink 改成你 Sub Store 同步配置的 Gist Link
 切勿變更 RULE 順序，否則部分分流不起作用。
 所有資源均來自 GitHub 和網上收集，僅作為本人備份及自用。
+模組推薦：
+🍟薯條
+ iRingo: 📍 Location & 🗺️ Maps：https://raw.githubusercontent.com/VirgilClyne/iRingo/main/sgmodule/Location.sgmodule
+ iRingo: 📰 News：https://raw.githubusercontent.com/VirgilClyne/iRingo/main/sgmodule/News.sgmodule
+ iRingo: 📺 TV app：https://raw.githubusercontent.com/VirgilClyne/iRingo/main/sgmodule/TV.sgmodule
+ iRingo: 🔍 Siri & Search：https://raw.githubusercontent.com/VirgilClyne/iRingo/main/sgmodule/Siri.sgmodule
+🍟 Fries: 🌐 General Enhanced：https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/sgmodule/General.sgmodule
+🍿️ DualSubs: 🎦 Universal：https://raw.githubusercontent.com/DualSubs/Universal/main/modules/DualSubs.Universal.sgmodule
+
 
 [General]
 # ---(通用)---
