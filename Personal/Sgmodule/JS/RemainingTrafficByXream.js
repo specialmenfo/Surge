@@ -18,7 +18,7 @@ async function operator(proxies = [], targetPlatform, env) {
     port: 80,
     cipher: 'aes-128-gcm',
     password: 'password',
-    name: `用咗: ${currT.value} ${currT.unit} / ${totalT.value} ${totalT.unit} ${date}`,
+    name: `🌏 用咗: ${currT.value} ${currT.unit} / ${totalT.value} ${totalT.unit} ${date}`,
   })
   return proxies
 }
