@@ -397,6 +397,13 @@ DOMAIN,mask-t.apple-dns.net
 DOMAIN,mask.apple-dns.net
 DOMAIN,mask.icloud.com
 
+DOMAIN,mask.icloud.com
+DOMAIN,mask.apple-dns.net
+DOMAIN,mask-canary.icloud.com
+DOMAIN,canary.mask.apple-dns.net
+DOMAIN,mask-h2.icloud.com
+DOMAIN,mask-t.apple-dns.net
+
 # Look Up (Only for Wikipedia@macOS, Surge Enhance Mode enabled required)
 PROCESS-NAME,LookupViewService
 PROCESS-NAME,/System/Library/PrivateFrameworks/Lookup.framework/Versions/A/XPCServices/LookupViewService.xpc/Contents/MacOS/LookupViewService
