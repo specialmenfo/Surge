@@ -57,10 +57,6 @@ DOMAIN,httpdns.baidubce.com
 DOMAIN,lc.map.baidu.com
 IP-CIDR,180.76.76.200/32
 
-# > Bilibili
-DOMAIN,mall.bilibili.com
-DOMAIN,passport.bilibili.com
-
 # > ByteDance
 DOMAIN,ad.zijieapi.com
 DOMAIN-KEYWORD,asiad.byteactivity
