@@ -1,4 +1,4 @@
-# 可直連，但個別流媒體速度可能較慢
+# 可直連，但個別流媒體速度可能較慢,如有0.2/0.5倍率，請使用這些，不限IP，均可播放
 
 # Hulu 播放
 DOMAIN-SUFFIX,ib.hulu.com
@@ -63,9 +63,6 @@ DOMAIN-SUFFIX,s3.amazonaws.com
 DOMAIN-SUFFIX,ll.hls.row.aiv-cdn.net
 DOMAIN-SUFFIX,minerva.devices.a2z.com
 DOMAIN-SUFFIX,m-3349s3.ll.hls.row.aiv-cdn.net
-
-# Disney+ 加載圖片
-DOMAIN-SUFFIX,images.edge.bamgrid.com
 
 # Discovery+ US 播放
 DOMAIN-SUFFIX,brightline.tv
