@@ -320,3 +320,5 @@ DOMAIN-SUFFIX,watchdisneyfe.com
 USER-AGENT,Disney+*
 PROCESS-NAME,com.disney.datg.videoplatforms.android.abc
 PROCESS-NAME,com.disney.disneyplus
+# Disney+ 加載圖片
+DOMAIN-SUFFIX,images.edge.bamgrid.com
