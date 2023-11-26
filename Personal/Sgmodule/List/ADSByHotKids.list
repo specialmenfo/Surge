@@ -196,21 +196,6 @@ DOMAIN,mtrace.wetvinfo.com
 # > Xiaomi
 DOMAIN,sdkconfig.ad.xiaomi.com
 
-# > Youku
-DOMAIN,adsmind.ugdtimg.com
-DOMAIN,amdc.m.youku.com
-DOMAIN,apiv4-iyes.youku.com
-DOMAIN,httpdns.alicdn.com
-DOMAIN,huichuan-mc.sm.cn
-DOMAIN,huichuan.sm.cn
-DOMAIN,iyes.youku.com
-DOMAIN,m-vali.cp31.ott.cibntv.net
-DOMAIN,mc.atm.youku.com
-DOMAIN,vali-g1.cp31.ott.cibntv.net
-DOMAIN,vali-ugc.cp31.ott.cibntv.net
-DOMAIN,yk-ssp.ad.youku.com
-DOMAIN,ykad-data.youku.com
-
 # > Zhihu
 DOMAIN,appcloud.zhihu.com
 DOMAIN,appcloud2.in.zhihu.com
