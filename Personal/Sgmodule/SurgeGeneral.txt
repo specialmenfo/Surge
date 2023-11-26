@@ -209,20 +209,6 @@ IP-CIDR,0.0.0.0/32,REJECT,no-resolve
 # 阻止所有UDP流量到端口443，使HTTP3請求退回到TCP流量
 AND,((PROTOCOL,UDP), (DEST-PORT,443)),REJECT-NO-DROP
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ADBlock.list,REJECT,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BlockHttpDNS/BlockHttpDNS.list,REJECT,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdGuardSDNSFilter/Direct/Direct.list,DIRECT,no-resolve,extended-matching
-DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.list,REJECT,extended-matching
-RULE-SET,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt,REJECT,no-resolve,extended-matching
-DOMAIN-SET,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt,REJECT,extended-matching
-RULE-SET,https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/Adblock4limbo_surge.list,REJECT,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easyprivacy_surge.list,REJECT,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list,REJECT,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylist_surge.list,REJECT,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/Peter_Lowe_adservers_surge.list,REJECT,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/BanAD_surge.list,REJECT,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking.list,REJECT,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy.list,REJECT,no-resolve,extended-matching
-DOMAIN-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_Domain.list,REJECT,extended-matching
 RULE-SET,https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.Telegram.list,🇭🇰 香港Website,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Mail.list,🌏 Mail,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/TaiWanWebsite.list,🇹🇼 台灣Website,no-resolve,extended-matching
