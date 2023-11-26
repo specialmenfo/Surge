@@ -1,5 +1,6 @@
 # > Hulu Website
 DOMAIN-SUFFIX,ads-e-darwin.hulustream.com
+DOMAIN-SUFFIX,ads-a-darwin.hulustream.com
 
 # > PeacockTV
 DOMAIN,video-ads-module.ad-tech.nbcuni.com
