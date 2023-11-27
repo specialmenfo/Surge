@@ -8,6 +8,8 @@ DOMAIN-SUFFIX,intl.iqiyi.com
 DOMAIN,intl-rcd.iqiyi.com
 DOMAIN,intl-im-hist-api.iqiyi.com
 DOMAIN,intl-subscription.iqiyi.com
+DOMAIN,cache.video.iqiyi.com
+DOMAIN,ip.geo.iqiyi.com
 
 # CATCHPLAY+
 USER-AGENT,CATCHPLAY*
