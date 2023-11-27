@@ -1,11 +1,12 @@
 # iQiYiTW
-DOMAIN-SUFFIX,msg-intl.qy.net
-DOMAIN-SUFFIX,intl.iqiyi.com
+DOMAIN,api.iq.com
+DOMAIN,tv-api2.iq.com
 DOMAIN,intl-rcd.iqiyi.com
+DOMAIN,cache.video.iqiyi.com
 DOMAIN,intl-im-hist-api.iqiyi.com
 DOMAIN,intl-subscription.iqiyi.com
-DOMAIN,cache.video.iqiyi.com
-DOMAIN,api.iq.com
+DOMAIN-SUFFIX,intl.iqiyi.com
+DOMAIN-SUFFIX,msg-intl.qy.net
 USER-AGENT,QYPlayer*
 
 # CATCHPLAY+
