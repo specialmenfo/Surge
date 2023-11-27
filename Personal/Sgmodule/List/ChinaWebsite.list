@@ -1,6 +1,5 @@
 # iQ 播放
 USER-AGENT,QTP*
-DOMAIN-SUFFIX,msg-intl.qy.net
 DOMAIN-SUFFIX,iqiyipic.com
 DOMAIN-SUFFIX,video.iq.com
 DOMAIN-SUFFIX,inter.iq.com
