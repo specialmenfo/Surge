@@ -1,13 +1,5 @@
 # iQ 播放
-USER-AGENT,QTP*
-DOMAIN-SUFFIX,iqiyipic.com
-DOMAIN-SUFFIX,video.iq.com
-DOMAIN-SUFFIX,inter.iq.com
-USER-AGENT,iQIYI*
-USER-AGENT,QIYIVideo*
 DOMAIN,ip.geo.iqiyi.com
-
-DOMAIN-SUFFIX,inter.iqiyi.com
 DOMAIN,akmcdnoversea.inter.iqiyi.com
 DOMAIN,akmcdnoversea.inter.ptqy.gitv.tv
 DOMAIN,chuangcachecdnoversea.inter.iqiyi.com
@@ -16,9 +8,17 @@ DOMAIN,akmcdnoversea-tw.inter.iqiyi.com
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN,chuangcachecdnoversea-tw.inter.iqiyi.com
 DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
+DOMAIN-SUFFIX,iqiyipic.com
+DOMAIN-SUFFIX,video.iq.com
+DOMAIN-SUFFIX,inter.iq.com
+DOMAIN-SUFFIX,inter.iqiyi.com
 DOMAIN-KEYWORD,akmcdnoverse
 DOMAIN-KEYWORD,chuangcachecdnoversea
-
+USER-AGENT,QTP*
+USER-AGENT,iQIYI*
+USER-AGENT,QIYIVideo*
+PROCESS-NAME,com.iqiyi.i18n
+PROCESS-NAME,com.iqiyi.i18n.tv
 IP-CIDR,23.40.241.251/32,no-resolve
 IP-CIDR,23.40.242.10/32,no-resolve
 IP-CIDR,110.238.107.47/32,no-resolve
@@ -40,8 +40,6 @@ IP-CIDR,23.211.15.0/24,no-resolve
 IP-CIDR,23.219.172.0/24,no-resolve
 IP-CIDR,23.40.242.10/32,no-resolve
 IP-CIDR,23.59.252.0/24,no-resolve
-PROCESS-NAME,com.iqiyi.i18n
-PROCESS-NAME,com.iqiyi.i18n.tv
 IP-CIDR,23.44.51.123/32,no-resolve
 IP-CIDR,104.85.165.17/32,no-resolve
 IP-CIDR,110.238.107.47/32,no-resolve
@@ -57,8 +55,6 @@ IP-CIDR,23.211.15.0/24,no-resolve
 IP-CIDR,23.219.172.0/24,no-resolve
 IP-CIDR,23.40.242.10/32,no-resolve
 IP-CIDR,23.59.252.0/24,no-resolve
-PROCESS-NAME,com.iqiyi.i18n
-PROCESS-NAME,com.iqiyi.i18n.tv
 IP-CIDR,2.21.22.17/32,no-resolve 
 IP-CIDR,23.40.241.251/32,no-resolve
 IP-CIDR,23.40.242.10/32,no-resolve
