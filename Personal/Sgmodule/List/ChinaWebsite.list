@@ -5,6 +5,7 @@ DOMAIN-SUFFIX,video.iq.com
 DOMAIN-SUFFIX,inter.iq.com
 USER-AGENT,iQIYI*
 USER-AGENT,QIYIVideo*
+DOMAIN,ip.geo.iqiyi.com
 
 DOMAIN-SUFFIX,inter.iqiyi.com
 DOMAIN,akmcdnoversea.inter.iqiyi.com
