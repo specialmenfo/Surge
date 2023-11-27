@@ -1,7 +1,5 @@
 # iQiYiTW
 DOMAIN-SUFFIX,msg-intl.qy.net
-PROCESS-NAME,com.iqiyi.i18n
-PROCESS-NAME,com.iqiyi.i18n.tv
 DOMAIN-SUFFIX,intl.iqiyi.com
 DOMAIN,intl-rcd.iqiyi.com
 DOMAIN,intl-im-hist-api.iqiyi.com
