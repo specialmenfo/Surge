@@ -8,6 +8,7 @@ DOMAIN,intl-im-hist-api.iqiyi.com
 DOMAIN,intl-subscription.iqiyi.com
 DOMAIN,cache.video.iqiyi.com
 DOMAIN,ip.geo.iqiyi.com
+USER-AGENT,QYPlayer*
 
 # CATCHPLAY+
 USER-AGENT,CATCHPLAY*
