@@ -65,6 +65,7 @@ DOMAIN-SUFFIX,minerva.devices.a2z.com
 DOMAIN-SUFFIX,m-3349s3.ll.hls.row.aiv-cdn.net
 
 # Discovery+ US 播放
+DOMAIN-SUFFIX,dplus-us-gcs-prod-vod.akamaized.net
 DOMAIN-SUFFIX,brightline.tv
 DOMAIN,services.brightline.tv
 DOMAIN-SUFFIX,litix.io
