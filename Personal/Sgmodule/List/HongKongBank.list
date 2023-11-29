@@ -34,12 +34,6 @@ PROCESS-NAME,Currenxie
 DOMAIN,mobile-banking.hk.dbs.com
 DOMAIN-SUFFIX,dbs.com
 DOMAIN-SUFFIX,hk.dbs.com
-DOMAIN-KEYWORD,DBS
-DOMAIN-KEYWORD,dbs
-USER-AGENT,dbs
-USER-AGENT,dbs*
-USER-AGENT,*dbs
-PROCESS-NAME,dbs
 
 # DAH SING
 DOMAIN,ds-direct.dahsing.com
