@@ -1,5 +1,7 @@
 所有資源均來自 GitHub 和網上收集，僅作為本人備份及自用。
-修改地方：https://gist.githubusercontent.com/githubname/gistlink 改成你 Sub Store 同步配置的 Gist Link
+本配置文件需搭配 Sub Store 的同步配置。（什麼是同步訂閱？
+將您的訂閱信息上傳到私有 Gist，在無法運行 Sub Store 的設備（例如路由器等）上也可以隨時訪問。）
+修改地方：https://gist.githubusercontent.com/githubname/gistlink 改成你 Sub Store 同步配置的 Gist Link。
 切勿變更 RULE 順序，否則部分分流不起作用。
 ✈️：Y😂Too
 
