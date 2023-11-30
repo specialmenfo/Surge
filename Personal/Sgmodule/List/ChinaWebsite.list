@@ -267,6 +267,12 @@ DOMAIN,gsa.apple.com
 DOMAIN,idmsa.apple.com
 
 # Apple iCloud
+DOMAIN-SUFFIX,p134-fmip.icloud.com
+DOMAIN-SUFFIX,gsp64-ssl.ls.apple.com
+DOMAIN-SUFFIX,gspe19-ssl.ls.apple.com
+DOMAIN-SUFFIX,gspe11-ssl.ls.apple.com
+DOMAIN-SUFFIX,p134-fmipmobile.icloud.com
+DOMAIN-SUFFIX,p134-quota.icloud.com
 DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apple-icloud.cn
 DOMAIN-SUFFIX,apple-livephotoskit.com
