@@ -1,3 +1,7 @@
+# ACA EMBY
+DOMAIN-SUFFIX,emby.aca.best
+DOMAIN-SUFFIX,none.misakaf.org
+
 # Odyssey EMBY
 IP-CIDR,144.76.175.55/32
 DOMAIN-SUFFIX,emby.wtf
