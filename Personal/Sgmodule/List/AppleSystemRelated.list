@@ -1,0 +1,12 @@
+# System Related
+IP-CIDR,17.0.0.0/8
+DOMAIN,api.smoot.apple.com
+DOMAIN,api.smoot.apple.com.cn
+DOMAIN,configuration.apple.com
+DOMAIN,xp.apple.com
+DOMAIN,smp-device-content.apple.com
+DOMAIN,guzzoni.apple.com
+DOMAIN,captive.apple.com
+DOMAIN-SUFFIX,ess.apple.com
+DOMAIN-SUFFIX,push.apple.com
+DOMAIN-SUFFIX,push-apple.com.akadns.net
