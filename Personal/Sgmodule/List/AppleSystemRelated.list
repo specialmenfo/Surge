@@ -1,12 +1,12 @@
 # System Related
-IP-CIDR,17.0.0.0/8,no-resolve
-DOMAIN,api.smoot.apple.com
-DOMAIN,api.smoot.apple.com.cn
-DOMAIN,configuration.apple.com
-DOMAIN,xp.apple.com
-DOMAIN,smp-device-content.apple.com
-DOMAIN,guzzoni.apple.com
-DOMAIN,captive.apple.com
-DOMAIN-SUFFIX,ess.apple.com
-DOMAIN-SUFFIX,push.apple.com
-DOMAIN-SUFFIX,push-apple.com.akadns.net
+IP-CIDR,17.0.0.0/8,no-resolve,force-remote-dns
+DOMAIN,api.smoot.apple.com,force-remote-dns
+DOMAIN,api.smoot.apple.com.cn,force-remote-dns
+DOMAIN,configuration.apple.com,force-remote-dns
+DOMAIN,xp.apple.com,force-remote-dns
+DOMAIN,smp-device-content.apple.com,force-remote-dns
+DOMAIN,guzzoni.apple.com,force-remote-dns
+DOMAIN,captive.apple.com,force-remote-dns
+DOMAIN-SUFFIX,ess.apple.com,force-remote-dns
+DOMAIN-SUFFIX,push.apple.com,force-remote-dns
+DOMAIN-SUFFIX,push-apple.com.akadns.net,force-remote-dns
