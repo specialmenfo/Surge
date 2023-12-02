@@ -1,5 +1,5 @@
 # System Related
-IP-CIDR,17.0.0.0/8
+IP-CIDR,17.0.0.0/8,no-resolve
 DOMAIN,api.smoot.apple.com
 DOMAIN,api.smoot.apple.com.cn
 DOMAIN,configuration.apple.com
