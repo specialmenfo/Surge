@@ -15,6 +15,13 @@ DOMAIN-SUFFIX,s3.ap-southeast-1.amazonaws.com
 IP-CIDR,193.182.111.12/32,no-resolve
 IP-CIDR,144.48.81.196/32,no-resolve
 
+# TODESK
+DOMAIN,st.todesk.com
+DOMAIN,wechat.todesk.com
+DOMAIN,authds.todesk.com
+DOMAIN,todeskcdnspeed.todesk.com
+DOMAIN-SUFFIX,todesk.com
+
 # iQ 播放
 DOMAIN,ip.geo.iqiyi.com
 DOMAIN,akmcdnoversea.inter.iqiyi.com
