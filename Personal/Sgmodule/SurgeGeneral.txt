@@ -9,7 +9,7 @@ wifi-access-socks5-port = 端口
 # external-controller-access = 你要設置的密碼@0.0.0.0:端口
 http-api = 你要設置的密碼@0.0.0.0:端口
 external-controller-access = 你要設置的密碼@0.0.0.0:端口
-#SUBNET,SSID:Wi-Fi名字,DIRECT
+# SUBNET,SSID:Wi-Fi名字,DIRECT
 
 切勿變更 RULE 順序，否則部分分流不起作用。
 ✈️：YToo
@@ -222,7 +222,7 @@ client-proxy-name = 🎯 全球直連
 # 繞過系統請求（Bypass-System）選項，所以在某些情況下會造成系統推送延遲（例如在兜底全局規則是走代理的情況下），需要對蘋果的某些服務設置專門的直連規則。
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AppleSystemRelated.list,🎯 全球直連,no-resolve,extended-matching
 # 連接到此 Wi-Fi 時 Surge 將不走代理或者家裡 Wi-Fi 路由器配置了代理服務，那麼此時 Surge 也會自動走路由器流量（如使用 Surge Mac 接管設備“Mac 配置文件無需添加此項 注釋即可，默認注釋” + Surge iOS“iOS 修改此項”）
-#SUBNET,SSID:Wi-Fi名字,DIRECT
+# SUBNET,SSID:Wi-Fi名字,DIRECT
 # 防止應用循環請求
 IP-CIDR,0.0.0.0/32,REJECT,no-resolve
 # 阻止所有UDP流量到端口443，使HTTP3請求退回到TCP流量
