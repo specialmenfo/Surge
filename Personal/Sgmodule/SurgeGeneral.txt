@@ -264,7 +264,6 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Equifax.list,🌏 Equifax,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AfreecaTV.list,🇰🇷 AfreecaTV,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/EMBY.list,🌏 EMBY 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Amazon.list,🌏 Amazon,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Carousell.list,🌏 Carousell 換區,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Codashop.list,🌏 CodaShop 換區,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Lazada%26Shopee.list,🌏 東南亞購物平台,no-resolve,extended-matching
@@ -279,6 +278,7 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ChinaWebsite.list,🎯 全球直連,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Direct/Direct.list,🎯 全球直連,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/auto-update/ruleset/ASN.China.list,🎯 全球直連,no-resolve,extended-matching
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Amazon.list,🌏 Amazon,no-resolve,extended-matching
 RULE-SET,LAN,🎯 全球直連,no-resolve,extended-matching
 GEOIP,CN,🎯 全球直連
 FINAL,🐟 漏網之魚,dns-failed
