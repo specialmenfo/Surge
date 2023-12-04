@@ -1,15 +1,17 @@
 # ASPIRE
-DOMAIN, api.aspireapp.com
-DOMAIN, api.aspire-cap.com
-DOMAIN, cdn.aspireapp.com
+DOMAIN,api.aspireapp.com
+DOMAIN,api.aspire-cap.com
+DOMAIN,cdn.aspireapp.com
 DOMAIN,sdk-writer.sg.smartlook.cloud
 DOMAIN,manager.eu.smartlook.cloud
 DOMAIN,engine-consumer-api.cloud.gist.build
 DOMAIN,gist-queue-consumer-api.cloud.gist.build
 DOMAIN,aspire-accounts-storage.s3.ap-southeast-1.amazonaws.com
 DOMAIN-SUFFIX,aspireapp.com
-DOMAIN-SUFFIX, aspire-cap.com
-DOMAIN-SUFFIX, cdn.aspireapp.com
+DOMAIN-SUFFIX,aspire-cap.com
+DOMAIN-SUFFIX,cdn.aspireapp.com
+DOMAIN-SUFFIX,aspire-accounts-storage.s3.ap-southeast-1.amazonaws.com
+DOMAIN-SUFFIX,s3.ap-southeast-1.amazonaws.com
 
 # iQ 播放
 DOMAIN,ip.geo.iqiyi.com
