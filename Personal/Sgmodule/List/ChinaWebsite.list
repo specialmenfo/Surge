@@ -12,6 +12,8 @@ DOMAIN-SUFFIX,aspire-cap.com
 DOMAIN-SUFFIX,cdn.aspireapp.com
 DOMAIN-SUFFIX,aspire-accounts-storage.s3.ap-southeast-1.amazonaws.com
 DOMAIN-SUFFIX,s3.ap-southeast-1.amazonaws.com
+IP-CIDR,193.182.111.12/32,no-resolve
+IP-CIDR,144.48.81.196/32,no-resolve
 
 # iQ 播放
 DOMAIN,ip.geo.iqiyi.com
