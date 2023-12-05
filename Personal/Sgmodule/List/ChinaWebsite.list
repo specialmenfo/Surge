@@ -165,6 +165,7 @@ DOMAIN,wps.apple.com
 DOMAIN,configuration.ls.apple.com
 DOMAIN,init.push.apple.com
 DOMAIN-SUFFIX,push.apple.com
+DOMAIN-SUFFIX,api-glb-aapse1c.smoot.apple.com
 IP-CIDR,17.188.179.34/32,no-resolve
 IP-CIDR,17.188.0.0/16,no-resolve
 IP-CIDR,23.222.140.232/16,no-resolve
