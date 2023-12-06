@@ -2043,10 +2043,6 @@ PROCESS-NAME,1888
 DOMAIN-KEYWORD,1888
 DOMAIN-KEYWORD,ctcmo
 
-# Disney++
-DOMAIN-SUFFIX,media.dssott.com
-DOMAIN,prod-ripcut-delivery.disney-plus.net
-
 # Discord
 DOMAIN-SUFFIX,discord.co
 DOMAIN-SUFFIX,discord.com
