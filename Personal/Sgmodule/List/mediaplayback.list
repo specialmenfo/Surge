@@ -89,23 +89,3 @@ DOMAIN,dplus-northamerica.media-edge.prod-vod.h264.io
 DOMAIN,dplus-northamerica-cloudfront-gcs.prod-vod.h264.io
 IP-CIDR,34.208.0.0/12,no-resolve
 IP-CIDR,34.208.0.0/16,no-resolve
-
-# Afreecatv 播放
-DOMAIN-SUFFIX,res.afreecatv.com
-DOMAIN,standbygw.afreecatv.com
-DOMAIN-SUFFIX,standbygw.afreecatv.com
-DOMAIN-SUFFIX,item.m.afreecatv.com
-IP-CIDR,218.38.0.0/16,no-resolve
-IP-CIDR,222.233.0.0/16,no-resolve
-DOMAIN-SUFFIX,alivecheck.afreecatv.com
-IP-CIDR,110.10.0.0/16,no-resolve
-IP-CIDR,211.110.0.0/16,no-resolve
-DOMAIN,ogq-sticker-global-cdn-z01.afreecatv.com
-IP-CIDR,114.207.0.0/16,no-resolve
-DOMAIN-SUFFIX,collector1.afreecatv.com
-DOMAIN-SUFFIX,deapi.afreecatv.com
-DOMAIN-SUFFIX,affslb.afreecatv.com
-DOMAIN-SUFFIX,vod.afreecatv.com
-DOMAIN-SUFFIX,stimg.afreecatv.com
-DOMAIN,live.afreecatv.com
-DOMAIN-SUFFIX,file.afreecatv.com
