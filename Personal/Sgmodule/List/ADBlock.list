@@ -1,22 +1,22 @@
-# > Google
+# Google
 DOMAIN-SUFFIX,g.doubleclick.net
 
-# > Hulu Website
+# Hulu Website
 #DOMAIN-SUFFIX,ads-e-darwin.hulustream.com
 #DOMAIN-SUFFIX,ads-a-darwin.hulustream.com
 
-# > PeacockTV
+# PeacockTV
 DOMAIN,video-ads-module.ad-tech.nbcuni.com
 
-# > Viu
+# Viu
 DOMAIN-SUFFIX,adcolony.com
 DOMAIN,r2---sn-j5o76n7e.gvt1.com
 
-# > WeTV
+# WeTV
 DOMAIN,btrace.wetvinfo.com
 DOMAIN,mtrace.wetvinfo.com
 
-# > Zhihu
+# Zhihu
 DOMAIN,appcloud.zhihu.com
 DOMAIN,appcloud2.in.zhihu.com
 DOMAIN,crash2.zhihu.com
@@ -27,11 +27,11 @@ IP-CIDR,103.41.167.237/32
 IP-CIDR,118.89.204.198/32
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128
 
-# > 10000
+# 10000
 DOMAIN,ad.21cn.com
 DOMAIN,ad.k.21cn.com
 DOMAIN,admarket.21cn.com
 DOMAIN,adshows.21cn.com
 
-# > 10010
+# 10010
 DOMAIN-SUFFIX,m1.ad.10010.com
