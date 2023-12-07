@@ -662,8 +662,8 @@ USER-AGENT,peacock
 USER-AGENT,*peacock
 PROCESS-NAME,peacock
 
-# Star++
-DOMAIN-SUFFIX,media.starott.com
+# Revolut
+DOMAIN-SUFFIX,revolut.com
 
 # Starz
 DOMAIN,playdata.starz.com
