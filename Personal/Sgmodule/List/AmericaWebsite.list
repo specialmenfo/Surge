@@ -665,6 +665,9 @@ PROCESS-NAME,peacock
 # Revolut
 DOMAIN-SUFFIX,revolut.com
 
+# Star++
+DOMAIN-SUFFIX,media.starott.com
+
 # Starz
 DOMAIN,playdata.starz.com
 DOMAIN,auth.starz.com
