@@ -1,3 +1,12 @@
+# LloydsBank
+DOMAIN,www.lloydsbank.com
+DOMAIN-SUFFIX,lloydsbank.com
+DOMAIN-KEYWORD,lloydsbank
+USER-AGENT,lloydsbank
+USER-AGENT,lloydsbank*
+USER-AGENT,*lloydsbank
+PROCESS-NAME,lloydsbank
+
 # ASPIRE
 DOMAIN,api.aspireapp.com
 DOMAIN,api.aspire-cap.com
