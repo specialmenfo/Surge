@@ -114,6 +114,14 @@ USER-AGENT,newdaycards*
 USER-AGENT,*newdaycards
 PROCESS-NAME,newdaycards
 
+# LloydsBank
+DOMAIN,www.lloydsbank.com
+DOMAIN-SUFFIX,lloydsbank.com
+USER-AGENT,lloydsbank
+USER-AGENT,lloydsbank*
+USER-AGENT,*lloydsbank
+PROCESS-NAME,lloydsbank
+
 # moneysavingexpert
 DOMAIN,experian.moneysavingexpert.com
 DOMAIN,prod-api.moneysavingexpert.com
