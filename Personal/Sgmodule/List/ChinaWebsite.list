@@ -15,6 +15,14 @@ DOMAIN-SUFFIX,blobstore.apple.com
 DOMAIN-SUFFIX,digicert.com
 USER-AGENT,com.apple.trustd*
 
+# Fiverr
+DOMAIN-SUFFIX,fiverr.com
+DOMAIN-KEYWORD,fiverr
+USER-AGENT,fiverr
+USER-AGENT,fiverr*
+USER-AGENT,*fiverr
+PROCESS-NAME,fiverr
+
 # LloydsBank
 DOMAIN,www.lloydsbank.com
 DOMAIN-SUFFIX,lloydsbank.com
