@@ -1,7 +1,9 @@
 # LloydsBank
 DOMAIN,www.lloydsbank.com
 DOMAIN-SUFFIX,lloydsbank.com
+DOMAIN,zncyn6opbqbb0ago5-lloydsbankinggroup.siteintercept.qualtrics.com
 DOMAIN-KEYWORD,lloydsbank
+DOMAIN-KEYWORD,lloydsbankinggroup
 USER-AGENT,lloydsbank
 USER-AGENT,lloydsbank*
 USER-AGENT,*lloydsbank
