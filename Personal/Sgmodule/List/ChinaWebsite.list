@@ -14,7 +14,6 @@ DOMAIN-SUFFIX,appsto.re
 DOMAIN-SUFFIX,blobstore.apple.com
 DOMAIN-SUFFIX,digicert.com
 USER-AGENT,com.apple.trustd*
-PROCESS-NAME,lookupviewservice
 
 # LloydsBank
 DOMAIN,www.lloydsbank.com
