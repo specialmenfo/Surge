@@ -1,6 +1,7 @@
 # LloydsBank
 DOMAIN,www.lloydsbank.com
 DOMAIN-SUFFIX,lloydsbank.com
+DOMAIN,lloydsbankinggroup.d3.sc.omtrdc.net
 DOMAIN,zncyn6opbqbb0ago5-lloydsbankinggroup.siteintercept.qualtrics.com
 DOMAIN-KEYWORD,lloydsbank
 DOMAIN-KEYWORD,lloydsbankinggroup
@@ -8,6 +9,10 @@ USER-AGENT,lloydsbank
 USER-AGENT,lloydsbank*
 USER-AGENT,*lloydsbank
 PROCESS-NAME,lloydsbank
+USER-AGENT,lloydsbankinggroup
+USER-AGENT,lloydsbankinggroup*
+USER-AGENT,*lloydsbankinggroup
+PROCESS-NAME,lloydsbankinggroup
 
 # ASPIRE
 DOMAIN,api.aspireapp.com
