@@ -39,9 +39,6 @@ DOMAIN,icm.aexp-static.com
 DOMAIN,acquisition-1.americanexpress.com
 DOMAIN,tms.americanexpress.com
 DOMAIN-SUFFIX,americanexpress.com
-DOMAIN-SUFFIX,qualtrics.com
-DOMAIN-SUFFIX,siteintercept.qualtrics.com
-DOMAIN-SUFFIX,qualtrics.com
 DOMAIN-SUFFIX,aexp-static.com
 DOMAIN-SUFFIX,aexp.com
 DOMAIN-SUFFIX,ensighten.com
