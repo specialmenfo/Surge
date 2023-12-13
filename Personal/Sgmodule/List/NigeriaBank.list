@@ -1,0 +1,42 @@
+# Nigeria Bank
+
+# ALAT BY WEMA
+DOMAIN,apibox.alat.ng
+DOMAIN,abujaralatsignalr.azurewebsites.net
+DOMAIN-SUFFIX,alat.ng
+DOMAIN-KEYWORD,alat
+
+# Chipper Cash
+DOMAIN,compliance.chippercash.com
+DOMAIN,auth.chippercash.com
+DOMAIN,api.chippercash.com
+DOMAIN-SUFFIX,chippercash.com
+DOMAIN-KEYWORD,chippercash
+
+# CashEx
+DOMAIN,www.cashex.app
+DOMAIN,cashex-gateway-34bf7qxe.ue.gateway.dev
+DOMAIN-SUFFIX,cashex.app
+DOMAIN-KEYWORD,cashex
+
+# KUDA
+DOMAIN,retailapigateway.kuda.com
+DOMAIN-SUFFIX,kuda.com
+DOMAIN-KEYWORD,kuda
+
+# PocketApp
+DOMAIN,api.okhi.io
+DOMAIN,pocketapp.com
+DOMAIN,www.polarisbanklimited.com
+DOMAIN-SUFFIX,okhi.io
+DOMAIN-SUFFIX,pocketapp.com
+DOMAIN-SUFFIX,polarisbanklimited.com
+DOMAIN-KEYWORD,okhi
+DOMAIN-KEYWORD,pocketapp
+DOMAIN-KEYWORD,polarisbanklimited
+
+# SparkleApp
+DOMAIN,sparkleapp.com
+DOMAIN,apigateway.sparkleapp.in
+DOMAIN-SUFFIX,sparkleapp.com
+DOMAIN-SUFFIX,sparkleapp.in
