@@ -22,7 +22,9 @@ DOMAIN-KEYWORD,cashex
 # KUDA
 DOMAIN,retailapigateway.kuda.com
 DOMAIN-SUFFIX,kuda.com
+DOMAIN-SUFFIX,kudabank.com
 DOMAIN-KEYWORD,kuda
+DOMAIN-KEYWORD,kudabank
 
 # PocketApp
 DOMAIN,api.okhi.io
