@@ -1,3 +1,12 @@
+# Bybit
+DOMAIN-SUFFIX,bybit.cloud
+DOMAIN-SUFFIX,bybitglobal.com
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bybit-global.com
+DOMAIN-KEYWORD,bybit
+DOMAIN-KEYWORD,bybitglobal
+DOMAIN-KEYWORD,bybit-global
+
 # OKX
 DOMAIN,www.ouyicn.blue
 DOMAIN,www.okx.com
