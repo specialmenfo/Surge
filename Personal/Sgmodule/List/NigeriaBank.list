@@ -6,6 +6,9 @@ DOMAIN,abujaralatsignalr.azurewebsites.net
 DOMAIN-SUFFIX,alat.ng
 DOMAIN-KEYWORD,alat
 
+# BlinkCash
+DOMAIN-SUFFIX,blinkcash.ng
+
 # Chipper Cash
 DOMAIN,compliance.chippercash.com
 DOMAIN,auth.chippercash.com
@@ -14,11 +17,26 @@ DOMAIN-SUFFIX,chippercash.com
 DOMAIN-SUFFIX,mobile-messenger.intercom.com
 DOMAIN-KEYWORD,chippercash
 
+# Cabon
+DOMAIN,api.paylater.ng
+DOMAIN,salesiq.zoho.com
+DOMAIN,vts.zohopublic.com
+DOMAIN-SUFFIX,paylater.ng
+DOMAIN-SUFFIX,zoho.com
+DOMAIN-SUFFIX,zohopublic.com
+
 # CashEx
 DOMAIN,www.cashex.app
 DOMAIN,cashex-gateway-34bf7qxe.ue.gateway.dev
 DOMAIN-SUFFIX,cashex.app
 DOMAIN-KEYWORD,cashex
+
+# Klasha
+DOMAIN-SUFFIX,kcookery.com
+
+# Kredi
+DOMAIN-SUFFIX,lendsqr.com
+DOMAIN-SUFFIX,obscudo.com
 
 # KUDA
 DOMAIN,retailapigateway.kuda.com
@@ -26,6 +44,13 @@ DOMAIN-SUFFIX,kuda.com
 DOMAIN-SUFFIX,kudabank.com
 DOMAIN-KEYWORD,kuda
 DOMAIN-KEYWORD,kudabank
+
+# NALA
+DOMAIN-SUFFIX,nala.ninja
+DOMAIN-SUFFIX,nala-api.com
+
+# Opay
+DOMAIN-SUFFIX,opayweb.com
 
 # PocketApp
 DOMAIN,api.okhi.io
@@ -37,6 +62,9 @@ DOMAIN-SUFFIX,polarisbanklimited.com
 DOMAIN-KEYWORD,okhi
 DOMAIN-KEYWORD,pocketapp
 DOMAIN-KEYWORD,polarisbanklimited
+
+# Stateside Bank
+DOMAIN-SUFFIX,statesidebank.com
 
 # SparkleApp
 DOMAIN,sparkleapp.com
