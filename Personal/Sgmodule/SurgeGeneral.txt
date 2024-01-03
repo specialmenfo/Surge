@@ -225,19 +225,14 @@ client-proxy-name = 🎯 全球直連
 # SUBNET,SSID:Wi-Fi名字,DIRECT
 # 繞過系統請求（Bypass-System）選項，所以在某些情況下會造成系統推送延遲（例如在兜底全局規則是走代理的情況下），需要對蘋果的某些服務設置專門的直連規則。
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AppleSystemRelated.list,🎯 全球直連,no-resolve,extended-matching
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaDNS/ChinaDNS.list,🎯 全球直連,no-resolve,extended-matching
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/WeChat.list,🎯 全球直連,no-resolve,extended-matching
 # 防止應用循環請求
 IP-CIDR,0.0.0.0/32,REJECT,no-resolve
 # 阻止所有UDP流量到端口443，使HTTP3請求退回到TCP流量
 AND,((PROTOCOL,UDP), (DEST-PORT,443)),REJECT-NO-DROP
 # Rule
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ADBlock.list,REJECT,no-resolve,extended-matching
-RULE-SET,https://ruleset.skk.moe/List/non_ip/reject.conf,REJECT,no-resolve,extended-matching
-DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,REJECT-TINYGIF,extended-matching
-DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject_phishing.conf,REJECT,extended-matching
-RULE-SET,https://ruleset.skk.moe/List/ip/reject.conf,REJECT-DROP,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaDNS/ChinaDNS.list,🎯 全球直連,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/WeChat.list,🎯 全球直連,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.Telegram.list,🇭🇰 香港Website,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Mail.list,🌏 Mail,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/TaiWanWebsite.list,🇹🇼 台灣Website,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HongKongWebsite.list,🇭🇰 香港Website,no-resolve,extended-matching
@@ -276,13 +271,14 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/CloudflareCN.list,🎯 全球直連,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HongKongBank.list,🏦 香港銀行,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/UnitedStatesBank.list,🏦 美國銀行,no-resolve,extended-matching
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/NigeriaBank.list,🏦 奈及利亞銀行,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/GameSwitchingArea.list,🌏 遊戲/主機換區,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ChatGPT.list,🌏 ChatGPT,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ChinaWebsite.list,🎯 全球直連,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Direct/Direct.list,🎯 全球直連,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/auto-update/ruleset/ASN.China.list,🎯 全球直連,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Amazon.list,🌏 Amazon,no-resolve,extended-matching
-RULE-SET,LAN,🎯 全球直連,no-resolve,extended-matching
+RULE-SET,LAN,🎯 全球直連
 GEOIP,CN,🎯 全球直連
 FINAL,🐟 漏網之魚,dns-failed
 
