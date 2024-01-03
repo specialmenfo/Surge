@@ -3,6 +3,9 @@ DOMAIN-SUFFIX,c4assets.com
 DOMAIN-SUFFIX,channel4.com
 USER-AGENT,All4*
 
+# Africa365
+DOMAIN-SUFFIX,africa365.com
+
 # Barclays
 DOMAIN,barclaysbankplc.demdex.net
 DOMAIN,www.barclays.co.uk
