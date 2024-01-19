@@ -27,6 +27,9 @@ Script Hub: 重寫 & 規則集轉換： https://raw.githubusercontent.com/Script
 Skip Proxy：https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/Sgmodule/Skip%20Proxy.sgmodule
 Skip Proxy Lists：https://raw.githubusercontent.com/mieqq/mieqq/master/skip-proxy-lists.sgmodule
 
+以上切勿一同複製：👆🏻
+以下開始複製兼且編輯：👇🏻
+
 [General]
 # ---(通用)---
 # 延遲測試
