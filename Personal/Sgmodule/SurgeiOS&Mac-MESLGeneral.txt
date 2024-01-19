@@ -23,9 +23,25 @@ external-controller-access = 你要設置的密碼@0.0.0.0:端口
  iRingo: 🔍 Siri & Search：https://raw.githubusercontent.com/VirgilClyne/iRingo/main/sgmodule/Siri.sgmodule
 🍟 Fries: 🌐 General Enhanced：https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/sgmodule/General.sgmodule
 🍿️ DualSubs: 🎦 Universal：https://raw.githubusercontent.com/DualSubs/Universal/main/modules/DualSubs.Universal.sgmodule
+🍿️ DualSubs: ➕ AddOn (Microsoft Translate)：https://raw.githubusercontent.com/DualSubs/AddOn/main/modules/DualSubs.AddOn.Microsoft.Translate.sgmodule
+🍿️ DualSubs: 🎵 Spotify：https://raw.githubusercontent.com/DualSubs/Spotify/main/modules/DualSubs.Spotify.sgmodule
+🍿️ DualSubs: 🎵 Spotify Transcripts：https://raw.githubusercontent.com/DualSubs/Spotify/main/modules/DualSubs.Spotify.Transcripts.sgmodule
 Script Hub: 重寫 & 規則集轉換： https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.surge.sgmodule
 Skip Proxy：https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/Sgmodule/Skip%20Proxy.sgmodule
 Skip Proxy Lists：https://raw.githubusercontent.com/mieqq/mieqq/master/skip-proxy-lists.sgmodule
+去廣告：https://raw.githubusercontent.com/HotKids/Rules/master/Surge/Module/Script.sgmodule
+
+
+Boxjs倉庫：
+iRingo：
+https://github.com/VirgilClyne/iRingo/raw/main/BoxJs/iRingo.BoxJs.json
+
+Bilibili：
+https://raw.githubusercontent.com/BiliUniverse/BoxJs/main/BiliBili.boxjs.json
+
+Dualsubs：
+http://boxjs.com/#/sub/add/https%3A%2F%2Fgithub.com%2FDualSubs%2FBoxJs%2Fraw%2Fmain%2FDualSubs.BoxJs.json
+
 
 以上切勿一同複製：👆🏻
 以下開始複製兼且編輯：👇🏻
@@ -418,6 +434,59 @@ amplifi.lan = server:syslib
 # Enable iCloud Private Relay on gateway
 # 為終端設備啓用iCloud專用代理，需要Surge for macOS啓用網關模式
 ^https?:\/\/p[\d]{1,3}-acsegateway\.icloud\.com header-replace X-MMe-Country TW
+
+[Script]
+# 漫畫台Lite微信小程序解鎖
+漫畫台Lite微信小程序解鎖=type=http-response,pattern=^https?:\/\/comic\.321mh\.com\/app_api\/v\d\/getcomicinfo_body,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/mhtlite.js
+七貓小說=type=http-response,pattern=^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/7mao.js
+# Spotify Premium
+spotify-json = type=http-request,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
+# Netflix 評分
+Netflix 評分=type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/nfds.js, requires-body=true, timeout=10
+Netflix 評分1=type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/nfds.js, requires-body=true, timeout=10
+Netflix 評分 2=type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/nfdss.js, requires-body=true, timeout=10
+# Spark Mail解鎖永久訂閱
+Spark Mail=type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\w{14})$,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/smail.js
+# AdGuard 解鎖永久高級版
+AdGuard=type=http-response,pattern=^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/adg.js
+# 百度文庫
+百度文庫閱讀權限=type=http-response,pattern=^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/bdwk.js
+# WeChat 去廣告
+wechatAD.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/wechatAD.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
+# Sub-Store
+Sub-Store Core = type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=120
+Sub-Store Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js,requires-body=true
+Sub-Store Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
+# Boxjs
+Rewrite: BoxJs = type=http-request,pattern=https?:\/\/boxjs\.(com|net),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js,requires-body=true,timeout=120
+# 彩雲天氣 SVIP biz.caiyunapp.com
+彩雲天氣_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/nxyd_caiyun_svip.js
+# EMBY Premium mb3admin.com
+EmbyPremiere = type=http-response,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/EMBY.js,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,max-size=131072,requires-body=1,timeout=10,enable=true,script-update-interval=0
+# Fantastical Premium api.flexibits.com
+fantastical.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/fantastical.js,type=http-response,pattern=^https:\/\/api\.flexibits\.com\/v1\/(auth|account)\/(device|details|appstore-receipt)\/$
+# Kuwo VIP vip1.kuwo.cn
+Kuwo vip = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Kuwo.js,script-update-interval=0
+# Pillow Premium api.revenuecat.com
+pillow.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/pillow.js,type=http-response,pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts)
+# WeiBo App 去廣告
+yichahucha_wb_launch.js = requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Weibo/yichahucha_wb_launch.js,type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)
+yichahucha_wb_ad.js = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/Weibo/yichahucha_wb_ad.js,type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/(photos/pic_recommend_status|live/media_homelist)|video/tiny_stream_video_list|photo/info|remind/unread_count)
+# ZHIHU去廣告
+知乎json = type=http-response,pattern=^https:\/\/(appcloud2\.zhihu\.com\/v3\/config$|www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations|api\.zhihu\.com\/(topstory\/recommend|commercial_api\/(real_time_launch_v2|app_float_layer$)|questions\/\d+\/feeds\?|v4\/questions\/\d+\/answers\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/ZhiHuAd1.js
+# 百度防跳轉
+百度防跳轉 = type=http-response,pattern=^https:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/app2smile_baidu-no-redirect.js
+# 克拉壁紙 Premium claritywallpaper.com
+clarity.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/clarity.js,type=http-response,pattern=^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll)
+# Panel
+net-info-panel.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/networkCheck.js,type=generic
+reload.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/reload.js,type=generic
+flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/zZPiglet_flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
+# 美圖秀秀
+美圖秀秀=type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/MTXX.js
+# 迅雷
+迅雷會員=type=http-response,pattern=https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/xunlei.js
 
 [MITM]
 skip-server-cert-verify = true
