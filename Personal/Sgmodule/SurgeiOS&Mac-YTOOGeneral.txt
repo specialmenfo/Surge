@@ -14,6 +14,13 @@ external-controller-access = 你要設置的密碼@0.0.0.0:端口
 切勿變更 RULE 順序，否則部分分流不起作用。
 ✈️：Y-Too
 
+Sub-Store：
+https://sub-store.vercel.app/subs#/user
+
+Boxjs：
+http://boxjs.net
+http://boxjs.com
+
 模組安裝：
 🍟 薯條 解鎖完整的 Apple功能和集成服務 GitHub：https://github.com/VirgilClyne/iRingo
 🍟 薯條 流媒體平台字幕增強及雙語模塊 GitHub：https://github.com/DualSubs/Universal
