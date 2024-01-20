@@ -48,6 +48,10 @@ USER-AGENT,dahsing*
 USER-AGENT,*dahsing
 PROCESS-NAME,dahsing
 
+# FSMONE
+DOMAIN-SUFFIX,fundsupermart.com
+DOMAIN-SUFFIX,fsmone.com
+
 # HSBC
 DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN-KEYWORD,hsbc.com.hk
