@@ -138,7 +138,7 @@ USER-AGENT,goldmansachs*
 USER-AGENT,*goldmansachs
 PROCESS-NAME,goldmansachs
 
-# PASSBOOK
+# REMITLY
 DOMAIN,www.remitly.com
 DOMAIN,passbook-api.remitly.io
 DOMAIN,help.passbook.app
@@ -152,6 +152,7 @@ DOMAIN-SUFFIX,remitly.com
 DOMAIN-SUFFIX,remitly.io
 DOMAIN-SUFFIX,passbook.app
 DOMAIN-SUFFIX,plaid.com
+DOMAIN-SUFFIX,salesforceliveagent.com
 USER-AGENT,remitly
 USER-AGENT,remitly*
 USER-AGENT,*remitly
