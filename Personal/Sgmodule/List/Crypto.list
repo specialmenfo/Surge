@@ -7,6 +7,13 @@ DOMAIN-KEYWORD,bybit
 DOMAIN-KEYWORD,bybitglobal
 DOMAIN-KEYWORD,bybit-global
 
+# Kucoin
+DOMAIN-SUFFIX,xcoinsystem.com
+DOMAIN-SUFFIX,kucoin.com
+DOMAIN-SUFFIX,kucoin.plus
+DOMAIN-KEYWORD,kucoin
+DOMAIN-KEYWORD,xcoinsystem
+
 # OKX
 DOMAIN,www.ouyicn.blue
 DOMAIN,www.okx.com
