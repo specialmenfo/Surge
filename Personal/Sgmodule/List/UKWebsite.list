@@ -45,6 +45,9 @@ DOMAIN,vod-thumb-uk-live.akamaized.net
 DOMAIN,vod-dash-uk-live.bbcfmt.hs.llnwd.net
 DOMAIN,vod-thumb-uk-live.bbcfmt.hs.llnwd.net
 
+# Capital One UK
+DOMAIN-SUFFIX,capitalone.co.uk
+
 # Chase UK
 DOMAIN,api.chase.co.uk
 DOMAIN,static.chase.co.uk
@@ -126,6 +129,13 @@ USER-AGENT,newdaycards*
 USER-AGENT,*newdaycards
 PROCESS-NAME,newdaycards
 
+# moneysupermarket
+DOMAIN-SUFFIX,moneysupermarket.com
+DOMAIN-SUFFIX,clydesdalebank.sc.omtrdc.net
+DOMAIN-SUFFIX,csqtrk.net
+DOMAIN-SUFFIX,mobile-production.content-square.net
+DOMAIN-SUFFIX,cybservices.co.uk
+
 # moneysavingexpert
 DOMAIN,experian.moneysavingexpert.com
 DOMAIN,prod-api.moneysavingexpert.com
@@ -165,6 +175,11 @@ DOMAIN,santander.demdex.net
 DOMAIN,resources.digital-cloud-uk.medallia.eu
 DOMAIN-SUFFIX,santander.co.uk
 
+# sendwave
+DOMAIN,sendwave.zendesk.com
+DOMAIN-SUFFIX,riskified.com
+DOMAIN-SUFFIX,usabilla.com
+
 # Vanquis
 DOMAIN,www.vanquis.co.uk
 DOMAIN,providentfinancialmanagement.d3.sc.omtrdc.net
@@ -176,6 +191,12 @@ USER-AGENT,vanquis
 USER-AGENT,vanquis*
 USER-AGENT,*vanquis
 PROCESS-NAME,vanquis
+
+# worldremit
+DOMAIN-SUFFIX,perimeterx.net
+DOMAIN-SUFFIX,usbla.net
+DOMAIN-SUFFIX,fullstory.com
+DOMAIN-SUFFIX,worldremit.com
 
 # Yonder
 DOMAIN,yonder.page.link
