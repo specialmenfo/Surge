@@ -358,6 +358,16 @@ USER-AGENT,wonder*
 USER-AGENT,*wonder
 PROCESS-NAME,wonder
 
+# WeChatPay 3DS
+DOMAIN,tfs.tenpay.com
+DOMAIN,hkg-counter.everonet.com
+DOMAIN,3dss-cpxy.hitrustpay.com.tw
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,everonet.com
+DOMAIN-SUFFIX,hitrustpay.com.tw
+DOMAIN-KEYWORD,tenpay
+DOMAIN-KEYWORD,hitrustpay
+
 # ZA Bank
 DOMAIN-SUFFIX,za.group
 DOMAIN-KEYWORD,za.group
