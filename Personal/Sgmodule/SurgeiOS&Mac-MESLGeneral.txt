@@ -175,7 +175,6 @@ allow-hotspot-access = true
 🌏 EMBY 換區 = select, 🌏 低倍率, DIRECT, no-alert=1, hidden=0, include-all-proxies=0
 🌏 Equifax = select, 🇺🇲 美國節點, 🇬🇧 英國節點, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0, include-all-proxies=0
 🌏 HBO Go 換區 = select, 🇹🇼 台灣節點, 🇭🇰 香港節點, 🇸🇬 星加坡節點, 🇵🇭 菲律賓節點, 🛑 廣告攔截, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0, include-all-proxies=0
-🌏 HBO Max 換區 = select, 🇦🇷 阿根廷節點, 🇧🇷 巴西節點, 🇭🇰 香港節點, 🇹🇼 台灣節點, 🇸🇬 星加坡節點, no-alert=0, hidden=0, include-all-proxies=0
 🌏 Max 換區 = select, 🇺🇲 美國節點, 🇬🇧 英國節點, 🇩🇪 德國節點, 🇫🇷 法國節點, 🇳🇱 荷蘭節點, 🇦🇷 阿根廷節點, 🇧🇷 巴西節點, 🇭🇰 香港節點, 🇹🇼 台灣節點, 🇸🇬 星加坡節點, no-alert=0, hidden=0, include-all-proxies=0
 🌏 媒體播放選擇 = select, 🌏 低倍率, 🎯 全球直連, 👋 手動選擇, no-alert=1, hidden=0, include-all-proxies=0
 🌏 Mail = select, 🇭🇰 香港節點, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=1, hidden=0, persistent=0, update-interval=0, policy-regex-filter=^(?!.*中国-韩国)(?!.*韩国 전라북도 전주시 商宽)(?!.*IEPL).*🇰🇷, include-all-proxies=0
@@ -302,7 +301,6 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/BiliBiliAuto.list,🌏 BiliBili 換區,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/DAZN.list,🌏 DAZN 換區,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HBOGo.list,🌏 HBO Go 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HBOMAX.list,🌏 HBO Max 換區,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Max.list,🌏 Max 換區,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Oracle.list,🌏 Oracle 換區,no-resolve,extended-matching
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Equifax.list,🌏 Equifax,no-resolve,extended-matching
