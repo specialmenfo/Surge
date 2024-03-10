@@ -30,6 +30,10 @@ IP-CIDR,69.63.0.0/12,no-resolve
 IP-CIDR,69.63.0.0/16,no-resolve
 IP-CIDR,69.63.176.0/20,no-resolve
 
+# KKTV
+DOMAIN,theater-kktv.cdn.hinet.net
+DOMAIN-SUFFIX,theater-kktv.cdn.hinet.net
+
 # Pluto TV 播放
 DOMAIN-SUFFIX,siloh-fs.plutotv.net
 DOMAIN-SUFFIX,siloh-cf.pluto.tv
