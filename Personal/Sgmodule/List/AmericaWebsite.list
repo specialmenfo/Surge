@@ -635,6 +635,9 @@ DOMAIN-SUFFIX,wwwhuluplus.com
 DOMAIN-SUFFIX,yb.uncn.jp
 PROCESS-NAME,com.hulu.plus
 
+# MooMoo
+DOMAIN-SUFFIX,moomoo.com
+
 # Pandora
 DOMAIN-SUFFIX,p-cdn.us
 DOMAIN-SUFFIX,pandora.com
