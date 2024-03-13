@@ -22,6 +22,9 @@ DOMAIN-SUFFIX,kucoin.plus
 DOMAIN-KEYWORD,kucoin
 DOMAIN-KEYWORD,xcoinsystem
 
+# NEXO
+DOMAIN-SUFFIX,nexo.com
+
 # OKX
 DOMAIN,www.ouyicn.blue
 DOMAIN,www.okx.com
