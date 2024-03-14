@@ -165,6 +165,10 @@ USER-AGENT,nationwidebuildingso*
 USER-AGENT,*nationwidebuildingso
 PROCESS-NAME,nationwidebuildingso
 
+# Stake
+DOMAIN,api.prd.hellostake.com
+DOMAIN-KEYWORD,hellostake
+
 # Santander
 DOMAIN,santanderuk.sc.omtrdc.net
 DOMAIN,retail.mobile.santander.co.uk
