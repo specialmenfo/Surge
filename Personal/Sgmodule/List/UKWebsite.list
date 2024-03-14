@@ -166,6 +166,7 @@ USER-AGENT,*nationwidebuildingso
 PROCESS-NAME,nationwidebuildingso
 
 # Stake
+DOMAIN,cdn.contentstack.io
 DOMAIN,api.prd.hellostake.com
 DOMAIN-KEYWORD,hellostake
 
