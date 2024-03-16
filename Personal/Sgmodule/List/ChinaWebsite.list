@@ -8,6 +8,7 @@ DOMAIN,itunes.apple.com
 DOMAIN,lookup-api.apple.com
 DOMAIN,sandbox.itunes.apple.com
 DOMAIN,testflight.apple.com
+DOMAIN,smp-device-asset.apple.com
 DOMAIN-SUFFIX,apple-dns.net
 DOMAIN-SUFFIX,apps.apple.com
 DOMAIN-SUFFIX,appsto.re
@@ -3936,6 +3937,7 @@ DOMAIN-SUFFIX,weibocdn.com
 DOMAIN-KEYWORD,weibo
 
 # WeChat
+DOMAIN-SUFFIX,hitrustpay.com.tw
 DOMAIN-KEYWORD,short.weixin.qq.com
 USER-AGENT,MicroMessenger Client
 IP-ASN,132203
