@@ -185,6 +185,11 @@ DOMAIN,sendwave.zendesk.com
 DOMAIN-SUFFIX,riskified.com
 DOMAIN-SUFFIX,usabilla.com
 
+# Trading212
+DOMAIN-SUFFIX,amplitude.com
+DOMAIN-SUFFIX,trading212.com
+DOMAIN-KEYWORD,trading212
+
 # Vanquis
 DOMAIN,www.vanquis.co.uk
 DOMAIN,providentfinancialmanagement.d3.sc.omtrdc.net
