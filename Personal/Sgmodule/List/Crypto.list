@@ -15,6 +15,12 @@ DOMAIN-KEYWORD,bybit
 DOMAIN-KEYWORD,bybitglobal
 DOMAIN-KEYWORD,bybit-global
 
+# Bitget
+DOMAIN-SUFFIX,bitget.com
+DOMAIN-SUFFIX,bitgetapp.com
+DOMAIN-KEYWORD,bitget
+DOMAIN-KEYWORD,bitgetapp
+
 # Kucoin
 DOMAIN-SUFFIX,xcoinsystem.com
 DOMAIN-SUFFIX,kucoin.com
