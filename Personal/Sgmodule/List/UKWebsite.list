@@ -222,3 +222,11 @@ DOMAIN,yonder.page.link
 DOMAIN,www.yondercard.com
 DOMAIN-SUFFIX,yonder.page.link
 DOMAIN-SUFFIX,yondercard.com
+
+# Zilch
+DOMAIN-SUFFIX,zilch.com
+DOMAIN-SUFFIX,payzilch.com
+DOMAIN-SUFFIX,cashbacksrv.com
+DOMAIN-KEYWORD,zilch
+DOMAIN-KEYWORD,payzilch
+DOMAIN-KEYWORD,cashbacksrv
