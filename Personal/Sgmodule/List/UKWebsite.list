@@ -124,6 +124,11 @@ USER-AGENT,halifax*
 USER-AGENT,*halifax
 PROCESS-NAME,halifax
 
+# iFastGB
+DOMAIN,www.ifastgb.com
+DOMAIN-SUFFIX,ifastgb.com
+DOMAIN-KEYWORD,ifastgb
+
 # JOHN LEWIS & PARTNERS / NEW DAY
 DOMAIN,mobile.newdaycards.com
 DOMAIN,portal-mobile.newdaycards.com
