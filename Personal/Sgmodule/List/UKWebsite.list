@@ -96,6 +96,10 @@ DOMAIN-SUFFIX,experian.co.uk
 DOMAIN-SUFFIX,platformresources.runpathdigital.com
 DOMAIN-SUFFIX,experianidentityservice.co.uk
 
+# Freetrade
+DOMAIN-SUFFIX,freetrade.io
+DOMAIN-KEYWORD,freetrade
+
 # Giffgaff
 DOMAIN,www.giffgaff.com
 DOMAIN-SUFFIX,giffgaff.com
