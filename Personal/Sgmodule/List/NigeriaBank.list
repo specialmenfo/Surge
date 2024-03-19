@@ -31,6 +31,14 @@ DOMAIN,cashex-gateway-34bf7qxe.ue.gateway.dev
 DOMAIN-SUFFIX,cashex.app
 DOMAIN-KEYWORD,cashex
 
+# GT
+DOMAIN-SUFFIX,gtbank.com
+DOMAIN-KEYWORD,gtbank
+
+# Globus
+DOMAIN-SUFFIX,globusbank.com
+DOMAIN-KEYWORD,globusbank
+
 # Klasha
 DOMAIN-SUFFIX,kcookery.com
 
@@ -44,6 +52,10 @@ DOMAIN-SUFFIX,kuda.com
 DOMAIN-SUFFIX,kudabank.com
 DOMAIN-KEYWORD,kuda
 DOMAIN-KEYWORD,kudabank
+
+# LOMA
+DOMAIN-SUFFIX,lomabank.com
+DOMAIN-KEYWORD,lomabank
 
 # NALA
 DOMAIN-SUFFIX,nala.ninja
@@ -62,6 +74,11 @@ DOMAIN-SUFFIX,polarisbanklimited.com
 DOMAIN-KEYWORD,okhi
 DOMAIN-KEYWORD,pocketapp
 DOMAIN-KEYWORD,polarisbanklimited
+
+# Sterling
+DOMAIN-SUFFIX,sterling.ng
+DOMAIN-KEYWORD,sterling
+DOMAIN-KEYWORD,onebank
 
 # Stateside Bank
 DOMAIN-SUFFIX,statesidebank.com
