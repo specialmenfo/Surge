@@ -88,3 +88,7 @@ DOMAIN,sparkleapp.com
 DOMAIN,apigateway.sparkleapp.in
 DOMAIN-SUFFIX,sparkleapp.com
 DOMAIN-SUFFIX,sparkleapp.in
+
+# Titan
+DOMAIN-SUFFIX,titantrustbank.com
+DOMAIN-KEYWORD,titantrustbank
