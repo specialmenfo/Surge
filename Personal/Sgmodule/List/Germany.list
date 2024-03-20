@@ -18,6 +18,10 @@ USER-AGENT,advanzia*
 USER-AGENT,*advanzia
 PROCESS-NAME,advanzia
 
+# Bonify
+DOMAIN-SUFFIX,bonify.de
+DOMAIN-KEYWORD,bonify
+
 # N26（DE）
 DOMAIN,api.tech26.de
 DOMAIN,cdn.number26.de
