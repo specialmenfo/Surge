@@ -6,6 +6,10 @@ DOMAIN,abujaralatsignalr.azurewebsites.net
 DOMAIN-SUFFIX,alat.ng
 DOMAIN-KEYWORD,alat
 
+# Access
+DOMAIN-SUFFIX,accessbankplc.com
+DOMAIN-KEYWORD,accessbankplc
+
 # BlinkCash
 DOMAIN-SUFFIX,blinkcash.ng
 
