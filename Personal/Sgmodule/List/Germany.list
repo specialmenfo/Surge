@@ -22,6 +22,9 @@ PROCESS-NAME,advanzia
 DOMAIN-SUFFIX,bonify.de
 DOMAIN-KEYWORD,bonify
 
+# Coinbase
+DOMAIN-SUFFIX,cb-w.com
+
 # N26（DE）
 DOMAIN,api.tech26.de
 DOMAIN,cdn.number26.de
