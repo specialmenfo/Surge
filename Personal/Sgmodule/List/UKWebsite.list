@@ -230,3 +230,6 @@ DOMAIN-SUFFIX,cashbacksrv.com
 DOMAIN-KEYWORD,zilch
 DOMAIN-KEYWORD,payzilch
 DOMAIN-KEYWORD,cashbacksrv
+
+# GOV
+DOMAIN-SUFFIX,gov.uk
