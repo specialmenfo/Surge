@@ -16,6 +16,19 @@ DOMAIN-SUFFIX,blobstore.apple.com
 DOMAIN-SUFFIX,digicert.com
 USER-AGENT,com.apple.trustd*
 
+# Anytimemailbox
+DOMAIN,eu.clevver.io
+DOMAIN,api.anytimemailbox.com
+DOMAIN,www.anytimemailbox.com
+DOMAIN,cdn.anytimemailbox.com
+DOMAIN,anytimemailbox.referralrock.com
+DOMAIN,bigboxhk.anytimemailbox.com
+DOMAIN,london-portal.ukmailboxdirect.co.uk
+DOMAIN-SUFFIX,clevver.io
+DOMAIN-SUFFIX,ukmailboxdirect.co.uk
+DOMAIN-SUFFIX,anytimemailbox.com
+DOMAIN-SUFFIX,referralrock.com
+
 # Fiverr
 DOMAIN-SUFFIX,fiverr.com
 DOMAIN-KEYWORD,fiverr
