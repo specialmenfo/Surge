@@ -2,6 +2,9 @@
 DOMAIN-SUFFIX,buy.itunes.apple.com
 DOMAIN-SUFFIX,*buy.itunes.apple.com
 
+# AlipayPlus
+DOMAIN-SUFFIX,alipayplus.com
+
 # 數字居民
 DOMAIN-SUFFIX,shuzijumin.com
 
