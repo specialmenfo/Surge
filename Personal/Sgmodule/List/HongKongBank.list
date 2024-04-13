@@ -8,9 +8,6 @@ USER-AGENT,airstarbank*
 USER-AGENT,*airstarbank
 PROCESS-NAME,airstarbank
 
-# AlipayPlus
-DOMAIN-SUFFIX,alipayplus.com
-
 # BOCHK
 DOMAIN,bochk01.etnet.com.hk
 DOMAIN-SUFFIX,bochk.com
