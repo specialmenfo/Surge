@@ -83,7 +83,6 @@ DOMAIN-SUFFIX,acxiom-online.com
 DOMAIN-SUFFIX,rlcdn.com
 DOMAIN-SUFFIX,linksynergy.com
 DOMAIN-SUFFIX,entrust.net
-DOMAIN-SUFFIX,safebrowsing.apple
 USER-AGENT,chasecdn
 USER-AGENT,chasecdn*
 USER-AGENT,*chasecdn
