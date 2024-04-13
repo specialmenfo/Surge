@@ -1,6 +1,10 @@
 # Google
 DOMAIN-SUFFIX,g.doubleclick.net
 
+# AD Block
+DOMAIN-SUFFIX,ad.doubleclick.net
+DOMAIN-SUFFIX,adnetwork.adasiaholdings.com
+
 # Hulu Website
 #DOMAIN-SUFFIX,ads-e-darwin.hulustream.com
 #DOMAIN-SUFFIX,ads-a-darwin.hulustream.com
