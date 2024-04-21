@@ -175,6 +175,9 @@ USER-AGENT,nationwidebuildingso*
 USER-AGENT,*nationwidebuildingso
 PROCESS-NAME,nationwidebuildingso
 
+# Paysend
+DOMAIN-KEYWORD,paysend
+
 # Stake
 DOMAIN,cdn.contentstack.io
 DOMAIN,api.prd.hellostake.com
