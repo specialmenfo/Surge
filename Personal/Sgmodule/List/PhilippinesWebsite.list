@@ -28,7 +28,7 @@ DOMAIN-SUFFIX,live-cortex-gw.al.ep.cloudops.globe.com.ph
 DOMAIN,gcash-api.pulseid.com,extended-matching
 DOMAIN-SUFFIX,gcash.com,extended-matching
 DOMAIN-SUFFIX,.gcash.com,extended-matching
-DOMAIN-SUFFIX,www.gcash.com,extended-matching
+DOMAIN-SUFFIX,mynt.xyz,extended-matching
 DOMAIN-KEYWORD,gcash,extended-matching
 
 # Smart
