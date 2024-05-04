@@ -635,6 +635,9 @@ DOMAIN-SUFFIX,wwwhuluplus.com
 DOMAIN-SUFFIX,yb.uncn.jp
 PROCESS-NAME,com.hulu.plus
 
+# IDME
+DOMAIN-SUFFIX,id.me
+
 # MooMoo
 DOMAIN-SUFFIX,moomoo.com
 
