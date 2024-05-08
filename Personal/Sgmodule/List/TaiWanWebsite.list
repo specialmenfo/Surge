@@ -7,7 +7,6 @@ DOMAIN,intl-im-hist-api.iqiyi.com
 DOMAIN,intl-subscription.iqiyi.com
 DOMAIN-SUFFIX,intl.iqiyi.com
 DOMAIN-SUFFIX,msg-intl.qy.net
-USER-AGENT,QYPlayer*
 
 # CATCHPLAY+
 USER-AGENT,CATCHPLAY*
