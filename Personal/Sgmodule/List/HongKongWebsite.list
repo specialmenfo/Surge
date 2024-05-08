@@ -82,11 +82,6 @@ DOMAIN,csl.prod.ondemandconnectivity.com
 # Hcaptcha
 DOMAIN,hcaptcha.com
 
-# Stripe
-DOMAIN-SUFFIX,stripecdn.com
-DOMAIN-SUFFIX,stripe.com
-DOMAIN-KEYWORD,stripe
-
 # HBO Go 國際區換區播放（搭配HBOGo.list換區）
 DOMAIN,onwardsmg.com
 DOMAIN,mahmlcgaq0tuqn2ksc0kgfmgb.litix.io
