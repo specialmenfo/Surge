@@ -1,4 +1,14 @@
 # iQiYiTW
+DOMAIN,api.iq.com
+DOMAIN,tv-api2.iq.com
+DOMAIN,intl-rcd.iqiyi.com
+DOMAIN,cache.video.iqiyi.com
+DOMAIN,intl-im-hist-api.iqiyi.com
+DOMAIN,intl-subscription.iqiyi.com
+DOMAIN-SUFFIX,iq.com
+DOMAIN-SUFFIX,intl.iqiyi.com
+DOMAIN-SUFFIX,msg-intl.qy.net
+
 DOMAIN,cache.video.iqiyi.com
 DOMAIN-SUFFIX,inter.iqiyi.com
 DOMAIN-SUFFIX,intl-rcd.iqiyi.com
