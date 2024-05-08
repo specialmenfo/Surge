@@ -77,6 +77,11 @@ DOMAIN,authds.todesk.com
 DOMAIN,todeskcdnspeed.todesk.com
 DOMAIN-SUFFIX,todesk.com
 
+# Stripe
+DOMAIN-SUFFIX,stripecdn.com
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-KEYWORD,stripe
+
 # iQ 播放
 DOMAIN,ip.geo.iqiyi.com
 DOMAIN,akmcdnoversea.inter.iqiyi.com
