@@ -75,6 +75,7 @@ DOMAIN-SUFFIX,alipay.com
 
 # 數字居民
 DOMAIN-SUFFIX,shuzijumin.com
+DOMAIN-KEYWORD,shuzijumin
 
 # CLUB SIM Wi-Fi Call
 DOMAIN,csl.prod.ondemandconnectivity.com
