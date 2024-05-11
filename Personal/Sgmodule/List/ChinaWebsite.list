@@ -167,6 +167,7 @@ DOMAIN-SUFFIX,airwallex.com
 DOMAIN-KEYWORD,seagm
 DOMAIN-SUFFIX,seagm.com
 DOMAIN,livechat.seagm.com
+IP-CIDR,104.18.0.0/16,no-resolve
 
 # yunteacher
 DOMAIN-SUFFIX,yunteacher.com
