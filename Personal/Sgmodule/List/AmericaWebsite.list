@@ -749,6 +749,9 @@ USER-AGENT,offerup*
 USER-AGENT,*offerup
 PROCESS-NAME,offerup
 
+# OLT
+DOMAIN-SUFFIX,olt.com
+
 # Pluto TV
 DOMAIN,service-vod.clusters.pluto.tv
 DOMAIN,boot.pluto.tv
