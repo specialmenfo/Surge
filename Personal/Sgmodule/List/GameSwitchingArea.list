@@ -156,6 +156,9 @@ DOMAIN-SUFFIX,dl.codm.cdn.garenanow.com
 DOMAIN-SUFFIX,image.garena.tw
 DOMAIN-SUFFIX,dlgarenanow-a.akamaihd.net
 DOMAIN-SUFFIX,cdn-1302064167.file.myqcloud.com
+DOMAIN-SUFFIX,codm.garena.com
+DOMAIN-SUFFIX,garenanow.com
+DOMAIN-SUFFIX,codm.activision.com
 
 # Classic
 DOMAIN,asia.battle.net
