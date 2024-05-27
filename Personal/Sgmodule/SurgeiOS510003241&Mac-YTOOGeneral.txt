@@ -34,9 +34,12 @@ http://boxjs.com
 🍿️ DualSubs: 🎵 Spotify：https://raw.githubusercontent.com/DualSubs/Spotify/main/modules/DualSubs.Spotify.sgmodule
 🍿️ DualSubs: 🎵 Spotify Transcripts：https://raw.githubusercontent.com/DualSubs/Spotify/main/modules/DualSubs.Spotify.Transcripts.sgmodule
 Script Hub: 重寫 & 規則集轉換： https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.surge.sgmodule
+Script Module：
+https://raw.githubusercontent.com/HotKids/Rules/master/Surge/Module/Script.sgmodule
+StartUp：
+http://script.hub/file/_start_/https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/StartUp.conf/_end_/StartUp.sgmodule?type=qx-rewrite&target=surge-module&del=true
 Skip Proxy：https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/Sgmodule/Skip%20Proxy.sgmodule
 Skip Proxy Lists：https://raw.githubusercontent.com/mieqq/mieqq/master/skip-proxy-lists.sgmodule
-去廣告：https://raw.githubusercontent.com/HotKids/Rules/master/Surge/Module/Script.sgmodule
 
 
 Boxjs倉庫：
@@ -57,11 +60,11 @@ http://boxjs.com/#/sub/add/https%3A%2F%2Fgithub.com%2FDualSubs%2FBoxJs%2Fraw%2Fm
 # ---(通用)---
 # 延遲測試
 # INTERNET 測試 URL
-internet-test-url = http://bing.com
+internet-test-url = http://www.baidu.com
 # 代理測速 URL
-proxy-test-url = http://www.gstatic.com/generate_204
+proxy-test-url = http://www.google.com/generate_204
 # 測試超時（秒）
-test-timeout = 2
+test-timeout = 5
 # ------
 # ---(高級)---
 # 日誌級別
@@ -81,17 +84,17 @@ wifi-assist = false
 # ------
 # ---(Wi-Fi 訪問)---
 allow-wifi-access = true
-wifi-access-http-port = 四位數字
-wifi-access-socks5-port = 四位數字
+wifi-access-http-port = 8888
+wifi-access-socks5-port = 7777
 # ------
 # ---(遠程控制器)---
 # 允許 Surge 請求查看器或 Surge CLI 進行管理控制。
 # 如果允許由 Wi-Fi 控制則將「127.0.0.1」修改為「0.0.0.0」
-# external-controller-access = password@0.0.0.0:四位數端口
+# external-controller-access = password@0.0.0.0:6170
 # ------
 # ---(兼容性)---
 # 兼容模式
-compatibility-mode = 3
+compatibility-mode = 1
 # ------
 # 排除简单主机名
 exclude-simple-hostnames = true
@@ -108,7 +111,7 @@ network-framework = false
 show-error-page-for-reject = true
 # ------
 # Surge 接管 Apple Push Notification
-include-apns = true
+include-apns = false
 # ------
 # VIF Excluded Routes
 # Surge VIF 只能處理 TCP 和 UDP 協議。使用此選項可以繞過特定的 IP 範圍，允許所有流量通過。
@@ -128,21 +131,23 @@ hijack-dns = 8.8.8.8:53, 8.8.4.4:53
 # ------
 # TCP Force HTTP Hosts
 # 讓 Surge 把 TCP 連接當作 HTTP 請求來處理。Surge HTTP 引擎將處理這些請求，所有的高級功能，如捕獲、重寫和腳本等都可以使用。
-force-http-engine-hosts = *.hls.row.aiv-cdn.net, *avodhlss3ww-a.akamaihd.net, d25xi40x97liuc.cloudfront.net, dmqdd6hw24ucf.cloudfront.net, d22qjgkvxw22r6.cloudfront.net, d1v5ir2lpwr8os.cloudfront.net, d27xxe7juh1us6.cloudfront.net, assets.huluim.com, vod-*.live.cf.md.bbci.co.uk, vod-*-live.akamaized.net, *.hls.row.aiv-cdn.net, *avodhlss3ww-a.akamaihd.net, d25xi40x97liuc.cloudfront.net, dmqdd6hw24ucf.cloudfront.net, d22qjgkvxw22r6.cloudfront.net, d1v5ir2lpwr8os.cloudfront.net, d27xxe7juh1us6.cloudfront.net, assets.huluim.com, vod-*.live.cf.md.bbci.co.uk, vod-*-live.akamaized.net, sub.store, boxjs.com, boxjs.net, www.google.cn
+force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net, *.hls.row.aiv-cdn.net, *avodhlss3ww-a.akamaihd.net, d25xi40x97liuc.cloudfront.net, dmqdd6hw24ucf.cloudfront.net, d22qjgkvxw22r6.cloudfront.net, d1v5ir2lpwr8os.cloudfront.net, d27xxe7juh1us6.cloudfront.net, assets.huluim.com, vod-*.live.cf.md.bbci.co.uk, vod-*-live.akamaized.net, *.hls.row.aiv-cdn.net, *avodhlss3ww-a.akamaihd.net, d25xi40x97liuc.cloudfront.net, dmqdd6hw24ucf.cloudfront.net, d22qjgkvxw22r6.cloudfront.net, d1v5ir2lpwr8os.cloudfront.net, d27xxe7juh1us6.cloudfront.net, assets.huluim.com, vod-*.live.cf.md.bbci.co.uk, vod-*-live.akamaized.net, sub.store, boxjs.com, boxjs.net, www.google.cn
 # ------
 # HTTP API & Web 控制器
 http-api-tls = false
 http-api-web-dashboard = true
-http-api = 密碼@0.0.0.0:四位數端口
+http-api = password@0.0.0.0:666
 # ------
 # GeoIP
-geoip-maxmind-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb
+geoip-maxmind-url = https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
 # ------
 # ---(DNS 服務器)---
-dns-server = 223.5.5.5, 8.8.8.8, 119.29.29.29, 114.114.114.114
-udp-priority = true
+dns-server = 223.5.5.5, 8.8.8.8
+# 从/etc/hosts读取 DNS 记录
+read-etc-hosts = true
 # ------
 # UDP優先
+udp-priority = true
 # desc=遊戲模式,開啓後會提高處理 UDP 流量的優先級，當系統負載高時會有比較明顯的作用（如高性能聯機遊戲）
 udp-policy-not-supported-behaviour = DIRECT
 # ------
@@ -150,15 +155,16 @@ udp-policy-not-supported-behaviour = DIRECT
 include-all-networks = false
 # ------
 # Other
-include-local-networks = true
+include-local-networks = false
 all-hybrid = false
 http-listen = 0.0.0.0
 socks5-listen = 0.0.0.0
 use-local-host-item-for-proxy = true
 always-raw-tcp-hosts = *.openai.com, *.115.com, www.google.com, 91.108.56.*, 91.108.4.*, 91.108.8.*, 91.108.16.*, 91.108.12.*, 149.154.16*, 149.154.17*, 91.108.20.*, 185.76.151.*, 91.105.192.*, 5.28.19*, 192.168.50.*
 include-cellular-services = false
-external-controller-access = 6位數密碼@0.0.0.0:四位數端口
+external-controller-access = password@0.0.0.0:5555
 allow-hotspot-access = true
+auto-suspend = false
 
 [Proxy Group]
 💳 AMEX 換區 = select, 🇺🇲 美國節點, 🇬🇧 英國節點, 🇭🇰 香港節點, 🇩🇪 德國節點, 🇵🇭 菲律賓節點, 🇹🇼 台灣節點, 🇸🇬 星加坡節點, 🇫🇷 法國節點, 🇯🇵 日本節點, 🇦🇺 澳洲節點, 🇰🇷 南韓節點, 🇧🇷 巴西節點, 🇲🇾 馬來西亞節點, 🇦🇷 阿根廷節點, 🇹🇷 土耳其節點, 👋 手動選擇, no-alert=0, hidden=0, include-all-proxies=0
@@ -175,7 +181,6 @@ allow-hotspot-access = true
 🌏 EMBY 換區 = select, 🌏 低倍率, DIRECT, no-alert=1, hidden=0, include-all-proxies=0
 🌏 Equifax = select, 🇺🇲 美國節點, 🇬🇧 英國節點, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0, include-all-proxies=0
 🌏 HBO Go 換區 = select, 🇹🇼 台灣節點, 🇭🇰 香港節點, 🇸🇬 星加坡節點, 🇵🇭 菲律賓節點, 🛑 廣告攔截, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0, include-all-proxies=0
-🌏 HBO Max 換區 = select, 🇦🇷 阿根廷節點, 🇧🇷 巴西節點, 🇭🇰 香港節點, 🇹🇼 台灣節點, 🇸🇬 星加坡節點, no-alert=0, hidden=0, include-all-proxies=0
 🌏 Max 換區 = select, 🇺🇲 美國節點, 🇬🇧 英國節點, 🇩🇪 德國節點, 🇫🇷 法國節點, 🇳🇱 荷蘭節點, 🇦🇷 阿根廷節點, 🇧🇷 巴西節點, 🇭🇰 香港節點, 🇹🇼 台灣節點, 🇸🇬 星加坡節點, no-alert=0, hidden=0, include-all-proxies=0
 🌏 媒體播放選擇 = select, 🌏 低倍率, 🎯 全球直連, 👋 手動選擇, no-alert=1, hidden=0, include-all-proxies=0
 🌏 Mail = select, 🎯 全球直連, 🐟 漏網之魚, 👋 手動選擇, no-alert=1, hidden=0, persistent=0, update-interval=0, policy-regex-filter=^(?!.*中国-韩国)(?!.*韩国 전라북도 전주시 商宽)(?!.*IEPL).*🇰🇷, include-all-proxies=0
@@ -186,6 +191,7 @@ allow-hotspot-access = true
 🌏 Viu 換區 = select, 🇭🇰 香港節點, 🇸🇬 星加坡節點, 🇵🇭 菲律賓節點, 👋 手動選擇, no-alert=0, hidden=0, update-interval=0, include-all-proxies=0
 🏦 香港銀行 = select, 🇭🇰 香港節點, 🎯 全球直連, 🇹🇼 台灣節點, 🇸🇬 星加坡節點, 🇯🇵 日本節點, 🇺🇲 美國節點, 🇦🇺 澳洲節點, 🇬🇧 英國節點, 🇰🇷 南韓節點, 🇩🇪 德國節點, 🇫🇷 法國節點, 🇵🇭 菲律賓節點, 🇲🇾 馬來西亞節點, 🇦🇷 阿根廷節點, 🇹🇷 土耳其節點, 👋 手動選擇, no-alert=0, hidden=0, include-all-proxies=0
 🏦 美國銀行 = select, 🇺🇲 美國節點, 🇭🇰 香港節點, 🎯 全球直連, 🇹🇼 台灣節點, 🇸🇬 星加坡節點, 🇯🇵 日本節點, 🇦🇺 澳洲節點, 🇬🇧 英國節點, 🇰🇷 南韓節點, 🇩🇪 德國節點, 🇫🇷 法國節點, 🇵🇭 菲律賓節點, 🇲🇾 馬來西亞節點, 🇦🇷 阿根廷節點, 🇹🇷 土耳其節點, 👋 手動選擇, no-alert=0, hidden=0, include-all-proxies=0
+🏦 奈及利亞銀行 = select, 🇳🇬 奈及利亞節點, 🇺🇲 美國節點, 🇭🇰 香港節點, 🎯 全球直連, 🇹🇼 台灣節點, 🇸🇬 星加坡節點, 🇯🇵 日本節點, 🇦🇺 澳洲節點, 🇬🇧 英國節點, 🇰🇷 南韓節點, 🇩🇪 德國節點, 🇫🇷 法國節點, 🇵🇭 菲律賓節點, 🇲🇾 馬來西亞節點, 🇦🇷 阿根廷節點, 🇹🇷 土耳其節點, 👋 手動選擇, no-alert=0, hidden=0, include-all-proxies=0
 🌏 遊戲/主機換區 = select, 🌏 遊戲專用, 🎯 全球直連, 🇭🇰 香港節點, 🇹🇼 台灣節點, 🇸🇬 星加坡節點, 🇯🇵 日本節點, 🇺🇲 美國節點, 🇦🇺 澳洲節點, 🇬🇧 英國節點, 🇰🇷 南韓節點, 🇩🇪 德國節點, 🇫🇷 法國節點, 🇵🇭 菲律賓節點, 🇲🇾 馬來西亞節點, 🇦🇷 阿根廷節點, 🇹🇷 土耳其節點, 👋 手動選擇, no-alert=0, hidden=0, include-all-proxies=0
 🌏 遊戲專用 = select, 🇭🇰 香港節點, 🇸🇬 星加坡節點, 🎯 全球直連, 👋 手動選擇, update-interval=0, policy-regex-filter=^(?!.*VIP6)(?!.*中国-香港)(?!.*中港)(?!.*油尖旺)(?!.*防失联)(?!.*沪港)(?!.*Xin)(?!.*Lshiy)(?!.*HKT 02)(?!.*HKT 03)(?!.*HKT 05)(?!.*香港 02)(?!.*香港 05)(?!.*香港 01)(?!.*香港 03)(?!.*香港 04)(?!.*HKT).*🇭🇰, no-alert=0, hidden=0, include-all-proxies=0
 🌏 低倍率 = url-test, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=0, policy-regex-filter=(0.2)|(0.5)|(0.1), no-alert=1, hidden=0, include-all-proxies=0
@@ -200,10 +206,12 @@ allow-hotspot-access = true
 🇺🇸 美國Website = select, 🇺🇲 美國節點, no-alert=1, hidden=0, update-interval=0, include-all-proxies=0
 🇬🇧 英國Website = select, 🇬🇧 英國節點, 👋 手動選擇, no-alert=1, hidden=0, update-interval=0, include-all-proxies=0
 🇩🇪 德國Website = select, 🇩🇪 德國節點, 👋 手動選擇, no-alert=1, hidden=0, update-interval=0, include-all-proxies=0
+🇳🇱 荷蘭 Website = select, 🇳🇱 荷蘭節點, no-alert=0, hidden=0, include-all-proxies=0
 🇵🇭 菲律賓Website = select, 🇵🇭 菲律賓節點, 👋 手動選擇, no-alert=1, hidden=0, update-interval=0, include-all-proxies=0
 🇷🇺 俄羅斯Website = select, 🇷🇺 俄羅斯節點, 👋 手動選擇, no-alert=0, hidden=0, include-all-proxies=0
 🇨🇦 加拿大Website = select, 🇨🇦 加拿大節點, 👋 手動選擇, no-alert=0, hidden=0, include-all-proxies=0, update-interval=0
 🇹🇷 土耳其Website = select, 🇹🇷 土耳其節點, 🇭🇰 香港節點, 🇵🇭 菲律賓節點, 🎯 全球直連, 🇹🇼 台灣節點, 🇸🇬 星加坡節點, 🇯🇵 日本節點, 🇺🇲 美國節點, 🇦🇺 澳洲節點, 🇬🇧 英國節點, 🇰🇷 南韓節點, 🇩🇪 德國節點, 🇫🇷 法國節點, 🇲🇾 馬來西亞節點, 🇦🇷 阿根廷節點, 👋 手動選擇, no-alert=0, hidden=0, include-all-proxies=0
+🇲🇾 馬來西亞Website = select, 🇲🇾 馬來西亞節點, no-alert=0, hidden=0, include-all-proxies=0
 🇭🇰 香港節點 = url-test, no-alert=1, hidden=0, persistent=0, update-interval=3600, policy-regex-filter=^(?!.*防失联)(?!.*Xin)(?!.*Lshiy)(?!.*HKT 02)(?!.*HKT 03)(?!.*HKT 05)(?!.*HKT)(?!.*3X)(?!.*6X)(?!.*HK4 Eons).*🇭🇰, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink
 🇹🇼 台灣節點 = url-test, no-alert=1, hidden=0, persistent=1, update-interval=3600, policy-regex-filter=^(?!.*3X)(?!.*6X).*🇹🇼, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink
 🇯🇵 日本節點 = url-test, no-alert=1, hidden=0, persistent=1, update-interval=3600, policy-regex-filter=^(?!.*3X)(?!.*6X).*🇯🇵, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink
@@ -219,12 +227,9 @@ allow-hotspot-access = true
 🇹🇭 泰國節點 = url-test, policy-regex-filter=🇹🇭, no-alert=1, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600
 🇮🇩 印尼節點 = url-test, update-interval=3600, policy-regex-filter=🇮🇩, no-alert=1, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink
 🇳🇱 荷蘭節點 = url-test, policy-regex-filter=🇳🇱, no-alert=1, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600
-🇵🇱 波蘭節點 = url-test, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600, policy-regex-filter=🇵🇱, no-alert=1, hidden=0, include-all-proxies=0
 🇪🇬 埃及節點 = url-test, policy-regex-filter=🇪🇬, no-alert=1, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600
 🇿🇦 南非節點 = url-test, policy-regex-filter=🇿🇦, no-alert=1, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600
-🇮🇸 冰島節點 = url-test, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600, policy-regex-filter=🇮🇸, no-alert=1, hidden=0, include-all-proxies=0
 🇦🇪 迪拜節點 = url-test, update-interval=3600, no-alert=1, hidden=0, include-all-proxies=0, policy-path=https://gist.githubusercontent.com/githubname/gistlink, policy-regex-filter=🇦🇪
-🇰🇵 北韓節點 = url-test, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600, policy-regex-filter=🇰🇵, no-alert=1, hidden=0, include-all-proxies=0
 🇸🇬 星加坡節點 = url-test, no-alert=1, hidden=0, persistent=1, update-interval=3600, policy-regex-filter=^(?!.*定时)(?!.*3X)(?!.*6X)(?!.*新加坡-Xu)(?!.*新加坡-D).*🇸🇬, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink
 🇵🇭 菲律賓節點 = url-test, no-alert=1, hidden=0, persistent=1, update-interval=3600, policy-regex-filter=^(?!.*🇵🇭 菲律宾).*🇵🇭, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink
 🇦🇷 阿根廷節點 = url-test, no-alert=1, hidden=0, persistent=1, update-interval=3600, policy-regex-filter=🇦🇷, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink
@@ -235,8 +240,6 @@ allow-hotspot-access = true
 🇷🇺 俄羅斯節點 = url-test, policy-regex-filter=🇷🇺, no-alert=1, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600
 🇮🇹 義大利節點 = url-test, policy-regex-filter=🇮🇹, no-alert=1, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600
 🇭🇺 匈牙利節點 = url-test, policy-regex-filter=🇭🇺, no-alert=1, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600
-🇮🇱 以色列節點 = url-test, policy-regex-filter=🇮🇱, no-alert=1, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600
-🇦🇶 南極洲節點 = url-test, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600, policy-regex-filter=🇦🇶, no-alert=1, hidden=0, include-all-proxies=0
 🇲🇾 馬來西亞節點 = url-test, update-interval=3600, policy-regex-filter=🇲🇾, no-alert=1, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink
 🇲🇩 摩爾多瓦節點 = url-test, policy-regex-filter=🇲🇩, no-alert=1, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600
 🇵🇰 巴基斯坦節點 = url-test, policy-regex-filter=🇵🇰, no-alert=1, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com/githubname/gistlink, update-interval=3600
@@ -247,102 +250,63 @@ allow-hotspot-access = true
 # SUBNET,SSID:Wi-Fi Name,DIRECT
 # Rule
 # 繞過系統請求（Bypass-System）選項，所以在某些情況下會造成系統推送延遲（例如在兜底全局規則是走代理的情況下），需要對蘋果的某些服務設置專門的直連規則。
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AppleSystemRelated.list,🎯 全球直連,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaDNS/ChinaDNS.list,🎯 全球直連,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/WeChat.list,🎯 全球直連,no-resolve,extended-matching
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AppleSystemRelated.list,🎯 全球直連
 # 阻止所有UDP流量到端口443，使HTTP3請求退回到TCP流量
 AND,((PROTOCOL,UDP), (DEST-PORT,443)),REJECT-NO-DROP
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ADBlock.list,REJECT,no-resolve,extended-matching
-# RULE-SET,https://ruleset.skk.moe/List/non_ip/reject.conf,REJECT,no-resolve,extended-matching
-# DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,REJECT-TINYGIF,extended-matching
-# DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject_phishing.conf,REJECT,extended-matching
-# RULE-SET,https://ruleset.skk.moe/List/ip/reject.conf,REJECT-DROP,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Mail.list,🌏 Mail,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/TaiWanWebsite.list,🇹🇼 台灣Website,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HongKongWebsite.list,🇭🇰 香港Website,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/mediaplayback.list,🌏 媒體播放選擇,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Disney%2B.list,🌏 Disney+ 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Viu.list,🌏 Viu 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Netflix.list,🌏 Netflix,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Separately.list,🎯 全球直連,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AmericanExpress.list,💳 AMEX 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AmericaWebsite.list,🇺🇸 美國Website,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/TurkeyWebsite.list,🇹🇷 土耳其Website,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/PayPal.list,🌏 PayPal,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/PhilippinesWebsite.list,🇵🇭 菲律賓Website,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AustraliaWebsite.list,🇦🇺 澳洲Website,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/UKWebsite.list,🇬🇧 英國Website,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Germany.list,🇩🇪 德國Website,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/JapanWebsite.list,🇯🇵 日本Website,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/CanadaWebsite.list,🇨🇦 加拿大Website,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/RussiaWebsite.list,🇷🇺 俄羅斯Website,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Paramount%2B.list,🌏 Paramount+ 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/BiliBiliAuto.list,🌏 BiliBili 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/DAZN.list,🌏 DAZN 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HBOGo.list,🌏 HBO Go 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HBOMAX.list,🌏 HBO Max 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Max.list,🌏 Max 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Oracle.list,🌏 Oracle 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Equifax.list,🌏 Equifax,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AfreecaTV.list,🇰🇷 AfreecaTV,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/EMBY.list,🌏 EMBY 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Carousell.list,🌏 Carousell 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Codashop.list,🌏 CodaShop 換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Lazada%26Shopee.list,🌏 東南亞購物平台,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Crypto.list,🌏 Crypto,no-resolve,extended-matching
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/NetworkInfo.list,🌏 Network INFO
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ADBlock.list,REJECT
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Mail.list,🌏 Mail
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/TaiWanWebsite.list,🇹🇼 台灣Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/PhilippinesWebsite.list,🇵🇭 菲律賓Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HongKongWebsite.list,🇭🇰 香港Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/mediaplayback.list,🌏 媒體播放選擇
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Disney%2B.list,🌏 Disney+ 換區
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Viu.list,🌏 Viu 換區
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Netflix.list,🌏 Netflix
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Separately.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AmericanExpress.list,💳 AMEX 換區
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AmericaWebsite.list,🇺🇸 美國Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/TurkeyWebsite.list,🇹🇷 土耳其Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/PayPal.list,🌏 PayPal
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AustraliaWebsite.list,🇦🇺 澳洲Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/UKWebsite.list,🇬🇧 英國Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Germany.list,🇩🇪 德國Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/JapanWebsite.list,🇯🇵 日本Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/CanadaWebsite.list,🇨🇦 加拿大Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/RussiaWebsite.list,🇷🇺 俄羅斯Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/MalaysiaWebsite.list,🇲🇾 馬來西亞Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/NetherlandsWebsite.list,🇳🇱 荷蘭 Website
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Paramount%2B.list,🌏 Paramount+ 換區
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/BiliBiliAuto.list,🌏 BiliBili 換區
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/DAZN.list,🌏 DAZN 換區
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HBOGo.list,🌏 HBO Go 換區
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Max.list,🌏 Max 換區
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Oracle.list,🌏 Oracle 換區
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Equifax.list,🌏 Equifax
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AfreecaTV.list,🇰🇷 AfreecaTV
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/EMBY.list,🌏 EMBY 換區
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Carousell.list,🌏 Carousell 換區
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Codashop.list,🌏 CodaShop 換區
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Lazada%26Shopee.list,🌏 東南亞購物平台
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Crypto.list,🌏 Crypto
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Cloudflare.list,🇭🇰 香港節點
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/CloudflareCN.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HongKongBank.list,🏦 香港銀行
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/UnitedStatesBank.list,🏦 美國銀行
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/NigeriaBank.list,🏦 奈及利亞銀行
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/GameSwitchingArea.list,🌏 遊戲/主機換區
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ChatGPT.list,🌏 ChatGPT
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Amazon.list,🌏 Amazon
 AND,((PROTOCOL,UDP), (RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/T-MobileWi-FiCall.list)),🇺🇲 美國節點
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Cloudflare.list,🇭🇰 香港Website,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/CloudflareCN.list,🎯 全球直連,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HongKongBank.list,🏦 香港銀行,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/UnitedStatesBank.list,🏦 美國銀行,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/NigeriaBank.list,🏦 奈及利亞銀行,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/GameSwitchingArea.list,🌏 遊戲/主機換區,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ChatGPT.list,🌏 ChatGPT,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ChinaWebsite.list,🎯 全球直連,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Direct/Direct.list,🎯 全球直連,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/auto-update/ruleset/ASN.China.list,🎯 全球直連,no-resolve,extended-matching
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Amazon.list,🌏 Amazon,no-resolve,extended-matching
-RULE-SET,LAN,🎯 全球直連
-GEOIP,CN,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Direct/Direct.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ChinaWebsite.list,🎯 全球直連
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/WeChat.list,🎯 全球直連
+RULE-SET,LAN,🎯 全球直連,no-resolve
+GEOIP,CN,🎯 全球直連,no-resolve
 FINAL,🐟 漏網之魚,dns-failed
 
 [Host]
 ip-api.com = 208.95.112.1
-ip6-localhost = ::1
-ip6-loopback = ::1
-taobao.com = server:223.6.6.6
-*.taobao.com = server:223.6.6.6
-tmall.com = server:223.6.6.6
-*.tmall.com = server:223.6.6.6
-jd.com = server:119.29.29.29
-*.jd.com = server:119.28.28.28
-*.qq.com = server:119.28.28.28
-*.tencent.com = server:119.28.28.28
-*.alicdn.com = server:223.5.5.5
-aliyun.com = server:223.5.5.5
-*.aliyun.com = server:223.5.5.5
-weixin.com = server:119.28.28.28
-*.weixin.com = server:119.28.28.28
-bilibili.com = server:119.29.29.29
-*.bilibili.com = server:119.29.29.29
-hdslb.com = server:119.29.29.29
-163.com = server:119.29.29.29
-*.163.com = server:119.29.29.29
-126.com = server:119.29.29.29
-*.126.com = server:119.29.29.29
-*.126.net = server:119.29.29.29
-*.127.net = server:119.29.29.29
-*.netease.com = server:119.29.29.29
-mi.com = server:119.29.29.29
-*.mi.com = server:119.29.29.29
-xiaomi.com = server:119.29.29.29
-*.xiaomi.com = server:119.29.29.29
-routerlogin.net = server:syslib
-_hotspot_.m2m = server:syslib
-router.asus.com = server:syslib
-hotspot.cslwifi.com = server:syslib
-amplifi.lan = server:syslib
-*.lan = server:syslib
 
 [URL Rewrite]
 # Enhance Better ADBlock for Surge
@@ -418,33 +382,35 @@ amplifi.lan = server:syslib
 [Header Rewrite]
 # Enable iCloud Private Relay on gateway
 # 為終端設備啓用iCloud專用代理，需要Surge for macOS啓用網關模式
-^https?:\/\/p[\d]{1,3}-acsegateway\.icloud\.com header-replace X-MMe-Country TW
+http-request ^https?:\/\/p[\d]{1,3}-acsegateway\.icloud\.com header-replace X-MMe-Country TW
+
+[MITM]
+skip-server-cert-verify = true
+tcp-connection = true
+h2 = true
+hostname = %INSERT% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net, boxjs.net, boxjs.com, *.google-analytics.com, *.googletagmanager.com, *.googlesyndication.com, *.googletagservices.com, *.doubleclick.net, cdn.ampproject.org, *.addthis.com, g.cn, www.g.cn, google.cn, www.google.cn, *.api.hbo.com, www.amazon.com, www.google.cn, www.g.cn, sub.store, *.media.dssott.com, *.media.starott.com, atv-ps.amazon.com, atv-ps-fe.primevideo.com, *.hls.row.aiv-cdn.net, *.dash.row.aiv-cdn.net, cf-timedtext.aux.pv-cdn.net, *avodhlss3ww-a.akamaihd.net, d25xi40x97liuc.cloudfront.net, dmqdd6hw24ucf.cloudfront.net, d22qjgkvxw22r6.cloudfront.net, d1v5ir2lpwr8os.cloudfront.net, d27xxe7juh1us6.cloudfront.net, manifests.api.hbo.com, manifests.v2.api.hbo.com, *.hbomaxcdn.com, manifest-dp.hulustream.com, livemanifest-f.hulustream.com, live-sc.hulustream.com, assets.huluim.com, assetshuluimcom-a.akamaihd.net, link.theplatform.com, *-pplus.cbs.com, vod-*.cbsaavideo.com, vod-*.cbsivideo.com, *.airspace-*.cbsivideo.com, content-discovery.uplynk.com, *-discovery1.uplynk.com, x-default-stgec.uplynk.com, dplus-ph-prod-vod.akamaized.net, dplus-ph-google-v2.prod-vod.h264.io, *.stream.peacocktv.com, *.cdn.peacocktv.com, *-vod.fubo.tv, hls.ted.com, pubads.g.doubleclick.net, vod-*.live.cf.md.bbci.co.uk, vod-*-live.akamaized.net, api.britbox.com, *.content.britbox.co.uk, mecdn?.starz.com, manifest.prod.boltdns.net, ssaimanifest.prod.boltdns.net, amcplus-?.akamaized.net, redirector.playback.*.prod.deploys.brightcove.com, ap-hls-vod.dynamic.showtime.com, ap-hls-live.cdn?.showtime.com, *.cssott.com, claritywallpaper.com, boxer.baidu.com, api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, api.revenuecat.com, vip1.kuwo.cn, biz.caiyunapp.com, mb3admin.com, api.flexibits.com, *.nflxvideo.net, *.media.dssott.com, *.media.starott.com, atv-ps.amazon.com, atv-ps-fe.primevideo.com, *.hls.row.aiv-cdn.net, *.dash.row.aiv-cdn.net, cf-timedtext.aux.pv-cdn.net, *avodhlss3ww-a.akamaihd.net, d25xi40x97liuc.cloudfront.net, dmqdd6hw24ucf.cloudfront.net, d22qjgkvxw22r6.cloudfront.net, d1v5ir2lpwr8os.cloudfront.net, d27xxe7juh1us6.cloudfront.net, manifests.api.hbo.com, manifests.v2.api.hbo.com, *.hbomaxcdn.com, manifest-dp.hulustream.com, livemanifest-f.hulustream.com, live-sc.hulustream.com, assets.huluim.com, assetshuluimcom-a.akamaihd.net, link.theplatform.com, *-pplus.cbs.com, vod-*.cbsaavideo.com, vod-*.cbsivideo.com, *.airspace-*.cbsivideo.com, content-discovery.uplynk.com, *-discovery1.uplynk.com, x-default-stgec.uplynk.com, dplus-ph-prod-vod.akamaized.net, dplus-ph-google-v2.prod-vod.h264.io, *.stream.peacocktv.com, *.cdn.peacocktv.com, *-vod.fubo.tv, hls.ted.com, pubads.g.doubleclick.net, vod-*.live.cf.md.bbci.co.uk, vod-*-live.akamaized.net, api.britbox.com, *.content.britbox.co.uk, mecdn?.starz.com, manifest.prod.boltdns.net, ssaimanifest.prod.boltdns.net, amcplus-?.akamaized.net, redirector.playback.*.prod.deploys.brightcove.com, ap-hls-vod.dynamic.showtime.com, ap-hls-live.cdn?.showtime.com, *.cssott.com, cbsi.live.ott.irdeto.com, ap?.bilibili.com, ap?.biliapi.net, m.gdoil.cn, sub.store, ap?.bilibili.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, app.bilibili.com, grpc.biliapi.net, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, spclient.wg.spotify.com, biz.caiyunapp.com, *.baidu.com, boxer.baidu.com, magev6.if.qidian.com, api.zhihu.com, www.zhihu.com, api-access.pangolin-sdk-toutiao.com, news.ssp.qq.com, r.inews.qq.com, us.l.qq.com, mi.gdt.qq.com, h5.ele.me, ccsp-egmas.sf-express.com, music.163.com, ifac*.iqiyi.com, *.video.qq.com, maicai.api.ddxq.mobi, pan.baidu.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mb3admin.com, -*snssdk.com, -*amemv.com, j-image.missfresh.cn, m.ads.8le8le.com, iadmusicmat.music.com, ma-adx.ctrip.com, m.ctrip.com, appconf.mail.163.com, analytics.163.com, api.21jingji.com, service.4gtv.tv, app.58.com, pic?.ajkimg.com, gw.alicdn.com, acs.m.taobao.com, m*.amap.com, gw.kaola.com, api-new.app.acfun.cn, issuecdn.baidupcs.com, newclient.map.baidu.com, mime.baidu.com, app.api.ke.com, m.client.10010.com, cloud.189.cn, www.cntv.com, api.chelaile.net.cn, web.chelaile.net.cn, app-gw.csdn.net, m.ctrip.com, app.dewu.com, api.douban.com, rtbapi.douyucdn.cn, api.dangdang.com, e.dangdang.com, daoyu.sdo.com, capis*.didapinche.com, *-release.wuta-cam.com, business.msstatic.com, ib-soft.net, list-app-m.i4.cn, api.jxedt.com, *.kakamobi.cn, *.kingsoft-office-service.com, api.gotokeep.com, api.kkmh.com, api.m.mi.com, api.jr.mi.com, api-mifit.huami.com, home.mi.com, appconf.mail.163.com, interface*.music.163.com, support.you.163.com, p.du.163.com, gfp.veta.naver.com, tqt.weibo.cn, *.k.sohu.com, *.tv.sohu.com, ap*.smzdm.com, gw-passenger.01zhuanche.com, mpcs.suning.com, ccsp-egmas.sf-express.com, shopic.sf-express.com, m.tuniu.com, img*.10101111cdn.com, msg.umengcloud.com, api.vuevideo.net, thor.weidian.com, api.waitwaitpay.com, api.xiachufang.com, api.yizhibo.com, a.qiumibao.com, *.zhuishushenqi.com, syh.zybang.com, api.izuiyou.com, tiku.zhan.com, bank.wo.cn, cdn.kuaidi100.com, clientaccess.10086.cn, cloud.189.cn, connect.facebook.net, fb.fbstatic.cn, m1.ad.10010.com, mp.weixin.qq.com, mps.95508.com, p.kuaidi100.com, pic1cdn.cmbchina.com, res.mall.10010.cn, s3plus.meituan.net, mobile-pic.cache.iciba.com, dict-mobile.iciba.com, service.iciba.com, smusic.app.wechat.com, szextshort.weixin.qq.com, thor.weidian.com, tiasdk.app.wechat.com, wmapi.meituan.com, www.cmbc.com.cn, zjh5api.189smarthome.com, zt-app.go189.cn, flowplus.meituan.net, img.meituan.net, p*.meituan.net, -*.mzstatic.com, ccsp-egmas.sf-express.com, passport.iqiyi.com, a1956.dscb.akamai.net, mp.weixin.qq.com, *.media.dssott.com, *.media.starott.com, *.api.hbo.com, *.hbomaxcdn.com, *.huluim.com, *.nflxvideo.net, *.cbsaavideo.com, *.cbsivideo.com, *.cloudfront.net, *.akamaihd.net, *.avi-cdn.net, api.zhihu.com, www.zhihu.com, zhuanlan.zhihu.com, api.revenuecat.com, api.flexibits.com, claritywallpaper.com, api.tidal.com, vip1.kuwo.cn, www.google.cn, www.google.com.hk, www.g.cn, api.caiyunapp.com, mp.weixin.qq.com, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, xluser-ssl.xunlei.com, appwk.baidu.com, mobile-api.adguard.org, api.revenuecat.com, ios.prod.ftl.netflix.com, *.nflxvideo.net, spclient.wg.spotify.com, *.wtzw.com, api.rr.tv, ap?.bili*i.com, ap?.bili*i.net, comic.321mh.com
 
 [Script]
-# 漫畫台Lite微信小程序解鎖
-漫畫台Lite微信小程序解鎖=type=http-response,pattern=^https?:\/\/comic\.321mh\.com\/app_api\/v\d\/getcomicinfo_body,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/mhtlite.js
-七貓小說=type=http-response,pattern=^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/7mao.js
-# Spotify Premium
-spotify-json = type=http-request,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
-spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
-# Netflix 評分
-Netflix 評分=type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/nfds.js, requires-body=true, timeout=10
-Netflix 評分1=type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/nfds.js, requires-body=true, timeout=10
-Netflix 評分 2=type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/nfdss.js, requires-body=true, timeout=10
-# Spark Mail解鎖永久訂閱
-Spark Mail=type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\w{14})$,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/smail.js
-# AdGuard 解鎖永久高級版
-AdGuard=type=http-response,pattern=^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/adg.js
-# 百度文庫
-百度文庫閱讀權限=type=http-response,pattern=^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/bdwk.js
-# WeChat 去廣告
-wechatAD.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/wechatAD.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
 # Sub-Store
 Sub-Store Core = type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=120
 Sub-Store Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js,requires-body=true
 Sub-Store Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
 # Boxjs
-Rewrite: BoxJs = type=http-request,pattern=https?:\/\/boxjs\.(com|net),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js,requires-body=true,timeout=120
+Rewrite: BoxJs = type=http-request,pattern=^https?:\/\/(.+\.)?boxjs\.(com|net),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js,requires-body=true,timeout=120
+# 漫畫台Lite微信小程序解鎖
+漫畫台Lite微信小程序解鎖 = type=http-response,pattern=^https?:\/\/comic\.321mh\.com\/app_api\/v\d\/getcomicinfo_body,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/mhtlite.js
+七貓小說 = type=http-response,pattern=^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/7mao.js
+# Spotify Premium
+# spotify-json = type=http-request,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+# spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
+# Spark Mail解鎖永久訂閱
+Spark Mail = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\w{14})$,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/smail.js
+# AdGuard 解鎖永久高級版
+AdGuard = type=http-response,pattern=^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/adg.js
+# 百度文庫
+百度文庫閱讀權限 = type=http-response,pattern=^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/bdwk.js
+# WeChat 去廣告
+wechatAD.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/wechatAD.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
 # 彩雲天氣 SVIP biz.caiyunapp.com
 彩雲天氣_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/nxyd_caiyun_svip.js
 # EMBY Premium mb3admin.com
@@ -461,26 +427,19 @@ yichahucha_wb_ad.js = requires-body=1,max-size=-1,script-path=https://raw.github
 # ZHIHU去廣告
 知乎json = type=http-response,pattern=^https:\/\/(appcloud2\.zhihu\.com\/v3\/config$|www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations|api\.zhihu\.com\/(topstory\/recommend|commercial_api\/(real_time_launch_v2|app_float_layer$)|questions\/\d+\/feeds\?|v4\/questions\/\d+\/answers\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/ZhiHuAd1.js
 # 百度防跳轉
-百度防跳轉 = type=http-response,pattern=^https:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/app2smile_baidu-no-redirect.js
+# 百度防跳轉 = type=http-response,pattern=^https:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/app2smile_baidu-no-redirect.js
 # 克拉壁紙 Premium claritywallpaper.com
 clarity.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/clarity.js,type=http-response,pattern=^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll)
+# 美圖秀秀
+美圖秀秀 = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/MTXX.js
 # Panel
 net-info-panel.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/networkCheck.js,type=generic
 reload.js = script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/reload.js,type=generic
 flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/zZPiglet_flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
-streamcheck = type=generic,script-path= https://raw.githubusercontent.com/ptntp/self-rule/main/Panel/streamcheck.js
-# 美圖秀秀
-美圖秀秀=type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/MTXX.js
-# 迅雷
-迅雷會員=type=http-response,pattern=https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo,requires-body=1,script-path=https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/JS/xunlei.js
-
-[MITM]
-tcp-connection = true
-h2 = true
-hostname = %APPEND% boxjs.net, boxjs.com, *.google-analytics.com, *.googletagmanager.com, *.googlesyndication.com, *.googletagservices.com, *.doubleclick.net, cdn.ampproject.org, *.addthis.com, g.cn,www.g.cn,google.cn,www.google.cn, *.api.hbo.com, www.amazon.com, www.google.cn, www.g.cn, sub.store, *.media.dssott.com, *.media.starott.com, atv-ps.amazon.com, atv-ps-fe.primevideo.com, *.hls.row.aiv-cdn.net, *.dash.row.aiv-cdn.net, cf-timedtext.aux.pv-cdn.net, *avodhlss3ww-a.akamaihd.net, d25xi40x97liuc.cloudfront.net, dmqdd6hw24ucf.cloudfront.net, d22qjgkvxw22r6.cloudfront.net, d1v5ir2lpwr8os.cloudfront.net, d27xxe7juh1us6.cloudfront.net, manifests.api.hbo.com, manifests.v2.api.hbo.com, *.hbomaxcdn.com, manifest-dp.hulustream.com, livemanifest-f.hulustream.com, live-sc.hulustream.com, assets.huluim.com, assetshuluimcom-a.akamaihd.net, link.theplatform.com, *-pplus.cbs.com, vod-*.cbsaavideo.com, vod-*.cbsivideo.com, *.airspace-*.cbsivideo.com, content-discovery.uplynk.com, *-discovery1.uplynk.com, x-default-stgec.uplynk.com, dplus-ph-prod-vod.akamaized.net, dplus-ph-google-v2.prod-vod.h264.io, *.stream.peacocktv.com, *.cdn.peacocktv.com, *-vod.fubo.tv, hls.ted.com, pubads.g.doubleclick.net, vod-*.live.cf.md.bbci.co.uk, vod-*-live.akamaized.net, api.britbox.com, *.content.britbox.co.uk, mecdn?.starz.com, manifest.prod.boltdns.net, ssaimanifest.prod.boltdns.net, amcplus-?.akamaized.net, redirector.playback.*.prod.deploys.brightcove.com, ap-hls-vod.dynamic.showtime.com, ap-hls-live.cdn?.showtime.com, *.cssott.com, claritywallpaper.com, boxer.baidu.com, api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, api.revenuecat.com, vip1.kuwo.cn, biz.caiyunapp.com, mb3admin.com, api.flexibits.com, *.nflxvideo.net, *.media.dssott.com, *.media.starott.com, atv-ps.amazon.com, atv-ps-fe.primevideo.com, *.hls.row.aiv-cdn.net, *.dash.row.aiv-cdn.net, cf-timedtext.aux.pv-cdn.net, *avodhlss3ww-a.akamaihd.net, d25xi40x97liuc.cloudfront.net, dmqdd6hw24ucf.cloudfront.net, d22qjgkvxw22r6.cloudfront.net, d1v5ir2lpwr8os.cloudfront.net, d27xxe7juh1us6.cloudfront.net, manifests.api.hbo.com, manifests.v2.api.hbo.com, *.hbomaxcdn.com, manifest-dp.hulustream.com, livemanifest-f.hulustream.com, live-sc.hulustream.com, assets.huluim.com, assetshuluimcom-a.akamaihd.net, link.theplatform.com, *-pplus.cbs.com, vod-*.cbsaavideo.com, vod-*.cbsivideo.com, *.airspace-*.cbsivideo.com, content-discovery.uplynk.com, *-discovery1.uplynk.com, x-default-stgec.uplynk.com, dplus-ph-prod-vod.akamaized.net, dplus-ph-google-v2.prod-vod.h264.io, *.stream.peacocktv.com, *.cdn.peacocktv.com, *-vod.fubo.tv, hls.ted.com, pubads.g.doubleclick.net, vod-*.live.cf.md.bbci.co.uk, vod-*-live.akamaized.net, api.britbox.com, *.content.britbox.co.uk, mecdn?.starz.com, manifest.prod.boltdns.net, ssaimanifest.prod.boltdns.net, amcplus-?.akamaized.net, redirector.playback.*.prod.deploys.brightcove.com, ap-hls-vod.dynamic.showtime.com, ap-hls-live.cdn?.showtime.com, *.cssott.com, cbsi.live.ott.irdeto.com, ap?.bilibili.com, ap?.biliapi.net, m.gdoil.cn, sub.store, ap?.bilibili.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, app.bilibili.com, grpc.biliapi.net, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, spclient.wg.spotify.com, biz.caiyunapp.com, *.baidu.com, boxer.baidu.com, magev6.if.qidian.com, api.zhihu.com, www.zhihu.com, api-access.pangolin-sdk-toutiao.com, news.ssp.qq.com, r.inews.qq.com, us.l.qq.com, mi.gdt.qq.com, h5.ele.me, ccsp-egmas.sf-express.com, music.163.com, ifac*.iqiyi.com, *.video.qq.com, maicai.api.ddxq.mobi, pan.baidu.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mb3admin.com, -*snssdk.com, -*amemv.com, j-image.missfresh.cn, m.ads.8le8le.com, iadmusicmat.music.com, ma-adx.ctrip.com, m.ctrip.com, appconf.mail.163.com, analytics.163.com, api.21jingji.com, service.4gtv.tv, app.58.com, pic?.ajkimg.com, gw.alicdn.com, acs.m.taobao.com, m*.amap.com, gw.kaola.com, api-new.app.acfun.cn, issuecdn.baidupcs.com, newclient.map.baidu.com, mime.baidu.com, app.api.ke.com, m.client.10010.com, cloud.189.cn, www.cntv.com, api.chelaile.net.cn, web.chelaile.net.cn, app-gw.csdn.net, m.ctrip.com, app.dewu.com, api.douban.com, rtbapi.douyucdn.cn, api.dangdang.com, e.dangdang.com, daoyu.sdo.com, capis*.didapinche.com, *-release.wuta-cam.com, business.msstatic.com, ib-soft.net, list-app-m.i4.cn, api.jxedt.com, *.kakamobi.cn, *.kingsoft-office-service.com, api.gotokeep.com, api.kkmh.com, api.m.mi.com, api.jr.mi.com, api-mifit.huami.com, home.mi.com, appconf.mail.163.com, interface*.music.163.com, support.you.163.com, p.du.163.com, gfp.veta.naver.com, tqt.weibo.cn, *.k.sohu.com, *.tv.sohu.com, ap*.smzdm.com, gw-passenger.01zhuanche.com, mpcs.suning.com, ccsp-egmas.sf-express.com, shopic.sf-express.com, m.tuniu.com, img*.10101111cdn.com, msg.umengcloud.com, api.vuevideo.net, thor.weidian.com, api.waitwaitpay.com, api.xiachufang.com, api.yizhibo.com, a.qiumibao.com, *.zhuishushenqi.com, syh.zybang.com, api.izuiyou.com, tiku.zhan.com, bank.wo.cn, cdn.kuaidi100.com, clientaccess.10086.cn, cloud.189.cn, connect.facebook.net, fb.fbstatic.cn, m1.ad.10010.com, mp.weixin.qq.com, mps.95508.com, p.kuaidi100.com, pic1cdn.cmbchina.com, res.mall.10010.cn, s3plus.meituan.net, mobile-pic.cache.iciba.com, dict-mobile.iciba.com, service.iciba.com, smusic.app.wechat.com, szextshort.weixin.qq.com, thor.weidian.com, tiasdk.app.wechat.com, wmapi.meituan.com, www.cmbc.com.cn, zjh5api.189smarthome.com, zt-app.go189.cn, flowplus.meituan.net, img.meituan.net, p*.meituan.net, -*.mzstatic.com, ccsp-egmas.sf-express.com, passport.iqiyi.com, a1956.dscb.akamai.net, mp.weixin.qq.com, *.media.dssott.com, *.media.starott.com, *.api.hbo.com, *.hbomaxcdn.com, *.huluim.com, *.nflxvideo.net, *.cbsaavideo.com, *.cbsivideo.com, *.cloudfront.net, *.akamaihd.net, *.avi-cdn.net, api.zhihu.com, www.zhihu.com, zhuanlan.zhihu.com, api.revenuecat.com, api.flexibits.com, claritywallpaper.com, api.tidal.com, vip1.kuwo.cn, www.google.cn, www.google.com.hk, www.g.cn, api.caiyunapp.com, mp.weixin.qq.com, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, xluser-ssl.xunlei.com, appwk.baidu.com, mobile-api.adguard.org, api.revenuecat.com, ios.prod.ftl.netflix.com, *.nflxvideo.net, spclient.wg.spotify.com, *.wtzw.com, api.rr.tv,ap?.bili*i.com, ap?.bili*i.net, comic.321mh.com
+streamcheck = type=generic,script-path=https://raw.githubusercontent.com/ptntp/self-rule/main/Panel/streamcheck.js
 
 [Panel]
 NetInfoPanel = style=info,script-name=net-info-panel.js,update-interval=1
 Profile-Reload = title=Profile Reload,content=點擊以重新整理,style=info,script-name=reload.js,update-interval=-1
 flushDNS = script-name=flushDNS,update-interval=600
-streamcheck = script-name=streamcheck, title="串流媒體跨區解鎖測試", update-interval=1
+streamcheck = script-name=streamcheck,title=串流媒體跨區解鎖測試,update-interval=1
