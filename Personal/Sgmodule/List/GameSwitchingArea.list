@@ -146,6 +146,9 @@ IP-CIDR,137.221.105.2/32,no-resolve
 IP-CIDR,210.71.148.11/32,no-resolve
 IP-CIDR,211.115.104.1/32,no-resolve
 
+# Call of Duty
+DOMAIN-SUFFIX,callofduty.com
+
 # Call of Duty Garena
 DOMAIN,activision.com
 DOMAIN,garenanow.com
