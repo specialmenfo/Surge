@@ -23,8 +23,6 @@ IP-CIDR,23.40.242.10/32,no-resolve
 PROCESS-NAME,com.iqiyi.i18n
 PROCESS-NAME,com.iqiyi.i18n.tv
 
-USER-AGENT,iQIYI*
-USER-AGENT,QIYIVideo*
 USER-AGENT,QYPlayer*
 USER-AGENT,QTP*
 PROCESS-NAME,com.iqiyi.i18n
