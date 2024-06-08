@@ -207,6 +207,10 @@ USER-AGENT,mastercard*
 USER-AGENT,*mastercard
 PROCESS-NAME,mastercard
 
+# Mpay
+DOMAIN-SUFFIX,macaupass.com
+DOMAIN-KEYWORD,macaupass
+
 # Octopus 八達通
 DOMAIN-SUFFIX,octopus.com.hk
 DOMAIN-SUFFIX,.octopus.com.hk
@@ -304,26 +308,6 @@ USER-AGENT,standchartbank*
 USER-AGENT,*standchartbank
 PROCESS-NAME,standchartbank
 
-# Tap & Go
-DOMAIN-SUFFIX,tapngo.com.hk
-DOMAIN-SUFFIX,.tapngo.com.hk
-DOMAIN-SUFFIX,*.tapngo.com.hk
-DOMAIN,wallet.tapngo.com.hk
-DOMAIN,tapngo.queue-it.net
-DOMAIN-SUFFIX,tapngo.com.hk
-DOMAIN-SUFFIX,.tapngo.com.hk
-DOMAIN-SUFFIX,*.tapngo.com.hk
-DOMAIN,wallet.tapngo.com.hk
-USER-AGENT,tapngo
-USER-AGENT,tapngo*
-USER-AGENT,*tapngo
-PROCESS-NAME,tapngo
-USER-AGENT,tapngo
-USER-AGENT,tapngo*
-USER-AGENT,*tapngo
-PROCESS-NAME,tapngo
-IP-CIDR,52.48.0.0/14,no-resolve
-
 # Wise
 DOMAIN,wise.com
 DOMAIN,www.wise.com
@@ -367,6 +351,10 @@ DOMAIN-SUFFIX,everonet.com
 DOMAIN-SUFFIX,hitrustpay.com.tw
 DOMAIN-KEYWORD,tenpay
 DOMAIN-KEYWORD,hitrustpay
+
+# Western Union
+DOMAIN-SUFFIX,westernunion.com
+DOMAIN-KEYWORD,westernunion
 
 # ZA Bank
 DOMAIN-SUFFIX,za.group
