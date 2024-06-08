@@ -209,6 +209,8 @@ PROCESS-NAME,mastercard
 
 # Mpay
 DOMAIN-SUFFIX,macaupass.com
+DOMAIN-KEYWORD,mpass
+DOMAIN-KEYWORD,mpay
 DOMAIN-KEYWORD,macaupass
 
 # Octopus 八達通
