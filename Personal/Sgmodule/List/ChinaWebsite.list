@@ -1,3 +1,7 @@
+# 蒙太奇
+DOMAIN-SUFFIX,lzzyimg.com
+IP-CIDR,172.247.51.114/32,no-resolve
+
 # TikBee
 DOMAIN-SUFFIX,tikbee.com
 DOMAIN-KEYWORD,tikbee
