@@ -537,11 +537,6 @@ AND,((PROTOCOL,TCP),(DOMAIN,mask.apple-dns.net),(DEST-PORT,443))
 AND,((PROTOCOL,TCP),(DOMAIN,mask-h2.icloud.com),(DEST-PORT,443))
 AND,((PROTOCOL,TCP),(DOMAIN,mask-t.apple-dns.net),(DEST-PORT,443))
 
-# Apple Weather
-DOMAIN,weather-data.apple.com
-DOMAIN,weather-analytics-events.apple.com
-DOMAIN,play.itunes.apple.com
-
 # Apple Siri
 DOMAIN,guzzoni.apple.com
 DOMAIN,guzzoni.apple.com
