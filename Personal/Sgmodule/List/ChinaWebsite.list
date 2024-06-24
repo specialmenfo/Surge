@@ -3493,11 +3493,6 @@ USER-AGENT,NeteaseMusic**
 USER-AGENT,网易云音乐*
 USER-AGENT,网易云音乐**
 
-# PinDuoDuo
-DOMAIN-SUFFIX,pddpic.com
-DOMAIN-SUFFIX,pinduoduo.com
-DOMAIN-SUFFIX,yangkeduo.com
-
 # PingAn
 DOMAIN-SUFFIX,1010-0000.com
 DOMAIN-SUFFIX,18ebank.com
