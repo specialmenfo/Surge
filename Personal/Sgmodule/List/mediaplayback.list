@@ -44,6 +44,7 @@ DOMAIN-SUFFIX,clusters.pluto.tv
 
 # Viu 播放
 DOMAIN,stream-hk.viu.com
+DOMAIN,ott-resources.viu.com
 DOMAIN,d2anahhhmp1ffz.cloudfront.net
 DOMAIN,pccw-cf-video.akamaized.net
 DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net
