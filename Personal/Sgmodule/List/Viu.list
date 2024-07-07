@@ -11,7 +11,6 @@ PROCESS-NAME,com.viu.phone
 PROCESS-NAME,com.vuclip.viu
 DOMAIN-KEYWORD,viu
 DOMAIN-KEYWORD,viu
-DOMAIN,pccw-cf-video.akamaized.net
 
 # ViuTV
 DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com
