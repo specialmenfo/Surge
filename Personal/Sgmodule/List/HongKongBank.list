@@ -282,6 +282,7 @@ USER-AGENT,*satchel
 PROCESS-NAME,satchel
 
 # SC
+DOMAIN,retail.sc.com
 DOMAIN,standchartbank.demdex.net
 DOMAIN,fast.standchartbank.demdex.net
 DOMAIN,standchartbank.sc.omtrdc.net
