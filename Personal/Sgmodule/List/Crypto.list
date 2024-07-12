@@ -30,6 +30,7 @@ DOMAIN-KEYWORD,xcoinsystem
 
 # NEXO
 DOMAIN-SUFFIX,nexo.com
+DOMAIN-KEYWORD,nexo
 
 # OKX
 DOMAIN,www.ouyicn.blue
@@ -74,6 +75,7 @@ USER-AGENT,okexweb
 USER-AGENT,okexweb*
 USER-AGENT,*okexweb
 PROCESS-NAME,okexweb
+DOMAIN-KEYWORD,okx
 
 # Others
 DOMAIN,token-api.metaswap.codefi.network
