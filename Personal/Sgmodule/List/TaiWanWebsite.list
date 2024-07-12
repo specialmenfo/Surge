@@ -2,6 +2,7 @@
 DOMAIN-SUFFIX,mrmad.com.tw
 DOMAIN-SUFFIX,*.com.tw
 DOMAIN-SUFFIX,*.tw
+GEOIP,TW
 
 # iQiYiTW
 DOMAIN,api.iq.com
