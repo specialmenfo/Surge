@@ -1,4 +1,4 @@
-<pre style="caret-color: rgb(255, 255, 255); color: rgb(255, 255, 255); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; widows: auto; word-spacing: 0px; -webkit-tap-highlight-color: rgba(26, 26, 26, 0.3); -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; text-decoration: none; overflow-wrap: break-word; white-space: pre-wrap;"># AMC+
+# AMC+
 DOMAIN-SUFFIX,.amcn.com
 DOMAIN-SUFFIX,gw.cds.amcn.com
 DOMAIN-SUFFIX,dimages.cds.amcn.com
@@ -839,4 +839,4 @@ IP-CIDR,23.46.155.154/32,no-resolve
 # TUBI
 DOMAIN-SUFFIX,tubi.io
 DOMAIN-SUFFIX,tubitv.com
-DOMAIN-SUFFIX,uapi.adrise.tv</pre>
+DOMAIN-SUFFIX,uapi.adrise.tv
