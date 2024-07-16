@@ -1,4 +1,4 @@
-# AMC+
+<pre style="caret-color: rgb(255, 255, 255); color: rgb(255, 255, 255); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; widows: auto; word-spacing: 0px; -webkit-tap-highlight-color: rgba(26, 26, 26, 0.3); -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; text-decoration: none; overflow-wrap: break-word; white-space: pre-wrap;"># AMC+
 DOMAIN-SUFFIX,.amcn.com
 DOMAIN-SUFFIX,gw.cds.amcn.com
 DOMAIN-SUFFIX,dimages.cds.amcn.com
@@ -131,7 +131,7 @@ USER-AGENT,creditkarma*
 USER-AGENT,*creditkarma
 PROCESS-NAME,creditkarma
 
-# > Discovery+
+# &gt; Discovery+
 DOMAIN,auth.discoveryplus.com
 DOMAIN-SUFFIX,disco-api.com
 DOMAIN-SUFFIX,discovery.com
@@ -688,8 +688,6 @@ DOMAIN-SUFFIX,slinginternational.com
 
 # ShowTime
 DOMAIN-SUFFIX,smetrics.showtime.com
-DOMAIN-SUFFIX,marketingcloudapis.com
-DOMAIN-SUFFIX,mcbb326bcd8q4wr369f4zt8hw-f1.device.marketingcloudapis.com
 DOMAIN-SUFFIX,www.showtime.com
 DOMAIN-SUFFIX,showtime.com
 DOMAIN-SUFFIX,www.showtimeanytime.com
@@ -700,6 +698,7 @@ DOMAIN-SUFFIX,.sho.com
 DOMAIN-SUFFIX,sho.com
 DOMAIN-SUFFIX,*.sho.com/*
 DOMAIN-SUFFIX,smetrics.sho.com
+DOMAIN-SUFFIX,mcbb326bcd8q4wr369f4zt8hw-f1.device.marketingcloudapis.com
 
 # Target
 DOMAIN,carts.target.com
@@ -840,4 +839,4 @@ IP-CIDR,23.46.155.154/32,no-resolve
 # TUBI
 DOMAIN-SUFFIX,tubi.io
 DOMAIN-SUFFIX,tubitv.com
-DOMAIN-SUFFIX,uapi.adrise.tv
+DOMAIN-SUFFIX,uapi.adrise.tv</pre>
