@@ -160,6 +160,10 @@ USER-AGENT,moneysavingexpert*
 USER-AGENT,*moneysavingexpert
 PROCESS-NAME,moneysavingexpert
 
+# NALA
+DOMAIN-SUFFIX,nala.ninja
+DOMAIN-SUFFIX,nala-api.com
+
 # Nationwide
 DOMAIN,smetrics.nationwide.co.uk
 DOMAIN,nationwidebuildingso.tt.omtrdc.net
