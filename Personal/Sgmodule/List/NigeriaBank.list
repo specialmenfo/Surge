@@ -20,6 +20,7 @@ DOMAIN,api.chippercash.com
 DOMAIN-SUFFIX,chippercash.com
 DOMAIN-SUFFIX,mobile-messenger.intercom.com
 DOMAIN-KEYWORD,chippercash
+IP-CIDR,52.32.246.247/16
 
 # Cabon
 DOMAIN,api.paylater.ng
