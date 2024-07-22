@@ -82,6 +82,7 @@ DOMAIN-SUFFIX,s3.amazonaws.com
 DOMAIN-SUFFIX,ll.hls.row.aiv-cdn.net
 DOMAIN-SUFFIX,minerva.devices.a2z.com
 DOMAIN-SUFFIX,m-3349s3.ll.hls.row.aiv-cdn.net
+DOMAIN-SUFFIX,pv-cdn.net
 
 # Discovery+ US 播放
 DOMAIN-SUFFIX,dplus-us-gcs-prod-vod.akamaized.net
