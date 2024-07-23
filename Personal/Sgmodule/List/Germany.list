@@ -53,3 +53,9 @@ DOMAIN,gcpsmapi.vodafone.com
 DOMAIN,remote-data.urbanairship.com
 DOMAIN,was.vodafone.de
 DOMAIN-SUFFIX,vodafone.de
+
+# Westernunion
+DOMAIN,wuplus-app.quantummetric.com
+DOMAIN,dbkapp.eu.westernunion.com
+DOMAIN,rl.quantummetric.com
+DOMAIN-SUFFIX,eu.westernunion.com
