@@ -357,10 +357,6 @@ DOMAIN-SUFFIX,hitrustpay.com.tw
 DOMAIN-KEYWORD,tenpay
 DOMAIN-KEYWORD,hitrustpay
 
-# Western Union
-DOMAIN-SUFFIX,westernunion.com
-DOMAIN-KEYWORD,westernunion
-
 # ZA Bank
 DOMAIN-SUFFIX,za.group
 DOMAIN-KEYWORD,za.group
