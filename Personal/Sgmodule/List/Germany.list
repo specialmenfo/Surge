@@ -54,8 +54,10 @@ DOMAIN,remote-data.urbanairship.com
 DOMAIN,was.vodafone.de
 DOMAIN-SUFFIX,vodafone.de
 
-# Westernunion
+# Western Union
+DOMAIN-KEYWORD,westernunion
 DOMAIN,wuplus-app.quantummetric.com
 DOMAIN,dbkapp.eu.westernunion.com
 DOMAIN,rl.quantummetric.com
+DOMAIN-SUFFIX,westernunion.com
 DOMAIN-SUFFIX,eu.westernunion.com
