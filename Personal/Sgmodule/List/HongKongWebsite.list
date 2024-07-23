@@ -1,6 +1,14 @@
 # 未知
 DOMAIN-SUFFIX,palpalapp.com
 
+# Western Union
+DOMAIN-KEYWORD,westernunion
+DOMAIN,wuplus-app.quantummetric.com
+DOMAIN,dbkapp.eu.westernunion.com
+DOMAIN,rl.quantummetric.com
+DOMAIN-SUFFIX,westernunion.com
+DOMAIN-SUFFIX,eu.westernunion.com
+
 # PINDUODUO（使用AlipayHK付款）
 DOMAIN-SUFFIX,pinduoduo.com
 DOMAIN-SUFFIX,pddpic.com
