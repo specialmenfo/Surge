@@ -841,3 +841,5 @@ DOMAIN,prepaid.t-mobile.com
 DOMAIN,tmobile.tt.omtrdc.net
 DOMAIN,t-mobile.scene7.com
 DOMAIN-SUFFIX,t-mobile.com
+DOMAIN-KEYWORD,t-mobile
+DOMAIN-KEYWORD,tmobile
