@@ -835,3 +835,7 @@ IP-CIDR,23.46.155.154/32,no-resolve
 DOMAIN-SUFFIX,tubi.io
 DOMAIN-SUFFIX,tubitv.com
 DOMAIN-SUFFIX,uapi.adrise.tv
+
+# T-Mobile
+DOMAIN,prepaid.t-mobile.com
+DOMAIN-SUFFIX,t-mobile.com
