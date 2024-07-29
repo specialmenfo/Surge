@@ -538,6 +538,8 @@ DOMAIN,asia.cschannel.anticheatexpert.com
 DOMAIN-SUFFIX,honorofkings.com
 DOMAIN-SUFFIX,vasdgame.com
 DOMAIN-SUFFIX,singaporepaya.com
+DOMAIN-KEYWORD,hok
+DOMAIN-KEYWORD,honorofkings
 
 # HeroesoftheStorm
 IP-CIDR,103.4.114.233/32,no-resolve
