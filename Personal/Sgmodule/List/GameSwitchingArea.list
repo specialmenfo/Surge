@@ -529,6 +529,16 @@ DOMAIN-SUFFIX,hoyolab.com
 DOMAIN-SUFFIX,hoyoverse.com
 DOMAIN-SUFFIX,n0vadesktop.com
 
+# Honor of Kings
+DOMAIN,camp.honorofkings.com
+DOMAIN,atm-broker-tcp-hok.vasdgame.com
+DOMAIN,hok.singaporepaya.com
+DOMAIN,reportms.singaporepaya.com
+DOMAIN,asia.cschannel.anticheatexpert.com
+DOMAIN-SUFFIX,honorofkings.com
+DOMAIN-SUFFIX,vasdgame.com
+DOMAIN-SUFFIX,singaporepaya.com
+
 # HeroesoftheStorm
 IP-CIDR,103.4.114.233/32,no-resolve
 IP-CIDR,182.162.116.1/32,no-resolve
