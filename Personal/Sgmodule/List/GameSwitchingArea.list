@@ -547,6 +547,7 @@ DOMAIN-KEYWORD,honorofkings
 IP-CIDR,43.132.55.55/32,no-resolve
 IP-CIDR,43.134.56.152/32,no-resolve
 IP-CIDR,43.134.115.168/32,no-resolve
+IP-CIDR,43.152.14.211/32,no-resolve
 IP-CIDR,43.153.233.59/32,no-resolve
 IP-CIDR,43.175.103.172/32,no-resolve
 IP-CIDR,52.67.80.199/32,no-resolve
