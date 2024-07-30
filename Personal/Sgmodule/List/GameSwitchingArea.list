@@ -5,7 +5,6 @@ DOMAIN,aihelp.net
 DOMAIN,faqs.aihelp.net
 DOMAIN,myqcloud.com
 DOMAIN,intlgame.com
-DOMAIN,gcloudcs.com
 DOMAIN,tdatamaster.com
 DOMAIN,proximabeta.com
 DOMAIN,file.myqcloud.com
@@ -413,7 +412,6 @@ DOMAIN,xjp.garena.com
 DOMAIN,test-dr.intlgame.com
 DOMAIN,control-out.mna.qq.com
 DOMAIN-SUFFIX,gcloud.kgtw.garenanow.com
-DOMAIN-SUFFIX,gcloudcs.com
 DOMAIN,qoshw.gcloudsdk.com
 DOMAIN-SUFFIX,intlgame.com
 DOMAIN-SUFFIX,avatargarenanow-a.akamaihd.net
@@ -448,7 +446,6 @@ DOMAIN,xjp.garena.com
 DOMAIN,test-dr.intlgame.com
 DOMAIN,control-out.mna.qq.com
 DOMAIN-SUFFIX,gcloud.kgtw.garenanow.com
-DOMAIN-SUFFIX,gcloudcs.com
 DOMAIN,qoshw.gcloudsdk.com
 DOMAIN-SUFFIX,intlgame.com
 DOMAIN-SUFFIX,avatargarenanow-a.akamaihd.net
@@ -536,6 +533,9 @@ DOMAIN,hok.singaporepaya.com
 DOMAIN,reportms.singaporepaya.com
 DOMAIN,asia.cschannel.anticheatexpert.com
 DOMAIN,rumt-sg.com
+DOMAIN,cdn.wetest.qq.com
+DOMAIN,cgi.connect.qq.com
+DOMAIN,ios.crashsight.wetest.net
 DOMAIN-SUFFIX,vod2.myqcloud.com
 DOMAIN-SUFFIX,sgameglobal.com
 DOMAIN,g-client-prod.cloud-control.smoba.qq.com
@@ -544,6 +544,11 @@ DOMAIN-SUFFIX,vasdgame.com
 DOMAIN-SUFFIX,singaporepaya.com
 DOMAIN-KEYWORD,hok
 DOMAIN-KEYWORD,honorofkings
+IP-CIDR,43.160.144.245/32,no-resolve
+IP-CIDR,43.163.2.98/32,no-resolve
+IP-CIDR,43.132.43.43/32,no-resolve
+IP-CIDR,43.156.36.95/32,no-resolve
+IP-CIDR,43.132.138.111/32,no-resolve
 IP-CIDR,43.132.55.55/32,no-resolve
 IP-CIDR,43.134.56.152/32,no-resolve
 IP-CIDR,43.134.115.168/32,no-resolve
