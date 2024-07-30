@@ -535,11 +535,23 @@ DOMAIN,atm-broker-tcp-hok.vasdgame.com
 DOMAIN,hok.singaporepaya.com
 DOMAIN,reportms.singaporepaya.com
 DOMAIN,asia.cschannel.anticheatexpert.com
+DOMAIN,rumt-sg.com
+DOMAIN-SUFFIX,vod2.myqcloud.com
+DOMAIN-SUFFIX,sgameglobal.com
+DOMAIN,g-client-prod.cloud-control.smoba.qq.com
 DOMAIN-SUFFIX,honorofkings.com
 DOMAIN-SUFFIX,vasdgame.com
 DOMAIN-SUFFIX,singaporepaya.com
 DOMAIN-KEYWORD,hok
 DOMAIN-KEYWORD,honorofkings
+IP-CIDR,43.132.55.55/32,no-resolve
+IP-CIDR,43.134.56.152/32,no-resolve
+IP-CIDR,43.134.115.168/32,no-resolve
+IP-CIDR,43.153.233.59/32,no-resolve
+IP-CIDR,43.175.103.172/32,no-resolve
+IP-CIDR,52.67.80.199/32,no-resolve
+IP-CIDR,129.226.89.217/32,no-resolve
+IP-CIDR,162.62.125.251/32,no-resolve
 
 # HeroesoftheStorm
 IP-CIDR,103.4.114.233/32,no-resolve
