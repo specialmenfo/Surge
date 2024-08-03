@@ -1,5 +1,4 @@
 # AfreecaTV
-# Afreecatv 播放
 DOMAIN,live.afreecatv.com
 DOMAIN-SUFFIX,file.afreecatv.com
 DOMAIN,item-api.afreecatv.com
