@@ -1,5 +1,8 @@
 # 部分 App 可直連，個別流媒體速度可能較慢或無法播放,如有0.2/0.5倍率，請使用這些，不限IP，均可播放，不建議走直連。
 
+# Afreeca TV
+DOMAIN-SUFFIX,live-global-cdn-v02.afreecatv.com
+
 # Disney+播放
 DOMAIN-SUFFIX,media.dssott.com
 DOMAIN,prod-ripcut-delivery.disney-plus.net
