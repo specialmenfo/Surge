@@ -5284,7 +5284,6 @@ DOMAIN,weixin.5ihl.com
 DOMAIN-SUFFIX,5ihl.com
 
 # Other
-DOMAIN-SUFFIX,gov.hk
 DOMAIN,app-measurement.com
 DOMAIN-SUFFIX,measurement.com
 DOMAIN-SUFFIX,app-measurement.com
@@ -5430,7 +5429,6 @@ DOMAIN-SUFFIX,us-west-1.amazonaws.com
 DOMAIN-SUFFIX,95516.comskfenfx6eosppxl
 DOMAIN-SUFFIX,95516.com
 DOMAIN-SUFFIX,stripe.com
-DOMAIN-SUFFIX,gov.hk
 DOMAIN-KEYWORD,airwallex
 DOMAIN-SUFFIX,airwallex.com
 DOMAIN-KEYWORD,seagm
