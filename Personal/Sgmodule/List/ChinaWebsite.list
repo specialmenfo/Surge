@@ -1,10 +1,4 @@
-# HKT商戶
-DOMAIN-SUFFIX,hktmerchantservices.com
 
-# 中信銀行（國際）
-DOMAIN,ibanking.cncbinternational.com
-DOMAIN-SUFFIX,cncbinternational.com
-DOMAIN-KEYWORD,cncbinternational
 
 # Apple Weather
 DOMAIN,weather-data.apple.com
@@ -21,26 +15,6 @@ IP-CIDR,172.247.51.114/32,no-resolve
 # TikBee
 DOMAIN-SUFFIX,tikbee.com
 DOMAIN-KEYWORD,tikbee
-
-# Tap & Go
-DOMAIN-SUFFIX,tapngo.com.hk
-DOMAIN-SUFFIX,.tapngo.com.hk
-DOMAIN-SUFFIX,*.tapngo.com.hk
-DOMAIN,wallet.tapngo.com.hk
-DOMAIN,tapngo.queue-it.net
-DOMAIN-SUFFIX,tapngo.com.hk
-DOMAIN-SUFFIX,.tapngo.com.hk
-DOMAIN-SUFFIX,*.tapngo.com.hk
-DOMAIN,wallet.tapngo.com.hk
-USER-AGENT,tapngo
-USER-AGENT,tapngo*
-USER-AGENT,*tapngo
-PROCESS-NAME,tapngo
-USER-AGENT,tapngo
-USER-AGENT,tapngo*
-USER-AGENT,*tapngo
-PROCESS-NAME,tapngo
-IP-CIDR,52.48.0.0/14,no-resolve
 
 # AppleProxy
 DOMAIN,api-glb-sea.smoot.apple.com
@@ -96,23 +70,6 @@ USER-AGENT,lloydsbankinggroup
 USER-AGENT,lloydsbankinggroup*
 USER-AGENT,*lloydsbankinggroup
 PROCESS-NAME,lloydsbankinggroup
-
-# ASPIRE
-DOMAIN,api.aspireapp.com
-DOMAIN,api.aspire-cap.com
-DOMAIN,cdn.aspireapp.com
-DOMAIN,sdk-writer.sg.smartlook.cloud
-DOMAIN,manager.eu.smartlook.cloud
-DOMAIN,engine-consumer-api.cloud.gist.build
-DOMAIN,gist-queue-consumer-api.cloud.gist.build
-DOMAIN,aspire-accounts-storage.s3.ap-southeast-1.amazonaws.com
-DOMAIN-SUFFIX,aspireapp.com
-DOMAIN-SUFFIX,aspire-cap.com
-DOMAIN-SUFFIX,cdn.aspireapp.com
-DOMAIN-SUFFIX,aspire-accounts-storage.s3.ap-southeast-1.amazonaws.com
-DOMAIN-SUFFIX,s3.ap-southeast-1.amazonaws.com
-IP-CIDR,193.182.111.12/32,no-resolve
-IP-CIDR,144.48.81.196/32,no-resolve
 
 # TODESK
 DOMAIN,st.todesk.com
