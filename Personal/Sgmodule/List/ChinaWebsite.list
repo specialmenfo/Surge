@@ -1,6 +1,11 @@
 # HKT商戶
 DOMAIN-SUFFIX,hktmerchantservices.com
 
+# 中信銀行（國際）
+DOMAIN,ibanking.cncbinternational.com
+DOMAIN-SUFFIX,cncbinternational.com
+DOMAIN-KEYWORD,cncbinternational
+
 # Apple Weather
 DOMAIN,weather-data.apple.com
 DOMAIN,weather-analytics-events.apple.com
