@@ -30,6 +30,10 @@ DOMAIN-KEYWORD,xcoinsystem
 
 # NEXO
 DOMAIN-SUFFIX,nexo.com
+DOMAIN-SUFFIX,tbstat.com
+DOMAIN-SUFFIX,bitcoin.com
+DOMAIN-SUFFIX,coindesk.com
+DOMAIN-SUFFIX,cointelegraph.com
 DOMAIN-KEYWORD,nexo
 DOMAIN-SUFFIX,marketingcloudapis.com
 
