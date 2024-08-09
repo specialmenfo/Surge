@@ -8,6 +8,23 @@ USER-AGENT,airstarbank*
 USER-AGENT,*airstarbank
 PROCESS-NAME,airstarbank
 
+# ASPIRE
+DOMAIN,api.aspireapp.com
+DOMAIN,api.aspire-cap.com
+DOMAIN,cdn.aspireapp.com
+DOMAIN,sdk-writer.sg.smartlook.cloud
+DOMAIN,manager.eu.smartlook.cloud
+DOMAIN,engine-consumer-api.cloud.gist.build
+DOMAIN,gist-queue-consumer-api.cloud.gist.build
+DOMAIN,aspire-accounts-storage.s3.ap-southeast-1.amazonaws.com
+DOMAIN-SUFFIX,aspireapp.com
+DOMAIN-SUFFIX,aspire-cap.com
+DOMAIN-SUFFIX,cdn.aspireapp.com
+DOMAIN-SUFFIX,aspire-accounts-storage.s3.ap-southeast-1.amazonaws.com
+DOMAIN-SUFFIX,s3.ap-southeast-1.amazonaws.com
+IP-CIDR,193.182.111.12/32,no-resolve
+IP-CIDR,144.48.81.196/32,no-resolve
+
 # BOCHK
 DOMAIN,bochk01.etnet.com.hk
 DOMAIN-SUFFIX,bochk.com
@@ -51,6 +68,29 @@ PROCESS-NAME,dahsing
 # FSMONE
 DOMAIN-SUFFIX,fundsupermart.com
 DOMAIN-SUFFIX,fsmone.com
+
+# HKT商戶
+DOMAIN-SUFFIX,hktmerchantservices.com
+
+# Tap & Go By HKT
+DOMAIN-SUFFIX,tapngo.com.hk
+DOMAIN-SUFFIX,.tapngo.com.hk
+DOMAIN-SUFFIX,*.tapngo.com.hk
+DOMAIN,wallet.tapngo.com.hk
+DOMAIN,tapngo.queue-it.net
+DOMAIN-SUFFIX,tapngo.com.hk
+DOMAIN-SUFFIX,.tapngo.com.hk
+DOMAIN-SUFFIX,*.tapngo.com.hk
+DOMAIN,wallet.tapngo.com.hk
+USER-AGENT,tapngo
+USER-AGENT,tapngo*
+USER-AGENT,*tapngo
+PROCESS-NAME,tapngo
+USER-AGENT,tapngo
+USER-AGENT,tapngo*
+USER-AGENT,*tapngo
+PROCESS-NAME,tapngo
+IP-CIDR,52.48.0.0/14,no-resolve
 
 # HSBC
 DOMAIN-SUFFIX,hsbc.com.hk
@@ -281,38 +321,6 @@ USER-AGENT,satchel*
 USER-AGENT,*satchel
 PROCESS-NAME,satchel
 
-# SC
-DOMAIN,retail.sc.com
-DOMAIN,standchartbank.demdex.net
-DOMAIN,fast.standchartbank.demdex.net
-DOMAIN,standchartbank.sc.omtrdc.net
-DOMAIN,www.sc.com
-DOMAIN,svc2.sc.com
-DOMAIN,marketing.online.standardchartered.com
-DOMAIN,dpm.demdex.net
-DOMAIN,standchartbank.tt.omtrdc.net
-DOMAIN,2jtgv0awr236wn6ti5fpguiqu4vn4iny46udjligd831d45e4bbb968dsac.d.aa.online-metrix.net
-DOMAIN,aa.online-metrix.net
-DOMAIN,k.clarity.ms
-DOMAIN,ibank.standardchartered.com.hk
-DOMAIN,c.go-mpulse.net
-DOMAIN,t0.c.appier.net
-DOMAIN,sp.analytics.yahoo.com
-DOMAIN,anylist.c.appier.net
-DOMAIN,s.c.appier.net
-DOMAIN-SUFFIX,standchartbank.demdex.net
-DOMAIN-SUFFIX,sc.com
-DOMAIN-SUFFIX,standardchartered.com
-DOMAIN-SUFFIX,online-metrix.net
-DOMAIN-SUFFIX,clarity.ms
-DOMAIN-SUFFIX,standardchartered.com.hk
-DOMAIN-SUFFIX,go-mpulse.net
-DOMAIN-SUFFIX,appier.net
-USER-AGENT,standchartbank
-USER-AGENT,standchartbank*
-USER-AGENT,*standchartbank
-PROCESS-NAME,standchartbank
-
 # Wise
 DOMAIN,wise.com
 DOMAIN,www.wise.com
@@ -361,3 +369,8 @@ DOMAIN-KEYWORD,hitrustpay
 DOMAIN-SUFFIX,za.group
 DOMAIN-KEYWORD,za.group
 DOMAIN-KEYWORD,za
+
+# 中信銀行（國際）
+DOMAIN,ibanking.cncbinternational.com
+DOMAIN-SUFFIX,cncbinternational.com
+DOMAIN-KEYWORD,cncbinternational
