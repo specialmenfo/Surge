@@ -361,9 +361,3 @@ DOMAIN-KEYWORD,hitrustpay
 DOMAIN-SUFFIX,za.group
 DOMAIN-KEYWORD,za.group
 DOMAIN-KEYWORD,za
-
-# 中信銀行（國際）
-DOMAIN,ibanking.cncbinternational.com
-DOMAIN-SUFFIX,cncbinternational.com
-DOMAIN-KEYWORD,cncbinternational.com
-DOMAIN-KEYWORD,cncbinternational
