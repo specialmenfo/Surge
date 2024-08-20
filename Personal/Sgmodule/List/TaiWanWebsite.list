@@ -101,6 +101,10 @@ DOMAIN-SUFFIX,fetnet.net
 DOMAIN-SUFFIX,friday.tw
 DOMAIN-SUFFIX,fridaylogger.com
 DOMAIN,aka01p.akamaized.net
+DOMAIN,fridayvideo.api.useinsider.com
+DOMAIN,asia-east1-fridaylog.cloudfunctions.net
+DOMAIN-KEYWORD,friday
+DOMAIN-KEYWORD,fridayvideo
 
 # Kinta
 DOMAIN-SUFFIX,kinta.ma
@@ -128,6 +132,7 @@ DOMAIN,theater-kktv.cdn.hinet.net
 # LiTV
 DOMAIN,litvfreemobile-hichannel.cdn.hinet.net
 DOMAIN-SUFFIX,litv.tv
+DOMAIN-SUFFIX,taiwanmedia.org
 
 # Line & LineTV
 DOMAIN-SUFFIX,line-scdn.net
