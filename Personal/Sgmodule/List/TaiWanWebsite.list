@@ -72,6 +72,7 @@ DOMAIN,ols-ww100-cp.akamaized.net
 DOMAIN,dkfhw9rzsr80z.cloudfront.net
 
 # 動畫瘋 Bahamut
+DOMAIN-SUFFIX,bahamut.com.tw
 DOMAIN,bahamut.akamaized.net
 DOMAIN-SUFFIX,bahamut.com.tw
 DOMAIN-SUFFIX,digicert.com
