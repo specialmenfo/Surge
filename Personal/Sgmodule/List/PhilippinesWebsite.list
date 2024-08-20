@@ -31,6 +31,10 @@ DOMAIN-SUFFIX,.gcash.com,extended-matching
 DOMAIN-SUFFIX,mynt.xyz,extended-matching
 DOMAIN-KEYWORD,gcash,extended-matching
 
+# OWNBANK
+DOMAIN-SUFFIX,ownbank.com.ph
+DOMAIN-KEYWORD,ownbank
+
 # Smart
 DOMAIN-SUFFIX,.smart.com.ph
 DOMAIN-SUFFIX,*.smart.com.ph
