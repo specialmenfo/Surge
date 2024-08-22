@@ -90,7 +90,6 @@ USER-AGENT,tapngo
 USER-AGENT,tapngo*
 USER-AGENT,*tapngo
 PROCESS-NAME,tapngo
-IP-CIDR,52.48.0.0/14,no-resolve
 
 # HSBC
 DOMAIN-SUFFIX,hsbc.com.hk
