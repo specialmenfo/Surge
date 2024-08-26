@@ -71,6 +71,11 @@ DOMAIN-SUFFIX,clarity.ms
 DOMAIN-KEYWORD,paga
 DOMAIN-KEYWORD,mypaga
 
+# Palmpay
+DOMAIN-SUFFIX,palmpay.app
+DOMAIN-SUFFIX,palmpay.com
+DOMAIN-KEYWORD,palmpay
+
 # PocketApp
 DOMAIN,api.okhi.io
 DOMAIN,pocketapp.com
