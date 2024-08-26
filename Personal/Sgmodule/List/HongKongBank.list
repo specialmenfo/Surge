@@ -247,9 +247,9 @@ USER-AGENT,*mastercard
 PROCESS-NAME,mastercard
 
 # Mpay
+DOMAIN,mpay.oss-cn-hongkong.aliyuncs.com
 DOMAIN-SUFFIX,macaupass.com
 DOMAIN-KEYWORD,mpass
-DOMAIN-KEYWORD,mpay
 DOMAIN-KEYWORD,mpaas
 DOMAIN-KEYWORD,mpaasapi
 DOMAIN-KEYWORD,macaupass
