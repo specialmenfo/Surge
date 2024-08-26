@@ -1,4 +1,6 @@
-# Nigeria Bank
+# Airtel
+DOMAIN-SUFFIX,com.ng
+DOMAIN-SUFFIX,airtel.com.ng
 
 # ALAT BY WEMA
 DOMAIN,apibox.alat.ng
@@ -58,6 +60,9 @@ DOMAIN-KEYWORD,kudabank
 # LOMA
 DOMAIN-SUFFIX,lomabank.com
 DOMAIN-KEYWORD,lomabank
+
+# NIMC
+DOMAIN-SUFFIX,nimc.gov.ng
 
 # Opay
 DOMAIN-SUFFIX,opayweb.com
