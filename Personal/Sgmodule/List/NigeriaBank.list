@@ -62,6 +62,10 @@ DOMAIN-KEYWORD,lomabank
 # Opay
 DOMAIN-SUFFIX,opayweb.com
 
+# Paga
+DOMAIN-SUFFIX,mypaga.com
+DOMAIN-KEYWORD,mypaga
+
 # PocketApp
 DOMAIN,api.okhi.io
 DOMAIN,pocketapp.com
