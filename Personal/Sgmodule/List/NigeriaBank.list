@@ -65,6 +65,9 @@ DOMAIN-SUFFIX,opayweb.com
 # Paga
 DOMAIN-SUFFIX,paga.com
 DOMAIN-SUFFIX,mypaga.com
+DOMAIN-SUFFIX,wp.com
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN-SUFFIX,clarity.ms
 DOMAIN-KEYWORD,paga
 DOMAIN-KEYWORD,mypaga
 
