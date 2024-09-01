@@ -837,6 +837,7 @@ DOMAIN-SUFFIX,tubitv.com
 DOMAIN-SUFFIX,uapi.adrise.tv
 
 # T-Mobile
+DOMAIN,t-mo.cc
 DOMAIN,prepaid.t-mobile.com
 DOMAIN,tmobile.tt.omtrdc.net
 DOMAIN,t-mobile.scene7.com
