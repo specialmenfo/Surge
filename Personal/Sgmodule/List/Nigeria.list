@@ -61,6 +61,11 @@ DOMAIN-KEYWORD,kudabank
 DOMAIN-SUFFIX,lomabank.com
 DOMAIN-KEYWORD,lomabank
 
+# MTN
+DOMAIN-SUFFIX,mtnonline.com
+DOMAIN-SUFFIX,mtn.ng
+DOMAIN-SUFFIX,mtnnigeria.net
+
 # NIMC
 DOMAIN-SUFFIX,nimc.gov.ng
 
