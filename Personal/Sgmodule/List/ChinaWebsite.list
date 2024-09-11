@@ -1,5 +1,9 @@
 # Spotify音樂播放
 DOMAIN,audio-ak-spotify-com.akamaized.net
+DOMAIN-SUFFIX,spotify-com.akamaized.net
+DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net
+DOMAIN-SUFFIX,spotify-com.akamaized.net
+DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net
 
 # Yodoo MY
 DOMAIN,api.leanplum.com
