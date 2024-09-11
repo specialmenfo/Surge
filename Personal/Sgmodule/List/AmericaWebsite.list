@@ -838,9 +838,12 @@ DOMAIN-SUFFIX,uapi.adrise.tv
 
 # T-Mobile
 DOMAIN,t-mo.cc
+DOMAIN,t-mo.co
 DOMAIN,prepaid.t-mobile.com
 DOMAIN,tmobile.tt.omtrdc.net
 DOMAIN,t-mobile.scene7.com
+DOMAIN,tmo-assets.fs.liveperson.com
+DOMAIN,tmobile.tt.omtrdc.net
 DOMAIN-SUFFIX,t-mobile.com
 DOMAIN-KEYWORD,t-mobile
 DOMAIN-KEYWORD,tmobile
