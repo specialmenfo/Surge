@@ -34,6 +34,12 @@ DOMAIN,cashex-gateway-34bf7qxe.ue.gateway.dev
 DOMAIN-SUFFIX,cashex.app
 DOMAIN-KEYWORD,cashex
 
+# Fidelity Bank
+DOMAIN-SUFFIX,fidelity.ng
+DOMAIN-SUFFIX,fidelitybank.ng
+DOMAIN-KEYWORD,fidelity
+DOMAIN-KEYWORD,fidelitybank
+
 # GT
 DOMAIN,gtworldpilotonev1.gtbank.com
 DOMAIN-SUFFIX,gtbank.com
