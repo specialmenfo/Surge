@@ -1,3 +1,17 @@
+# DouYin
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinpic.com
+DOMAIN-SUFFIX,ixiguavideo.com
+DOMAIN,tp-pay.snssdk.com
+DOMAIN,mon.snssdk.com
+DOMAIN,log.snssdk.com
+DOMAIN,i.snssdk.com
+DOMAIN,mon.snssdk.com
+DOMAIN,f-cpay.snssdk.com
+DOMAIN,is.snssdk.com
+DOMAIN,pigeon.snssdk.com
+DOMAIN,f-cashloan.snssdk.com
+
 # Spotify音樂播放
 DOMAIN,audio-ak-spotify-com.akamaized.net
 DOMAIN-SUFFIX,spotify-com.akamaized.net
