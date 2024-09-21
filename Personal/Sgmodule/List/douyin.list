@@ -1,23 +1,11 @@
 # DouYin
-DOMAIN,tp-pay.snssdk.com
-DOMAIN,mon.snssdk.com
-DOMAIN,log.snssdk.com
-DOMAIN,i.snssdk.com
-DOMAIN,mon.snssdk.com
-DOMAIN,f-cpay.snssdk.com
-DOMAIN,is.snssdk.com
-DOMAIN,pigeon.snssdk.com
-DOMAIN,f-cashloan.snssdk.com
 DOMAIN,lf3-static.bytednsdoc.com
 DOMAIN,v5-dy-o-abtest.zjcdn.com
 DOMAIN-SUFFIX,amemv.com
-DOMAIN-SUFFIX,douyincdn.com
-DOMAIN-SUFFIX,douyinpic.com
 DOMAIN-SUFFIX,douyinstatic.com
 DOMAIN-SUFFIX,douyinvod.com
 DOMAIN-SUFFIX,idouyinvod.com
 DOMAIN-SUFFIX,ixigua.com
-DOMAIN-SUFFIX,ixiguavideo.com
 DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,toutiao.com
