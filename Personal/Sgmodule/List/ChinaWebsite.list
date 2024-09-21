@@ -20,6 +20,7 @@ DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,toutiao.com
 DOMAIN,lf3-static.bytednsdoc.com
 DOMAIN,v5-dy-o-abtest.zjcdn.com
+DOMAIN-SUFFIX,amemv.com
 
 # Spotify音樂播放
 DOMAIN,audio-ak-spotify-com.akamaized.net
