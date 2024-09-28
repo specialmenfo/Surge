@@ -214,7 +214,6 @@ DOMAIN-SUFFIX,pinduoduo.com
 DOMAIN-SUFFIX,yangkeduo.com
 DOMAIN-KEYWORD,pdd
 DOMAIN-KEYWORD,pinduoduo
-IP-CIDR,180.97.0.0/16,no-resolve
 
 # Wise
 DOMAIN-SUFFIX,wise.com
