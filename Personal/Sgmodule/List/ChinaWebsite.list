@@ -21,6 +21,7 @@ DOMAIN-SUFFIX,toutiao.com
 DOMAIN,lf3-static.bytednsdoc.com
 DOMAIN,v5-dy-o-abtest.zjcdn.com
 DOMAIN-SUFFIX,amemv.com
+IP-CIDR,180.97.0.0/16,no-resolve
 
 # Spotify音樂播放
 DOMAIN,audio-ak-spotify-com.akamaized.net
