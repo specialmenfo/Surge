@@ -37,6 +37,9 @@ IP-CIDR,69.63.176.0/20,no-resolve
 DOMAIN,theater-kktv.cdn.hinet.net
 DOMAIN-SUFFIX,theater-kktv.cdn.hinet.net
 
+# MAX
+DOMAIN-SUFFIX,media.max.com
+
 # Pluto TV 播放
 DOMAIN-SUFFIX,siloh-fs.plutotv.net
 DOMAIN-SUFFIX,siloh-cf.pluto.tv
