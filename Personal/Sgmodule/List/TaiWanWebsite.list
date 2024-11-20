@@ -109,7 +109,7 @@ DOMAIN-KEYWORD,fridayvideo
 # Kinta
 DOMAIN-SUFFIX,kinta.ma
 
-# KKTV & KKBOX
+# KKTV &amp; KKBOX
 # AUTHOR: IEQ0P
 DOMAIN-SUFFIX,ssl.kkbox.com/billing.php?state=mykkid
 DOMAIN-SUFFIX,.surveycake.com
@@ -134,7 +134,7 @@ DOMAIN,litvfreemobile-hichannel.cdn.hinet.net
 DOMAIN-SUFFIX,litv.tv
 DOMAIN-SUFFIX,taiwanmedia.org
 
-# Line & LineTV
+# Line &amp; LineTV
 DOMAIN-SUFFIX,line-scdn.net
 DOMAIN-SUFFIX,line-scdn.net
 DOMAIN-SUFFIX,lin.ee
@@ -223,25 +223,6 @@ DOMAIN-SUFFIX,tvmedia.net.au
 DOMAIN-SUFFIX,videos-f.jwpsrv.com
 USER-AGENT,encoreTVB*
 USER-AGENT,mytv*
-
-# TikTok
-DOMAIN-SUFFIX,tiktokcdn-us.com
-DOMAIN,p19-sign.tiktokcdn-us.com
-DOMAIN,p16-tiktokcdn-com.akamaized.net
-DOMAIN-SUFFIX,byteoversea.com
-DOMAIN-SUFFIX,ibytedtos.com
-DOMAIN-SUFFIX,ibyteimg.com
-DOMAIN-SUFFIX,ipstatp.com
-DOMAIN-SUFFIX,muscdn.com
-DOMAIN-SUFFIX,sgpstatp.com
-DOMAIN-SUFFIX,snssdk.com
-DOMAIN-SUFFIX,tik-tokapi.com
-DOMAIN-SUFFIX,tiktok.com
-DOMAIN-SUFFIX,tiktokcdn.com
-DOMAIN-SUFFIX,tiktokv.com
-DOMAIN-KEYWORD,musical.ly
-USER-AGENT,TikTok*
-PROCESS-NAME,com.zhiliaoapp.musically
 
 #  Star+
 // USER-AGENT,Star+*
