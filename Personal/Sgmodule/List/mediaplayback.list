@@ -32,6 +32,12 @@ IP-CIDR,115.126.0.0/16,no-resolve
 IP-CIDR,69.63.0.0/12,no-resolve
 IP-CIDR,69.63.0.0/16,no-resolve
 IP-CIDR,69.63.176.0/20,no-resolve
+DOMAIN,onwardsmg.com
+DOMAIN,mahmlcgaq0tuqn2ksc0kgfmgb.litix.io
+DOMAIN,dai3fd1oh325y.cloudfront.net
+DOMAIN-SUFFIX,onwardsmg.com
+DOMAIN-SUFFIX,litix.io
+DOMAIN-SUFFIX,dai3fd1oh325y.cloudfront.net
 
 # KKTV
 DOMAIN,theater-kktv.cdn.hinet.net
