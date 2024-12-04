@@ -1,4 +1,5 @@
 # AfreecaTV
+DOMAIN-SUFFIX,sooplive.co.kr
 DOMAIN,live.afreecatv.com
 DOMAIN-SUFFIX,file.afreecatv.com
 DOMAIN,item-api.afreecatv.com
@@ -49,6 +50,7 @@ DOMAIN-SUFFIX,resourcemanager.afreecatv.com
 DOMAIN-SUFFIX,profile.img.afreecatv.com
 DOMAIN-SUFFIX,www.afreecatv.com
 DOMAIN-SUFFIX,cauly.co.kr
+DOMAIN-KEYWORD,sooplive
 IP-CIDR,118.222.182.146/32
 IP-CIDR,218.38.0.0/16,no-resolve
 IP-CIDR,222.233.0.0/16,no-resolve
