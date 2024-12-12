@@ -1,3 +1,7 @@
+# Western Union HONG KONG
+DOMAIN,rl.quantummetric.com
+DOMAIN,www.westernunion.com
+
 # Adobe
 DOMAIN,cc-ext-prod-pkgs.s3.amazonaws.com
 DOMAIN-SUFFIX,10xfotolia.com
@@ -198,14 +202,6 @@ DOMAIN-SUFFIX,jsdelivr.net
 
 # 未知
 DOMAIN-SUFFIX,palpalapp.com
-
-# Western Union
-DOMAIN-KEYWORD,westernunion
-DOMAIN,wuplus-app.quantummetric.com
-DOMAIN,dbkapp.eu.westernunion.com
-DOMAIN,rl.quantummetric.com
-DOMAIN-SUFFIX,westernunion.com
-DOMAIN-SUFFIX,eu.westernunion.com
 
 # PINDUODUO（使用AlipayHK付款）
 DOMAIN-SUFFIX,pinduoduo.com
@@ -2420,7 +2416,7 @@ DOMAIN-SUFFIX,privacysimplified.com
 DOMAIN-SUFFIX,privatebrowsingmyths.com
 DOMAIN-SUFFIX,spreadprivacy.com
 
-# Facebook &amp; Instagram &amp; WhatsApp
+# Facebook &amp;amp; Instagram &amp;amp; WhatsApp
 DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-SUFFIX,fbcdn.net
 DOMAIN,graph.facebook.com
@@ -2994,7 +2990,7 @@ DOMAIN-SUFFIX,zuckerberg.net
 DOMAIN-SUFFIX,flipboard.com
 DOMAIN-SUFFIX,flipchina.cn
 
-# GitHub &amp; GitLab
+# GitHub &amp;amp; GitLab
 DOMAIN,raw.githubusercontent.com
 DOMAIN,avatars.githubusercontent.com
 DOMAIN,alive.github.com
@@ -3553,7 +3549,7 @@ DOMAIN-SUFFIX,viki.net
 DOMAIN-SUFFIX,vikidash.akamaized.net
 DOMAIN-SUFFIX,vikiplatform.com
 
-# Verizon &amp; Yahoo
+# Verizon &amp;amp; Yahoo
 DOMAIN-SUFFIX,advertising.com
 DOMAIN-SUFFIX,aol.co.uk
 DOMAIN-SUFFIX,aol.com
