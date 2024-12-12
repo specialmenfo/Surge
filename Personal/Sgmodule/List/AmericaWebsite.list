@@ -848,3 +848,6 @@ DOMAIN-SUFFIX,t-mobile.com
 DOMAIN-SUFFIX,tt.omtrdc.net
 DOMAIN-KEYWORD,t-mobile
 DOMAIN-KEYWORD,tmobile
+
+# Western Union USA
+DOMAIN-SUFFIX,us.westernunion.com
