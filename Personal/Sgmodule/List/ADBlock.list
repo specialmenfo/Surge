@@ -678,6 +678,7 @@ AND,((DOMAIN-KEYWORD,stun), (DOMAIN-KEYWORD,douyu))
 
 # 蒙太奇
 DOMAIN,open.e.kuaishou.cn
+DOMAIN-SUFFIX,e.kuaishou.cn
 DOMAIN-SUFFIX,hgdggmao.cn
 DOMAIN-SUFFIX,snowflake.qq.com
 DOMAIN-SUFFIX,gdfp.gifshow.com
