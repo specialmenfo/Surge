@@ -8,6 +8,11 @@ DOMAIN-SUFFIX,ffzy888.com
 DOMAIN-SUFFIX,7bbffvip.com
 DOMAIN-SUFFIX,cdnlz3.com
 DOMAIN-SUFFIX,ap-chengdu.myqcloud.com
+DOMAIN-SUFFIX,hryycfl.com
+DOMAIN-SUFFIX,lzzyimg.com
+DOMAIN-SUFFIX,youkuyouku.pro
+DOMAIN-SUFFIX,qsws1hk.com
+IP-CIDR,172.247.51.114/32,no-resolve
 IP-CIDR,172.247.0.0/16,no-resolve
 IP-CIDR,172.247.79.98/32,no-resolve
 IP-CIDR,17.57.0.0/16,no-resolve
@@ -759,13 +764,6 @@ DOMAIN,app.yoodo.com.my
 DOMAIN,weather-data.apple.com
 DOMAIN,weather-analytics-events.apple.com
 DOMAIN,play.itunes.apple.com
-
-# 蒙太奇
-DOMAIN-SUFFIX,hryycfl.com
-DOMAIN-SUFFIX,lzzyimg.com
-DOMAIN-SUFFIX,youkuyouku.pro
-DOMAIN-SUFFIX,qsws1hk.com
-IP-CIDR,172.247.51.114/32,no-resolve
 
 # TikBee
 DOMAIN-SUFFIX,tikbee.com
