@@ -1,5 +1,4 @@
 # System Related
-DOMAIN,lookup-api.apple.com
 DOMAIN,api.smoot.apple.com,force-remote-dns
 DOMAIN,api.smoot.apple.com.cn,force-remote-dns
 DOMAIN,configuration.apple.com,force-remote-dns
