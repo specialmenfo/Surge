@@ -1,11 +1,17 @@
 # 蒙太奇
+DOMAIN,shls.mcloud.139.com
 DOMAIN-SUFFIX,huyajs.com
 DOMAIN-SUFFIX,hhmage.com
 DOMAIN-SUFFIX,yzzyimages.com
 DOMAIN-SUFFIX,ngrok-free.app
+DOMAIN-SUFFIX,ffzy888.com
+DOMAIN-SUFFIX,7bbffvip.com
+DOMAIN-SUFFIX,cdnlz3.com
 DOMAIN-SUFFIX,ap-chengdu.myqcloud.com
 IP-CIDR,172.247.0.0/16,no-resolve
 IP-CIDR,172.247.79.98/32,no-resolve
+IP-CIDR,17.57.0.0/16,no-resolve
+IP-CIDR,17.57.145.132/32,no-resolve
 
 # Fiuu
 DOMAIN-SUFFIX,fiuu.com
