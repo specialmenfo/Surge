@@ -1195,3 +1195,7 @@ DOMAIN-SUFFIX,xboxservice.com
 DOMAIN-SUFFIX,xboxservices.com
 DOMAIN-SUFFIX,xboxstudios.com
 DOMAIN-SUFFIX,xbx.lv
+
+# 未知
+IP-CIDR,129.226.0.0/24
+DOMAIN,lgame-alpha-1300955520.file.myqcloud.com
