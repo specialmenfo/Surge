@@ -45,6 +45,11 @@ DOMAIN,gtworldpilotonev1.gtbank.com
 DOMAIN-SUFFIX,gtbank.com
 DOMAIN-KEYWORD,gtbank
 
+# GoMoney
+DOMAIN,api.gomoney.global
+DOMAIN-SUFFIX,gomoney.global
+DOMAIN-KEYWORD,gomoney
+
 # Globus
 DOMAIN-SUFFIX,globusbank.com
 DOMAIN-KEYWORD,globusbank
