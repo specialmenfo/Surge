@@ -101,15 +101,6 @@ DOMAIN,magic.freetrade.io
 DOMAIN-SUFFIX,freetrade.io
 DOMAIN-KEYWORD,freetrade
 
-# Giffgaff
-DOMAIN,www.giffgaff.com
-DOMAIN-SUFFIX,giffgaff.com
-DOMAIN-KEYWORD,giffgaff
-USER-AGENT,giffgaff
-USER-AGENT,giffgaff*
-USER-AGENT,*giffgaff
-PROCESS-NAME,giffgaff
-
 # Halifax
 DOMAIN,lpcdn.asynchronousmessaging.dashboard.co.uk
 DOMAIN,check2.halifax-online.co.uk
