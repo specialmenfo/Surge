@@ -1,5 +1,7 @@
-# Naver
+# NaverPay
 DOMAIN-SUFFIX,naver.com
+DOMAIN-SUFFIX,navercorp.com
+DOMAIN-SUFFIX,pstatic.net
 
 # ASUS
 DOMAIN-SUFFIX,asus.com
