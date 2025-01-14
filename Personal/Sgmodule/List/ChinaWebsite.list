@@ -6003,6 +6003,7 @@ DOMAIN-SUFFIX,wsglw.com
 DOMAIN-SUFFIX,wsglw.net
 
 # Other
+DOMAIN,kchat-v3.kaleoz.com
 DOMAIN,*.seagm.com
 DOMAIN-SUFFIX,seagm.com
 USER-AGENT,seagm
