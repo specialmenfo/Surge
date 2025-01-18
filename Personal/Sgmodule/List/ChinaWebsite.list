@@ -1,4 +1,10 @@
-# 10000
+#DouYin
+DOMAIN-SUFFIX,doupay.com
+DOMAIN-SUFFIX,douyinec.com
+DOMAIN-SUFFIX,jinritemai.com
+
+# 10000 Network Test
+DOMAIN,10000.gd.cn
 DOMAIN-SUFFIX,10000gd.tech
 
 # iQiYi
