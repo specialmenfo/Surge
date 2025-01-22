@@ -111,6 +111,7 @@ DOMAIN,www.credit.com
 DOMAIN-SUFFIX,credit.com
 
 # Credit Karma
+DOMAIN,dicontent.ckapis.com
 DOMAIN,cdn.native.creditkarma.com
 DOMAIN,embedded.creditkarma.com
 DOMAIN,authclient.config-cdn.a.intuit.com
@@ -121,6 +122,7 @@ DOMAIN,bam-cell.nr-data.net
 DOMAIN,logging.api.intuit.com
 DOMAIN,ckfiles.com
 DOMAIN,creditkarmacdn-a.akamaihd.net
+DOMAIN-SUFFIX,ckapis.com
 DOMAIN-SUFFIX,creditkarma.com
 USER-AGENT,creditkarmacdn
 USER-AGENT,creditkarmacdn*
@@ -131,7 +133,7 @@ USER-AGENT,creditkarma*
 USER-AGENT,*creditkarma
 PROCESS-NAME,creditkarma
 
-# &gt; Discovery+
+# Discovery+
 DOMAIN,auth.discoveryplus.com
 DOMAIN-SUFFIX,disco-api.com
 DOMAIN-SUFFIX,discovery.com
