@@ -1,3 +1,7 @@
-# DouYin 評論IP
+# DouYin 大陸版評論IP
 DOMAIN,api5-normal-m-hj.amemv.com
 DOMAIN-SUFFIX,normal-m-hj.amemv.com
+
+# DouYin 港版評論IP
+DOMAIN,api5-normal-hl.amemv.com
+DOMAIN-SUFFIX,normal-hl.amemv.com
