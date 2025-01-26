@@ -81,6 +81,31 @@ DOMAIN-KEYWORD,babytree
 # HeyTea
 DOMAIN-SUFFIX,heytea.com
 
+# NETEASE MUSIC
+IP-CIDR,223.252.199.66/24,no-resolve
+IP-CIDR,223.252.199.67/24,no-resolve
+IP-CIDR,59.111.160.195/24,no-resolve
+DOMAIN-SUFFIX,music.163.com,no-resolve
+DOMAIN-SUFFIX,music.126.net,no-resolve
+DOMAIN-SUFFIX,netease.com,no-resolve
+
+# QQ MUSIC
+DOMAIN-SUFFIX,y.qq.com
+IP-CIDR,203.205.128.38/16,no-resolve
+IP-CIDR,103.7.30.90/16,no-resolve
+IP-CIDR,23.23.154.194/16,no-resolve
+IP-CIDR,140.207.54.59/16,no-resolve
+IP-CIDR,58.250.137.120/16,no-resolve
+IP-CIDR,163.177.71.169/16,no-resolve
+IP-CIDR,54.204.29.149/24,no-resolve
+IP-CIDR,124.14.18.209/16,no-resolve
+DOMAIN-SUFFIX,stat.3g.music.qq.com
+DOMAIN-SUFFIX,appmedia.qq.com
+DOMAIN-SUFFIX,cgi.connect.qq.com
+DOMAIN-SUFFIX,fusion.qq.com
+DOMAIN-SUFFIX,ios.rqd.qq.com
+DOMAIN-SUFFIX,y.gtimg.cn
+
 # KuaiShou
 DOMAIN-SUFFIX,wsukwai.com
 DOMAIN-SUFFIX,kwimgs.com
