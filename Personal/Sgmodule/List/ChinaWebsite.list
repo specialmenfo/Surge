@@ -1,8 +1,11 @@
 # QCC
 DOMAIN-SUFFIX,qcc.com
 DOMAIN-SUFFIX,qichacha.com
+DOMAIN-SUFFIX,qichacha.net
 DOMAIN-SUFFIX,umsns.com
 DOMAIN-SUFFIX,ietheivaicai.com
+DOMAIN-KEYWORD,qcc
+DOMAIN-KEYWORD,qichacha
 
 # CMB
 DOMAIN-SUFFIX,joying.com
