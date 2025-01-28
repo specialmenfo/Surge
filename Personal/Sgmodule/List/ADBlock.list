@@ -1,3 +1,6 @@
+# Bilibili STUN
+AND,((PROTOCOL,STUN), (DOMAIN-KEYWORD,bilibili.))
+
 # 隱私保護
 DOMAIN-KEYWORD,analytics.
 DOMAIN-KEYWORD,app-analytics
