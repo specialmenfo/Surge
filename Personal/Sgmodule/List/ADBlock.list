@@ -1,5 +1,5 @@
 # Telegram 轉圈
-IP-CIDR,95.161.76.100/31,no-resolve,pre-matching
+IP-CIDR,95.161.76.100/31,no-resolve,extended-matching
 
 # Bilibili STUN
 AND,((PROTOCOL,STUN), (DOMAIN-KEYWORD,bilibili.))
