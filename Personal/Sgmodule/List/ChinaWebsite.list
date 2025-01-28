@@ -1,3 +1,12 @@
+# Speedtest
+DOMAIN,speed.dler.io
+DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-SUFFIX,speed.cloudflare.com
+DOMAIN-SUFFIX,speed.dler.io
+DOMAIN-KEYWORD,speedtest
+USER-AGENT,SpeedTest*
+
 # Tencent Video
 DOMAIN-SUFFIX,gitv.tv
 DOMAIN-SUFFIX,miaozhen.com
