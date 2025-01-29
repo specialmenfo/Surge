@@ -1,3 +1,6 @@
+# AliDNS
+DOMAIN-SUFFIX,alidns.com
+
 # Speedtest
 DOMAIN,speed.dler.io
 DOMAIN-SUFFIX,netvigator.com
