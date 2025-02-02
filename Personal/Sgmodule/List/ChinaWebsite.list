@@ -1,3 +1,15 @@
+# 萬達酒店
+DOMAIN-SUFFIX,wandahotels.com
+
+# 君亭酒店集團
+DOMAIN-SUFFIX,gcihotel.net
+
+# 釣魚台美高梅美獅薈
+DOMAIN,mt.dytmgm.com
+DOMAIN,mtdownload.h-world.com
+DOMAIN-SUFFIX,dytmgm.com
+DOMAIN-SUFFIX,h-world.com
+
 # AliDNS
 DOMAIN-SUFFIX,alidns.com
 
