@@ -1309,6 +1309,7 @@ DOMAIN,e17437.dsct.akamaiedge.net
 DOMAIN,e2490.dscf.akamaiedge.net
 DOMAIN-SUFFIX,dscf.akamaiedge.net
 DOMAIN-SUFFIX,buy.itunes.apple.com
+DOMAIN-SUFFIX,sandbox.apple.com
 USER-AGENT,iTunes*
 PROCESS-NAME,itunes
 IP-CIDR,2.20.195.238/32,no-resolve
@@ -1369,6 +1370,11 @@ IP-CIDR,17.188.18.212/32,no-resolve
 IP-CIDR,17.188.18.231/32,no-resolve
 IP-CIDR,17.188.18.178/32,no-resolve
 IP-CIDR,17.171.47.23/32,no-resolve
+IP-CIDR,17.36.202.106/32,no-resolve
+IP-CIDR,17.36.202.0/32,no-resolve
+IP-CIDR,17.36.0.0/16,no-resolve
+IP-CIDR,17.36.0.0/17,no-resolve
+IP-CIDR,17.36.0.0/32,no-resolve
 
 # Apple Music
 DOMAIN,aod-ssl.itunes.apple.com
