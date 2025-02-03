@@ -1,6 +1,15 @@
 # Alipay QR
 DOMAIN,qr.alipay.hk
+DOMAIN,imdap-sea.alipay.com
+DOMAIN,cdn.marmot-cloud.com
+DOMAIN,a.alipayobjects.com
+DOMAIN,gw.alipayobjects.com
+DOMAIN,auth-asg-en.aliyuncs.com
+DOMAIN,imgs-ac.alipay.com
+DOMAIN,gw.zamcs.com
+DOMAIN,render.alipay.com
 DOMAIN-SUFFIX,alipay.hk
+DOMAIN-SUFFIX,sea.alipay.com
 IP-CIDR,18.138.68.160/32,no-resolve
 
 # NaverPay
