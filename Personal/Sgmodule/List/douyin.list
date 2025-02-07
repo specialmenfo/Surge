@@ -1,6 +1,7 @@
 # DouYin 大陸版評論IP
 DOMAIN,api5-normal-m-hj.amemv.com
 DOMAIN-SUFFIX,normal-m-hj.amemv.com
+DOMAIN-SUFFIX,douyincdn.com
 IP-CIDR,120.232.0.0/16,no-resolve
 IP-CIDR,120.232.242.216/16,no-resolve
 
