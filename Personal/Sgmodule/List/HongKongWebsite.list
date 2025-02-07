@@ -21,10 +21,6 @@ DOMAIN-SUFFIX,naver.com
 DOMAIN-SUFFIX,navercorp.com
 DOMAIN-SUFFIX,pstatic.net
 
-# ASUS
-DOMAIN-SUFFIX,asus.com
-DOMAIN-KEYWORD,asus
-
 # Hexacard
 DOMAIN-SUFFIX,hexacard.me
 
