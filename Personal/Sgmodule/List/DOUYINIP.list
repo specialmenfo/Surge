@@ -26,3 +26,5 @@ DOMAIN-SUFFIX,ecombdapi.com
 DOMAIN-SUFFIX,baike.com
 DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,hl.amemv.com
+IP-CIDR,103.136.0.0/16,no-resolve
+IP-CIDR,103.136.221.67/16,no-resolve
