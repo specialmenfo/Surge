@@ -2,12 +2,15 @@
 DOMAIN,api5-normal-m-hj.amemv.com
 DOMAIN-SUFFIX,normal-m-hj.amemv.com
 DOMAIN-SUFFIX,douyincdn.com
-DOMAIN-SUFFIX,douyinpic.com
 DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,ipainner.amemv.com
 IP-CIDR,120.232.0.0/16,no-resolve
 IP-CIDR,111.170.0.0/16,no-resolve
 DOMAIN-KEYWORD,douyincdn
 
 # DouYin 港版評論IP
 DOMAIN,api5-normal-hl.amemv.com
+DOMAIN,webcast100-ws-c-hl.amemv.com
 DOMAIN-SUFFIX,normal-hl.amemv.com
+DOMAIN-SUFFIX,zijieapi.com
