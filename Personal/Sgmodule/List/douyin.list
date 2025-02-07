@@ -3,7 +3,8 @@ DOMAIN,api5-normal-m-hj.amemv.com
 DOMAIN-SUFFIX,normal-m-hj.amemv.com
 DOMAIN-SUFFIX,douyincdn.com
 IP-CIDR,120.232.0.0/16,no-resolve
-IP-CIDR,111.170.0.0,no-resolve
+IP-CIDR,111.170.0.0/16,no-resolve
+DOMAIM-KEYWORD,douyincdn
 
 # DouYin 港版評論IP
 DOMAIN,api5-normal-hl.amemv.com
