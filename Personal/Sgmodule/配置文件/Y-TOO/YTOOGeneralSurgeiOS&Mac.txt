@@ -39,8 +39,6 @@ https://raw.githubusercontent.com/mieqq/mieqq/master/skip-proxy-lists.sgmodule
 
 http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Function/UnblockURLinWeChat.conf/_end_/UnblockURLinWeChat.sgmodule?type=qx-rewrite&target=surge-module&del=true
 
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Advertising/Advertising_MITM.sgmodule
-
 https://raw.githubusercontent.com/chxm1023/Advertising/Shadowrocket/AppAd.sgmodule
 
 https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/Sgmodule/StartUp.sgmodule
@@ -246,8 +244,7 @@ dns-server = 223.5.5.5, 119.29.29.29, 114.114.114.114, 8.8.8.8
 # 繞過系統請求（Bypass-System）選項，所以在某些情況下會造成系統推送延遲（例如在兜底全局規則是走代理的情況下），需要對蘋果的某些服務設置專門的直連規則。
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AppleSystemRelated.list," Apple System Related",extended-matching,no-resolve
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ADBlock.list,"🛑 廣告攔截",extended-matching,no-resolve
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Advertising/Advertising_All.list,"🛑 廣告攔截",extended-matching,no-resolve
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/refs/heads/master/Personal/Sgmodule/List/douyin.list,"🇨🇳 中港抖音 IP",extended-matching,no-resolve
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/refs/heads/master/Personal/Sgmodule/List/DOUYINIP.list,"🇨🇳 中港抖音 IP",extended-matching,no-resolve
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/NetworkInfo.list,"🌏 Network INFO",extended-matching,no-resolve
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Mail.list,"🌏 Mail",extended-matching,no-resolve
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/TaiWanWebsite.list,"🇹🇼 台灣Website",extended-matching,no-resolve
