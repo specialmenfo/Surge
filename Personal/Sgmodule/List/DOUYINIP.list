@@ -1,6 +1,10 @@
 # DouYin 大陸版評論IP
 DOMAIN,api5-normal-m-hj.amemv.com
 DOMAIN,api-play.amemv.com
+DOMAIN,webcast5-core-hl.amemv.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,ipainner.amemv.com
 IP-CIDR,208.95.112.1/16,no-resolve
 IP-CIDR,208.95.0.0/16,no-resolve
 IP-CIDR,120.232.0.0/16,no-resolve
