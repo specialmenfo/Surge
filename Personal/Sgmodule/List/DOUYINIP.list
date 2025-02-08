@@ -25,6 +25,17 @@ DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,hl.amemv.com
 IP-CIDR,103.136.0.0/16,no-resolve
 IP-CIDR,103.136.221.67/16,no-resolve
+DOMAIN,api-play.amemv.com
+DOMAIN,webcast5-core-hl.amemv.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,ipainner.amemv.com
+IP-CIDR,120.232.0.0/16,no-resolve
+IP-CIDR,111.170.0.0/16,no-resolve
+IP-CIDR,121.11.195.133/16,no-resolve
+IP-CIDR,121.11.0.0/16,no-resolve
+IP-CIDR,101.47.81.229/16,no-resolve
+IP-CIDR,101.47.0.0/16,no-resolve
 
 # DouYin 港版評論IP
 DOMAIN,api5-normal-hl.amemv.com
