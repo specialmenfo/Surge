@@ -8,3 +8,4 @@ IP-CIDR,208.95.0.0/16,no-resolve
 DOMAIN,api5-normal-hl.amemv.com
 DOMAIN,webcast5-core-hl.amemv.com
 DOMAIN-SUFFIX,normal-hl.amemv.com
+DOMAIN-SUFFIX,ipainner.amemv.com
