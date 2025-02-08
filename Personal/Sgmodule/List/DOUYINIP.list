@@ -6,6 +6,9 @@ DOMAIN-SUFFIX,douyinstatic.com
 DOMAIN-SUFFIX,bytedance.com
 DOMAIN-SUFFIX,ipainner.amemv.com
 DOMAIN-SUFFIX,normal-m-hj.amemv.com
+IP-CIDR,208.95.0.0/16,no-resolve
+IP-CIDR,208.95.112.1/16,no-resolve
+IP-CIDR,208.95.112.1/24,no-resolve
 IP-CIDR,120.232.0.0/16,no-resolve
 IP-CIDR,111.170.0.0/16,no-resolve
 IP-CIDR,121.11.195.133/16,no-resolve
