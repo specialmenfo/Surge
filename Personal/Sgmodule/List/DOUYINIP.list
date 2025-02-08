@@ -7,5 +7,5 @@ IP-CIDR,208.95.0.0/16,no-resolve
 # DouYin 港版評論IP
 DOMAIN,api5-normal-hl.amemv.com
 DOMAIN-SUFFIX,normal-hl.amemv.com
-IP-CIDR,121.11.195.133/16,no-resolve
-IP-CIDR,121.11.0.0/16,no-resolve
+IP-CIDR,101.47.81.229/16,no-resolve
+IP-CIDR,101.47.0.0/16,no-resolve
