@@ -906,6 +906,7 @@ DOMAIN-SUFFIX,tikbee.com
 DOMAIN-KEYWORD,tikbee
 
 # AppleProxy
+DOMAIN,gdmf-ados.apple.com
 DOMAIN,api-glb-sea.smoot.apple.com
 DOMAIN,books.itunes.apple.com
 DOMAIN,cvws.icloud-content.com
