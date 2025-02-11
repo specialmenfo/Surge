@@ -1,0 +1,11 @@
+DOMAIN,www.intercom.com,extended-matching
+DOMAIN,tab.volces.com,extended-matching
+DOMAIN,gator.volces.com,extended-matching
+DOMAIN,chat.deepseek.com,extended-matching
+DOMAIN,apmplus.volces.com,extended-matching
+DOMAIN,static.intercomassets.com,extended-matching
+DOMAIN-SUFFIX,intercom.com,extended-matching
+DOMAIN-SUFFIX,deepseek.com,extended-matching
+DOMAIN-SUFFIX,volces.com,extended-matching
+DOMAIN-KEYWORD,deepseek
+DOMAIN-KEYWORD,volces
