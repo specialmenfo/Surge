@@ -287,7 +287,8 @@ RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sg
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/HongKongBank.list,"🏦 香港銀行",extended-matching,no-resolve
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/UnitedStatesBank.list,"🏦 美國銀行",extended-matching,no-resolve
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/GameSwitchingArea.list,"🌏 遊戲/主機換區",extended-matching,no-resolve
-RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ChatGPT.list,"🌏 ChatGPT",extended-matching,no-resolve
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ChatGPT.list,"🤖 ChatGPT",extended-matching,no-resolve
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/refs/heads/master/Personal/Sgmodule/List/DeepSeek.list,"🤖 DeepSeek",extended-matching,no-resolve
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Amazon.list,"🌏 Amazon",extended-matching,no-resolve
 AND,((PROTOCOL,UDP), (RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/T-MobileWi-FiCall.list)),🇺🇲 美國節點
 AND,((PROTOCOL,UDP), (RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/refs/heads/master/Personal/Sgmodule/List/UKCarrier%26WiFiCall.list,no-resolve,extended-matching)),🇬🇧 英國節點
