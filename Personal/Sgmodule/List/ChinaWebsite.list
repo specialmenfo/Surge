@@ -1,17 +1,60 @@
 # 520zjm
-DOMAIN, p16-ad.byteoversea.com
-DOMAIN, a1931.dscgi3.akamai.net
-DOMAIN-SUFFIX, ryplay11.com
-DOMAIN-SUFFIX, bftuvip.com
-DOMAIN-SUFFIX, viptulz.com
-DOMAIN-SUFFIX, suonipic.com
-DOMAIN-SUFFIX, image8899.net
-DOMAIN-SUFFIX, ry-pic.com
+DOMAIN,p16-ad.byteoversea.com
+DOMAIN,a1931.dscgi3.akamai.net
+DOMAIN,onvideo-safety.ssscdn.com
+DOMAIN,ohttp-relay1.fastly-edge.com
+DOMAIN,v5.qrssv.com
+DOMAIN,v6.hiij22.com
+DOMAIN,s2.bfengbf.com
+DOMAIN,rescdn.yishihui.com
+DOMAIN,vip.ffzy-play7.com
+DOMAIN,vip.ffzy-video.com
+DOMAIN,v.weishi.qq.com
+DOMAIN,img.hpcang.com
+DOMAIN,vip01.obs.cn-east-3.myhuaweicloud.com
+DOMAIN,eos-huhehaote-1.cmecloud.cn
+DOMAIN,onvideo-safety.ssrcdn.com
+DOMAIN,svip.yyzy-play.vip
+DOMAIN,sf16-sg-default.akamaized.net
+DOMAIN-SUFFIX,hpcang.com
+DOMAIN-SUFFIX,ryplay4.com
+DOMAIN-SUFFIX,myhuaweicloud.com
+DOMAIN-SUFFIX,akamaized.net
+DOMAIN-SUFFIX,weishi.qq.com
+DOMAIN-SUFFIX,lzcdn26.com
+DOMAIN-SUFFIX,toutiaovod.com
+DOMAIN-SUFFIX,cmecloud.cn
+DOMAIN-SUFFIX,ffzy-video.com
+DOMAIN-SUFFIX,ffzy-play7.com
+DOMAIN-SUFFIX,bfengbf.com
+DOMAIN-SUFFIX,snzypic.com
+DOMAIN-SUFFIX,yishihui.com
+DOMAIN-SUFFIX,hiij22.com
+DOMAIN-SUFFIX,qrssv.com
+DOMAIN-SUFFIX,fastly-edge.com
+DOMAIN-SUFFIX,ffzy888.com
+DOMAIN-SUFFIX,ryplay11.com
+DOMAIN-SUFFIX,bftuvip.com
+DOMAIN-SUFFIX,viptulz.com
+DOMAIN-SUFFIX,suonipic.com
+DOMAIN-SUFFIX,image8899.net
+DOMAIN-SUFFIX,ry-pic.com
 DOMAIN-SUFFIX,bytedapm.com
 DOMAIN-SUFFIX,bytegecko-i18n.com
 DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,ssscdn.com
+DOMAIN-SUFFIX,ssrcdn.com
+DOMAIN-SUFFIX,yyzy-play.vip
+DOMAIN-SUFFIX,ffzyread1.com
+DOMAIN-SUFFIX,play-cdn2.com
+DOMAIN-SUFFIX,lz-cdn5.com
+DOMAIN-SUFFIX,hiij22.com
+DOMAIN-SUFFIX,qrssv.com
+DOMAIN-KEYWORD,yyzy
+DOMAIN-KEYWORD,ffzy
+DOMAIN-KEYWORD,ryplay
 IP-CIDR,162.209.166.173/32,no-resolve
-IP-CIDR,162.209.0.0/32,no-resolve
+IP-CIDR,162.209.0.0/16,no-resolve
 
 # ASUS
 DOMAIN-SUFFIX,asus.com
