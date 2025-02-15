@@ -1,9 +1,10 @@
 # 抖音
 DOMAIN,v3-music.douyinstatic.com
+DOMAIN-SUFFIX,vegslb.com
+DOMAIN-SUFFIX,douyinstatic.com
 DOMAIN-KEYWORD,pull-flv
 DOMAIN-KEYWORD,pull-hs
 DOMAIN-KEYWORD,webcastcdn
-DOMAIN-SUFFIX,douyinstatic.com
 IP-CIDR,219.76.20.222/16,no-resolve
 IP-CIDR,219.76.20.222/18,no-resolve
 IP-CIDR,219.76.20.222/23,no-resolve
