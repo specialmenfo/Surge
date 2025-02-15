@@ -147,10 +147,6 @@ DOMAIN-KEYWORD,rrcdnbf
 DOMAIN-KEYWORD,vip.ffzy-play
 DOMAIN-KEYWORD,c1.ddbbffcdn
 DOMAIN-KEYWORD,ddbbffcdn
-IP-CIDR,13.248.139.174/32,no-resolve
-IP-CIDR,13.248.0.0/16,no-resolve
-IP-CIDR,162.209.166.173/32,no-resolve
-IP-CIDR,162.209.0.0/16,no-resolve
 
 # ASUS
 DOMAIN-SUFFIX,asus.com
