@@ -1,3 +1,18 @@
+# 520zjm
+DOMAIN, p16-ad.byteoversea.com
+DOMAIN, a1931.dscgi3.akamai.net
+DOMAIN-SUFFIX, ryplay11.com
+DOMAIN-SUFFIX, bftuvip.com
+DOMAIN-SUFFIX, viptulz.com
+DOMAIN-SUFFIX, suonipic.com
+DOMAIN-SUFFIX, image8899.net
+DOMAIN-SUFFIX, ry-pic.com
+DOMAIN-SUFFIX,bytedapm.com
+DOMAIN-SUFFIX,bytegecko-i18n.com
+DOMAIN-SUFFIX,byteoversea.com
+IP-CIDR,162.209.166.173/32,no-resolve
+IP-CIDR,162.209.0.0/32,no-resolve
+
 # ASUS
 DOMAIN-SUFFIX,asus.com
 DOMAIN-KEYWORD,asus
