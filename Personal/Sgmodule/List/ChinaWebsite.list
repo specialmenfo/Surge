@@ -50,9 +50,11 @@ DOMAIN-SUFFIX,play-cdn2.com
 DOMAIN-SUFFIX,lz-cdn5.com
 DOMAIN-SUFFIX,hiij22.com
 DOMAIN-SUFFIX,qrssv.com
+DOMAIN-SUFFIX,ffzy-play5.com
 DOMAIN-KEYWORD,yyzy
 DOMAIN-KEYWORD,ffzy
 DOMAIN-KEYWORD,ryplay
+DOMAIN-KEYWORD,vip.ffzy-play
 IP-CIDR,162.209.166.173/32,no-resolve
 IP-CIDR,162.209.0.0/16,no-resolve
 
