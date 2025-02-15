@@ -153,7 +153,7 @@ allow-dns-svcb = false
 encrypted-dns-follow-outbound-mode = false
 encrypted-dns-skip-cert-verification = false
 compatibility-mode = 1
-dns-server = 223.5.5.5, 119.29.29.29, 114.114.114.114, 8.8.8.8
+dns-server = 114.114.114.114, 8.8.8.8
 
 [Proxy Group]
 🌏 Network INFO = select, "👋 手動選擇", no-alert=0, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com//sub-storelink, update-interval=0
@@ -164,6 +164,7 @@ dns-server = 223.5.5.5, 119.29.29.29, 114.114.114.114, 8.8.8.8
 🌏 BiliBili 換區 = select, "🎯 全球直連", "🇭🇰 香港節點", "🇹🇼 台灣節點", no-alert=0, hidden=0, include-all-proxies=0, external-policy-modifier=block-quic=off
 🌏 Crypto = select, "🇯🇵 日本節點", "🇬🇧 英國節點", "🇹🇼 台灣節點", "🇰🇷 南韓節點", "🇭🇰 香港節點", "🎯 全球直連", "👋 手動選擇", no-alert=0, hidden=0, update-interval=0, include-all-proxies=0, external-policy-modifier=block-quic=off
 🤖 ChatGPT = select, "🇺🇲 美國節點", "🇭🇰 香港節點", "🇯🇵 日本節點", "🇹🇼 台灣節點", "🇸🇬 星加坡節點", no-alert=0, hidden=0, include-all-proxies=0, external-policy-modifier=block-quic=off
+🤖 DeepSeek = select, "🎯 全球直連", "🇭🇰 香港節點", "🇹🇼 台灣節點", "🇯🇵 日本節點", "🇺🇲 美國節點", "🇰🇷 南韓節點", "🇦🇺 澳洲節點", "🇬🇧 英國節點", "🇩🇪 德國節點", "🇫🇷 法國節點", "🇮🇳 印度節點", "🇧🇷 巴西節點", "🇻🇳 越南節點", "🇹🇭 泰國節點", "🇮🇩 印尼節點", "🇳🇱 荷蘭節點", "🇪🇬 埃及節點", "🇿🇦 南非節點", "🇦🇪 迪拜節點", "🇸🇬 星加坡節點", "🇵🇭 菲律賓節點", "🇦🇷 阿根廷節點", "🇹🇷 土耳其節點", "🇨🇦 加拿大節點", "🇪🇸 西班牙節點", "🇺🇦 烏克蘭節點", "🇷🇺 俄羅斯節點", "🇮🇹 義大利節點", "🇭🇺 匈牙利節點", "🇲🇾 馬來西亞節點", "🇲🇩 摩爾多瓦節點", "🇵🇰 巴基斯坦節點", "🇳🇬 奈及利亞節點", no-alert=0, hidden=0, include-all-proxies=0, external-policy-modifier=block-quic=off
 🌏 CodaShop 換區 = select, "🇭🇰 香港節點", "🇵🇭 菲律賓節點", "🎯 全球直連", "🇹🇼 台灣節點", "🇸🇬 星加坡節點", "🇯🇵 日本節點", "🇺🇲 美國節點", "🇦🇺 澳洲節點", "🇬🇧 英國節點", "🇰🇷 南韓節點", "🇩🇪 德國節點", "🇫🇷 法國節點", "🇲🇾 馬來西亞節點", "🇦🇷 阿根廷節點", "🇹🇷 土耳其節點", "👋 手動選擇", no-alert=0, hidden=0, include-all-proxies=0, external-policy-modifier=block-quic=off
 🌏 Carousell 換區 = select, "🇭🇰 香港節點", "🇵🇭 菲律賓節點", "🎯 全球直連", "🇹🇼 台灣節點", "🇸🇬 星加坡節點", "🇯🇵 日本節點", "🇺🇲 美國節點", "🇦🇺 澳洲節點", "🇬🇧 英國節點", "🇰🇷 南韓節點", "🇩🇪 德國節點", "🇫🇷 法國節點", "🇲🇾 馬來西亞節點", "🇦🇷 阿根廷節點", "🇹🇷 土耳其節點", "👋 手動選擇", no-alert=0, hidden=0, include-all-proxies=0, external-policy-modifier=block-quic=off
 🌏 DAZN 換區 = select, "🇯🇵 日本節點", "🇩🇪 德國節點", "🇧🇷 巴西節點", "🇦🇺 澳洲節點", "🇺🇲 美國節點", "🇬🇧 英國節點", no-alert=1, hidden=0, update-interval=0, policy-regex-filter=Sonet|Japan|加拿大Limewave 01|Germany, include-all-proxies=0, external-policy-modifier=block-quic=off
@@ -245,6 +246,8 @@ dns-server = 223.5.5.5, 119.29.29.29, 114.114.114.114, 8.8.8.8
 # 繞過系統請求（Bypass-System）選項，所以在某些情況下會造成系統推送延遲（例如在兜底全局規則是走代理的情況下），需要對蘋果的某些服務設置專門的直連規則。
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AppleSystemRelated.list," Apple System Related",extended-matching,no-resolve
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ADBlock.list,"🛑 廣告攔截",extended-matching,no-resolve
+RULE-SET,https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adblock4limbo_surge.list,"🛑 廣告攔截",extended-matching,no-resolve
+RULE-SET,"http://script.hub/file/_start_/https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliu.list/_end_/fenliu.list?type=rule-set&target=surge-rule-set&del=true","🛑 廣告攔截",extended-matching,no-resolve
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/refs/heads/master/Personal/Sgmodule/List/DOUYINIP.list,"🇨🇳 中港抖音 IP",extended-matching,no-resolve
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/NetworkInfo.list,"🌏 Network INFO",extended-matching,no-resolve
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/Mail.list,"🌏 Mail",extended-matching,no-resolve
@@ -306,6 +309,61 @@ FINAL,🐟 漏網之魚,dns-failed
 ip-api.com = 208.95.112.1
 *.dropbox.com = server:8.8.8.8
 *.dropboxapi.com = server:8.8.8.8
+# ---定義本地DNS記錄---
+# 該功能等同於 /etc/hosts，加上了泛解析和別名支持。
+# Firebase Cloud Messaging
+mtalk.google.com = 108.177.125.188
+# Google Dl
+dl.google.com = server:119.29.29.29
+dl.l.google.com = server:119.29.29.29
+update.googleapis.com = server:119.29.29.29
+# PlayStation
+*.dl.playstation.net = server:119.29.29.29
+# 淘寶
+*.taobao.com = server:223.5.5.5
+# 天貓
+*.tmall.com = server:223.5.5.5
+# 阿里雲
+*.alicdn.com = server:223.5.5.5
+*.aliyun.com = server:223.5.5.5
+# 騰迅
+*.tencent.com = server:119.29.29.29
+# 騰訊QQ
+*.qq.com = server:119.29.29.29
+# 微信
+*.weixin.com = server:119.29.29.29
+*.qpic.cn = server:119.29.29.29
+# 京東
+*.jd.com = server:119.29.29.29
+# 嗶哩嗶喱
+*.bilibili.com = server:119.29.29.29
+hdslb.com = server:119.29.29.29
+# 網易
+*.163.com = server:119.29.29.29
+*.126.com = server:119.29.29.29
+*.126.net = server:119.29.29.29
+*.127.net = server:119.29.29.29
+*.netease.com = server:119.29.29.29
+# 小米
+*.mi.com = server:119.29.29.29
+*.xiaomi.com = server:119.29.29.29
+# Router Admin Panel
+amplifi.lan = server:syslib // Ubiquiti Amplifi Router
+router.synology.com = server:syslib // Synology Router
+sila.razer.com = server:syslib // Razer Sila Router
+router.asus.com = server:syslib // Asus Router
+routerlogin.net = server:syslib // Netgear Router
+orbilogin.com = server:syslib // Netgear Obri Router
+www.LinksysSmartWiFi.com = server:syslib // Linksys Router
+LinksysSmartWiFi.com = server:syslib // Linksys Router
+myrouter.local = server:syslib // Linksys Router
+www.miwifi.com = server:syslib // Xiaomi Mi WiFi Router
+miwifi.com = server:syslib // Xiaomi Mi WiFi Router
+mediarouter.home = server:syslib // Huawei Router
+tplogin.cn = server:syslib // TP-Link Router
+tplinklogin.net = server:syslib // TP-Link Router
+melogin.cn = server:syslib // MERCURY Router
+falogin.cn = server:syslib
 
 [URL Rewrite]
 # Google 重定向 www.google.cn
