@@ -1,3 +1,9 @@
+# 抖音
+IP-CIDR,219.76.20.222/16,no-resolve
+IP-CIDR,219.76.20.222/18,no-resolve
+IP-CIDR,219.76.20.222/23,no-resolve
+IP-CIDR,219.76.0.0/16,no-resolve
+
 # 520zjm
 DOMAIN,v4.uvwwx.vip
 DOMAIN,groupvideo.photo.qq.com
