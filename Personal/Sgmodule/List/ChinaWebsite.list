@@ -1,4 +1,5 @@
 # 抖音
+DOMAIN-KEYWORD,pull-flv
 DOMAIN-KEYWORD,webcastcdn
 IP-CIDR,219.76.20.222/16,no-resolve
 IP-CIDR,219.76.20.222/18,no-resolve
