@@ -536,7 +536,6 @@ IP-CIDR,207.45.72.0/22,no-resolve
 IP-CIDR,208.75.76.0/22,no-resolve
 IP-CIDR,210.0.153.0/24,no-resolve
 IP-CIDR,218.102.32.0/19,no-resolve
-IP-CIDR,219.76.0.0/17,no-resolve
 IP-CIDR,23.23.189.144/28,no-resolve
 IP-CIDR,23.246.0.0/18,no-resolve
 IP-CIDR,23.78.0.0/16,no-resolve
