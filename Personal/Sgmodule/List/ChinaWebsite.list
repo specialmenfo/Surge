@@ -196,6 +196,9 @@ DOMAIN-KEYWORD,img.jisuzyimg
 DOMAIN-KEYWORD,svip.high
 DOMAIN-KEYWORD,v5.kmnopq
 DOMAIN-KEYWORD,v2.qstuvwx
+IP-CIDR,162.209.0.0/16,no-resolve
+IP-CIDR,162.209.0.0/17,no-resolve
+IP-CIDR,162.209.166.107/32,no-resolve
 
 # ASUS
 DOMAIN-SUFFIX,asus.com
