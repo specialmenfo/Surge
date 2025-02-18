@@ -12,6 +12,8 @@ IP-CIDR,219.76.0.0/16,no-resolve
 IP-CIDR,219.76.0.0/17,no-resolve
 
 # 520zjm
+DOMAIN,eu1.clevertap-prod.com
+DOMAIN,i.postimg.cc
 DOMAIN,v4.uvwwx.vip
 DOMAIN,groupvideo.photo.qq.com
 DOMAIN,s3.bfengbf.com
@@ -69,6 +71,8 @@ DOMAIN,img.jisuzyimg.com
 DOMAIN,svip.high1-playback.com
 DOMAIN,v5.kmnopq.com
 DOMAIN,v2.qstuvwx.com
+DOMAIN-SUFFIX,clevertap-prod.com
+DOMAIN-SUFFIX,postimg.cc
 DOMAIN-SUFFIX,qstuvwx.com
 DOMAIN-SUFFIX,bookshow.top
 DOMAIN-SUFFIX,jisuts.com
