@@ -3801,29 +3801,6 @@ DOMAIN-SUFFIX,wikiversity.org
 DOMAIN-SUFFIX,wikivoyage.org
 DOMAIN-SUFFIX,wiktionary.org
 
-# yuu
-DOMAIN,api.loginradius.com
-DOMAIN,appapi.dmall.com.hk
-DOMAIN,www.yuurewards.com
-DOMAIN,lighthouseapi.dmall.com.hk
-DOMAIN,www.dairyfarm-ipaas-digital.com
-DOMAIN-SUFFIX,loginradius.com
-DOMAIN-SUFFIX,dmall.com.hk
-DOMAIN-SUFFIX,yuurewards.com
-DOMAIN-SUFFIX,dairyfarm-ipaas-digital.com
-USER-AGENT,*dmall*
-USER-AGENT,*yuu*
-USER-AGENT,*yuurewards*
-USER-AGENT,*dmall
-USER-AGENT,*yuu
-USER-AGENT,*yuurewards
-USER-AGENT,dmall*
-USER-AGENT,yuu*
-USER-AGENT,yuurewards*
-PROCESS-NAME,yuu
-PROCESS-NAME,yuurewards
-PROCESS-NAME,dmall
-
 # Yandex
 DOMAIN-SUFFIX,nic.yandex
 DOMAIN-SUFFIX,xn--d1acpjx3f.xn--p1ai
