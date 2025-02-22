@@ -12,7 +12,6 @@ DOMAIN,s3.pstatp.com
 DOMAIN,api5-core-hl.amemv.com
 DOMAIN-SUFFIX,baike.com
 DOMAIN-SUFFIX,pstatp.com
-DOMAIN-SUFFIX,hl.amemv.com
 DOMAIN,webcast5-core-hl.amemv.com
 IP-CIDR,120.232.0.0/16,no-resolve
 IP-CIDR,111.170.0.0/16,no-resolve
