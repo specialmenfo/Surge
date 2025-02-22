@@ -1,3 +1,21 @@
+# x
+
+DOMAIN,webcast100-ws-c-hl.amemv.com
+DOMAIN,klink5-hj.amemv.com
+DOMAIN,log0-misc-hl.amemv.com
+DOMAIN,mon0-misc-hl.amemv.com
+DOMAIN,ecom5-normal-hl.ecombdapi.com
+DOMAIN,frontier100-aweme-hl.amemv.com
+DOMAIN,api5-core-hl.amemv.com
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,ecombdapi.com
+DOMAIN-SUFFIX,hl.amemv.com
+
+# c
+DOMAIN,api-play.amemv.com
+DOMAIN,webcast5-core-hl.amemv.com
+DOMAIN-SUFFIX,bytedance.com
+
 # yuu
 DOMAIN,api.loginradius.com
 DOMAIN,appapi.dmall.com.hk
