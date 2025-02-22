@@ -27,6 +27,8 @@ DOMAIN-SUFFIX,douyinstatic.com
 DOMAIN-KEYWORD,pull-flv
 DOMAIN-KEYWORD,pull-hs
 DOMAIN-KEYWORD,webcastcdn
+IP-CIDR,103.136.0.0/16,no-resolve
+IP-CIDR,103.136.221.67/16,no-resolve
 IP-CIDR,111.170.0.0/16,no-resolve
 IP-CIDR,219.76.20.222/16,no-resolve
 IP-CIDR,219.76.20.222/18,no-resolve
