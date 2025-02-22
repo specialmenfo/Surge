@@ -1,0 +1,6 @@
+# Apple Intelligence ChatGPT調用
+# [Proxy Group]  Apple Intelligence
+DOMAIN,apple-relay.mask.apple-dns.net,extended-matching
+DOMAIN,apple-relay.apple.com,extended-matching
+DOMAIN,apple-relay.cloudflare.com,extended-matching
+DOMAIN-KEYWORD,apple-relay,extended-matching
