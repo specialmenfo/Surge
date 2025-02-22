@@ -1,6 +1,10 @@
 # DouYin 大陸版評論IP
 DOMAIN,api5-normal-m-hj.amemv.com
 DOMAIN-SUFFIX,normal-m-hj.amemv.com
+DOMAIN,m.baike.com
+DOMAIN,s3.pstatp.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,ipainner.amemv.com
 IP-CIDR,208.95.0.0/16,no-resolve
 IP-CIDR,208.95.112.1/16,no-resolve
 IP-CIDR,208.95.112.1/24,no-resolve
