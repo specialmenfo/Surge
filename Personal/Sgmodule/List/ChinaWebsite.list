@@ -15,6 +15,11 @@ DOMAIN-SUFFIX,hl.amemv.com
 DOMAIN,api-play.amemv.com
 DOMAIN,webcast5-core-hl.amemv.com
 DOMAIN-SUFFIX,bytedance.com
+IP-CIDR,120.232.0.0/16,no-resolve
+IP-CIDR,121.11.195.133/16,no-resolve
+IP-CIDR,121.11.0.0/16,no-resolve
+IP-CIDR,101.47.81.229/16,no-resolve
+IP-CIDR,101.47.0.0/16,no-resolve
 
 # yuu
 DOMAIN,api.loginradius.com
