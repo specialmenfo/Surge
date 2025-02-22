@@ -22,6 +22,8 @@ DOMAIN,mon0-misc-hl.amemv.com
 DOMAIN,ecom5-normal-hl.ecombdapi.com
 DOMAIN,frontier100-aweme-hl.amemv.com
 DOMAIN,api5-core-hl.amemv.com
+DOMAIN,s3.pstatp.com
+DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,normal-hl.amemv.com
 DOMAIN-SUFFIX,zijieapi.com
 DOMAIN-SUFFIX,ecombdapi.com
