@@ -43,6 +43,13 @@ DOMAIN-SUFFIX,hl.amemv.com
 DOMAIN-KEYWORD,pull-flv
 DOMAIN-KEYWORD,pull-hs
 DOMAIN-KEYWORD,webcastcdn
+
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,ipainner.amemv.com
+IP-CIDR,103.136.0.0/16,no-resolve
+IP-CIDR,103.136.221.67/16,no-resolve
+
 IP-CIDR,101.47.81.229/16,no-resolve
 IP-CIDR,101.47.0.0/16,no-resolve
 IP-CIDR,103.136.0.0/16,no-resolve
