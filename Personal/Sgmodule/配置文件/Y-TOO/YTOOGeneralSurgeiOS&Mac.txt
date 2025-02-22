@@ -157,6 +157,7 @@ dns-server = 114.114.114.114, 8.8.8.8
 
 [Proxy Group]
 🌏 Network INFO = select, "👋 手動選擇", no-alert=0, hidden=0, include-all-proxies=1, policy-path=https://gist.githubusercontent.com//sub-storelink, update-interval=0
+ Apple Intelligence = select, "🇺🇲 美國節點", "🇹🇼 台灣節點", "🇯🇵 日本節點", "🇰🇷 南韓節點", "🇦🇺 澳洲節點", "🇬🇧 英國節點", "🇩🇪 德國節點", "🇫🇷 法國節點", "🇮🇳 印度節點", "🇧🇷 巴西節點", "🇻🇳 越南節點", "🇹🇭 泰國節點", "🇮🇩 印尼節點", "🇳🇱 荷蘭節點", "🇪🇬 埃及節點", "🇿🇦 南非節點", "🇦🇪 迪拜節點", "🎯 全球直連", "🇭🇰 香港節點", "🇸🇬 星加坡節點", "🇵🇭 菲律賓節點", "🇦🇷 阿根廷節點", "🇹🇷 土耳其節點", "🇨🇦 加拿大節點", "🇪🇸 西班牙節點", "🇺🇦 烏克蘭節點", "🇷🇺 俄羅斯節點", "🇮🇹 義大利節點", "🇭🇺 匈牙利節點", "🇲🇾 馬來西亞節點", "🇲🇩 摩爾多瓦節點", "🇵🇰 巴基斯坦節點", "🇳🇬 奈及利亞節點", no-alert=0, hidden=0, include-all-proxies=0, external-policy-modifier=block-quic=off
  Apple System Related = select, "🎯 全球直連", "🇭🇰 香港節點", "🇺🇲 美國節點", no-alert=0, hidden=0, include-all-proxies=0, external-policy-modifier=block-quic=off
 💳 AMEX 換區 = select, "🇺🇲 美國節點", "🇬🇧 英國節點", "🇳🇱 荷蘭節點", "🇭🇰 香港節點", "🇩🇪 德國節點", "🇵🇭 菲律賓節點", "🇹🇼 台灣節點", "🇸🇬 星加坡節點", "🇫🇷 法國節點", "🇯🇵 日本節點", "🇦🇺 澳洲節點", "🇰🇷 南韓節點", "🇧🇷 巴西節點", "🇲🇾 馬來西亞節點", "🇦🇷 阿根廷節點", "🇹🇷 土耳其節點", "👋 手動選擇", no-alert=0, hidden=0, include-all-proxies=0, external-policy-modifier=block-quic=off
 🌏 Amazon = select, "🇭🇰 香港節點", "🇹🇼 台灣節點", "🇸🇬 星加坡節點", "🇯🇵 日本節點", "🇰🇷 南韓節點", "🇺🇲 美國節點", "🇦🇺 澳洲節點", "🇵🇭 菲律賓節點", "👋 手動選擇", update-interval=0, no-alert=1, hidden=0, external-policy-modifier=block-quic=off
@@ -243,6 +244,7 @@ dns-server = 114.114.114.114, 8.8.8.8
 
 [Rule]
 # Rule
+RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/refs/heads/master/Personal/Sgmodule/List/AppleIntelligenceChatGPTCN.list," Apple Intelligence",extended-matching,no-resolve
 # 繞過系統請求（Bypass-System）選項，所以在某些情況下會造成系統推送延遲（例如在兜底全局規則是走代理的情況下），需要對蘋果的某些服務設置專門的直連規則。
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/AppleSystemRelated.list," Apple System Related",extended-matching,no-resolve
 RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/master/Personal/Sgmodule/List/ADBlock.list,"🛑 廣告攔截",extended-matching,no-resolve
