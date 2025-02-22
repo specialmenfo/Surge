@@ -22,6 +22,11 @@ IP-CIDR,120.232.0.0/16,no-resolve
 IP-CIDR,121.11.195.133/16,no-resolve
 IP-CIDR,121.11.0.0/16,no-resolve
 IP-CIDR,111.170.0.0/16,no-resolve
+IP-CIDR,219.76.20.222/16,no-resolve
+IP-CIDR,219.76.20.222/18,no-resolve
+IP-CIDR,219.76.20.222/23,no-resolve
+IP-CIDR,219.76.0.0/16,no-resolve
+IP-CIDR,219.76.0.0/17,no-resolve
 
 # DouYin 港版評論IP
 DOMAIN,api5-normal-hl.amemv.com
