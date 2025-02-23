@@ -27,12 +27,16 @@ DOMAIN-SUFFIX,douyinstatic.com
 DOMAIN-SUFFIX,qishui.com
 DOMAIN-SUFFIX,ndcpp.com
 DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,baike.com
 DOMAIN-KEYWORD,pull-flv
 DOMAIN-KEYWORD,pull-hs
 DOMAIN-KEYWORD,webcastcdn
 DOMAIN-KEYWORD,sd5.flv
+IP-CIDR,43.159.0.0/16,no-resolve
 IP-CIDR,103.136.0.0/16,no-resolve
 IP-CIDR,103.136.221.67/16,no-resolve
+IP-CIDR,163.181.0.0/16,no-resolve
 IP-CIDR,219.76.20.222/16,no-resolve
 IP-CIDR,219.76.20.222/18,no-resolve
 IP-CIDR,219.76.20.222/23,no-resolve
