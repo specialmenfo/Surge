@@ -23,16 +23,12 @@ DOMAIN,webcast5-core-hl.amemv.com
 DOMAIN,api5-normal-hl.amemv.com
 DOMAIN-SUFFIX,normal-hl.amemv.com
 DOMAIN-SUFFIX,bytedance.com
-DOMAIN-SUFFIX,zijieapi.com
 DOMAIN-SUFFIX,ecombdapi.com
 DOMAIN-SUFFIX,ipainner.amemv.com
 DOMAIN-SUFFIX,baike.com
 DOMAIN-SUFFIX,hl.amemv.com
 DOMAIN-SUFFIX,baike.com
 DOMAIN-SUFFIX,pstatp.com
-DOMAIN-SUFFIX,bytedance.com
-DOMAIN-SUFFIX,zijieapi.com
-DOMAIN-SUFFIX,hl.amemv.com
 IP-CIDR,101.47.81.229/16,no-resolve
 IP-CIDR,101.47.0.0/16,no-resolve
 IP-CIDR,111.170.0.0/16,no-resolve
