@@ -3,5 +3,3 @@ DOMAIN-SUFFIX,fengkongcloud.com
 DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,xhscdn.net
 DOMAIN-SUFFIX,xiaohongshu.com
-IP-CIDR,43.159.0.0/16,no-resolve
-IP-CIDR,43.159.25.28/16,no-resolve
