@@ -5,12 +5,10 @@ DOMAIN,klink5-hj.amemv.com
 DOMAIN,log0-misc-hl.amemv.com
 DOMAIN,mon0-misc-hl.amemv.com
 DOMAIN,ecom5-normal-hl.ecombdapi.com
-DOMAIN,m.baike.com
 DOMAIN,frontier100-aweme-hl.amemv.com
 DOMAIN,s3.pstatp.com
 DOMAIN,api5-core-hl.amemv.com
 DOMAIN,webcast5-core-hl.amemv.com
-DOMAIN,m.baike.com
 DOMAIN,webcast100-ws-c-hl.amemv.com
 DOMAIN,klink5-hj.amemv.com
 DOMAIN,log0-misc-hl.amemv.com
@@ -24,9 +22,7 @@ DOMAIN,api5-normal-hl.amemv.com
 DOMAIN-SUFFIX,normal-hl.amemv.com
 DOMAIN-SUFFIX,ecombdapi.com
 DOMAIN-SUFFIX,ipainner.amemv.com
-DOMAIN-SUFFIX,baike.com
 DOMAIN-SUFFIX,hl.amemv.com
-DOMAIN-SUFFIX,baike.com
 DOMAIN-SUFFIX,pstatp.com
 IP-CIDR,101.47.81.229/16,no-resolve
 IP-CIDR,101.47.0.0/16,no-resolve
