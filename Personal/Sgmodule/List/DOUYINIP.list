@@ -35,3 +35,11 @@ IP-CIDR,121.11.0.0/16,no-resolve
 IP-CIDR,208.95.0.0/16,no-resolve
 IP-CIDR,208.95.112.1/16,no-resolve
 IP-CIDR,208.95.112.1/24,no-resolve
+IP-CIDR,103.136.0.0/16,no-resolve
+IP-CIDR,103.136.221.67/16,no-resolve
+IP-CIDR,163.181.0.0/16,no-resolve
+IP-CIDR,219.76.20.222/16,no-resolve
+IP-CIDR,219.76.20.222/18,no-resolve
+IP-CIDR,219.76.20.222/23,no-resolve
+IP-CIDR,219.76.0.0/16,no-resolve
+IP-CIDR,219.76.0.0/17,no-resolve
