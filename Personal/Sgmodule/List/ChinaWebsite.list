@@ -2,6 +2,10 @@
 DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,xhscdn.net
 DOMAIN-SUFFIX,xiaohongshu.com
+DOMAIN-SUFFIX,fengkongcloud.com
+DOMAIN-SUFFIX,zztfly.com
+IP-CIDR,43.159.25.122/16,no-resolve
+IP-CIDR,43.159.25.122/23,no-resolve
 
 # yuu
 DOMAIN,api.loginradius.com
