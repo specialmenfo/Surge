@@ -26,6 +26,8 @@ DOMAIN-SUFFIX,hl.amemv.com
 DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,bytedance.com
 DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,baike.com
 IP-CIDR,71.18.0.0/16,no-resolve
 IP-CIDR,101.47.81.229/16,no-resolve
 IP-CIDR,101.47.0.0/16,no-resolve
