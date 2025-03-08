@@ -47,8 +47,11 @@ DOMAIN-KEYWORD,number26
 
 # Vodafone DE
 DOMAIN,beta.vodafone.de
+DOMAIN,es-de.vodafone.com
 DOMAIN,fc.vodafone.de
 DOMAIN,gcpsmapi.vodafone.com
 DOMAIN,remote-data.urbanairship.com
 DOMAIN,was.vodafone.de
+DOMAIN,config.rcs.mnc002.mcc262.jibecloud.net
+DOMAIN,epdg.epc.mnc002.mcc262.pub.3gppnetwork.org
 DOMAIN-SUFFIX,vodafone.de
