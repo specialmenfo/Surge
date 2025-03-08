@@ -4,6 +4,7 @@ DOMAIN,crl.t-mobile.com
 DOMAIN,eas3.msg.t-mobile.com
 DOMAIN,mascns.t-mobile.com
 DOMAIN,ns.sipgeo.t-mobile.com
+DOMAIN,fp-us-tmobile.rcs.telephony.goog
 DOMAIN,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org
 DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
