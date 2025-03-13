@@ -77,6 +77,21 @@ DOMAIN-SUFFIX,mtnonline.com
 DOMAIN-SUFFIX,mtn.ng
 DOMAIN-SUFFIX,mtnnigeria.net
 
+# Moniepoint
+DOMAIN,users.mab.console.teamapt.com
+DOMAIN,card.mab.console.teamapt.com
+DOMAIN,accounts.mab.console.teamapt.com
+DOMAIN,report.mab.console.teamapt.com
+DOMAIN,api.moniepoint.com
+DOMAIN,moniepoint-dashboard-service.moniepoint.com
+DOMAIN,deposits.mab.console.teamapt.com
+DOMAIN,moniepoint-rewards-service.moniepoint.com
+DOMAIN,gamification.moniepoint.com
+DOMAIN,skan.singular.net
+DOMAIN-SUFFIX,teamapt.com
+DOMAIN-SUFFIX,moniepoint.com
+DOMAIN-KEYWORD,moniepoint
+
 # NIMC
 DOMAIN-SUFFIX,nimc.gov.ng
 
