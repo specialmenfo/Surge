@@ -1,3 +1,10 @@
+# 2025.05.16
+DOMAIN-SUFFIX,tianwenca.com
+DOMAIN-SUFFIX,netcoresmartech.com
+DOMAIN-SUFFIX,vcards.metowolf.com
+IP-CIDR,183.61.0.0/16,no-resolve
+IP-CIDR,208.95.0.0/16,no-resolve
+
 # 視頻
 DOMAIN-SUFFIX,iwewiets.com
 DOMAIN-SUFFIX,lzxder.xyz
