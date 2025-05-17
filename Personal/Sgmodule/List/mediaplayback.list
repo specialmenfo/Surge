@@ -106,3 +106,6 @@ DOMAIN,discovery-us.conax.cloud
 DOMAIN,4unal8ngvngjm07lj2q2umlc4.litix.io
 DOMAIN,dplus-northamerica.media-edge.prod-vod.h264.io
 DOMAIN,dplus-northamerica-cloudfront-gcs.prod-vod.h264.io
+
+# YouTube Music
+DOMAIN-SUFFIX,googlevideo.com
