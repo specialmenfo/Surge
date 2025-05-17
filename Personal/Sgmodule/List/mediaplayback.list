@@ -108,4 +108,7 @@ DOMAIN,dplus-northamerica.media-edge.prod-vod.h264.io
 DOMAIN,dplus-northamerica-cloudfront-gcs.prod-vod.h264.io
 
 # YouTube Music
+DOMAIN,s.youtube.com
+DOMAIN-SUFFIX,lh3.googleusercontent.com
 DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,googleapis.com
