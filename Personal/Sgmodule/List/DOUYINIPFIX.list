@@ -8,6 +8,7 @@ DOMAIN,api-play.amemv.com
 DOMAIN,f-cpay.snssdk.com
 DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,gdrcu.com
 IP-CIDR,119.147.0.0/16,no-resolve
 IP-CIDR,120.232.0.0/16,no-resolve
 IP-CIDR,110.80.0.0/16,no-resolve
