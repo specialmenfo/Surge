@@ -12,3 +12,6 @@ USER-AGENT,*tngdigital*
 USER-AGENT,tngdigital*
 PROCESS-NAME,tngdigita
 DOMAIN-KEYWORD,tngdigital
+
+#TAG
+DOMAIN-SUFFIX,tagss.pro
