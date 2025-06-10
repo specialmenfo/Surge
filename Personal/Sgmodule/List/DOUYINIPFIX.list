@@ -11,9 +11,9 @@ DOMAIN-SUFFIX,zijieapi.com
 DOMAIN-SUFFIX,gdrcu.com
 IP-CIDR,119.147.0.0/16,no-resolve
 IP-CIDR,120.232.0.0/16,no-resolve
-# IP-CIDR,110.80.0.0/16,no-resolve
-# IP-CIDR,14.119.0.0/16,no-resolve
-# IP-CIDR,121.11.0.0/16,no-resolve
+IP-CIDR,110.80.0.0/16,no-resolve
+IP-CIDR,14.119.0.0/16,no-resolve
+IP-CIDR,121.11.0.0/16,no-resolve
 # IP-CIDR,61.155.0.0/16,no-resolve
 # IP-CIDR,121.14.0.0/16,no-resolve
 # IP-CIDR,101.47.81.229/16,no-resolve
