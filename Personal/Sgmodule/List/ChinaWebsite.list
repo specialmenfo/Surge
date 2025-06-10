@@ -93,23 +93,6 @@ PROCESS-NAME,yuu
 PROCESS-NAME,yuurewards
 PROCESS-NAME,dmall
 
-# 抖音
-DOMAIN,v3-music.douyinstatic.com
-DOMAIN-SUFFIX,douyinstatic.com
-DOMAIN-SUFFIX,qishui.com
-DOMAIN-SUFFIX,ndcpp.com
-DOMAIN-KEYWORD,pull-flv
-DOMAIN-KEYWORD,pull-hs
-DOMAIN-KEYWORD,webcastcdn
-DOMAIN-KEYWORD,sd5.flv
-IP-CIDR,103.136.0.0/16,no-resolve
-IP-CIDR,103.136.221.67/16,no-resolve
-IP-CIDR,219.76.20.222/16,no-resolve
-IP-CIDR,219.76.20.222/18,no-resolve
-IP-CIDR,219.76.20.222/23,no-resolve
-IP-CIDR,219.76.0.0/16,no-resolve
-IP-CIDR,219.76.0.0/17,no-resolve
-
 # 520zjm
 DOMAIN,eu1.clevertap-prod.com
 DOMAIN,i.postimg.cc
