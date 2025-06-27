@@ -1,3 +1,6 @@
+# 愛奇藝
+IP-CIDR,118.26.0.0/16,no-resolve
+
 # 520zjm
 DOMAIN-SUFFIX,jisuzyv.com
 DOMAIN-SUFFIX,jisuimage.com
