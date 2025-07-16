@@ -1,3 +1,15 @@
+# 隨風影視
+DOMAIN-SUFFIX,dytt-music.com
+DOMAIN-SUFFIX,aas9.com
+DOMAIN-SUFFIX,ryzypics.com
+DOMAIN-SUFFIX,caiji.cyou
+DOMAIN-SUFFIX,zqkanshu.com
+DOMAIN-SUFFIX,hxx2023.cc
+DOMAIN-SUFFIX,dytt-img.com
+DOMAIN-SUFFIX,cfhls.top
+DOMAIN-SUFFIX,ai160.com
+DOMAIN-SUFFIX,sfys.pro
+
 # 愛奇藝
 IP-CIDR,118.26.0.0/16,no-resolve
 
