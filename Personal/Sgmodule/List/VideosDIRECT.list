@@ -1,5 +1,4 @@
 # 極速影視
-DOMAIN-SUFFIX,yaoyaolx.shop
 DOMAIN-SUFFIX,ctobsnssdk.com
 DOMAIN-SUFFIX,heimuer.tv
 DOMAIN-SUFFIX,cnyuncdn.com
@@ -10,6 +9,14 @@ DOMAIN-SUFFIX,ivdy.com
 DOMAIN-SUFFIX,y2s52n7.com
 DOMAIN-SUFFIX,tyyszywvod5.com
 DOMAIN-SUFFIX,kuaibozy.net
+DOMAIN-SUFFIX,huawei8.live
+DOMAIN-SUFFIX,b8bf.com
+DOMAIN-SUFFIX,lzcdn25.com
+DOMAIN-SUFFIX,deviceinfo.shop,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,yaoyaolx.shop,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,toutiao-b.com,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,toutiaovod.com,REJECT,pre-matching,extended-matching
+DOMAIN-KEYWORD,pangolin,REJECT
 IP-CIDR,121.14.0.0/16,no-resolve
 
 # 隨風影視
