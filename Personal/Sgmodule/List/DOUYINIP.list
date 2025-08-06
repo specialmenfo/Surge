@@ -1,3 +1,5 @@
+DOMAIN,api5-core-hj.amemv.com
+DOMAIN,webcast5-normal-lf.amemv.com
 DOMAIN,api5-normal-m-hj.amemv.com
 DOMAIN-SUFFIX,normal-m-hj.amemv.com
 DOMAIN,webcast100-ws-c-hl.amemv.com
@@ -35,6 +37,8 @@ IP-CIDR,111.170.0.0/16,no-resolve
 IP-CIDR,120.232.0.0/16,no-resolve
 IP-CIDR,121.11.195.133/16,no-resolve
 IP-CIDR,121.11.0.0/16,no-resolve
+IP-CIDR,121.12.0.0/16,no-resolve
+IP-CIDR,121.14.0.0/16,no-resolve
 IP-CIDR,119.147.0.0/16,no-resolve
 IP-CIDR,49.7.0.0/16,no-resolve
 IP-CIDR,36.110.0.0/16,no-resolve
