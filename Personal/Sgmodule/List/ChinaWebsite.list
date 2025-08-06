@@ -1,3 +1,17 @@
+# 2025-8-7
+DOMAIN-SUFFIX,cdn.loc.cc
+DOMAIN-SUFFIX,jdshipin.com
+DOMAIN-SUFFIX,an94tv.cfd
+DOMAIN-SUFFIX,live.iptv.darwinchow.com
+DOMAIN-SUFFIX,bkpcp.top
+DOMAIN-SUFFIX,bxtv.3a.ink
+DOMAIN-SUFFIX,mytv666.top
+DOMAIN-SUFFIX,163189.xyz
+DOMAIN-SUFFIX,qzz.io
+IP-CIDR,61.216.0.0/16,no-resolve
+DOMAIN-KEYWORD,bxtv
+DOMAIN-KEYWORD,iptv
+
 # 2025-7-27
 DOMAIN-SUFFIX,deviceinfo.shop
 DOMAIN-SUFFIX,yaoyaolx.shop
