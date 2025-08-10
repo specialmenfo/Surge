@@ -98,6 +98,10 @@ DOMAIN-SUFFIX,nimc.gov.ng
 # Opay
 DOMAIN-SUFFIX,opayweb.com
 
+# Optimus Bank
+DOMAIN-SUFFIX,optimusbank.com
+DOMAIN-KEYWORD,optimusbank
+
 # Paga
 DOMAIN-SUFFIX,paga.com
 DOMAIN-SUFFIX,mypaga.com
