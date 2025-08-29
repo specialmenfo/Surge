@@ -2,6 +2,7 @@
 DOMAIN-SUFFIX,toutiao-b.com
 DOMAIN-SUFFIX,toutiaovod.com
 DOMAIN-KEYWORD,pangolin
+AND,((IP-CIDR,17.0.0.0/8,no-resolve), (OR,((PROTOCOL,UDP), (PROTOCOL,QUIC)))),REJECT-DROP
 
 # Apple
 DOMAIN,api.smoot.apple.cn
