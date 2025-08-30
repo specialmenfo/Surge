@@ -46,6 +46,10 @@ DOMAIN-SUFFIX,theater-kktv.cdn.hinet.net
 # MAX
 DOMAIN-SUFFIX,media.max.com
 
+# MissAV
+DOMAIN-SUFFIX,missav.ws
+DOMAIN-SUFFIX,missav123.com
+
 # Pluto TV 播放
 DOMAIN-SUFFIX,siloh-fs.plutotv.net
 DOMAIN-SUFFIX,siloh-cf.pluto.tv
