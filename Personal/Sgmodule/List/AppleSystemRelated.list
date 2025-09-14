@@ -6,6 +6,7 @@ DOMAIN,xp.apple.com,force-remote-dns
 DOMAIN,smp-device-content.apple.com,force-remote-dns
 DOMAIN,guzzoni.apple.com,force-remote-dns
 DOMAIN,captive.apple.com,force-remote-dns
+DOMAIN,gdmf.apple.com
 DOMAIN-SUFFIX,safebrowsing.apple
 DOMAIN-SUFFIX,ess.apple.com,force-remote-dns
 DOMAIN-SUFFIX,push.apple.com,force-remote-dns
