@@ -3,6 +3,7 @@
 # 搭配：RULE-SET,https://raw.githubusercontent.com/specialmenfo/Surge/refs/heads/master/Personal/Sgmodule/List/ChatGPT.list
 # 搭配模塊：iRingo模塊：https://NSRingo.github.io
 # 詳細可按照配置文件擺放和安裝所需模塊：https://raw.githubusercontent.com/specialmenfo/Surge/refs/heads/master/Personal/Sgmodule/配置文件/Y-TOO/YTOOGeneralSurgeiOS%26Mac.txt
+DOMAIN,guzzoni.apple.com
 DOMAIN,apple-relay.mask.apple-dns.net,extended-matching
 DOMAIN,apple-relay.apple.com,extended-matching
 DOMAIN,apple-relay.cloudflare.com,extended-matching
