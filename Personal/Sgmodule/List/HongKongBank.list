@@ -7,6 +7,7 @@ USER-AGENT,airstarbank
 USER-AGENT,airstarbank*
 USER-AGENT,*airstarbank
 PROCESS-NAME,airstarbank
+DOMAIN-KEYWORD,airstarbank
 
 # ASPIRE
 DOMAIN,api.aspireapp.com
