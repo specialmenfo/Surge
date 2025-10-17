@@ -1,3 +1,4 @@
+# ChatGPT
 DOMAIN,chatgpt.livekit.cloud
 DOMAIN,static.cloudflareinsights.com
 DOMAIN-SUFFIX,chatgpt.com
@@ -20,3 +21,7 @@ DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-KEYWORD,openai
+
+# Perplexity AI
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-KEYWORD,perplexity
