@@ -1,3 +1,9 @@
+# 閒魚
+DOMAIN,acs.m.goofish.com
+DOMAIN,h5api.m.goofish.com
+DOMAIN,wss-goofish.dingtalk.com
+
+# 抖音
 # 修復抖音IP改變後視頻播放卡頓問題
 DOMAIN,webcast5-normal-m-hj.amemv.com
 DOMAIN,webcast100-ws-c-hj.amemv.com
