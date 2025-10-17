@@ -672,6 +672,10 @@ PROCESS-NAME,peacock
 # Revolut
 DOMAIN-SUFFIX,revolut.com
 
+# SheerID
+DOMAIN,services.sheerid.com
+DOMAIN-KEYWORD,sheerid
+
 # Star++
 DOMAIN-SUFFIX,media.starott.com
 
