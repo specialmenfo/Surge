@@ -2,6 +2,7 @@
 DOMAIN,acs.m.goofish.com
 DOMAIN,h5api.m.goofish.com
 DOMAIN,wss-goofish.dingtalk.com
+DOMAIN,tls-goofish.dingtalk.com
 
 # 抖音
 # 修復抖音IP改變後視頻播放卡頓問題
