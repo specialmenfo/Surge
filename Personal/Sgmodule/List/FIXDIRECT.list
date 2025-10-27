@@ -53,6 +53,9 @@ IP-CIDR,183.60.0.0/16,no-resolve
 IP-CIDR,49.7.0.0/16,no-resolve
 IP-CIDR,17.248.0.0/16,no-resolve
 IP-CIDR,14.215.0.0/16,no-resolve
+IP-CIDR,111.124.0.0/16,no-resolve
+IP-CIDR,113.113.0.0/16,no-resolve
+DOMAIN,search5-search-lf.amemv.com
 DOMAIN,life5-normal-m-hj.amemv.com
 DOMAIN,api6-normal-m-yz.amemv.com
 DOMAIN,webcast100-ws-c-zjg.amemv.com
@@ -66,6 +69,7 @@ DOMAIN,pitaya.bytedance.com
 DOMAIN,sf1-cdn-tos.toutiaostatic.com
 DOMAIN,v9-awememusicpgc.amemv.com
 DOMAIN,log0-misc-lf.amemv.com
+DOMAIN,mon0-misc-lf.amemv.com
 DOMAIN-SUFFIX,bytehwm.com
 DOMAIN-SUFFIX,bytedance.com
 DOMAIN-SUFFIX,ecombdpage.com
