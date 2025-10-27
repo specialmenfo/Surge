@@ -43,8 +43,6 @@ DOMAIN-KEYWORD,webcastcdn
 DOMAIN-KEYWORD,sd5.flv
 
 IP-CIDR,59.42.0.0/16,no-resolve
-IP-CIDR,125.89.0.0/16,no-resolve
-IP-CIDR,121.12.0.0/16,no-resolve
 IP-CIDR,17.253.0.0/16,no-resolve
 IP-CIDR,113.108.0.0/16,no-resolve
 IP-CIDR,125.94.50.239/16,no-resolve
