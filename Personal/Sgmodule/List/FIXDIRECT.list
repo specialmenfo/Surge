@@ -1,3 +1,7 @@
+# 小紅書
+DOMAIN,spider-tracker.xiaohongshu.com
+IP-CIDR,43.145.0.0/16,no-resolve
+
 # 閒魚
 DOMAIN,acs.m.goofish.com
 DOMAIN,h5api.m.goofish.com
